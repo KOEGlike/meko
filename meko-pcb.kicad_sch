@@ -3363,6 +3363,36 @@
 			(embedded_fonts no)
 		)
 	)
+	(wire
+		(pts
+			(xy 191.77 38.1) (xy 191.77 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "144b317b-60dc-4724-a576-69ffdd68926c")
+	)
+	(wire
+		(pts
+			(xy 187.96 38.1) (xy 191.77 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a6c4fd8-ee01-4736-b91a-6df779c4b2f3")
+	)
+	(wire
+		(pts
+			(xy 187.96 50.8) (xy 191.77 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cbf441c-b95d-48f0-8267-a1a65adedaf7")
+	)
 	(symbol
 		(lib_id "FH34SRJ-24S-0_5SH_99_:FH34SRJ-24S-0.5SH_99_")
 		(at 148.59 71.12 0)
@@ -4377,8 +4407,8 @@
 		)
 	)
 	(sheet
-		(at 31.75 21.59)
-		(size 24.13 14.605)
+		(at 174.625 47.625)
+		(size 13.335 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4393,7 +4423,7 @@
 		)
 		(uuid "8a6dc5b3-4f2f-4276-a496-11a08be250c4")
 		(property "Sheetname" "power"
-			(at 31.75 20.8784 0)
+			(at 174.625 46.9134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4402,12 +4432,22 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 31.75 36.7796 0)
+			(at 174.625 53.2896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "EN2" input
+			(at 187.96 50.8 0)
+			(uuid "111abbd6-8275-489b-9da0-d46c6aace40d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -4419,8 +4459,8 @@
 		)
 	)
 	(sheet
-		(at 168.275 22.86)
-		(size 33.02 22.86)
+		(at 168.275 26.035)
+		(size 19.685 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4435,7 +4475,7 @@
 		)
 		(uuid "f706aad0-fe72-4f1f-8f4a-da2e99c9f80e")
 		(property "Sheetname" "USB"
-			(at 168.275 22.1484 0)
+			(at 168.275 25.3234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4444,12 +4484,82 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 168.275 46.3046 0)
+			(at 168.275 43.1296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CTS" output
+			(at 168.275 33.02 180)
+			(uuid "47485b44-c381-475d-aae1-4979fbc9c7ab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RSTb" output
+			(at 187.96 30.48 0)
+			(uuid "91f8911b-eb8a-4a15-9248-39486bb66998")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RTS" output
+			(at 168.275 30.48 180)
+			(uuid "ba659e86-9a70-429f-90ce-a59bda6ca15a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXD" output
+			(at 168.275 38.1 180)
+			(uuid "eeba0a02-58bd-4017-93ba-39745c56e908")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SUSP" output
+			(at 187.96 38.1 0)
+			(uuid "9ff51dd5-3bea-4b02-b450-f7267fa6a083")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SUSPb" output
+			(at 187.96 40.64 0)
+			(uuid "fabb91f5-f652-4ef8-9b37-e5084f1ccadd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TXD" input
+			(at 168.275 40.64 180)
+			(uuid "70dafb42-fb83-4ffd-8242-c19c63e579e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
