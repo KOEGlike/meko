@@ -635,880 +635,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ES9218PQ:ES9218PQ"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "IC"
-				(at 36.83 20.32 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "ES9218PQ"
-				(at 36.83 17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "QFN40P500X500X80-41N-D"
-				(at 36.83 -82.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://eu.mouser.com/datasheet/2/1082/ES9218P_Datasheet_v1_8-2933526.pdf"
-				(at 36.83 -182.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Audio D/A Converter ICs Sabre 32 2V rms Integrated Stereo QUAD DAC /HPA/Switch"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "0.8"
-				(at 36.83 -382.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "ESS Technology"
-				(at 36.83 -482.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "ES9218PQ"
-				(at 36.83 -582.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "460-ES9218PQ"
-				(at 36.83 -682.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ESS-Technology/ES9218PQ?qs=sPbYRqrBIVkIKXrxpjKBFg%3D%3D"
-				(at 36.83 -782.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 36.83 -882.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 36.83 -982.22 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "ES9218PQ_1_1"
-				(rectangle
-					(start 5.08 15.24)
-					(end 35.56 -38.1)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "RT1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "XO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "XI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "VCCA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "AGND_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "AUX_R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "INB_R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "IN_R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -20.32 0)
-					(length 5.08)
-					(name "OUT_R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -22.86 0)
-					(length 5.08)
-					(name "GSN_R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 20.32 270)
-					(length 5.08)
-					(name "DGND_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "41"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -43.18 90)
-					(length 5.08)
-					(name "AGND_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 20.32 270)
-					(length 5.08)
-					(name "ADDR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -43.18 90)
-					(length 5.08)
-					(name "AGND_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 20.32 270)
-					(length 5.08)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -43.18 90)
-					(length 5.08)
-					(name "PNEG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 20.32 270)
-					(length 5.08)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 -43.18 90)
-					(length 5.08)
-					(name "PNEG_VC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 20.32 270)
-					(length 5.08)
-					(name "RESETB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -43.18 90)
-					(length 5.08)
-					(name "C2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 20.32 270)
-					(length 5.08)
-					(name "DATA_CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 -43.18 90)
-					(length 5.08)
-					(name "C2_VC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 20.32 270)
-					(length 5.08)
-					(name "DATA1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -43.18 90)
-					(length 5.08)
-					(name "C1_VC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 20.32 270)
-					(length 5.08)
-					(name "DATA_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 25.4 -43.18 90)
-					(length 5.08)
-					(name "C1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 20.32 270)
-					(length 5.08)
-					(name "GPIO1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 27.94 -43.18 90)
-					(length 5.08)
-					(name "AVCC18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 20.32 270)
-					(length 5.08)
-					(name "GPIO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 -43.18 90)
-					(length 5.08)
-					(name "AVCC33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 33.02 20.32 270)
-					(length 5.08)
-					(name "DVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 0 180)
-					(length 5.08)
-					(name "DGND_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -2.54 180)
-					(length 5.08)
-					(name "AVDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -5.08 180)
-					(length 5.08)
-					(name "VREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -7.62 180)
-					(length 5.08)
-					(name "AVCC_DAC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -10.16 180)
-					(length 5.08)
-					(name "AGND_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -12.7 180)
-					(length 5.08)
-					(name "AUX_L"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -15.24 180)
-					(length 5.08)
-					(name "INB_L"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -17.78 180)
-					(length 5.08)
-					(name "IN_L"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -20.32 180)
-					(length 5.08)
-					(name "OUT_L"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 40.64 -22.86 180)
-					(length 5.08)
-					(name "GSN_L"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "FH34SRJ-24S-0_5SH_99_:FH34SRJ-24S-0.5SH_99_"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3362,6 +2488,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(wire
 		(pts
@@ -3372,6 +2599,16 @@
 			(type default)
 		)
 		(uuid "144b317b-60dc-4724-a576-69ffdd68926c")
+	)
+	(wire
+		(pts
+			(xy 85.09 115.57) (xy 85.09 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337d00e9-24be-450d-b733-fa8706705ead")
 	)
 	(wire
 		(pts
@@ -3394,8 +2631,74 @@
 		(uuid "6cbf441c-b95d-48f0-8267-a1a65adedaf7")
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 85.09 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "372f83e3-2987-484b-a3c9-186aace21103")
+		(property "Reference" "#PWR022"
+			(at 85.09 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "898ce65d-e697-4674-acad-f0607ea05e9c")
+		)
+		(instances
+			(project ""
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "FH34SRJ-24S-0_5SH_99_:FH34SRJ-24S-0.5SH_99_")
-		(at 148.59 71.12 0)
+		(at -40.64 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3404,7 +2707,7 @@
 		(fields_autoplaced yes)
 		(uuid "618bbf9b-918f-4ef5-85c9-0ed647b95d18")
 		(property "Reference" "J1"
-			(at 161.29 63.5 0)
+			(at -27.94 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3412,7 +2715,7 @@
 			)
 		)
 		(property "Value" "FH34SRJ-24S-0.5SH_99_"
-			(at 161.29 66.04 0)
+			(at -27.94 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +2723,7 @@
 			)
 		)
 		(property "Footprint" "FH34SRJ24S05SH99"
-			(at 170.18 166.04 0)
+			(at -19.05 334.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3430,7 +2733,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.hirose.com/en/product/document?clcode=CL0580-1255-6-99&productname=FH34SRJ-24S-0.5SH(99)&series=FH34SRJ&documenttype=2DDrawing&lang=en&documentid=0000990903"
-			(at 170.18 266.04 0)
+			(at -19.05 434.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3440,7 +2743,7 @@
 			)
 		)
 		(property "Description" "24 Position FFC, FPC Connector Contacts, Top and Bottom 0.020\" (0.50mm) Surface Mount, Right Angle"
-			(at 148.59 71.12 0)
+			(at -40.64 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3449,7 +2752,7 @@
 			)
 		)
 		(property "Height" "1.1"
-			(at 170.18 466.04 0)
+			(at -19.05 634.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3459,7 +2762,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Hirose"
-			(at 170.18 566.04 0)
+			(at -19.05 734.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3469,7 +2772,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "FH34SRJ-24S-0.5SH(99)"
-			(at 170.18 666.04 0)
+			(at -19.05 834.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3479,7 +2782,7 @@
 			)
 		)
 		(property "Mouser Part Number" "798-FH34SRJ24S05SH99"
-			(at 170.18 766.04 0)
+			(at -19.05 934.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3489,7 +2792,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH99?qs=vcbW%252B4%252BSTIpKBl5ap9J8Fw%3D%3D"
-			(at 170.18 866.04 0)
+			(at -19.05 1034.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3499,7 +2802,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 170.18 966.04 0)
+			(at -19.05 1134.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3509,7 +2812,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 170.18 1066.04 0)
+			(at -19.05 1234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3600,263 +2903,6 @@
 			(project ""
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ES9218PQ:ES9218PQ")
-		(at 193.04 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6dd962a8-02a9-41b4-92c6-2c544eb41e62")
-		(property "Reference" "IC1"
-			(at 234.95 81.2098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ES9218PQ"
-			(at 234.95 83.7498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ES9218PQ:QFN40P500X500X80-41N-D"
-			(at 229.87 169.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://eu.mouser.com/datasheet/2/1082/ES9218P_Datasheet_v1_8-2933526.pdf"
-			(at 229.87 269.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio D/A Converter ICs Sabre 32 2V rms Integrated Stereo QUAD DAC /HPA/Switch"
-			(at 193.04 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.8"
-			(at 229.87 469.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "ESS Technology"
-			(at 229.87 569.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ES9218PQ"
-			(at 229.87 669.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "460-ES9218PQ"
-			(at 229.87 769.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ESS-Technology/ES9218PQ?qs=sPbYRqrBIVkIKXrxpjKBFg%3D%3D"
-			(at 229.87 869.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 229.87 969.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 229.87 1069.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "efbb512b-9dc2-4649-a645-791b793f279d")
-		)
-		(pin "9"
-			(uuid "d64f4fc6-eb7e-4d0a-9f1d-b0cd64b0816d")
-		)
-		(pin "1"
-			(uuid "23342a67-bb9e-4db7-87fb-4b7683e759e5")
-		)
-		(pin "2"
-			(uuid "5081c796-2a93-4848-b690-6f411c37666a")
-		)
-		(pin "11"
-			(uuid "5596a572-b733-443a-8251-2d0c11303761")
-		)
-		(pin "8"
-			(uuid "954c123f-9995-4018-a4a5-cefec96943a2")
-		)
-		(pin "3"
-			(uuid "eb7688aa-76d7-413c-a803-1a355b9743a8")
-		)
-		(pin "4"
-			(uuid "48265b4a-481f-4513-bbf3-e5f44e83fdec")
-		)
-		(pin "5"
-			(uuid "8b686246-f380-4009-9824-9773d1ea1eb5")
-		)
-		(pin "7"
-			(uuid "7c1044f9-c7d8-4400-b97c-265f275b447e")
-		)
-		(pin "10"
-			(uuid "c19c4e50-00b7-416b-88f3-810a93d48932")
-		)
-		(pin "41"
-			(uuid "661d5f58-7710-42e9-96b6-dd377f230360")
-		)
-		(pin "29"
-			(uuid "347177ea-69e0-4db9-9e82-88d39d0eec76")
-		)
-		(pin "30"
-			(uuid "44c59edb-71f0-424c-8ca4-9c826a59819c")
-		)
-		(pin "15"
-			(uuid "8a3147e6-166e-40b5-b2f9-44e6a5b8e05e")
-		)
-		(pin "16"
-			(uuid "efcf78bf-d446-4fe7-ad98-a8fc39bbc2df")
-		)
-		(pin "12"
-			(uuid "8557172c-5610-48c6-bd11-26c42b6b2dad")
-		)
-		(pin "17"
-			(uuid "0ceb1575-b158-4ccb-89e9-7085cf446127")
-		)
-		(pin "31"
-			(uuid "b2f4ebda-2924-4e06-ae49-c4f5340de4c0")
-		)
-		(pin "35"
-			(uuid "79f4736c-49dd-4b99-8870-5c41478e8e35")
-		)
-		(pin "33"
-			(uuid "23ebb760-c112-47fd-abe6-09bd9fe8234c")
-		)
-		(pin "39"
-			(uuid "2974d028-8b1f-409b-b083-4a2ff21508c8")
-		)
-		(pin "37"
-			(uuid "2a9798cf-1a83-417a-a948-92d430ea4a1c")
-		)
-		(pin "38"
-			(uuid "fd1affc6-2acc-4618-af90-27cadf26c1b9")
-		)
-		(pin "18"
-			(uuid "eed39a8a-1fc0-42de-ace7-b3f00cacb49d")
-		)
-		(pin "40"
-			(uuid "17b56eec-37a3-45f5-9018-a415cff139ce")
-		)
-		(pin "13"
-			(uuid "52a062bc-3497-4f90-8257-d818820a0629")
-		)
-		(pin "14"
-			(uuid "e36b24fd-1dce-435c-84bb-4e72ea380a80")
-		)
-		(pin "19"
-			(uuid "63bd7f08-3d8c-45c7-8bff-29f640d5c581")
-		)
-		(pin "32"
-			(uuid "c64fa604-ba60-4ad9-b19b-e0053cae8f1e")
-		)
-		(pin "20"
-			(uuid "3c6e5f8f-c4a2-41cf-a46c-57551706b8c5")
-		)
-		(pin "27"
-			(uuid "a29bcd45-33e5-4073-afd0-3b74833b23de")
-		)
-		(pin "36"
-			(uuid "850c4797-225a-4232-a09e-a24478e5f41e")
-		)
-		(pin "26"
-			(uuid "ae4fb556-c225-4d97-9ec8-6437ebf01716")
-		)
-		(pin "34"
-			(uuid "9e8adee4-c50c-445b-a8e3-82d3f21b22fc")
-		)
-		(pin "25"
-			(uuid "620df606-5f62-4ee2-b6fb-af1ecef559d0")
-		)
-		(pin "28"
-			(uuid "6c9a8e48-0521-4ee6-aef6-88aa75908ba0")
-		)
-		(pin "24"
-			(uuid "9557f78f-0e76-4a14-9118-819d91724a5b")
-		)
-		(pin "23"
-			(uuid "9f74b8d1-585c-4ef8-b87d-c4724ee85647")
-		)
-		(pin "22"
-			(uuid "b07a8f93-0f86-4eb3-aa0f-bee929f25e07")
-		)
-		(pin "21"
-			(uuid "2c03bcc0-8e92-460b-a8a1-ec24db6071cb")
-		)
-		(instances
-			(project ""
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "IC1")
 					(unit 1)
 				)
 			)
@@ -4093,7 +3139,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Micro_SD_Card")
-		(at 157.48 165.1 0)
+		(at 30.48 290.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4102,7 +3148,7 @@
 		(fields_autoplaced yes)
 		(uuid "af05b603-405e-4a6e-ac26-8cd0bcd6c0f6")
 		(property "Reference" "J2"
-			(at 158.115 146.05 0)
+			(at 31.115 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +3156,7 @@
 			)
 		)
 		(property "Value" "Micro_SD_Card"
-			(at 158.115 148.59 0)
+			(at 31.115 274.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4118,7 +3164,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Card:microSD_HC_Molex_47219-2001"
-			(at 186.69 157.48 0)
+			(at 59.69 283.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4127,7 +3173,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/693072010801.pdf"
-			(at 157.48 165.1 0)
+			(at 30.48 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4136,7 +3182,7 @@
 			)
 		)
 		(property "Description" "Micro SD Card Socket"
-			(at 157.48 165.1 0)
+			(at 30.48 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,7 +3228,7 @@
 	)
 	(symbol
 		(lib_id "AS5600-ASOM:AS5600-ASOM")
-		(at 106.68 128.27 0)
+		(at 11.43 251.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4191,7 +3237,7 @@
 		(fields_autoplaced yes)
 		(uuid "c348ca5f-72da-4790-b4fb-55c403fc9875")
 		(property "Reference" "IC2"
-			(at 121.92 120.65 0)
+			(at 26.67 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4199,7 +3245,7 @@
 			)
 		)
 		(property "Value" "AS5600-ASOM"
-			(at 121.92 123.19 0)
+			(at 26.67 246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4207,7 +3253,7 @@
 			)
 		)
 		(property "Footprint" "SOIC127P600X175-8N"
-			(at 133.35 223.19 0)
+			(at 38.1 346.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4217,7 +3263,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-11/214624.pdf"
-			(at 133.35 323.19 0)
+			(at 38.1 446.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +3273,7 @@
 			)
 		)
 		(property "Description" "IC SENSOR MAG ROTARY 12BIT 8SOIC"
-			(at 106.68 128.27 0)
+			(at 11.43 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4236,7 +3282,7 @@
 			)
 		)
 		(property "Height" "1.75"
-			(at 133.35 523.19 0)
+			(at 38.1 646.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4246,7 +3292,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "ams OSRAM"
-			(at 133.35 623.19 0)
+			(at 38.1 746.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +3302,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AS5600-ASOM"
-			(at 133.35 723.19 0)
+			(at 38.1 846.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4266,7 +3312,7 @@
 			)
 		)
 		(property "Mouser Part Number" "985-AS5600-ASOM"
-			(at 133.35 823.19 0)
+			(at 38.1 946.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,7 +3322,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ams-OSRAM/AS5600-ASOM?qs=KTMMzrZdriG6aU1h9lJCUQ%3D%3D"
-			(at 133.35 923.19 0)
+			(at 38.1 1046.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4286,7 +3332,7 @@
 			)
 		)
 		(property "Arrow Part Number" "AS5600-ASOM"
-			(at 133.35 1023.19 0)
+			(at 38.1 1146.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,7 +3342,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/as5600-asom/ams-osram?utm_currency=USD&region=nac"
-			(at 133.35 1123.19 0)
+			(at 38.1 1246.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,6 +3500,48 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 161.925 68.58)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dd2be10c-708f-4995-b13e-6fc09628a9ce")
+		(property "Sheetname" "audio"
+			(at 161.925 67.8684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 161.925 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(page "4")
 				)
 			)
 		)
