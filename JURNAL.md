@@ -1,0 +1,1 @@
+**05.17** : some Chad replied to my question on electronics stackexchange. I will have to use a oscillator, not a crystal, and low noise LDOs instead of switching regulators
