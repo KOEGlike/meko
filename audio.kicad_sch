@@ -3384,71 +3384,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+1V8")
-		(at 226.06 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "16565d09-b6dd-43d9-bd95-f9dd28cd0249")
-		(property "Reference" "#PWR031"
-			(at 226.06 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+1V8"
-			(at 226.06 27.686 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.06 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 226.06 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89c37882-7dcf-4844-a925-c6b75b8c8164")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 125.73 36.83 0)
 		(unit 1)
@@ -3854,6 +3789,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 226.06 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30467817-e284-456c-a88e-c44810d76ae4")
+		(property "Reference" "#PWR03"
+			(at 226.06 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 225.552 27.686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 226.06 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2379bb1f-60cc-4b0e-8415-b863226baa67")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 149.86 36.83 0)
 		(unit 1)
@@ -4161,7 +4161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECS-2520SMV.pdf"
+		(property "Datasheet" "https://eu.mouser.com/datasheet/2/122/ECS_2520SMV-1628252.pdf"
 			(at 82.55 282.55 0)
 			(effects
 				(font
@@ -5019,7 +5019,7 @@
 			)
 		)
 		(property "Value" "+1V8"
-			(at 176.53 27.686 0)
+			(at 176.022 27.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5347,7 +5347,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 199.39 27.686 0)
+			(at 198.882 27.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5547,7 +5547,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 238.76 27.686 0)
+			(at 238.252 27.686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
