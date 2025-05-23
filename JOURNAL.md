@@ -6,7 +6,7 @@ created_at: "2025-04-29"
 ---
 ## 04.29: chose the soc, and usb uart switchin
 - choose the esp32-mini-1u because it has support for bluetooth audio and rust 
-- this chip doesn't have an integrated usb controller, so I had to chose a chip for usb to uart
+- this chip doesn't have an integrated usb controller, so I had to choose a chip for usb to uart
 **Total time: 1.5**
 ## 05.05: added the dac/amp chip, added display connector
 - there is little info on high quality dac/amp chips, after many days of research and pain a choose the ES9218P, which is a really nice chip to work with, but the datasheet is a bit lackluster
