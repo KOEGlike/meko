@@ -40,6 +40,11 @@ created_at: "2025-04-29"
 # 05.22: Added components, choose LDOs
 - I switched from a esp32-mini-1u to a esp32-pico-mini-02, for an integrated pcb antenna and a smaller from factor
 - Chose the micro SD slot, and added it to to the schematic
+- the same chad from electronics stackexchange replied to my other question about power delivery for this chip
 - Did a lot of datasheet reading abot LDOs and what to choose, and decided that will try to solder 1mm*1mm packages 
 **Total time: 3h**
-
+# 05.23: Power, power, POWER 
+- implemented the LDOs
+- learned a lot about filters, low-pass, high-pass, etc. Interesting topic 
+- again lots of reaiding
+**Total time: 4h**
