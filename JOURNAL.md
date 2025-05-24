@@ -48,3 +48,12 @@ created_at: "2025-04-29"
 - learned a lot about filters, low-pass, high-pass, etc. Interesting topic 
 - again lots of reaiding
 **Total time: 4h**
+## 05.24: inter chip COM 
+- the esp32 has a f#$* up io multiplexer if you want to do multiple things
+- the SD card pins and the JTAG pins are the same, so if you use an SD card you cant use JTAG, or vice-versa 
+- all of the pins that can output a i2s clock signal are used by uart or the boot pin
+- might need to figure something out for using the same pins for different things
+- wired up the hall-effect sensor, en and boot pins with the usb-to-uart adapter, some parts of the dac/amp chip
+- created a symbol for my display
+- read a bunch again
+**Total time:5h**

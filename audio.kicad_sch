@@ -1709,12 +1709,6 @@
 		(uuid "0693ddfc-35c0-45c1-bc18-d79714dd516f")
 	)
 	(junction
-		(at 21.59 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "07def874-30a2-4942-a867-8fd3db754489")
-	)
-	(junction
 		(at 140.97 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1751,12 +1745,6 @@
 		(uuid "52e30605-9acb-4e32-b8e2-fcda840bdff5")
 	)
 	(junction
-		(at 21.59 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "711bd9e1-2ac2-464e-9c8d-f30c1e4aa572")
-	)
-	(junction
 		(at 138.43 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1769,12 +1757,6 @@
 		(uuid "87ac10e2-cb79-49fb-ae85-8722beb2b089")
 	)
 	(junction
-		(at 44.45 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9190a762-e011-4fa5-86f3-3fe1ed785ced")
-	)
-	(junction
 		(at 133.35 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1785,12 +1767,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f5a23a2-9385-44b5-8b3c-e2b049ad5aa5")
-	)
-	(junction
-		(at 44.45 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a78c7544-7aef-4019-a7e7-d1294ddbbdb6")
 	)
 	(junction
 		(at 166.37 55.88)
@@ -2048,7 +2024,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 45.72) (xy 21.59 46.99)
+			(xy 21.59 45.72) (xy 21.59 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2065,16 +2041,6 @@
 			(type default)
 		)
 		(uuid "3717089d-0d2d-4f3d-8362-d6958f50cf4a")
-	)
-	(wire
-		(pts
-			(xy 44.45 46.99) (xy 54.61 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b38df7a-f59c-4551-958f-2d50f3cd49db")
 	)
 	(wire
 		(pts
@@ -2238,16 +2204,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 46.99) (xy 31.75 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52ebddbd-d1ec-43fd-86fb-465522a829cd")
-	)
-	(wire
-		(pts
 			(xy 87.63 91.44) (xy 87.63 90.17)
 		)
 		(stroke
@@ -2275,16 +2231,6 @@
 			(type default)
 		)
 		(uuid "55bf837b-3174-4f18-bb1c-108b54a6e65b")
-	)
-	(wire
-		(pts
-			(xy 31.75 57.15) (xy 31.75 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57579668-d9d6-4b8d-af9e-cdeeb9218cc7")
 	)
 	(wire
 		(pts
@@ -2415,16 +2361,6 @@
 			(type default)
 		)
 		(uuid "71eb1366-8f58-4e65-96b2-8ac474a3851d")
-	)
-	(wire
-		(pts
-			(xy 54.61 57.15) (xy 54.61 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "720079f5-82eb-43c8-b4c6-bcc09f712b66")
 	)
 	(wire
 		(pts
@@ -2568,17 +2504,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 45.72) (xy 44.45 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97d150a8-b2fc-47db-87f7-a3e6fdda7bef")
-	)
-	(wire
-		(pts
-			(xy 44.45 48.26) (xy 44.45 46.99)
+			(xy 44.45 45.72) (xy 44.45 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2685,16 +2611,6 @@
 			(type default)
 		)
 		(uuid "aa282647-0e3b-4fa8-aedc-997585de7e82")
-	)
-	(wire
-		(pts
-			(xy 54.61 46.99) (xy 54.61 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac38e165-99cd-452c-a496-ff5eaeebee61")
 	)
 	(wire
 		(pts
@@ -2828,16 +2744,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 46.99) (xy 31.75 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c73319b6-4aad-4734-8399-35a8a5f42ecc")
-	)
-	(wire
-		(pts
 			(xy 21.59 30.48) (xy 21.59 31.75)
 		)
 		(stroke
@@ -2968,16 +2874,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 57.15) (xy 31.75 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3b2db1c-0b1a-4f84-b642-fd7bc1fd3ca7")
-	)
-	(wire
-		(pts
 			(xy 125.73 63.5) (xy 125.73 54.61)
 		)
 		(stroke
@@ -2995,16 +2891,6 @@
 			(type default)
 		)
 		(uuid "e8546409-1599-4111-ae11-781c566c8920")
-	)
-	(wire
-		(pts
-			(xy 21.59 48.26) (xy 21.59 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9c9b151-340d-4630-910b-da91d966dcdc")
 	)
 	(wire
 		(pts
@@ -3065,16 +2951,6 @@
 			(type default)
 		)
 		(uuid "f208f30b-b2bc-4aef-b582-7e9112b65d58")
-	)
-	(wire
-		(pts
-			(xy 44.45 57.15) (xy 54.61 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb4db699-d37d-4173-8335-d14b64efd8e3")
 	)
 	(wire
 		(pts
@@ -4176,75 +4052,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 31.75 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "380b7fdf-032c-4b8f-a0de-e801bee89d31")
-		(property "Reference" "C4"
-			(at 35.56 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 34.29 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 32.7152 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 31.75 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ba2a1b3-7968-4744-9e30-c577cbe8e62b")
-		)
-		(pin "2"
-			(uuid "c1c7a35a-726b-4988-80dc-dfeef926ffa8")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
-					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -6449,75 +6256,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
 					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 54.61 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "caad7db7-e84f-4954-9743-57e2131c8f75")
-		(property "Reference" "C18"
-			(at 58.42 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 57.15 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.5752 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 54.61 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf17eb41-f34b-4712-ac9f-e32184d10b8f")
-		)
-		(pin "2"
-			(uuid "db3d9de9-6060-4923-bc44-0244d8adf5a6")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
-					(reference "C18")
 					(unit 1)
 				)
 			)
