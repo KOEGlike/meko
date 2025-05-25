@@ -1,0 +1,46 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SJ2-35954B-SMT-TR
+#
+DEF SJ2-35954B-SMT-TR J 0 40 N N 1 L N
+F0 "J" -401 601 50 H V L BNN
+F1 "SJ2-35954B-SMT-TR" -401 -701 50 H V L BNN
+F2 "CUI_SJ2-35954B-SMT-TR" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "1.04" 0 0 50 H I L BNN "PARTREV"
+F5 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
+F6 "5 mm" 0 0 50 H I L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F7 "CUI Devices" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+P 2 0 0 6 400 400 -300 400 N
+P 2 0 0 6 -300 400 -300 0 N
+P 2 0 0 6 -300 0 -250 0 N
+P 2 0 0 6 -250 0 -250 -250 N
+P 2 0 0 6 -250 -250 -350 -250 N
+P 2 0 0 6 -350 -250 -350 0 N
+P 2 0 0 6 -350 0 -300 0 N
+P 2 0 0 6 400 200 -100 200 N
+P 2 0 0 6 -100 200 -150 100 N
+P 2 0 0 6 -150 100 -200 200 N
+P 2 0 0 6 400 -400 100 -400 N
+P 2 0 0 6 100 -400 50 -300 N
+P 2 0 0 6 50 -300 0 -400 N
+P 2 0 0 6 400 0 0 0 N
+P 2 0 0 6 0 0 -50 -100 N
+P 2 0 0 6 -50 -100 -100 0 N
+P 2 0 0 6 400 -300 200 -300 N
+P 2 0 0 6 200 -300 200 -400 N
+P 4 0 0 6 200 -400 175 -350 225 -350 200 -400 f
+S -400 -500 400 500 0 0 10 f
+X ~ 1 600 400 200 L 40 40 0 0 P 
+X ~ 4 600 200 200 L 40 40 0 0 P 
+X ~ 2 600 -400 200 L 40 40 0 0 P 
+X ~ 3 600 0 200 L 40 40 0 0 P 
+X ~ 10 600 -300 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

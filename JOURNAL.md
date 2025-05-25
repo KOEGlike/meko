@@ -57,3 +57,14 @@ created_at: "2025-04-29"
 - created a symbol for my display
 - read a bunch again
 **Total time:5h**
+## 05.25: finishing up the schematic
+- finished display, aka copied reference design 
+- turns out you can you can use gpio0 as a regular gpio0, you just need to make sure that it doesn't get pulled low on boot, so my i2s clock is on gpio0 (aka the BOOT pin)
+- chose the headphone jack, and added the footprint and 3d model
+- still need to add esd protection in some places
+- added buttons
+- routed spi for the display, added test points
+- i dont have enough gpio to controll the DACs power chips, so they will all start up at once, which is not optimal, but....
+- i need to connect up the headphone jack
+**Total time: 3h**
+
