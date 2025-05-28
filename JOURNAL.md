@@ -74,5 +74,6 @@ created_at: "2025-04-29"
 - added more esd protection
 - added jack connector 
 - researched how inline volume controls work
-**Total time: 3h**
+- segmented schmatic
+**Total time: 4h**
 
