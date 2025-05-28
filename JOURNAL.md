@@ -67,4 +67,12 @@ created_at: "2025-04-29"
 - i dont have enough gpio to controll the DACs power chips, so they will all start up at once, which is not optimal, but....
 - i need to connect up the headphone jack
 **Total time: 3h**
+## 05.25: I'M ALMOST DONE 
+- added an I/O expander, because i ran out of I/O
+- added led, and haptic motor
+- since i added a io expander now i can control the boot sequence of the dac/amp 
+- added more esd protection
+- added jack connector 
+- researched how inline volume controls work
+**Total time: 3h**
 
