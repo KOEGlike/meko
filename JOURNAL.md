@@ -90,7 +90,7 @@ created_at: "2025-04-29"
   
 **Total time: 3h**
   
-## 05.25: I'M ALMOST DONE 
+## 05.25: I'M ALMOST DONE WITH THE SCHEMATIC 
 - added an I/O expander, because i ran out of I/O
 - added led, and haptic motor
 - since i added a io expander now i can control the boot sequence of the dac/amp 
@@ -100,4 +100,9 @@ created_at: "2025-04-29"
   
 **Total time: 5h**
   
-
+## 05.26: fixed stuff
+- removed separate i2c line for the dac, becouse i needed one more gpio for the a ldo enable pin
+- changed pull up resistor values on the i2c line
+  
+**Total time:0.75h**
+  
