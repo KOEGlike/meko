@@ -1,0 +1,184 @@
+(footprint "CD0201T20LC"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "CD0201-T2.0LC-1")
+	(tags "Diode ESD (Bi-directional)")
+	(property "Reference" "D**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "f0d2b0fd-e515-462d-9baa-73879b749c0e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "CD0201T20LC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81aec248-c6cd-4f0a-add3-2c28d75e09e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75595cad-8425-46de-8e0e-b191503ee17f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10c6879a-d499-4bfc-95a1-68a7ddf145aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.8 0)
+		(end -0.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b8cc527-7319-42bd-a4bc-5d95392fad84")
+	)
+	(fp_line
+		(start -0.7 0)
+		(end -0.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "159cdf1b-2532-41b0-9793-1dad30b63421")
+	)
+	(fp_arc
+		(start -0.8 0)
+		(mid -0.75 -0.05)
+		(end -0.7 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e19d6ad3-bb68-4a7b-91ea-242a8b8e992a")
+	)
+	(fp_arc
+		(start -0.7 0)
+		(mid -0.75 0.05)
+		(end -0.8 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "af3548fe-1bda-430b-9e5d-05439aa54524")
+	)
+	(fp_rect
+		(start -0.5 -0.3)
+		(end 0.5 0.3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "Margin")
+		(uuid "fcc3011a-25fe-405b-b9e4-1d0f277bea3c")
+	)
+	(fp_line
+		(start -0.3 -0.15)
+		(end 0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3938f62c-7554-4729-9769-aea499181959")
+	)
+	(fp_line
+		(start -0.3 0.15)
+		(end -0.3 -0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4ff1cfd7-30dd-4dd3-a767-ea66dacb6df0")
+	)
+	(fp_line
+		(start 0.3 -0.15)
+		(end 0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b832b4ab-706c-432c-ba95-62cf7d032d04")
+	)
+	(fp_line
+		(start 0.3 0.15)
+		(end -0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "68bd06b9-6d23-4f5a-9399-edb05629835a")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5c471764-a5ec-4d04-a4ce-84c3bdc3e220")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.2 0)
+		(size 0.25 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cac7e147-6e14-40af-b349-187f848acaf3")
+	)
+	(pad "2" smd rect
+		(at 0.2 0)
+		(size 0.25 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f06c8ff5-2db1-44b5-b819-ca7b4ab9f2e7")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/external/CD0201-T2.0LC/3D/CD0201-T2.0LC.stp"
+		(offset
+			(xyz 0 0 0.15)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
