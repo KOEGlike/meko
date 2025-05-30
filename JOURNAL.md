@@ -106,3 +106,12 @@ created_at: "2025-04-29"
   
 **Total time:0.75h**
   
+## 05.27: added fuel gauge
+- fixed small ERC issues
+- realised that i have no way to check the battery percentage
+- added a fuel gauge ic 
+- realised that the ic that i have chosen has the same i2c address as the hall encoder
+- chose another ic, this is bga, but only 3x3 so its not that bad 
+  
+**Total time: 2h**
+  

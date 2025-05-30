@@ -26,7 +26,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:Texas_X2SON-4_1x1mm_P0.65mm"
-			(at 0 0 0)
+			(at -5.08 14.732 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -158,24 +158,6 @@
 				)
 			)
 			(pin power_in line
-				(at 20.32 10.16 180)
-				(length 5.08)
-				(name "VOUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
 				(at 20.32 -5.08 180)
 				(length 5.08)
 				(name "GND"
@@ -204,6 +186,26 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "LP5907SNX-3.3_NOPB_1_1"
+			(pin power_out line
+				(at 20.32 10.16 180)
+				(length 5.08)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
