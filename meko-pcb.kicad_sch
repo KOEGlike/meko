@@ -1741,6 +1741,330 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "HD-EMB1204-SM:HD-EMB1204-SM"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "B"
+				(at -5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "HD-EMB1204-SM"
+				(at -5.08 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "HD-EMB1204-SM:PUI_HD-EMB1204-SM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DigiKey_Part_Number" "668-HD-EMB1204-SMTR-ND"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/HD-EMB1204-SM/PUI+Audio/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "3.4 mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/HD-EMB1204-SM/PUI+Audio/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MF" "PUI Audio"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "HD-EMB1204-SM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "12X4MM ERM HAPTIC 12000RPM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "PUI Audio"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "HD-EMB1204-SM_0_0"
+				(rectangle
+					(start -5.08 -7.62)
+					(end 5.08 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.572 1.016) (xy -3.556 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.064 1.524) (xy -4.064 0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.54)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.762) (xy 4.318 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "M"
+					(at -1.016 -0.254 0)
+					(effects
+						(font
+							(size 1.778 1.778)
+						)
+						(justify left bottom)
+					)
+				)
+				(pin passive line
+					(at -10.16 0 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "N"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:SolderJumper_2_Bridged"
 			(pin_numbers
 				(hide yes)
@@ -2775,191 +3099,6 @@
 						)
 					)
 					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Motor:Motor_DC"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Motor_DC"
-				(at 2.54 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Motor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "DC Motor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Motor_DC_0_0"
-				(polyline
-					(pts
-						(xy -1.27 -3.302) (xy -1.27 0.508) (xy 0 -2.032) (xy 1.27 0.508) (xy 1.27 -3.302)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Motor_DC_0_1"
-				(polyline
-					(pts
-						(xy 0 2.032) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.7272) (xy 0 2.0828)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -1.524)
-					(radius 3.2512)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -4.7752) (xy 0 -5.1816)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -7.62) (xy 0 -7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Motor_DC_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6085,7 +6224,7 @@
 	)
 	(rectangle
 		(start 50.8 92.71)
-		(end 97.79 129.54)
+		(end 106.68 129.54)
 		(stroke
 			(width 0)
 			(type dash)
@@ -6302,6 +6441,12 @@
 		(uuid "291c62d3-6de7-46b6-b317-947597f389db")
 	)
 	(junction
+		(at 64.77 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ebe1693-9f75-49b1-a3b2-c89fd333d271")
+	)
+	(junction
 		(at 199.39 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6344,7 +6489,7 @@
 		(uuid "3fa99af2-2fae-4553-bcb3-4af2a6d7f17b")
 	)
 	(junction
-		(at 82.55 97.79)
+		(at 74.93 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "405becc8-84f6-43f1-95cd-61bd05e2f8af")
@@ -6482,12 +6627,6 @@
 		(uuid "79c1f88b-000b-4bb9-aadd-b702aa3a33ae")
 	)
 	(junction
-		(at 68.58 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a4be040-5a99-4aed-9b95-e0da842fdfd2")
-	)
-	(junction
 		(at 320.04 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6596,6 +6735,12 @@
 		(uuid "b4b9e928-6eb6-4751-b826-ac2ff04bc41a")
 	)
 	(junction
+		(at 97.79 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7d99e5e-5717-488f-8a9a-e9d0d3f9d3fe")
+	)
+	(junction
 		(at 74.93 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6620,12 +6765,6 @@
 		(uuid "c80da8cb-539d-4b9b-8792-a0a333acd745")
 	)
 	(junction
-		(at 68.58 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c8990d89-a527-433b-8f0d-3705baf5f175")
-	)
-	(junction
 		(at 175.26 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6636,6 +6775,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ddb447d2-dd1d-4c80-b3af-3bbb3efec08f")
+	)
+	(junction
+		(at 64.77 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de4350bb-11b9-415d-b522-e76acb17ea07")
 	)
 	(junction
 		(at 74.93 167.64)
@@ -6712,6 +6857,10 @@
 	(no_connect
 		(at 180.34 66.04)
 		(uuid "8c2830b2-e53f-4608-8472-27d7d419db9c")
+	)
+	(no_connect
+		(at 96.52 107.95)
+		(uuid "ae5b3a50-1f86-44d9-9cd6-ffa464f3dd16")
 	)
 	(no_connect
 		(at 270.51 114.3)
@@ -6799,7 +6948,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 101.6) (xy 57.15 97.79)
+			(xy 53.34 101.6) (xy 53.34 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6856,6 +7005,16 @@
 			(type default)
 		)
 		(uuid "070b5898-e8b4-4dfc-9879-899acb4af160")
+	)
+	(wire
+		(pts
+			(xy 64.77 113.03) (xy 82.55 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07745291-304a-473c-98cb-341a2fae086f")
 	)
 	(wire
 		(pts
@@ -6939,7 +7098,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 119.38) (xy 74.93 119.38)
+			(xy 88.9 119.38) (xy 90.17 119.38)
 		)
 		(stroke
 			(width 0)
@@ -7189,6 +7348,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 97.79) (xy 74.93 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e891bf1-ac5a-4713-9c4d-f2b58234bbdf")
+	)
+	(wire
+		(pts
 			(xy 151.13 20.32) (xy 151.13 21.59)
 		)
 		(stroke
@@ -7309,7 +7478,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 113.03) (xy 82.55 114.3)
+			(xy 97.79 113.03) (xy 97.79 114.3)
 		)
 		(stroke
 			(width 0)
@@ -7346,6 +7515,16 @@
 			(type default)
 		)
 		(uuid "28a88f86-90a1-4d90-8d78-50d9c0b6e871")
+	)
+	(wire
+		(pts
+			(xy 97.79 102.87) (xy 97.79 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29398a1b-f2d3-41ef-a163-a2834d6c4a24")
 	)
 	(wire
 		(pts
@@ -7559,16 +7738,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 113.03) (xy 82.55 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34262fe3-0f71-4914-be67-7aed7f028715")
-	)
-	(wire
-		(pts
 			(xy 142.24 177.8) (xy 142.24 179.07)
 		)
 		(stroke
@@ -7719,7 +7888,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 82.55 97.79)
+			(xy 74.93 96.52) (xy 74.93 97.79)
 		)
 		(stroke
 			(width 0)
@@ -8109,6 +8278,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 102.87) (xy 76.2 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57549142-d8ff-4fa0-a0b3-33e3f2ed4f9e")
+	)
+	(wire
+		(pts
 			(xy 67.31 22.86) (xy 67.31 25.4)
 		)
 		(stroke
@@ -8119,7 +8298,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 113.03) (xy 68.58 113.03)
+			(xy 53.34 113.03) (xy 64.77 113.03)
 		)
 		(stroke
 			(width 0)
@@ -8489,7 +8668,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 97.79) (xy 68.58 97.79)
+			(xy 53.34 97.79) (xy 64.77 97.79)
 		)
 		(stroke
 			(width 0)
@@ -8559,7 +8738,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 119.38) (xy 66.04 119.38)
+			(xy 67.31 119.38) (xy 81.28 119.38)
 		)
 		(stroke
 			(width 0)
@@ -8749,16 +8928,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 97.79) (xy 82.55 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b8dc29a-52f2-409a-887e-7966fc62b03f")
-	)
-	(wire
-		(pts
 			(xy 227.33 93.98) (xy 224.79 93.98)
 		)
 		(stroke
@@ -8809,7 +8978,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 124.46) (xy 82.55 125.73)
+			(xy 97.79 124.46) (xy 97.79 125.73)
 		)
 		(stroke
 			(width 0)
@@ -9019,7 +9188,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 97.79) (xy 68.58 101.6)
+			(xy 64.77 97.79) (xy 64.77 101.6)
 		)
 		(stroke
 			(width 0)
@@ -9046,16 +9215,6 @@
 			(type default)
 		)
 		(uuid "899f71d8-0ede-4030-80b8-f0031eb74e5b")
-	)
-	(wire
-		(pts
-			(xy 68.58 97.79) (xy 82.55 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a67bb4b-a1db-43d1-84cf-35f147df76e7")
 	)
 	(wire
 		(pts
@@ -9779,6 +9938,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 97.79) (xy 74.93 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf069a26-011e-467a-8fe5-814907946377")
+	)
+	(wire
+		(pts
 			(xy 222.25 173.99) (xy 222.25 176.53)
 		)
 		(stroke
@@ -9989,7 +10158,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 109.22) (xy 68.58 113.03)
+			(xy 64.77 109.22) (xy 64.77 113.03)
 		)
 		(stroke
 			(width 0)
@@ -10329,6 +10498,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 102.87) (xy 97.79 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e840aa65-740a-42aa-a425-77bf1ec8e811")
+	)
+	(wire
+		(pts
 			(xy 242.57 166.37) (xy 242.57 160.02)
 		)
 		(stroke
@@ -10346,6 +10525,16 @@
 			(type default)
 		)
 		(uuid "e8544c12-546c-4799-aea8-755c36ba2fd6")
+	)
+	(wire
+		(pts
+			(xy 97.79 113.03) (xy 82.55 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e872c2cd-50bd-40e9-9424-8246a43e4567")
 	)
 	(wire
 		(pts
@@ -10599,7 +10788,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 109.22) (xy 57.15 113.03)
+			(xy 53.34 109.22) (xy 53.34 113.03)
 		)
 		(stroke
 			(width 0)
@@ -12058,7 +12247,7 @@
 		(uuid "f5c180c5-8249-4f5b-947e-9cf9208396cb")
 	)
 	(label "HAPTIC_MOTOR"
-		(at 52.07 119.38 0)
+		(at 67.31 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12320,7 +12509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 203.2 25.4 0)
 			(effects
 				(font
@@ -12857,7 +13046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 241.3 25.4 0)
 			(effects
 				(font
@@ -14878,7 +15067,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 			(at 312.42 25.4 0)
 			(effects
 				(font
@@ -15085,7 +15274,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 			(at 339.09 25.4 0)
 			(effects
 				(font
@@ -15510,7 +15699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 168.91 25.4 0)
 			(effects
 				(font
@@ -15893,7 +16082,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 68.58 105.41 0)
+		(at 64.77 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15901,7 +16090,7 @@
 		(dnp no)
 		(uuid "6c83c29a-6313-4a5f-8b66-1b5d79cf9e6a")
 		(property "Reference" "C8"
-			(at 72.39 104.1399 0)
+			(at 68.58 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15910,7 +16099,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 72.39 106.6799 0)
+			(at 68.58 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15919,7 +16108,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 69.5452 109.22 0)
+			(at 65.7352 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15928,7 +16117,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 105.41 0)
+			(at 64.77 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15937,7 +16126,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 68.58 105.41 0)
+			(at 64.77 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16098,6 +16287,188 @@
 		)
 	)
 	(symbol
+		(lib_id "HD-EMB1204-SM:HD-EMB1204-SM")
+		(at 86.36 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c4d8d65-58b9-4e6f-a7c0-2322c9a05ab2")
+		(property "Reference" "M1"
+			(at 89.916 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HD-EMB1204-SM"
+			(at 86.36 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "HD-EMB1204-SM:PUI_HD-EMB1204-SM"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" "668-HD-EMB1204-SMTR-ND"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/HD-EMB1204-SM/PUI+Audio/view-part/?ref=snap"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "3.4 mm"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/HD-EMB1204-SM/PUI+Audio/view-part/?ref=eda"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MF" "PUI Audio"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "HD-EMB1204-SM"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "12X4MM ERM HAPTIC 12000RPM"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "PUI Audio"
+			(at 86.36 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "N"
+			(uuid "15435204-3426-4a5c-824a-129fbe14b61c")
+		)
+		(pin "SH1"
+			(uuid "cb3abb2f-ce32-484c-9e9d-162bcabb6f6b")
+		)
+		(pin "P"
+			(uuid "a4491c28-df09-45c2-9458-897252c90a21")
+		)
+		(instances
+			(project ""
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 137.16 30.48 0)
 		(unit 1)
@@ -16123,7 +16494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 137.16 25.4 0)
 			(effects
 				(font
@@ -16167,7 +16538,7 @@
 	)
 	(symbol
 		(lib_id "Diode:US1B")
-		(at 57.15 105.41 270)
+		(at 53.34 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16176,7 +16547,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f55fd55-60c7-45b5-9e30-d48e189e79f2")
 		(property "Reference" "D1"
-			(at 59.69 104.1399 90)
+			(at 55.88 104.1399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16185,7 +16556,7 @@
 			)
 		)
 		(property "Value" "US1B"
-			(at 59.69 106.6799 90)
+			(at 55.88 106.6799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16194,7 +16565,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 52.705 105.41 0)
+			(at 48.895 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16203,7 +16574,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds16008.pdf"
-			(at 57.15 105.41 0)
+			(at 53.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16212,7 +16583,7 @@
 			)
 		)
 		(property "Description" "100V, 1A, General Purpose Rectifier Diode, SMA(DO-214AC)"
-			(at 57.15 105.41 0)
+			(at 53.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16221,7 +16592,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 57.15 105.41 0)
+			(at 53.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16230,7 +16601,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 57.15 105.41 0)
+			(at 53.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16599,7 +16970,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 69.85 119.38 90)
+		(at 85.09 119.38 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16607,7 +16978,7 @@
 		(dnp no)
 		(uuid "8820ae07-5b0f-4fbc-a2b5-25f89b73a5c4")
 		(property "Reference" "R9"
-			(at 68.199 114.935 90)
+			(at 83.439 114.935 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16616,7 +16987,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 68.199 117.475 90)
+			(at 83.439 117.475 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16625,7 +16996,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 69.85 121.158 90)
+			(at 85.09 121.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16634,7 +17005,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 119.38 0)
+			(at 85.09 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16643,7 +17014,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 69.85 119.38 0)
+			(at 85.09 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17463,7 +17834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 276.86 25.4 0)
 			(effects
 				(font
@@ -17713,7 +18084,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:SS8050")
-		(at 80.01 119.38 0)
+		(at 95.25 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17721,7 +18092,7 @@
 		(dnp no)
 		(uuid "bf793d74-5511-41a7-baaf-706aa9aba8fa")
 		(property "Reference" "Q3"
-			(at 85.09 118.1099 0)
+			(at 90.932 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17730,7 +18101,7 @@
 			)
 		)
 		(property "Value" "SS8050"
-			(at 85.09 120.6499 0)
+			(at 87.884 122.428 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17739,7 +18110,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 85.09 126.746 0)
+			(at 100.33 126.746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17750,7 +18121,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 85.09 124.206 0)
+			(at 100.33 124.206 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17760,7 +18131,7 @@
 			)
 		)
 		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 114.046 121.666 0)
+			(at 129.286 121.666 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18416,7 +18787,8 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 82.55 96.52 0)
+		(at 74.93 96.52 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18424,7 +18796,7 @@
 		(dnp no)
 		(uuid "d1cc068a-1bc0-4528-95d1-13c9f8e6fdff")
 		(property "Reference" "#PWR04"
-			(at 82.55 100.33 0)
+			(at 74.93 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18433,7 +18805,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 77.978 96.012 0)
+			(at 78.486 94.996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18441,7 +18813,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 96.52 0)
+			(at 74.93 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18450,7 +18822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 96.52 0)
+			(at 74.93 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18459,7 +18831,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 82.55 96.52 0)
+			(at 74.93 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18758,8 +19130,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 125.73 0)
-		(mirror y)
+		(at 97.79 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18767,7 +19138,7 @@
 		(dnp no)
 		(uuid "d6341bd8-ca24-4e29-b169-ca4a9fb02793")
 		(property "Reference" "#PWR07"
-			(at 82.55 132.08 0)
+			(at 97.79 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18776,7 +19147,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 78.232 127.762 0)
+			(at 102.108 127.762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18784,7 +19155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 125.73 0)
+			(at 97.79 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18793,7 +19164,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 125.73 0)
+			(at 97.79 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18802,7 +19173,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 125.73 0)
+			(at 97.79 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18954,73 +19325,6 @@
 			(project ""
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Motor:Motor_DC")
-		(at 82.55 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "df686272-765e-43f2-9eb4-4f61efb22ea4")
-		(property "Reference" "M1"
-			(at 90.424 104.902 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Motor_DC"
-			(at 90.678 106.426 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 106.426 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 106.426 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Motor"
-			(at 82.55 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48d65450-89cd-4eff-9105-d438fbbfd81d")
-		)
-		(pin "2"
-			(uuid "6b481be5-eed5-418d-b9e8-f88434cc4358")
-		)
-		(instances
-			(project ""
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "M1")
 					(unit 1)
 				)
 			)
