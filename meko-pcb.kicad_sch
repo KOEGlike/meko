@@ -6268,7 +6268,7 @@
 	)
 	(text "addr(dec.):112"
 		(exclude_from_sim no)
-		(at 114.554 174.752 0)
+		(at 119.634 172.974 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6433,12 +6433,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24d2acaa-4ad2-4059-85ba-f3d8f2be1a76")
-	)
-	(junction
-		(at 82.55 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "291c62d3-6de7-46b6-b317-947597f389db")
 	)
 	(junction
 		(at 64.77 113.03)
@@ -6663,6 +6657,12 @@
 		(uuid "91bd3a6e-96e5-45af-98e1-96ce82708c8a")
 	)
 	(junction
+		(at 148.59 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93409e8c-e5e3-4c02-bba1-49adebbe6379")
+	)
+	(junction
 		(at 217.17 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6837,22 +6837,24 @@
 		(uuid "f36a41c3-01da-4bbc-8fa5-97c822ca116e")
 	)
 	(junction
+		(at 148.59 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f73aeea4-30de-4742-9401-4fafaa2bec96")
+	)
+	(junction
 		(at 130.81 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd08898c-561f-42e4-9ff9-25f17b3beaed")
 	)
 	(no_connect
-		(at 257.81 121.92)
-		(uuid "2c93870d-d50d-439d-af99-11291d1426c4")
-	)
-	(no_connect
 		(at 270.51 106.68)
 		(uuid "30aadc92-ad6b-47f5-9cb2-f1096a72cac9")
 	)
 	(no_connect
-		(at 257.81 119.38)
-		(uuid "5283a0dc-794e-46f9-8fea-cd492f835a51")
+		(at 259.08 121.92)
+		(uuid "73fe6c6d-0a5b-4875-9767-296bbba8a023")
 	)
 	(no_connect
 		(at 180.34 66.04)
@@ -6918,6 +6920,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 121.92) (xy 270.51 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01661830-b189-4440-bef7-6118bd6f0cef")
+	)
+	(wire
+		(pts
 			(xy 74.93 162.56) (xy 74.93 165.1)
 		)
 		(stroke
@@ -6978,7 +6990,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 67.31) (xy 157.48 67.31)
+			(xy 147.32 67.31) (xy 148.59 67.31)
 		)
 		(stroke
 			(width 0)
@@ -7008,7 +7020,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 113.03) (xy 82.55 113.03)
+			(xy 64.77 113.03) (xy 97.79 113.03)
 		)
 		(stroke
 			(width 0)
@@ -8438,7 +8450,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 50.8) (xy 113.03 50.8)
+			(xy 102.87 50.8) (xy 116.84 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8728,16 +8740,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 121.92) (xy 270.51 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f5ee1c3-fd1b-4d4d-ab73-eded29668705")
-	)
-	(wire
-		(pts
 			(xy 67.31 119.38) (xy 81.28 119.38)
 		)
 		(stroke
@@ -8955,6 +8957,16 @@
 			(type default)
 		)
 		(uuid "7dc538d5-7617-4b9b-8104-a4d8a4562084")
+	)
+	(wire
+		(pts
+			(xy 148.59 67.31) (xy 157.48 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ddd39ba-0ec6-4efd-8bca-1bc0f2dba9ea")
 	)
 	(wire
 		(pts
@@ -9338,16 +9350,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 53.34) (xy 113.03 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92bf52cc-aea3-430f-a5f8-e6d610ae445c")
-	)
-	(wire
-		(pts
 			(xy 162.56 30.48) (xy 163.83 30.48)
 		)
 		(stroke
@@ -9518,7 +9520,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 59.69) (xy 147.32 59.69)
+			(xy 157.48 59.69) (xy 148.59 59.69)
 		)
 		(stroke
 			(width 0)
@@ -10068,6 +10070,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 119.38) (xy 270.51 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8f2a3a9-7a98-40b9-9b36-fd66cc2b3e54")
+	)
+	(wire
+		(pts
 			(xy 116.84 60.96) (xy 102.87 60.96)
 		)
 		(stroke
@@ -10168,16 +10180,6 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 119.38) (xy 270.51 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0a66292-86bd-4ecb-9c6b-e306af3c50ff")
-	)
-	(wire
-		(pts
 			(xy 83.82 165.1) (xy 93.98 165.1)
 		)
 		(stroke
@@ -10185,6 +10187,16 @@
 			(type default)
 		)
 		(uuid "d0dedeb2-b312-405c-af59-ae9612a2b252")
+	)
+	(wire
+		(pts
+			(xy 148.59 59.69) (xy 147.32 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0e5ea21-9557-4911-96c9-dc22c4de4b46")
 	)
 	(wire
 		(pts
@@ -10338,6 +10350,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 53.34) (xy 116.84 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcda13b6-83ee-4386-a4a4-9cec01808017")
+	)
+	(wire
+		(pts
 			(xy 297.18 154.94) (xy 297.18 153.67)
 		)
 		(stroke
@@ -10468,16 +10490,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 111.76) (xy 82.55 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e629b5dd-2b90-466f-ae7d-461dbe4f4f90")
-	)
-	(wire
-		(pts
 			(xy 184.15 101.6) (xy 184.15 109.22)
 		)
 		(stroke
@@ -10525,16 +10537,6 @@
 			(type default)
 		)
 		(uuid "e8544c12-546c-4799-aea8-755c36ba2fd6")
-	)
-	(wire
-		(pts
-			(xy 97.79 113.03) (xy 82.55 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e872c2cd-50bd-40e9-9424-8246a43e4567")
 	)
 	(wire
 		(pts
@@ -10838,7 +10840,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 106.68) (xy 33.02 106.68)
+			(xy 10.16 106.68) (xy 33.02 106.68)
 		)
 		(stroke
 			(width 0)
@@ -11336,16 +11338,6 @@
 		)
 		(uuid "41f0c6ec-fb5b-4983-bdaf-371ccda71c01")
 	)
-	(label "AUDIO_DATA_CLK"
-		(at 16.51 106.68 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4342b22d-be22-4987-a3c8-efbeb4602d22")
-	)
 	(label "EXP_~{RES}"
 		(at 110.49 154.94 0)
 		(effects
@@ -11526,16 +11518,6 @@
 		)
 		(uuid "64e586dd-ee35-43e5-8936-ccfbd336370c")
 	)
-	(label "AUDIO_DATA1"
-		(at 116.84 60.96 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "669af5c7-d6c0-42bf-a42c-5b7d92d410c7")
-	)
 	(label "AUDIO_TN"
 		(at 21.59 132.08 0)
 		(effects
@@ -11707,7 +11689,7 @@
 		(uuid "88d06bfa-ca1b-4f50-a42a-2b41949bada7")
 	)
 	(label "I2C_SCL"
-		(at 113.03 50.8 180)
+		(at 116.84 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11725,6 +11707,16 @@
 			(justify right bottom)
 		)
 		(uuid "8b94c831-869e-4094-a9ca-b050abe60eda")
+	)
+	(label "AUDIO_DATA_2"
+		(at 116.84 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8d50e903-ad9c-47e7-8232-a81dd3ae90c0")
 	)
 	(label "MEM_DAT2"
 		(at 25.4 154.94 0)
@@ -12027,7 +12019,7 @@
 		(uuid "d41388e9-74af-4ff3-8dda-11bca68c1274")
 	)
 	(label "I2C_SDA"
-		(at 113.03 53.34 180)
+		(at 116.84 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12177,7 +12169,7 @@
 		(uuid "e765c383-1363-422b-a3e0-74c810afb8cc")
 	)
 	(label "AUDIO_DATA1"
-		(at 116.84 63.5 180)
+		(at 116.84 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12235,6 +12227,16 @@
 			(justify right bottom)
 		)
 		(uuid "ef28a899-e267-4a04-a146-29403981b37c")
+	)
+	(label "AUDIO_DATA_CLK{slash}BOOT"
+		(at 10.16 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f13cc75f-d2fe-4560-be86-79f7eb1fbc79")
 	)
 	(label "ESP_EN"
 		(at 330.2 30.48 180)
@@ -13157,6 +13159,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 148.59 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "228648b5-1148-4649-b036-a76bc004d2db")
+		(property "Reference" "TP19"
+			(at 146.558 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 151.13 57.6579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 148.59 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9c03afb-34c9-4f1e-97e9-a3f35438bc50")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "TP19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TCAL9538RSVR:TCAL9538RSVR")
 		(at 129.54 154.94 0)
 		(unit 1)
@@ -14029,6 +14098,73 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 148.59 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30051ada-1e86-4d98-bb46-666c08d6e643")
+		(property "Reference" "TP20"
+			(at 146.558 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 151.13 65.2779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 153.67 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 148.59 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48cd863b-c083-4c60-b950-57afcfe9acfc")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "TP20")
 					(unit 1)
 				)
 			)

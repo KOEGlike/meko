@@ -113,6 +113,7 @@ created_at: "2025-04-29"
 - realised that the ic that i have chosen has the same i2c address as the hall encoder
 - chose another ic, this is bga, but only 3x3 so its not that bad 
 - added all the missing 3d models
+- ready for layout
   
 **Total time: 3h**
   
