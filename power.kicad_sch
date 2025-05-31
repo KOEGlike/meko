@@ -6278,72 +6278,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+1V8")
-		(at 179.07 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1156c474-0403-476b-b244-c282cb3b2b8f")
-		(property "Reference" "#PWR036"
-			(at 179.07 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3AVCC"
-			(at 179.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 179.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "801cc5b0-aef3-4770-9d9b-4efbde685024")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LP5907SNX-1-8-NOPB:LP5907SNX-1.8_NOPB")
 		(at 203.2 100.33 0)
 		(unit 1)
@@ -6725,72 +6659,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+1V8")
-		(at 173.99 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24c5a5fd-fa00-41f6-9a90-c3aa4a1c512c")
-		(property "Reference" "#PWR045"
-			(at 173.99 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3AVCC"
-			(at 173.99 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 173.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "66734a04-ef29-4580-96c4-b2e714823454")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LP5907SNX-1-8-NOPB:LP5907SNX-1.8_NOPB")
 		(at 198.12 142.24 0)
 		(unit 1)
@@ -6863,6 +6731,138 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 173.99 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2af6c117-fda6-4ecc-a5be-a2af71c6eff5")
+		(property "Reference" "#PWR045"
+			(at 173.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 173.99 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3f86018-60c1-4aea-aa9a-6e7cbfde52a2")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 179.07 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b3f9930-e13b-469a-b511-8cabfc8d35e8")
+		(property "Reference" "#PWR036"
+			(at 179.07 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 179.07 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 179.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bea3ad5a-1801-4e97-8a67-a8d9d8e0810e")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)

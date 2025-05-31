@@ -120,3 +120,7 @@ created_at: "2025-04-29"
 ## 05.28: starting layout
 - realised that i still need to chose the battery connector, i went with PH2.0 
 - changed footprint of sk6805
+- started the layout, it is kinda hard 
+  
+**Total time:2h**
+  
