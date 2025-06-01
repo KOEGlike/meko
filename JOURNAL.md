@@ -125,7 +125,7 @@ created_at: "2025-04-29"
 **Total time:2h**
   
 ## 06.01
-- made a mockup
+- made a mockup  
 ![mockup](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4d157f3a02e474d4ca8f6a1d4b66b37a692a462f_screenshot_20250601_105028.png)
 - arranged the display and the hall sensor based on the mockup
 - decided to fold the flex display cable, because i had no space for the hall sensor, luckily my connector has contacts on both sides
