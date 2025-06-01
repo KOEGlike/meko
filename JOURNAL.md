@@ -100,13 +100,13 @@ created_at: "2025-04-29"
   
 **Total time: 5h**
   
-## 05.26: fixed stuff
+## 05.29: fixed stuff
 - removed separate i2c line for the dac, becouse i needed one more gpio for the a ldo enable pin
 - changed pull up resistor values on the i2c line
   
 **Total time:0.75h**
   
-## 05.27: added fuel gauge, 3d models
+## 05.30: added fuel gauge, 3d models
 - fixed small ERC issues
 - realised that i have no way to check the battery percentage
 - added a fuel gauge ic 
@@ -117,10 +117,19 @@ created_at: "2025-04-29"
   
 **Total time: 3h**
   
-## 05.28: starting layout
+## 05.31: starting layout
 - realised that i still need to chose the battery connector, i went with PH2.0 
 - changed footprint of sk6805
 - started the layout, it is kinda hard 
   
 **Total time:2h**
+  
+## 06.01
+- made a mockup
+![mockup](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4d157f3a02e474d4ca8f6a1d4b66b37a692a462f_screenshot_20250601_105028.png)
+- arranged the display and the hall sensor based on the mockup
+- decided to fold the flex display cable, because i had no space for the hall sensor, luckily my connector has contacts on both sides
+- i have to reorder the pins, because of the folding on the flex connector
+  
+**Total time: 2h**
   
