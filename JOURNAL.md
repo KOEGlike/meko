@@ -130,6 +130,7 @@ created_at: "2025-04-29"
 - arranged the display and the hall sensor based on the mockup
 - decided to fold the flex display cable, because i had no space for the hall sensor, luckily my connector has contacts on both sides
 - i have to reorder the pins, because of the folding on the flex connector
+- reordered the pins
   
 **Total time: 2h**
   
