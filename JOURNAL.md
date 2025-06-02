@@ -124,7 +124,7 @@ created_at: "2025-04-29"
   
 **Total time:2h**
   
-## 06.01
+## 06.01: mockup
 - made a mockup
 ![mockup](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4d157f3a02e474d4ca8f6a1d4b66b37a692a462f_screenshot_20250601_105028.png)
 - arranged the display and the hall sensor based on the mockup
@@ -133,4 +133,11 @@ created_at: "2025-04-29"
 - reordered the pins
   
 **Total time: 2h**
+  
+## 06.02
+- arranged the jack and power button based on the mockup
+- laid out the dac/amp chip
+- added charging led, so you know if you are charging your player 
+  
+**Total time: 1h**
   
