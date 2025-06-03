@@ -3167,22 +3167,10 @@
 		(uuid "0f5e9aee-8f09-4bef-b919-6da65de4d4dd")
 	)
 	(junction
-		(at 157.48 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1027f869-c692-46fc-ae9e-59469e718251")
-	)
-	(junction
 		(at 220.98 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "15677214-7029-4d92-a582-499f64902876")
-	)
-	(junction
-		(at 80.01 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1cff9eec-3820-4950-8036-bdcd526bcce2")
 	)
 	(junction
 		(at 267.97 128.27)
@@ -3275,12 +3263,6 @@
 		(uuid "7208efe8-7ad2-45d6-8346-83df26d3d00c")
 	)
 	(junction
-		(at 157.48 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7b18e095-cd2b-4c39-8158-ef850c26e88f")
-	)
-	(junction
 		(at 157.48 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3303,12 +3285,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "972d69fd-ddf2-48d3-824a-25050c072410")
-	)
-	(junction
-		(at 220.98 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "97cccbee-ec13-4f02-9070-0574dd158fd9")
 	)
 	(junction
 		(at 29.21 132.08)
@@ -3529,16 +3505,6 @@
 			(type default)
 		)
 		(uuid "015d637b-39da-4f34-8d45-3db0eb30bb0d")
-	)
-	(wire
-		(pts
-			(xy 80.01 139.7) (xy 80.01 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "022ff501-431a-466d-a111-5a2fe2f43ff2")
 	)
 	(wire
 		(pts
@@ -3959,16 +3925,6 @@
 			(type default)
 		)
 		(uuid "34e1e3b6-85af-44d7-99d2-37f5addb26c9")
-	)
-	(wire
-		(pts
-			(xy 220.98 139.7) (xy 220.98 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "353440a7-ebdb-4cc6-bdab-60fb086c2ad6")
 	)
 	(wire
 		(pts
@@ -4592,16 +4548,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 97.79) (xy 157.48 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "830f7b2b-d623-4c78-85c6-5d29a6631518")
-	)
-	(wire
-		(pts
 			(xy 22.86 33.02) (xy 26.67 33.02)
 		)
 		(stroke
@@ -4689,16 +4635,6 @@
 			(type default)
 		)
 		(uuid "8e43cd7d-8bf5-44b6-8433-9073597c8f12")
-	)
-	(wire
-		(pts
-			(xy 157.48 139.7) (xy 157.48 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e70195b-b16f-4259-8894-12793fe7047b")
 	)
 	(wire
 		(pts
@@ -6497,76 +6433,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 157.48 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1fb4f896-4ba5-4a7b-a327-e4ef5fafec44")
-		(property "Reference" "C30"
-			(at 161.29 92.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 161.29 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 158.4452 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 157.48 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2fb4e8b2-7895-4b0c-b572-0d90ce4a042f")
-		)
-		(pin "1"
-			(uuid "faf58fcb-d096-4e2b-95a0-9559ebf98afe")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LP5912-3_3DRVR:LP5912-3.3DRVR")
 		(at 262.89 128.27 0)
 		(mirror y)
@@ -7042,76 +6908,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 157.48 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2cefde2a-2583-43f3-a120-1dbfdfee9184")
-		(property "Reference" "C37"
-			(at 161.29 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 161.29 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 158.4452 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 157.48 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "304b9ffa-d0a0-4f9e-a969-05bdf78e6261")
-		)
-		(pin "1"
-			(uuid "18a7dd41-0487-408a-955e-501c53f4f86b")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -8364,76 +8160,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 220.98 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b9deb4c-5bbf-41fc-835c-afd49d2125b3")
-		(property "Reference" "C39"
-			(at 224.79 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 224.79 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 221.9452 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 220.98 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "41c3b099-6175-4028-9891-c6b3782322e0")
-		)
-		(pin "1"
-			(uuid "1c703f86-a9a5-44f3-9a6b-401226b84b3f")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -10571,76 +10297,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 80.01 135.89 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c5e6381b-af77-4fe9-af8b-a3e576b83b4d")
-		(property "Reference" "C35"
-			(at 83.82 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 83.82 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 80.9752 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 80.01 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0e7cc6e2-2d87-442f-a733-d40c7f4d8d46")
-		)
-		(pin "1"
-			(uuid "852dfefb-6dc8-44ff-885f-1ddaa56d98bf")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "C35")
 					(unit 1)
 				)
 			)

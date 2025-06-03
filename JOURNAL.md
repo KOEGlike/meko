@@ -134,10 +134,13 @@ created_at: "2025-04-29"
   
 **Total time: 2h**
   
-## 06.02
+## 06.02: layout is like a puzzle with multiple correct solutions
 - arranged the jack and power button based on the mockup
 - laid out the dac/amp chip
 - added charging led, so you know if you are charging your player 
   
 **Total time: 1h**
   
+## 06.03: more layout
+- arranged the button pull ups and caps 
+- moved around the dac/amp
