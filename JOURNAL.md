@@ -144,3 +144,8 @@ created_at: "2025-04-29"
 ## 06.03: more layout
 - arranged the button pull ups and caps 
 - moved around the dac/amp
+- laid out power
+- laid out some parts of display
+  
+**Total time: 4h**
+  
