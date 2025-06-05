@@ -2455,12 +2455,6 @@
 		(uuid "27835fd9-57b6-463d-86d5-9552a49978f0")
 	)
 	(junction
-		(at 133.35 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a746f13-b7c6-462f-ba06-ac506916712b")
-	)
-	(junction
 		(at 44.45 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2513,12 +2507,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "978891af-e9fd-4d6d-8e0c-2acd3e699c1c")
-	)
-	(junction
-		(at 153.67 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9f5a23a2-9385-44b5-8b3c-e2b049ad5aa5")
 	)
 	(junction
 		(at 121.92 147.32)
@@ -2818,7 +2806,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 50.8) (xy 133.35 52.07)
+			(xy 133.35 50.8) (xy 133.35 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2968,7 +2956,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 53.34) (xy 153.67 52.07)
+			(xy 153.67 45.72) (xy 153.67 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3118,16 +3106,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 52.07) (xy 153.67 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bcaf3ae-b5ff-4ac5-8367-8c60d86718d1")
-	)
-	(wire
-		(pts
 			(xy 161.29 111.76) (xy 154.94 111.76)
 		)
 		(stroke
@@ -3155,16 +3133,6 @@
 			(type default)
 		)
 		(uuid "5077c798-fbd0-467d-80a6-4206d648a4de")
-	)
-	(wire
-		(pts
-			(xy 133.35 52.07) (xy 133.35 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "522fc33b-376e-4bff-82e2-dde8194b2fba")
 	)
 	(wire
 		(pts
@@ -3415,16 +3383,6 @@
 			(type default)
 		)
 		(uuid "7871d7d8-b5d3-4ab1-8760-df62404ece98")
-	)
-	(wire
-		(pts
-			(xy 153.67 52.07) (xy 153.67 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f09abb1-e124-4d62-858a-0616a6cafaf5")
 	)
 	(wire
 		(pts
@@ -4115,16 +4073,6 @@
 			(type default)
 		)
 		(uuid "eca2126a-86a9-4622-88b5-aaded33aa220")
-	)
-	(wire
-		(pts
-			(xy 133.35 52.07) (xy 142.24 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed086595-6f17-4251-8944-b979d9c3855d")
 	)
 	(wire
 		(pts
@@ -6607,73 +6555,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 146.05 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6ef5515e-81cb-4df2-9c0b-0b78f1efc336")
-		(property "Reference" "R30"
-			(at 146.05 48.006 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 146.05 49.784 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 146.05 53.848 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 146.05 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2f39ae06-295e-42e2-b132-34cef80aaf85")
-		)
-		(pin "1"
-			(uuid "95b1648b-b5ca-4ff1-a4b0-f2c747135f88")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/dd2be10c-708f-4995-b13e-6fc09628a9ce"
-					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 57.15 52.07 0)
 		(unit 1)
@@ -6961,7 +6842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3AVDD"
+		(property "Value" "+3V3"
 			(at 113.538 34.29 0)
 			(effects
 				(font
@@ -7563,7 +7444,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 153.67 53.34 0)
+		(at 153.67 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7571,7 +7452,7 @@
 		(dnp no)
 		(uuid "9e030c59-aa91-4ff3-9019-37029bbeb3ce")
 		(property "Reference" "#PWR079"
-			(at 153.67 59.69 0)
+			(at 153.67 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7580,7 +7461,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 57.15 0)
+			(at 153.67 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7588,7 +7469,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 53.34 0)
+			(at 153.67 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7597,7 +7478,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 53.34 0)
+			(at 153.67 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7606,7 +7487,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 53.34 0)
+			(at 153.67 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
