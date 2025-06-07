@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -196,7 +196,11 @@
         0.4,
         0.5,
         0.6,
-        0.7
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -500,15 +504,31 @@
         "wire_width": 6
       },
       {
+        "bus_width": 12,
         "clearance": 0.09,
         "line_style": 0,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
-        "via_drill": 0.3
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.12,
+        "line_style": 0,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -524,6 +544,18 @@
       {
         "netclass": "PWR",
         "pattern": "+1V8*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB/D*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "/power/REG-OUT"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V"
       }
     ]
   },

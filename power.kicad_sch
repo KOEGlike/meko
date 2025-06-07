@@ -3251,6 +3251,12 @@
 		(uuid "59020d61-8868-4275-abf4-942ddb7e8565")
 	)
 	(junction
+		(at 179.07 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59cf3562-ab7e-494c-932b-6f7ae72e73c2")
+	)
+	(junction
 		(at 36.83 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3317,6 +3323,12 @@
 		(uuid "af75a6bf-3b3b-48df-a483-ef3cc1c7a1aa")
 	)
 	(junction
+		(at 173.99 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afc041c1-f8e6-43db-9ebc-b522ddd6e052")
+	)
+	(junction
 		(at 226.06 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3339,12 +3351,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7f0b4f5-b192-408f-a866-385c3bfbb967")
-	)
-	(junction
-		(at 173.99 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3e85773-47d8-4f09-8871-f3017dc5f504")
 	)
 	(junction
 		(at 222.25 69.85)
@@ -3449,16 +3455,16 @@
 		(uuid "f3411ad3-aade-4737-8958-d673c86d5ff1")
 	)
 	(junction
+		(at 132.08 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6809071-9e7c-4bcb-8a48-2eb58a669d55")
+	)
+	(junction
 		(at 115.57 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f86b38d9-6d7d-4c56-8eab-ed519b942388")
-	)
-	(junction
-		(at 179.07 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa2cbbb7-4096-4bca-af94-0da1be76861e")
 	)
 	(junction
 		(at 157.48 132.08)
@@ -3646,16 +3652,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 90.17) (xy 109.22 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "136a291e-7f21-49bd-90d9-2a8a37aae6b2")
-	)
-	(wire
-		(pts
 			(xy 134.62 39.37) (xy 134.62 25.4)
 		)
 		(stroke
@@ -3693,6 +3689,16 @@
 			(type default)
 		)
 		(uuid "1b5c32f8-d8a5-4b2a-8046-46483d65478c")
+	)
+	(wire
+		(pts
+			(xy 207.01 59.69) (xy 213.36 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be3b495-b36a-4c21-81a7-53ff713f4b61")
 	)
 	(wire
 		(pts
@@ -3806,6 +3812,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 127) (xy 232.41 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "257de473-692d-45b2-8cca-622da7d433f1")
+	)
+	(wire
+		(pts
 			(xy 123.19 46.99) (xy 123.19 55.88)
 		)
 		(stroke
@@ -3846,16 +3862,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 132.08) (xy 179.07 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b02abd8-4ea1-43f7-81a2-a98ccea7920f")
-	)
-	(wire
-		(pts
 			(xy 267.97 147.32) (xy 250.19 147.32)
 		)
 		(stroke
@@ -3873,16 +3879,6 @@
 			(type default)
 		)
 		(uuid "2db8bbc3-d2a3-4d84-963d-56c1e5f2e69f")
-	)
-	(wire
-		(pts
-			(xy 226.06 127) (xy 226.06 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dec8e87-da31-411b-8941-3da78a8a264c")
 	)
 	(wire
 		(pts
@@ -4066,16 +4062,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 57.15) (xy 213.36 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41478681-7300-4f98-bca3-692e65f68320")
-	)
-	(wire
-		(pts
 			(xy 274.32 67.31) (xy 273.05 67.31)
 		)
 		(stroke
@@ -4096,7 +4082,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 25.4) (xy 134.62 25.4)
+			(xy 123.19 25.4) (xy 132.08 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4193,6 +4179,16 @@
 			(type default)
 		)
 		(uuid "50e0ac41-18e5-4961-a23a-6c2760e70756")
+	)
+	(wire
+		(pts
+			(xy 132.08 24.13) (xy 132.08 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51da8d31-2fab-4ffe-9119-8692f8389edd")
 	)
 	(wire
 		(pts
@@ -4416,6 +4412,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 57.15) (xy 204.47 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701ded7e-04d0-4488-9b21-411a6ad3f32f")
+	)
+	(wire
+		(pts
 			(xy 26.67 33.02) (xy 26.67 36.83)
 		)
 		(stroke
@@ -4453,6 +4459,16 @@
 			(type default)
 		)
 		(uuid "7698ea1a-6bb2-4360-bfb8-7670a0041e5f")
+	)
+	(wire
+		(pts
+			(xy 132.08 25.4) (xy 134.62 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76a5876d-3e88-4fa2-b9f6-c188c9464cc3")
 	)
 	(wire
 		(pts
@@ -4536,13 +4552,23 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 58.42) (xy 215.9 59.69)
+			(xy 205.74 64.77) (xy 205.74 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "888912c5-8f4b-471a-8549-e31c9dc1eb0e")
+	)
+	(wire
+		(pts
+			(xy 207.01 59.69) (xy 207.01 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88b88dcf-d0e2-4340-a1ab-4ea9d0e544d0")
 	)
 	(wire
 		(pts
@@ -4596,6 +4622,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 90.17) (xy 179.07 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d871eae-a5d5-4913-96b2-5cd04e151194")
+	)
+	(wire
+		(pts
 			(xy 115.57 99.06) (xy 115.57 100.33)
 		)
 		(stroke
@@ -4626,16 +4662,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 128.27) (xy 232.41 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91326ed4-d661-4de6-b9ef-7bfd84e74afe")
-	)
-	(wire
-		(pts
 			(xy 154.94 132.08) (xy 157.48 132.08)
 		)
 		(stroke
@@ -4643,6 +4669,16 @@
 			(type default)
 		)
 		(uuid "9454ef21-9f24-4b72-8867-3cd8d696fa15")
+	)
+	(wire
+		(pts
+			(xy 173.99 130.81) (xy 173.99 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "952d0308-e8cb-4b9a-937e-30057cea10b2")
 	)
 	(wire
 		(pts
@@ -4696,7 +4732,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 132.08) (xy 29.21 132.08)
+			(xy 29.21 130.81) (xy 29.21 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4836,6 +4872,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 64.77) (xy 210.82 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abdb5b1e-ecfb-4872-83a9-61331981307d")
+	)
+	(wire
+		(pts
 			(xy 54.61 43.18) (xy 67.31 43.18)
 		)
 		(stroke
@@ -4853,16 +4899,6 @@
 			(type default)
 		)
 		(uuid "ad70d3ed-7cf7-41cd-b14d-65312b691f34")
-	)
-	(wire
-		(pts
-			(xy 173.99 132.08) (xy 173.99 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af37b0f8-961a-44fd-a775-e06d5d4361ec")
 	)
 	(wire
 		(pts
@@ -4923,6 +4959,36 @@
 			(type default)
 		)
 		(uuid "b664a387-6ee0-4cfb-ba01-329138f5993e")
+	)
+	(wire
+		(pts
+			(xy 176.53 88.9) (xy 176.53 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6972bc0-27cc-4d56-8c84-ad46ba892e86")
+	)
+	(wire
+		(pts
+			(xy 173.99 132.08) (xy 179.07 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b955d358-40aa-4b41-99bf-03fb83a324ae")
+	)
+	(wire
+		(pts
+			(xy 109.22 88.9) (xy 109.22 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baf4a8be-8760-4bd3-a3ce-e18a978f0bd8")
 	)
 	(wire
 		(pts
@@ -5266,16 +5332,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 90.17) (xy 179.07 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfd97b7e-5909-419b-ac83-9131f791fb2d")
-	)
-	(wire
-		(pts
 			(xy 38.1 31.75) (xy 38.1 46.99)
 		)
 		(stroke
@@ -5406,7 +5462,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 59.69) (xy 215.9 59.69)
+			(xy 204.47 59.69) (xy 205.74 59.69)
 		)
 		(stroke
 			(width 0)
@@ -5454,26 +5510,6 @@
 		)
 		(uuid "fe24b0f4-05a0-4ad9-9740-5d6bfd95d937")
 	)
-	(label "REG-OUT"
-		(at 106.68 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "293ac266-f362-43b0-b84a-91005dccd6d5")
-	)
-	(label "REG-OUT"
-		(at 114.3 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "382a04e9-9669-4c69-9482-f6882b0fa26e")
-	)
 	(label "ILIM"
 		(at 54.61 43.18 0)
 		(effects
@@ -5483,26 +5519,6 @@
 			(justify left bottom)
 		)
 		(uuid "3aa66b01-5306-44cd-bba6-13a2eef201cf")
-	)
-	(label "REG-OUT"
-		(at 227.33 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c884649-ba27-41f7-ab28-54054b8ebd0c")
-	)
-	(label "REG-OUT"
-		(at 213.36 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "77b7a5c7-f3c1-4924-9c79-af327545b621")
 	)
 	(label "TMR"
 		(at 39.37 31.75 0)
@@ -5524,16 +5540,6 @@
 		)
 		(uuid "aa41bec4-4b2f-42ee-8ea8-eb30924c23d5")
 	)
-	(label "REG-OUT"
-		(at 26.67 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aeff1a46-277a-4dbd-945b-4ea7a99bb8c1")
-	)
 	(label "ISET"
 		(at 63.5 45.72 0)
 		(effects
@@ -5543,16 +5549,6 @@
 			(justify left bottom)
 		)
 		(uuid "c3a19f5a-1fc5-426e-9223-7160b47dcfc8")
-	)
-	(label "REG-OUT"
-		(at 26.67 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "df4acef3-4547-4002-9742-e79a573048cd")
 	)
 	(hierarchical_label "EN3V3AVCC"
 		(shape input)
@@ -5930,7 +5926,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 215.9 58.42 0)
+		(at 210.82 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5938,7 +5934,7 @@
 		(dnp no)
 		(uuid "0bdfa545-0843-433e-8df1-b9d56693ee90")
 		(property "Reference" "#PWR0105"
-			(at 215.9 62.23 0)
+			(at 210.82 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5947,7 +5943,7 @@
 			)
 		)
 		(property "Value" "+BATT"
-			(at 219.202 58.42 0)
+			(at 214.63 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5955,7 +5951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 58.42 0)
+			(at 210.82 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,7 +5960,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 58.42 0)
+			(at 210.82 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5973,7 +5969,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 215.9 58.42 0)
+			(at 210.82 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,6 +6356,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 132.08 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b6c9446-c3ca-42d1-9444-37c45e77cd4a")
+		(property "Reference" "#PWR036"
+			(at 132.08 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 126.492 22.606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 132.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87c9e941-8571-4d02-b130-51db8847e44e")
+		)
+		(instances
+			(project ""
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LP5912-3_3DRVR:LP5912-3.3DRVR")
 		(at 262.89 128.27 0)
 		(mirror y)
@@ -6587,138 +6648,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 173.99 130.81 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2af6c117-fda6-4ecc-a5be-a2af71c6eff5")
-		(property "Reference" "#PWR045"
-			(at 173.99 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 173.99 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 173.99 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f3f86018-60c1-4aea-aa9a-6e7cbfde52a2")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 179.07 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b3f9930-e13b-469a-b511-8cabfc8d35e8")
-		(property "Reference" "#PWR036"
-			(at 179.07 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 179.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 179.07 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bea3ad5a-1801-4e97-8a67-a8d9d8e0810e")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -7742,6 +7671,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 26.67 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58a181c9-d7d0-4892-be0e-b8b62edd82fb")
+		(property "Reference" "#PWR045"
+			(at 26.67 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 26.67 85.598 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 26.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 26.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "982dfbf9-8024-4a60-980d-a1a35ccf041a")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 38.1 50.8 0)
 		(unit 1)
@@ -7821,7 +7815,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 226.06 127 0)
+		(at 226.06 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7829,7 +7823,7 @@
 		(dnp no)
 		(uuid "60c71ea9-04b6-41c0-ade6-5d3806929a1c")
 		(property "Reference" "TP18"
-			(at 224.028 121.92 0)
+			(at 224.028 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7838,7 +7832,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 228.6 124.9679 0)
+			(at 228.6 130.0479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7848,7 +7842,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 231.14 127 0)
+			(at 231.14 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7857,7 +7851,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 127 0)
+			(at 231.14 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7866,7 +7860,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 226.06 127 0)
+			(at 226.06 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8574,6 +8568,136 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 176.53 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f1e309f-bb0a-47af-bcd0-bf126ecde32e")
+		(property "Reference" "#PWR0113"
+			(at 176.53 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 176.53 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 176.53 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26bf1936-eb4b-4cf7-8d13-8b218be2df51")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 109.22 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9046079b-c809-4c96-a5f7-fd87372f7023")
+		(property "Reference" "#PWR0112"
+			(at 109.22 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 109.22 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 109.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80ef379d-b426-4ac1-812f-9a8bb3b4b3d8")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -9684,6 +9808,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 232.41 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aafcacd2-f763-4130-862a-3cc7222e57dc")
+		(property "Reference" "#PWR0116"
+			(at 232.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 232.41 122.428 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 232.41 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bdb61ac-e78d-4bce-90ca-9ca7ff286183")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 80.01 153.67 0)
 		(unit 1)
@@ -10221,6 +10410,71 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 173.99 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c679c049-37f5-4065-9a81-df89faa043ab")
+		(property "Reference" "#PWR0115"
+			(at 173.99 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 173.99 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc4a8ade-02fd-47f0-a178-2629bbae8920")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -10948,6 +11202,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+BATT")
+		(at 213.36 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1103ebe-6120-405f-9d11-e3a85b98146e")
+		(property "Reference" "#PWR0117"
+			(at 213.36 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 213.614 56.388 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 213.36 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea20e5ea-fb1d-411b-a89f-f03a334a1c30")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+1V8")
 		(at 110.49 130.81 0)
 		(unit 1)
@@ -11426,6 +11745,71 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+BATT")
+		(at 29.21 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "faf5c02d-439a-4a91-a09e-2ef5ae3c96fd")
+		(property "Reference" "#PWR0114"
+			(at 29.21 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "REG-OUT"
+			(at 29.21 126.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+BATT\""
+			(at 29.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87a082d7-650f-428e-b48c-d66f2f237a89")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
