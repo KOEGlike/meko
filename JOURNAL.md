@@ -173,3 +173,20 @@ created_at: "2025-04-29"
 - realized that the BOOT pin shouldn't be pulled down, but because that way it is booted into firmware mode, so i pulled it up with a 100k resistor, so it doesn't interfere with the i2s that much
 - laid out most of the components, some placements are not final, because they will depend on the routing
 - moved the via fence around a bit
+
+    **Total time: 2h**
+  
+## 06.06: routing started
+
+- routed most of the important circuits, like the usb lines and the i2s lines
+  
+    **Total time: 1h**
+  
+## 06.07: maybe chose a too small pcb size
+
+- I'm starting to have trouble routing some tracks, I may have made an oopsie 
+- routed the short tracks, kind of a grind
+- finished the routing, time to send it of to reddit
+  
+    **Total time:3h**
+  
