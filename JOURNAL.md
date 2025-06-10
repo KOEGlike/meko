@@ -190,3 +190,9 @@ created_at: "2025-04-29"
   
     **Total time:3h**
   
+## 06.10: fixed fuel gauge 
+
+- some chad redditor saw that i had connected my fuel gauge IC wrong, i connected SRX to the output of the batter charger, instead of connecting SRX to the batter input of the batter charger
+  
+    **Total time:1h**
+  

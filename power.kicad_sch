@@ -3626,16 +3626,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 59.69) (xy 213.36 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1be3b495-b36a-4c21-81a7-53ff713f4b61")
-	)
-	(wire
-		(pts
 			(xy 38.1 142.24) (xy 36.83 142.24)
 		)
 		(stroke
@@ -3826,7 +3816,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 33.02) (xy 95.25 33.02)
+			(xy 92.71 33.02) (xy 99.06 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4306,7 +4296,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 57.15) (xy 204.47 57.15)
+			(xy 204.47 57.15) (xy 213.36 57.15)
 		)
 		(stroke
 			(width 0)
@@ -4433,16 +4423,6 @@
 			(type default)
 		)
 		(uuid "888912c5-8f4b-471a-8549-e31c9dc1eb0e")
-	)
-	(wire
-		(pts
-			(xy 207.01 59.69) (xy 207.01 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88b88dcf-d0e2-4340-a1ab-4ea9d0e544d0")
 	)
 	(wire
 		(pts
@@ -4936,16 +4916,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 31.75) (xy 95.25 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5f2d76e-bc45-4de2-8dbe-f798cb9e3bd5")
-	)
-	(wire
-		(pts
 			(xy 157.48 152.4) (xy 157.48 154.94)
 		)
 		(stroke
@@ -5274,6 +5244,16 @@
 		)
 		(uuid "fe24b0f4-05a0-4ad9-9740-5d6bfd95d937")
 	)
+	(label "SRX"
+		(at 99.06 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15f3e47e-fde8-445e-acb5-c87020c3b694")
+	)
 	(label "ILIM"
 		(at 54.61 43.18 0)
 		(effects
@@ -5283,6 +5263,16 @@
 			(justify left bottom)
 		)
 		(uuid "3aa66b01-5306-44cd-bba6-13a2eef201cf")
+	)
+	(label "SRX"
+		(at 213.36 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f04ec1f-029c-470b-aa3e-65e11f34b1f0")
 	)
 	(label "TMR"
 		(at 39.37 31.75 0)
@@ -6653,71 +6643,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 95.25 31.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "38ba24fc-4bb3-441e-a02c-9455bba16cea")
-		(property "Reference" "#PWR0108"
-			(at 95.25 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 94.488 28.194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 95.25 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a96efc9-bb66-44b2-8adf-06b6a25d7a18")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -10277,71 +10202,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 213.36 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e1103ebe-6120-405f-9d11-e3a85b98146e")
-		(property "Reference" "#PWR0117"
-			(at 213.36 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "REG-OUT"
-			(at 213.614 56.388 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 213.36 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ea20e5ea-fb1d-411b-a89f-f03a334a1c30")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d/8a6dc5b3-4f2f-4276-a496-11a08be250c4"
-					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
