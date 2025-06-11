@@ -196,3 +196,11 @@ created_at: "2025-04-29"
   
     **Total time:1h**
   
+## 06.11: small fixes, moved stuff around
+
+- flipped buttons, cuz it didnt make sense to have them on the other side
+- added vias to the bottom pad of the dac, forgot about them 
+- other small fixes
+  
+    **Total time: 2h**
+  
