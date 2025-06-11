@@ -201,6 +201,7 @@ created_at: "2025-04-29"
 - flipped buttons, cuz it didnt make sense to have them on the other side
 - added vias to the bottom pad of the dac, forgot about them 
 - other small fixes
+- selected some components based on the value in the schematic
   
-    **Total time: 2h**
+    **Total time: 3h**
   
