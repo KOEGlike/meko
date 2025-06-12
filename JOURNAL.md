@@ -212,6 +212,7 @@ created_at: "2025-04-29"
 - imported the bearing 3d model that i want to use
 - started modeling the e ink display, and real realised that the connector i chose for it is for 1mm thich FPCs, and the cable on the display is 0.3mm 
 - i have to choose a new connector
+- turns out, 1mm, is the height of the connector and not the cable, so im fine, panic over *hhuuhhh*
   
 **Total time: 3h**
   
