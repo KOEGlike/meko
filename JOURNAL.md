@@ -205,9 +205,10 @@ created_at: "2025-04-29"
   
     **Total time: 3h**
   
-## 06.12: picked MPNs
+## 06.12: picked MPNs, stiching VIAs
 
 - choose MPNs based on the footprints and values  
+- added stiching VIAs
   
-**Total time: 1h**
+**Total time: 2h**
   
