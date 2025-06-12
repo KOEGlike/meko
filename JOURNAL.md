@@ -194,7 +194,7 @@ created_at: "2025-04-29"
 
 - some chad redditor saw that i had connected my fuel gauge IC wrong, i connected SRX to the output of the batter charger, instead of connecting SRX to the batter input of the batter charger
   
-    **Total time:1h**
+    **Total time: 1h**
   
 ## 06.11: small fixes, moved stuff around
 
@@ -204,4 +204,10 @@ created_at: "2025-04-29"
 - selected some components based on the value in the schematic
   
     **Total time: 3h**
+  
+## 06.12: picked MPNs
+
+- choose MPNs based on the footprints and values  
+  
+**Total time: 1h**
   

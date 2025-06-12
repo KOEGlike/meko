@@ -615,10 +615,10 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -658,12 +658,6 @@
         },
         {
           "group_by": false,
-          "label": "DigiKey_Part_Number",
-          "name": "DigiKey_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Height",
           "name": "Height",
           "show": false
@@ -676,26 +670,8 @@
         },
         {
           "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "MAXIMUM_PACKAGE_HEIGHT",
           "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
           "show": false
         },
         {
@@ -706,21 +682,9 @@
         },
         {
           "group_by": false,
-          "label": "Mfr. No.",
-          "name": "Mfr. No.",
+          "label": "MPN",
+          "name": "MPN",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
-          "show": false
         },
         {
           "group_by": false,
@@ -779,10 +743,10 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": false,
-      "sort_field": "Mfr. No."
+      "sort_field": "${EXCLUDE_FROM_BOM}"
     },
     "connection_grid_size": 50.0,
     "drawing": {
