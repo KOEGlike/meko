@@ -216,3 +216,11 @@ created_at: "2025-04-29"
   
 **Total time: 3h**
   
+## 06.13: CAAAD, fixes
+
+- chose a 6701 bearing
+- moved buttons and mounting holes around to make space for it
+- moved jack out to board edge, because it had interfered with the pcb 
+  
+**Total time:3h**
+  
