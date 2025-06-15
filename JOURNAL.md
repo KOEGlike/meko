@@ -224,3 +224,13 @@ created_at: "2025-04-29"
   
 **Total time:3h**
   
+## 06.14: CAAAAAAAAAAAAAAD
+
+- done with the bottom part of the case, mostly
+- the top part is also almost done
+- moved stuff around on the pcb to make the device more thin
+- player is still 16 mm thich 
+- choose battery 
+  
+**Total time: 4h**
+  
