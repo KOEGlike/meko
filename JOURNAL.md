@@ -237,7 +237,7 @@ created_at: "2025-04-29"
 
 ## 06.17: Almost finished with the case
 
-- I was wron about the to part almost being done
+- I was wrong about the to part almost being done
 - added holes to the top case for the threaded inserts that i will glue in 
 - added a rim to the top case so when i tighten the screws this rim will be the main contact point with the pcb 
 - added a stopper to the bearing hole, so that it will sit at known hight, and not at some random hight in the hole, also prevents the bearing from touching some components 
