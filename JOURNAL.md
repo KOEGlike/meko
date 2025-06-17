@@ -234,3 +234,18 @@ created_at: "2025-04-29"
   
 **Total time: 4h**
   
+
+## 06.17: Almost finished with the case
+
+- I was wron about the to part almost being done
+- added holes to the top case for the threaded inserts that i will glue in 
+- added a rim to the top case so when i tighten the screws this rim will be the main contact point with the pcb 
+- added a stopper to the bearing hole, so that it will sit at known hight, and not at some random hight in the hole, also prevents the bearing from touching some components 
+- figured out how to keep the display in place, will model it later
+- adding some images, I havent done this in a while, i might have to back journal, and add some more, cuz this journal is basically a wall of text 
+![top case](https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab2755acd39ee8d40157aa602e53502949611a6d_screenshot_20250617_225307.png)
+![bottom case](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b6bcb2d2fb7b30283c68f0b9921f571618fa8ad5_screenshot_20250617_225220.png)
+![all together](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d3c72ed3297ce7bd82f2e2cbf21f3af8ad571a90_screenshot_20250617_225156.png)
+  
+**Total time: 3h**
+  
