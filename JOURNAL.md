@@ -249,3 +249,14 @@ created_at: "2025-04-29"
   
 **Total time: 3h**
   
+
+## 06.18: finished cad
+
+- Finished display retainer, it's like a plate that is held down by the pcb  
+![display retainer](https://hc-cdn.hel1.your-objectstorage.com/s/v3/08957b6ea1ca3302bf148e194c0685681e29c92b_screenshot_20250618_192323.png)
+- modeled the button 
+- I found a way to make it thinner, firstly buy leaving the battery less wiggle room, and a cutout for the battery in the case, this will reduce the thickness by like 2mm, so it will be around 13,5mm 
+- choose the magnet for that hall-effect rotation encoder, here is [the link](https://www.first4magnets.com/product/6mm-dia-x-1mm-thick-diametrically-magnetised-n42-neodymium-magnet-20413)
+  
+**Total time: 4h**
+  
