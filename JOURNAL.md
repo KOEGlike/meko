@@ -270,4 +270,3 @@ created_at: "2025-04-29"
 - the next thing to do is to create some renders in blender 
   
 **Total time: 2,5h**
-  

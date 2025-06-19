@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model CD0201-T2.0LC
+#/16106653/1458841/2.50/2/2/Diode ESD (Bi-directional)
+DEF CD0201-T2.0LC D 0 30 Y Y 1 F N
+F0 "D" 600 350 50 H V L BNN
+F1 "CD0201-T2.0LC" 600 250 50 H V L BNN
+F2 "CD0201T20LC" 600 150 50 H I L BNN
+F3 "https://www.digikey.ph/en/products/detail/bourns-inc/CD0201-T2-0LC/16400129" 600 50 50 H I L BNN
+F4 "4V (Typ) Clamp 7A (8/20s) Ipp Tvs Diode Surface Mount 0201" 600 -50 50 H I L BNN "Description"
+F5 "0.32" 600 -150 50 H I L BNN "Height"
+F6 "Bourns" 600 -250 50 H I L BNN "Manufacturer_Name"
+F7 "CD0201-T2.0LC" 600 -350 50 H I L BNN "Manufacturer_Part_Number"
+F8 "652-CD0201-T2.0LC" 600 -450 50 H I L BNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Bourns/CD0201-T2.0LC?qs=t7xnP681wgWRtYjoYhdowA%3D%3D" 600 -550 50 H I L BNN "Mouser Price/Stock"
+F10 "CD0201-T2.0LC" 600 -650 50 H I L BNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/cd0201-t2.0lc/bourns?region=nac" 600 -750 50 H I L BNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 800 0 200 L 50 50 0 0 P
+P 4 0 1 6 400 0 200 -100 200 100 400 0 N
+P 4 0 1 6 400 0 600 -100 600 100 400 0 N
+P 2 0 1 6 400 -180 400 180 N
+P 2 0 1 6 440 200 400 180 N
+P 2 0 1 6 400 -180 360 -200 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model BQ27427YZFR
+#/17641174/1458841/2.50/9/3/Integrated Circuit
+DEF BQ27427YZFR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "BQ27427YZFR" 1050 200 50 H V L CNN
+F2 "BGA9C50P3X3_158X162X62" 1050 100 50 H I L CNN
+F3 "https://www.ti.com/lit/ds/symlink/bq27427.pdf?ts=1687698267991&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FBQ27427%253FkeyMatch%253DBQ27427YZFR%2526tisearch%253Dsearch-everything%2526usecase%253DOPN" 1050 0 50 H I L CNN
+F4 "Single-cell battery fuel gauge with pre-programmed chemistry and integrated sense resistor" 1050 -100 50 H I L CNN "Description"
+F5 "0.625" 1050 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BQ27427YZFR" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-BQ27427YZFR" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ27427YZFR?qs=rQFj71Wb1eU5v%2FHj43hVJQ%3D%3D" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "BQ27427YZFR" 1050 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/bq27427yzfr/texas-instruments?utm_currency=USD&region=nac" 1050 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X GPOUT A1 0 0 200 R 50 50 0 0 P
+X SDA A2 0 -100 200 R 50 50 0 0 P
+X SCL A3 0 -200 200 R 50 50 0 0 P
+X BIN B1 0 -300 200 R 50 50 0 0 P
+X VSS_1 B2 0 -400 200 R 50 50 0 0 P
+X VDD B3 1200 0 200 L 50 50 0 0 P
+X VSS_2 C1 1200 -100 200 L 50 50 0 0 P
+X SRX C2 1200 -200 200 L 50 50 0 0 P
+X BAT C3 1200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
