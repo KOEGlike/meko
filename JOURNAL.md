@@ -268,5 +268,6 @@ created_at: "2025-04-29"
 - made the wheels dimensions parametric
 - i created a new branch for V1 of the PCB, so I can have rounded tracks, which are annoying to edit
 - the next thing to do is to create some renders in blender 
+- in blender the transparent material i want to use for the 3d printed plastic parts, is not transparent, so i spent 1,5h on this, and still couldnt figure it out, AAAAAAAAHHHHHHHHHHHH
   
-**Total time: 2,5h**
+**Total time: 4h**
