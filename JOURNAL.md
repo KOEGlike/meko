@@ -260,3 +260,14 @@ created_at: "2025-04-29"
   
 **Total time: 4h**
   
+## 06.19: rounded tracks, cad assembly 
+
+- created a cad assembly
+![cad assembly](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a5b988545cf45da093c869a047a75b005e332548_screenshot_20250619_204859.png)
+- modeled the buttons
+- made the wheels dimensions parametric
+- i created a new branch for V1 of the PCB, so I can have rounded tracks, which are annoying to edit
+- the next thing to do is to create some renders in blender 
+  
+**Total time: 2,5h**
+  
