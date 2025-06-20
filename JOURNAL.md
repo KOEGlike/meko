@@ -269,5 +269,19 @@ created_at: "2025-04-29"
 - i created a new branch for V1 of the PCB, so I can have rounded tracks, which are annoying to edit
 - the next thing to do is to create some renders in blender 
 - in blender the transparent material i want to use for the 3d printed plastic parts, is not transparent, so i spent 1,5h on this, and still couldnt figure it out, AAAAAAAAHHHHHHHHHHHH
+![not transparent glass shader](https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd212f771b0da2ebeefdf873f040a7749927dd7e_0001.png)
+
   
 **Total time: 4h**
+
+## 06.20: I'm in a love hate relationship with blender
+
+- turns out you need to enable raytracing for transparent things, otherwise it will be a mirror
+- all the things i looked up had the old blender ui, so I asked on reddit, and a chad responed overnight, so now i know where to enable raytracing 
+- mucked around with the kicad exporter and blender importer for the pcb 
+- i thought that i needed to merge all the geometries to move them at once, but after the merge you cant easily change the materials of the combined mesh, and i accidentally set the bearing material to glass, so i had to redo the whole thing again, because you cant unmerge a merged mesh, and i was out of undo states, so i had to redo the whole thing, but I was now way
+faster
+- made an animation of the player, that is rendering right now 
+  
+**Total time: 3h**
+  
