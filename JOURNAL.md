@@ -269,7 +269,7 @@ created_at: "2025-04-29"
 - i created a new branch for V1 of the PCB, so I can have rounded tracks, which are annoying to edit
 - the next thing to do is to create some renders in blender 
 - in blender the transparent material i want to use for the 3d printed plastic parts, is not transparent, so i spent 1,5h on this, and still couldnt figure it out, AAAAAAAAHHHHHHHHHHHH
-![not transparent glass shader](https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd212f771b0da2ebeefdf873f040a7749927dd7e_0001.png)
+![not transparent glass shader](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4d4ac2bdab54ed7fd1395fb5da7fc241c5fd0b4_screenshot_20250620_145026.png)
 
   
 **Total time: 4h**
@@ -282,6 +282,8 @@ created_at: "2025-04-29"
 - i thought that i needed to merge all the geometries to move them at once, but after the merge you cant easily change the materials of the combined mesh, and i accidentally set the bearing material to glass, so i had to redo the whole thing again, because you cant unmerge a merged mesh, and i was out of undo states, so i had to redo the whole thing, but I was now way
 faster
 - made an animation of the player, that is rendering right now 
+![transparent glass shader](https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd212f771b0da2ebeefdf873f040a7749927dd7e_0001.png)  
+- blender wasn't using my gpu, so I had to update some drives an tweek some setting in nixos
   
-**Total time: 3h**
+**Total time: 3,5h**
   
