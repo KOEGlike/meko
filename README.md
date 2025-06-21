@@ -1,6 +1,6 @@
 # Meko
 Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, WIFI and Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2
-![render of meko]([https://hc-cdn.hel1.your-objectstorage.com/s/v3/2ca4afc27af675cd22b7a771083a7da3a2da0dd6_68747470733a2f2f68632d63646e2e68.png](https://hc-cdn.hel1.your-objectstorage.com/s/v3/508c0e7beeb33b70e29ccf07d2ba045b78920311_meko-ezgif.com-video-to-webp-converter.webp))
+![render of meko](https://hc-cdn.hel1.your-objectstorage.com/s/v3/508c0e7beeb33b70e29ccf07d2ba045b78920311_meko-ezgif.com-video-to-webp-converter.webp)
 
 
 
