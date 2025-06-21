@@ -1,10 +1,10 @@
 # Meko
 Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, WIFI and Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2
-![render of meko](https://hc-cdn.hel1.your-objectstorage.com/s/v3/83b9b50cc86617301cda5601078db6ff36537eb6_0049.png)
+![render of meko](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2ca4afc27af675cd22b7a771083a7da3a2da0dd6_68747470733a2f2f68632d63646e2e68.png)
 
 ## PCB 
 
-![render of pcb]()  
+![render of pcb](https://hc-cdn.hel1.your-objectstorage.com/s/v3/c48284d859844763172703596e5ee1b2c6a2917b_frame_6_1_.png)  
   
 Production files in `Releases`  
   
@@ -25,7 +25,7 @@ It is impedance controlled for JLCs default 4 layer PCB stackup, but not many of
 
 ## Case 
 
-![render of case]()  
+![render of case](https://hc-cdn.hel1.your-objectstorage.com/s/v3/7aa9fc54eb5928e18ea7e6aec79b7fc0703189de_0001_1_.png)  
   
 Production files in `Releases`  
   
