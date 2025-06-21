@@ -22,7 +22,7 @@ It is impedance controlled for JLCs default 4 layer PCB stackup, but not many of
 
 ## Case 
 
-![render of case]
+![render of case]()
 The case in designed in FreeCAD, which is an Open Source  and free CAD program, you will need this program to edit the case.
 
 ### 3D printing 
