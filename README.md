@@ -5,6 +5,9 @@ Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wh
 ## PCB 
 
 ![render of pcb]()  
+  
+Production files in `Releases`  
+  
 The PCB has 4 layers, in the SIG/GND/GND/SIG stackup.  
   
 It is impedance controlled for JLCs default 4 layer PCB stackup, but not many of the lines are impedance controlled, and if they are they are short, so if you must, you can use other stackups.
@@ -23,6 +26,9 @@ It is impedance controlled for JLCs default 4 layer PCB stackup, but not many of
 ## Case 
 
 ![render of case]()  
+  
+Production files in `Releases`  
+  
 The case in designed in FreeCAD, which is an Open Source  and free CAD program, you will need this program to edit the case.
 
 ### 3D printing 
@@ -46,6 +52,10 @@ The case has parametric design, so you can change the design very easily, and I 
 - `tolerance` this sets the general tolerance for inaccuracies in the 3D print 
 - `wall_thickness` this sets the thickness for the case walls 
 - `wheel_thickness` this sets how thick the wheel should be 
+
+## Firmware 
+
+The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and embassy-executor frameworks. I choose the std route for rust instead of the no-std one, because with std i can use existing std libraries for audio processing, no-std has more performance but it's still in ts infancy, and doesn't have mature libraries.
 
 ## BOM 
 
