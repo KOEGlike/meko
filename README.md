@@ -64,20 +64,20 @@ The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and
 
 |Qty|Value                      |MPN/link               |Order Unit Price|Total |
 |---|---------------------------|-----------------------|----------------|------|
-|1  |ECS-2520SMV-500-GP-TR      |ECS-2520SMV-500-GP-TR  |$2.73           |2.73  |
-|1  |CP2102N-Axx-xQFN24         |CP2102N-A02-GQFN24R    |$3.46           |3.46  |
-|1  |USBLC6-2SC6                |USBLC6-2SC6            |$0.36           |0.36  |
-|2  |LP5907SNX-1.8/NOPB         |LP5907SNX-1.8/NOPB     |$1.07           |2.14  |
-|3  |LP5907SNX-3.3/NOPB         |LP5907SNX-3.3/NOPB     |$1.07           |3.21  |
-|1  |BQ24075RGT                 |BQ24075RGTR            |$1.99           |1.99  |
-|1  |ESP32-PICO-MINI-02         |ESP32-PICO-MINI-02-N8R2|$3.51           |3.51  |
-|2  |SW_Push                    |SKRKAGE020             |$0.466          |0.932 |
-|5  |SW_Push                    |SKRTLAE010             |$0.455          |2.275 |
-|1  |100k                       |RC0402FR-07100KL       |$0.10           |0.1   |
-|2  |5.1k                       |RC0402FR-075K1L        |$0.10           |0.2   |
-|1  |1.8k                       |RC0402FR-071K8L        |$0.10           |0.1   |
-|2  |1.5k                       |RC0402FR-071K5L        |$0.10           |0.2   |
-|3  |47k                        |RC0402FR-0747KL        |$0.10           |0.3   |
+|1  |ECS-2520SMV-500-GP-TR      |ECS-2520SMV-500-GP-TR  |$2.73           |$2.73  |
+|1  |CP2102N-Axx-xQFN24         |CP2102N-A02-GQFN24R    |$3.46           |$3.46  |
+|1  |USBLC6-2SC6                |USBLC6-2SC6            |$0.36           |$0.36  |
+|2  |LP5907SNX-1.8/NOPB         |LP5907SNX-1.8/NOPB     |$1.07           |$2.14  |
+|3  |LP5907SNX-3.3/NOPB         |LP5907SNX-3.3/NOPB     |$1.07           |$3.21  |
+|1  |BQ24075RGT                 |BQ24075RGTR            |$1.99           |$1.99  |
+|1  |ESP32-PICO-MINI-02         |ESP32-PICO-MINI-02-N8R2|$3.51           |$3.51  |
+|2  |SW_Push                    |SKRKAGE020             |$0.466          |$0.932 |
+|5  |SW_Push                    |SKRTLAE010             |$0.455          |$2.275 |
+|1  |100k                       |RC0402FR-07100KL       |$0.10           |$0.1   |
+|2  |5.1k                       |RC0402FR-075K1L        |$0.10           |$0.2   |
+|1  |1.8k                       |RC0402FR-071K8L        |$0.10           |$0.1   |
+|2  |1.5k                       |RC0402FR-071K5L        |$0.10           |$0.2   |
+|3  |47k                        |RC0402FR-0747KL        |$0.10           |$0.3   |
 |1  |2.2R                       |RC0402FR-072R2L        |$0.10           |$0.10 |
 |1  |1M                         |RC0402FR-071ML         |$0.10           |$0.10 |
 |1  |1k                         |RC0402FR-071KL         |$0.10           |$0.10 |
