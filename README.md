@@ -31,7 +31,7 @@ I recommend you to print this in resin because it requires accurate dimensions f
 
 ### Parameters
 
-![params](https://hc-cdn.hel1.your-objectstorage.com/s/v3/28701e145fee447792843a0d50e1efcada36852c_screenshot_20250621_093625.png)
+![params](https://hc-cdn.hel1.your-objectstorage.com/s/v3/28701e145fee447792843a0d50e1efcada36852c_screenshot_20250621_093625.png)  
 The case has parametric design, so you can change the design very easily, and I included some easily changeable parameters, here what they do:
 
 - `battery_height` and `battery_width` are to set the size of the hole in the `bottom_cade`, the case is designed to have a 5mm thick battery, so you need to change the length of the first pad in `bottom_case` to account for the thicker battery 
