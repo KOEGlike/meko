@@ -50,7 +50,7 @@ The case has parametric design, so you can change the design very easily, and I 
 ## BOM 
 
 
-|Qty|Value                      |MPN                    |
+|Qty|Value                      |MPN/Souecing link      |
 |---|---------------------------|-----------------------|
 |1  |Battery_Cell               |S2B-PH-SM4-TB          |
 |10 |100nF                      |CL05B104KO5NNNC        |
@@ -98,4 +98,9 @@ The case has parametric design, so you can change the design very easily, and I 
 |1  |USBLC6-2SC6                |USBLC6-2SC6            |
 |1  |CP2102N-Axx-xQFN24         |CP2102N-A02-GQFN24R    |
 |1  |ECS-2520SMV-500-GP-TR      |ECS-2520SMV-500-GP-TR  |
-
+|1  |e-ink screen               |GDEY0154D67            |
+|1  |magnet                     |[link](https://www.first4magnets.com/product/6mm-dia-x-1mm-thick-diametrically-magnetised-n42-neodymium-magnet-20413) |
+|1  |battery with PH2.0 conn.   |[link](https://www.aliexpress.com/item/1005006043243361.html) |
+|1  |6701 bearing               |[ceramic](https://www.aliexpress.com/item/1005007752030168.html) or [ZZ](https://www.aliexpress.com/item/1005006822613982.html) |
+|5  |M1.6 8mm coutnersunk screw |[link](https://www.aliexpress.com/item/1005003620203113.html) |
+|5  |M1.6 2.5mm OD 2mm thick    |[link](https://www.aliexpress.com/item/1005007653131713.html) |
