@@ -3,6 +3,7 @@ title: "Meko Music Player"
 author: "koeg"
 description: "A high definition music player with bluetooth support, which has an e paper display and a physical wheel"
 created_at: "2025-04-29"
+total_time: ≈87h
 ---
 ## 04.29: chose the soc, and usb uart switchin
 
@@ -287,3 +288,15 @@ faster
   
 **Total time: 3,5h**
   
+
+## 06.21: FINISHED 
+
+- finished the render that i started yesterday
+- made an exploded animation blender 
+- made a BOM 
+- made a readme 
+- converted renders to webp 
+- made production files, and a github release 
+- small polishing changes 
+  
+**Total time: 4h**
