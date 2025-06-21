@@ -4,7 +4,9 @@ Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wh
 
 ## PCB 
 
-![render of pcb](https://hc-cdn.hel1.your-objectstorage.com/s/v3/c48284d859844763172703596e5ee1b2c6a2917b_frame_6_1_.png)  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nWjOaz_X4xU?si=cWcy7CljjfKAmeMb&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
   
 Production files in `Releases`  
   
