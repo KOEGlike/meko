@@ -61,7 +61,7 @@ The case has parametric design, so you can change the design very easily, and I 
 
 ## Firmware 
 
-The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and embassy-executor frameworks. I choose the std route for rust instead of the no-std one, because with std i can use existing std libraries for audio processing, no-std has more performance but it's still in ts infancy, and doesn't have mature libraries.
+The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and embassy-executor frameworks. I choose the std route for rust instead of the no-std one, because with std i can use existing std libraries for audio processing, no-std has more performance but it's still in ts infancy, and doesn't have mature libraries. It will support lots of file formats, Spotify connect support, AirPlay 2 Support, and maybe qobuz
 
 ## BOM 
 
