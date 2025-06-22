@@ -42,8 +42,10 @@ created_at: "2025-04-29"
 
 - Read the datasheet far more times than i would like to admit
 - Some things are not clear
-- implemented the things that I kind understand
+- implemented the things that I kinda understand
 - asked a question on stackexchange
+
+![WIP audio sheet](https://hc-cdn.hel1.your-objectstorage.com/s/v3/6abbe18602cace092f16e21d1b69010c1644050a_screenshot_20250622_170042.png)
   
     **Total time: 1.5h**
   
@@ -52,6 +54,8 @@ created_at: "2025-04-29"
 - Someone who has experience with this rare chip, YIPPPEEEEEE
 - I will have to use a oscillator, not a crystal, and low noise LDOs instead of switching regulators
 - Did some research on mems vs oscillator vs crystal
+
+![stackexchange reply](https://hc-cdn.hel1.your-objectstorage.com/s/v3/437b89e110eb72c3fbf8a337bad468b52d8a6d6a_image.png)
   
     **Total time: 2h**
   
@@ -103,6 +107,7 @@ created_at: "2025-04-29"
 - i need to connect up the headphone jack
   
     **Total time: 3h**
+
   
 ## 05.25: I'M ALMOST DONE WITH THE SCHEMATIC
 
@@ -113,7 +118,14 @@ created_at: "2025-04-29"
 - researched how inline volume controls work
 - segmented schmatic
   
-    **Total time: 5h**
+    **Total time: 4h**
+
+## 05.28: fixing
+
+- fixed vibartion motor, made schematic more organized
+- added leds, jack, and esd
+
+    **Total time: 1h**
   
 ## 05.29: fixed stuff
 
@@ -133,6 +145,17 @@ created_at: "2025-04-29"
 - ready for layout
   
     **Total time: 3h**
+
+<table>
+  <tr>
+    <td width="50%"><img src="https://i.imgur.com/oguwlOa.png" /></td>
+    <td width="50%"><img src="https://i.imgur.com/1slSZP0.png" /></td>
+  </tr>
+   <tr>
+    <td><img src="https://i.imgur.com/zCFzr4S.png" /></td>
+    <td><img src="https://i.imgur.com/NK0rWt4.png" /></td>
+  </tr>
+</table>
   
 ## 05.31: starting layout
 
@@ -176,6 +199,13 @@ created_at: "2025-04-29"
 - laid out most of the components, some placements are not final, because they will depend on the routing
 - moved the via fence around a bit
 
+<div float="top">
+  <img alt="front of unrouted pcb"src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5966f0773c208d1fb53af5a8bba9827fbb972e62_screenshot_20250622_163310.png" height="600" />
+  <img alt="back of unrouted pcb" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4c8bf6ccc1a4418482eb3a1c0772ae71b4b1b674_screenshot_20250622_163323.png" height="600" /> 
+</div>
+  
+
+
     **Total time: 2h**
   
 ## 06.06: routing started
@@ -189,12 +219,19 @@ created_at: "2025-04-29"
 - I'm starting to have trouble routing some tracks, I may have made an oopsie 
 - routed the short tracks, kind of a grind
 - finished the routing, time to send it of to reddit
-  
+
+
+![3d view of routed pcb](https://i.imgur.com/EpPfKA7.png)
+![2d view of routed pcb](https://i.imgur.com/17sQ2oW.png)
+
+
     **Total time:3h**
   
 ## 06.10: fixed fuel gauge 
 
 - some chad redditor saw that i had connected my fuel gauge IC wrong, i connected SRX to the output of the batter charger, instead of connecting SRX to the batter input of the batter charger
+
+![reddit reply](https://hc-cdn.hel1.your-objectstorage.com/s/v3/17162a9fce7e1f8219d1f8930e2432583e2908fa_screenshot_20250622_170350.png)
   
     **Total time: 1h**
   
