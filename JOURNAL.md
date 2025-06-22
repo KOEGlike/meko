@@ -4,7 +4,8 @@ author: "koeg"
 description: "A high definition music player with bluetooth support, which has an e paper display and a physical wheel"
 created_at: "2025-04-29"
 ---
-#Total time ≈ 87h
+
+# Total time ≈ 87h
 
 ## 04.29: chose the soc, and usb uart switchin
 
