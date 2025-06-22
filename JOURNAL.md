@@ -221,8 +221,8 @@ created_at: "2025-04-29"
 - finished the routing, time to send it of to reddit
 
 
-![3d view of routed pcb](https://i.imgur.com/EpPfKA7.png)
-![2d view of routed pcb](https://i.imgur.com/17sQ2oW.png)
+<img alt="3d view of routed pcb" src="https://i.imgur.com/EpPfKA7.png" width="800"/>
+<img width="800" alt="2d view of routed pcb" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/2345e74afb1c8b2a5ab0c43a82fe6d34a1848d69_image_1_.png"/>
 
 
     **Total time:3h**
