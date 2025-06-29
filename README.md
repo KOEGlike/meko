@@ -5,7 +5,7 @@ Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wh
 
 ## Why?
 
-I really miss the era of gadgets, where every device served one specific function, without distraction, like a mp3 player, a camera, a gps navigator, an e reader, etc. With this player I wanted to make something unique, and I think I achieved that
+I really miss the era of gadgets, where every device served one specific function, without distraction, like a mp3 player, a camera, a gps navigator, an e reader, etc. With this player I wanted to make something unique
 
 ## PCB 
 
@@ -60,6 +60,8 @@ The case has parametric design, so you can change the design very easily, and I 
 - `wheel_thickness` this sets how thick the wheel should be 
 
 ## Firmware 
+
+The firmware is being developed in [this repo](https://github.com/KOEGlike/eno-os)
 
 The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and embassy-executor frameworks. I choose the std route for rust instead of the no-std one, because with std i can use existing std libraries for audio processing, no-std has more performance but it's still in ts infancy, and doesn't have mature libraries. It will support lots of file formats, Spotify connect support, AirPlay 2 Support, and maybe qobuz
 
