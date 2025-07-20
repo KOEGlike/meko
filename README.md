@@ -1,6 +1,6 @@
 # Meko
-Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, WIFI and Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2
-![render of meko](https://hc-cdn.hel1.your-objectstorage.com/s/v3/2c2f0d34a5722b5a69f6c69a4d09989515afc17d_0746bcb8a689a1f602909d25effef6bb8056e4da.png)
+Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, WIFI and Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2  
+<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/2c2f0d34a5722b5a69f6c69a4d09989515afc17d_0746bcb8a689a1f602909d25effef6bb8056e4da.png" height=500/>  
 
 ## Why?
 
@@ -8,8 +8,9 @@ I really miss the era of gadgets, where every device served one specific functio
 
 ## PCB 
 
-![render of pcb back](https://hc-cdn.hel1.your-objectstorage.com/s/v3/03065663bd091787c2facbdb20066010a500c577_13cfb21ecdfb24a0e44cb11cd133043d882803b8.png)  
-![render of pcb front](https://hc-cdn.hel1.your-objectstorage.com/s/v3/73b36ab6f529905fc335d25e7c4232a0e97d9a8f_0d28313562e91c92bbdc69c1d7087a15d77804d1.png)
+
+![render of pcb back](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e13d12c71f71050b8f1916d442237825d7bf3a5c_pcb-back_optimized.png)  
+![render of pcb front](https://hc-cdn.hel1.your-objectstorage.com/s/v3/22816fbb7ae5d4e87e992a025cd9d627be469620_pcb-front_optimized.png)
 
   
 Production files in `Releases`  
@@ -31,7 +32,7 @@ It is impedance controlled for JLCs default 4 layer PCB stackup, but not many of
 
 ## Case 
 
-![render of case](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b04a02b509c9c4e8f2d63487f2f1ae5ca95d4890_125cf6e1358adf4b2f394342eb4dff5af5d72451.png)  
+![render of case exploaded](https://hc-cdn.hel1.your-objectstorage.com/s/v3/bbbaaf101a9f005d0980b7fd177fbc70151c9b29_expload_optimized.png)  
   
 Production files in `Releases`  
   
