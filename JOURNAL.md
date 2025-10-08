@@ -28,3 +28,12 @@ Also, some other stuff that I have been thinking on changing/leaving for v2:
 
   
 
+## 10/8/2025 - Realized that the nrf5340 exists  
+
+Realized that nrf has much better documentation, more examples and a better rtos. It has less ram than the stm32, but it is much more power efficient. 
+
+I have worked with the nrf52840 before, and it is almost the same. I'm just worried about routing the second row/layer of pins on the package
+
+![Untitled.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTAzMSwicHVyIjoiYmxvYl9pZCJ9fQ==--cf67c0476036c83ad17c60eaefd83c064a392487/Untitled.jpg)
+  
+
