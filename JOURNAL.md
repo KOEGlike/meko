@@ -37,3 +37,10 @@ I have worked with the nrf52840 before, and it is almost the same. I'm just worr
 ![Untitled.jpg](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTAzMSwicHVyIjoiYmxvYl9pZCJ9fQ==--cf67c0476036c83ad17c60eaefd83c064a392487/Untitled.jpg)
   
 
+## 10/15/2025 - Found my dream BMS  
+
+I just found out that Nordic makes BMSs specially for the nrf5 series, it's called the npm1300, so they have full example schematics of the two working tougher!! It also has fuel gauge functionality, and is able to monitor every voltage in the system. It has two voltage regulators built in, that you can also control with i2c. It has native support for USB power negotiation. It also seems pretty easy to implement. 
+![nPM1300-QEAA_SPL.webp](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjM5MSwicHVyIjoiYmxvYl9pZCJ9fQ==--ef6e76bfbe7a7e1d14daf30bd438ff0befac77c9/nPM1300-QEAA_SPL.webp)
+
+Most of my devlogs so far have been doing research😭  
+
