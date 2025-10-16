@@ -44,3 +44,10 @@ I just found out that Nordic makes BMSs specially for the nrf5 series, it's call
 
 Most of my devlogs so far have been doing research😭  
 
+## 10/16/2025 - Started to redo schematic  
+
+Deleted a whole bunch of components. Added in the nrf5340 and all of its surrounding circuitry. Also added the npm1300, I'm so excited to use this bms btw (⁠≧⁠▽⁠≦⁠)  removed the old BMS, some of the regulators, because the BMS has built in ones. IDK if I should use 1.8V logic or 3.3V logic though 
+
+![Screenshot 2025-10-16 090028.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjQ1MiwicHVyIjoiYmxvYl9pZCJ9fQ==--ef26f48c52f257b0694d29d14f5d631a8f1df8ca/Screenshot%202025-10-16%20090028.png)
+![Screenshot 2025-10-16 090040.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjQ1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--e724825fc5a98a1007e30bee6572d5ca81f8d537/Screenshot%202025-10-16%20090040.png)  
+
