@@ -1307,183 +1307,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Battery_Cell"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.524 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single-cell battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "battery cell"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Battery_Cell_0_1"
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Battery_Cell_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -9547,7 +9370,7 @@
 	)
 	(rectangle
 		(start 198.12 260.35)
-		(end 219.71 283.21)
+		(end 243.84 283.21)
 		(stroke
 			(width 0)
 			(type dash)
@@ -9977,6 +9800,12 @@
 		(uuid "62c31534-8979-45b2-afcc-a1658946ca3e")
 	)
 	(junction
+		(at 91.44 273.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64b5d948-0c5c-4cff-9107-020659e18685")
+	)
+	(junction
 		(at 248.92 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10181,6 +10010,12 @@
 		(uuid "b6bbf8c4-cc83-4746-bc80-5158c3396a47")
 	)
 	(junction
+		(at 186.69 214.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba9808a5-bc5d-4b8c-accd-ec4ad8f8f6eb")
+	)
+	(junction
 		(at 74.93 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10355,8 +10190,8 @@
 		(uuid "fe7cf4c4-82e6-497b-ac51-eeb79da147c2")
 	)
 	(no_connect
-		(at 171.45 243.84)
-		(uuid "03cae0f8-05eb-43dd-98a5-e840d6209eb0")
+		(at 100.33 238.76)
+		(uuid "18f15453-0793-4f48-bd2b-542a7cf9013f")
 	)
 	(no_connect
 		(at 171.45 251.46)
@@ -10371,20 +10206,32 @@
 		(uuid "59382ac2-522a-49bb-9076-08080c523c94")
 	)
 	(no_connect
+		(at 100.33 231.14)
+		(uuid "61ba75a4-e688-4c97-a8a7-e28f7d0dde5f")
+	)
+	(no_connect
+		(at 100.33 236.22)
+		(uuid "67d85dc0-8ae5-4ea3-8b24-d6954e1f71f2")
+	)
+	(no_connect
 		(at 171.45 248.92)
 		(uuid "6e80f9f1-d803-45e8-a5c6-5d6c8d995ef2")
+	)
+	(no_connect
+		(at 100.33 233.68)
+		(uuid "881e31d7-63e1-4b71-ac09-3ad437eeed2e")
 	)
 	(no_connect
 		(at 392.43 31.75)
 		(uuid "8c2830b2-e53f-4608-8472-27d7d419db9c")
 	)
 	(no_connect
-		(at -184.15 74.93)
-		(uuid "c0885b6f-295d-41fa-8c0d-6326394b5e8c")
+		(at 100.33 241.3)
+		(uuid "bcaa89b1-3c89-4924-a058-548de4c91657")
 	)
 	(no_connect
-		(at 171.45 241.3)
-		(uuid "cf65cade-61b1-4c84-aba5-f6a4f22ff316")
+		(at -184.15 74.93)
+		(uuid "c0885b6f-295d-41fa-8c0d-6326394b5e8c")
 	)
 	(no_connect
 		(at 294.64 123.19)
@@ -10491,6 +10338,16 @@
 			(type default)
 		)
 		(uuid "019531da-34bc-4477-8ff9-61ab217939cc")
+	)
+	(wire
+		(pts
+			(xy 175.26 242.57) (xy 175.26 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01f039e5-6410-452b-a77f-7b436ab39669")
 	)
 	(wire
 		(pts
@@ -10631,6 +10488,16 @@
 			(type default)
 		)
 		(uuid "082c3f76-af7c-4726-9f7e-e4b51d6b1cca")
+	)
+	(wire
+		(pts
+			(xy 86.36 254) (xy 86.36 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0869554a-275f-49ca-afdb-c6a6325acd53")
 	)
 	(wire
 		(pts
@@ -11011,6 +10878,16 @@
 			(type default)
 		)
 		(uuid "1c2fe78a-91a0-4e23-ab3c-37106df7bc03")
+	)
+	(wire
+		(pts
+			(xy 172.72 241.3) (xy 171.45 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c3ef495-e8ae-43ee-a9ce-630456970788")
 	)
 	(wire
 		(pts
@@ -11661,6 +11538,16 @@
 			(type default)
 		)
 		(uuid "3a3b36bf-4f98-4233-bd7f-f7a92bcbb5ee")
+	)
+	(wire
+		(pts
+			(xy 175.26 243.84) (xy 171.45 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3abbabdc-b36c-4dea-9f3a-dec601a8a2f1")
 	)
 	(wire
 		(pts
@@ -12664,6 +12551,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 275.59) (xy 231.14 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bcc3408-e449-4259-a344-00d144ba36ff")
+	)
+	(wire
+		(pts
 			(xy -82.55 142.24) (xy -68.58 142.24)
 		)
 		(stroke
@@ -12704,7 +12601,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 279.4) (xy 213.36 279.4)
+			(xy 218.44 279.4) (xy 213.36 279.4)
 		)
 		(stroke
 			(width 0)
@@ -13061,16 +12958,6 @@
 			(type default)
 		)
 		(uuid "866e8613-f3a6-4d1a-863a-02711a357fd3")
-	)
-	(wire
-		(pts
-			(xy 214.63 271.78) (xy 213.36 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86740d35-0b80-4ba8-89a5-24f4a555f62e")
 	)
 	(wire
 		(pts
@@ -13544,7 +13431,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 271.78) (xy 205.74 271.78)
+			(xy 204.47 271.78) (xy 208.28 271.78)
 		)
 		(stroke
 			(width 0)
@@ -13581,6 +13468,16 @@
 			(type default)
 		)
 		(uuid "a097e633-7446-448f-aaec-579f854b56d7")
+	)
+	(wire
+		(pts
+			(xy 86.36 273.05) (xy 91.44 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a167846b-ce4b-4d0a-ae90-022b6fbe2fe5")
 	)
 	(wire
 		(pts
@@ -13661,6 +13558,16 @@
 			(type default)
 		)
 		(uuid "a9cf96c7-03d8-474c-aafd-430877f436c8")
+	)
+	(wire
+		(pts
+			(xy 171.45 266.7) (xy 181.61 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab82ab8-f667-4339-9579-d54c54cf44ad")
 	)
 	(wire
 		(pts
@@ -14074,6 +13981,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 240.03) (xy 172.72 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5a9be30-ed90-410d-aca4-e1be0743c80e")
+	)
+	(wire
+		(pts
 			(xy -77.47 -34.29) (xy -77.47 -35.56)
 		)
 		(stroke
@@ -14254,6 +14171,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 214.63) (xy 190.5 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfefda5e-67f0-4d29-8165-9efd0aaf432f")
+	)
+	(wire
+		(pts
 			(xy 64.77 109.22) (xy 64.77 113.03)
 		)
 		(stroke
@@ -14384,7 +14311,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 279.4) (xy 214.63 271.78)
+			(xy 218.44 279.4) (xy 218.44 278.13)
 		)
 		(stroke
 			(width 0)
@@ -14531,6 +14458,16 @@
 			(type default)
 		)
 		(uuid "def16011-9adb-4f9b-b766-f0d1f3cce03c")
+	)
+	(wire
+		(pts
+			(xy 242.57 275.59) (xy 231.14 275.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09eb6c0-a521-4c48-bf86-2acb4f47c913")
 	)
 	(wire
 		(pts
@@ -15131,6 +15068,16 @@
 			(type default)
 		)
 		(uuid "fc8f80c1-3e92-45fa-b33c-c378ed56f8d7")
+	)
+	(wire
+		(pts
+			(xy 86.36 254) (xy 100.33 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd12592b-63b5-4222-b052-cb38ec8e996b")
 	)
 	(wire
 		(pts
@@ -16162,6 +16109,16 @@
 		)
 		(uuid "ac76667e-a5c0-446a-af99-c30b2a36f7ac")
 	)
+	(label "BATTHERM"
+		(at 181.61 266.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "af182314-31d5-4f45-9820-2a724644d83f")
+	)
 	(label "BTN_VOL_UP"
 		(at 269.24 30.48 180)
 		(effects
@@ -16241,6 +16198,16 @@
 			(justify left bottom)
 		)
 		(uuid "bef6f887-69ed-4de6-b6ca-ef0af7fc55fd")
+	)
+	(label "BATTHERM"
+		(at 242.57 275.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cab26f34-7d1d-4112-b527-a49053f340dc")
 	)
 	(label "I2C_SCL"
 		(at 157.48 67.31 180)
@@ -17927,6 +17894,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 208.28 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2565ef7b-9744-457e-a1da-96b35f9d63a0")
+		(property "Reference" "TP3"
+			(at 210.82 267.2079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VBAT"
+			(at 210.82 269.7479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 208.28 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3df2de62-9a8b-4ea7-83a7-700d5a5c7afb")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 238.76 139.7 0)
 		(unit 1)
@@ -18919,85 +18953,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 210.82 271.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "366bf6c2-90d6-4e79-a9f3-b3aa70dc16bb")
-		(property "Reference" "BT1"
-			(at 210.82 267.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 210.2484 267.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "S2B-PH-SM4-TB_LF__SN_:JST_S2B-PH-SM4-TB_LF__SN_"
-			(at 209.296 271.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 209.296 271.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 210.82 271.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "S2B-PH-SM4-TB"
-			(at 210.82 271.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7ff9aea-4038-40c9-8056-b8b55f268937")
-		)
-		(pin "2"
-			(uuid "f47dfbab-ab31-4a33-b1f5-0be31b302f27")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "BT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 281.94 148.59 90)
 		(unit 1)
@@ -19804,6 +19759,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 172.72 240.03 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4cf7d22f-8a68-4655-a7d0-4083c44366ca")
+		(property "Reference" "#PWR053"
+			(at 172.72 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 176.276 238.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 172.72 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35270603-6088-40e5-9218-f752d03314d1")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at -180.34 -45.72 0)
 		(mirror y)
@@ -20308,6 +20329,72 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "C70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 175.26 242.57 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cba5e9c-6581-4ff5-9e7e-3e87675db1ad")
+		(property "Reference" "#PWR054"
+			(at 175.26 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+HALL3V3"
+			(at 181.356 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 175.26 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14b2b8f0-db47-4b6c-8061-30825dbcabeb")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -22640,8 +22727,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 126.492 97.536 0)
+		(property "Value" "+HALL3V3"
+			(at 124.714 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23030,6 +23117,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 218.44 278.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99c2d093-34dc-45b6-9778-2e479a0514a1")
+		(property "Reference" "TP2"
+			(at 220.98 273.5579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BATGND"
+			(at 220.98 276.0979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 218.44 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50646200-3e3d-4cd2-b079-0304efe7d506")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 204.47 270.51 0)
 		(unit 1)
@@ -23362,6 +23516,73 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 273.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a30a863a-f905-44c4-a1a2-27271f996bfa")
+		(property "Reference" "TP4"
+			(at 233.68 268.4779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BATTHERM"
+			(at 233.68 271.0179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1288869-bd36-4af2-84fb-7cc4767d1f26")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -25078,6 +25299,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 190.5 214.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c80ef85f-046b-4da5-97aa-ab6cab88d6be")
+		(property "Reference" "TP1"
+			(at 193.04 210.0579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 193.04 212.5979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 190.5 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d59ba27e-48cb-4e5a-89f7-a03e0abe943e")
+		)
+		(instances
+			(project ""
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at -176.53 78.74 0)
 		(mirror y)
@@ -25373,7 +25661,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cf6cbe4e-1110-4b57-b708-591241c78fcf")
 		(property "Reference" "C7"
 			(at 189.738 217.17 0)
@@ -27362,7 +27650,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fbdcc132-fbe2-441c-868e-7b2df7d62e68")
 		(property "Reference" "L6"
 			(at 178.816 217.424 0)
