@@ -6,10 +6,6 @@
   ==================================================================
 -->
 
-This is my journal of the design and building process of **Meko V2**.  
-You can view this journal in more detail on **Hack Club Blueprint** [here](https://blueprint.hackclub.com/projects/21).
-
-
 ## 9/30/2025 - Looking for an SoC that has bulilt in USB controller  
 
 V1 had a few issues, one of them that there had to be a whole separate chip to convert from usb to uart for the esp32 (gen 1), and in general it is kinda hard to flash a first gen esp32. 
@@ -50,4 +46,12 @@ Deleted a whole bunch of components. Added in the nrf5340 and all of its surroun
 
 ![Screenshot 2025-10-16 090028.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjQ1MiwicHVyIjoiYmxvYl9pZCJ9fQ==--ef26f48c52f257b0694d29d14f5d631a8f1df8ca/Screenshot%202025-10-16%20090028.png)
 ![Screenshot 2025-10-16 090040.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjQ1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--e724825fc5a98a1007e30bee6572d5ca81f8d537/Screenshot%202025-10-16%20090040.png)  
+
+## 10/20/2025 - Reread the datasheet of my AMP/DAC chip  
+
+In v1 i used 1mm*1mm power regulators for my audio chip, which were hell to debug/hand solder. SO this time I'm using almost the same regulator from TI, but in a 3mm*3mm sot-23-5 footprint. I reread the datasheet of my audio chip, and realized that I don't actually need one of those regulators, so I'm not two regulators down. 
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzc3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--c07982e241f6f1c0fab5d49bc422ed0f4de36c15/image.png)
+
+Also, my hall effect sensor for my dial draws a lot of idle current, so I utilized one of the load switches of the npm1300(my beloved) to no give power to it when the device is in sleep mode  
 
