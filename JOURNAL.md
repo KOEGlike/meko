@@ -47,11 +47,17 @@ Deleted a whole bunch of components. Added in the nrf5340 and all of its surroun
 ![Screenshot 2025-10-16 090028.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjQ1MiwicHVyIjoiYmxvYl9pZCJ9fQ==--ef26f48c52f257b0694d29d14f5d631a8f1df8ca/Screenshot%202025-10-16%20090028.png)
 ![Screenshot 2025-10-16 090040.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjQ1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--e724825fc5a98a1007e30bee6572d5ca81f8d537/Screenshot%202025-10-16%20090040.png)  
 
-## 10/20/2025 - Reread the datasheet of my AMP/DAC chip  
+## 10/20/2025 9 PM - Reread the datasheet of my AMP/DAC chip  
 
 In v1 i used 1mm*1mm power regulators for my audio chip, which were hell to debug/hand solder. SO this time I'm using almost the same regulator from TI, but in a 3mm*3mm sot-23-5 footprint. I reread the datasheet of my audio chip, and realized that I don't actually need one of those regulators, so I'm now two regulators down, the other that I removed was my general 3.3v regulator, because the npm1300 has one built in. 
 
 ![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzc3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--c07982e241f6f1c0fab5d49bc422ed0f4de36c15/image.png)
 
 Also, my hall effect sensor for my dial draws a lot of idle current, so I utilized one of the load switches of the npm1300(my beloved) to no give power to it when the device is in sleep mode  
+
+## 10/20/2025 11 PM - Finshed rough shematic  
+
+![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzgwNywicHVyIjoiYmxvYl9pZCJ9fQ==--ff65a390097177631f8a0784e42f16da4fa3ca88/image.png)
+
+I finished the power train. Connected everything to the soc. Removed/separated a bunch of nets from v1, where I was in a shortage of pins, so i combined reset pins and similar things. Switched over to spi from sdio for the sd card. Made the schematic prettier  
 
