@@ -65,6 +65,6 @@ I finished the power train. Connected everything to the soc. Removed/separated a
 
 I went over the schematic again, fixed some stuff.
 
-I used mouser for v1, and i plan to use lcsc, so i replaces parts that lcsc doesn't have, except my amp/dac, I will solder that to the PCB using hot air reflow. Furthermore, I also moved from an externally powered oscillator to a plain old crystal for my dac, it's just simpler this way. Changed footprints from 0402 to 0603 for better debugging![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDA5MiwicHVyIjoiYmxvYl9pZCJ9fQ==--26341e5e572ea3d9a5c867af6193c7718294d9ca/image.png)
+I used mouser for v1, and i plan to use lcsc for v2, so i replaced the parts that lcsc doesn't have, except my amp/dac, I will solder that to the PCB using hot air reflow. Furthermore, I also moved from an externally powered oscillator to a plain old crystal for my dac, it's just simpler this way. Changed footprints from 0402 to 0603 for better debugging![image.png](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDA5MiwicHVyIjoiYmxvYl9pZCJ9fQ==--26341e5e572ea3d9a5c867af6193c7718294d9ca/image.png)
   
 
