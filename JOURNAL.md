@@ -78,5 +78,7 @@ I posted my design on the kicad discord for review, and the people there pointed
 I spent a lot of time reading the datasheet
 
 I also switched out some parts from v1 that were not available at lcsc that are available.
+
+The schematic is almost done, the last thing i might add are some charging indicator LEDs to the pmic.
   
 
