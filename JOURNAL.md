@@ -82,3 +82,13 @@ I also switched out some parts from v1 that were not available at lcsc that are 
 The schematic is almost done, the last thing i might add are some charging indicator LEDs to the pmic.
   
 
+## 10/27/2025 - added leds to the pmic  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMSwicHVyIjoiYmxvYl9pZCJ9fQ==--56caa248c54d8a02a9e453a96dfaac9a3ba74420/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTkwMiwicHVyIjoiYmxvYl9pZCJ9fQ==--3fca44f8761792c02c01f25950177acaac390cdf/image.png)
+
+Made final touches to the schematic, added leds to the pmic, double-checked everything one more time. Added some more testpoints, but i will add a lot more.
+
+I'm debating doing double-sided pcba, but IDK if I will fit in the budget
+  
+
