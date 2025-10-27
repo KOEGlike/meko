@@ -92,3 +92,11 @@ Made final touches to the schematic, added leds to the pmic, double-checked ever
 I'm debating doing double-sided pcba, but IDK if I will fit in the budget
   
 
+## 10/28/2025 - Chat I might be cooked  
+
+My pmic is not available in a qfn package at lcsc, only in bga😭 First bga that I will use every, so I watched a bunch of altium academy videos about bga design. Also I need 0.2/(0.3)mm vias for both the pmic and the nrf53, so 5 PCBs will cost around 69$ (nice). I also checked how much would double sided PCBA will cost, it's around 210$ USD for two PCBs. So tier 1 here I come! 
+
+I'm pretty scared that this won't work like V1, so I'm putting extra effort in to quadruple-check everything. I will also place a frick ton of test points. 
+![Screenshot_20251028-010656](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjA3MCwicHVyIjoiYmxvYl9pZCJ9fQ==--7e670bd86440308c5d977d995d34f2385fdf3086/Screenshot_20251028-010656.png)
+  
+
