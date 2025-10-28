@@ -109,3 +109,17 @@ I'm also reconsidering the nrf54l, which is available in a qfn package, but most
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjE3NCwicHVyIjoiYmxvYl9pZCJ9fQ==--72bfe5d2c590aab636083b72ef52711b4446fa6c/image.png)
   
 
+## 10/28/2025 8 PM - Added a butt ton of testpoints  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjI3OCwicHVyIjoiYmxvYl9pZCJ9fQ==--3caf1c9cfea4de5e25dd25216fee5d3f7c0f2518/image.png)
+I also added a bunch of jumper pads on the i2c lines, so i can isolate one component if i want too. In the same way I also added jumper pads on the power of the chips, so i can just disconnect them
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjI3OSwicHVyIjoiYmxvYl9pZCJ9fQ==--77ea787edf0077029991df6308ebdcc056d4b6ac/image.png)
+
+
+Im staying with the nrf53, because the nrf54l doesn't have audio pll, so small vias it is
+
+I found a bug, I connected the i2c address pad of the dac to a gpio, now i have two options for and address
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjI4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--a2d3f24547d8df925adf83a8ee494d2ace0a669d/image.png)
+  
+
