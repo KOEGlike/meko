@@ -6427,7 +6427,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_nordic-lib-kicad-npm:nPM1300-QEXX"
+		(symbol "PCM_nordic-lib-kicad-npm:nPM1300-CAXX"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -6440,7 +6440,7 @@
 					)
 				)
 			)
-			(property "Value" "nPM1300-QEXX"
+			(property "Value" "nPM1300-CAXX"
 				(at 0 -2.54 0)
 				(do_not_autoplace)
 				(effects
@@ -6449,7 +6449,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias"
+			(property "Footprint" "PCM_nordic-lib-kicad-npm:BGA-35_7x5_3.077x2.3775mm"
 				(at 0 -58.42 0)
 				(effects
 					(font
@@ -6467,7 +6467,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "PMIC, LED Driver, Battery Charger, QFN-32"
+			(property "Description" "PMIC, LED Driver, Battery Charger, BGA-35"
 				(at 0 -53.34 0)
 				(effects
 					(font
@@ -6485,7 +6485,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "QFN*32*1EP*5x5mm*P0.5mm*EP3.6x3.6mm*"
+			(property "ki_fp_filters" "BGA*35*7x5*3.077x2.3775mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6494,133 +6494,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "nPM1300-QEXX_0_0"
-				(pin power_in line
-					(at -35.56 33.02 0)
-					(length 5.08)
-					(name "VBUS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -35.56 20.32 0)
-					(length 5.08)
-					(name "CC1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -35.56 17.78 0)
-					(length 5.08)
-					(name "CC2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -35.56 12.7 0)
-					(length 5.08)
-					(name "LED0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -35.56 10.16 0)
-					(length 5.08)
-					(name "LED1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -35.56 7.62 0)
-					(length 5.08)
-					(name "LED2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -35.56 2.54 0)
-					(length 5.08)
-					(name "GPIO0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "nPM1300-CAXX_0_0"
 				(pin bidirectional line
 					(at -35.56 0 0)
 					(length 5.08)
@@ -6631,7 +6505,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "E6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6649,7 +6523,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "C5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6667,7 +6541,46 @@
 							)
 						)
 					)
-					(number "10"
+					(number "C4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "nPM1300-CAXX_1_0"
+				(pin power_in line
+					(at -35.56 33.02 0)
+					(length 5.08)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -35.56 33.02 0)
+					(length 5.08)
+					(hide yes)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6676,16 +6589,106 @@
 					)
 				)
 				(pin bidirectional line
-					(at -35.56 -7.62 0)
+					(at -35.56 20.32 0)
 					(length 5.08)
-					(name "GPIO4"
+					(name "CC1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "11"
+					(number "D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 17.78 0)
+					(length 5.08)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -35.56 12.7 0)
+					(length 5.08)
+					(name "LED0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -35.56 10.16 0)
+					(length 5.08)
+					(name "LED1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -35.56 7.62 0)
+					(length 5.08)
+					(name "LED2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -35.56 2.54 0)
+					(length 5.08)
+					(name "GPIO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6703,7 +6706,7 @@
 							)
 						)
 					)
-					(number "13"
+					(number "E5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6721,7 +6724,7 @@
 							)
 						)
 					)
-					(number "14"
+					(number "E3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6739,7 +6742,7 @@
 							)
 						)
 					)
-					(number "17"
+					(number "E2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6757,7 +6760,7 @@
 							)
 						)
 					)
-					(number "16"
+					(number "E1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6765,7 +6768,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -35.56 -27.94 0)
 					(length 5.08)
 					(name "SHPHLD"
@@ -6775,7 +6778,7 @@
 							)
 						)
 					)
-					(number "15"
+					(number "D4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6793,7 +6796,7 @@
 							)
 						)
 					)
-					(number "12"
+					(number "E4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6811,7 +6814,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "C7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6822,14 +6825,14 @@
 				(pin power_in line
 					(at 0 -40.64 90)
 					(length 5.08)
-					(name "AVSS"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "33"
+					(number "A6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6847,7 +6850,26 @@
 							)
 						)
 					)
-					(number "20"
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 40.64 270)
+					(length 5.08)
+					(hide yes)
+					(name "VSYS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6865,7 +6887,7 @@
 							)
 						)
 					)
-					(number "22"
+					(number "C3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6883,7 +6905,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "B6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6901,7 +6923,25 @@
 							)
 						)
 					)
-					(number "3"
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 35.56 10.16 180)
+					(length 5.08)
+					(name "PVSS1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6919,7 +6959,7 @@
 							)
 						)
 					)
-					(number "32"
+					(number "C6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6937,117 +6977,7 @@
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 35.56 -10.16 180)
-					(length 5.08)
-					(name "LSOUT1/VOUTLDO1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 35.56 -15.24 180)
-					(length 5.08)
-					(name "LSIN2/VINLDO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 35.56 -17.78 180)
-					(length 5.08)
-					(name "LSOUT2/VOUTLDO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 35.56 -30.48 180)
-					(length 5.08)
-					(name "VBAT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 35.56 -33.02 180)
-					(length 5.08)
-					(name "NTC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "nPM1300-QEXX_1_0"
-				(pin power_in line
-					(at 35.56 10.16 180)
-					(length 5.08)
-					(name "PVSS1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
+					(number "D7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7065,7 +6995,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "E7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7083,7 +7013,116 @@
 							)
 						)
 					)
-					(number "28"
+					(number "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 35.56 -10.16 180)
+					(length 5.08)
+					(name "LSOUT1/VOUTLDO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 35.56 -15.24 180)
+					(length 5.08)
+					(name "LSIN2/VINLDO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 35.56 -17.78 180)
+					(length 5.08)
+					(name "LSOUT2/VOUTLDO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 35.56 -30.48 180)
+					(length 5.08)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 -30.48 180)
+					(length 5.08)
+					(hide yes)
+					(name "VBAT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 35.56 -33.02 180)
+					(length 5.08)
+					(name "NTC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7092,7 +7131,7 @@
 					)
 				)
 			)
-			(symbol "nPM1300-QEXX_1_1"
+			(symbol "nPM1300-CAXX_1_1"
 				(rectangle
 					(start -30.48 35.56)
 					(end 30.48 -35.56)
@@ -27939,169 +27978,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_nordic-lib-kicad-npm:nPM1300-QEXX")
-		(at 144.78 325.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "808af94c-bab0-4172-8fd2-e2347aa80929")
-		(property "Reference" "U1"
-			(at 144.78 325.12 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "nPM1300-QEXX"
-			(at 144.78 327.66 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias"
-			(at 144.78 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://docs.nordicsemi.com/bundle/ps_npm1300"
-			(at 144.78 381 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PMIC, LED Driver, Battery Charger, QFN-32"
-			(at 144.78 378.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "14"
-			(uuid "4c912f8c-d4a8-45e6-831c-9ab9cb2328d9")
-		)
-		(pin "23"
-			(uuid "71fe6fd7-8243-47a7-8476-7fb55a595249")
-		)
-		(pin "26"
-			(uuid "dc6528ba-f983-4e71-9143-b8cebaac6a9f")
-		)
-		(pin "10"
-			(uuid "a016d96a-44b1-4250-8c05-1d8dfd1e225f")
-		)
-		(pin "4"
-			(uuid "f1d030df-d55c-4730-b857-9e22d7ca4548")
-		)
-		(pin "16"
-			(uuid "e7c43d44-ca8f-490b-82c9-473db373eb36")
-		)
-		(pin "18"
-			(uuid "c5957e80-9504-4165-8146-6421a1044600")
-		)
-		(pin "21"
-			(uuid "ee4c1986-3dd9-490a-9d54-d4c297ab0912")
-		)
-		(pin "9"
-			(uuid "10404e2a-1789-4911-a149-e7267a5b4f4a")
-		)
-		(pin "15"
-			(uuid "32ea65ac-2e45-4390-94d1-508d7d819858")
-		)
-		(pin "12"
-			(uuid "e9cd4395-136d-4e08-b921-54ae89c585a0")
-		)
-		(pin "17"
-			(uuid "6c167c74-2813-4611-92c8-fc36f71e2b89")
-		)
-		(pin "1"
-			(uuid "e7764bb5-7449-4e23-b8cc-ec7d8af69f8c")
-		)
-		(pin "25"
-			(uuid "84637bde-264f-48d0-b21a-f923f2acd826")
-		)
-		(pin "8"
-			(uuid "f706a2a0-c358-4eb7-90d9-0d61e2d892a0")
-		)
-		(pin "24"
-			(uuid "ab6184c9-cfad-473d-ad7d-e848f93fc4a9")
-		)
-		(pin "7"
-			(uuid "582433e4-eda9-40b5-8cda-b4cc6576698d")
-		)
-		(pin "13"
-			(uuid "cbe6dedf-8e40-42b3-96f1-8f19f2cd9071")
-		)
-		(pin "22"
-			(uuid "bf92d6d7-08a2-4b85-b791-014c815c5729")
-		)
-		(pin "27"
-			(uuid "181ef806-7d21-4ccb-92be-375e66841957")
-		)
-		(pin "3"
-			(uuid "f7f67e0d-33db-49eb-8179-6ada2f7accd8")
-		)
-		(pin "33"
-			(uuid "fd140a36-d228-4ee3-971e-f191b57b3d9c")
-		)
-		(pin "11"
-			(uuid "7a82e708-5d8d-4fd8-968b-1f48999d2a3b")
-		)
-		(pin "5"
-			(uuid "d66fe528-cf04-4304-b734-a4633a5f2144")
-		)
-		(pin "20"
-			(uuid "5d869c33-25d6-4751-94f8-a5830998549b")
-		)
-		(pin "29"
-			(uuid "5868b290-6a92-44cb-9534-ea375ae7f167")
-		)
-		(pin "30"
-			(uuid "1e513b81-8802-4d6f-a982-bd6d08254bf5")
-		)
-		(pin "31"
-			(uuid "23ec9dd2-fa1f-4140-a718-42995bbe198a")
-		)
-		(pin "19"
-			(uuid "82a46a79-5b4c-4f21-8233-9e0c307109fd")
-		)
-		(pin "32"
-			(uuid "0122fcb3-89d9-4ddb-af34-0e90d1d74976")
-		)
-		(pin "6"
-			(uuid "bf0c46ae-0e50-4660-8e76-f00636c2e9a5")
-		)
-		(pin "28"
-			(uuid "47b68161-0972-4762-b156-795730e7e412")
-		)
-		(pin "2"
-			(uuid "782dbc80-a476-4531-8624-c61457b8a541")
-		)
-		(instances
-			(project ""
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 234.95 363.22 0)
 		(unit 1)
@@ -34173,6 +34049,175 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_nordic-lib-kicad-npm:nPM1300-CAXX")
+		(at 144.78 325.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e34e486f-9c35-40a4-acc2-9954dc1c2cf8")
+		(property "Reference" "U3"
+			(at 144.78 325.12 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "nPM1300-CAXX"
+			(at 144.78 327.66 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_nordic-lib-kicad-npm:BGA-35_7x5_3.077x2.3775mm"
+			(at 144.78 383.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://docs.nordicsemi.com/bundle/ps_npm1300"
+			(at 144.78 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PMIC, LED Driver, Battery Charger, BGA-35"
+			(at 144.78 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "B6"
+			(uuid "12f6c6bb-0354-4e08-ad3d-b314cde5a2bd")
+		)
+		(pin "B3"
+			(uuid "d7d010c2-0e1a-40af-8d90-55b3da63b153")
+		)
+		(pin "A2"
+			(uuid "d3dc2bd9-4eba-4fd4-abe6-29f12754ade5")
+		)
+		(pin "A3"
+			(uuid "decf9f62-61d6-4996-a7ad-4acb7289cf50")
+		)
+		(pin "C2"
+			(uuid "3c3134df-709f-4b9a-9dc9-f8a0359c73c2")
+		)
+		(pin "C3"
+			(uuid "c54efb81-df42-475c-a959-2337701cf33d")
+		)
+		(pin "D6"
+			(uuid "b6b26e57-1c68-4263-be81-215cc268654f")
+		)
+		(pin "E7"
+			(uuid "7e9ae022-8d06-422b-8607-36d851b2a954")
+		)
+		(pin "C4"
+			(uuid "c103a5d7-ab11-4949-a5d5-6feb7af4866f")
+		)
+		(pin "E5"
+			(uuid "64574468-5523-47f5-9338-4f5c0eb7ebc0")
+		)
+		(pin "E3"
+			(uuid "8c672690-e16d-4910-a002-05ce94bdf484")
+		)
+		(pin "D4"
+			(uuid "fd04c16e-59af-4020-b412-adfdef9eb0f5")
+		)
+		(pin "B1"
+			(uuid "610cd2d2-ae5b-4d87-87e7-674b38d497f1")
+		)
+		(pin "C7"
+			(uuid "64d6a267-eab3-43e6-98a5-f8ba83bced62")
+		)
+		(pin "B2"
+			(uuid "a3617246-92f5-48b0-8055-4dc46b0e5cb2")
+		)
+		(pin "A6"
+			(uuid "7734970d-9315-4165-80d6-d87dbadaa448")
+		)
+		(pin "C6"
+			(uuid "8734c8e9-9519-41a8-8685-de37b7f51bf4")
+		)
+		(pin "D5"
+			(uuid "052d157b-59f6-4fe4-a8ee-a77d95609eb5")
+		)
+		(pin "E6"
+			(uuid "ee1b158b-3367-495f-9e7b-627f15669ae9")
+		)
+		(pin "A1"
+			(uuid "a5710946-0c00-4f10-bed3-1b8c97d5b038")
+		)
+		(pin "C5"
+			(uuid "c88932cc-484d-450e-a42f-20edd21ae011")
+		)
+		(pin "E1"
+			(uuid "256f3b46-320e-406b-96a7-2782a592000b")
+		)
+		(pin "E4"
+			(uuid "866a3929-b315-4104-8636-1f22a19a4880")
+		)
+		(pin "E2"
+			(uuid "3340470f-55ce-4294-bfbb-d8401522bc23")
+		)
+		(pin "C1"
+			(uuid "17ab121c-4a33-44ae-a1ff-01fd84586686")
+		)
+		(pin "B7"
+			(uuid "d067ee53-ce78-4510-8c73-164fc04877f1")
+		)
+		(pin "D7"
+			(uuid "4906343c-e39e-4bd1-8368-f50faaa400f8")
+		)
+		(pin "A7"
+			(uuid "d1e652de-d2c6-41d0-9ba3-c26a514e87c1")
+		)
+		(pin "B4"
+			(uuid "7c276bb8-3a58-4704-8355-dfa5730ca673")
+		)
+		(pin "D3"
+			(uuid "d4a2334a-5b1d-4d13-8e1e-5ee09338e42f")
+		)
+		(pin "B5"
+			(uuid "4c56c3a4-774d-4424-86a4-06e46b041503")
+		)
+		(pin "D1"
+			(uuid "2e32b94b-b92b-4fa3-817a-9dced72695e0")
+		)
+		(pin "A4"
+			(uuid "f1a50560-8955-461d-9f3f-95c5f2d67bfe")
+		)
+		(pin "D2"
+			(uuid "a58f75ee-e7ee-4c5a-9748-8a9fed8ee83b")
+		)
+		(pin "A5"
+			(uuid "f89a0a44-9096-4085-8f30-24d8aec8bc27")
+		)
+		(instances
+			(project ""
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "U3")
 					(unit 1)
 				)
 			)
