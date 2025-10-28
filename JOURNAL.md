@@ -123,3 +123,10 @@ I found a bug, I connected the i2c address pad of the dac to a gpio, now i have 
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjI4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--a2d3f24547d8df925adf83a8ee494d2ace0a669d/image.png)
   
 
+## 10/28/2025 10 PM - Changed out the parts that were not avalibile on lcsc  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjMyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--907bedb8efa8fc4e82b5d7c7dc9ac889ec8bd074/image.png)![image](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjMyNiwicHVyIjoiYmxvYl9pZCJ9fQ==--3bb1f346c0281229081df554a9cc2f586e050cdf/image.png)![image](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjMyNywicHVyIjoiYmxvYl9pZCJ9fQ==--2e7ab4256ea09d7d67b0fee25d3e2b19834fefc5/image.png)
+
+I still had some parts that were not avalabile on lcsc from v1, so i looked for new parts, I changed out the usb port, display fpc port, vibration motor
+  
+
