@@ -130,3 +130,14 @@ I found a bug, I connected the i2c address pad of the dac to a gpio, now i have 
 I still had some parts that were not avalabile on lcsc from v1, so i looked for new parts, I changed out the usb port, display fpc port, vibration motor
   
 
+## 11/5/2025 - Almost finished with basic layout  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODcyMywicHVyIjoiYmxvYl9pZCJ9fQ==--26ad347f735295de2d3729c6a6f9cc387f31ece2/image.png)
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODcyNSwicHVyIjoiYmxvYl9pZCJ9fQ==--f1351e02c2f26a81e3480fdd8291575a123f5a80/image.png)
+
+This is a rough layout, just to help me visualize how I should proceed
+
+Still contemplating using a module for the nrf53, seems easier, and if i want to sell this later on i wouldn't have to get rf certification
+
+  
+
