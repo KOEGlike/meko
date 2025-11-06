@@ -141,3 +141,13 @@ Still contemplating using a module for the nrf53, seems easier, and if i want to
 
   
 
+## 11/6/2025 - finished first pass of rough layout  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgyNywicHVyIjoiYmxvYl9pZCJ9fQ==--18f6b31c573fb359c76d6937b048d2e26be446de/image.png)![image](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgyOCwicHVyIjoiYmxvYl9pZCJ9fQ==--00d40718735483d0dc40deba407f18fac7f3c6ea/image.png)![image](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODgyOSwicHVyIjoiYmxvYl9pZCJ9fQ==--bc3afca530167b98bea05f78fab6c597f1587715/image.png)
+
+
+
+i still need to add 3d models, and place all the testpoints, some jumpers and the swd connector
+
+I will stay with this package i think, it will be fun to be able to use small vias like ts  
+
