@@ -1836,7 +1836,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "114b214e-6f57-4928-950e-da561ea085f6")
-		(at 91.55 65.1525 180)
+		(at 91.845 64.2125 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C4"
@@ -29157,11 +29157,11 @@
 	(footprint "PJ-242:AUDIO-SMD_PJ-342"
 		(layer "B.Cu")
 		(uuid "2b5ac9a7-d0c6-467a-8a30-cff1aedf8c63")
-		(at 102.48 29.99625 180)
+		(at 102.48 29.99375 180)
 		(property "Reference" "CN2"
 			(at 0 10.102 0)
 			(layer "B.SilkS")
-			(uuid "18651051-deb7-4475-81bc-a13dc7ed0352")
+			(uuid "f10a86aa-fdd9-45c4-859d-72946d936e78")
 			(effects
 				(font
 					(size 1 1)
@@ -29173,7 +29173,7 @@
 		(property "Value" "~"
 			(at 0 -6.425 0)
 			(layer "B.Fab")
-			(uuid "1b24df7c-8a1f-4186-ba9d-46ea52c1b9a2")
+			(uuid "aa65634a-bf48-483e-b98c-bb2e4c6625d2")
 			(effects
 				(font
 					(size 1 1)
@@ -29186,7 +29186,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "21588131-99dc-47c5-87b2-f5fa61fe5bd0")
+			(uuid "0858059c-d6e9-417d-8b1c-1efae79a83ba")
 			(effects
 				(font
 					(size 1 1)
@@ -29199,7 +29199,7 @@
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "861c6b86-efa3-4b00-9fb5-b05f0b21eb2e")
+			(uuid "5b895890-6494-429a-9701-849ddf4ba3dd")
 			(effects
 				(font
 					(size 1 1)
@@ -29845,7 +29845,7 @@
 	(footprint "Inductor_SMD:L_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "30c26299-c956-475e-8e40-009dca4d40bc")
-		(at 109.55 63.7525 90)
+		(at 109.02206 67.036651 90)
 		(descr "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "inductor")
 		(property "Reference" "L1"
@@ -30793,7 +30793,7 @@
 	(footprint "Diode_SMD:D_1206_3216Metric"
 		(layer "B.Cu")
 		(uuid "417b3ba8-ff3b-4610-933b-57cf732c588a")
-		(at 110.95 58.6525 180)
+		(at 110.42206 61.936651 180)
 		(descr "Diode SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "diode")
 		(property "Reference" "AE1"
@@ -36122,7 +36122,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "7adaf830-fa62-4d2d-aa73-62900606292e")
-		(at 108.775 61.0525 180)
+		(at 108.24706 64.336651 180)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C13"
@@ -44335,7 +44335,7 @@
 	(footprint "Diode_SMD:D_SMA"
 		(layer "B.Cu")
 		(uuid "ee699c1e-43b1-47e1-b277-f50c8c8d9240")
-		(at 81.751339 82.772893)
+		(at 80.08 82.7525)
 		(descr "Diode SMA (DO-214AC)")
 		(tags "Diode SMA (DO-214AC)")
 		(property "Reference" "D2"
@@ -45055,7 +45055,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "B.Cu")
 		(uuid "f1f9345d-dff1-4f0e-81d0-0a4de062af1b")
-		(at 107.55 63.7525 90)
+		(at 107.02206 67.036651 90)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C18"
@@ -45793,20 +45793,100 @@
 		(uuid "fc20d266-d6fc-4f9c-9b84-8e6beaab645a")
 	)
 	(segment
-		(start 103.775 69.4525)
-		(end 101.3 69.4525)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 6)
-		(uuid "53f2d038-a12e-41f1-a4f9-a8b2db879609")
-	)
-	(segment
 		(start 101.3 69.4525)
 		(end 101.28 69.4725)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 6)
-		(uuid "a19a222b-109b-473c-97de-618606230815")
+		(uuid "6bb69aa1-28e9-46d7-bf3a-90b9ff471953")
+	)
+	(segment
+		(start 103.775 69.4525)
+		(end 101.3 69.4525)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 6)
+		(uuid "e6b84126-b4d0-4b51-987c-10694374274b")
+	)
+	(segment
+		(start 104.88 72.6975)
+		(end 104.88 71.07075)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+		(uuid "43d389bd-034f-4c79-9047-5d07a9e9a2d1")
+	)
+	(segment
+		(start 104.07775 70.1185)
+		(end 101.526 70.1185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+		(uuid "444f3742-a4da-492b-9523-ffa299112106")
+	)
+	(segment
+		(start 101.526 70.1185)
+		(end 101.28 69.8725)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+		(uuid "c4bd4672-fb3b-46d4-a4b5-560697afdc2f")
+	)
+	(segment
+		(start 104.955 70.99575)
+		(end 104.07775 70.1185)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+		(uuid "d1bad58b-5740-4152-8df4-47a8d8410089")
+	)
+	(segment
+		(start 104.88 71.07075)
+		(end 104.955 70.99575)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 33)
+		(uuid "fbb0be46-6248-45f5-8c2d-f1abbec797f8")
+	)
+	(segment
+		(start 101.214 73.7815)
+		(end 101.88 74.4475)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 34)
+		(uuid "106eef39-4692-4720-bc19-d0769c028190")
+	)
+	(segment
+		(start 101.214 72.775904)
+		(end 101.214 73.7815)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 34)
+		(uuid "3e6df6bb-aca1-4433-954e-5f1d757aaf48")
+	)
+	(segment
+		(start 100.88 72.441904)
+		(end 101.214 72.775904)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 34)
+		(uuid "53c2f6f5-bb13-4787-96d8-4f6e88325f2c")
+	)
+	(segment
+		(start 101.88 74.4475)
+		(end 103.48 74.4475)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 34)
+		(uuid "5a5b2cfe-daa0-40d5-9740-22b157a7a630")
+	)
+	(segment
+		(start 100.88 70.0725)
+		(end 100.88 72.441904)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 34)
+		(uuid "74933252-6752-466a-aea8-ce905e7d3ec7")
 	)
 	(segment
 		(start 104.6 55.225)
@@ -45825,8 +45905,8 @@
 		(uuid "d86571f4-72e8-432f-9518-0fa944c47e72")
 	)
 	(segment
-		(start 109.5375 64.5275)
-		(end 109.55 64.54)
+		(start 109.00956 67.811651)
+		(end 109.02206 67.824151)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 81)
