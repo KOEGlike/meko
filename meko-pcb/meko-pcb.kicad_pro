@@ -511,29 +511,41 @@
       },
       {
         "bus_width": 12,
+        "clearance": 0.1,
+        "line_style": 0,
+        "name": "ANT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.12,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.09,
         "line_style": 0,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.6,
         "via_diameter": 0.3,
         "via_drill": 0.2,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.12,
+        "clearance": 0.09,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.1575,
         "line_style": 0,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.5,
-        "via_drill": 0.3,
+        "via_diameter": 0.3,
+        "via_drill": 0.2,
         "wire_width": 6
       }
     ],
@@ -542,7 +554,28 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "/D[+\\-]"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VBUS*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "REG-OUT"
+      },
+      {
+        "netclass": "ANT",
+        "pattern": "/ANT"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

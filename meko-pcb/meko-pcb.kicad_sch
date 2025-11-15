@@ -11986,10 +11986,6 @@
 		(uuid "30aadc92-ad6b-47f5-9cb2-f1096a72cac9")
 	)
 	(no_connect
-		(at 337.82 114.3)
-		(uuid "75da8a1a-1df9-4b1f-a602-c947cfe2bb75")
-	)
-	(no_connect
 		(at 274.32 114.3)
 		(uuid "be855e0c-f57a-4c3d-a6d4-4c0df7579e41")
 	)
@@ -12379,7 +12375,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 116.84) (xy 337.82 116.84)
+			(xy 325.12 116.84) (xy 337.82 116.84)
 		)
 		(stroke
 			(width 0)
@@ -13549,6 +13545,16 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 114.3) (xy 337.82 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39d66a7d-ac2b-4b31-ba04-a1a1b33851fb")
+	)
+	(wire
+		(pts
 			(xy 410.21 342.9) (xy 408.94 342.9)
 		)
 		(stroke
@@ -13809,7 +13815,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 104.14) (xy 337.82 104.14)
+			(xy 325.12 104.14) (xy 337.82 104.14)
 		)
 		(stroke
 			(width 0)
@@ -14949,7 +14955,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 109.22) (xy 337.82 109.22)
+			(xy 322.58 109.22) (xy 337.82 109.22)
 		)
 		(stroke
 			(width 0)
@@ -15789,7 +15795,7 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 107.95) (xy 323.85 109.22)
+			(xy 322.58 107.95) (xy 322.58 109.22)
 		)
 		(stroke
 			(width 0)
@@ -17139,7 +17145,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 106.68) (xy 337.82 106.68)
+			(xy 325.12 106.68) (xy 337.82 106.68)
 		)
 		(stroke
 			(width 0)
@@ -17979,7 +17985,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 111.76) (xy 337.82 111.76)
+			(xy 325.12 111.76) (xy 337.82 111.76)
 		)
 		(stroke
 			(width 0)
@@ -18319,7 +18325,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 119.38) (xy 337.82 119.38)
+			(xy 325.12 119.38) (xy 337.82 119.38)
 		)
 		(stroke
 			(width 0)
@@ -18378,7 +18384,7 @@
 		(uuid "03fb1799-19cb-4c03-a324-8a2eb96ca234")
 	)
 	(label "PMIC_GPIO2"
-		(at 193.04 146.05 180)
+		(at 193.04 217.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18448,7 +18454,7 @@
 		(uuid "13137fdc-9343-4f52-8f92-36d20b8d659c")
 	)
 	(label "MEM_LEVER"
-		(at 193.04 219.71 180)
+		(at 193.04 171.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18458,7 +18464,7 @@
 		(uuid "140c89fb-74a2-4d09-ba85-ef00a67ec74c")
 	)
 	(label "BTN_SIDE_R"
-		(at 193.04 135.89 180)
+		(at 193.04 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18588,7 +18594,7 @@
 		(uuid "2a5e39da-5663-497f-9115-d9009c4abbde")
 	)
 	(label "MEM_MISO"
-		(at 327.66 116.84 0)
+		(at 325.12 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18598,7 +18604,7 @@
 		(uuid "2af01390-d67c-48cc-8bb1-29553aabddcd")
 	)
 	(label "PMIC_GPIO3"
-		(at 193.04 148.59 180)
+		(at 193.04 214.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18608,7 +18614,7 @@
 		(uuid "2baa7005-4b64-4f7a-a8c1-5bbed07e69ed")
 	)
 	(label "MEM_SWITCH"
-		(at 193.04 222.25 180)
+		(at 193.04 189.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18658,7 +18664,7 @@
 		(uuid "33d54754-f122-4de8-8195-6ec6c7cbbb25")
 	)
 	(label "DISPL_~{D{slash}C}"
-		(at 193.04 196.85 180)
+		(at 193.04 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18768,7 +18774,7 @@
 		(uuid "49c3081c-2e00-442d-80ea-ff69b0fca2da")
 	)
 	(label "MEM_MOSI"
-		(at 327.66 106.68 0)
+		(at 325.12 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18788,7 +18794,7 @@
 		(uuid "5103724b-1c53-434c-a074-b16ffc594b1b")
 	)
 	(label "PMIC_GPIO0"
-		(at 193.04 140.97 180)
+		(at 193.04 201.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18848,7 +18854,7 @@
 		(uuid "660df717-6016-4400-930f-867faf44993a")
 	)
 	(label "BTN_SIDE_L"
-		(at 193.04 138.43 180)
+		(at 193.04 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18858,7 +18864,7 @@
 		(uuid "661aefd1-5aba-45e0-8abc-8f93729f0b64")
 	)
 	(label "DISPL_BUSY"
-		(at 193.04 201.93 180)
+		(at 193.04 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19008,7 +19014,7 @@
 		(uuid "7712b007-70ff-4074-9d32-5ba8e419fa21")
 	)
 	(label "DISPL_SDA"
-		(at 193.04 156.21 180)
+		(at 193.04 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19018,7 +19024,7 @@
 		(uuid "779cc440-dc36-4b98-93e6-542ddcb81a37")
 	)
 	(label "DISPL_~{CS}"
-		(at 193.04 207.01 180)
+		(at 193.04 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19058,7 +19064,7 @@
 		(uuid "81090a3a-05a7-4e08-8389-cfe64de341e7")
 	)
 	(label "DISPL_RESET"
-		(at 193.04 217.17 180)
+		(at 193.04 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19128,7 +19134,7 @@
 		(uuid "8e883b2a-7b41-4461-b60e-dc68b1a6a483")
 	)
 	(label "PMIC_GPIO4"
-		(at 193.04 171.45 180)
+		(at 193.04 219.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19228,7 +19234,7 @@
 		(uuid "ab477924-c48b-4be8-b7c6-b6722ff33e57")
 	)
 	(label "BTN_PWR"
-		(at 193.04 189.23 180)
+		(at 193.04 168.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19298,7 +19304,7 @@
 		(uuid "b8e99353-552d-41ff-a1ea-ccda3b90db2d")
 	)
 	(label "MEM_CS"
-		(at 327.66 104.14 0)
+		(at 325.12 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19357,16 +19363,6 @@
 		)
 		(uuid "c9641b74-65de-4e7f-ba6b-c85167a50aa0")
 	)
-	(label "MEM_COM"
-		(at 327.66 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ca362695-16d2-4166-8259-056855985735")
-	)
 	(label "BATTHERM"
 		(at 223.52 377.19 0)
 		(effects
@@ -19408,7 +19404,7 @@
 		(uuid "ce511e16-d85d-40b9-82e8-70d976108d00")
 	)
 	(label "DISPL_SCL"
-		(at 193.04 153.67 180)
+		(at 193.04 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19427,8 +19423,18 @@
 		)
 		(uuid "d18ec653-82ab-4a25-a73d-d48429077cda")
 	)
+	(label "MEM_SWITCH"
+		(at 325.12 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d62a3354-9feb-43aa-80bd-9042ac7a554b")
+	)
 	(label "MEM_SCK"
-		(at 327.66 111.76 0)
+		(at 325.12 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19538,7 +19544,7 @@
 		(uuid "eba642f6-d259-4d34-a400-9fe7b853dfe9")
 	)
 	(label "PMIC_GPIO1"
-		(at 193.04 143.51 180)
+		(at 193.04 204.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -19586,6 +19592,16 @@
 			(justify right bottom)
 		)
 		(uuid "f66a6f8c-befb-422f-8277-b04afd82193d")
+	)
+	(label "MEM_LEVER"
+		(at 325.12 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f6c08ed7-20eb-4d56-92f8-c334f8c420f6")
 	)
 	(label "MEM_MOSI"
 		(at 193.04 125.73 180)
@@ -25168,7 +25184,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 323.85 107.95 0)
+		(at 322.58 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25176,7 +25192,7 @@
 		(dnp no)
 		(uuid "423670d9-9faf-4edd-8522-57c46f815664")
 		(property "Reference" "#PWR085"
-			(at 323.85 111.76 0)
+			(at 322.58 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25185,7 +25201,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 323.85 103.886 0)
+			(at 321.564 103.886 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25193,7 +25209,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 107.95 0)
+			(at 322.58 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25202,7 +25218,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 107.95 0)
+			(at 322.58 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25211,7 +25227,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 323.85 107.95 0)
+			(at 322.58 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27112,7 +27128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+HALL3V3"
+		(property "Value" "+3V3HALL"
 			(at 190.246 332.74 0)
 			(effects
 				(font
@@ -27900,7 +27916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+HALL3V3"
+		(property "Value" "+3V3HALL"
 			(at 407.67 110.49 0)
 			(effects
 				(font
@@ -30890,6 +30906,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 293.37 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8611a29a-7aa8-44d2-8828-f4749de2859a")
+		(property "Reference" "#PWR028"
+			(at 293.37 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3HALL"
+			(at 287.274 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 293.37 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 293.37 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 293.37 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8aae94c3-0cc3-450c-bdcf-7a0f3cea6f5b")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "TPS7A2033PDBVR:TPS7A2033PDBVR")
 		(at 257.81 275.59 0)
 		(unit 1)
@@ -31543,71 +31624,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "TP39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 293.37 229.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a17c801-71c3-46f9-bfb1-2d127b0908f1")
-		(property "Reference" "#PWR072"
-			(at 293.37 233.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+HALL3V3"
-			(at 287.274 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 293.37 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 293.37 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 293.37 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b835f645-229c-431a-8d68-dfcb62697344")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "#PWR072")
 					(unit 1)
 				)
 			)
