@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.15
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -189,6 +189,7 @@
       "track_widths": [
         0.0,
         0.0762,
+        0.09,
         0.1,
         0.15,
         0.175,
@@ -201,7 +202,8 @@
         0.8,
         0.9,
         1.0,
-        1.1
+        1.1,
+        1.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -573,7 +575,7 @@
       },
       {
         "netclass": "ANT",
-        "pattern": "/ANT"
+        "pattern": "/ANT*"
       },
       {
         "netclass": "PWR",

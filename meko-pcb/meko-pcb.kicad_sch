@@ -11990,7 +11990,7 @@
 		(uuid "be855e0c-f57a-4c3d-a6d4-4c0df7579e41")
 	)
 	(no_connect
-		(at 83.82 212.09)
+		(at 76.2 212.09)
 		(uuid "c0885b6f-295d-41fa-8c0d-6326394b5e8c")
 	)
 	(no_connect
@@ -16675,7 +16675,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 212.09) (xy 91.44 212.09)
+			(xy 81.28 212.09) (xy 91.44 212.09)
 		)
 		(stroke
 			(width 0)
@@ -18613,6 +18613,16 @@
 		)
 		(uuid "2a5e39da-5663-497f-9115-d9009c4abbde")
 	)
+	(label "ANTMATCH"
+		(at 83.82 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ad131ff-39dd-4371-aa4d-9c94c22c2f49")
+	)
 	(label "MEM_MISO"
 		(at 328.93 116.84 0)
 		(effects
@@ -19867,7 +19877,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Chip")
-		(at 86.36 209.55 0)
+		(at 78.74 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19875,7 +19885,7 @@
 		(dnp no)
 		(uuid "03d3934b-7a9f-43e1-bda5-8fc29d8ab225")
 		(property "Reference" "AE1"
-			(at 82.042 197.358 0)
+			(at 74.422 197.358 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19884,7 +19894,7 @@
 			)
 		)
 		(property "Value" "Antenna_Chip"
-			(at 82.042 199.898 0)
+			(at 74.422 199.898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19893,7 +19903,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_1206_3216Metric"
-			(at 83.82 205.105 0)
+			(at 76.2 205.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19902,7 +19912,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C293767.pdf"
-			(at 83.82 205.105 0)
+			(at 76.2 205.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19911,7 +19921,7 @@
 			)
 		)
 		(property "Description" "Ceramic chip antenna with pin for PCB trace"
-			(at 86.36 209.55 0)
+			(at 78.74 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19920,7 +19930,7 @@
 			)
 		)
 		(property "MPN" "ANT3216LL00R2400A"
-			(at 86.36 209.55 0)
+			(at 78.74 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
