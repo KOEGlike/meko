@@ -513,13 +513,13 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.1,
+        "clearance": 0.15,
         "line_style": 0,
         "name": "ANT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.12,
+        "track_width": 0.14,
         "wire_width": 6
       },
       {
@@ -580,6 +580,10 @@
       {
         "netclass": "PWR",
         "pattern": "/HALLVDD"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+BATT"
       }
     ]
   },
