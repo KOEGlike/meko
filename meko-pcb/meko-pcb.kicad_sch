@@ -12176,6 +12176,10 @@
 		(uuid "c0885b6f-295d-41fa-8c0d-6326394b5e8c")
 	)
 	(no_connect
+		(at 195.58 153.67)
+		(uuid "ce117c89-486d-4a03-9637-75ad2609ed78")
+	)
+	(no_connect
 		(at 361.95 101.6)
 		(uuid "e8fec3df-6c8c-4b67-9fdd-eba26c3ab7c0")
 	)
@@ -17957,7 +17961,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 153.67) (xy 193.04 153.67)
+			(xy 176.53 153.67) (xy 195.58 153.67)
 		)
 		(stroke
 			(width 0)
@@ -20876,7 +20880,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 193.04 140.97 270)
+		(at 193.04 146.05 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20885,7 +20889,7 @@
 		(dnp no)
 		(uuid "0e22d736-8947-4ee9-b28c-55b49c4ab77a")
 		(property "Reference" "TP27"
-			(at 197.866 140.97 90)
+			(at 197.866 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20894,7 +20898,7 @@
 			)
 		)
 		(property "Value" "DISPL_SDA"
-			(at 195.0721 138.43 0)
+			(at 195.0721 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20904,7 +20908,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 193.04 135.89 0)
+			(at 193.04 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20913,7 +20917,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 135.89 0)
+			(at 193.04 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20922,7 +20926,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 193.04 140.97 0)
+			(at 193.04 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22264,7 +22268,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 193.04 146.05 270)
+		(at 193.04 140.97 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22273,7 +22277,7 @@
 		(dnp no)
 		(uuid "1f53c9f9-9487-4927-9dc3-aae163ca5cac")
 		(property "Reference" "TP29"
-			(at 197.866 146.05 90)
+			(at 197.866 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22282,7 +22286,7 @@
 			)
 		)
 		(property "Value" "DISPL_SCL"
-			(at 195.0721 143.51 0)
+			(at 195.0721 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22292,7 +22296,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 193.04 140.97 0)
+			(at 193.04 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22301,7 +22305,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 140.97 0)
+			(at 193.04 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22310,7 +22314,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 193.04 146.05 0)
+			(at 193.04 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30646,74 +30650,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 193.04 153.67 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "8042f352-61e1-4ad0-be58-3ce357b6a6c1")
-		(property "Reference" "TP32"
-			(at 197.866 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DISPL_SCL"
-			(at 195.0721 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 193.04 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 193.04 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "99941dde-a07c-4ef8-ad40-9a11f4515a78")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "TP32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 234.95 363.22 0)
 		(unit 1)
@@ -33709,7 +33645,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_TDK_MLZ2012_h1.25mm"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 322.58 290.83 0)
 			(effects
 				(font
