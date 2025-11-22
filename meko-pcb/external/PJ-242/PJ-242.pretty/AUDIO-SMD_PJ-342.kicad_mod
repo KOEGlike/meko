@@ -163,6 +163,58 @@
 		(layer "F.SilkS")
 		(uuid "f3878a54-1f7a-40f0-816f-16efa15d5749")
 	)
+	(fp_line
+		(start -2.7 -7)
+		(end -2.7 -9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "42ece180-e9f0-4713-b426-b2feb21da59f")
+	)
+	(fp_line
+		(start 2.5 -6.8)
+		(end -2.5 -6.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "b8286693-60df-40d9-baf5-1fd93ea43c26")
+	)
+	(fp_line
+		(start 2.7 -9)
+		(end 2.7 -7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "f7968052-4234-4ced-a05f-8b923af10630")
+	)
+	(fp_arc
+		(start -2.5 -6.8)
+		(mid -2.641421 -6.858579)
+		(end -2.7 -7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "d08800db-9055-4505-858b-9bd4f618bdbd")
+	)
+	(fp_arc
+		(start 2.7 -7)
+		(mid 2.641421 -6.858579)
+		(end 2.5 -6.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "c6e49597-0a30-4b0c-b9d5-fb2940600df0")
+	)
 	(fp_circle
 		(center 0 -4.55)
 		(end 0.275 -4.55)
@@ -184,58 +236,6 @@
 		(fill no)
 		(layer "Dwgs.User")
 		(uuid "099d3ced-e6b5-4660-80ed-8ff1e6077458")
-	)
-	(fp_line
-		(start -2.7 -7)
-		(end -2.7 -9)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "42ece180-e9f0-4713-b426-b2feb21da59f")
-	)
-	(fp_line
-		(start 2.5 -6.8)
-		(end -2.5 -6.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "b8286693-60df-40d9-baf5-1fd93ea43c26")
-	)
-	(fp_line
-		(start 2.7 -9)
-		(end 2.7 -7)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "f7968052-4234-4ced-a05f-8b923af10630")
-	)
-	(fp_arc
-		(start -2.5 -6.8)
-		(mid -2.641421 -6.858579)
-		(end -2.7 -7)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "d08800db-9055-4505-858b-9bd4f618bdbd")
-	)
-	(fp_arc
-		(start 2.7 -7)
-		(mid 2.641421 -6.858579)
-		(end 2.5 -6.8)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "c6e49597-0a30-4b0c-b9d5-fb2940600df0")
 	)
 	(fp_poly
 		(pts
