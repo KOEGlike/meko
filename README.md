@@ -2,7 +2,7 @@
 > The PCB of the first prototype does not have 100% of it's features working. If you want to make one wait until I fix all of the issues 
 
 # Meko
-Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, WIFI and Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2. The size of the case is 41x73x14mm  
+Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2. The size of the case is 41x73x14mm  
 <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/2c2f0d34a5722b5a69f6c69a4d09989515afc17d_0746bcb8a689a1f602909d25effef6bb8056e4da.png" height=500/>  
 
 ## Why?
@@ -18,19 +18,15 @@ I really miss the era of gadgets, where every device served one specific functio
   
 Production files in `Releases`  
   
-The PCB has 4 layers, in the SIG/GND/GND/SIG stackup.  
+The PCB has 6 layers, in the SIG/GND/SIG/GND/GND/SIG stackup.  
   
-It is impedance controlled for JLCs default 4 layer PCB stackup, but not many of the lines are impedance controlled, and if they are they are short, so if you must, you can use other stackups.
+It is impedance controlled for JLCs default 6 layer PCB stackup, but not many of the lines are impedance controlled, and if they are they are short, so if you must, you can use other stackups.
 
 ### Chips
 
-- main SOC: ESP32 pico mini 02
-- DAC/AMP: ES9218PQ
-- USB to UART: CP2102N
-- battery charger: BQ24075RGT
-- fueal gauge: BQ27427YZFR
-- low noise regulators: LP59075-X.X/NOPB
-- large 3V3 regulator: LP5912-3.3DRVR
+- main SOC: NRF5340
+- DAC/AMP: TAD5212
+- PMIC: npm1300
 - hall-effect sensor: AS5600-ASOM
 
 ## Case 
@@ -68,67 +64,3 @@ The case has parametric design, so you can change the design very easily, and I 
 The firmware is being developed in [this repo](https://github.com/KOEGlike/eno-os)
 
 The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and embassy-executor frameworks. I choose the std route for rust instead of the no-std one, because with std i can use existing std libraries for audio processing, no-std has more performance but it's still in ts infancy, and doesn't have mature libraries. It will support lots of file formats, Spotify connect support, AirPlay 2 Support, and maybe qobuz
-
-## BOM 
-
-
-
-
-|Qty|Value                      |MPN/link               |Order Unit Price|Total |
-|---|---------------------------|-----------------------|----------------|------|
-|1  |ECS-2520SMV-500-GP-TR      |ECS-2520SMV-500-GP-TR  |$2.73           |$2.73  |
-|1  |CP2102N-Axx-xQFN24         |CP2102N-A02-GQFN24R    |$3.46           |$3.46  |
-|1  |USBLC6-2SC6                |USBLC6-2SC6            |$0.36           |$0.36  |
-|2  |LP5907SNX-1.8/NOPB         |LP5907SNX-1.8/NOPB     |$1.07           |$2.14  |
-|3  |LP5907SNX-3.3/NOPB         |LP5907SNX-3.3/NOPB     |$1.07           |$3.21  |
-|1  |BQ24075RGT                 |BQ24075RGTR            |$1.99           |$1.99  |
-|1  |ESP32-PICO-MINI-02         |ESP32-PICO-MINI-02-N8R2|$3.51           |$3.51  |
-|2  |SW_Push                    |SKRKAGE020             |$0.466          |$0.932 |
-|5  |SW_Push                    |SKRTLAE010             |$0.455          |$2.275 |
-|1  |100k                       |RC0402FR-07100KL       |$0.10           |$0.1   |
-|2  |5.1k                       |RC0402FR-075K1L        |$0.10           |$0.2   |
-|1  |1.8k                       |RC0402FR-071K8L        |$0.10           |$0.1   |
-|2  |1.5k                       |RC0402FR-071K5L        |$0.10           |$0.2   |
-|3  |47k                        |RC0402FR-0747KL        |$0.10           |$0.3   |
-|1  |2.2R                       |RC0402FR-072R2L        |$0.10           |$0.10 |
-|1  |1M                         |RC0402FR-071ML         |$0.10           |$0.10 |
-|1  |1k                         |RC0402FR-071KL         |$0.10           |$0.10 |
-|22 |10k                        |CRCW040210K0FKED       |$0.025          |$0.55 |
-|1  |Si1308EDL                  |SI1308EDL-T1-GE3       |$0.451          |$0.45 |
-|3  |SS8050                     |SS8050-HF              |$0.291          |$0.87 |
-|1  |HD-EMB1204-SM              |HD-EMB1204-SM          |$3.54           |$3.54 |
-|1  |47uF                       |MLZ2012M470WT000       |$0.10           |$0.10 |
-|1  |SJ2-35954B-SMT-TR          |SJ2-35954B-SMT-TR      |$1.25           |$1.25 |
-|1  |USB_C_Receptacle_USB2.0_16P|USB4105-GF-A           |$0.78           |$0.78 |
-|1  |MEM2090-00-145-00-A        |MEM2090-00-145-00-A    |$1.56           |$1.56 |
-|1  |GDEY0154D67                |FH34SRJ-24S-0.5SH(99)  |$2.74           |$2.74 |
-|1  |BQ27427YZFR                |BQ27427YZFR            |$1.42           |$1.42 |
-|1  |ES9218PQ                   |ES9218PQ               |$12.00          |$12.00|
-|1  |LP5912-3.3DRVR             |LP5912-3.3DRVR         |$1.04           |$1.04 |
-|1  |TCAL9538RSVR               |TCAL9538RSVR           |$1.71           |$1.71 |
-|1  |AS5600-ASOM                |AS5600-ASOM            |$2.58           |$2.58 |
-|1  |500mA                      |MF-FSMF050X-2          |$0.411          |$0.41 |
-|1  |LED                        |150060AS75003          |$0.351          |$0.35 |
-|4  |D_TVS                      |CD0201-T2.0LC          |$0.291          |$1.16 |
-|3  |D3V3X8U9LP3810             |D3V3F8U9LP3810-7       |$0.26           |$0.78 |
-|3  |MBR0530                    |MBR0530T1G             |$0.171          |$0.51 |
-|1  |SK6805                     |SK6805-EC14            |$0.1            |$0.10 |
-|1  |US1B                       |US1B                   |$0.171          |$0.17 |
-|4  |2.2nF                      |CL05B222KB5NNNC        |$0.10           |$0.40 |
-|1  |2.2uF                      |CL05A225KO5NQNC        |$0.10           |$0.10 |
-|1  |22uF                       |CL10A226MQ8NRNC        |$0.22           |$0.22 |
-|1  |10uF                       |CL05A106MQ5NUNC        |$0.10           |$0.10 |
-|11 |4.7uF                      |CL05A475KP5NRNC        |$0.116          |$1.28 |
-|27 |1uF                        |CL05A105KO5NNNC        |$0.011          |$0.30 |
-|10 |100nF                      |CL05B104KO5NNNC        |$0.004          |$0.04 |
-|1  |Battery_Cell               |S2B-PH-SM4-TB          |$0.511          |$0.51 |
-|1  |e-ink screen               |[GDEY0154D67](https://www.aliexpress.com/item/1005004027620986.html)            | $7 + $5 shipping | $12|
-|1  |magnet                     |[link](https://www.first4magnets.com/product/6mm-dia-x-1mm-thick-diametrically-magnetised-n42-neodymium-magnet-20413) | $3 + $16 shipping | 19$ |
-|1  |battery with PH2.0 conn.   |[link](https://www.aliexpress.com/item/1005006043243361.html) | $4| $4|
-|1  |6701 bearing               |[ceramic](https://www.aliexpress.com/item/1005007752030168.html) or [ZZ](https://www.aliexpress.com/item/1005006822613982.html) | $6 | $6|
-|5  |M1.6 8mm coutnersunk screw |[link](https://www.aliexpress.com/item/1005003620203113.html) | $1.5 | $1.5|
-|5  |M1.6 2.5mm OD 2mm thick    |[link](https://www.aliexpress.com/item/1005007653131713.html) | $1.8 |$1.8|
-|   |PCB at JLC                 | -   |$11 + $7 stencil + $22.25 shipping | $31 |
-| - |1kg clear resin            |[link](https://store.anycubic.com/products/standard-resin-v2?variant=43909069897890)| $28 | $28|
-|   |                           |                       |                |≈$170|
-
