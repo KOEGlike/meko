@@ -10,11 +10,6 @@ Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wh
 I really miss the era of gadgets, where every device served one specific function, without distraction, like a mp3 player, a camera, a gps navigator, an e reader, etc. With this player I wanted to make something unique
 
 ## PCB 
-
-
-![render of pcb back](https://hc-cdn.hel1.your-objectstorage.com/s/v3/e13d12c71f71050b8f1916d442237825d7bf3a5c_pcb-back_optimized.png)  
-![render of pcb front](https://hc-cdn.hel1.your-objectstorage.com/s/v3/22816fbb7ae5d4e87e992a025cd9d627be469620_pcb-front_optimized.png)
-
   
 Production files in `Releases`  
   
