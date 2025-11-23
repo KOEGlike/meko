@@ -11372,12 +11372,6 @@
 		(uuid "280d4c1c-4baa-4392-a940-7d2a93de46ab")
 	)
 	(junction
-		(at 97.79 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "281e2a21-312c-42d6-a30f-abc5e7ba0cf4")
-	)
-	(junction
 		(at 78.74 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12086,6 +12080,12 @@
 		(uuid "eef63a95-63c2-4b81-af1b-1cd863657e82")
 	)
 	(junction
+		(at 97.79 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef44e7de-e0a9-4d3b-8a4a-44058ea3ddbb")
+	)
+	(junction
 		(at 327.66 297.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12339,7 +12339,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 57.15) (xy 107.95 57.15)
+			(xy 83.82 57.15) (xy 97.79 57.15)
 		)
 		(stroke
 			(width 0)
@@ -13586,16 +13586,6 @@
 			(type default)
 		)
 		(uuid "34ec86f7-91dc-44b3-9ac3-ed4663dc2bac")
-	)
-	(wire
-		(pts
-			(xy 83.82 57.15) (xy 97.79 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "361586a7-c5f4-47d3-8cb5-aa717fe1e333")
 	)
 	(wire
 		(pts
@@ -16126,6 +16116,16 @@
 			(type default)
 		)
 		(uuid "a167846b-ce4b-4d0a-ae90-022b6fbe2fe5")
+	)
+	(wire
+		(pts
+			(xy 97.79 57.15) (xy 107.95 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1ab6181-8130-4da4-b9a2-db38eb7bf6b3")
 	)
 	(wire
 		(pts
@@ -19913,6 +19913,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 351.79 337.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "66ebc187-dd37-46e8-a0db-7be9a30b05ee")
 		)
@@ -19981,6 +19990,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6ff6690a-1052-483c-9403-371ef2daa67d")
 		)
@@ -19988,82 +20006,6 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "TP38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 97.79 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02b81d48-5232-4450-a776-8ccac1b7121b")
-		(property "Reference" "R2"
-			(at 101.6 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "47k"
-			(at 101.6 53.594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 96.012 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 97.79 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0402FR-0747KL"
-			(at 97.79 53.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6a725dca-11ca-4f79-a48a-1c8554479cbf")
-		)
-		(pin "1"
-			(uuid "b4ce16ee-526f-404d-99ea-ffa2fb1413aa")
-		)
-		(instances
-			(project "meko-pcb"
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -20124,6 +20066,15 @@
 			)
 		)
 		(property "MPN" "ANT3216LL00R2400A"
+			(at 78.74 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C293767"
 			(at 78.74 209.55 0)
 			(effects
 				(font
@@ -20335,6 +20286,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 364.49 180.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ea37f25c-0c83-4930-849e-60b6fdd64308")
 		)
@@ -20477,6 +20437,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29779756"
+			(at 337.82 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2104a3b1-5f90-4ace-ba43-8df825a58924")
 		)
@@ -20544,7 +20513,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 332.74 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 332.74 281.94 0)
 			(effects
 				(font
@@ -20689,7 +20667,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 107.95 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 107.95 199.39 0)
 			(effects
 				(font
@@ -20767,6 +20754,15 @@
 			)
 		)
 		(property "MPN" "SKRTLAE010 "
+			(at 74.93 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C110293"
 			(at 74.93 38.1 0)
 			(effects
 				(font
@@ -20912,6 +20908,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d75b9363-bc71-4cbf-ba84-20914f6531f6")
 		)
@@ -20973,6 +20978,15 @@
 		)
 		(property "Description" "test point"
 			(at 360.68 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 360.68 340.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21129,7 +21143,7 @@
 		(at 44.45 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -21171,6 +21185,15 @@
 			)
 		)
 		(property "Description" "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"
+			(at 44.45 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 44.45 162.56 0)
 			(effects
 				(font
@@ -21274,6 +21297,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "529ded2c-ff76-4c1c-be7b-66905bae7e05")
 		)
@@ -21338,7 +21370,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 321.31 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 321.31 347.98 0)
 			(effects
 				(font
@@ -21380,7 +21421,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "47k"
 			(at 275.463 88.646 0)
 			(effects
 				(font
@@ -21416,8 +21457,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "FRC0603F4702TS"
 			(at 280.67 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907042"
+			(at 280.67 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21493,7 +21543,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 367.03 294.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 367.03 294.64 90)
 			(effects
 				(font
@@ -21572,6 +21631,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C38523"
+			(at 226.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10C120JB8NNNC"
+			(at 226.06 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6f3d2fee-5883-40b7-8442-9c4b5a11253e")
 		)
@@ -21605,7 +21682,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "47k"
 			(at 267.843 88.646 0)
 			(effects
 				(font
@@ -21641,8 +21718,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "FRC0603F4702TS"
 			(at 273.05 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907042"
+			(at 273.05 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21776,6 +21862,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 308.61 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 308.61 287.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21917,7 +22012,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 436.88 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 436.88 245.11 0)
 			(effects
 				(font
@@ -21996,7 +22100,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 109.22 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 109.22 240.03 0)
 			(effects
 				(font
@@ -22072,7 +22185,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 341.63 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 341.63 347.98 0)
 			(effects
 				(font
@@ -22158,6 +22280,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C110293"
+			(at 74.93 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4cb1e7d8-6bfd-47d9-a2a9-ad4f0f83ad7b")
 		)
@@ -22219,6 +22350,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 483.87 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 483.87 241.3 0)
 			(effects
 				(font
@@ -22307,6 +22447,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29779756"
+			(at 391.16 186.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "84a708ed-4eb4-413a-8f0d-98138b5ff643")
 		)
@@ -22378,6 +22527,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7533de6-8a07-4c39-9696-8828dbe2aa1f")
 		)
@@ -22439,6 +22597,15 @@
 		)
 		(property "Description" "test point"
 			(at 189.23 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 189.23 340.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22578,6 +22745,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 229.87 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3df2de62-9a8b-4ea7-83a7-700d5a5c7afb")
 		)
@@ -22639,6 +22815,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 181.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22723,6 +22908,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29779756"
+			(at 345.44 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7c1eef25-158e-426a-8797-ecafb4838f80")
 		)
@@ -22792,7 +22986,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-071ML"
+		(property "MPN" "RC0603FR-071ML"
+			(at 327.66 308.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105578"
 			(at 327.66 308.61 0)
 			(effects
 				(font
@@ -22881,6 +23084,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29779756"
+			(at 330.2 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6624f72-7b91-4d00-9dee-ea91367236a3")
 		)
@@ -22942,6 +23154,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 102.87 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 102.87 340.36 0)
 			(effects
 				(font
@@ -23026,6 +23247,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C82046"
+			(at 344.17 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "20f630d2-52bc-4802-8101-2652be468acd")
 		)
@@ -23095,7 +23325,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 226.06 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 226.06 359.41 0)
 			(effects
 				(font
@@ -23203,16 +23442,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "FH34SRJ-24S-0.5SH(99)"
-			(at 396.24 884.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "Mouser Part Number" "798-FH34SRJ24S05SH99"
 			(at 396.24 984.48 0)
 			(effects
@@ -23250,6 +23479,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2856831"
+			(at 374.65 289.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -23396,6 +23634,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1ffbb02e-a3c4-4621-a84e-d6e3fb0320cd")
 		)
@@ -23457,6 +23704,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 224.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23597,6 +23853,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b29fc090-5d75-4475-a4e4-86c4407f834b")
 		)
@@ -23658,6 +23923,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 194.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23742,6 +24016,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29779756"
+			(at 323.85 185.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "80e34796-7c57-46ca-84fb-84f9eb4655e3")
 		)
@@ -23812,7 +24095,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 254 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 254 104.14 0)
 			(effects
 				(font
@@ -23882,6 +24174,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 436.88 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 436.88 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24022,7 +24323,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "0603WAF1002T5E"
+			(at 378.46 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 378.46 166.37 0)
 			(effects
 				(font
@@ -24100,6 +24410,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 483.87 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fc8b4f85-6c29-47ea-8e6b-65b37e027f6d")
 		)
@@ -24168,7 +24487,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 335.28 167.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 335.28 167.64 90)
 			(effects
 				(font
@@ -24250,6 +24578,15 @@
 			)
 		)
 		(property "MPN" "SI1308EDL-T1-GE3"
+			(at 335.28 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C469327"
 			(at 335.28 297.18 0)
 			(effects
 				(font
@@ -24347,6 +24684,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C965800"
+			(at 102.87 311.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "03d415a8-804a-4baf-b479-0d183e960375")
 		)
@@ -24417,7 +24763,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 64.77 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 64.77 91.44 0)
 			(effects
 				(font
@@ -24502,6 +24857,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C82046"
+			(at 344.17 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3245a1b1-738c-4d20-ac17-d9ea9d9f22a5")
 		)
@@ -24566,6 +24930,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24640,7 +25013,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603BRNPO9BNR70"
+			(at 105.41 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C519367"
 			(at 105.41 215.9 0)
 			(effects
 				(font
@@ -24720,6 +25102,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 189.23 342.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b4339f24-66ec-429d-808e-094596ada20d")
 		)
@@ -24781,6 +25172,15 @@
 		)
 		(property "Description" "test point"
 			(at 307.34 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 307.34 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24856,6 +25256,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 388.62 271.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fdcdf2dd-963d-4b08-a19b-e215a13f19a2")
 		)
@@ -24922,7 +25331,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 177.8 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 177.8 279.4 0)
 			(effects
 				(font
@@ -24995,6 +25413,15 @@
 		)
 		(property "Description" "test point"
 			(at 327.66 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 327.66 300.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25395,7 +25822,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "0603WAF1002T5E"
+			(at 275.59 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 275.59 213.36 90)
 			(effects
 				(font
@@ -25468,6 +25904,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25608,6 +26053,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "503ce9ae-2541-4ad9-b118-43f757716c1e")
 		)
@@ -25738,6 +26192,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 247.65 280.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9a102ed7-9152-4496-a394-9a66aea9fdd5")
 		)
@@ -25800,6 +26263,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 100.33 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2930091"
+			(at 100.33 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FRC0603F3003TS"
 			(at 100.33 353.06 0)
 			(effects
 				(font
@@ -25879,6 +26360,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 191.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9174b2d9-edd1-466f-8b94-5bc7000568d6")
 		)
@@ -25947,7 +26437,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 290.83 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 290.83 281.94 0)
 			(effects
 				(font
@@ -26027,6 +26526,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "81374122-1daf-41d8-93d5-eee4dba2e5d7")
 		)
@@ -26088,6 +26596,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26359,6 +26876,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 39.37 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
@@ -26489,7 +27015,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 91.44 91.44 0)
 			(effects
 				(font
@@ -26706,6 +27241,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C720477"
+			(at 74.93 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "04e1f19f-4871-4d5e-8002-f0ed3abda521")
 		)
@@ -26835,6 +27379,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 120.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26976,6 +27529,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "079a9fc6-6a56-462b-964d-da6c4f890e91")
 		)
@@ -27034,6 +27596,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 252.73 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 252.73 200.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27177,6 +27748,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 130.81 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "46d0ee20-fb14-4f41-90f6-b3910e384ccc")
 		)
@@ -27243,7 +27823,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 166.37 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 166.37 279.4 0)
 			(effects
 				(font
@@ -27322,7 +27911,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 95.25 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 95.25 240.03 0)
 			(effects
 				(font
@@ -27395,6 +27993,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27667,6 +28274,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1a9fde21-5d87-4a62-bf3e-b45edbf14a90")
 		)
@@ -27728,6 +28344,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27799,8 +28424,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 314.96 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 314.96 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27877,7 +28511,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-072R2L"
+		(property "MPN" "FRC0603J2R2TS"
+			(at 337.82 308.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2930032"
 			(at 337.82 308.61 0)
 			(effects
 				(font
@@ -27955,6 +28598,15 @@
 			)
 		)
 		(property "MPN" "SKRTLAE010 "
+			(at 74.93 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C110293"
 			(at 74.93 31.75 0)
 			(effects
 				(font
@@ -28099,7 +28751,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 234.95 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 234.95 279.4 0)
 			(effects
 				(font
@@ -28178,7 +28839,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 105.41 91.44 0)
 			(effects
 				(font
@@ -28322,7 +28992,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 154.94 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 154.94 279.4 0)
 			(effects
 				(font
@@ -28400,7 +29079,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 83.82 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 83.82 60.96 0)
 			(effects
 				(font
@@ -28480,6 +29168,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 199.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f86f0163-3510-458f-b04e-83d7f9d8dc38")
 		)
@@ -28546,7 +29243,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "0603WAF1002T5E"
+			(at 377.19 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 377.19 147.32 90)
 			(effects
 				(font
@@ -28689,7 +29395,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 354.33 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 354.33 295.91 0)
 			(effects
 				(font
@@ -28833,7 +29548,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 260.35 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 260.35 234.95 0)
 			(effects
 				(font
@@ -28912,7 +29636,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1239AS-H-100M=P2"
+		(property "MPN" "LQG18HN2N2S00D"
+			(at 97.79 212.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C113061"
 			(at 97.79 212.09 90)
 			(effects
 				(font
@@ -28981,6 +29714,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 483.87 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 483.87 238.76 0)
 			(effects
 				(font
@@ -29059,15 +29801,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "PJ-342"
-			(at 406.4 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "SHOU HAN(首韩)"
 			(at 406.4 177.8 0)
 			(effects
@@ -29096,6 +29829,24 @@
 			)
 		)
 		(property "LCSC Part Name" "3.5mm耳机座"
+			(at 406.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C668606"
+			(at 406.4 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PJ-342"
 			(at 406.4 177.8 0)
 			(effects
 				(font
@@ -29187,6 +29938,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 351.79 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f39b9e68-8ac1-4e60-a608-3c02574ec9d0")
 		)
@@ -29255,6 +30015,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "92bce0f7-7de3-4302-b01e-428074099893")
 		)
@@ -29314,6 +30083,24 @@
 			)
 		)
 		(property "Description" "nRF5340, BLE, NFC, Thread, Zigbee, ARM M33 SoC, Dual Core, AQFN-94"
+			(at 143.51 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3015611"
+			(at 143.51 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "NRF5340-QKAA-R"
 			(at 143.51 168.91 0)
 			(effects
 				(font
@@ -29670,7 +30457,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "RC0603FR-07220RL"
+			(at 92.71 318.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C107696"
 			(at 92.71 318.77 90)
 			(effects
 				(font
@@ -29743,6 +30539,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 189.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29824,6 +30629,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C720477"
+			(at 95.25 328.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7bf14cb9-00cb-4f79-90f9-6870ea51cbf7")
 		)
@@ -29884,6 +30698,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 102.87 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 102.87 337.82 0)
 			(effects
 				(font
@@ -29959,8 +30782,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 314.96 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 314.96 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30039,6 +30871,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 367.03 330.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b7b943a6-f254-40bf-b3cf-15747abb0f64")
 		)
@@ -30069,7 +30910,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "47k"
 			(at 283.083 88.646 0)
 			(effects
 				(font
@@ -30105,8 +30946,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "FRC0603F4702TS"
 			(at 288.29 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907042"
+			(at 288.29 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30243,6 +31093,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 347.98 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 347.98 303.53 0)
 			(effects
 				(font
@@ -30390,6 +31249,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C110293"
+			(at 74.93 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "721788d6-59ee-48bd-83fe-7044d8e99f42")
 		)
@@ -30461,6 +31329,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 100.33 347.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b14b89e-31bc-48f6-9b18-8b4dc81666a6")
 		)
@@ -30522,6 +31399,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 196.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30662,7 +31548,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 119.38 91.44 0)
 			(effects
 				(font
@@ -30760,6 +31655,15 @@
 			)
 		)
 		(property "MPN" "US1B"
+			(at 248.92 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C18199126"
 			(at 248.92 234.95 90)
 			(effects
 				(font
@@ -30877,7 +31781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 107.95 189.23 0)
 			(effects
 				(font
@@ -30904,7 +31808,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1239AS-H-100M=P2"
+		(property "MPN" "SLM2012100MIT"
+			(at 107.95 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2831365"
 			(at 107.95 189.23 0)
 			(effects
 				(font
@@ -31050,6 +31963,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b42b9a88-f024-4324-a3b1-7b3a68a3454e")
 		)
@@ -31117,7 +32039,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "FCC0603B222K500CT"
+			(at 105.41 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5137562"
 			(at 105.41 168.91 0)
 			(effects
 				(font
@@ -31169,7 +32100,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 105.41 158.75 0)
 			(effects
 				(font
@@ -31196,7 +32127,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1239AS-H-100M=P2"
+		(property "MPN" "SLM2012100MIT"
+			(at 105.41 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2831365"
 			(at 105.41 158.75 0)
 			(effects
 				(font
@@ -31410,6 +32350,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2862740"
+			(at 257.81 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "8743a7c4-090f-451c-bb15-9740e02d9513")
 		)
@@ -31620,7 +32569,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "RC0603FR-071KL"
+			(at 275.59 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22548"
 			(at 275.59 207.01 90)
 			(effects
 				(font
@@ -31698,7 +32656,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "RC0603FR-071KL"
+			(at 281.94 248.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22548"
 			(at 281.94 248.92 90)
 			(effects
 				(font
@@ -31774,8 +32741,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 273.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 273.05 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31854,6 +32830,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f39a2513-14c3-42d3-af35-506403bff673")
 		)
@@ -31922,6 +32907,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 347.98 180.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "60167ba0-fda0-4768-bbc8-d406af598fef")
 		)
@@ -31983,6 +32977,15 @@
 		)
 		(property "Description" "test point"
 			(at 367.03 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 367.03 335.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32188,15 +33191,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part" "LD-SM-430"
-			(at 281.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Manufacturer" "LEADER(立得)"
 			(at 281.94 227.33 0)
 			(effects
@@ -32226,6 +33220,24 @@
 		)
 		(property "LCSC Part Name" "LD-SM-430"
 			(at 281.94 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 281.94 227.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LD-SM-430"
+			(at 281.94 227.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32307,6 +33319,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 341.63 332.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bb2dbcfc-4b78-4a2d-acb3-32e3cddf7a98")
 		)
@@ -32375,6 +33396,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 214.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c138a6b-c454-44ed-bfe5-540a17c48ccd")
 		)
@@ -32436,6 +33466,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 118.11 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32572,7 +33611,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 360.68 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 360.68 347.98 0)
 			(effects
 				(font
@@ -32651,6 +33699,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C38523"
+			(at 215.9 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10C120JB8NNNC"
+			(at 215.9 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8bc21a63-bf67-4777-84f6-484f2f462611")
 		)
@@ -32719,6 +33785,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 247.65 289.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "26b2973d-d6cc-4691-97ea-d6db16fa14ba")
 		)
@@ -32762,7 +33837,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 144.78 86.36 0)
 			(effects
 				(font
@@ -32789,7 +33864,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1239AS-H-100M=P2"
+		(property "MPN" "SLM2012100MIT"
+			(at 144.78 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2831365"
 			(at 144.78 86.36 90)
 			(effects
 				(font
@@ -32868,7 +33952,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0402FR-071KL"
+		(property "MPN" "RC0603FR-071KL"
+			(at 266.7 207.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22548"
 			(at 266.7 207.01 90)
 			(effects
 				(font
@@ -33079,6 +34172,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 388.62 269.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "02a03541-b8d2-493f-8f3b-130712cfd1d2")
 		)
@@ -33138,6 +34240,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 240.03 361.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 240.03 361.95 0)
 			(effects
 				(font
@@ -33271,6 +34382,24 @@
 		)
 		(property "Description" "PMIC, LED Driver, Battery Charger, QFN-32"
 			(at 144.78 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7501206"
+			(at 144.78 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "nPM1300-QEAA-R7"
+			(at 144.78 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33442,6 +34571,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1db4908d-8af7-45c3-985b-8b463888c78b")
 		)
@@ -33507,6 +34645,15 @@
 			)
 		)
 		(property "MPN" "MLZ2012M470WT000"
+			(at 322.58 290.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C383408"
 			(at 322.58 290.83 90)
 			(effects
 				(font
@@ -33585,6 +34732,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 24.13 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
@@ -33640,6 +34796,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 234.95 374.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 234.95 374.65 0)
 			(effects
 				(font
@@ -33717,6 +34882,15 @@
 			)
 		)
 		(property "MPN" " D3V3F8U9LP3810-7 "
+			(at 367.03 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3715130"
 			(at 367.03 111.76 90)
 			(effects
 				(font
@@ -33883,6 +35057,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 370.84 342.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "df27e7e7-7511-4e2f-9125-959bb99968e4")
 		)
@@ -34020,6 +35203,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C428492"
+			(at 298.45 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "10"
 			(uuid "e31e2a21-d680-46b8-9cde-b2c05ff1ce28")
 		)
@@ -34089,7 +35281,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "47k"
 			(at 290.703 88.646 0)
 			(effects
 				(font
@@ -34125,8 +35317,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "FRC0603F4702TS"
 			(at 295.91 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907042"
+			(at 295.91 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34204,7 +35405,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CL10A475KP8NNNC"
+			(at 67.31 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1705"
 			(at 67.31 240.03 0)
 			(effects
 				(font
@@ -34356,6 +35566,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C720477"
+			(at 107.95 358.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "228343f1-cd0b-464c-8269-f719bbe9462e")
 		)
@@ -34492,6 +35711,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 309.88 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4b10474a-2414-45de-b2eb-2ef7321047c1")
 		)
@@ -34553,6 +35781,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 186.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34627,7 +35864,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 133.35 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 133.35 91.44 0)
 			(effects
 				(font
@@ -34703,7 +35949,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 370.84 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 370.84 347.98 0)
 			(effects
 				(font
@@ -34789,6 +36044,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C82046"
+			(at 344.17 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7c4d74c7-28bd-407b-ab0f-e908b9ea4da3")
 		)
@@ -34858,7 +36122,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 96.52 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 96.52 295.91 0)
 			(effects
 				(font
@@ -34956,16 +36229,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TAD5112IRGER"
-			(at 297.18 751.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "Mouser Part Number" ""
 			(at 297.18 851.13 0)
 			(effects
@@ -35003,6 +36266,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C45068920"
+			(at 267.97 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TAD5212IRGER"
+			(at 267.97 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -35157,7 +36438,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CL10A475KP8NNNC"
+			(at 81.28 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1705"
 			(at 81.28 240.03 0)
 			(effects
 				(font
@@ -35299,6 +36589,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 317.5 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "490ea4f5-e9d4-45e6-99bc-b85e4fe553af")
 		)
@@ -35361,6 +36660,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 444.5 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 444.5 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35432,6 +36740,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35522,6 +36839,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7496823"
+			(at 102.87 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d91ab5d2-92d7-4184-9303-2ba18e69e294")
 		)
@@ -35591,6 +36917,15 @@
 			)
 		)
 		(property "MPN" "SKRTLAE010 "
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C110293"
 			(at 74.93 50.8 0)
 			(effects
 				(font
@@ -35670,6 +37005,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e8139668-38d8-4f11-bcb7-bb47d2851073")
 		)
@@ -35729,6 +37073,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 261.62 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 261.62 200.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35805,7 +37158,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "0603WAF1002T5E"
+			(at 266.7 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 266.7 213.36 90)
 			(effects
 				(font
@@ -35881,7 +37243,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 351.79 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 351.79 347.98 0)
 			(effects
 				(font
@@ -35959,6 +37330,15 @@
 			)
 		)
 		(property "MPN" "GT-USB-7010ASV"
+			(at 34.29 314.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2988369"
 			(at 34.29 314.96 0)
 			(effects
 				(font
@@ -36081,7 +37461,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 195.58 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 195.58 322.58 0)
 			(effects
 				(font
@@ -36160,7 +37549,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 91.44 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 91.44 168.91 0)
 			(effects
 				(font
@@ -36306,6 +37704,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e0dc028f-f884-4a6c-90e4-792bf2d78691")
 		)
@@ -36381,6 +37788,15 @@
 			)
 		)
 		(property "MPN" "XL-1608UWC-04"
+			(at 102.87 318.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C965808"
 			(at 102.87 318.77 0)
 			(effects
 				(font
@@ -36536,6 +37952,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5179688"
+			(at 292.1 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dfcac3f8-4794-4f33-9200-0798e4fdc3b2")
 		)
@@ -36673,6 +38098,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 262.89 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7074a718-bc34-4442-b521-a66c4f0713d4")
 		)
@@ -36743,6 +38177,15 @@
 			)
 		)
 		(property "MPN" "AS5600-ASOT"
+			(at 448.31 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C499458"
 			(at 448.31 236.22 0)
 			(effects
 				(font
@@ -36904,7 +38347,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "0603WAF1002T5E"
+			(at 377.19 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 377.19 139.7 90)
 			(effects
 				(font
@@ -37046,6 +38498,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C38523"
+			(at 81.28 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10C120JB8NNNC"
+			(at 81.28 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4c3968fb-38a7-45ed-a045-8f9831bd0064")
 		)
@@ -37107,6 +38577,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 95.25 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 95.25 355.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37184,6 +38663,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 199.39 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d59ba27e-48cb-4e5a-89f7-a03e0abe943e")
 		)
@@ -37244,6 +38732,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 287.02 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 287.02 241.3 0)
 			(effects
 				(font
@@ -37385,6 +38882,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 76.2 303.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96f112d5-0ece-4d42-b010-9aec787a4b9d")
 		)
@@ -37403,7 +38909,7 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "cc861200-5b4c-4a5b-8990-8019a16f93b1")
@@ -37452,7 +38958,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" ""
+			(at 91.44 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 91.44 215.9 0)
 			(effects
 				(font
@@ -37597,7 +39112,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 78.74 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 78.74 91.44 0)
 			(effects
 				(font
@@ -37740,7 +39264,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A106MQ5NUNC"
+		(property "MPN" "CL10A106KP8NNNC"
+			(at 195.58 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
 			(at 195.58 309.88 0)
 			(effects
 				(font
@@ -37886,6 +39419,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8c0d468e-b236-4e04-b019-aacd551c6f76")
 		)
@@ -37947,6 +39489,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 222.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38021,7 +39572,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 36.83 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 36.83 91.44 0)
 			(effects
 				(font
@@ -38099,6 +39659,15 @@
 			)
 		)
 		(property "MPN" "2TJ432000NYFBC"
+			(at 92.71 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2149238"
 			(at 92.71 129.54 90)
 			(effects
 				(font
@@ -38315,6 +39884,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 173.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "60774134-c667-4af4-bf0d-2bb0276411f2")
 		)
@@ -38376,6 +39954,15 @@
 		)
 		(property "Description" "test point"
 			(at 331.47 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 331.47 327.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38451,6 +40038,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "690b4803-a4d3-4174-ad52-c4d631926b07")
 		)
@@ -38510,6 +40106,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 34.29 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 34.29 64.77 0)
 			(effects
 				(font
@@ -38639,6 +40244,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 29.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 29.21 64.77 0)
 			(effects
 				(font
@@ -38777,7 +40391,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 50.8 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 50.8 91.44 0)
 			(effects
 				(font
@@ -38848,6 +40471,24 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 81.28 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C38523"
+			(at 81.28 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10C120JB8NNNC"
+			(at 81.28 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39058,6 +40699,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bc7f4d89-92b0-4ceb-9859-5bf257e15940")
 		)
@@ -39124,7 +40774,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "RC0603FR-07220RL"
+			(at 92.71 314.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C107696"
 			(at 92.71 314.96 90)
 			(effects
 				(font
@@ -39200,8 +40859,17 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 299.72 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 299.72 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39280,6 +40948,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 201.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "22834c9f-599f-47a4-b4d7-f095c177087e")
 		)
@@ -39344,7 +41021,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 312.42 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 312.42 295.91 0)
 			(effects
 				(font
@@ -39422,7 +41108,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CRCW040210K0FKED"
+		(property "MPN" "RC0603FR-07220RL"
+			(at 92.71 311.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C107696"
 			(at 92.71 311.15 90)
 			(effects
 				(font
@@ -39491,6 +41186,24 @@
 			)
 		)
 		(property "Description" "Ultra low capacitance double rail-to-rail ESD protection diode, SOT-143"
+			(at 41.91 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12333"
+			(at 41.91 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRTR5V0U2X,215"
 			(at 41.91 378.46 0)
 			(effects
 				(font
@@ -39835,7 +41548,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 331.47 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 331.47 347.98 0)
 			(effects
 				(font
@@ -39924,6 +41646,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C29779756"
+			(at 398.78 186.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6d31092b-0307-4ed0-af52-bded6eaa3ac4")
 		)
@@ -39994,7 +41725,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 22.86 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 22.86 91.44 0)
 			(effects
 				(font
@@ -40129,6 +41869,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 262.89 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 262.89 173.99 0)
 			(effects
 				(font
@@ -40274,6 +42023,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 193.04 204.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e5272c1a-a2cd-4537-8807-cb899ff31d9e")
 		)
@@ -40332,6 +42090,15 @@
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 			(at 281.94 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 281.94 143.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40540,7 +42307,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05B104KO5NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
+			(at 138.43 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
 			(at 138.43 280.67 0)
 			(effects
 				(font
@@ -40618,7 +42394,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL05A105KO5NNNC"
+		(property "MPN" "CL10A105KB8NNNC"
+			(at 426.72 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 426.72 245.11 0)
 			(effects
 				(font
@@ -40694,7 +42479,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "    XKXGI-SUA-32.768K"
+		(property "MPN" "XKXGI-SUA-32.768K"
+			(at 220.98 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5213671"
 			(at 220.98 109.22 0)
 			(effects
 				(font
@@ -40765,6 +42559,15 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 19.05 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 19.05 64.77 0)
 			(effects
 				(font
@@ -40897,6 +42700,15 @@
 		)
 		(property "Description" "test point"
 			(at 193.04 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 193.04 217.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41037,6 +42849,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 347.98 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "19028371-7c58-4f7b-8898-0418d5a65fb5")
 		)
@@ -41167,6 +42988,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" ""
+			(at 424.18 237.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b6856ef4-eea7-4742-b2fa-a4f33f992f64")
 		)
@@ -41231,6 +43061,15 @@
 		)
 		(property "Description" "test point"
 			(at 73.66 303.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 73.66 303.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41305,6 +43144,15 @@
 			)
 		)
 		(property "MPN" "DFE201210U-2R2M=P2"
+			(at 186.69 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2049745"
 			(at 186.69 309.88 0)
 			(effects
 				(font
@@ -41456,6 +43304,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C2049745"
+			(at 186.69 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "076504ea-72d9-46d3-a6c1-44ac0f6fe549")
 		)
@@ -41466,6 +43323,93 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 97.79 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff27642b-0b56-4051-aaeb-0de5d819f278")
+		(property "Reference" "R2"
+			(at 92.583 51.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47k"
+			(at 92.583 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 99.568 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "FRC0603F4702TS"
+			(at 97.79 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907042"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d8dfcece-8f92-43b4-bc3b-c8ecf6798bf0")
+		)
+		(pin "1"
+			(uuid "0f38d8c3-769d-4fac-bcb2-f8bbd38091ae")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "R2")
 					(unit 1)
 				)
 			)

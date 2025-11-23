@@ -752,29 +752,23 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer Part",
-          "name": "Manufacturer Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Manufacturer",
           "name": "Manufacturer",
           "show": false
+        },
+        {
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Arrow Part Number"
+      "sort_asc": false,
+      "sort_field": "LCSC Part Name"
     },
     "connection_grid_size": 50.0,
     "drawing": {
