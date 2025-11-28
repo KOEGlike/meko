@@ -4543,178 +4543,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LD-SM-430:LD-SM-430"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "ProLib_pcs_2025-10-28(1):SMD_LD-SM-430-1"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://item.szlcsc.com/datasheet/LD-SM-430/43080312.html"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part" "LD-SM-430"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "LEADER(立得)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part" "C41348533"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "LCSC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part Name" "LD-SM-430"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LD-SM-430_1_0"
-				(rectangle
-					(start -2.54 -5.08)
-					(end 2.54 5.08)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 3.81)
-					(radius 0.381)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "MCU_Nordic:nRF5340-QKxx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -10129,6 +9957,183 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Z3OC1T8219731:Z3OC1T8219731"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "M"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "Z3OC1T8219731"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Z3OC1T8219731:Z3OC1T8219731"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.endrich.com/sixcms/media.php/2/Z30C1T8219651.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Cylindrical core SMT Motor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "3.6"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Jinlong"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "MPN" "Z3OC1T8219731"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C2894731"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Z3OC1T8219731_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+1V8"
 			(power)
 			(pin_numbers
@@ -11414,12 +11419,6 @@
 		(uuid "3753f6e3-f07f-4007-9720-078499527358")
 	)
 	(junction
-		(at 281.94 242.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b269c15-0127-4465-af86-6488579addde")
-	)
-	(junction
 		(at 386.08 354.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11442,12 +11441,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4054e871-66d3-4dcb-9aca-810b0a630f24")
-	)
-	(junction
-		(at 270.51 227.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "405becc8-84f6-43f1-95cd-61bd05e2f8af")
 	)
 	(junction
 		(at 350.52 255.27)
@@ -11496,6 +11489,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4dd94491-48f6-4388-99a6-ddd6aca84c5e")
+	)
+	(junction
+		(at 270.51 227.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "500726ae-f1fa-4bf6-b7a3-dd4cc3a24901")
 	)
 	(junction
 		(at 76.2 307.34)
@@ -11604,6 +11603,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64d260c1-f861-4d8e-820f-e9dd1e8450d0")
+	)
+	(junction
+		(at 294.64 242.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "660f5c62-2d8d-467b-85ac-33bfc1b51470")
 	)
 	(junction
 		(at 36.83 96.52)
@@ -12439,16 +12444,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 242.57) (xy 281.94 242.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07745291-304a-473c-98cb-341a2fae086f")
-	)
-	(wire
-		(pts
 			(xy 363.22 294.64) (xy 361.95 294.64)
 		)
 		(stroke
@@ -12989,16 +12984,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 227.33) (xy 270.51 232.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e891bf1-ac5a-4713-9c4d-f2b58234bbdf")
-	)
-	(wire
-		(pts
 			(xy 107.95 318.77) (xy 107.95 317.5)
 		)
 		(stroke
@@ -13496,6 +13481,16 @@
 			(type default)
 		)
 		(uuid "326e4586-b75d-4fed-8a2d-481af1899b22")
+	)
+	(wire
+		(pts
+			(xy 271.78 231.14) (xy 271.78 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "332626f6-4144-4166-9b91-5549aba9b28b")
 	)
 	(wire
 		(pts
@@ -14369,16 +14364,6 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 232.41) (xy 279.4 232.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57549142-d8ff-4fa0-a0b3-33e3f2ed4f9e")
-	)
-	(wire
-		(pts
 			(xy 391.16 190.5) (xy 391.16 191.77)
 		)
 		(stroke
@@ -15209,6 +15194,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 231.14) (xy 271.78 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a7e12aa-177e-420c-b373-f5c72d6f5513")
+	)
+	(wire
+		(pts
 			(xy 176.53 179.07) (xy 193.04 179.07)
 		)
 		(stroke
@@ -15266,16 +15261,6 @@
 			(type default)
 		)
 		(uuid "7d4be4dd-5872-4824-bd69-6576e8bdd4cc")
-	)
-	(wire
-		(pts
-			(xy 281.94 232.41) (xy 281.94 242.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d605bf9-60e1-49c2-a06f-c3e441383882")
 	)
 	(wire
 		(pts
@@ -15659,7 +15644,7 @@
 	)
 	(wire
 		(pts
-			(xy 281.94 242.57) (xy 287.02 242.57)
+			(xy 260.35 242.57) (xy 287.02 242.57)
 		)
 		(stroke
 			(width 0)
@@ -15899,6 +15884,16 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 227.33) (xy 270.51 227.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94e714e1-6467-43da-9cf2-0640ea0e706a")
+	)
+	(wire
+		(pts
 			(xy 260.35 213.36) (xy 262.89 213.36)
 		)
 		(stroke
@@ -15996,6 +15991,16 @@
 			(type default)
 		)
 		(uuid "9a3d5a25-521d-484b-b7bc-a5e1af85630a")
+	)
+	(wire
+		(pts
+			(xy 299.72 242.57) (xy 294.64 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a655990-be5e-4ead-b3eb-0175af8fa3af")
 	)
 	(wire
 		(pts
@@ -16206,6 +16211,16 @@
 			(type default)
 		)
 		(uuid "a5d965e6-0be5-4e38-aa36-03ae781f5389")
+	)
+	(wire
+		(pts
+			(xy 299.72 231.14) (xy 299.72 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a61deb24-7e26-461a-82ac-9ab817d165d4")
 	)
 	(wire
 		(pts
@@ -16476,6 +16491,16 @@
 			(type default)
 		)
 		(uuid "b099eee4-ea15-4854-b495-e00a315ebab4")
+	)
+	(wire
+		(pts
+			(xy 294.64 231.14) (xy 299.72 231.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0a37888-e7dc-4d51-9abd-abec2534d4e3")
 	)
 	(wire
 		(pts
@@ -17639,7 +17664,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 232.41) (xy 284.48 233.68)
+			(xy 294.64 233.68) (xy 294.64 236.22)
 		)
 		(stroke
 			(width 0)
@@ -17936,6 +17961,16 @@
 			(type default)
 		)
 		(uuid "ea32b3f2-debe-4291-9ef2-faa506c39a96")
+	)
+	(wire
+		(pts
+			(xy 274.32 233.68) (xy 274.32 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea707ecf-7e2c-4f3c-91e6-2a44675697a8")
 	)
 	(wire
 		(pts
@@ -21953,6 +21988,171 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Z3OC1T8219731:Z3OC1T8219731")
+		(at 294.64 231.14 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18b83142-26b3-48b2-8675-bc439a927885")
+		(property "Reference" "M2"
+			(at 284.48 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Z3OC1T8219731"
+			(at 284.48 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Z3OC1T8219731:Z3OC1T8219731"
+			(at 278.13 326.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.endrich.com/sixcms/media.php/2/Z30C1T8219651.pdf"
+			(at 278.13 426.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cylindrical core SMT Motor"
+			(at 294.64 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "3.6"
+			(at 278.13 626.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Jinlong"
+			(at 278.13 726.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "Z3OC1T8219731"
+			(at 278.13 826.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 278.13 926.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 278.13 1026.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 278.13 1126.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 278.13 1226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Z3OC1T8219731"
+			(at 278.13 826.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2894731"
+			(at 294.64 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9db7dd76-6507-4bb2-bea0-7825fb21b644")
+		)
+		(pin "3"
+			(uuid "d9266ef9-9b8e-4fd3-a2ed-78f35a7d9456")
+		)
+		(pin "2"
+			(uuid "1a39031c-8324-4db7-89b3-e5a251a00e2a")
+		)
+		(pin "4"
+			(uuid "a5fc23f6-53db-446e-a997-3e284316fc33")
+		)
+		(instances
+			(project ""
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "M2")
 					(unit 1)
 				)
 			)
@@ -33137,97 +33337,6 @@
 		)
 	)
 	(symbol
-		(lib_id "LD-SM-430:LD-SM-430")
-		(at 281.94 227.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ef0119d-f8c0-4395-b414-86afe9731fd8")
-		(property "Reference" "M1"
-			(at 288.29 226.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "~"
-			(at 288.29 228.5999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LD-SM-430:SMD_LD-SM-430-1"
-			(at 281.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/LD-SM-430/43080312.html"
-			(at 281.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 281.94 227.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2894731"
-			(at 281.94 227.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 281.94 227.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "57bc13fe-819e-4309-a0b7-3e856c7e51aa")
-		)
-		(pin "3"
-			(uuid "cad53ee1-f054-43d8-81ad-4a93a2c11f78")
-		)
-		(pin "1"
-			(uuid "324e3970-074b-4879-9586-fc791ffcb94b")
-		)
-		(instances
-			(project ""
-				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
-					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 341.63 332.74 90)
 		(mirror x)
@@ -33460,7 +33569,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 284.48 233.68 0)
+		(at 294.64 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33468,7 +33577,7 @@
 		(dnp no)
 		(uuid "94802118-0909-4325-ae69-a51206d7f1f3")
 		(property "Reference" "#PWR057"
-			(at 284.48 240.03 0)
+			(at 294.64 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33477,7 +33586,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 287.02 233.68 0)
+			(at 297.18 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33485,7 +33594,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 284.48 233.68 0)
+			(at 294.64 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33494,7 +33603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 284.48 233.68 0)
+			(at 294.64 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33503,7 +33612,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 284.48 233.68 0)
+			(at 294.64 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40229,6 +40338,71 @@
 			(project "meko-pcb"
 				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 274.32 236.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddb2d2ff-a986-4725-8cab-c40f185fa317")
+		(property "Reference" "#PWR040"
+			(at 274.32 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 276.86 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 274.32 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 274.32 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 274.32 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f87ad178-27ee-484c-b2e4-606899815a88")
+		)
+		(instances
+			(project "meko-pcb"
+				(path "/bdd43acd-23c1-472b-909a-8e24eb60d56d"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
