@@ -10,6 +10,10 @@ Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wh
 I really miss the era of gadgets, where every device served one specific function, without distraction, like a mp3 player, a camera, a gps navigator, an e reader, etc. With this player I wanted to make something unique
 
 ## PCB 
+
+![render of pcb front](https://hc-cdn.hel1.your-objectstorage.com/s/v3/28628c18f999bf452bae8aa2b9f1559c4c9c38e4_meko-front.png)
+![render of pcb back](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4246db57d4c6ba13b19922480a644f0656d8f28f_meko-back.png)
+![schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b3219307270260e8b242c8adf0ab8544015bc564_meko-pcb-1.png)
   
 Production files in `Releases`  
   
@@ -26,7 +30,7 @@ It is impedance controlled for JLCs default 6 layer PCB stackup, but not many of
 
 ## Case 
 
-![render of case exploaded](https://hc-cdn.hel1.your-objectstorage.com/s/v3/bbbaaf101a9f005d0980b7fd177fbc70151c9b29_expload_optimized.png)  
+![render of case exploaded](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1a27d850232c1081d954c8f7dde6c17a460f477e_exploaded.png)  
   
 Production files in `Releases`  
   
