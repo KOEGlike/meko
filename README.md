@@ -3,7 +3,7 @@
 
 # Meko
 Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2. The size of the case is 41x73x14mm  
-<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/24c95898431c8b9ab4315f936c47fbdab4230098_front.png" height=500/>  
+<img src="https://rawcdn.githack.com/KOEGlike/meko/f5fcdac62bb8b718516981f5efe12eb97afa4bd7/meko-blend/renders/peresentation/front.png" height=500/>  
 
 ## Why?
 
