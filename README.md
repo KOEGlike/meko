@@ -11,7 +11,7 @@ I really miss the era of gadgets, where every device served one specific functio
 
 ## PCB 
 
-![render of pcb front](https://hc-cdn.hel1.your-objectstorage.com/s/v3/28628c18f999bf452bae8aa2b9f1559c4c9c38e4_meko-front.png)
+![render of pcb front](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/28628c18f999bf452bae8aa2b9f1559c4c9c38e4_meko-front.png)
 ![render of pcb back](https://rawcdn.githack.com/KOEGlike/meko/f915e92f74e80db6822fabad6e413f22e3d987a9/meko-blend/renders/PCB/meko-front.png)
 ![schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b3219307270260e8b242c8adf0ab8544015bc564_meko-pcb-1.png)
   
@@ -30,7 +30,7 @@ It is impedance controlled for JLCs default 6 layer PCB stackup, but not many of
 
 ## Case 
 
-![render of case exploaded](https://hc-cdn.hel1.your-objectstorage.com/s/v3/1a27d850232c1081d954c8f7dde6c17a460f477e_exploaded.png)  
+![render of case exploaded](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/1a27d850232c1081d954c8f7dde6c17a460f477e_exploaded.png)  
   
 Production files in `Releases`  
   
@@ -42,7 +42,7 @@ I recommend you to print this in resin because it requires accurate dimensions f
 
 ### Parameters
 
-![params](https://hc-cdn.hel1.your-objectstorage.com/s/v3/28701e145fee447792843a0d50e1efcada36852c_screenshot_20250621_093625.png)  
+![params](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/28701e145fee447792843a0d50e1efcada36852c_screenshot_20250621_093625.png)  
 The case has parametric design, so you can change the design very easily, and I included some easily changeable parameters, here what they do:
 
 - `battery_height` and `battery_width` are to set the size of the hole in the `bottom_cade`, the case is designed to have a 5mm thick battery, so you need to change the length of the first pad in `bottom_case` to account for the thicker battery 
