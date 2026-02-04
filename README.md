@@ -13,7 +13,7 @@ I really miss the era of gadgets, where every device served one specific functio
 
 ![render of pcb front](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/28628c18f999bf452bae8aa2b9f1559c4c9c38e4_meko-front.png)
 ![render of pcb back](https://rawcdn.githack.com/KOEGlike/meko/f915e92f74e80db6822fabad6e413f22e3d987a9/meko-blend/renders/PCB/meko-front.png)
-![schematic](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b3219307270260e8b242c8adf0ab8544015bc564_meko-pcb-1.png)
+![schematic](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/b3219307270260e8b242c8adf0ab8544015bc564_meko-pcb-1.png)
   
 Production files in `Releases`  
   
