@@ -40,26 +40,10 @@ The case in designed in FreeCAD, which is an Open Source  and free CAD program, 
 
 I recommend you to print this in resin because it requires accurate dimensions for the best result. You can print this on a FDM, but you need to change the `tolerance` and maybe other parameters in the model.
 
-### Parameters
-
-![params](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/28701e145fee447792843a0d50e1efcada36852c_screenshot_20250621_093625.png)  
-The case has parametric design, so you can change the design very easily, and I included some easily changeable parameters, here what they do:
-
-- `battery_height` and `battery_width` are to set the size of the hole in the `bottom_cade`, the case is designed to have a 5mm thick battery, so you need to change the length of the first pad in `bottom_case` to account for the thicker battery 
-- `bearing_inner` and `bearing_outer` set the inner and outer diameter of the bearing, this might mess up the top case, and if you dont want to use the recommended magnet,the wheel, so you might need to go in deeper to change these kinds of stuff. These parameters won't change the 3D model of the bearing in the model. 
-- `bearing_height` this sets the hight of the bearing, this will change the size of the hole in the `top_case` and the rim of the `wheel`. This parameter won't change the 3D model of the bearing in the model. 
-- `bearing_tolerance` this sets the tightness of the friction fit of the bearing int the `top_case` and `wheel`
-- `button_fillet` this sets the roundness of the buttons 
-- `button_height` and `button_width` set the width and hight of the buttons 
-- `button_reatiner_edge` set the size of the edge that keeps the button inside of the case and doesn't let it fall out 
-- `button_tolerance` sets the tolerance of the buttons to the case, this is a different form the general `tolerance` parameter, because the buttons are moving, and may wobble more if you set a loos tolerance
-- `case_offset` this parameter is still WIP, so don't use it, it sets the offset of the PCB form the point where the `top_case` and `bottom_case` meet 
-- `tolerance` this sets the general tolerance for inaccuracies in the 3D print 
-- `wall_thickness` this sets the thickness for the case walls 
-- `wheel_thickness` this sets how thick the wheel should be 
-
 ## Firmware 
 
 The firmware is being developed in [this repo](https://github.com/KOEGlike/eno-os)
 
-The firmware is very WIP!!!! It will be written in rust with the esp-idf-svc and embassy-executor frameworks. I choose the std route for rust instead of the no-std one, because with std i can use existing std libraries for audio processing, no-std has more performance but it's still in ts infancy, and doesn't have mature libraries. It will support lots of file formats, Spotify connect support, AirPlay 2 Support, and maybe qobuz
+The firmware is very WIP!!!! It is written with the zephyr rtos.
+
+If I have time I will try to port rockbox
