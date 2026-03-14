@@ -46,7 +46,7 @@ created_at: "2025-04-29"
 - implemented the things that I kinda understand
 - asked a question on stackexchange
 
-![WIP audio sheet](https://hc-cdn.hel1.your-objectstorage.com/s/v3/6abbe18602cace092f16e21d1b69010c1644050a_screenshot_20250622_170042.png)
+![WIP audio sheet](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/6abbe18602cace092f16e21d1b69010c1644050a_screenshot_20250622_170042.png)
   
     **Total time: 1.5h**
   
@@ -56,7 +56,7 @@ created_at: "2025-04-29"
 - I will have to use a oscillator, not a crystal, and low noise LDOs instead of switching regulators
 - Did some research on mems vs oscillator vs crystal
 
-![stackexchange reply](https://hc-cdn.hel1.your-objectstorage.com/s/v3/437b89e110eb72c3fbf8a337bad468b52d8a6d6a_image.png)
+![stackexchange reply](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/437b89e110eb72c3fbf8a337bad468b52d8a6d6a_image.png)
   
     **Total time: 2h**
   
@@ -169,7 +169,7 @@ created_at: "2025-04-29"
 ## 06.01: mockup
 
 - made a mockup
-![mockup](https://hc-cdn.hel1.your-objectstorage.com/s/v3/4d157f3a02e474d4ca8f6a1d4b66b37a692a462f_screenshot_20250601_105028.png)
+![mockup](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/4d157f3a02e474d4ca8f6a1d4b66b37a692a462f_screenshot_20250601_105028.png)
 - arranged the display and the hall sensor based on the mockup
 - decided to fold the flex display cable, because i had no space for the hall sensor, luckily my connector has contacts on both sides
 - i have to reorder the pins, because of the folding on the flex connector
@@ -201,8 +201,8 @@ created_at: "2025-04-29"
 - moved the via fence around a bit
 
 <div float="top">
-  <img alt="front of unrouted pcb"src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/5966f0773c208d1fb53af5a8bba9827fbb972e62_screenshot_20250622_163310.png" height="600" />
-  <img alt="back of unrouted pcb" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4c8bf6ccc1a4418482eb3a1c0772ae71b4b1b674_screenshot_20250622_163323.png" height="600" /> 
+  <img alt="front of unrouted pcb"src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/5966f0773c208d1fb53af5a8bba9827fbb972e62_screenshot_20250622_163310.png" height="600" />
+  <img alt="back of unrouted pcb" src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/4c8bf6ccc1a4418482eb3a1c0772ae71b4b1b674_screenshot_20250622_163323.png" height="600" /> 
 </div>
   
 
@@ -223,7 +223,7 @@ created_at: "2025-04-29"
 
 
 <img alt="3d view of routed pcb" src="https://i.imgur.com/EpPfKA7.png" width="800"/>
-<img width="800" alt="2d view of routed pcb" src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/2345e74afb1c8b2a5ab0c43a82fe6d34a1848d69_image_1_.png"/>
+<img width="800" alt="2d view of routed pcb" src="https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2345e74afb1c8b2a5ab0c43a82fe6d34a1848d69_image_1_.png"/>
 
 
     **Total time:3h**
@@ -232,7 +232,7 @@ created_at: "2025-04-29"
 
 - some chad redditor saw that i had connected my fuel gauge IC wrong, i connected SRX to the output of the batter charger, instead of connecting SRX to the batter input of the batter charger
 
-![reddit reply](https://hc-cdn.hel1.your-objectstorage.com/s/v3/17162a9fce7e1f8219d1f8930e2432583e2908fa_screenshot_20250622_170350.png)
+![reddit reply](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/17162a9fce7e1f8219d1f8930e2432583e2908fa_screenshot_20250622_170350.png)
   
     **Total time: 1h**
   
@@ -283,9 +283,9 @@ created_at: "2025-04-29"
 - added a stopper to the bearing hole, so that it will sit at known hight, and not at some random hight in the hole, also prevents the bearing from touching some components 
 - figured out how to keep the display in place, will model it later
 - adding some images, I havent done this in a while, i might have to back journal, and add some more, cuz this journal is basically a wall of text 
-![top case](https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab2755acd39ee8d40157aa602e53502949611a6d_screenshot_20250617_225307.png)
-![bottom case](https://hc-cdn.hel1.your-objectstorage.com/s/v3/b6bcb2d2fb7b30283c68f0b9921f571618fa8ad5_screenshot_20250617_225220.png)
-![all together](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d3c72ed3297ce7bd82f2e2cbf21f3af8ad571a90_screenshot_20250617_225156.png)
+![top case](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/ab2755acd39ee8d40157aa602e53502949611a6d_screenshot_20250617_225307.png)
+![bottom case](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/b6bcb2d2fb7b30283c68f0b9921f571618fa8ad5_screenshot_20250617_225220.png)
+![all together](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/d3c72ed3297ce7bd82f2e2cbf21f3af8ad571a90_screenshot_20250617_225156.png)
   
 **Total time: 3h**
   
@@ -293,7 +293,7 @@ created_at: "2025-04-29"
 ## 06.18: finished cad
 
 - Finished display retainer, it's like a plate that is held down by the pcb  
-![display retainer](https://hc-cdn.hel1.your-objectstorage.com/s/v3/08957b6ea1ca3302bf148e194c0685681e29c92b_screenshot_20250618_192323.png)
+![display retainer](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/08957b6ea1ca3302bf148e194c0685681e29c92b_screenshot_20250618_192323.png)
 - modeled the button 
 - I found a way to make it thinner, firstly buy leaving the battery less wiggle room, and a cutout for the battery in the case, this will reduce the thickness by like 2mm, so it will be around 13,5mm 
 - choose the magnet for that hall-effect rotation encoder, here is [the link](https://www.first4magnets.com/product/6mm-dia-x-1mm-thick-diametrically-magnetised-n42-neodymium-magnet-20413)
@@ -303,13 +303,13 @@ created_at: "2025-04-29"
 ## 06.19: rounded tracks, cad assembly 
 
 - created a cad assembly
-![cad assembly](https://hc-cdn.hel1.your-objectstorage.com/s/v3/a5b988545cf45da093c869a047a75b005e332548_screenshot_20250619_204859.png)
+![cad assembly](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/a5b988545cf45da093c869a047a75b005e332548_screenshot_20250619_204859.png)
 - modeled the buttons
 - made the wheels dimensions parametric
 - i created a new branch for V1 of the PCB, so I can have rounded tracks, which are annoying to edit
 - the next thing to do is to create some renders in blender 
 - in blender the transparent material i want to use for the 3d printed plastic parts, is not transparent, so i spent 1,5h on this, and still couldnt figure it out, AAAAAAAAHHHHHHHHHHHH
-![not transparent glass shader](https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4d4ac2bdab54ed7fd1395fb5da7fc241c5fd0b4_screenshot_20250620_145026.png)
+![not transparent glass shader](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/d4d4ac2bdab54ed7fd1395fb5da7fc241c5fd0b4_screenshot_20250620_145026.png)
 
   
 **Total time: 4h**
@@ -322,7 +322,7 @@ created_at: "2025-04-29"
 - i thought that i needed to merge all the geometries to move them at once, but after the merge you cant easily change the materials of the combined mesh, and i accidentally set the bearing material to glass, so i had to redo the whole thing again, because you cant unmerge a merged mesh, and i was out of undo states, so i had to redo the whole thing, but I was now way
 faster
 - made an animation of the player, that is rendering right now 
-![transparent glass shader](https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd212f771b0da2ebeefdf873f040a7749927dd7e_0001.png)  
+![transparent glass shader](https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/fd212f771b0da2ebeefdf873f040a7749927dd7e_0001.png)  
 - blender wasn't using my gpu, so I had to update some drives an tweek some setting in nixos
   
 **Total time: 3,5h**
