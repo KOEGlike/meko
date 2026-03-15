@@ -325,7 +325,7 @@ Finished lesson 2 and 3. Zephyr seems really powerful, but it's really complex. 
 
 _Time spent: 4.0h_  
 
-This all started when I asked for a design review on the r/PrintedCircuitBoard subreddit, and a Redditor replied in broken English that they will manufacture my PCB for free. (The mods have removed the comments since then)
+This all started when I asked for a design review on the r/PrintedCircuitBoard subreddit, and a Redditor replied in broken English that they will manufacture my PCB for free. (The Reddit admins have deleted their account since then)
 ![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjM0MjIsInB1ciI6ImJsb2JfaWQifX0=--3683428a3f95437b2d8f1fb179c93fa97a47f5cc/image.png)
 I was really hesitant at first, they DMed me on Reddit, and asked for my phone number so we can continue on WhatsApp. Now I thought, this 100% must be a scam, but I continued. I didn't give them my phone number, just my email. In the email convo I found out that this is in fact [a real company](http://www.jclpcba.com/index.html) in China, and that they have an Alibaba store, and that they would give me free PCBs, assembly and shipping, I just needed to pay for the parts. They wanted my to use their Alibaba store to place an order, which was nice since if it was a scam, I could just ask for my money back. 
 
