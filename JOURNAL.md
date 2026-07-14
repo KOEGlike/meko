@@ -23,4 +23,10 @@ Two articles were really helpful researching this topic: [this one](https://jayc
 
 ## 70hz e-paper
 
-V2 had a normal e-ink screen, which had a max partial refresh rate of 0.5s, which is really bad, but for a music player it's alright. But I wanted more!!! So I found out about
+V2 had a normal e-ink screen, which had a max partial refresh rate of 0.5s, which is really bad, but for a music player it's alright. But I wanted more!!! So I found out about Sharp MIP displays, which give the effect of e-ink - they don't have a back light, are mostly black and white and they are really low power - but they have a higher refresh rate, for example the display that I choose(LS022B7DH03) it has 70Hz.
+
+## RAM
+
+One of the main reasons I didn't go with a SiP(an IC where both the MPU and RAM are in the same package), because they mostly only package DDR3L or DDR2L, which have significantly higher power consumptions than LPDDR2/3. Both of my chosen MPUs support both LPDDR2 and LPDDR3, so I will be most likely going to use LPDDR3, and 512MB of it, because these MPUs would be sooner bottle necked by their performance than from the amount of RAM, and 512MB seems to be the sweet spot from what I read on forms/articles.
+
+## *Time Spent: 8h*
