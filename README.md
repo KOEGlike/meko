@@ -1,5 +1,5 @@
 > [!CAUTION]
-> The PCB does not have 100% of it's features working. If you want to make one wait until I fix all of the issues 
+> I'm currently working on v3, so if you want see the source files for v2 which this readme describes, go check out the v2 branch
 
 # Meko
 Meko is a high audio quality DAP, it has an e-ink screen, a physical spinning wheel, small formfactor, Bluetooth, micro SD slot, transparent case. Its design was inspired by the iPod nano 2. The size of the case is 41x73x14mm  
