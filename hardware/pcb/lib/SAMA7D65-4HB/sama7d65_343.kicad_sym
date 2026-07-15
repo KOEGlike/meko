@@ -1,0 +1,6923 @@
+(kicad_symbol_lib
+	(version 20251024)
+	(generator "kicad_symbol_editor")
+	(generator_version "10.0")
+	(symbol "SAMA7D65-4HB"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -7.62 332.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SAMA7D65-4HB"
+			(at 7.62 332.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_BGA:TFBGA-343"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 -345.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SAMA7D65 343-pin TFBGA"
+			(at 0 -350.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "ki_fp_filters" "TFBGA*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "SAMA7D65-4HB_1_0"
+			(rectangle
+				(start 7.62 330.2)
+				(end -7.62 -330.2)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 170.18 0)
+				(length 5.08)
+				(name "PB30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD14" bidirectional line)
+				(alternate "FLEXCOM1_IO2" bidirectional line)
+				(alternate "I2SMCC1_MCK" bidirectional line)
+				(alternate "NANDCS1" bidirectional line)
+				(alternate "NCS1" bidirectional line)
+				(alternate "SDMMC1_1V8SEL" bidirectional line)
+				(alternate "TIOA1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 106.68 0)
+				(length 5.08)
+				(name "PC23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "TCK_SWCLK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -289.56 0)
+				(length 5.08)
+				(name "PIOBU3(6)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -284.48 0)
+				(length 5.08)
+				(name "PIOBU1(6)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -320.04 0)
+				(length 5.08)
+				(name "LPM"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -294.64 0)
+				(length 5.08)
+				(name "XOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -307.34 0)
+				(length 5.08)
+				(name "WKUP0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -297.18 0)
+				(length 5.08)
+				(name "XIN32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 182.88 0)
+				(length 5.08)
+				(name "PB25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO1" bidirectional line)
+				(alternate "SDMMC1_DAT1" bidirectional line)
+				(alternate "TIOB2" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 180.34 0)
+				(length 5.08)
+				(name "PB26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO0" bidirectional line)
+				(alternate "SDMMC1_DAT2" bidirectional line)
+				(alternate "TCLK2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 86.36 0)
+				(length 5.08)
+				(name "PC31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D12" bidirectional line)
+				(alternate "FLEXCOM8_IO4" bidirectional line)
+				(alternate "PCK0" bidirectional line)
+				(alternate "RK1" bidirectional line)
+				(alternate "SDMMC2_DAT2" bidirectional line)
+				(alternate "TIOB0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 81.28 0)
+				(length 5.08)
+				(name "PD1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO5" bidirectional line)
+				(alternate "FLEXCOM3_IO0" bidirectional line)
+				(alternate "LCDC_HSYNC" bidirectional line)
+				(alternate "SDMMC2_WP" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 71.12 0)
+				(length 5.08)
+				(name "PD5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO3" bidirectional line)
+				(alternate "FLEXCOM7_IO0" bidirectional line)
+				(alternate "LCDC_VSYNC" bidirectional line)
+				(alternate "TCLK0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 66.04 0)
+				(length 5.08)
+				(name "PD7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO0" bidirectional line)
+				(alternate "FLEXCOM7_IO3" bidirectional line)
+				(alternate "LCDC_DISP" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -226.06 0)
+				(length 5.08)
+				(name "DDR_ZQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -132.08 0)
+				(length 5.08)
+				(name "DDR_D13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -121.92 0)
+				(length 5.08)
+				(name "DDR_D9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -213.36 0)
+				(length 5.08)
+				(name "DDR_DQSN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -129.54 0)
+				(length 5.08)
+				(name "DDR_D12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -7.62 0)
+				(length 5.08)
+				(name "PE4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO2" bidirectional line)
+				(alternate "I2SMCC0_DIN1" bidirectional line)
+				(alternate "LCDC_DAT0" bidirectional line)
+				(alternate "LVDS_A0M" bidirectional line)
+				(alternate "PWML0" bidirectional line)
+				(alternate "TIOA3" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -12.7 0)
+				(length 5.08)
+				(name "PE6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO4" bidirectional line)
+				(alternate "I2SMCC0_DIN3" bidirectional line)
+				(alternate "LCDC_DAT2" bidirectional line)
+				(alternate "LVDS_A1M" bidirectional line)
+				(alternate "PWML1" bidirectional line)
+				(alternate "TCLK3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -17.78 0)
+				(length 5.08)
+				(name "PE8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO0" bidirectional line)
+				(alternate "I2SMCC0_CK" bidirectional line)
+				(alternate "LCDC_DAT4" bidirectional line)
+				(alternate "LVDS_A2M" bidirectional line)
+				(alternate "PWML2" bidirectional line)
+				(alternate "TIOB4" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -27.94 0)
+				(length 5.08)
+				(name "PE12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2SMCC0_DIN0" bidirectional line)
+				(alternate "LCDC_DEN" bidirectional line)
+				(alternate "LVDS_CLK1M" bidirectional line)
+				(alternate "PCK3" bidirectional line)
+				(alternate "PWMEXTRG0" bidirectional line)
+				(alternate "TCLK5" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -22.86 0)
+				(length 5.08)
+				(name "PE10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO6" bidirectional line)
+				(alternate "I2SMCC0_DOUT2" bidirectional line)
+				(alternate "LCDC_DAT6" bidirectional line)
+				(alternate "LVDS_A3M" bidirectional line)
+				(alternate "PWML3" bidirectional line)
+				(alternate "TIOA5" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 269.24 0)
+				(length 5.08)
+				(name "PA23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO1" bidirectional line)
+				(alternate "PDMC0_CLK" bidirectional line)
+				(alternate "PWML2" bidirectional line)
+				(alternate "RK0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "AA21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 147.32 0)
+				(length 5.08)
+				(name "PC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD4" bidirectional line)
+				(alternate "D5" bidirectional line)
+				(alternate "FLEXCOM0_IO0" bidirectional line)
+				(alternate "I3CC_SDA" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 101.6 0)
+				(length 5.08)
+				(name "PC25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "TDI" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 -309.88 0)
+				(length 5.08)
+				(name "SHDN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -292.1 0)
+				(length 5.08)
+				(name "XIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -299.72 0)
+				(length 5.08)
+				(name "XOUT32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -269.24 0)
+				(length 5.08)
+				(name "SDMMC1_CAL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 185.42 0)
+				(length 5.08)
+				(name "PB24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO0" bidirectional line)
+				(alternate "SDMMC1_DAT0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 91.44 0)
+				(length 5.08)
+				(name "PC29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D10" bidirectional line)
+				(alternate "FLEXCOM8_IO2" bidirectional line)
+				(alternate "SDMMC2_DAT0" bidirectional line)
+				(alternate "TCLK0" bidirectional line)
+				(alternate "TK1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 76.2 0)
+				(length 5.08)
+				(name "PD3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "EXT_IRQ1" bidirectional line)
+				(alternate "FLEXCOM1_IO4" bidirectional line)
+				(alternate "FLEXCOM3_IO2" bidirectional line)
+				(alternate "SDMMC2_1V8SEL" bidirectional line)
+				(alternate "TIOA0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 7.62 0)
+				(length 5.08)
+				(name "PD30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM7_IO3" bidirectional line)
+				(alternate "G1_RX2" bidirectional line)
+				(alternate "G1_RXER" bidirectional line)
+				(alternate "I2SMCC1_DOUT1" bidirectional line)
+				(alternate "PDMC1_DS1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -66.04 0)
+				(length 5.08)
+				(name "VDDCPU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 264.16 0)
+				(length 5.08)
+				(name "PA25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO2" bidirectional line)
+				(alternate "G0_TXCTL" bidirectional line)
+				(alternate "G0_TXEN" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 137.16 0)
+				(length 5.08)
+				(name "PC11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD6" bidirectional line)
+				(alternate "D3" bidirectional line)
+				(alternate "FLEXCOM9_IO3" bidirectional line)
+				(alternate "I2SMCC0_DOUT1" bidirectional line)
+				(alternate "PDMC1_DS0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 154.94 0)
+				(length 5.08)
+				(name "PC4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD1" bidirectional line)
+				(alternate "D0" bidirectional line)
+				(alternate "FLEXCOM0_IO3" bidirectional line)
+				(alternate "FLEXCOM9_IO1" bidirectional line)
+				(alternate "SPDIF_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 175.26 0)
+				(length 5.08)
+				(name "PB28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD12" bidirectional line)
+				(alternate "D15" bidirectional line)
+				(alternate "FLEXCOM1_IO0" bidirectional line)
+				(alternate "SDMMC1_WP" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 167.64 0)
+				(length 5.08)
+				(name "PB31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO3" bidirectional line)
+				(alternate "HHSA_CC1" bidirectional line)
+				(alternate "I2SMCC1_DIN1" bidirectional line)
+				(alternate "NANDWE" bidirectional line)
+				(alternate "NWE" bidirectional line)
+				(alternate "NWR0" bidirectional line)
+				(alternate "PCK7" bidirectional line)
+				(alternate "TCLK1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 114.3 0)
+				(length 5.08)
+				(name "PC20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A1" bidirectional line)
+				(alternate "ACC_INN3" bidirectional line)
+				(alternate "I2SMCC0_DOUT0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 162.56 0)
+				(length 5.08)
+				(name "PC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM9_IO2" bidirectional line)
+				(alternate "HHSB_CC1" bidirectional line)
+				(alternate "PCK5" bidirectional line)
+				(alternate "SMCK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 177.8 0)
+				(length 5.08)
+				(name "PB27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO1" bidirectional line)
+				(alternate "SDMMC1_DAT3" bidirectional line)
+				(alternate "TIOA2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 190.5 0)
+				(length 5.08)
+				(name "PB22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO3" bidirectional line)
+				(alternate "SDMMC1_CMD" bidirectional line)
+				(alternate "TCLK2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 96.52 0)
+				(length 5.08)
+				(name "PC27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D8" bidirectional line)
+				(alternate "FLEXCOM8_IO0" bidirectional line)
+				(alternate "SDMMC2_CMD" bidirectional line)
+				(alternate "TD1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 83.82 0)
+				(length 5.08)
+				(name "PD0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D13" bidirectional line)
+				(alternate "PCK1" bidirectional line)
+				(alternate "RF1" bidirectional line)
+				(alternate "SDMMC2_DAT3" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -48.26 0)
+				(length 5.08)
+				(name "VDDIOP1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 48.26 0)
+				(length 5.08)
+				(name "PD14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANTX3" bidirectional line)
+				(alternate "FLEXCOM5_IO2" bidirectional line)
+				(alternate "TIOB2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 12.7 0)
+				(length 5.08)
+				(name "PD28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM7_IO1" bidirectional line)
+				(alternate "G1_RX1" bidirectional line)
+				(alternate "I2SMCC1_DIN1" bidirectional line)
+				(alternate "SPDIF_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 228.6 0)
+				(length 5.08)
+				(name "PB7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADTRG" bidirectional line)
+				(alternate "FLEXCOM10_IO1" bidirectional line)
+				(alternate "G0_TSUCOMP" bidirectional line)
+				(alternate "RF0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 259.08 0)
+				(length 5.08)
+				(name "PA27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO4" bidirectional line)
+				(alternate "G0_TX1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 132.08 0)
+				(length 5.08)
+				(name "PC13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A8" bidirectional line)
+				(alternate "AD8" bidirectional line)
+				(alternate "I2SMCC0_DOUT3" bidirectional line)
+				(alternate "PDMC1_DS1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -33.02 0)
+				(length 5.08)
+				(name "ADVREFP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -312.42 0)
+				(length 5.08)
+				(name "NRST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 121.92 0)
+				(length 5.08)
+				(name "PC17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A4" bidirectional line)
+				(alternate "ACC_INP0" bidirectional line)
+				(alternate "FLEXCOM1_IO3" bidirectional line)
+				(alternate "I2SMCC1_DOUT0" bidirectional line)
+				(alternate "PDMC1_DS0" bidirectional line)
+				(alternate "TCLK1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 116.84 0)
+				(length 5.08)
+				(name "PC19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A2" bidirectional line)
+				(alternate "ACC_INP2" bidirectional line)
+				(alternate "I2SMCC0_WS" bidirectional line)
+				(alternate "PCK6" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 142.24 0)
+				(length 5.08)
+				(name "PC9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACC_INN1" bidirectional line)
+				(alternate "D7" bidirectional line)
+				(alternate "FLEXCOM9_IO1" bidirectional line)
+				(alternate "I2SMCC0_DIN2" bidirectional line)
+				(alternate "I2SMCC1_DOUT2" bidirectional line)
+				(alternate "PDMC0_CLK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 160.02 0)
+				(length 5.08)
+				(name "PC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A11" bidirectional line)
+				(alternate "EXT_IRQ0" bidirectional line)
+				(alternate "FLEXCOM9_IO3" bidirectional line)
+				(alternate "HHSB_CC2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -287.02 0)
+				(length 5.08)
+				(name "PIOBU2(6)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 187.96 0)
+				(length 5.08)
+				(name "PB23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO2" bidirectional line)
+				(alternate "SDMMC1_CK" bidirectional line)
+				(alternate "TIOA2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 193.04 0)
+				(length 5.08)
+				(name "PB21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADTRG" bidirectional line)
+				(alternate "EXT_IRQ0" bidirectional line)
+				(alternate "FLEXCOM6_IO4" bidirectional line)
+				(alternate "SDMMC1_RSTN" bidirectional line)
+				(alternate "TIOB2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 93.98 0)
+				(length 5.08)
+				(name "PC28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D9" bidirectional line)
+				(alternate "FLEXCOM8_IO1" bidirectional line)
+				(alternate "SDMMC2_CK" bidirectional line)
+				(alternate "TF1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 88.9 0)
+				(length 5.08)
+				(name "PC30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D11" bidirectional line)
+				(alternate "FLEXCOM8_IO3" bidirectional line)
+				(alternate "RD1" bidirectional line)
+				(alternate "SDMMC2_DAT1" bidirectional line)
+				(alternate "TIOA0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 53.34 0)
+				(length 5.08)
+				(name "PD12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANTX2" bidirectional line)
+				(alternate "FLEXCOM3_IO3" bidirectional line)
+				(alternate "FLEXCOM7_IO4" bidirectional line)
+				(alternate "PCK2" bidirectional line)
+				(alternate "TIOB1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 17.78 0)
+				(length 5.08)
+				(name "PD26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM7_IO4" bidirectional line)
+				(alternate "G1_MDIO" bidirectional line)
+				(alternate "I2SMCC1_DIN2" bidirectional line)
+				(alternate "PDMC0_DS0" bidirectional line)
+				(alternate "RF1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -5.08 0)
+				(length 5.08)
+				(name "PE3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM5_IO0" bidirectional line)
+				(alternate "G1_TSUCOMP" bidirectional line)
+				(alternate "I2SMCC1_DOUT0" bidirectional line)
+				(alternate "PDMC0_DS0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 254 0)
+				(length 5.08)
+				(name "PA29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO1" bidirectional line)
+				(alternate "G0_RX0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -40.64 0)
+				(length 5.08)
+				(name "GNDANA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -60.96 0)
+				(length 5.08)
+				(name "VDDOUT25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -314.96 0)
+				(length 5.08)
+				(name "NRST_OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -55.88 0)
+				(length 5.08)
+				(name "VDDANA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 144.78 0)
+				(length 5.08)
+				(name "PC8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ACC_INP1" bidirectional line)
+				(alternate "D6" bidirectional line)
+				(alternate "FLEXCOM9_IO0" bidirectional line)
+				(alternate "I2SMCC0_DIN1" bidirectional line)
+				(alternate "I2SMCC1_DOUT1" bidirectional line)
+				(alternate "PDMC0_DS1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -40.64 0)
+				(length 5.08)
+				(hide yes)
+				(name "GNDANA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -279.4 0)
+				(length 5.08)
+				(name "VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -274.32 0)
+				(length 5.08)
+				(name "SDMMC2_CAL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -66.04 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCPU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -66.04 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCPU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 43.18 0)
+				(length 5.08)
+				(name "PD16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANTX4" bidirectional line)
+				(alternate "FLEXCOM5_IO0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -66.04 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCPU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -78.74 0)
+				(length 5.08)
+				(name "HHSDMA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -76.2 0)
+				(length 5.08)
+				(name "HHSDPA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 127 0)
+				(length 5.08)
+				(name "PC15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A6" bidirectional line)
+				(alternate "AD10" bidirectional line)
+				(alternate "FLEXCOM1_IO1" bidirectional line)
+				(alternate "I2SMCC1_WS" bidirectional line)
+				(alternate "PDMC1_DS1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 109.22 0)
+				(length 5.08)
+				(name "PC22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD15" bidirectional line)
+				(alternate "NTRST" bidirectional line)
+				(alternate "NWAIT" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 104.14 0)
+				(length 5.08)
+				(name "PC24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "TMS_SWDIO" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 119.38 0)
+				(length 5.08)
+				(name "PC18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A3" bidirectional line)
+				(alternate "ACC_INN2" bidirectional line)
+				(alternate "FLEXCOM1_IO4" bidirectional line)
+				(alternate "I2SMCC0_DIN0" bidirectional line)
+				(alternate "SPDIF_TX" bidirectional line)
+				(alternate "TIOB1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 111.76 0)
+				(length 5.08)
+				(name "PC21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A0" bidirectional line)
+				(alternate "ACC_INP3" bidirectional line)
+				(alternate "I2SMCC0_CK" bidirectional line)
+				(alternate "NBS0" bidirectional line)
+				(alternate "PCK7" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -264.16 0)
+				(length 5.08)
+				(name "VDDSDMMC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -271.78 0)
+				(length 5.08)
+				(name "VDDSDMMC2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 60.96 0)
+				(length 5.08)
+				(name "PD9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANRX0" bidirectional line)
+				(alternate "FLEXCOM7_IO1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -66.04 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCPU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 35.56 0)
+				(length 5.08)
+				(name "PD19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANRX1" bidirectional line)
+				(alternate "FLEXCOM6_IO1" bidirectional line)
+				(alternate "PCK2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 27.94 0)
+				(length 5.08)
+				(name "PD22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO3" bidirectional line)
+				(alternate "G1_TX0" bidirectional line)
+				(alternate "TF1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 5.08 0)
+				(length 5.08)
+				(name "PD31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM5_IO4" bidirectional line)
+				(alternate "G1_RX3" bidirectional line)
+				(alternate "I2SMCC1_DOUT2" bidirectional line)
+				(alternate "PDMC1_DS0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 248.92 0)
+				(length 5.08)
+				(name "PA31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "F21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO1" bidirectional line)
+				(alternate "G0_MDC" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -83.82 0)
+				(length 5.08)
+				(name "HHSDMB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -81.28 0)
+				(length 5.08)
+				(name "HHSDPB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 152.4 0)
+				(length 5.08)
+				(name "PC5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD2" bidirectional line)
+				(alternate "D1" bidirectional line)
+				(alternate "FLEXCOM0_IO2" bidirectional line)
+				(alternate "I2SMCC1_DIN3" bidirectional line)
+				(alternate "I3CC_SDASPUE" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 172.72 0)
+				(length 5.08)
+				(name "PB29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD13" bidirectional line)
+				(alternate "D14" bidirectional line)
+				(alternate "FLEXCOM1_IO1" bidirectional line)
+				(alternate "I2SMCC0_MCK" bidirectional line)
+				(alternate "SDMMC1_CD" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -38.1 0)
+				(length 5.08)
+				(name "GNDIN33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 99.06 0)
+				(length 5.08)
+				(name "PC26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A12" bidirectional line)
+				(alternate "TDO" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -35.56 0)
+				(length 5.08)
+				(name "VDDIN33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 157.48 0)
+				(length 5.08)
+				(name "PC3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A10" bidirectional line)
+				(alternate "AD0" bidirectional line)
+				(alternate "FLEXCOM0_IO4" bidirectional line)
+				(alternate "FLEXCOM9_IO0" bidirectional line)
+				(alternate "SPDIF_RX" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -302.26 0)
+				(length 5.08)
+				(name "TST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 68.58 0)
+				(length 5.08)
+				(name "PD6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO1" bidirectional line)
+				(alternate "FLEXCOM7_IO2" bidirectional line)
+				(alternate "LCDC_PWM" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -276.86 0)
+				(length 5.08)
+				(name "GNDBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 73.66 0)
+				(length 5.08)
+				(name "PD4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO2" bidirectional line)
+				(alternate "FLEXCOM7_IO1" bidirectional line)
+				(alternate "LCDC_HSYNC" bidirectional line)
+				(alternate "TIOB0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 78.74 0)
+				(length 5.08)
+				(name "PD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM1_IO6" bidirectional line)
+				(alternate "FLEXCOM3_IO1" bidirectional line)
+				(alternate "LCDC_VSYNC" bidirectional line)
+				(alternate "SDMMC2_CD" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 63.5 0)
+				(length 5.08)
+				(name "PD8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANTX0" bidirectional line)
+				(alternate "FLEXCOM7_IO0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 58.42 0)
+				(length 5.08)
+				(name "PD10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANTX1" bidirectional line)
+				(alternate "FLEXCOM7_IO2" bidirectional line)
+				(alternate "TIOA1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 25.4 0)
+				(length 5.08)
+				(name "PD23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO4" bidirectional line)
+				(alternate "G1_TX1" bidirectional line)
+				(alternate "TD1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 22.86 0)
+				(length 5.08)
+				(name "PD24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO0" bidirectional line)
+				(alternate "G1_CRSDV" bidirectional line)
+				(alternate "G1_RXCTL" bidirectional line)
+				(alternate "PDMC0_DS1" bidirectional line)
+				(alternate "RD1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 0 0)
+				(length 5.08)
+				(name "PE1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM5_IO3" bidirectional line)
+				(alternate "G1_TX3" bidirectional line)
+				(alternate "I2SMCC1_WS" bidirectional line)
+				(alternate "PDMC0_DS1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 243.84 0)
+				(length 5.08)
+				(name "PB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "G21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO2" bidirectional line)
+				(alternate "G0_REFCK" bidirectional line)
+				(alternate "G0_TXCK" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -40.64 0)
+				(length 5.08)
+				(hide yes)
+				(name "GNDANA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 124.46 0)
+				(length 5.08)
+				(name "PC16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A5" bidirectional line)
+				(alternate "AD11" bidirectional line)
+				(alternate "FLEXCOM1_IO2" bidirectional line)
+				(alternate "I2SMCC1_CK" bidirectional line)
+				(alternate "PDMC1_CLK" bidirectional line)
+				(alternate "TIOA1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 134.62 0)
+				(length 5.08)
+				(name "PC12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A9" bidirectional line)
+				(alternate "AD7" bidirectional line)
+				(alternate "FLEXCOM9_IO4" bidirectional line)
+				(alternate "I2SMCC0_DOUT2" bidirectional line)
+				(alternate "PDMC1_CLK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 149.86 0)
+				(length 5.08)
+				(name "PC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD3" bidirectional line)
+				(alternate "D4" bidirectional line)
+				(alternate "FLEXCOM0_IO1" bidirectional line)
+				(alternate "I3CC_SCL" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 139.7 0)
+				(length 5.08)
+				(name "PC10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "AD5" bidirectional line)
+				(alternate "D2" bidirectional line)
+				(alternate "FLEXCOM9_IO2" bidirectional line)
+				(alternate "I2SMCC0_DIN3" bidirectional line)
+				(alternate "I2SMCC1_DOUT3" bidirectional line)
+				(alternate "PDMC0_DS0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -304.8 0)
+				(length 5.08)
+				(name "JTAGSEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 55.88 0)
+				(length 5.08)
+				(name "PD11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANRX1" bidirectional line)
+				(alternate "FLEXCOM7_IO3" bidirectional line)
+				(alternate "TCLK1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 45.72 0)
+				(length 5.08)
+				(name "PD15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANRX3" bidirectional line)
+				(alternate "FLEXCOM5_IO3" bidirectional line)
+				(alternate "TCLK2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 40.64 0)
+				(length 5.08)
+				(name "PD17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANRX4" bidirectional line)
+				(alternate "FLEXCOM5_IO1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 30.48 0)
+				(length 5.08)
+				(name "PD21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO2" bidirectional line)
+				(alternate "G1_TXCTL" bidirectional line)
+				(alternate "G1_TXEN" bidirectional line)
+				(alternate "TK1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 38.1 0)
+				(length 5.08)
+				(name "PD18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANTX1" bidirectional line)
+				(alternate "FLEXCOM6_IO0" bidirectional line)
+				(alternate "PCK4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 2.54 0)
+				(length 5.08)
+				(name "PE0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM5_IO2" bidirectional line)
+				(alternate "G1_TX2" bidirectional line)
+				(alternate "I2SMCC1_DIN0" bidirectional line)
+				(alternate "PDMC1_CLK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 10.16 0)
+				(length 5.08)
+				(name "PD29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM7_IO2" bidirectional line)
+				(alternate "G1_REFCK" bidirectional line)
+				(alternate "G1_TXCK" bidirectional line)
+				(alternate "I2SMCC1_DOUT3" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -50.8 0)
+				(length 5.08)
+				(name "VDDGMAC1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "H21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -88.9 0)
+				(length 5.08)
+				(name "HHSDMC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -86.36 0)
+				(length 5.08)
+				(name "HHSDPC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -55.88 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDANA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 129.54 0)
+				(length 5.08)
+				(name "PC14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A7" bidirectional line)
+				(alternate "AD9" bidirectional line)
+				(alternate "FLEXCOM1_IO0" bidirectional line)
+				(alternate "I2SMCC1_DIN0" bidirectional line)
+				(alternate "SPDIF_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 165.1 0)
+				(length 5.08)
+				(name "PC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM9_IO4" bidirectional line)
+				(alternate "HHSA_CC2" bidirectional line)
+				(alternate "I2SMCC1_DIN2" bidirectional line)
+				(alternate "NBS1" bidirectional line)
+				(alternate "NWR1" bidirectional line)
+				(alternate "PCK6" bidirectional line)
+				(alternate "TIOB1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -281.94 0)
+				(length 5.08)
+				(name "PIOBU0(6)"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 50.8 0)
+				(length 5.08)
+				(name "PD13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CANRX2" bidirectional line)
+				(alternate "FLEXCOM5_IO4" bidirectional line)
+				(alternate "PCK3" bidirectional line)
+				(alternate "TIOA2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 33.02 0)
+				(length 5.08)
+				(name "PD20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO2" bidirectional line)
+				(alternate "I2SMCC1_MCK" bidirectional line)
+				(alternate "PCK3" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 241.3 0)
+				(length 5.08)
+				(name "PB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO4" bidirectional line)
+				(alternate "G0_RX2" bidirectional line)
+				(alternate "G0_RXER" bidirectional line)
+				(alternate "RK0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 236.22 0)
+				(length 5.08)
+				(name "PB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO3" bidirectional line)
+				(alternate "G0_TX2" bidirectional line)
+				(alternate "TF0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 233.68 0)
+				(length 5.08)
+				(name "PB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO4" bidirectional line)
+				(alternate "G0_TX3" bidirectional line)
+				(alternate "TD0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 238.76 0)
+				(length 5.08)
+				(name "PB3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "J21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO2" bidirectional line)
+				(alternate "G0_RXCK" bidirectional line)
+				(alternate "TK0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -91.44 0)
+				(length 5.08)
+				(name "HHSRTUNE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -317.5 0)
+				(length 5.08)
+				(name "AUDIOCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 20.32 0)
+				(length 5.08)
+				(name "PD25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO1" bidirectional line)
+				(alternate "G1_MDC" bidirectional line)
+				(alternate "PDMC0_CLK" bidirectional line)
+				(alternate "RK1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 15.24 0)
+				(length 5.08)
+				(name "PD27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM7_IO0" bidirectional line)
+				(alternate "G1_RX0" bidirectional line)
+				(alternate "I2SMCC1_DIN3" bidirectional line)
+				(alternate "SPDIF_RX" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -2.54 0)
+				(length 5.08)
+				(name "PE2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM5_IO1" bidirectional line)
+				(alternate "G1_RXCK" bidirectional line)
+				(alternate "I2SMCC1_CK" bidirectional line)
+				(alternate "PDMC0_CLK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 231.14 0)
+				(length 5.08)
+				(name "PB6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO0" bidirectional line)
+				(alternate "G0_RX3" bidirectional line)
+				(alternate "RD0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 261.62 0)
+				(length 5.08)
+				(name "PA26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO3" bidirectional line)
+				(alternate "G0_TX0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 251.46 0)
+				(length 5.08)
+				(name "PA30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO0" bidirectional line)
+				(alternate "G0_RX1" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -73.66 0)
+				(length 5.08)
+				(name "VDDUTMI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -71.12 0)
+				(length 5.08)
+				(name "GNDUTMI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -160.02 0)
+				(length 5.08)
+				(name "DDR_A8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -175.26 0)
+				(length 5.08)
+				(name "DDR_A14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 256.54 0)
+				(length 5.08)
+				(name "PA28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM6_IO0" bidirectional line)
+				(alternate "G0_CRSDV" bidirectional line)
+				(alternate "G0_RXCTL" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 198.12 0)
+				(length 5.08)
+				(name "PB19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "EXT_IRQ1" bidirectional line)
+				(alternate "FLEXCOM10_IO1" bidirectional line)
+				(alternate "PCK4" bidirectional line)
+				(alternate "PWML2" bidirectional line)
+				(alternate "QSPI0_DQS" bidirectional line)
+				(alternate "TIOB5" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -45.72 0)
+				(length 5.08)
+				(name "VDDGMAC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "L21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -101.6 0)
+				(length 5.08)
+				(name "DDR_D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -106.68 0)
+				(length 5.08)
+				(name "DDR_D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -167.64 0)
+				(length 5.08)
+				(name "DDR_A11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 246.38 0)
+				(length 5.08)
+				(name "PB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM8_IO3" bidirectional line)
+				(alternate "G0_MDIO" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 195.58 0)
+				(length 5.08)
+				(name "PB20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO0" bidirectional line)
+				(alternate "PWMH2" bidirectional line)
+				(alternate "QSPI0_INT" bidirectional line)
+				(alternate "QSPI1_CS" bidirectional line)
+				(alternate "TCLK5" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -325.12 0)
+				(length 5.08)
+				(name "QSPI0_CAL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 203.2 0)
+				(length 5.08)
+				(name "PB17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO3" bidirectional line)
+				(alternate "I2SMCC0_DOUT0" bidirectional line)
+				(alternate "PWML1" bidirectional line)
+				(alternate "QSPI0_IO6" bidirectional line)
+				(alternate "QSPI1_IO2" bidirectional line)
+				(alternate "TIOA4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 208.28 0)
+				(length 5.08)
+				(name "PB15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO6" bidirectional line)
+				(alternate "FLEXCOM2_IO0" bidirectional line)
+				(alternate "I2SMCC0_WS" bidirectional line)
+				(alternate "PWML0" bidirectional line)
+				(alternate "QSPI0_IO4" bidirectional line)
+				(alternate "QSPI1_IO0" bidirectional line)
+				(alternate "TCLK4" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 -200.66 0)
+				(length 5.08)
+				(name "DDR_DQM0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -99.06 0)
+				(length 5.08)
+				(name "DDR_D0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -116.84 0)
+				(length 5.08)
+				(name "DDR_D7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -111.76 0)
+				(length 5.08)
+				(name "DDR_D5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -193.04 0)
+				(length 5.08)
+				(name "DDR_WEN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 289.56 0)
+				(length 5.08)
+				(name "PA15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO1" bidirectional line)
+				(alternate "FLEXCOM4_IO3" bidirectional line)
+				(alternate "SDMMC0_1V8SEL" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 213.36 0)
+				(length 5.08)
+				(name "PB13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO2" bidirectional line)
+				(alternate "PWMFI0" bidirectional line)
+				(alternate "QSPI0_SCK" bidirectional line)
+				(alternate "TCLK3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 210.82 0)
+				(length 5.08)
+				(name "PB14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO5" bidirectional line)
+				(alternate "FLEXCOM2_IO1" bidirectional line)
+				(alternate "I2SMCC0_CK" bidirectional line)
+				(alternate "PWMH3" bidirectional line)
+				(alternate "QSPI0_SCKN" bidirectional line)
+				(alternate "QSPI1_SCK" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 205.74 0)
+				(length 5.08)
+				(name "PB16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO4" bidirectional line)
+				(alternate "I2SMCC0_DIN0" bidirectional line)
+				(alternate "PWMH0" bidirectional line)
+				(alternate "QSPI0_IO5" bidirectional line)
+				(alternate "QSPI1_IO1" bidirectional line)
+				(alternate "TIOB4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 200.66 0)
+				(length 5.08)
+				(name "PB18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "N21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM10_IO2" bidirectional line)
+				(alternate "I2SMCC0_MCK" bidirectional line)
+				(alternate "PWMH1" bidirectional line)
+				(alternate "QSPI0_IO7" bidirectional line)
+				(alternate "QSPI1_IO3" bidirectional line)
+				(alternate "TIOA5" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -218.44 0)
+				(length 5.08)
+				(name "DDR_BA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -170.18 0)
+				(length 5.08)
+				(name "DDR_A12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -142.24 0)
+				(length 5.08)
+				(name "DDR_A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -154.94 0)
+				(length 5.08)
+				(name "DDR_A6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 266.7 0)
+				(length 5.08)
+				(name "PA24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO0" bidirectional line)
+				(alternate "PDMC0_DS0" bidirectional line)
+				(alternate "PWMH2" bidirectional line)
+				(alternate "RF0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 271.78 0)
+				(length 5.08)
+				(name "PA22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO2" bidirectional line)
+				(alternate "PDMC0_DS1" bidirectional line)
+				(alternate "PWMH1" bidirectional line)
+				(alternate "RD0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 294.64 0)
+				(length 5.08)
+				(name "PA13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM0_IO1" bidirectional line)
+				(alternate "NANDCS0" bidirectional line)
+				(alternate "NCS0" bidirectional line)
+				(alternate "PCK1" bidirectional line)
+				(alternate "TCLK3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 299.72 0)
+				(length 5.08)
+				(name "PA11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM0_IO4" bidirectional line)
+				(alternate "NANDRDY" bidirectional line)
+				(alternate "SDMMC0_DS" bidirectional line)
+				(alternate "TIOB3" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 309.88 0)
+				(length 5.08)
+				(name "PA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D6" bidirectional line)
+				(alternate "FLEXCOM2_IO2" bidirectional line)
+				(alternate "SDMMC0_DAT6" bidirectional line)
+				(alternate "TIOA4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 317.5 0)
+				(length 5.08)
+				(name "PA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D1" bidirectional line)
+				(alternate "FLEXCOM3_IO4" bidirectional line)
+				(alternate "SDMMC0_DAT1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 220.98 0)
+				(length 5.08)
+				(name "PB10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO4" bidirectional line)
+				(alternate "PWMEXTRG1" bidirectional line)
+				(alternate "QSPI0_IO1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 215.9 0)
+				(length 5.08)
+				(name "PB12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO3" bidirectional line)
+				(alternate "PWMFI1" bidirectional line)
+				(alternate "QSPI0_CS" bidirectional line)
+				(alternate "TIOA3" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -322.58 0)
+				(length 5.08)
+				(name "VDDQSPI0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "P21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -205.74 0)
+				(length 5.08)
+				(name "DDR_DQS0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -210.82 0)
+				(length 5.08)
+				(name "DDR_DQSN0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -104.14 0)
+				(length 5.08)
+				(name "DDR_D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -177.8 0)
+				(length 5.08)
+				(name "DDR_A15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -149.86 0)
+				(length 5.08)
+				(name "DDR_A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -220.98 0)
+				(length 5.08)
+				(name "DDR_BA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 284.48 0)
+				(length 5.08)
+				(name "PA17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM4_IO1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 276.86 0)
+				(length 5.08)
+				(name "PA20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO4" bidirectional line)
+				(alternate "FLEXCOM4_IO6" bidirectional line)
+				(alternate "PWMH0" bidirectional line)
+				(alternate "TD0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 302.26 0)
+				(length 5.08)
+				(name "PA10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D3" bidirectional line)
+				(alternate "FLEXCOM0_IO3" bidirectional line)
+				(alternate "SDMMC0_DAT3" bidirectional line)
+				(alternate "TCLK5" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 307.34 0)
+				(length 5.08)
+				(name "PA8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D7" bidirectional line)
+				(alternate "FLEXCOM2_IO3" bidirectional line)
+				(alternate "SDMMC0_DAT7" bidirectional line)
+				(alternate "TIOA5" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 322.58 0)
+				(length 5.08)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A22" bidirectional line)
+				(alternate "FLEXCOM3_IO2" bidirectional line)
+				(alternate "NANDCLE" bidirectional line)
+				(alternate "SDMMC0_RSTN" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -231.14 0)
+				(length 5.08)
+				(name "GNDDPHY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -266.7 0)
+				(length 5.08)
+				(name "SDMMC0_CAL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 223.52 0)
+				(length 5.08)
+				(name "PB9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO0" bidirectional line)
+				(alternate "PWMEXTRG0" bidirectional line)
+				(alternate "QSPI0_IO2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 218.44 0)
+				(length 5.08)
+				(name "PB11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO5" bidirectional line)
+				(alternate "PWML3" bidirectional line)
+				(alternate "QSPI0_IO0" bidirectional line)
+				(alternate "TIOB3" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 -254 0)
+				(length 5.08)
+				(name "MIPI_DN3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -256.54 0)
+				(length 5.08)
+				(name "MIPI_DP3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "R21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -114.3 0)
+				(length 5.08)
+				(name "DDR_D6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -109.22 0)
+				(length 5.08)
+				(name "DDR_D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -165.1 0)
+				(length 5.08)
+				(name "DDR_A10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -182.88 0)
+				(length 5.08)
+				(name "DDR_CLKN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "²" input line)
+			)
+			(pin output line
+				(at -12.7 -198.12 0)
+				(length 5.08)
+				(name "DDR_CASN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -43.18 0)
+				(length 5.08)
+				(name "VDDIOP0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 312.42 0)
+				(length 5.08)
+				(name "PA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D5" bidirectional line)
+				(alternate "FLEXCOM2_IO1" bidirectional line)
+				(alternate "SDMMC0_DAT5" bidirectional line)
+				(alternate "TIOB4" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -228.6 0)
+				(length 5.08)
+				(name "VDDDPHY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 320.04 0)
+				(length 5.08)
+				(name "PA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D0" bidirectional line)
+				(alternate "FLEXCOM3_IO3" bidirectional line)
+				(alternate "SDMMC0_DAT0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 226.06 0)
+				(length 5.08)
+				(name "PB8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO1" bidirectional line)
+				(alternate "PCK3" bidirectional line)
+				(alternate "QSPI0_IO3" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 -248.92 0)
+				(length 5.08)
+				(name "MIPI_DN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -251.46 0)
+				(length 5.08)
+				(name "MIPI_DP2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "T21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -180.34 0)
+				(length 5.08)
+				(name "DDR_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -195.58 0)
+				(length 5.08)
+				(name "DDR_RASN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 304.8 0)
+				(length 5.08)
+				(name "PA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D2" bidirectional line)
+				(alternate "FLEXCOM0_IO2" bidirectional line)
+				(alternate "SDMMC0_DAT2" bidirectional line)
+				(alternate "TIOB5" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -231.14 0)
+				(length 5.08)
+				(hide yes)
+				(name "GNDDPHY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 327.66 0)
+				(length 5.08)
+				(name "PA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO0" bidirectional line)
+				(alternate "NANDWE" bidirectional line)
+				(alternate "NWE" bidirectional line)
+				(alternate "NWR0" bidirectional line)
+				(alternate "SDMMC0_CK" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "U21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -187.96 0)
+				(length 5.08)
+				(name "DDR_RESETN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -172.72 0)
+				(length 5.08)
+				(name "DDR_A13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -185.42 0)
+				(length 5.08)
+				(name "DDR_CKE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -162.56 0)
+				(length 5.08)
+				(name "DDR_A9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -144.78 0)
+				(length 5.08)
+				(name "DDR_A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -147.32 0)
+				(length 5.08)
+				(name "DDR_A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -190.5 0)
+				(length 5.08)
+				(name "DDR_CSN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -215.9 0)
+				(length 5.08)
+				(name "DDR_BA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -40.64 0)
+				(length 5.08)
+				(hide yes)
+				(name "GNDANA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 292.1 0)
+				(length 5.08)
+				(name "PA14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO0" bidirectional line)
+				(alternate "FLEXCOM4_IO4" bidirectional line)
+				(alternate "SDMMC0_WP" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 287.02 0)
+				(length 5.08)
+				(name "PA16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "EXT_IRQ1" bidirectional line)
+				(alternate "FLEXCOM4_IO2" bidirectional line)
+				(alternate "PCK2" bidirectional line)
+				(alternate "SDMMC0_CD" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 314.96 0)
+				(length 5.08)
+				(name "PA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "D4" bidirectional line)
+				(alternate "FLEXCOM2_IO0" bidirectional line)
+				(alternate "SDMMC0_DAT4" bidirectional line)
+				(alternate "TCLK4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 325.12 0)
+				(length 5.08)
+				(name "PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "A21" bidirectional line)
+				(alternate "FLEXCOM3_IO1" bidirectional line)
+				(alternate "NANDALE" bidirectional line)
+				(alternate "SDMMC0_CMD" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -259.08 0)
+				(length 5.08)
+				(name "MIPI_REXT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -63.5 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDCORE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -233.68 0)
+				(length 5.08)
+				(name "MIPI_CLKN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -236.22 0)
+				(length 5.08)
+				(name "MIPI_CLKP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "V21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -223.52 0)
+				(length 5.08)
+				(name "DDR_ODT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -157.48 0)
+				(length 5.08)
+				(name "DDR_A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -137.16 0)
+				(length 5.08)
+				(name "DDR_D15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -152.4 0)
+				(length 5.08)
+				(name "DDR_A5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -53.34 0)
+				(length 5.08)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -139.7 0)
+				(length 5.08)
+				(name "DDR_A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -134.62 0)
+				(length 5.08)
+				(name "DDR_D14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -68.58 0)
+				(length 5.08)
+				(name "VDDLVDS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -58.42 0)
+				(length 5.08)
+				(name "VDDIN25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 297.18 0)
+				(length 5.08)
+				(name "PA12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "EXT_IRQ0" bidirectional line)
+				(alternate "FLEXCOM0_IO0" bidirectional line)
+				(alternate "NANDOE" bidirectional line)
+				(alternate "NRD" bidirectional line)
+				(alternate "PCK0" bidirectional line)
+				(alternate "TIOA3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 281.94 0)
+				(length 5.08)
+				(name "PA18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM4_IO0" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 -261.62 0)
+				(length 5.08)
+				(name "VDDSDMMC0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 279.4 0)
+				(length 5.08)
+				(name "PA19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM4_IO5" bidirectional line)
+				(alternate "PWML0" bidirectional line)
+				(alternate "TK0" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 274.32 0)
+				(length 5.08)
+				(name "PA21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM3_IO3" bidirectional line)
+				(alternate "PWML1" bidirectional line)
+				(alternate "TF0" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 -243.84 0)
+				(length 5.08)
+				(name "MIPI_DN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -246.38 0)
+				(length 5.08)
+				(name "MIPI_DP1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "W21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -96.52 0)
+				(length 5.08)
+				(name "DDR_VREF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 -93.98 0)
+				(length 5.08)
+				(hide yes)
+				(name "VDDIODDR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -127 0)
+				(length 5.08)
+				(name "DDR_D11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -203.2 0)
+				(length 5.08)
+				(name "DDR_DQM1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -208.28 0)
+				(length 5.08)
+				(name "DDR_DQS1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -119.38 0)
+				(length 5.08)
+				(name "DDR_D8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -124.46 0)
+				(length 5.08)
+				(name "DDR_D10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -12.7 -10.16 0)
+				(length 5.08)
+				(name "PE5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO3" bidirectional line)
+				(alternate "I2SMCC0_DIN2" bidirectional line)
+				(alternate "LCDC_DAT1" bidirectional line)
+				(alternate "LVDS_A0P" bidirectional line)
+				(alternate "PWMH0" bidirectional line)
+				(alternate "TIOB3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -15.24 0)
+				(length 5.08)
+				(name "PE7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO5" bidirectional line)
+				(alternate "I2SMCC0_DOUT1" bidirectional line)
+				(alternate "LCDC_DAT3" bidirectional line)
+				(alternate "LVDS_A1P" bidirectional line)
+				(alternate "PWMH1" bidirectional line)
+				(alternate "TIOA4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -20.32 0)
+				(length 5.08)
+				(name "PE9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FLEXCOM2_IO1" bidirectional line)
+				(alternate "I2SMCC0_WS" bidirectional line)
+				(alternate "LCDC_DAT5" bidirectional line)
+				(alternate "LVDS_A2P" bidirectional line)
+				(alternate "PWMH2" bidirectional line)
+				(alternate "TCLK4" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -30.48 0)
+				(length 5.08)
+				(name "PE13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2SMCC0_DOUT0" bidirectional line)
+				(alternate "LCDC_PCK" bidirectional line)
+				(alternate "LVDS_CLK1P" bidirectional line)
+				(alternate "PCK4" bidirectional line)
+				(alternate "PWMEXTRG1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -12.7 -25.4 0)
+				(length 5.08)
+				(name "PE11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2SMCC0_DOUT3" bidirectional line)
+				(alternate "LCDC_DAT7" bidirectional line)
+				(alternate "LVDS_A3P" bidirectional line)
+				(alternate "PWMH3" bidirectional line)
+				(alternate "TIOB5" bidirectional line)
+			)
+			(pin output line
+				(at -12.7 -238.76 0)
+				(length 5.08)
+				(name "MIPI_DN0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -12.7 -241.3 0)
+				(length 5.08)
+				(name "MIPI_DP0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Y21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+)
