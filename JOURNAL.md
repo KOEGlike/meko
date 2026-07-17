@@ -68,3 +68,11 @@ First the [official kicad symbol generator](https://gitlab.com/kicad/libraries/k
 I asked around in a bunch of communities for advice on ddr3 learning resources, and I got some really god answers. Turns out bit/byte swapping on lpddr3 is a bit more complicated, but I still don't fully understand and need to do more research. I hope I don't even need to do this, crossing my fingers!!!
 
 ## *Time Spent: 6h*
+
+# 2026.07.16: Split apart the symbol
+
+This was mostly a long monotonous but fun process of looking at the datasheet and organizing the pins into units.  I took a bunch of inspiration from Cyao's sbc.
+
+![split up symbol](https://cdn.hackclub.com/019f6f8c-4fbe-7dd1-bb52-e04dcd09edba/image.png)
+
+## *Time Spent: 4h*
