@@ -76,3 +76,27 @@ This was mostly a long monotonous but fun process of looking at the datasheet an
 ![split up symbol](https://cdn.hackclub.com/019f6f8c-4fbe-7dd1-bb52-e04dcd09edba/image.png)
 
 ## *Time Spent: 4h*
+
+# 2026.07.19: Made PMIC symbol and did some research
+
+## PMIC
+
+Microchip recommends two PMICs for the sama7, the mcp16501 and mcp16502, the mcp16501 can't do dynamic voltage adjustment, and doesn't let the sama7 go up to 1GHz, so the obvious choice was the mcp16502. Luckily component search engine already had a base symbol that I could use as a starting point, but it had the pins arranged based on the footprint,so I just needed to arrange the pins in a way that it made sense. I used a built in footprint from kicad, so I didn't have to make that.
+
+![pmic symbol](https://cdn.hackclub.com/019f7bef-e38d-7d60-a8aa-58aecc442bcb/image.png)
+
+## RAM research
+
+I messaged Cyao about where he sourced his ram when he made his sbc, because I couldn't find lpddr3 on mouser/lcsc/digikey, and other western sites sold these chips for pretty expensive. Turns out taobao has some pretty cheap ram, $5 for 1GB. 
+
+Also I learned that GB and Gb are different, GB is a gigabyte and Gb is a gigabit, which is 8 times smaller than a gigabyte. Thanks cyao!
+
+In the end I landed on a 16Gb chip from samsung called K4E6E304EC, it's a 174 ball bga. and is around $7.5. I don't need 2 GB, but you only live once, and it's not that expansive compared to the whole board.
+
+![bottom of ram ic](https://cdn.hackclub.com/019f7bfb-ccc6-7792-9111-293e7c1a0969/c2803256-______.jpg)
+
+I submitted a footprint creation request to component search engine, it should take 1-2 days for them to make it, I will make a custom symbol.
+
+Thank again you Cyao for all the help!!!!!
+
+## *Time Spent:4h*
