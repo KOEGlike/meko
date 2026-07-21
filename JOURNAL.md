@@ -97,6 +97,34 @@ In the end I landed on a 16Gb chip from samsung called K4E6E304EC, it's a 174 ba
 
 I submitted a footprint creation request to component search engine, it should take 1-2 days for them to make it, I will make a custom symbol.
 
-Thank again you Cyao for all the help!!!!!
+## Thank again you Cyao for all the help!!!!!
 
 ## *Time Spent:4h*
+
+# 2026.07.20: Making RAM symbol and RAM troubles
+
+## Symbol
+
+I realized that I really like making symbols, it's just a really relaxing process, and I can learn a lot about the IC I'm making the symbol for.
+
+Turns out, the pin table in KiCad doesn't have a "visible" field, so I had to use a text editor to mass hide pins, like gnd and vcc, so for example I can have one gnd pin instead of sixty-seven-thousand.
+
+![ram symbol](https://cdn.hackclub.com/019f84ac-c970-7b97-bbe3-0f5766acd44d/image.png)
+
+But I realized something...
+
+## RAM troubles
+
+The DRAM IC I chose has a 32 bit wide data bus, but my MPU only has a 16 bit wide DRAM controller, hmmmmmmmmmmmmmmmmm
+
+So I dived into the datasheet, now this is where it got really confusing, because the datasheet mentioned x16 multiple times, so I went the EE discord to ask what the helly is going on, does this IC support both x16 and x32??
+
+![datasheet talking about x16, and an extra column (c10)](https://cdn.hackclub.com/019f84b4-e9a3-78a5-823f-d685090f87e8/image.png)
+
+The first answer I got told me that I can't use this IC, but then another guy joined the conversation and said that I could use this IC, and they also provided some evidence hmmmmmmmmmmmmmmmmmmm
+
+So I went on a search for an LPDDR3 chip that had a 16 bit wide data bus. But I couldn't find any, there were all 32 bit wide 😮 So my DRAM IC must have support for a 16 bit wide data bus, but I'm still not 100% sure, and still have to do more research
+
+Also made a stack exchange post, but that didn't get any replies :sob:
+
+## *Time Spent: 4h*
