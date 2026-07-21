@@ -33,7 +33,7 @@ Two articles were really helpful researching this topic: [this one](https://jayc
 
 ![drawing of display](https://cdn.hackclub.com/019f6764-a657-7f59-a516-7d014b1332f0/image.png)
 
-V2 had a normal e-ink screen, which had a max partial refresh rate of 0.5s, which is really bad, but for a music player it's alright. But I wanted more!!! So I found out about Sharp MIP displays, which give the effect of e-ink - they don't have a back light, are mostly black and white and they are really low power - but they have a higher refresh rate, for example the display that I choose(LS022B7DH03) it has 70Hz.
+V2 had a normal e-ink screen, which had a max partial refresh rate of 0.5s, which is really bad, but for a music player it's alright. But I wanted more!!! So I found out about Sharp MIP displays, which give the effect of e-ink - they don't have a back light, are mostly black and white and they are really low power - but they have a higher refresh rate and always need to by powered, for example the display that I choose(LS022B7DH03) has 70Hz.
 
 ## RAM
 
