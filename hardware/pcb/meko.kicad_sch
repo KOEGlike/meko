@@ -5,8 +5,48 @@
 	(uuid "da54f10a-146b-4941-a9c7-55c7173bb101")
 	(paper "A3")
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 147.32 176.53) (xy 153.67 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d2952fd-553a-491e-9d92-da0b0c8aa2d1")
+	)
+	(bus
+		(pts
+			(xy 147.32 181.61) (xy 153.67 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78023b32-be39-4e73-8a4e-a6c5421da75b")
+	)
+	(bus
+		(pts
+			(xy 147.32 173.99) (xy 153.67 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7be35d11-fdf3-4b19-8889-9ff7b538f4d3")
+	)
+	(bus
+		(pts
+			(xy 147.32 179.07) (xy 153.67 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f73e187d-5eae-4ee8-a224-046a79925214")
+	)
 	(sheet
-		(at 205.74 219.71)
+		(at 114.3 171.45)
 		(size 33.02 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +62,7 @@
 		)
 		(uuid "11193406-550a-48b1-a654-5418a2035a4e")
 		(property "Sheetname" "SAMA7"
-			(at 205.74 218.9984 0)
+			(at 114.3 170.7384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +73,7 @@
 			)
 		)
 		(property "Sheetfile" "sama.kicad_sch"
-			(at 205.74 241.8846 0)
+			(at 114.3 193.6246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41,6 +81,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{DDR_ADDRESS}" output
+			(at 147.32 173.99 0)
+			(uuid "792ca516-8344-4070-9b9d-db6635782a9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{DDR_CLOCK}" output
+			(at 147.32 176.53 0)
+			(uuid "1cd9347a-51c5-471c-a42a-0d81ee663584")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{DDR_COMMAND}" output
+			(at 147.32 179.07 0)
+			(uuid "9dcd7f94-b026-4ba6-8099-12f29c272589")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "{DDR_DATA}" bidirectional
+			(at 147.32 181.61 0)
+			(uuid "e67b1884-b5bd-405d-8c57-a9a2e3c90429")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -98,8 +178,8 @@
 		)
 	)
 	(sheet
-		(at 116.84 111.76)
-		(size 34.29 19.05)
+		(at 153.67 171.45)
+		(size 21.59 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -114,7 +194,7 @@
 		)
 		(uuid "6a1996a1-d776-4235-b4ef-703258aa0c56")
 		(property "Sheetname" "DDR"
-			(at 116.84 111.0484 0)
+			(at 153.67 170.7384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -125,7 +205,7 @@
 			)
 		)
 		(property "Sheetfile" "ddr.kicad_sch"
-			(at 116.84 131.3946 0)
+			(at 153.67 184.7346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -133,6 +213,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{DDR_ADDRESS}" input
+			(at 153.67 173.99 180)
+			(uuid "382533d2-9ace-4771-ba5d-3b988a3f6603")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{DDR_CLOCK}" input
+			(at 153.67 176.53 180)
+			(uuid "1eda21f1-d6a8-4c28-b329-004df97ba8e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{DDR_COMMAND}" input
+			(at 153.67 179.07 180)
+			(uuid "bb9f23ff-3009-4716-a123-d8c7711ae123")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{DDR_DATA}" bidirectional
+			(at 153.67 181.61 180)
+			(uuid "68da8ab6-6546-4a95-b498-341198b108f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

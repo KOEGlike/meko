@@ -543,6 +543,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -624,7 +625,32 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": {
+      "DDR_ADDRESS": [
+        "DDR_A[0..9]"
+      ],
+      "DDR_ADRESS": [
+        "DDR_A[0..9]"
+      ],
+      "DDR_CLOCK": [
+        "CK+",
+        "CK-"
+      ],
+      "DDR_COMMAND": [
+        "CKE",
+        "~{CS}",
+        "ODT"
+      ],
+      "DDR_DATA": [
+        "DQ[0..15]",
+        "DQS0+",
+        "DQS0-",
+        "DQS1+",
+        "DQS1-",
+        "DQM0",
+        "DQM1"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -665,7 +691,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "IC1,#PWR1,U1-3",
+    "used_designators": "R1-2,IC1-2,#PWR1-8,U1-3",
     "variants": []
   },
   "sheets": [

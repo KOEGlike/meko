@@ -128,3 +128,8 @@ So I went on a search for an LPDDR3 chip that had a 16 bit wide data bus. But I 
 Also made a stack exchange post, but that didn't get any replies :sob:
 
 ## *Time Spent: 4h*
+
+# 2026.07.22: RAM and Display
+
+Found a new display:
+LS032B7DD02
