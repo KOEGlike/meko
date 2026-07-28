@@ -129,7 +129,34 @@ Also made a stack exchange post, but that didn't get any replies :sob:
 
 ## *Time Spent: 4h*
 
-# 2026.07.22: RAM and Display
+# 2026.07.26: Microchip support saves me
 
-Found a new display:
-LS032B7DD02
+## RAM
+
+So after I did a bunch more research, I asked microchip's live chat if they had any example of the sama7 being used with lpddr3, and turns there are examples with with X32 memory WOOOOOOOOOOOOOOOOOOO
+
+But I still had a bunch of questions about this example, like do I lose half the capacity, or do I only lose speed, but the live chat support person said that I should create a regular support ticket for these questions, cuz they didn't know. So I did that, and waited eagerly.
+
+A few days later I got a wall of text as a response, which explained everything I LOVE U BARATH V. FROM MICROCHIP
+
+Turns out almost all x32 LPDDR3 devices(I learned that they call DDR ICs devices from Barath) have an x16 mode, but the datasheets don't make this clear at all, but I also got feedback on the specific DDR device I chose (<3 microchip) and it has this feature, in x16 you get half the speed but the full capacity of the device. 
+
+But turns out that there was another factor that would have halved my capacity, which was that the device I chose was actually two ddr chips put in one package, and required two CS and CKE pins, but the sama7 only has one CS and CKE pin for ddr devices, so I could have only used one of the chips in the package. The solution? Use a device that doesn't have two chips inside one package, which means use one with half the capacity, so in the end I will have an 8Gb/1GB ddr device.
+
+Luckily the footprint doesn't change at all, I only have to mark two pins as NC (CS1 and CKE1), and rename CS0 to CS and CKE0 to CKE.
+
+With my new found knowledge I connected the ram to the sama:
+
+![ddr with lables](https://cdn.hackclub.com/019fa4c3-a62d-7dfa-be17-d944adf23414/image.png)
+![hierarchical sheets of drr and sama](https://cdn.hackclub.com/019fa4c3-d397-7b00-b78e-523cc5d47cbe/image.png)
+
+## Display
+
+I looked around a bit for displays to see if there were any better options than my current choice, mainly I wanted a larger display, so I could have more room for the PCB, but all the larger MIP panels had a horrible refresh rate, like 15Hz, which was unacceptable compared to the current 70Hz one. So I didn't change anything else
+
+## PWR
+
+Started looking for a powerpath, charger and fuel gauge IC, I may have found one from analog devices, but i'm still not sure about it.
+
+
+## *Time Spent: 6h*
