@@ -7481,6 +7481,30 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 80.01 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "692b2f26-3601-4a89-8699-91b216e0c85b")
+	)
+	(junction
+		(at 80.01 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3332d1f-67b0-4279-8bc5-38c71db576a8")
+	)
+	(junction
+		(at 80.01 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0ddc272-e6d5-4b65-9e1b-287e2e375146")
+	)
+	(junction
+		(at 80.01 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9752943-ddbc-4393-a06a-538a231fd643")
+	)
 	(no_connect
 		(at 250.19 140.97)
 		(uuid "08f0f021-06f9-4d9e-b330-c926284d0a51")
@@ -7998,6 +8022,26 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 58.42) (xy 80.01 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4320b96d-5e0b-43a7-97e1-79f57d45e749")
+	)
+	(wire
+		(pts
+			(xy 78.74 60.96) (xy 80.01 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47ee4edf-ad62-4049-b947-457e6273a646")
+	)
+	(wire
+		(pts
 			(xy 312.42 179.07) (xy 312.42 177.8)
 		)
 		(stroke
@@ -8058,6 +8102,26 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 66.04) (xy 80.01 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a57b5b3-61b8-43ab-840b-8989d4c0acd8")
+	)
+	(wire
+		(pts
+			(xy 78.74 58.42) (xy 80.01 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6a3bfd-d53c-41ab-b2fd-f400d03fe328")
+	)
+	(wire
+		(pts
 			(xy 308.61 158.75) (xy 300.99 158.75)
 		)
 		(stroke
@@ -8065,6 +8129,16 @@
 			(type default)
 		)
 		(uuid "676611eb-7db9-411f-9088-54f010dc3be9")
+	)
+	(wire
+		(pts
+			(xy 80.01 66.04) (xy 80.01 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "699b6952-166b-42c7-bc93-83a679662876")
 	)
 	(wire
 		(pts
@@ -8188,6 +8262,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 63.5) (xy 80.01 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fdf3f03-31bb-4895-af71-0178c60baa31")
+	)
+	(wire
+		(pts
 			(xy 242.57 130.81) (xy 250.19 130.81)
 		)
 		(stroke
@@ -8215,6 +8299,16 @@
 			(type default)
 		)
 		(uuid "a4b6fe5b-b4ee-4882-af2f-d464826bb1eb")
+	)
+	(wire
+		(pts
+			(xy 80.01 60.96) (xy 80.01 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2790bbd-9b13-4570-8796-6ec3af24646f")
 	)
 	(wire
 		(pts
@@ -8318,6 +8412,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 67.31) (xy 80.01 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddd1bda5-eb16-4500-b2cb-22e64e33f418")
+	)
+	(wire
+		(pts
 			(xy 321.31 173.99) (xy 321.31 172.72)
 		)
 		(stroke
@@ -8355,6 +8459,16 @@
 			(type default)
 		)
 		(uuid "e9264ae4-1de1-4543-96c6-72ec9c5ebc20")
+	)
+	(wire
+		(pts
+			(xy 80.01 63.5) (xy 80.01 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eab8f15e-2c0d-4b1b-b487-25edeb05ac5f")
 	)
 	(bus
 		(pts
@@ -8395,6 +8509,16 @@
 			(type default)
 		)
 		(uuid "fdb65b83-c6cb-4339-886f-f69fb98cc6e2")
+	)
+	(wire
+		(pts
+			(xy 80.01 55.88) (xy 78.74 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9116f5-429e-4e92-bef1-ca69da9b481d")
 	)
 	(label "CK-"
 		(at 245.11 157.48 0)
@@ -15741,6 +15865,84 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec375ff1-814f-4547-b712-d7dfef3558e1")
+		(property "Reference" "#PWR010"
+			(at 80.01 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77b02b68-2b9e-4afe-97d7-181f816e0464")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
