@@ -160,3 +160,29 @@ Started looking for a powerpath, charger and fuel gauge IC, I may have found one
 
 
 ## *Time Spent: 6h*
+
+# 2026.08.06: Wireless shenanigans and making power IC symbols
+
+## Finding a good wireless IC and datasheet shenanigans
+
+At first I wanted to use the NXP IW611 as a bare IC, but the PCB layout looked painful, and if I want to sell Meko V3 later I have to go through an expansive certification process. So I went looking for modules, and along that way I found the U-Blox Maya-W3, which uses the Infineon CYW55513, which has Bluetooth 6 :yayayayay:
+
+I asked Component Search Engine to make a footprint and symbol for the Maya-W3, but the first time they rejected it for the reason of "The datasheet doesn't have enough info", but it did. So I submitted again, and now they made it in under 24h, yipeee
+
+But as always, the footprints are nice from CSE, but the symbols are crap. So I had to remake that, and I glad I did, because I discovered that the Maya-W3 datasheet is also terrible. It lists the max I2S sample rate as 8kHz, which is really bad, like old call quality, and I realized this just at the end of me finishing the symbol, shi. I also looked at the NXP IW611 I2S sample rate, and it also capped out at 8kHz... Then as my last hope I checked the datasheet of the Infineon CYW55513 (the chip that the maya uses), and it listed its max I2S sample rate at 96kHz, this is excellent!!! So in the end I will use the Maya-W3.
+
+Side note: Both the maya-w3 and cyw55513 datasheet mention SMIF pins, but don't mention at all what they are used for. If you google SMIF it comes up with an Infineion page that says that it's just spi, and if you check out cyw55513 example designs the SMIF pins are connected to an external flash and psram, so idk if I should connect them, so I reached out to support, but they haven't responded.
+
+![maya-w3 symbol](https://cdn.hackclub.com/019fd843-4a07-7c6e-9934-ca50763a6a7f/image.png)
+![maya-w3 cse footprint](https://cdn.hackclub.com/019fd8cb-d08f-7f26-a10d-9289489aa3f8/image.png)
+
+## Finding power ICs
+
+Turns out there aren't any good ICs that all have powerpath, a fuelguage and a battery charger, so I separated the fuel gauge into a separate IC. For the battery charger I choose the BQ25640, it has USB-OTG, USB-PD, voltage monitoring support and a bunch of other cool features. And for the fuel gauge i choose the MAX17260, which is a really simple and good fuel gauge IC, nothing special, i uses a TDFN-14 package. On the other hand the BQ has a rally funky TI package, so I asked snapmagic to make that for me :skull:
+
+I made the symbols for them cuz the pre made ones were ass:
+![fuel gauge and battery IC symbol](https://cdn.hackclub.com/019fd843-4d5f-702a-a33b-c356d10559ca/image.png)
+
+There are also some shenanigans with the TI BQ IC, cuz it has D- and D+ pins, and the datasheet doesn't mention what to do when you don't want to use them, so I made a support ticket.
+
+## *Time Spent: 7h*
