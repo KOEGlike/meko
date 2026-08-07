@@ -7922,6 +7922,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 27.94) (xy 35.56 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b674c63-2e90-432a-994b-bc8094c5f0ab")
+	)
+	(wire
+		(pts
 			(xy 300.99 135.89) (xy 308.61 135.89)
 		)
 		(stroke
@@ -8292,16 +8302,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 27.94) (xy 35.56 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4b6fe5b-b4ee-4882-af2f-d464826bb1eb")
-	)
-	(wire
-		(pts
 			(xy 80.01 60.96) (xy 80.01 58.42)
 		)
 		(stroke
@@ -8349,6 +8349,16 @@
 			(type default)
 		)
 		(uuid "c66d8f21-d4a4-491b-8147-808264cc9c9e")
+	)
+	(wire
+		(pts
+			(xy 24.13 26.67) (xy 24.13 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b38ff9-2965-44ea-98fb-ccecabd09944")
 	)
 	(wire
 		(pts
@@ -8422,16 +8432,6 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 173.99) (xy 321.31 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e42286c6-0a3d-4361-aafa-66ee5ca03e6d")
-	)
-	(wire
-		(pts
 			(xy 245.11 177.8) (xy 250.19 177.8)
 		)
 		(stroke
@@ -8502,7 +8502,7 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 173.99) (xy 321.31 173.99)
+			(xy 300.99 173.99) (xy 303.53 173.99)
 		)
 		(stroke
 			(width 0)
@@ -8889,6 +8889,30 @@
 			(justify right bottom)
 		)
 		(uuid "f2c07afe-a4e4-490f-8cce-75a1f8e034b1")
+	)
+	(global_label "DDR_VREF"
+		(shape input)
+		(at 303.53 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aae5e092-8df8-4cc9-a07b-7c3248da3cb1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 315.889 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(hierarchical_label "{DDR_CLOCK}"
 		(shape output)
@@ -10033,6 +10057,84 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 24.13 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4492ba84-e642-4d39-a5fd-7fedf89364f2")
+		(property "Reference" "#PWR04"
+			(at 24.13 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+1V2_DDR"
+			(at 18.542 22.606 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 24.13 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83755cff-a828-4ba2-836b-93326728f123")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -11214,83 +11316,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 321.31 172.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "51b43f13-f7a6-448d-81eb-5b0face2c86d")
-		(property "Reference" "#PWR07"
-			(at 321.31 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DDR_VREF"
-			(at 321.31 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 321.31 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 321.31 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 321.31 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a5ca3afb-bcd6-4201-b5d2-948d14340107")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -13500,85 +13525,6 @@
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
 					(reference "U1")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 34.29 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bcbb0b8-8311-4450-88d2-ca9d1b241229")
-		(property "Reference" "#PWR08"
-			(at 38.1 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD_DDR"
-			(at 30.48 27.9399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 34.29 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d4b6a09b-f6ce-4996-8ea6-98986df21d8e")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
-					(reference "#PWR08")
-					(unit 1)
 				)
 			)
 		)

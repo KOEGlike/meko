@@ -5216,6 +5216,30 @@
 		)
 		(uuid "f77d2d93-ff87-4d85-9a8d-f2097501e2f6")
 	)
+	(global_label "DDR_VREF"
+		(shape input)
+		(at 148.59 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df544c44-e5bc-40aa-887a-7c8cbc9a971d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.949 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(hierarchical_label "{DDR_CLOCK}"
 		(shape input)
 		(at 107.95 101.6 180)
@@ -5345,84 +5369,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 135.89 26.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "46a47036-6f1f-4f57-806d-e8be2ee4b3f9")
-		(property "Reference" "#PWR02"
-			(at 135.89 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD_DDR"
-			(at 135.89 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 135.89 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a3866c32-0035-4039-821a-4748f547d936")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -6073,7 +6019,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 147.32 27.94 0)
+		(at 135.89 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6081,10 +6027,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "504bdd3a-d9a3-447b-84b3-e2b4d611f55b")
-		(property "Reference" "#PWR04"
-			(at 147.32 31.75 0)
+		(uuid "56643587-8261-4e82-8cb5-68db81a808dc")
+		(property "Reference" "#PWR07"
+			(at 135.89 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6094,18 +6039,19 @@
 				)
 			)
 		)
-		(property "Value" "DDR_VREF"
-			(at 147.32 22.86 0)
+		(property "Value" "+1V2_DDR"
+			(at 130.302 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 27.94 0)
+			(at 135.89 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6116,7 +6062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 27.94 0)
+			(at 135.89 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6127,7 +6073,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 147.32 27.94 0)
+			(at 135.89 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6138,12 +6084,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d39ebcb-5dd2-43d9-8b95-ddc6b69855ee")
+			(uuid "6deb79cc-930a-436c-90b7-991071091a47")
 		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
-					(reference "#PWR04")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6159,7 +6105,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "65893bd5-6ec0-4e29-b2c6-c95f6acbee8d")
 		(property "Reference" "#PWR03"
 			(at 121.92 33.02 0)
@@ -6172,14 +6117,15 @@
 				)
 			)
 		)
-		(property "Value" "VDD_DDR_1V8"
-			(at 121.92 24.13 0)
+		(property "Value" "+1V8_DDR"
+			(at 116.332 25.146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
