@@ -7567,6 +7567,15 @@
 		(uuid "007a40a0-ba4b-4a51-b2ec-76b7f0356717")
 	)
 	(bus_entry
+		(at 226.06 220.98)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00bafdb1-c4b5-4c36-812e-8f19448ad12e")
+	)
+	(bus_entry
 		(at 311.15 113.03)
 		(size -2.54 2.54)
 		(stroke
@@ -7763,6 +7772,15 @@
 			(type default)
 		)
 		(uuid "a3984b5a-d9a2-43e3-9c75-721efbff63a7")
+	)
+	(bus_entry
+		(at 226.06 223.52)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a720c9e4-56a3-4377-8725-58b3d0b1059a")
 	)
 	(bus_entry
 		(at 311.15 138.43)
@@ -7970,6 +7988,26 @@
 		)
 		(uuid "0feef3f8-db22-4aa0-991a-144529c15b22")
 	)
+	(wire
+		(pts
+			(xy 219.71 223.52) (xy 223.52 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1468d5d5-73dc-4c49-a6cf-5e13c93cf94f")
+	)
+	(bus
+		(pts
+			(xy 227.33 220.98) (xy 226.06 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221f59dd-0a59-4a5b-a113-c6cb104569c6")
+	)
 	(bus
 		(pts
 			(xy 311.15 110.49) (xy 311.15 148.59)
@@ -7999,6 +8037,16 @@
 			(type default)
 		)
 		(uuid "32da0ee8-10a2-419f-84c2-f14e63fcb05c")
+	)
+	(bus
+		(pts
+			(xy 226.06 220.98) (xy 226.06 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a0e816-71f2-4aa4-9833-af87ee46b5c4")
 	)
 	(wire
 		(pts
@@ -8432,6 +8480,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 226.06) (xy 223.52 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e36cbf21-960c-419a-a1a6-80ca21c837e0")
+	)
+	(wire
+		(pts
 			(xy 245.11 177.8) (xy 250.19 177.8)
 		)
 		(stroke
@@ -8539,6 +8597,16 @@
 			(justify right bottom)
 		)
 		(uuid "17ae5771-5991-4584-a4f0-f571c20ea875")
+	)
+	(label "D+"
+		(at 220.98 223.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1dae176a-c1b6-4756-bc06-7aa17328da06")
 	)
 	(label "DDR_A1"
 		(at 242.57 115.57 0)
@@ -8870,6 +8938,16 @@
 		)
 		(uuid "eb6db5c4-47cb-43e2-a926-79c4860e4af7")
 	)
+	(label "D-"
+		(at 220.98 226.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efb82402-d5c7-48c4-b114-16d8766f2e49")
+	)
 	(label "DQ10"
 		(at 308.61 138.43 180)
 		(effects
@@ -8946,6 +9024,17 @@
 			(justify right)
 		)
 		(uuid "bf976767-c559-447d-ac40-c7a26ef8429f")
+	)
+	(hierarchical_label "{USB}"
+		(shape input)
+		(at 227.33 220.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c27c5f47-8d49-4c2a-b443-dfe1a3c1b039")
 	)
 	(hierarchical_label "{DDR_DATA}"
 		(shape bidirectional)
@@ -10142,7 +10231,7 @@
 	)
 	(symbol
 		(lib_id "SAMA7D65-4HB:SAMA7D65-4HB")
-		(at 101.6 224.79 0)
+		(at 190.5 246.38 0)
 		(unit 6)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10153,7 +10242,7 @@
 		(fields_autoplaced yes)
 		(uuid "46099b7d-a87f-4319-bdcf-e7f256ed7d25")
 		(property "Reference" "U1"
-			(at 101.6 194.31 0)
+			(at 190.5 215.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10163,7 +10252,7 @@
 			)
 		)
 		(property "Value" "SAMA7D65-4HB"
-			(at 101.6 196.85 0)
+			(at 190.5 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10173,7 +10262,7 @@
 			)
 		)
 		(property "Footprint" "SAMA7D65-4HB:Microchip_4HB_TFBGA-343_14x14mm_Layout21x21_P0.65mm"
-			(at 62.484 107.442 0)
+			(at 151.384 129.032 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10184,7 +10273,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 570.23 0)
+			(at 190.5 591.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10195,7 +10284,7 @@
 			)
 		)
 		(property "Description" "SAMA7D65 343-pin TFBGA"
-			(at 55.372 89.408 0)
+			(at 144.272 110.998 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
