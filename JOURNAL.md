@@ -178,7 +178,7 @@ Side note: Both the maya-w3 and cyw55513 datasheet mention SMIF pins, but don't 
 
 ## Finding power ICs
 
-Turns out there aren't any good ICs that all have powerpath, a fuelguage and a battery charger, so I separated the fuel gauge into a separate IC. For the battery charger I choose the BQ25640, it has USB-OTG, USB-PD, voltage monitoring support and a bunch of other cool features. And for the fuel gauge i choose the MAX17260, which is a really simple and good fuel gauge IC, nothing special, i uses a TDFN-14 package. On the other hand the BQ has a rally funky TI package, so I asked snapmagic to make that for me :skull:
+Turns out there aren't any good ICs that all have powerpath, a fuel-gauge and a battery charger, so I separated the fuel gauge into a separate IC. For the battery charger I choose the BQ25640, it has USB-OTG, USB-PD, voltage monitoring support and a bunch of other cool features. And for the fuel gauge i choose the MAX17260, which is a really simple and good fuel gauge IC, nothing special, i uses a TDFN-14 package. On the other hand the BQ has a rally funky TI package, so I asked snapmagic to make that for me :skull:
 
 I made the symbols for them cuz the pre made ones were ass:
 ![fuel gauge and battery IC symbol](https://cdn.hackclub.com/019fd843-4d5f-702a-a33b-c356d10559ca/image.png)
@@ -186,3 +186,39 @@ I made the symbols for them cuz the pre made ones were ass:
 There are also some shenanigans with the TI BQ IC, cuz it has D- and D+ pins, and the datasheet doesn't mention what to do when you don't want to use them, so I made a support ticket.
 
 ## *Time Spent: 7h*
+
+# 2026.08.16: Finished Power
+
+## Mucking around with ESD
+
+For the USB port I just choose a standard 16 pin USB 2.0 connector, nothing fancy. But now I needed some ESD protection.
+
+I checked out the SAMA7D6 example design, and they used an IC that had both ESD and filtering, I have never seen this before, and it seemed pretty cool, so i wanted to use a similar IC. After searching for one of these ICs that was available on LCSC the one I choose luckily already had a built in KiCAD symbol.
+
+Now came the VBUS and CC pin ESD protection part. While researching I found out that the CC lines can short to VBUS when plugging/unplugging a USB cable. At this time I still thought that my BMS supported USB-PD, and that VBUS can go up to 21V. So I thought that I needed an IC that protected against this, so the CC lines don't get 21V on them. So i did a bunch of research, found a part, made a symbol, downloaded a footprint, etc. Just to realize that first of my BMS could tolerate up to 26V on the CC lines, and secund that my BMS didn't support PD, so VBUS would only go up to 5V. So I ditched this complicated IC and just used simple TVS diodes.
+
+![usb schematic](https://cdn.hackclub.com/01a00bb5-bc79-7a59-8e56-d3de287ba85b/image.png)
+
+## Implementing the power ICs
+
+This was mostly just reading the datasheets a bunch.
+
+### BMS
+
+I asked in the the TI dev forums regarding the D-/+ pins, and what to do with them if i don't want to use them. They replied and said that I should just leave them unconnected. The rest was pretty easy.
+
+Also the BMS doesn't shut down the battery output until it reaches 2.4V, and by that point, that battery would probably be completely dead and unusable. So I will need to implement a software shutdown when the battery voltage reaches like 3.2V. Luckily the fuel-gauge has a battery voltage readout register, so I can use that. My MPU works down to 3V, so 3.2V should be fine.
+
+### Fuel-Gauge
+
+I learned a lot about fuel-gauges. One of the things i learned is how a Coulomb counter works, and how to choose the sense resistor.
+
+### PMIC
+
+Setting up the switching regulators was pretty easy, just had to read the recommended part values.
+
+The more interesting part is the low-power/high-power/hibernate modes. The SAMA7D6 needs a backup sources called VBAT to keep the ram in self refresh mode. First I thought that I needed another LDO for this input which is always on, so I again found a part, made a symbol, etc. But then again realized, that my PMIC had an unused LDO, which I could configure via I2C to always be on, except when the PMIC fully shuts down. This way, the device can hibernate while keeping the ram in self-refresh mode.
+
+
+
+![power schematic](https://cdn.hackclub.com/01a00bc3-9d2e-7ea7-bc93-700ef7ba0172/image.png)

@@ -488,7 +488,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -635,10 +635,10 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -798,7 +798,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "D1-4,C1,BT1,J1-4,R1-2,IC1-2,#PWR1-17,U1-6",
+    "used_designators": "L1-5,D1-5,C1-22,BT1,J1-4,TP1,JP1,R1-5,R25,IC1-2,#PWR1-52,U1-6",
     "variants": []
   },
   "sheets": [

@@ -74,7 +74,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -2.54 0)
+				(at 11.43 0 180)
 				(length 2.54)
 				(name "TH"
 					(effects
@@ -92,7 +92,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -11.43 -5.08 0)
+				(at -11.43 -3.81 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -111,7 +111,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -11.43 -5.08 0)
+				(at -11.43 -3.81 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -130,7 +130,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -11.43 -5.08 0)
+				(at -11.43 -3.81 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -149,7 +149,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -11.43 -5.08 0)
+				(at -11.43 -3.81 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -168,7 +168,7 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 7.62 0)
+				(at 11.43 7.62 180)
 				(length 2.54)
 				(name "BATT"
 					(effects
@@ -186,7 +186,7 @@
 				)
 			)
 			(pin input line
-				(at 11.43 -5.08 180)
+				(at 11.43 -6.35 180)
 				(length 2.54)
 				(name "CSN"
 					(effects
@@ -204,7 +204,7 @@
 				)
 			)
 			(pin power_in line
-				(at -1.27 -11.43 90)
+				(at 1.27 -11.43 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -222,7 +222,7 @@
 				)
 			)
 			(pin input line
-				(at 11.43 -7.62 180)
+				(at 11.43 -3.81 180)
 				(length 2.54)
 				(name "CSPL"
 					(effects
@@ -240,7 +240,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 2.54 0)
+				(at 11.43 3.81 180)
 				(length 2.54)
 				(name "CSPH"
 					(effects
@@ -276,7 +276,7 @@
 				)
 			)
 			(pin output line
-				(at 11.43 5.08 180)
+				(at -11.43 6.35 0)
 				(length 2.54)
 				(name "ALRT"
 					(effects
@@ -294,7 +294,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 11.43 0 180)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -312,7 +312,7 @@
 				)
 			)
 			(pin input line
-				(at 11.43 2.54 180)
+				(at -11.43 2.54 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -330,7 +330,7 @@
 				)
 			)
 			(pin power_in line
-				(at 1.27 -11.43 90)
+				(at -1.27 -11.43 90)
 				(length 2.54)
 				(name "EP"
 					(effects
