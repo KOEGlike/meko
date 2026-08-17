@@ -222,3 +222,5 @@ The more interesting part is the low-power/high-power/hibernate modes. The SAMA7
 
 
 ![power schematic](https://cdn.hackclub.com/01a00bc3-9d2e-7ea7-bc93-700ef7ba0172/image.png)
+
+## *Time Spent: 6h*
