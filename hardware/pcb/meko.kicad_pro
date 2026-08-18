@@ -641,40 +641,10 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "MPN",
           "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -711,14 +681,26 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S3.3",
+          "name": "KLC_S3.3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.1",
+          "name": "KLC_S4.1",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Sim.Type"
     },
     "bus_aliases": {
       "DDR_ADDRESS": [
@@ -748,6 +730,14 @@
       "I2C": [
         "SDA",
         "SCL"
+      ],
+      "PWR_CNTRL": [
+        "LPM",
+        "HPM",
+        "PWRHLD",
+        "~{RST}",
+        "~{WKUP}",
+        "~{INT}"
       ],
       "USB": [
         "D-",
@@ -798,7 +788,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "L1-5,D1-5,C1-22,BT1,J1-4,TP1,JP1,R1-5,R25,IC1-2,#PWR1-52,U1-6",
+    "used_designators": "L1-5,D1-5,C1-25,BT1,J1-4,TP1,JP1,R1-5,R25,IC1-2,Y1-2,#PWR1-59,U1-6",
     "variants": []
   },
   "sheets": [
@@ -825,6 +815,26 @@
     [
       "13ed9585-0f16-442f-add9-c716aca8a0ac",
       "USB"
+    ],
+    [
+      "ea3e493d-59aa-4011-aa92-8bd4cea52388",
+      "DAC"
+    ],
+    [
+      "45aa24d2-e0af-4ebb-a68a-61b6a12c0eec",
+      "SD Cards"
+    ],
+    [
+      "122d9c1c-6abd-41a6-b885-d015d8fca76e",
+      "Display"
+    ],
+    [
+      "7a0a8608-fb91-40ee-9ae1-ac8166908c37",
+      "Touch Pad"
+    ],
+    [
+      "e40fc879-1a0f-4948-9e1c-6c4ee1733e71",
+      "Buttons"
     ]
   ],
   "text_variables": {},

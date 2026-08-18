@@ -132,6 +132,52 @@
 		)
 	)
 	(sheet
+		(at 196.85 146.05)
+		(size 25.4 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "122d9c1c-6abd-41a6-b885-d015d8fca76e")
+		(property "Sheetname" "Display"
+			(at 196.85 145.3384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display.kicad_sch"
+			(at 196.85 159.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 129.54 130.81)
 		(size 17.78 15.24)
 		(exclude_from_sim no)
@@ -173,6 +219,52 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
 					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 157.48)
+		(size 19.05 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "45aa24d2-e0af-4ebb-a68a-61b6a12c0eec")
+		(property "Sheetname" "SD Cards"
+			(at 149.86 156.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sd.kicad_sch"
+			(at 149.86 168.2246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
+					(page "8")
 				)
 			)
 		)
@@ -310,6 +402,52 @@
 		)
 	)
 	(sheet
+		(at 214.63 120.65)
+		(size 30.48 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7a0a8608-fb91-40ee-9ae1-ac8166908c37")
+		(property "Sheetname" "Touch Pad"
+			(at 214.63 119.9384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "touch_pad.kicad_sch"
+			(at 214.63 136.4746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 170.18 97.79)
 		(size 27.94 13.97)
 		(exclude_from_sim no)
@@ -351,6 +489,98 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 168.91)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e40fc879-1a0f-4948-9e1c-6c4ee1733e71")
+		(property "Sheetname" "Buttons"
+			(at 113.03 168.1984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "buttons.kicad_sch"
+			(at 113.03 173.3046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 148.59)
+		(size 20.32 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ea3e493d-59aa-4011-aa92-8bd4cea52388")
+		(property "Sheetname" "DAC"
+			(at 88.9 147.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac.kicad_sch"
+			(at 88.9 164.4146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
+					(page "7")
 				)
 			)
 		)

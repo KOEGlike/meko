@@ -3552,16 +3552,6 @@
 		)
 		(uuid "e0cb7f3a-f595-45c4-b1cb-cbac0e93b95f")
 	)
-	(text "1A"
-		(exclude_from_sim no)
-		(at 260.35 76.962 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "12ae790e-7241-4f58-a26c-79c2bc9d55e8")
-	)
 	(text "0x5B"
 		(exclude_from_sim no)
 		(at 165.1 108.458 0)
@@ -6474,6 +6464,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 250.19 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 250.19 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d68e2dd2-74ab-4209-be06-672fdcaa0df5")
 		)
@@ -6511,8 +6523,8 @@
 				)
 			)
 		)
-		(property "Value" "+BATT_CPU"
-			(at 255.524 179.832 0)
+		(property "Value" "+1V8_BATT_CPU"
+			(at 257.302 179.832 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6788,6 +6800,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 87.63 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 87.63 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "39516800-8fb7-4bcb-8b6a-7f859b1bfa1f")
 		)
@@ -6869,6 +6903,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 177.8 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 177.8 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9344cdd7-dd7e-4ef6-aac4-c534c3ee9b46")
 		)
@@ -6938,6 +6994,28 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 119.38 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 119.38 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 119.38 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -7028,6 +7106,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 119.38 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 119.38 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "005a3ce1-25c7-4e26-99cb-f51064708293")
 		)
@@ -7098,6 +7198,28 @@
 		)
 		(property "Description" "Inductor, small symbol"
 			(at 242.57 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 242.57 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 242.57 154.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7179,6 +7301,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 240.03 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 240.03 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 240.03 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -7578,6 +7722,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 242.57 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 242.57 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4d01e98b-a5f1-48e8-8250-73791019297d")
 		)
@@ -7650,6 +7816,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 240.03 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 240.03 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 240.03 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -8051,6 +8239,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 250.19 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 250.19 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6fd0d181-9176-42b7-aae1-341d69b6e02d")
 		)
@@ -8133,6 +8343,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 115.57 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 115.57 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0af77720-6951-44a3-bf75-d2704171c905")
 		)
@@ -8203,6 +8435,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 102.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 102.87 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 102.87 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -8433,6 +8687,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 176.53 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 176.53 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d20b3d18-1671-4f81-9e18-db54b8f54c8b")
 		)
@@ -8504,6 +8780,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 76.2 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 76.2 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 76.2 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8586,6 +8884,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 120.65 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 120.65 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 120.65 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -8830,6 +9150,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 128.27 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 128.27 86.36 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "503d140f-84f0-4180-9876-06c3a75ae8ff")
 		)
@@ -8902,6 +9244,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 240.03 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 240.03 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 240.03 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -8993,6 +9357,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 119.38 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 119.38 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "12c6efe8-d2cb-4dd9-bfaf-393161781372")
 		)
@@ -9063,6 +9449,28 @@
 		)
 		(property "Description" "Inductor, small symbol"
 			(at 242.57 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 242.57 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 242.57 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9153,6 +9561,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 86.36 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 86.36 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "aff1b037-0a43-49d5-84bc-1ccb8689aea6")
 		)
@@ -9223,6 +9653,28 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 121.92 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 121.92 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 121.92 118.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9404,54 +9856,6 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Name" "Microchip"
-			(at 242.57 619.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "MCP16502TAE-E/S8B"
-			(at 242.57 719.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "579-MCP16502TAEE/S8B"
-			(at 242.57 819.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP16502TAE-E-S8B?qs=xZ%2FP%252Ba9zWqbsb6RYL%252BQbsw%3D%3D"
-			(at 242.57 919.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
 		(property "Arrow Part Number" ""
 			(at 242.57 1019.38 0)
 			(hide yes)
@@ -9474,6 +9878,39 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(property "MPN" "MCP16502AD"
+			(at 210.82 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 210.82 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 210.82 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "17"
@@ -9884,6 +10321,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 250.19 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 250.19 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "56761411-10a7-4723-a4b0-af081a42282f")
 		)
@@ -9956,6 +10415,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 240.03 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 240.03 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 240.03 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -10115,6 +10596,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 257.81 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 257.81 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 257.81 191.77 0)
 			(hide yes)
 			(show_name no)
@@ -10317,6 +10820,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 119.38 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 119.38 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8df98662-b075-49bc-956c-549654bdc63f")
 		)
@@ -10409,6 +10934,28 @@
 		)
 		(property "LCSC" "C965808"
 			(at 125.73 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 125.73 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 125.73 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10643,6 +11190,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 99.06 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 99.06 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 99.06 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -11005,6 +11574,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 248.92 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 248.92 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e0790209-5fc1-4538-bc33-b6a26d790e28")
 		)
@@ -11165,6 +11756,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 250.19 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 250.19 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5dba0ca1-be5c-40f4-bc6c-da93ebf8289c")
 		)
@@ -11236,6 +11849,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 86.36 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 86.36 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 86.36 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -11328,6 +11963,28 @@
 				)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 240.03 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 240.03 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "512f7d0f-0d46-4eb1-a773-2d8e2f8bc2c1")
 		)
@@ -11398,6 +12055,28 @@
 		)
 		(property "Description" "Inductor, small symbol"
 			(at 242.57 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 242.57 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 242.57 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11479,6 +12158,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 138.43 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 138.43 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 138.43 83.82 0)
 			(hide yes)
 			(show_name no)
