@@ -224,3 +224,41 @@ The more interesting part is the low-power/high-power/hibernate modes. The SAMA7
 ![power schematic](https://cdn.hackclub.com/01a00bc3-9d2e-7ea7-bc93-700ef7ba0172/image.png)
 
 ## *Time Spent: 6h*
+
+## DDR Troubles and Adding Supporting Circuitry
+
+I discovered maybe a problem with my LPDDR RAM and I also continued to add supporting circuitry to the MPU
+
+### DDR
+
+Turns out that the answer that I got fro my Microchip support inquiry - regarding using LPDDR3 with half of it's data bus - might have been written by AI (thanks electronics stack exchange for point this out).
+
+Microchip that a register of the LPDDR3 memory device which tells you if the device supports x16 is writable, but it's not, it's read only.
+
+So this might mean that the sama7 example that uses LPDDR3 might be just plain wrong.
+
+I reached out to micron if the memory device used in the sama example truly supports x16 operation, but they haven't responded yet.
+
+![MR8 read only](https://cdn.hackclub.com/01a020bd-e708-79ed-b440-a28730f384a7/image.png)
+_Notice the R, which means read only_
+
+![MR8 function](https://cdn.hackclub.com/01a020bd-ead2-797b-a6b7-3c75506ef276/image.png)
+
+### Supporting Circuitry
+
+Choose and added crystals and caps for them for the sama:
+
+![crystals and calculations](https://cdn.hackclub.com/01a020d6-7153-7398-ba3d-c26c8fef7134/image.png)
+
+Added DDR VREF voltage divider:
+![ddr voltage divider](https://cdn.hackclub.com/01a020d9-60d9-721a-b0ed-8a5b2b74c472/image.png)
+
+Added reference resistors:
+![reference resistors](https://cdn.hackclub.com/01a020d9-640d-7cd2-bb38-591860b2787b/image.png)
+
+Wired up the PMIC pwr signals, and added a JTAG connector:
+![pwr ctrl and JTAGSEL](https://cdn.hackclub.com/01a020d9-6724-715f-bfcb-f176cc0355fa/image.png)
+
+![JTAG connector](https://cdn.hackclub.com/01a020d9-6a75-786e-b922-19d3ebe3654d/image.png)
+
+## *Time Spent: 6h*
