@@ -731,6 +731,14 @@
         "SDA",
         "SCL"
       ],
+      "PMIC_CTRL": [
+        "LPM",
+        "HPM",
+        "PWRHLD",
+        "~{RST}",
+        "~{WKUP}",
+        "~{INT}"
+      ],
       "PWR_CNTRL": [
         "LPM",
         "HPM",
@@ -788,7 +796,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "L1-5,D1-5,C1-25,BT1,J1-4,TP1,JP1,R1-5,R25,IC1-2,Y1-2,#PWR1-59,U1-6",
+    "used_designators": "L1-5,D1-5,C1-29,BT1,J1-5,TP1-6,JP1-2,R1-12,R25,IC1-2,Y1-2,#PWR1-67,U1-6",
     "variants": []
   },
   "sheets": [
