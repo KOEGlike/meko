@@ -225,11 +225,11 @@ The more interesting part is the low-power/high-power/hibernate modes. The SAMA7
 
 ## *Time Spent: 6h*
 
-## DDR Troubles and Adding Supporting Circuitry
+# DDR Troubles and Adding Supporting Circuitry
 
 I discovered maybe a problem with my LPDDR RAM and I also continued to add supporting circuitry to the MPU
 
-### DDR
+## DDR
 
 Turns out that the answer that I got fro my Microchip support inquiry - regarding using LPDDR3 with half of it's data bus - might have been written by AI (thanks electronics stack exchange for point this out).
 
@@ -244,7 +244,7 @@ _Notice the R, which means read only_
 
 ![MR8 function](https://cdn.hackclub.com/01a020bd-ead2-797b-a6b7-3c75506ef276/image.png)
 
-### Supporting Circuitry
+## Supporting Circuitry
 
 Choose and added crystals and caps for them for the sama:
 
