@@ -5,6 +5,351 @@
 	(uuid "a540f8e5-674f-4b24-9ca1-b80de0b033a4")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Crystal"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Y"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Crystal"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Two pin crystal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "quartz ceramic resonator oscillator"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Crystal*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Crystal_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.143 2.54)
+					(end 1.143 -2.54)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -1.27) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Crystal_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MAYA-W386-00B:MAYA-W386-00B"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -154,8 +499,8 @@
 			)
 			(symbol "MAYA-W386-00B_1_1"
 				(rectangle
-					(start -25.146 58.42)
-					(end 25.146 -58.42)
+					(start -25.4 58.42)
+					(end 25.4 -58.42)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -201,7 +546,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -46.99 0)
+					(at -30.48 -46.99 0)
 					(length 5.08)
 					(name "SD_DAT[1]"
 						(effects
@@ -219,7 +564,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 -39.37 0)
+					(at -30.48 -39.37 0)
 					(length 5.08)
 					(name "SD_CLK"
 						(effects
@@ -237,7 +582,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -52.07 0)
+					(at -30.48 -52.07 0)
 					(length 5.08)
 					(name "SD_DAT[3]"
 						(effects
@@ -255,7 +600,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 30.226 -40.64 180)
+					(at 30.48 -40.64 180)
 					(length 5.08)
 					(hide yes)
 					(name "NC"
@@ -292,7 +637,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 30.226 -40.64 180)
+					(at 30.48 -40.64 180)
 					(length 5.08)
 					(hide yes)
 					(name "NC"
@@ -330,7 +675,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 -22.86 180)
+					(at 30.48 -22.86 180)
 					(length 5.08)
 					(name "SLP_CLK_IN_OUT"
 						(effects
@@ -367,7 +712,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -44.45 0)
+					(at -30.48 -44.45 0)
 					(length 5.08)
 					(name "SD_DAT[0]"
 						(effects
@@ -385,7 +730,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -41.91 0)
+					(at -30.48 -41.91 0)
 					(length 5.08)
 					(name "SD_CMD"
 						(effects
@@ -403,7 +748,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -49.53 0)
+					(at -30.48 -49.53 0)
 					(length 5.08)
 					(name "SD_DAT[2]"
 						(effects
@@ -421,7 +766,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -24.13 0)
+					(at -30.48 -24.13 0)
 					(length 5.08)
 					(name "GPIO[5]"
 						(effects
@@ -477,7 +822,7 @@
 					)
 				)
 				(pin input line
-					(at -29.972 -3.81 0)
+					(at -30.48 -3.81 0)
 					(length 5.08)
 					(name "MIC_P"
 						(effects
@@ -495,7 +840,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 39.37 180)
+					(at 30.48 39.37 180)
 					(length 5.08)
 					(name "SMIF_SPHB_DQ3"
 						(effects
@@ -513,7 +858,7 @@
 					)
 				)
 				(pin input line
-					(at 30.226 -27.94 180)
+					(at 30.48 -27.94 180)
 					(length 5.08)
 					(name "SLP_XTAL_IN"
 						(effects
@@ -531,7 +876,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 46.99 0)
+					(at -30.48 46.99 0)
 					(length 5.08)
 					(name "BT_GPIO[4]"
 						(effects
@@ -549,7 +894,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -19.05 0)
+					(at -30.48 -19.05 0)
 					(length 5.08)
 					(name "GPIO[3]"
 						(effects
@@ -567,7 +912,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -16.51 0)
+					(at -30.48 -16.51 0)
 					(length 5.08)
 					(name "GPIO[2]"
 						(effects
@@ -585,7 +930,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -21.59 0)
+					(at -30.48 -21.59 0)
 					(length 5.08)
 					(name "GPIO[4]"
 						(effects
@@ -603,7 +948,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 44.45 0)
+					(at -30.48 44.45 0)
 					(length 5.08)
 					(name "BT_GPIO[5]"
 						(effects
@@ -621,7 +966,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 39.37 0)
+					(at -30.48 39.37 0)
 					(length 5.08)
 					(name "BT_GPIO[7]"
 						(effects
@@ -639,7 +984,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -29.972 -6.35 0)
+					(at -30.48 -6.35 0)
 					(length 5.08)
 					(name "DMIC_CK"
 						(effects
@@ -657,7 +1002,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 54.61 180)
+					(at 30.48 54.61 180)
 					(length 5.08)
 					(name "SMIF_SPHB_CK"
 						(effects
@@ -675,7 +1020,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 -25.4 180)
+					(at 30.48 -25.4 180)
 					(length 5.08)
 					(name "SLP_XTAL_OUT"
 						(effects
@@ -693,7 +1038,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 36.83 0)
+					(at -30.48 36.83 0)
 					(length 5.08)
 					(name "BT_GPIO[16]"
 						(effects
@@ -711,7 +1056,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 52.07 0)
+					(at -30.48 52.07 0)
 					(length 5.08)
 					(name "BT_GPIO[2]"
 						(effects
@@ -729,7 +1074,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 49.53 0)
+					(at -30.48 49.53 0)
 					(length 5.08)
 					(name "BT_GPIO[3]"
 						(effects
@@ -747,7 +1092,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 41.91 0)
+					(at -30.48 41.91 0)
 					(length 5.08)
 					(name "BT_GPIO[6]"
 						(effects
@@ -783,7 +1128,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -29.972 -8.89 0)
+					(at -30.48 -8.89 0)
 					(length 5.08)
 					(name "DMIC_DQ"
 						(effects
@@ -801,7 +1146,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 46.99 180)
+					(at 30.48 46.99 180)
 					(length 5.08)
 					(name "SMIF_SPHB_DQ0"
 						(effects
@@ -819,7 +1164,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 54.61 0)
+					(at -30.48 54.61 0)
 					(length 5.08)
 					(name "BT_GPIO[0]"
 						(effects
@@ -837,7 +1182,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 34.29 0)
+					(at -30.48 34.29 0)
 					(length 5.08)
 					(name "BT_GPIO[17]"
 						(effects
@@ -893,7 +1238,7 @@
 					)
 				)
 				(pin output line
-					(at -30.226 30.48 0)
+					(at -30.48 30.48 0)
 					(length 5.08)
 					(name "BT_HOST_WAKE"
 						(effects
@@ -947,7 +1292,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 41.91 180)
+					(at 30.48 41.91 180)
 					(length 5.08)
 					(name "SMIF_SPHB_DQ2"
 						(effects
@@ -965,7 +1310,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 16.51 180)
+					(at 30.48 16.51 180)
 					(length 5.08)
 					(name "LHL_GPIO[9]"
 						(effects
@@ -983,7 +1328,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 19.05 180)
+					(at 30.48 19.05 180)
 					(length 5.08)
 					(name "LHL_GPIO[8]"
 						(effects
@@ -1039,7 +1384,7 @@
 					)
 				)
 				(pin output line
-					(at -30.226 -30.48 0)
+					(at -30.48 -30.48 0)
 					(length 5.08)
 					(name "WL_HOST_WAKE"
 						(effects
@@ -1093,7 +1438,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 44.45 180)
+					(at 30.48 44.45 180)
 					(length 5.08)
 					(name "SMIF_SPHB_DQ1"
 						(effects
@@ -1111,7 +1456,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 21.59 180)
+					(at 30.48 21.59 180)
 					(length 5.08)
 					(name "LHL_GPIO[6]"
 						(effects
@@ -1129,7 +1474,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 24.13 180)
+					(at 30.48 24.13 180)
 					(length 5.08)
 					(name "LHL_GPIO[5]"
 						(effects
@@ -1147,7 +1492,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 -15.24 180)
+					(at 30.48 -15.24 180)
 					(length 5.08)
 					(name "RF_CNTL5"
 						(effects
@@ -1165,7 +1510,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 30.226 -10.16 180)
+					(at 30.48 -10.16 180)
 					(length 5.08)
 					(name "RF_CNTL3"
 						(effects
@@ -1183,7 +1528,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -30.226 -26.67 0)
+					(at -30.48 -26.67 0)
 					(length 5.08)
 					(name "GPIO[6]"
 						(effects
@@ -1201,7 +1546,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 21.59 0)
+					(at -30.48 21.59 0)
 					(length 5.08)
 					(name "UART_RX"
 						(effects
@@ -1219,7 +1564,7 @@
 					)
 				)
 				(pin output line
-					(at -30.226 19.05 0)
+					(at -30.48 19.05 0)
 					(length 5.08)
 					(name "UART_TX"
 						(effects
@@ -1237,7 +1582,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 52.07 180)
+					(at 30.48 52.07 180)
 					(length 5.08)
 					(name "SMIF_SPHB_CS0N"
 						(effects
@@ -1255,7 +1600,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 26.67 180)
+					(at 30.48 26.67 180)
 					(length 5.08)
 					(name "LHL_GPIO[4]"
 						(effects
@@ -1273,7 +1618,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 29.21 180)
+					(at 30.48 29.21 180)
 					(length 5.08)
 					(name "LHL_GPIO[3]"
 						(effects
@@ -1329,7 +1674,7 @@
 					)
 				)
 				(pin input line
-					(at 30.226 8.89 180)
+					(at 30.48 8.89 180)
 					(length 5.08)
 					(name "JTAG_SEL"
 						(effects
@@ -1347,7 +1692,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 16.51 0)
+					(at -30.48 16.51 0)
 					(length 5.08)
 					(name "UART_CTSN"
 						(effects
@@ -1365,7 +1710,7 @@
 					)
 				)
 				(pin output line
-					(at -30.226 13.97 0)
+					(at -30.48 13.97 0)
 					(length 5.08)
 					(name "UART_RTSN"
 						(effects
@@ -1383,7 +1728,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 49.53 180)
+					(at 30.48 49.53 180)
 					(length 5.08)
 					(name "SMIF_SPHB_CS1N"
 						(effects
@@ -1401,7 +1746,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 30.226 31.75 180)
+					(at 30.48 31.75 180)
 					(length 5.08)
 					(name "LHL_GPIO[2]"
 						(effects
@@ -1419,7 +1764,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 -35.56 0)
+					(at -30.48 -35.56 0)
 					(length 5.08)
 					(name "WL_EN"
 						(effects
@@ -1437,7 +1782,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 -7.62 180)
+					(at 30.48 -7.62 180)
 					(length 5.08)
 					(name "RF_CNTL0"
 						(effects
@@ -1455,7 +1800,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 -12.7 180)
+					(at 30.48 -12.7 180)
 					(length 5.08)
 					(name "RF_CNTL4"
 						(effects
@@ -1473,7 +1818,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 25.4 0)
+					(at -30.48 25.4 0)
 					(length 5.08)
 					(name "BT_EN"
 						(effects
@@ -1491,7 +1836,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 -33.02 0)
+					(at -30.48 -33.02 0)
 					(length 5.08)
 					(name "WL_DEV_WAKE"
 						(effects
@@ -1509,7 +1854,7 @@
 					)
 				)
 				(pin input line
-					(at -30.226 27.94 0)
+					(at -30.48 27.94 0)
 					(length 5.08)
 					(name "BT_DEV_WAKE"
 						(effects
@@ -1527,7 +1872,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 30.226 -3.81 180)
+					(at 30.48 -3.81 180)
 					(length 5.08)
 					(name "RF_ANT0"
 						(effects
@@ -1678,7 +2023,7 @@
 					)
 				)
 				(pin output line
-					(at 30.226 -1.27 180)
+					(at 30.48 -1.27 180)
 					(length 5.08)
 					(name "RF_ANT1"
 						(effects
@@ -1715,7 +2060,7 @@
 					)
 				)
 				(pin input line
-					(at 30.226 1.27 180)
+					(at 30.48 1.27 180)
 					(length 5.08)
 					(name "ANT_EXT_FEED"
 						(effects
@@ -1927,6 +2272,24 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 177.8 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "984d163a-dd71-4db0-a17c-acab41ab3c12")
+	)
+	(junction
+		(at 193.04 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd136c1b-2471-4d92-bc23-eaf900d0db89")
+	)
+	(junction
+		(at 177.8 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd9f78c2-3e1e-47d3-84c4-8728bd359338")
+	)
 	(no_connect
 		(at 162.56 99.06)
 		(uuid "03d8eb32-28ef-4ce0-986e-59abeab34f2f")
@@ -1989,6 +2352,26 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 149.86) (xy 163.83 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c56f08d-94ff-4ad3-be35-c799e146c2a1")
+	)
+	(wire
+		(pts
+			(xy 177.8 149.86) (xy 163.83 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dedf7c4-10dd-47af-b9db-188c40f9c66a")
+	)
+	(wire
+		(pts
 			(xy 132.08 181.61) (xy 132.08 182.88)
 		)
 		(stroke
@@ -1996,6 +2379,241 @@
 			(type default)
 		)
 		(uuid "2920e072-58f3-4e8b-a6ef-dd3e1d4ff184")
+	)
+	(wire
+		(pts
+			(xy 184.15 139.7) (xy 177.8 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34e38513-97c8-4c56-9349-785e3313ef59")
+	)
+	(wire
+		(pts
+			(xy 193.04 149.86) (xy 189.23 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "470cfee5-a340-417f-9aaa-23cdee7bc3e0")
+	)
+	(wire
+		(pts
+			(xy 177.8 139.7) (xy 163.83 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4afea641-8d17-4fa9-8484-2dc1e96cc0c6")
+	)
+	(wire
+		(pts
+			(xy 193.04 154.94) (xy 193.04 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71f971ea-304c-4891-818c-5abef5831efc")
+	)
+	(wire
+		(pts
+			(xy 163.83 146.05) (xy 162.56 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7429dcc4-fbb3-45ba-be2b-c5db2c236982")
+	)
+	(wire
+		(pts
+			(xy 193.04 149.86) (xy 193.04 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e007f83-2948-45d7-b7f3-f52fd1005069")
+	)
+	(wire
+		(pts
+			(xy 163.83 139.7) (xy 163.83 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a169f02e-fb5c-4533-85a5-2df3f23e5c6e")
+	)
+	(wire
+		(pts
+			(xy 177.8 148.59) (xy 177.8 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a371e156-4192-4988-b5f9-bd93dc30651f")
+	)
+	(wire
+		(pts
+			(xy 163.83 143.51) (xy 162.56 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc744c9-b9db-4313-b938-5aa4a9358b80")
+	)
+	(wire
+		(pts
+			(xy 184.15 149.86) (xy 177.8 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4af64a6-ba29-4ee0-bd04-8ea8fa172544")
+	)
+	(wire
+		(pts
+			(xy 177.8 139.7) (xy 177.8 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb94235f-40f4-470e-80c8-b06138939f06")
+	)
+	(wire
+		(pts
+			(xy 193.04 139.7) (xy 189.23 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd6275d3-7b6b-4ac2-a1f4-890c933473f9")
+	)
+	(symbol
+		(lib_id "Device:Crystal")
+		(at 177.8 144.78 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "02088512-0d62-45a1-b931-d329db7a8a07")
+		(property "Reference" "Y3"
+			(at 173.99 143.5099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "32kHz768"
+			(at 173.99 146.0499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CC7V-T1A-2Pin_3.2x1.5mm"
+			(at 177.8 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C97604.pdf"
+			(at 177.8 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Two pin crystal"
+			(at 177.8 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 177.8 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 177.8 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SC-32S32.768kHz20PPM7pF"
+			(at 177.8 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "82aed44c-58f9-418f-9426-11d4a90f81aa")
+		)
+		(pin "2"
+			(uuid "94aedef2-cca8-4bc7-992a-47e5e13c7857")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/cf3a540d-b7d8-4416-baa0-bfc874a83584"
+					(reference "Y3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "MAYA-W386-00B:MAYA-W386-00B")
@@ -2131,6 +2749,54 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Manufacturer_Name" "u-blox"
+			(at 184.15 613.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MAYA-W383-00B"
+			(at 184.15 713.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 184.15 813.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 184.15 913.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 			)
 		)
 		(pin "A8"
@@ -2407,6 +3073,291 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/cf3a540d-b7d8-4416-baa0-bfc874a83584"
 					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 186.69 149.86 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78b96a5d-1497-4ce5-a42a-0afc7ed0d366")
+		(property "Reference" "C31"
+			(at 187.452 148.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "9p"
+			(at 183.388 148.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 186.69 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 186.69 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 186.69 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a03c2e60-32c7-4c75-afc7-0d20815de16e")
+		)
+		(pin "2"
+			(uuid "3972ce41-3be0-4dba-8b68-dbbec351f860")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/cf3a540d-b7d8-4416-baa0-bfc874a83584"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 186.69 139.7 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9faf6afc-a37a-4eda-9aec-f94190f5816c")
+		(property "Reference" "C30"
+			(at 187.452 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "9p"
+			(at 183.388 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 186.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c86e3ba-1167-4505-a7d0-8fff6062e9f0")
+		)
+		(pin "2"
+			(uuid "4e3ceb98-2ef5-49aa-b341-0b1900508000")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/cf3a540d-b7d8-4416-baa0-bfc874a83584"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 154.94 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5e4391f-e4d8-44d1-9c9e-261f319731dd")
+		(property "Reference" "#PWR069"
+			(at 193.04 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.484 156.972 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bbbc26c9-483a-4845-b9f4-da330210b09c")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/cf3a540d-b7d8-4416-baa0-bfc874a83584"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)

@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 0.0,
+          "height": 0.298,
+          "width": 0.298
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -747,6 +747,15 @@
         "~{WKUP}",
         "~{INT}"
       ],
+      "SDMMC": [
+        "RSTN",
+        "CMD",
+        "CK",
+        "DAT[0..7]",
+        "WP",
+        "CD",
+        "1V8SEL"
+      ],
       "USB": [
         "D-",
         "D+"
@@ -784,6 +793,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -796,7 +813,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "L1-5,D1-5,C1-29,BT1,J1-5,TP1-6,JP1-2,R1-12,R25,IC1-2,Y1-2,#PWR1-67,U1-6",
+    "used_designators": "L1-5,D1-5,C1-36,BT1,J1-5,TP1-6,JP1-3,R1-25,IC1-2,Y1-3,#PWR1-83,U1-6",
     "variants": []
   },
   "sheets": [

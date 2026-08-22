@@ -151,8 +151,8 @@
 		)
 		(symbol "MAYA-W386-00B_1_1"
 			(rectangle
-				(start -25.146 58.42)
-				(end 25.146 -58.42)
+				(start -25.4 58.42)
+				(end 25.4 -58.42)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -198,7 +198,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -46.99 0)
+				(at -30.48 -46.99 0)
 				(length 5.08)
 				(name "SD_DAT[1]"
 					(effects
@@ -216,7 +216,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 -39.37 0)
+				(at -30.48 -39.37 0)
 				(length 5.08)
 				(name "SD_CLK"
 					(effects
@@ -234,7 +234,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -52.07 0)
+				(at -30.48 -52.07 0)
 				(length 5.08)
 				(name "SD_DAT[3]"
 					(effects
@@ -252,7 +252,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 30.226 -40.64 180)
+				(at 30.48 -40.64 180)
 				(length 5.08)
 				(hide yes)
 				(name "NC"
@@ -289,7 +289,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 30.226 -40.64 180)
+				(at 30.48 -40.64 180)
 				(length 5.08)
 				(hide yes)
 				(name "NC"
@@ -327,7 +327,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 -22.86 180)
+				(at 30.48 -22.86 180)
 				(length 5.08)
 				(name "SLP_CLK_IN_OUT"
 					(effects
@@ -364,7 +364,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -44.45 0)
+				(at -30.48 -44.45 0)
 				(length 5.08)
 				(name "SD_DAT[0]"
 					(effects
@@ -382,7 +382,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -41.91 0)
+				(at -30.48 -41.91 0)
 				(length 5.08)
 				(name "SD_CMD"
 					(effects
@@ -400,7 +400,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -49.53 0)
+				(at -30.48 -49.53 0)
 				(length 5.08)
 				(name "SD_DAT[2]"
 					(effects
@@ -418,7 +418,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -24.13 0)
+				(at -30.48 -24.13 0)
 				(length 5.08)
 				(name "GPIO[5]"
 					(effects
@@ -474,7 +474,7 @@
 				)
 			)
 			(pin input line
-				(at -29.972 -3.81 0)
+				(at -30.48 -3.81 0)
 				(length 5.08)
 				(name "MIC_P"
 					(effects
@@ -492,7 +492,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 39.37 180)
+				(at 30.48 39.37 180)
 				(length 5.08)
 				(name "SMIF_SPHB_DQ3"
 					(effects
@@ -510,7 +510,7 @@
 				)
 			)
 			(pin input line
-				(at 30.226 -27.94 180)
+				(at 30.48 -27.94 180)
 				(length 5.08)
 				(name "SLP_XTAL_IN"
 					(effects
@@ -528,7 +528,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 46.99 0)
+				(at -30.48 46.99 0)
 				(length 5.08)
 				(name "BT_GPIO[4]"
 					(effects
@@ -546,7 +546,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -19.05 0)
+				(at -30.48 -19.05 0)
 				(length 5.08)
 				(name "GPIO[3]"
 					(effects
@@ -564,7 +564,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -16.51 0)
+				(at -30.48 -16.51 0)
 				(length 5.08)
 				(name "GPIO[2]"
 					(effects
@@ -582,7 +582,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -21.59 0)
+				(at -30.48 -21.59 0)
 				(length 5.08)
 				(name "GPIO[4]"
 					(effects
@@ -600,7 +600,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 44.45 0)
+				(at -30.48 44.45 0)
 				(length 5.08)
 				(name "BT_GPIO[5]"
 					(effects
@@ -618,7 +618,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 39.37 0)
+				(at -30.48 39.37 0)
 				(length 5.08)
 				(name "BT_GPIO[7]"
 					(effects
@@ -636,7 +636,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -29.972 -6.35 0)
+				(at -30.48 -6.35 0)
 				(length 5.08)
 				(name "DMIC_CK"
 					(effects
@@ -654,7 +654,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 54.61 180)
+				(at 30.48 54.61 180)
 				(length 5.08)
 				(name "SMIF_SPHB_CK"
 					(effects
@@ -672,7 +672,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 -25.4 180)
+				(at 30.48 -25.4 180)
 				(length 5.08)
 				(name "SLP_XTAL_OUT"
 					(effects
@@ -690,7 +690,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 36.83 0)
+				(at -30.48 36.83 0)
 				(length 5.08)
 				(name "BT_GPIO[16]"
 					(effects
@@ -708,7 +708,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 52.07 0)
+				(at -30.48 52.07 0)
 				(length 5.08)
 				(name "BT_GPIO[2]"
 					(effects
@@ -726,7 +726,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 49.53 0)
+				(at -30.48 49.53 0)
 				(length 5.08)
 				(name "BT_GPIO[3]"
 					(effects
@@ -744,7 +744,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 41.91 0)
+				(at -30.48 41.91 0)
 				(length 5.08)
 				(name "BT_GPIO[6]"
 					(effects
@@ -780,7 +780,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -29.972 -8.89 0)
+				(at -30.48 -8.89 0)
 				(length 5.08)
 				(name "DMIC_DQ"
 					(effects
@@ -798,7 +798,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 46.99 180)
+				(at 30.48 46.99 180)
 				(length 5.08)
 				(name "SMIF_SPHB_DQ0"
 					(effects
@@ -816,7 +816,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 54.61 0)
+				(at -30.48 54.61 0)
 				(length 5.08)
 				(name "BT_GPIO[0]"
 					(effects
@@ -834,7 +834,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 34.29 0)
+				(at -30.48 34.29 0)
 				(length 5.08)
 				(name "BT_GPIO[17]"
 					(effects
@@ -890,7 +890,7 @@
 				)
 			)
 			(pin output line
-				(at -30.226 30.48 0)
+				(at -30.48 30.48 0)
 				(length 5.08)
 				(name "BT_HOST_WAKE"
 					(effects
@@ -944,7 +944,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 41.91 180)
+				(at 30.48 41.91 180)
 				(length 5.08)
 				(name "SMIF_SPHB_DQ2"
 					(effects
@@ -962,7 +962,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 16.51 180)
+				(at 30.48 16.51 180)
 				(length 5.08)
 				(name "LHL_GPIO[9]"
 					(effects
@@ -980,7 +980,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 19.05 180)
+				(at 30.48 19.05 180)
 				(length 5.08)
 				(name "LHL_GPIO[8]"
 					(effects
@@ -1036,7 +1036,7 @@
 				)
 			)
 			(pin output line
-				(at -30.226 -30.48 0)
+				(at -30.48 -30.48 0)
 				(length 5.08)
 				(name "WL_HOST_WAKE"
 					(effects
@@ -1090,7 +1090,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 44.45 180)
+				(at 30.48 44.45 180)
 				(length 5.08)
 				(name "SMIF_SPHB_DQ1"
 					(effects
@@ -1108,7 +1108,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 21.59 180)
+				(at 30.48 21.59 180)
 				(length 5.08)
 				(name "LHL_GPIO[6]"
 					(effects
@@ -1126,7 +1126,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 24.13 180)
+				(at 30.48 24.13 180)
 				(length 5.08)
 				(name "LHL_GPIO[5]"
 					(effects
@@ -1144,7 +1144,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 -15.24 180)
+				(at 30.48 -15.24 180)
 				(length 5.08)
 				(name "RF_CNTL5"
 					(effects
@@ -1162,7 +1162,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 30.226 -10.16 180)
+				(at 30.48 -10.16 180)
 				(length 5.08)
 				(name "RF_CNTL3"
 					(effects
@@ -1180,7 +1180,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -30.226 -26.67 0)
+				(at -30.48 -26.67 0)
 				(length 5.08)
 				(name "GPIO[6]"
 					(effects
@@ -1198,7 +1198,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 21.59 0)
+				(at -30.48 21.59 0)
 				(length 5.08)
 				(name "UART_RX"
 					(effects
@@ -1216,7 +1216,7 @@
 				)
 			)
 			(pin output line
-				(at -30.226 19.05 0)
+				(at -30.48 19.05 0)
 				(length 5.08)
 				(name "UART_TX"
 					(effects
@@ -1234,7 +1234,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 52.07 180)
+				(at 30.48 52.07 180)
 				(length 5.08)
 				(name "SMIF_SPHB_CS0N"
 					(effects
@@ -1252,7 +1252,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 26.67 180)
+				(at 30.48 26.67 180)
 				(length 5.08)
 				(name "LHL_GPIO[4]"
 					(effects
@@ -1270,7 +1270,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 29.21 180)
+				(at 30.48 29.21 180)
 				(length 5.08)
 				(name "LHL_GPIO[3]"
 					(effects
@@ -1326,7 +1326,7 @@
 				)
 			)
 			(pin input line
-				(at 30.226 8.89 180)
+				(at 30.48 8.89 180)
 				(length 5.08)
 				(name "JTAG_SEL"
 					(effects
@@ -1344,7 +1344,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 16.51 0)
+				(at -30.48 16.51 0)
 				(length 5.08)
 				(name "UART_CTSN"
 					(effects
@@ -1362,7 +1362,7 @@
 				)
 			)
 			(pin output line
-				(at -30.226 13.97 0)
+				(at -30.48 13.97 0)
 				(length 5.08)
 				(name "UART_RTSN"
 					(effects
@@ -1380,7 +1380,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 49.53 180)
+				(at 30.48 49.53 180)
 				(length 5.08)
 				(name "SMIF_SPHB_CS1N"
 					(effects
@@ -1398,7 +1398,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 30.226 31.75 180)
+				(at 30.48 31.75 180)
 				(length 5.08)
 				(name "LHL_GPIO[2]"
 					(effects
@@ -1416,7 +1416,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 -35.56 0)
+				(at -30.48 -35.56 0)
 				(length 5.08)
 				(name "WL_EN"
 					(effects
@@ -1434,7 +1434,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 -7.62 180)
+				(at 30.48 -7.62 180)
 				(length 5.08)
 				(name "RF_CNTL0"
 					(effects
@@ -1452,7 +1452,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 -12.7 180)
+				(at 30.48 -12.7 180)
 				(length 5.08)
 				(name "RF_CNTL4"
 					(effects
@@ -1470,7 +1470,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 25.4 0)
+				(at -30.48 25.4 0)
 				(length 5.08)
 				(name "BT_EN"
 					(effects
@@ -1488,7 +1488,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 -33.02 0)
+				(at -30.48 -33.02 0)
 				(length 5.08)
 				(name "WL_DEV_WAKE"
 					(effects
@@ -1506,7 +1506,7 @@
 				)
 			)
 			(pin input line
-				(at -30.226 27.94 0)
+				(at -30.48 27.94 0)
 				(length 5.08)
 				(name "BT_DEV_WAKE"
 					(effects
@@ -1524,7 +1524,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 30.226 -3.81 180)
+				(at 30.48 -3.81 180)
 				(length 5.08)
 				(name "RF_ANT0"
 					(effects
@@ -1675,7 +1675,7 @@
 				)
 			)
 			(pin output line
-				(at 30.226 -1.27 180)
+				(at 30.48 -1.27 180)
 				(length 5.08)
 				(name "RF_ANT1"
 					(effects
@@ -1712,7 +1712,7 @@
 				)
 			)
 			(pin input line
-				(at 30.226 1.27 180)
+				(at 30.48 1.27 180)
 				(length 5.08)
 				(name "ANT_EXT_FEED"
 					(effects
