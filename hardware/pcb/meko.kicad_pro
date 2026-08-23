@@ -703,6 +703,18 @@
       "sort_field": "Sim.Type"
     },
     "bus_aliases": {
+      "CODEC_ASI": [
+        "BCLK",
+        "FSYNC",
+        "DOUT",
+        "DIN"
+      ],
+      "CODEC_GPIO": [
+        "GPIO1",
+        "GPIO2",
+        "GPO1",
+        "GPI1"
+      ],
       "DDR_ADDRESS": [
         "DDR_A[0..9]"
       ],
@@ -730,6 +742,12 @@
       "I2C": [
         "SDA",
         "SCL"
+      ],
+      "MIP": [
+        "SCLK",
+        "SI",
+        "SCS",
+        "DISP"
       ],
       "PMIC_CTRL": [
         "LPM",
@@ -813,7 +831,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "L1-5,D1-5,C1-36,BT1,J1-5,TP1-6,JP1-3,R1-25,IC1-2,Y1-3,#PWR1-83,U1-6",
+    "used_designators": "L1-6,D1-5,C1-42,BT1,J1-7,TP1-6,JP1-3,R1-25,IC1-3,Y1-3,#PWR1-90,U1-6",
     "variants": []
   },
   "sheets": [
@@ -842,8 +860,8 @@
       "USB"
     ],
     [
-      "ea3e493d-59aa-4011-aa92-8bd4cea52388",
-      "DAC"
+      "073f6085-34ed-486a-9dc9-0ac1ede2fab6",
+      "Audio"
     ],
     [
       "45aa24d2-e0af-4ebb-a68a-61b6a12c0eec",

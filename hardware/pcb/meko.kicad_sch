@@ -46,6 +46,52 @@
 		(uuid "f73e187d-5eae-4ee8-a224-046a79925214")
 	)
 	(sheet
+		(at 88.9 138.43)
+		(size 27.94 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "073f6085-34ed-486a-9dc9-0ac1ede2fab6")
+		(property "Sheetname" "Audio"
+			(at 88.9 137.7184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio.kicad_sch"
+			(at 88.9 152.9846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 67.31 100.33)
 		(size 33.02 21.59)
 		(exclude_from_sim no)
@@ -535,52 +581,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
 					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 88.9 148.59)
-		(size 20.32 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "ea3e493d-59aa-4011-aa92-8bd4cea52388")
-		(property "Sheetname" "DAC"
-			(at 88.9 147.8784 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "dac.kicad_sch"
-			(at 88.9 164.4146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
-					(page "7")
 				)
 			)
 		)
