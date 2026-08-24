@@ -3854,6 +3854,12 @@
 		(uuid "0ad50035-15a4-4441-af39-af3c94e6d177")
 	)
 	(junction
+		(at 317.5 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0edfe80b-3c79-42ef-91d7-e86cbb812efd")
+	)
+	(junction
 		(at 251.46 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3884,12 +3890,6 @@
 		(uuid "2e16a5d3-085c-4d22-9b9b-47880535c0a3")
 	)
 	(junction
-		(at 261.62 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30478a6f-b16f-49ca-8d8b-16d6ab088b1d")
-	)
-	(junction
 		(at 251.46 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3914,6 +3914,12 @@
 		(uuid "3f81a8f0-6d96-4516-8f0c-31dcee1df98d")
 	)
 	(junction
+		(at 261.62 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "476337e1-8add-4c58-b16f-5bd1aab0f396")
+	)
+	(junction
 		(at 76.2 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3936,12 +3942,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f4c791b-6d43-490a-9140-47c0022e0cd0")
-	)
-	(junction
-		(at 317.5 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "51dec624-e02d-4f11-9b51-994d285b3342")
 	)
 	(junction
 		(at 251.46 116.84)
@@ -4028,10 +4028,10 @@
 		(uuid "9eec5d2e-553e-4f23-b3fb-5089196e5de7")
 	)
 	(junction
-		(at 261.62 82.55)
+		(at 261.62 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a8520628-beb6-418b-8d78-d58fbc5cb05e")
+		(uuid "a1753c74-8c6b-4d00-b717-896db57b5983")
 	)
 	(junction
 		(at 193.04 187.96)
@@ -4055,7 +4055,7 @@
 		(at 261.62 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b71cd761-462e-44b1-97cd-8de0eaeb9618")
+		(uuid "b74b777b-9d2e-46d4-ba07-9c3ee8aa9ebe")
 	)
 	(junction
 		(at 269.24 187.96)
@@ -4068,6 +4068,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc36afa0-b32c-49d1-8985-4e6527a6b6f3")
+	)
+	(junction
+		(at 261.62 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bce117d2-bf21-4acb-be3b-7a842967a1b6")
 	)
 	(junction
 		(at 119.38 180.34)
@@ -4110,12 +4116,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8a4ca52-5d3b-4721-8fd1-344b3b582226")
-	)
-	(junction
-		(at 261.62 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fceaaa2a-7ff2-4864-9f35-b787fb9b2c93")
 	)
 	(no_connect
 		(at 115.57 123.19)
@@ -4295,6 +4295,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 116.84) (xy 251.46 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05bacf1a-34bc-4718-b806-6aec05390786")
+	)
+	(wire
+		(pts
 			(xy 111.76 158.75) (xy 111.76 163.83)
 		)
 		(stroke
@@ -4365,6 +4375,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 90.17) (xy 261.62 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a44855f-1298-4234-9037-341cd9c5ae50")
+	)
+	(wire
+		(pts
 			(xy 102.87 128.27) (xy 104.14 128.27)
 		)
 		(stroke
@@ -4412,16 +4432,6 @@
 			(type default)
 		)
 		(uuid "13f30b2e-2df5-4d77-bc47-6633a4b2eb5b")
-	)
-	(wire
-		(pts
-			(xy 251.46 116.84) (xy 261.62 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16ccb4e6-c24e-484d-8dbd-6dad3a0878dd")
 	)
 	(wire
 		(pts
@@ -4475,7 +4485,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 80.01) (xy 317.5 85.09)
+			(xy 317.5 80.01) (xy 317.5 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4542,6 +4552,16 @@
 			(type default)
 		)
 		(uuid "29356334-5acc-42a6-8dc0-23c3c9500268")
+	)
+	(wire
+		(pts
+			(xy 261.62 114.3) (xy 261.62 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a12eb45-2bbf-44d0-9033-1770c3b032e4")
 	)
 	(wire
 		(pts
@@ -4825,16 +4845,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 92.71) (xy 261.62 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f938ac1-e1f9-415d-b9ee-0fe8694ee9d3")
-	)
-	(wire
-		(pts
 			(xy 261.62 130.81) (xy 256.54 130.81)
 		)
 		(stroke
@@ -4912,6 +4922,16 @@
 			(type default)
 		)
 		(uuid "48e23387-3c06-4709-92ab-a3bd6c0c5051")
+	)
+	(wire
+		(pts
+			(xy 261.62 140.97) (xy 251.46 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "494106c8-e7d7-4454-9fa3-44bfa265460c")
 	)
 	(wire
 		(pts
@@ -5155,7 +5175,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 85.09) (xy 297.18 80.01)
+			(xy 297.18 82.55) (xy 297.18 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5195,7 +5215,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 135.89) (xy 261.62 130.81)
+			(xy 261.62 133.35) (xy 261.62 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5212,6 +5232,16 @@
 			(type default)
 		)
 		(uuid "7f4f6304-5505-4de6-8913-1876a59c10fe")
+	)
+	(wire
+		(pts
+			(xy 261.62 162.56) (xy 261.62 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "801ed9e2-b0db-40f0-b991-e7f1d0c532b2")
 	)
 	(wire
 		(pts
@@ -5345,23 +5375,13 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 90.17) (xy 317.5 91.44)
+			(xy 317.5 87.63) (xy 317.5 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "914b62b9-6ae5-4151-aac8-65b416806b55")
-	)
-	(wire
-		(pts
-			(xy 251.46 140.97) (xy 261.62 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92595eca-13f8-41ec-8d7d-a3917bc157fe")
 	)
 	(wire
 		(pts
@@ -5555,6 +5575,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 92.71) (xy 251.46 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8dee12d-170b-4c9c-a3ec-403c9252f88c")
+	)
+	(wire
+		(pts
 			(xy 269.24 194.31) (xy 269.24 195.58)
 		)
 		(stroke
@@ -5682,16 +5712,6 @@
 			(type default)
 		)
 		(uuid "b67830ac-e145-4a30-9a26-41bb418e5a56")
-	)
-	(wire
-		(pts
-			(xy 251.46 165.1) (xy 261.62 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6ed26bb-4f1e-48fd-a995-bc08d1f6de0a")
 	)
 	(wire
 		(pts
@@ -5935,7 +5955,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 111.76) (xy 261.62 106.68)
+			(xy 261.62 109.22) (xy 261.62 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5945,7 +5965,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 90.17) (xy 297.18 91.44)
+			(xy 297.18 87.63) (xy 297.18 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6075,6 +6095,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 138.43) (xy 261.62 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a593f5-0dfb-4bd1-b771-48353f288e4b")
+	)
+	(wire
+		(pts
 			(xy 250.19 182.88) (xy 260.35 182.88)
 		)
 		(stroke
@@ -6082,6 +6112,16 @@
 			(type default)
 		)
 		(uuid "f10607e4-6746-46dd-b273-76ae49a825e3")
+	)
+	(wire
+		(pts
+			(xy 261.62 165.1) (xy 251.46 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f12e2a94-b51e-45bc-9ba8-a949dec9fc96")
 	)
 	(wire
 		(pts
@@ -6175,7 +6215,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 160.02) (xy 261.62 154.94)
+			(xy 261.62 157.48) (xy 261.62 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6225,7 +6265,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 87.63) (xy 261.62 82.55)
+			(xy 261.62 85.09) (xy 261.62 82.55)
 		)
 		(stroke
 			(width 0)
@@ -7167,7 +7207,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 261.62 114.3 0)
+		(at 261.62 111.76 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7178,7 +7218,7 @@
 		(dnp no)
 		(uuid "3145d84a-a816-489b-8460-ce04a6a4d627")
 		(property "Reference" "C12"
-			(at 263.398 113.284 0)
+			(at 263.398 110.744 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7189,7 +7229,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 263.398 115.062 0)
+			(at 263.398 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7200,7 +7240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 114.3 0)
+			(at 261.62 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7211,7 +7251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 114.3 0)
+			(at 261.62 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7222,7 +7262,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 261.62 114.3 0)
+			(at 261.62 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7233,7 +7273,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 261.62 114.3 0)
+			(at 261.62 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7244,7 +7284,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 261.62 114.3 0)
+			(at 261.62 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7503,7 +7543,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 317.5 87.63 0)
+		(at 317.5 85.09 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7514,7 +7554,7 @@
 		(dnp no)
 		(uuid "3d4d5f6d-2b6d-4124-ac7c-bbbf249a1da2")
 		(property "Reference" "C44"
-			(at 320.04 86.3662 0)
+			(at 320.04 83.8262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7525,7 +7565,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 320.04 88.9062 0)
+			(at 320.04 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7536,7 +7576,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 317.5 87.63 0)
+			(at 317.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7547,7 +7587,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 317.5 87.63 0)
+			(at 317.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7558,7 +7598,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 317.5 87.63 0)
+			(at 317.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7569,7 +7609,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 317.5 87.63 0)
+			(at 317.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7580,7 +7620,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 317.5 87.63 0)
+			(at 317.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9326,7 +9366,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 261.62 138.43 0)
+		(at 261.62 135.89 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9337,7 +9377,7 @@
 		(dnp no)
 		(uuid "8140b4c9-9b8d-471b-823e-0dd9802e4297")
 		(property "Reference" "C14"
-			(at 263.398 137.414 0)
+			(at 263.398 134.874 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9348,7 +9388,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 263.398 139.192 0)
+			(at 263.398 136.652 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9359,7 +9399,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 138.43 0)
+			(at 261.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9370,7 +9410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 138.43 0)
+			(at 261.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9381,7 +9421,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 261.62 138.43 0)
+			(at 261.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9392,7 +9432,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 261.62 138.43 0)
+			(at 261.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9403,7 +9443,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 261.62 138.43 0)
+			(at 261.62 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11292,7 +11332,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 297.18 87.63 0)
+		(at 297.18 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11302,7 +11342,7 @@
 		(dnp no)
 		(uuid "b1c3607d-3984-4a95-b184-e417a2cc5dad")
 		(property "Reference" "C43"
-			(at 294.64 86.3662 0)
+			(at 294.64 83.8262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11313,7 +11353,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 294.64 88.9062 0)
+			(at 294.64 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11324,7 +11364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 297.18 87.63 0)
+			(at 297.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11335,7 +11375,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 297.18 87.63 0)
+			(at 297.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11346,7 +11386,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 297.18 87.63 0)
+			(at 297.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11357,7 +11397,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 297.18 87.63 0)
+			(at 297.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11368,7 +11408,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 297.18 87.63 0)
+			(at 297.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11872,7 +11912,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 261.62 162.56 0)
+		(at 261.62 160.02 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -11883,7 +11923,7 @@
 		(dnp no)
 		(uuid "c0b6b764-ca43-40e5-945a-5b3b67f081c6")
 		(property "Reference" "C16"
-			(at 263.398 161.544 0)
+			(at 263.398 159.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11894,7 +11934,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 263.398 163.322 0)
+			(at 263.398 160.782 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11905,7 +11945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 162.56 0)
+			(at 261.62 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11916,7 +11956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 162.56 0)
+			(at 261.62 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11927,7 +11967,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 261.62 162.56 0)
+			(at 261.62 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11938,7 +11978,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 261.62 162.56 0)
+			(at 261.62 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11949,7 +11989,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 261.62 162.56 0)
+			(at 261.62 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13472,7 +13512,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 261.62 90.17 0)
+		(at 261.62 87.63 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -13483,7 +13523,7 @@
 		(dnp no)
 		(uuid "efe82589-eb40-4892-8b4c-fd6512817962")
 		(property "Reference" "C9"
-			(at 263.398 89.154 0)
+			(at 263.398 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13494,7 +13534,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 263.398 90.932 0)
+			(at 263.398 88.392 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13505,7 +13545,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 261.62 90.17 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13516,7 +13556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 261.62 90.17 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13527,7 +13567,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 261.62 90.17 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13538,7 +13578,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 261.62 90.17 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13549,7 +13589,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 261.62 90.17 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
