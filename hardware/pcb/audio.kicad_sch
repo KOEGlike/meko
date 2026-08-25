@@ -1743,12 +1743,6 @@
 		(uuid "282c2fe4-4e49-45d6-a8fb-6ecced480315")
 	)
 	(junction
-		(at 134.62 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56eac827-7ed7-4993-991a-a775aac0f080")
-	)
-	(junction
 		(at 204.47 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1759,12 +1753,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70e290b8-1d08-4d61-bd26-5b1a90edc39c")
-	)
-	(junction
-		(at 134.62 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7121cc5c-3beb-40b1-a579-fb73cfdd602b")
 	)
 	(junction
 		(at 209.55 90.17)
@@ -2036,16 +2024,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 57.15) (xy 134.62 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cd857ab-40b2-4b6a-a59a-9f4fb3d5055a")
-	)
-	(wire
-		(pts
 			(xy 134.62 92.71) (xy 160.02 92.71)
 		)
 		(stroke
@@ -2156,7 +2134,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 49.53) (xy 134.62 50.8)
+			(xy 125.73 49.53) (xy 125.73 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2296,7 +2274,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 58.42) (xy 125.73 57.15)
+			(xy 125.73 57.15) (xy 125.73 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2516,16 +2494,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 59.69) (xy 134.62 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b22b4fd4-75ed-4921-a99a-3cd7a7bf4694")
-	)
-	(wire
-		(pts
 			(xy 231.14 92.71) (xy 236.22 92.71)
 		)
 		(stroke
@@ -2603,16 +2571,6 @@
 			(type default)
 		)
 		(uuid "bfa46cd1-38da-4c87-a76e-614ce3d2878d")
-	)
-	(wire
-		(pts
-			(xy 134.62 50.8) (xy 134.62 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1edb672-7e01-479c-a6f1-155814d9f338")
 	)
 	(bus
 		(pts
@@ -2706,16 +2664,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 50.8) (xy 134.62 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8dfab0b-abbd-4fbc-a72d-20dd39cfc833")
-	)
-	(wire
-		(pts
 			(xy 207.01 85.09) (xy 237.49 85.09)
 		)
 		(stroke
@@ -2773,16 +2721,6 @@
 			(type default)
 		)
 		(uuid "f023dcac-a9b1-4647-8523-3807f5cb5bf5")
-	)
-	(wire
-		(pts
-			(xy 134.62 58.42) (xy 125.73 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f23f4e4f-b804-4dbc-a488-399129e3ed6e")
 	)
 	(bus
 		(pts
@@ -3075,7 +3013,7 @@
 		)
 		(uuid "0e753f97-55a1-407e-a072-8cb3934db8f7")
 	)
-	(hierarchical_label "{CODEC_ASI}"
+	(hierarchical_label "{ASI}"
 		(shape bidirectional)
 		(at 68.58 67.31 180)
 		(effects
@@ -3229,7 +3167,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "1u"
 			(at 98.298 40.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3683,7 +3621,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 134.62 49.53 0)
+		(at 125.73 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3693,7 +3631,7 @@
 		(dnp no)
 		(uuid "7215dd83-7237-4f84-801a-cdf48b89f850")
 		(property "Reference" "#PWR094"
-			(at 134.62 53.34 0)
+			(at 125.73 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3704,7 +3642,7 @@
 			)
 		)
 		(property "Value" "+3V3_AVDD"
-			(at 141.224 47.752 0)
+			(at 132.334 47.752 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3714,7 +3652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 49.53 0)
+			(at 125.73 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3725,7 +3663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 49.53 0)
+			(at 125.73 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3736,7 +3674,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 134.62 49.53 0)
+			(at 125.73 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4325,7 +4263,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "1u"
 			(at 82.042 55.626 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5202,7 +5140,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 59.69 0)
+		(at 125.73 58.42 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5213,7 +5151,7 @@
 		(dnp no)
 		(uuid "f6b61cec-db09-4c09-a3ee-8782dbf1e457")
 		(property "Reference" "#PWR096"
-			(at 134.62 66.04 0)
+			(at 125.73 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5224,7 +5162,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 138.176 61.468 0)
+			(at 129.286 60.198 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5234,7 +5172,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 59.69 0)
+			(at 125.73 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5245,7 +5183,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 59.69 0)
+			(at 125.73 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5256,7 +5194,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 59.69 0)
+			(at 125.73 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5350,110 +5288,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
 					(reference "#PWR099")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 134.62 54.61 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fdc00774-eb91-47b4-b238-0f1006f400a4")
-		(property "Reference" "C45"
-			(at 136.398 53.594 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 136.398 55.372 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 134.62 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 134.62 54.61 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 134.62 54.61 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5c9ff64f-4e52-4784-b3b9-2d76f5e16a05")
-		)
-		(pin "2"
-			(uuid "6e4bca48-e905-4be4-925d-7c2b176063b2")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "C45")
 					(unit 1)
 				)
 			)

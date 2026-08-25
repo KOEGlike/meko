@@ -703,6 +703,13 @@
       "sort_field": "Sim.Type"
     },
     "bus_aliases": {
+      "ASI": [
+        "BCLK",
+        "FSYNC",
+        "DOUT",
+        "DIN",
+        "MCLK"
+      ],
       "CODEC_ASI": [
         "BCLK",
         "FSYNC",
@@ -765,6 +772,11 @@
         "~{WKUP}",
         "~{INT}"
       ],
+      "RF_CTRL": [
+        "HOST_WAKE",
+        "DEV_WAKE",
+        "EN"
+      ],
       "SDMMC": [
         "RSTN",
         "CMD",
@@ -773,6 +785,12 @@
         "WP",
         "CD",
         "1V8SEL"
+      ],
+      "UART": [
+        "RX",
+        "TX",
+        "CTSN",
+        "RTSN"
       ],
       "USB": [
         "D-",
@@ -831,7 +849,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "L1-6,D1-5,C1-48,BT1,J1-7,TP1-6,JP1-4,R1-28,IC1-3,Y1-3,#PWR1-103,U1-7",
+    "used_designators": "L1-6,D1-5,C1-48,BT1,J1-8,TP1-6,JP1-4,R1-39,IC1-3,Y1-3,#PWR1-109,U1-7",
     "variants": []
   },
   "sheets": [
