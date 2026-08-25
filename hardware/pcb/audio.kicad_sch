@@ -1554,6 +1554,16 @@
 		)
 		(uuid "a7067915-6937-4507-85d5-1932f17168f6")
 	)
+	(text "0x50"
+		(exclude_from_sim no)
+		(at 59.436 80.518 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c711b6ed-2a85-4d57-9db7-ac5419e62f37")
+	)
 	(junction
 		(at 142.24 72.39)
 		(diameter 0)
@@ -1739,6 +1749,16 @@
 			(type default)
 		)
 		(uuid "08284567-1943-4017-b565-be762d972841")
+	)
+	(wire
+		(pts
+			(xy 77.47 104.14) (xy 77.47 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0900a6b7-3d75-4140-9a11-cc8a33c1e32c")
 	)
 	(wire
 		(pts
@@ -2059,6 +2079,16 @@
 			(type default)
 		)
 		(uuid "8f91b7b5-405f-4615-8805-5d0f09451a4a")
+	)
+	(wire
+		(pts
+			(xy 77.47 102.87) (xy 78.74 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "901824a6-9439-4547-b41b-b083bcebfe56")
 	)
 	(wire
 		(pts
@@ -3003,6 +3033,84 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
 					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4338b0fb-29be-416a-b8d3-86a5d4e828fb")
+		(property "Reference" "#PWR095"
+			(at 77.47 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5054b142-ce6a-4871-adfa-89ed2930a4e2")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
