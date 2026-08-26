@@ -83,6 +83,56 @@
 				(justify left top)
 			)
 		)
+		(pin "DET_2.5mm" output
+			(at 88.9 139.7 180)
+			(uuid "4e5ccdea-5021-4fc1-9600-21e383896fc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DET_3.5mm" output
+			(at 88.9 142.24 180)
+			(uuid "3e589568-eb29-4944-84fe-7a2a3ead7ea9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{ASI}" bidirectional
+			(at 88.9 144.78 180)
+			(uuid "d32423f1-f6f7-4ed9-a66c-765f14054ff6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{CODEC_GPIO}" bidirectional
+			(at 88.9 147.32 180)
+			(uuid "bfaeb3ca-7411-4c9c-a1c2-440e6d13deb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{I2C}" bidirectional
+			(at 88.9 149.86 180)
+			(uuid "b1234b6e-2601-4c47-b749-655c7a974c23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
@@ -215,6 +265,16 @@
 				(justify left top)
 			)
 		)
+		(pin "{MIP}" input
+			(at 196.85 148.59 180)
+			(uuid "67fa65db-64ae-4040-8843-4b9989df2518")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
@@ -259,6 +319,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{USB_CC}" input
+			(at 129.54 134.62 180)
+			(uuid "0700a3dd-366c-4e51-bb0f-57e946942dd2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{USB}" input
+			(at 129.54 137.16 180)
+			(uuid "b374c194-db79-45fa-bb04-efea6a7725d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -307,6 +387,26 @@
 				(justify left top)
 			)
 		)
+		(pin "BOOT{SDMMC}" bidirectional
+			(at 149.86 160.02 180)
+			(uuid "db78cbd1-3bf9-4d92-953f-6cec65bd9ffd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EXT{SDMMC}" bidirectional
+			(at 149.86 162.56 180)
+			(uuid "8903079a-0ca3-4b8c-b97c-eafd0c4b2a9d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
@@ -317,7 +417,7 @@
 	)
 	(sheet
 		(at 173.99 53.34)
-		(size 12.7 24.13)
+		(size 15.24 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -351,6 +451,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "CHG_~{INT}" output
+			(at 173.99 55.88 180)
+			(uuid "6e1135ab-8792-46e5-8ded-c26505fff6bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FUEL_~{INT}" output
+			(at 173.99 58.42 180)
+			(uuid "453bdf01-d16a-4bed-b924-cc7970fa883c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{I2C}" bidirectional
+			(at 173.99 60.96 180)
+			(uuid "d0285227-8eb3-497b-9675-7b9887752a03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{PMIC_CTRL}" bidirectional
+			(at 173.99 63.5 180)
+			(uuid "c1731897-dc1b-4fa8-8a56-84eaf49a88d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{USB_CC}" bidirectional
+			(at 173.99 66.04 180)
+			(uuid "4048e224-f3ea-4f9e-826d-f33d7659a0ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -529,6 +679,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BT{RF_CTRL}" bidirectional
+			(at 170.18 99.06 180)
+			(uuid "f70ff5aa-583e-4b55-a243-2b9ce2be2b2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "WL{RF_CTRL}" bidirectional
+			(at 170.18 101.6 180)
+			(uuid "9b2d0de0-f6a5-4483-a40f-99d4c2149674")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{ASI}" bidirectional
+			(at 170.18 104.14 180)
+			(uuid "46fd21e9-2279-4e73-878c-68f76297f8d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{SDMMC}" bidirectional
+			(at 170.18 106.68 180)
+			(uuid "fc7134f3-9379-48ca-a29d-7fccecfaa63d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "{UART}" bidirectional
+			(at 170.18 109.22 180)
+			(uuid "e93e972a-93bd-4d6f-bf1f-0d683edc5e01")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
