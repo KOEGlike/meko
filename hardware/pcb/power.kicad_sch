@@ -3781,6 +3781,17 @@
 		)
 		(uuid "45a1312c-7f95-4b2c-9a5e-80fb83e3818c")
 	)
+	(text "1V35 for DDR"
+		(exclude_from_sim no)
+		(at 192.024 183.134 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b21821c-2bb3-4f6f-b86d-e261edd244af")
+	)
 	(text "PMIC"
 		(exclude_from_sim no)
 		(at 159.766 69.596 0)
@@ -3816,6 +3827,17 @@
 			)
 		)
 		(uuid "9259b6fe-a89f-4db6-a0e3-c827dbd0a8fe")
+	)
+	(text "1V8 for LOUT1"
+		(exclude_from_sim no)
+		(at 188.976 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9eedd3c0-6e79-4756-bfba-3011ff577766")
 	)
 	(text "FUEL GAUGE & BATTERY"
 		(exclude_from_sim no)
@@ -4034,12 +4056,6 @@
 		(uuid "a1753c74-8c6b-4d00-b717-896db57b5983")
 	)
 	(junction
-		(at 193.04 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a98fa8d2-a4e4-4c18-bc8f-6cedf23fc14e")
-	)
-	(junction
 		(at 299.72 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4120,6 +4136,10 @@
 	(no_connect
 		(at 115.57 123.19)
 		(uuid "2d0c173c-867e-43fa-b43b-89a0fd39de83")
+	)
+	(no_connect
+		(at 194.31 182.88)
+		(uuid "67e4cca1-cdca-45b4-b217-f228b4bcf7f1")
 	)
 	(no_connect
 		(at 90.17 92.71)
@@ -4692,16 +4712,6 @@
 			(type default)
 		)
 		(uuid "31ecdec6-2846-4d5c-a1fd-86c74a925029")
-	)
-	(wire
-		(pts
-			(xy 194.31 182.88) (xy 193.04 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "328252a2-43bf-4953-af6d-e8c2c7a52537")
 	)
 	(wire
 		(pts
@@ -6032,16 +6042,6 @@
 			(type default)
 		)
 		(uuid "e63cc9fd-3983-4d32-8642-e8ad5f22ee41")
-	)
-	(wire
-		(pts
-			(xy 193.04 182.88) (xy 193.04 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6a34536-cc5d-44d2-96b0-18517bc7ffa8")
 	)
 	(wire
 		(pts
@@ -11455,7 +11455,7 @@
 				)
 			)
 		)
-		(property "Value" "MCP16502AD"
+		(property "Value" "MCP16502AB"
 			(at 222.25 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11500,65 +11500,7 @@
 				)
 			)
 		)
-		(property "Height" "1"
-			(at 254 519.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 254 1019.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 254 1119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "MPN" "MCP16502AD"
-			(at 222.25 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 222.25 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
+		(property "MPN" "MCP16502AB"
 			(at 222.25 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11776,7 +11718,7 @@
 				)
 			)
 		)
-		(property "Value" "+1V2_DDR"
+		(property "Value" "+1V35_DDR"
 			(at 265.176 101.092 0)
 			(show_name no)
 			(do_not_autoplace no)
