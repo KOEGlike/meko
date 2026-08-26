@@ -225,7 +225,7 @@ The more interesting part is the low-power/high-power/hibernate modes. The SAMA7
 
 ## *Time Spent: 6h*
 
-# DDR Troubles and Adding Supporting Circuitry
+# 2026.08.20: DDR Troubles and Adding Supporting Circuitry
 
 I discovered maybe a problem with my LPDDR RAM and I also continued to add supporting circuitry to the MPU
 
@@ -262,3 +262,185 @@ Wired up the PMIC pwr signals, and added a JTAG connector:
 ![JTAG connector](https://cdn.hackclub.com/01a020d9-6a75-786e-b922-19d3ebe3654d/image.png)
 
 ## *Time Spent: 6h*
+
+# 2026.08.20: Audio, SD cards, RF, Touchpad
+
+_I have done a lot of stuff_
+
+## Audio
+
+Finally figured out how to implement what I wanted to do: a 3.5mm single ended and 2.5mm balanced output
+
+My audio chip supports both balanced and single ended outputs which I awesome!
+
+I'm actually not using true single ended, because I would need to use an DC blocking capacitor if I did so, which filters base frequencies. So I'm actually using the pseudo-differential output of my CODEC. 
+
+### Common Mode Voltage
+
+You may ask: WTF is a pseudo-differential output and DC blocking cap??
+The audio output of the CODEC always has a common-mode voltage, which means that the audio signal is not centered around 0 volts, instead an arbitrary DC voltage. Imagine it like the audio signal is riding on a DC voltage.
+
+For example this is a sinusoidal audio voltage with a 2V common mode:
+![sinusoidal audio voltage with a 2V common mode](https://cdn.hackclub.com/01a03a60-cbaa-7617-a8a6-393c9cb219d5/image.png)
+
+But there is an issue, if we connect the negative terminal of our headphones to GND, all that common mode voltage will flow through our headphones, which may both damage our CODEC and headphones.
+
+![negative to gnd in jack](https://cdn.hackclub.com/01a03a64-6bf3-7fb4-a346-583308bbe84e/image.png)
+
+There are two solutions:
+
+1. Putting a series capacitor on our audio lines
+
+This will let the AC sinusoidal audio through, and block the DC common mode
+
+![DC blocking caps](https://cdn.hackclub.com/01a03a67-ad08-7ba2-a916-7e27e67d9b1c/image.png)
+
+The audio will be now centered around 0V:
+
+![audio without common mode](https://cdn.hackclub.com/01a03a69-ed20-7ef5-9d13-00448061efb3/image.png)
+
+But as mentioned earlier, the capacitors also filter out the lower frequencies of our audio, aka our base, which we don't want
+
+2. Replace the GND reference with our common mode voltage
+_AKA pseudo-differential_
+
+![common mode as reference](https://cdn.hackclub.com/01a03a6c-d7d1-7a61-8509-cb10c110ed6c/image.png)
+
+Now our headphones think that our 2V common mode is GND, which gives use the same result: the headphones now see the audio signal centered around 0V, but our base is not filtered out
+
+![audio with common mode as refernce](https://cdn.hackclub.com/01a03a69-ed20-7ef5-9d13-00448061efb3/image.png)
+
+**_Fun Fact:_**
+When I designed Meko V2, I didn't know all this, and tied the negative of the jack to GND, and didn't use DC blocking caps, so I almost certainly damaged my CODEC a bit. I had to add these caps in afterwards, it was not pretty.
+
+![meko v2 bodge](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MTAyNzY1LCJwdXIiOiJibG9iX2lkIn19--5070daed04b49cfc4c4b04822cdd74ecbc39b64e/1000014726.jpg)
+
+### Differential audio
+
+Differential output is basically the same as pseudo-differential, but each audio channel (left, right) gets it's own negative terminal, that has the inverted signal of positive terminal, both terminals ride on a common mode voltage
+
+![differential output](https://cdn.hackclub.com/01a03a74-ef9a-772e-b378-09fb4c2c2441/image.png)
+
+### Switching between pseudo and regular differential output at runtime
+
+At first I thought I needed an analog switch, since I wanted to mimic the datasheet for the pseudo diff mode, where _OUT1M_ and _OUT2M_ are connected. But in true differential mode these two need to be disconnected:
+
+![datasheet pseudo-diff](https://cdn.hackclub.com/01a03a7e-e7d8-7219-90fe-3942e4b3cc48/image.png)
+
+![circuit with analog switch](https://cdn.hackclub.com/01a03a85-7eb1-76f2-966f-d0d66e6079f2/image.png)
+
+_I researched a bunch and made a symbol_
+
+But turns out if I don't use _OUT2M_ as a sense, the output will be only slightly worse, which I can accept for one less component.
+
+![circuit without analog switch](https://cdn.hackclub.com/01a03a86-c47f-7559-9378-e9d54d3f6918/image.png)
+
+You may notice some _100K_ resistors on the `TN` pins of the jacks, these are used to detect if a jack is plugged. 
+
+When a jack is not plugged int, `TN` is shorted to the tip(`T`), and when a jack is inserted `TN` is disconnected from `T`. The audio lines always sit around the common mode voltage (in my case 1.65V), so when a jack is not plugged in the `DET_x` lines sit at around 1.65V, but when a jack is plugged in the `DET_x` lines get pulled down to GND by the resistor.   
+
+This took me a whole lot of time to figure out.
+
+### Microphone
+
+#### Mic Bias
+
+The microphones that are in the average earphones need a bias voltage, this gives the power to the amp of the microphone.
+
+![mic bias](https://cdn.hackclub.com/01a03a92-ae77-7f05-9e78-ef95da1af912/image.png)
+
+Since the negative pin of our 3.5mm jack is tied to the common mode voltage, our mic bias needs to be a bit higher to compensate. So instead of the standard 2.2k resistor I only use a 1k one:
+
+#### Play/Pause/Skip
+
+Earbuds sometimes have buttons for play/pause/etc. These signals go through the mic line. Each button when pressed connects the mic to gnd with a series resistor in between, forming a voltage divider with the bias resistor.
+
+![resistors of buttons](https://cdn.hackclub.com/01a03aa6-9317-7d57-bd33-8d5c54a80961/image.png)
+
+The resulting voltage can be measured by the ADC of the CODEC.
+
+_Image from [here](https://source.android.com/docs/core/interaction/accessories/headset/plug-headset-spec)_
+
+### TI support
+
+I love how TI and other large IC manufactures still give free support and design reviews, they helped a ton!!
+
+### Linux driver
+
+TI provides a kinda ok driver for this CODEC, which doesn't expose a lot of the cool features of this CODEC, but it is what it is.
+
+## SD Cards
+
+This was pretty easy, I looked at what SD card footprint Cyao's CKL library had, and used those
+
+I saw in the sama7 example design that they had a load switch for th sd card, which led me down the rabbit hole of how sd card slots need to handled. I stumbled across an [altium article](https://resources.altium.com/p/how-to-design-microsd-power-circuits-without-destabilizing-on-board-voltage-supply) which had the advice that for prototype boards, you should place a 47uF capacitor on the power rail of the sd card, so it limits the inrush current the regulator has to handle when a new sd card is plugged into a live system
+
+![sd cards](https://cdn.hackclub.com/01a03aef-d6dc-7234-9685-9c3b873f6610/image.png)
+
+I also did a lil sidequest on why SDMMC needs pull-ups, it's so the datalines never go in a unexpected state.
+
+## RF 
+
+![finished RF schematic](https://cdn.hackclub.com/01a03d19-7851-7dfd-9bd3-44327ac16df1/image.png)
+
+### SMIF lines solved
+
+After U-BLOX support didn't respond, I reached out to Infineon's support. They responded really quickly! My assumption was correct, in that I don't need to connect the SMIF I use this chipset with Linux.
+
+### GPIOs
+
+I didn't use any, so I this was pretty easy. I just looked over the datasheet if any of them had any special function; they didn't.
+
+### Linux Driver
+
+Infineon provides two driver, one for Wi-Fi and one for Bluetooth. I was kinda confused at first, because they didn't mention these drivers any where on the product/docs page. Infineon support came in clutch again, and pointed me in the correct direction.
+
+## Trackpads
+
+### Steam deck trackpad
+
+Since I wanted to make a trackpad that is similar to the Steam Deck's, I looked at a [tare down](https://www.youtube.com/watch?v=5PB3VBK8VJk&t=432s) from Jerry Rig Everything, and I saw that each trackpad had 3 PCBs:
+
+![first pcb](https://cdn.hackclub.com/01a03d2b-68d3-71e9-9f1f-b70675d267f7/image_.png)
+![second PCB](https://cdn.hackclub.com/01a03d2b-6c6d-794e-97b3-e7318c89aabb/_image.png)
+![third PCB](https://cdn.hackclub.com/01a03d2b-6fe7-7e4e-9466-f81d0f674053/sdimage.png)
+
+I did a bit more research and couldn't find anything. So I asked on the KiCAD discord, and a really cool person responded:
+
+![trackpad response](https://cdn.hackclub.com/01a03d37-3580-765d-9822-7d159083d83a/image.png)
+
+Turns out that the flex PCB and the serpentine trace are use to detect the deflection of the trackpad. I thought trackpads could infer this, but turns out some can, and some can't.
+
+### Choosing a trackpad IC
+
+I saw a [video](https://www.youtube.com/watch?v=ycMgIToLav8) a while back of someone making a custom Steam Controller where they had to make custom trackpad PCBs, because valve doesn't sell trackpad replacements for the Steam Deck. I saw that they used an obscure IC called the Azoteq IQS7211, which had bad availability.
+
+So I continued my research, turns out the ICs used in laptops and the Steam Deck are not available to hobbyists. So I went back to Azoteq, who sold ICs to regular people. 
+
+Then I found the IQS9151. This is a really cool IC that has gesture support, and a bunch of other cool features.
+
+### Generating trackpad PCB
+
+![trackpad PCB](https://cdn.hackclub.com/01a03d45-4245-7bef-9f67-d3cd89fb8b25/image.png)
+
+Capacitive trackpads work by having a bunch of row and columns of these squares and sensing the change in capacitance. When a finger gets close the capacitance decreases
+
+![trackpad illustration](https://cdn.hackclub.com/01a03d4b-7ac1-77ec-9e03-43a6cf3d6894/image.png)
+
+But drawing all these squares by hand in KiCAD would be painful. So I went on a search for generators. And I found a [pretty cool one](https://github.com/timonsku/Touchpad-Generator). This generator was made for the MNT Reform Next OSHW laptop, and turns out they also used the IQS9150 (which is the same as IQS9151 but with more pins).
+
+### Linux Driver
+
+I search around a bit, but I couldn't find a linux driver for the IQS9151. But I could find a youtube [video](https://www.youtube.com/watch?v=0G95vEnHm-k&t=32s) of someone demoing the driver.
+
+![video screen shot](https://cdn.hackclub.com/01a03d51-599e-7a07-8850-67fb7f7a170c/image.png)
+
+But I got a lead, the guy is probably named Jeff LaBundy. So I searched for `Jeff LaBundy embedded` and a [personal site](https://labundy.com/) came up with the same style
+
+![labundy site](https://cdn.hackclub.com/01a03d54-6b07-7a94-91e2-6631be638a8b/image.png)
+
+And luckily the site had an email.
+
+I then proceeded to cold email this guy asking if he would send my his driver 💀
+
+After I send my email, I looked if the IQS7211 had a linux driver. It had. But when I opened the source code, guess who was the maintainer, Jeff LaBundy.
