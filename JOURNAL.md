@@ -444,3 +444,5 @@ And luckily the site had an email.
 I then proceeded to cold email this guy asking if he would send me his driver 💀
 
 After I sent my email, I looked if the IQS7211 had a Linux driver. It had. But when I opened the source code, guess who was the maintainer, Jeff LaBundy.
+
+## *Time Spent: 14h*
