@@ -110,7 +110,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -33.02 90)
+				(at 1.27 -33.02 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -1022,6 +1022,24 @@
 					)
 				)
 				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -1.27 -33.02 90)
+				(length 2.54)
+				(name "TP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "53"
 					(effects
 						(font
 							(size 1.27 1.27)

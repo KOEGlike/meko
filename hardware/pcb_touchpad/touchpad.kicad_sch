@@ -113,7 +113,7 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -33.02 90)
+					(at 1.27 -33.02 90)
 					(length 2.54)
 					(name "VSS"
 						(effects
@@ -1032,6 +1032,24 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -1.27 -33.02 90)
+					(length 2.54)
+					(name "TP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -1255,6 +1273,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 162.56 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e784d6e1-d246-4d9a-9d5e-3a6c953de9dc")
+	)
 	(no_connect
 		(at 182.88 95.25)
 		(uuid "5d9a5f2f-94c7-438c-8dd8-0b95b11a4f1e")
@@ -1265,7 +1289,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 82.55) (xy 184.15 82.55)
+			(xy 182.88 80.01) (xy 184.15 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1275,7 +1299,27 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 80.01) (xy 184.15 80.01)
+			(xy 163.83 137.16) (xy 162.56 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07130d64-028d-4d9d-8573-6efb2b6367a1")
+	)
+	(wire
+		(pts
+			(xy 162.56 137.16) (xy 161.29 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "103d6d96-855a-46c9-ad94-3e72a5418869")
+	)
+	(wire
+		(pts
+			(xy 182.88 82.55) (xy 184.15 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1285,7 +1329,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 115.57) (xy 184.15 115.57)
+			(xy 182.88 110.49) (xy 184.15 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1295,7 +1339,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 87.63) (xy 184.15 87.63)
+			(xy 182.88 74.93) (xy 184.15 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1305,7 +1349,17 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 110.49) (xy 184.15 110.49)
+			(xy 161.29 137.16) (xy 161.29 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d29cca-d939-4cbd-ad04-fc3195260aab")
+	)
+	(wire
+		(pts
+			(xy 182.88 115.57) (xy 184.15 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1315,7 +1369,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 92.71) (xy 184.15 92.71)
+			(xy 182.88 69.85) (xy 184.15 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1325,7 +1379,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 97.79) (xy 184.15 97.79)
+			(xy 182.88 128.27) (xy 184.15 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1335,7 +1389,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 85.09) (xy 184.15 85.09)
+			(xy 182.88 77.47) (xy 184.15 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1345,7 +1399,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 118.11) (xy 184.15 118.11)
+			(xy 182.88 107.95) (xy 184.15 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1355,7 +1409,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 107.95) (xy 184.15 107.95)
+			(xy 182.88 118.11) (xy 184.15 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1365,7 +1419,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 120.65) (xy 184.15 120.65)
+			(xy 182.88 105.41) (xy 184.15 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1375,7 +1429,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 102.87) (xy 184.15 102.87)
+			(xy 182.88 123.19) (xy 184.15 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1385,7 +1439,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 90.17) (xy 184.15 90.17)
+			(xy 182.88 72.39) (xy 184.15 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1395,7 +1449,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 100.33) (xy 184.15 100.33)
+			(xy 182.88 125.73) (xy 184.15 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1405,7 +1459,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 128.27) (xy 184.15 128.27)
+			(xy 182.88 97.79) (xy 184.15 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1425,7 +1479,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 105.41) (xy 184.15 105.41)
+			(xy 182.88 120.65) (xy 184.15 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1435,7 +1489,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 77.47) (xy 184.15 77.47)
+			(xy 182.88 85.09) (xy 184.15 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1445,7 +1499,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 69.85) (xy 184.15 69.85)
+			(xy 182.88 92.71) (xy 184.15 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1455,7 +1509,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 125.73) (xy 184.15 125.73)
+			(xy 182.88 100.33) (xy 184.15 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1465,7 +1519,17 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 123.19) (xy 184.15 123.19)
+			(xy 163.83 135.89) (xy 163.83 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dec82307-e7ce-45fc-a20a-32b274d4da43")
+	)
+	(wire
+		(pts
+			(xy 182.88 102.87) (xy 184.15 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1475,7 +1539,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 72.39) (xy 184.15 72.39)
+			(xy 182.88 90.17) (xy 184.15 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1485,17 +1549,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 135.89) (xy 162.56 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed871733-801e-4142-a099-484e1ff92713")
-	)
-	(wire
-		(pts
-			(xy 182.88 74.93) (xy 184.15 74.93)
+			(xy 182.88 87.63) (xy 184.15 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1506,6 +1560,7 @@
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
 		(at 184.15 113.03 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1526,7 +1581,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 114.681 90)
+			(at 189.738 111.379 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1584,7 +1639,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 92.71 270)
+		(at 184.15 69.85 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1594,7 +1650,7 @@
 		(dnp no)
 		(uuid "333e55b8-6a2f-4e03-aabd-8d6e1041c5ac")
 		(property "Reference" "COL10"
-			(at 190.15 92.71 90)
+			(at 190.15 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1605,7 +1661,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 94.361 90)
+			(at 189.738 68.199 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1617,7 +1673,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 92.71 0)
+			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1628,7 +1684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 92.71 0)
+			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1639,7 +1695,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 92.71 0)
+			(at 184.15 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1663,7 +1719,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 100.33 270)
+		(at 184.15 125.73 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1673,7 +1730,7 @@
 		(dnp no)
 		(uuid "39ba6c94-8914-4215-9b58-c865db1858b2")
 		(property "Reference" "ROW2"
-			(at 190.15 100.33 90)
+			(at 190.15 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1684,7 +1741,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 101.981 90)
+			(at 189.738 124.079 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1696,7 +1753,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 100.33 0)
+			(at 184.15 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1707,7 +1764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 100.33 0)
+			(at 184.15 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1718,7 +1775,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 100.33 0)
+			(at 184.15 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1742,7 +1799,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 123.19 270)
+		(at 184.15 102.87 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1752,7 +1810,7 @@
 		(dnp no)
 		(uuid "413a651c-f7a2-48ae-8de3-72076391d5c8")
 		(property "Reference" "ROW11"
-			(at 190.15 123.19 90)
+			(at 190.15 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1763,7 +1821,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 124.841 90)
+			(at 189.738 101.219 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1775,7 +1833,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 123.19 0)
+			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1786,7 +1844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 123.19 0)
+			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1797,7 +1855,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 123.19 0)
+			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1821,7 +1879,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 90.17 270)
+		(at 184.15 72.39 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1831,7 +1890,7 @@
 		(dnp no)
 		(uuid "44ee50d0-15bd-4eae-8379-51a9e339b4bd")
 		(property "Reference" "COL9"
-			(at 190.15 90.17 90)
+			(at 190.15 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1842,7 +1901,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 91.821 90)
+			(at 189.738 70.739 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1854,7 +1913,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 90.17 0)
+			(at 184.15 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1865,7 +1924,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 90.17 0)
+			(at 184.15 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1876,7 +1935,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 90.17 0)
+			(at 184.15 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1900,7 +1959,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 74.93 270)
+		(at 184.15 87.63 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1910,7 +1970,7 @@
 		(dnp no)
 		(uuid "4cf423a5-685c-4d6a-8f92-d674f1d71047")
 		(property "Reference" "COL3"
-			(at 190.15 74.93 90)
+			(at 190.15 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1921,7 +1981,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 76.581 90)
+			(at 189.738 85.979 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1933,7 +1993,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 74.93 0)
+			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1944,7 +2004,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 74.93 0)
+			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1955,7 +2015,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 74.93 0)
+			(at 184.15 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1979,7 +2039,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 80.01 270)
+		(at 184.15 82.55 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1989,7 +2050,7 @@
 		(dnp no)
 		(uuid "60b9a14e-a2c8-4979-8734-6ff0fc2b7a10")
 		(property "Reference" "COL5"
-			(at 190.15 80.01 90)
+			(at 190.15 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2000,7 +2061,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 81.661 90)
+			(at 189.738 80.899 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2012,7 +2073,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 80.01 0)
+			(at 184.15 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2023,7 +2084,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 80.01 0)
+			(at 184.15 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2034,7 +2095,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 80.01 0)
+			(at 184.15 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2058,7 +2119,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 115.57 270)
+		(at 184.15 110.49 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2068,7 +2130,7 @@
 		(dnp no)
 		(uuid "81b14866-bdfd-489c-8eb5-49a696f093e2")
 		(property "Reference" "ROW8"
-			(at 190.15 115.57 90)
+			(at 190.15 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2079,7 +2141,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 117.221 90)
+			(at 189.738 108.839 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2091,7 +2153,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 115.57 0)
+			(at 184.15 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2102,7 +2164,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 115.57 0)
+			(at 184.15 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2113,7 +2175,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 115.57 0)
+			(at 184.15 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2137,7 +2199,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 110.49 270)
+		(at 184.15 115.57 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2147,7 +2210,7 @@
 		(dnp no)
 		(uuid "8cf58b66-1325-4087-aeb8-481c2a6a020b")
 		(property "Reference" "ROW6"
-			(at 190.15 110.49 90)
+			(at 190.15 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2158,7 +2221,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 112.141 90)
+			(at 189.738 113.919 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2170,7 +2233,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 110.49 0)
+			(at 184.15 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2181,7 +2244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 110.49 0)
+			(at 184.15 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2192,7 +2255,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 110.49 0)
+			(at 184.15 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2216,7 +2279,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 87.63 270)
+		(at 184.15 74.93 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2226,7 +2290,7 @@
 		(dnp no)
 		(uuid "8e128684-0af3-4d03-b8af-ee1771d78c48")
 		(property "Reference" "COL8"
-			(at 190.15 87.63 90)
+			(at 190.15 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2237,7 +2301,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 89.281 90)
+			(at 189.738 73.279 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2249,7 +2313,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 87.63 0)
+			(at 184.15 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2260,7 +2324,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 87.63 0)
+			(at 184.15 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2271,7 +2335,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 87.63 0)
+			(at 184.15 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2295,7 +2359,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 120.65 270)
+		(at 184.15 105.41 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2305,7 +2370,7 @@
 		(dnp no)
 		(uuid "9c278b92-fad9-41a2-b5ea-e3fb35ad08f1")
 		(property "Reference" "ROW10"
-			(at 190.15 120.65 90)
+			(at 190.15 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2316,7 +2381,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 122.301 90)
+			(at 189.738 103.759 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2328,7 +2393,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 120.65 0)
+			(at 184.15 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2339,7 +2404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 120.65 0)
+			(at 184.15 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2350,7 +2415,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 120.65 0)
+			(at 184.15 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2374,7 +2439,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 85.09 270)
+		(at 184.15 77.47 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2384,7 +2450,7 @@
 		(dnp no)
 		(uuid "9e2655d5-dc48-4a82-bfee-dc0aea5ae47f")
 		(property "Reference" "COL7"
-			(at 190.15 85.09 90)
+			(at 190.15 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2395,7 +2461,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 86.741 90)
+			(at 189.738 75.819 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2407,7 +2473,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 85.09 0)
+			(at 184.15 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2418,7 +2484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 85.09 0)
+			(at 184.15 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2429,7 +2495,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 85.09 0)
+			(at 184.15 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2453,7 +2519,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 97.79 270)
+		(at 184.15 128.27 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2463,7 +2530,7 @@
 		(dnp no)
 		(uuid "aa7a5ef1-724c-49dd-91c0-f0d9ccdce1a6")
 		(property "Reference" "ROW1"
-			(at 190.15 97.79 90)
+			(at 190.15 128.27 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2474,7 +2541,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 99.441 90)
+			(at 189.738 126.619 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2486,7 +2553,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 97.79 0)
+			(at 184.15 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2497,7 +2564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 97.79 0)
+			(at 184.15 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2508,7 +2575,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 97.79 0)
+			(at 184.15 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2532,7 +2599,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 118.11 270)
+		(at 184.15 107.95 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2542,7 +2610,7 @@
 		(dnp no)
 		(uuid "b2ab7bb3-4e9c-4605-9a34-7a99bf0bdd3a")
 		(property "Reference" "ROW9"
-			(at 190.15 118.11 90)
+			(at 190.15 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2553,7 +2621,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 119.761 90)
+			(at 189.738 106.299 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2565,7 +2633,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 118.11 0)
+			(at 184.15 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2576,7 +2644,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 118.11 0)
+			(at 184.15 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2587,7 +2655,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 118.11 0)
+			(at 184.15 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2611,7 +2679,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 77.47 270)
+		(at 184.15 85.09 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2621,7 +2690,7 @@
 		(dnp no)
 		(uuid "b2da7e67-b098-40a5-9f3f-6d60ad8ed106")
 		(property "Reference" "COL4"
-			(at 190.15 77.47 90)
+			(at 190.15 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2632,7 +2701,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 79.121 90)
+			(at 189.738 83.439 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2644,7 +2713,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 77.47 0)
+			(at 184.15 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2655,7 +2724,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 77.47 0)
+			(at 184.15 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2666,7 +2735,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 77.47 0)
+			(at 184.15 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2690,7 +2759,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 128.27 270)
+		(at 184.15 97.79 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2700,7 +2770,7 @@
 		(dnp no)
 		(uuid "c38992a8-32d6-42b1-8c4a-1c1222b38f89")
 		(property "Reference" "ROW13"
-			(at 190.15 128.27 90)
+			(at 190.15 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2711,7 +2781,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 129.921 90)
+			(at 189.738 96.139 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2723,7 +2793,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 128.27 0)
+			(at 184.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2734,7 +2804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 128.27 0)
+			(at 184.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2745,7 +2815,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 128.27 0)
+			(at 184.15 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2769,7 +2839,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 102.87 270)
+		(at 184.15 123.19 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2779,7 +2850,7 @@
 		(dnp no)
 		(uuid "c6c94e42-d9c7-469d-a6df-fd3675e21561")
 		(property "Reference" "ROW3"
-			(at 190.15 102.87 90)
+			(at 190.15 123.19 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2790,7 +2861,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 104.521 90)
+			(at 189.738 121.539 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2802,7 +2873,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 102.87 0)
+			(at 184.15 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +2884,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 102.87 0)
+			(at 184.15 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2824,7 +2895,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 102.87 0)
+			(at 184.15 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2926,7 +2997,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 107.95 270)
+		(at 184.15 118.11 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2936,7 +3008,7 @@
 		(dnp no)
 		(uuid "d6898942-3329-4947-885f-722808849749")
 		(property "Reference" "ROW5"
-			(at 190.15 107.95 90)
+			(at 190.15 118.11 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2947,7 +3019,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 109.601 90)
+			(at 189.738 116.459 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2959,7 +3031,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 107.95 0)
+			(at 184.15 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,7 +3042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 107.95 0)
+			(at 184.15 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2981,7 +3053,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 107.95 0)
+			(at 184.15 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3005,7 +3077,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 125.73 270)
+		(at 184.15 100.33 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3015,7 +3088,7 @@
 		(dnp no)
 		(uuid "e88383dc-c2c1-4a5f-aad3-c6a5b502a134")
 		(property "Reference" "ROW12"
-			(at 190.15 125.73 90)
+			(at 190.15 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3026,7 +3099,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 127.381 90)
+			(at 189.738 98.679 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3038,7 +3111,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 125.73 0)
+			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3049,7 +3122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 125.73 0)
+			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3060,7 +3133,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 125.73 0)
+			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3084,7 +3157,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 105.41 270)
+		(at 184.15 120.65 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3094,7 +3168,7 @@
 		(dnp no)
 		(uuid "ec121035-7a9a-4bc0-b293-bb371a841fb6")
 		(property "Reference" "ROW4"
-			(at 190.15 105.41 90)
+			(at 190.15 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3105,7 +3179,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 107.061 90)
+			(at 189.738 118.999 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3117,7 +3191,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 105.41 0)
+			(at 184.15 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3128,7 +3202,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 105.41 0)
+			(at 184.15 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3139,7 +3213,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 105.41 0)
+			(at 184.15 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3163,7 +3237,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 69.85 270)
+		(at 184.15 92.71 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3173,7 +3248,7 @@
 		(dnp no)
 		(uuid "f0563a8a-d985-49a8-8ce9-98b519669595")
 		(property "Reference" "COL1"
-			(at 190.15 69.85 90)
+			(at 190.15 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3184,7 +3259,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 71.501 90)
+			(at 189.738 91.059 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3196,7 +3271,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 69.85 0)
+			(at 184.15 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3207,7 +3282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 69.85 0)
+			(at 184.15 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3218,7 +3293,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 69.85 0)
+			(at 184.15 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3242,7 +3317,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 72.39 270)
+		(at 184.15 90.17 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3252,7 +3328,7 @@
 		(dnp no)
 		(uuid "f825e3e4-808e-4047-a3d7-5a916e87e845")
 		(property "Reference" "COL2"
-			(at 190.15 72.39 90)
+			(at 190.15 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3263,7 +3339,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 74.041 90)
+			(at 189.738 88.519 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3275,7 +3351,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 72.39 0)
+			(at 184.15 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3286,7 +3362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 72.39 0)
+			(at 184.15 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3297,7 +3373,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 72.39 0)
+			(at 184.15 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3321,7 +3397,8 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 184.15 82.55 270)
+		(at 184.15 80.01 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3331,7 +3408,7 @@
 		(dnp no)
 		(uuid "fa2dd8af-634a-421c-bba7-7b0255db6e7d")
 		(property "Reference" "COL6"
-			(at 190.15 82.55 90)
+			(at 190.15 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3342,7 +3419,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 189.738 84.201 90)
+			(at 189.738 78.359 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3354,7 +3431,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 184.15 82.55 0)
+			(at 184.15 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3365,7 +3442,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 82.55 0)
+			(at 184.15 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3376,7 +3453,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 184.15 82.55 0)
+			(at 184.15 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3620,6 +3697,9 @@
 		)
 		(pin "3"
 			(uuid "672936f5-71c8-4b7a-bb36-78e7ce3f273d")
+		)
+		(pin "53"
+			(uuid "4cc89c41-9921-464a-b288-6073f0350db1")
 		)
 		(instances
 			(project "touchpad"
