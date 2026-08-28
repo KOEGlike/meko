@@ -402,6 +402,34 @@
 			(embedded_fonts no)
 		)
 	)
+	(bus_entry
+		(at 109.22 93.98)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e764033-82a9-4cb6-acbb-0149142546fc")
+	)
+	(bus_entry
+		(at 109.22 91.44)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e773170e-81e2-4086-b028-6ef0a34740dd")
+	)
+	(wire
+		(pts
+			(xy 111.76 93.98) (xy 118.11 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "208f6f2f-c58d-47a0-9584-03e3202ddf20")
+	)
 	(wire
 		(pts
 			(xy 130.81 87.63) (xy 130.81 88.9)
@@ -412,6 +440,36 @@
 		)
 		(uuid "3b5ae5f3-880a-431c-9310-3d31ac525d69")
 	)
+	(bus
+		(pts
+			(xy 107.95 91.44) (xy 109.22 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63e125b9-511b-4d93-8b58-53751b94a03f")
+	)
+	(wire
+		(pts
+			(xy 114.3 101.6) (xy 118.11 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1112e6d-d89a-45d3-8121-ff7836406f8d")
+	)
+	(bus
+		(pts
+			(xy 109.22 91.44) (xy 109.22 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0dc14b2-ffc7-4029-a4fe-712cc3bc54fd")
+	)
 	(wire
 		(pts
 			(xy 130.81 109.22) (xy 130.81 110.49)
@@ -421,6 +479,26 @@
 			(type default)
 		)
 		(uuid "d733943b-1e8b-46e7-a2e5-056ca3d5270e")
+	)
+	(wire
+		(pts
+			(xy 114.3 104.14) (xy 118.11 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8f715a6-446b-476e-9c5b-e62b691164e5")
+	)
+	(wire
+		(pts
+			(xy 111.76 96.52) (xy 118.11 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7ea055-39f0-4dce-b1c7-0a9e7201ce9e")
 	)
 	(wire
 		(pts
@@ -441,6 +519,92 @@
 			(type default)
 		)
 		(uuid "f70c051c-30bf-40cf-a50d-c8a39791a09c")
+	)
+	(label "SDA"
+		(at 111.76 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e17aafd-1f13-462c-8122-21290147f010")
+	)
+	(label "SCL"
+		(at 111.76 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9d4bdc9-a644-48cb-9494-c2d97d76942d")
+	)
+	(hierarchical_label "TOUCH_~{RST}"
+		(shape input)
+		(at 167.64 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59ea43e9-48f7-4003-848c-7d2c232b9ce2")
+	)
+	(hierarchical_label "HAPT{I2C}"
+		(shape bidirectional)
+		(at 107.95 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "59f8351a-767b-418f-9b20-cecf99014980")
+	)
+	(hierarchical_label "TOUCH_~{INT}"
+		(shape output)
+		(at 167.64 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8df9daf5-8b22-429c-9bf0-0094afed084d")
+	)
+	(hierarchical_label "HAPT_~{INT}"
+		(shape output)
+		(at 114.3 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a407320d-69b7-494a-b447-962f3f599e22")
+	)
+	(hierarchical_label "HAPT_EN"
+		(shape input)
+		(at 114.3 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d8c133de-d5ef-4fd5-ae29-80e9c30b542c")
+	)
+	(hierarchical_label "TOUCH{I2C}"
+		(shape bidirectional)
+		(at 167.64 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e89c2ed9-ba3c-423a-a13c-cc08f13fba9d")
 	)
 	(symbol
 		(lib_id "power:GND")

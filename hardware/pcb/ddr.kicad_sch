@@ -4506,30 +4506,6 @@
 		(uuid "f77d2d93-ff87-4d85-9a8d-f2097501e2f6")
 	)
 	(global_label "DDR_VREF"
-		(shape output)
-		(at 176.53 76.2 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4c0d0b93-ec9b-400d-843c-66f07d0cb9b6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 188.889 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "DDR_VREF"
 		(shape input)
 		(at 144.78 118.11 0)
 		(fields_autoplaced yes)
@@ -4563,6 +4539,17 @@
 			(justify right)
 		)
 		(uuid "24a2e6c0-6a06-4ca6-bb97-7513030284b9")
+	)
+	(hierarchical_label "DDR_VREF"
+		(shape passive)
+		(at 176.53 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4c4127c9-7b90-415c-b068-178598b8dab7")
 	)
 	(hierarchical_label "{DDR_DATA}"
 		(shape bidirectional)
