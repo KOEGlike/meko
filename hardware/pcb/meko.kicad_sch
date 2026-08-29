@@ -17,6 +17,12 @@
 		)
 		(uuid "b6a4e341-8b74-4ca8-8788-ef5fbc99574b")
 	)
+	(junction
+		(at 69.85 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ab71a78-6322-4b13-b20d-326fac38e002")
+	)
 	(wire
 		(pts
 			(xy 100.33 114.3) (xy 100.33 120.65)
@@ -86,6 +92,16 @@
 			(type default)
 		)
 		(uuid "22d57c3f-654c-4c32-a725-14c247924e5a")
+	)
+	(bus
+		(pts
+			(xy 49.53 104.14) (xy 69.85 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d78b793-88af-4a10-8f3c-c13a212e1547")
 	)
 	(bus
 		(pts
@@ -189,6 +205,16 @@
 	)
 	(bus
 		(pts
+			(xy 69.85 104.14) (xy 73.66 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e8e3afd-eb19-4656-8d89-71c96a57eedf")
+	)
+	(bus
+		(pts
 			(xy 93.98 63.5) (xy 93.98 69.85)
 		)
 		(stroke
@@ -269,6 +295,16 @@
 	)
 	(bus
 		(pts
+			(xy 69.85 104.14) (xy 69.85 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e39b5b6d-04ae-4005-a229-2f21fb143bb2")
+	)
+	(bus
+		(pts
 			(xy 91.44 63.5) (xy 91.44 69.85)
 		)
 		(stroke
@@ -276,6 +312,16 @@
 			(type default)
 		)
 		(uuid "ed7f1eb2-8041-4d0c-b0b2-05f7968c3e79")
+	)
+	(bus
+		(pts
+			(xy 67.31 110.49) (xy 69.85 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc0ffc5-aee7-4092-b749-63390afba4c7")
 	)
 	(wire
 		(pts
@@ -306,6 +352,16 @@
 			(type default)
 		)
 		(uuid "f73e187d-5eae-4ee8-a224-046a79925214")
+	)
+	(bus
+		(pts
+			(xy 49.53 101.6) (xy 49.53 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa125b82-3cc3-43ea-8a62-de67deefa951")
 	)
 	(bus
 		(pts
@@ -740,6 +796,16 @@
 				(justify left)
 			)
 		)
+		(pin "{BUTTONS}" input
+			(at 73.66 104.14 180)
+			(uuid "70bdfdcb-0b39-4b7f-8543-d0a30e21038f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101"
@@ -805,8 +871,8 @@
 		)
 	)
 	(sheet
-		(at 49.53 69.85)
-		(size 17.78 12.7)
+		(at 46.99 69.85)
+		(size 20.32 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -821,7 +887,7 @@
 		)
 		(uuid "13ed9585-0f16-442f-add9-c716aca8a0ac")
 		(property "Sheetname" "USB"
-			(at 49.53 69.1384 0)
+			(at 46.99 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -832,7 +898,7 @@
 			)
 		)
 		(property "Sheetfile" "usb.kicad_sch"
-			(at 49.53 83.1346 0)
+			(at 46.99 83.1346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -937,13 +1003,12 @@
 		)
 	)
 	(sheet
-		(at 49.53 88.9)
-		(size 17.78 12.7)
+		(at 46.99 88.9)
+		(size 20.32 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -953,7 +1018,7 @@
 		)
 		(uuid "608c30f2-ff67-48b2-81d8-ecb6ade86a50")
 		(property "Sheetname" "Power"
-			(at 49.53 88.1884 0)
+			(at 46.99 88.1884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -964,7 +1029,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 49.53 102.1846 0)
+			(at 50.292 102.108 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1022,6 +1087,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "{BUTTONS}" input
+			(at 49.53 101.6 270)
+			(uuid "a380e6a4-5ced-4464-8887-07eea39e8081")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1331,8 +1406,8 @@
 		)
 	)
 	(sheet
-		(at 118.11 116.84)
-		(size 12.7 3.81)
+		(at 46.99 107.95)
+		(size 20.32 5.08)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1347,7 +1422,7 @@
 		)
 		(uuid "e40fc879-1a0f-4948-9e1c-6c4ee1733e71")
 		(property "Sheetname" "Buttons"
-			(at 118.11 116.1284 0)
+			(at 46.99 107.2384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1358,7 +1433,7 @@
 			)
 		)
 		(property "Sheetfile" "buttons.kicad_sch"
-			(at 118.11 121.2346 0)
+			(at 46.99 113.6146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1366,6 +1441,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "{BUTTONS}" output
+			(at 67.31 110.49 0)
+			(uuid "cb44a87e-c004-415d-84b9-56917a146d66")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
