@@ -945,212 +945,6 @@
 		(uuid "2a96b973-7b15-4eaf-ae44-05a299639549")
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "110cdd70-0908-4048-a870-b832376e90a0")
-		(property "Reference" "SW3"
-			(at 88.392 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 88.9 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 88.9 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 88.9 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ac0c57bd-435a-4441-858d-eedcd82b889f")
-		)
-		(pin "1"
-			(uuid "e30c0428-c5b6-499c-9ce1-249042185e86")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "117b83f2-87ed-4381-be36-d7d6e6b1cf7e")
-		(property "Reference" "SW1"
-			(at 88.392 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 88.9 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 88.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 88.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "392df491-cfa5-4126-b862-ad74b2c393d9")
-		)
-		(pin "1"
-			(uuid "ae1b6df1-f085-47c1-aabc-2190a1bdf0e3")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 99.06 52.07 90)
 		(mirror x)
@@ -1256,6 +1050,212 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
+		(at 88.9 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "355ea523-2014-49b7-ad04-570015f4b334")
+		(property "Reference" "SW9"
+			(at 88.646 72.644 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 88.9 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
+			(at 88.9 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 88.9 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SKRTLAE010 "
+			(at 88.9 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C110293"
+			(at 88.9 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e2fdfdca-2ab6-4d58-839f-532fc31865e5")
+		)
+		(pin "2"
+			(uuid "5d2d3d8a-64d2-444e-ae31-8a218e54a9f6")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 88.9 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3f989daf-b6a7-48fa-a853-b1cfc04afd96")
+		(property "Reference" "SW6"
+			(at 88.646 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 88.9 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
+			(at 88.9 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 88.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SKRTLAE010 "
+			(at 88.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C110293"
+			(at 88.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "353098e2-8a7e-4f22-b69a-2e53788dfcb3")
+		)
+		(pin "2"
+			(uuid "a25968c1-1471-4bf3-9e5b-34736d01a6b9")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
 		(at 88.9 62.23 0)
 		(unit 1)
 		(body_style 1)
@@ -1264,9 +1264,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4f7d75ec-f336-4530-a6c0-516bdec0535c")
-		(property "Reference" "SW2"
-			(at 88.392 59.69 0)
+		(uuid "4bfd0b57-7c65-4b9b-bc99-5636b2b42004")
+		(property "Reference" "SW7"
+			(at 88.646 59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1287,7 +1287,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 88.9 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -1320,7 +1320,7 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "MPN" "SKRTLAE010 "
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -1331,7 +1331,7 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "LCSC" "C110293"
 			(at 88.9 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -1341,17 +1341,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "f0dd756d-b9c8-474c-b324-c9b7efb819c7")
 		)
 		(pin "1"
-			(uuid "f63ad345-4c51-4542-9c3b-934cfb4a7db3")
+			(uuid "4793f389-5017-4d6e-9a8d-1ed73a6ae431")
+		)
+		(pin "2"
+			(uuid "9c84dec2-b46d-4206-b90e-08b7cbfa9ea8")
 		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
-					(reference "SW2")
+					(reference "SW7")
 					(unit 1)
 				)
 			)
@@ -1367,9 +1367,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9602bb75-f058-43b5-94cc-c79b4edf4041")
-		(property "Reference" "SW5"
-			(at 88.392 78.74 0)
+		(uuid "83cc5953-335e-4c12-85d2-f8437af08523")
+		(property "Reference" "SW10"
+			(at 88.646 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1390,7 +1390,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 			(at 88.9 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -1423,7 +1423,7 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "MPN" "SKRTLAE010 "
 			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1434,7 +1434,7 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "LCSC" "C110293"
 			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -1444,17 +1444,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "2c202763-fb82-46f6-a45a-bc34e3ebfd71")
 		)
 		(pin "1"
-			(uuid "83a71bd8-4eca-41da-a51b-ee20f4f77b54")
+			(uuid "49b6dd4d-08dd-46e5-a640-2c10154b1597")
+		)
+		(pin "2"
+			(uuid "45930891-fbb1-4327-9ee9-68418f36aefc")
 		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
-					(reference "SW5")
+					(reference "SW10")
 					(unit 1)
 				)
 			)
@@ -1644,7 +1644,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 88.9 74.93 0)
+		(at 88.9 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1652,9 +1652,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "dcb0a201-28aa-4766-9367-6ade7fc123a7")
-		(property "Reference" "SW4"
-			(at 88.392 72.39 0)
+		(uuid "df5ce764-d6ef-42ac-b984-5b94b1c73bcd")
+		(property "Reference" "SW8"
+			(at 88.646 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1665,7 +1665,7 @@
 			)
 		)
 		(property "Value" "SW_Push"
-			(at 88.9 69.85 0)
+			(at 88.9 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1675,8 +1675,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 88.9 69.85 0)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
+			(at 88.9 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1687,7 +1687,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 69.85 0)
+			(at 88.9 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1698,7 +1698,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 74.93 0)
+			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1708,8 +1708,8 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
-			(at 88.9 74.93 0)
+		(property "MPN" "SKRTLAE010 "
+			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1719,8 +1719,8 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
-			(at 88.9 74.93 0)
+		(property "LCSC" "C110293"
+			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1729,17 +1729,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "3c0e2c11-7593-45b8-a5e7-b21b685f4f8f")
 		)
 		(pin "1"
-			(uuid "6d24c053-89c9-491f-8c1f-938061aff0ff")
+			(uuid "3ed924cf-4b8b-4a12-98c7-6123875daac2")
+		)
+		(pin "2"
+			(uuid "b449f6d3-e656-4fb7-96ac-653d15c88491")
 		)
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/e40fc879-1a0f-4948-9e1c-6c4ee1733e71"
-					(reference "SW4")
+					(reference "SW8")
 					(unit 1)
 				)
 			)
