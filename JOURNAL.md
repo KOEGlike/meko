@@ -263,7 +263,7 @@ Wired up the PMIC pwr signals, and added a JTAG connector:
 
 ## *Time Spent: 6h*
 
-# 2026.08.20: Audio, SD cards, RF, Touchpad
+# 2026.08.26: Audio, SD cards, RF, Touchpad
 
 _I have done a lot of stuff_
 
@@ -446,3 +446,52 @@ I then proceeded to cold email this guy asking if he would send me his driver ðŸ
 After I sent my email, I looked if the IQS7211 had a Linux driver. It had. But when I opened the source code, guess who was the maintainer, Jeff LaBundy.
 
 ## *Time Spent: 14h*
+
+# 2026.09.01: Switched out RAM, working on touchpad, looking over schematic
+
+## Ram
+
+Microchip responded to my support case, and said that they wrong before about LPDDR3 and using x32 memory with the SAMA7. Turns out I would only get half the capacity I did use LPDDR3. So I switched to DDR3L. This wasn't that hard, since KiCAD already had the most popular DDR3L in its built in library. And the rest was just matching labels and looking at example designs. I also had to swap from the MCP16502AD PMIC to MCP16502AB, because the AD variant is for LPDDR and the AB is for regular DDR3/L.
+
+![DDR3L](https://cdn.hackclub.com/01a05c3a-20f9-750c-bff2-9c77f0fbe30f/image.png)
+
+## Touchpad
+
+### IQS9151 driver
+
+Jeff LaBundy responded to my email with a [link](https://github.com/jlabundy/linux/tree/iqs9150-release) to the driver!!!! It was sitting in a obscure github repo.
+
+### Generated PCB
+
+![generated PCB](https://cdn.hackclub.com/01a05c3f-b2fe-731c-8e64-1dbbe118204a/image.png)
+
+As mentioned in the previous journal entry, I used a generator. It was pretty easy, I had to install OpenSCAD and the rest was just modifying variables to fit my needs.
+
+### Trying to fit a QFN52 on the back
+
+After I made the symbol for the IQS9151, I realized that it had a QFN52 6mmx6mm package, which I needed to fit on the back of the touchpad. The issue is that the touchpad has a bunch of VIAs, which make it impossible to use a normal QFN52 footprint, so I modified it:
+
+![modified footprint](https://cdn.hackclub.com/01a05c43-b6de-7811-a901-05ec724e71da/image.png)
+
+I than asked for feedback on my design in the KiCAD discord and on Reddit, and everybody said that this will not work ðŸ˜­ 
+A Lot of people recommended a bunch of complicated solutions, but Ebastler recommended to put the IC on a second PCB with castellated pads along the edge, then hand solder that small PCB onto the large one. This seems like the best solution! But it's still more complicated then I want. So I might just switch to the IQS7211E, which has a way smaller footprint, but also has less channels, so the resolution will be worse.
+
+If I do switch out the trackpad IC, I will have to regenerate the PCB and maybe make a new symbol
+
+## Looking over the main schematic
+
+I found a few places where I needed to add pull-up/pull-down resistors, was an easy fix.
+
+I also added a bunch of decoupling caps to the ICs that needed it
+
+![bunch of caps](https://cdn.hackclub.com/01a05c4f-1aa7-7087-a46f-6e1261914bbc/image.png)
+
+I also found a footprint for my power path IC:
+
+![power path IC footprint](https://cdn.hackclub.com/01a05c50-afe9-7066-ad70-42cc26e82f4a/image.png)
+
+I also assigned a bunch of footprints and choose a bunch of parts from LCSC:
+
+![footprints](https://cdn.hackclub.com/01a05c52-0bec-727c-a5c8-0322320f0d3d/image.png)
+
+## *Time Spent: 10h*
