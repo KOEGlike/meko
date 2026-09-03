@@ -36279,16 +36279,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 137.16) (xy 121.92 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a65cd17a-c884-4cc9-ada6-adca4b7f1aff")
-	)
-	(wire
-		(pts
 			(xy 490.22 266.7) (xy 490.22 270.51)
 		)
 		(stroke
@@ -48418,7 +48408,7 @@
 		(uuid "72a2d267-c0f8-4c51-9ce3-70aaeafa72b7")
 	)
 	(hierarchical_label "TOUCH_~{INT}"
-		(shape input)
+		(shape bidirectional)
 		(at 121.92 134.62 0)
 		(effects
 			(font
@@ -48449,17 +48439,6 @@
 			(justify left)
 		)
 		(uuid "82e4940d-a77a-447e-804b-3fd77b809496")
-	)
-	(hierarchical_label "TOUCH_~{RST}"
-		(shape output)
-		(at 121.92 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "840c3b44-d845-4bb1-85cf-dc62be87d54f")
 	)
 	(hierarchical_label "WIFI{SDMMC}"
 		(shape bidirectional)

@@ -540,17 +540,6 @@
 		)
 		(uuid "d9d4bdc9-a644-48cb-9494-c2d97d76942d")
 	)
-	(hierarchical_label "TOUCH_~{RST}"
-		(shape input)
-		(at 167.64 99.06 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "59ea43e9-48f7-4003-848c-7d2c232b9ce2")
-	)
 	(hierarchical_label "HAPT{I2C}"
 		(shape bidirectional)
 		(at 107.95 91.44 180)
@@ -563,7 +552,7 @@
 		(uuid "59f8351a-767b-418f-9b20-cecf99014980")
 	)
 	(hierarchical_label "TOUCH_~{INT}"
-		(shape output)
+		(shape bidirectional)
 		(at 167.64 96.52 180)
 		(effects
 			(font

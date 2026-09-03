@@ -225,7 +225,7 @@
 	)
 	(bus
 		(pts
-			(xy 125.73 119.38) (xy 125.73 125.73)
+			(xy 127 119.38) (xy 127 125.73)
 		)
 		(stroke
 			(width 0)
@@ -285,7 +285,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 119.38) (xy 128.27 125.73)
+			(xy 129.54 119.38) (xy 129.54 125.73)
 		)
 		(stroke
 			(width 0)
@@ -322,16 +322,6 @@
 			(type default)
 		)
 		(uuid "edc0ffc5-aee7-4092-b749-63390afba4c7")
-	)
-	(wire
-		(pts
-			(xy 130.81 119.38) (xy 130.81 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6276a9c-b126-4e21-9066-9ee7e50ece79")
 	)
 	(bus
 		(pts
@@ -736,8 +726,8 @@
 				(justify left)
 			)
 		)
-		(pin "TOUCH_~{INT}" input
-			(at 128.27 119.38 270)
+		(pin "TOUCH_~{INT}" bidirectional
+			(at 129.54 119.38 270)
 			(uuid "71845b4d-1506-44e4-8a54-5c95d6f52870")
 			(effects
 				(font
@@ -746,18 +736,8 @@
 				(justify left)
 			)
 		)
-		(pin "TOUCH_~{RST}" output
-			(at 130.81 119.38 270)
-			(uuid "84f59f27-61e1-4420-a073-cb751243259a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "TOUCH{I2C}" bidirectional
-			(at 125.73 119.38 270)
+			(at 127 119.38 270)
 			(uuid "1286a617-67c6-4488-b501-aba0d9c85f8b")
 			(effects
 				(font
@@ -1204,8 +1184,8 @@
 		)
 	)
 	(sheet
-		(at 123.19 125.73)
-		(size 17.78 25.4)
+		(at 124.46 125.73)
+		(size 16.51 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1220,7 +1200,7 @@
 		)
 		(uuid "7a0a8608-fb91-40ee-9ae1-ac8166908c37")
 		(property "Sheetname" "Touch Pad"
-			(at 122.4784 151.13 90)
+			(at 123.7484 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1271,8 +1251,8 @@
 				(justify right)
 			)
 		)
-		(pin "TOUCH_~{INT}" output
-			(at 128.27 125.73 90)
+		(pin "TOUCH_~{INT}" bidirectional
+			(at 129.54 125.73 90)
 			(uuid "dbfc1824-bcac-4a3f-b20d-d5989c116819")
 			(effects
 				(font
@@ -1281,18 +1261,8 @@
 				(justify right)
 			)
 		)
-		(pin "TOUCH_~{RST}" input
-			(at 130.81 125.73 90)
-			(uuid "0e2502db-4f03-4cde-870c-ae700959b832")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "TOUCH{I2C}" bidirectional
-			(at 125.73 125.73 90)
+			(at 127 125.73 90)
 			(uuid "aa3689d1-ccea-4a41-a36a-5abcebc682b4")
 			(effects
 				(font
