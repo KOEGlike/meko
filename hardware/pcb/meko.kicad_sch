@@ -5,7 +5,7 @@
 	(uuid "da54f10a-146b-4941-a9c7-55c7173bb101")
 	(paper "A4")
 	(title_block
-		(title "Power")
+		(title "Overview")
 		(rev "v1.0.0")
 		(company "Gensis")
 	)
@@ -30,7 +30,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 119.38) (xy 138.43 125.73)
+			(xy 135.89 119.38) (xy 135.89 125.73)
 		)
 		(stroke
 			(width 0)
@@ -147,16 +147,6 @@
 			(type default)
 		)
 		(uuid "387b3596-8ef1-4bee-be2c-ccd9af2c17bb")
-	)
-	(wire
-		(pts
-			(xy 135.89 119.38) (xy 135.89 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a34db07-feb5-4468-9413-ecb6cd37cd1f")
 	)
 	(wire
 		(pts
@@ -369,8 +359,8 @@
 		(uuid "fc4a693c-2f68-47d4-909a-1d11805ead7f")
 	)
 	(sheet
-		(at 119.38 40.64)
-		(size 15.24 27.94)
+		(at 119.38 45.72)
+		(size 15.24 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -712,18 +702,8 @@
 			)
 		)
 		(pin "HAPT_EN" output
-			(at 138.43 119.38 270)
-			(uuid "1129a281-7d29-4cc5-a979-6bd23ecf7ca9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "HAPT_~{INT}" input
 			(at 135.89 119.38 270)
-			(uuid "893b1a3b-1104-40f1-a735-5838b68a2715")
+			(uuid "1129a281-7d29-4cc5-a979-6bd23ecf7ca9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1190,7 +1170,7 @@
 	)
 	(sheet
 		(at 124.46 125.73)
-		(size 16.51 25.4)
+		(size 13.97 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1216,7 +1196,7 @@
 			)
 		)
 		(property "Sheetfile" "touchpad.kicad_sch"
-			(at 141.5546 151.13 90)
+			(at 139.0146 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1227,18 +1207,8 @@
 			)
 		)
 		(pin "HAPT_EN" input
-			(at 138.43 125.73 90)
-			(uuid "cded3082-f454-4d35-83b1-e276ea6cd1b3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "HAPT_~{INT}" output
 			(at 135.89 125.73 90)
-			(uuid "d54c1954-43a7-481d-b16f-de77b4467e09")
+			(uuid "cded3082-f454-4d35-83b1-e276ea6cd1b3")
 			(effects
 				(font
 					(size 1.27 1.27)
