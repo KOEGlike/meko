@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "da54f10a-146b-4941-a9c7-55c7173bb101")
 	(paper "A4")
+	(title_block
+		(title "Power")
+		(rev "v1.0.0")
+		(company "Gensis")
+	)
 	(lib_symbols)
 	(text "SAMA7"
 		(exclude_from_sim no)
@@ -1199,7 +1204,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "7a0a8608-fb91-40ee-9ae1-ac8166908c37")
-		(property "Sheetname" "Touch Pad"
+		(property "Sheetname" "Touchpad"
 			(at 123.7484 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1210,7 +1215,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "touch_pad.kicad_sch"
+		(property "Sheetfile" "touchpad.kicad_sch"
 			(at 141.5546 151.13 90)
 			(show_name no)
 			(do_not_autoplace no)

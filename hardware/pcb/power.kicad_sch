@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "eca7aadf-91f7-457b-8792-3e04cf73cfb2")
 	(paper "A3")
+	(title_block
+		(title "Power")
+		(rev "v1.0.0")
+		(company "Gensis")
+	)
 	(lib_symbols
 		(symbol "BQ25640:BQ25640"
 			(exclude_from_sim no)
@@ -3606,6 +3611,16 @@
 			)
 		)
 		(uuid "37926a25-392a-4f8e-b806-3e394edc8585")
+	)
+	(text "VSYS follows the voltage of the battery"
+		(exclude_from_sim no)
+		(at 166.624 69.596 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "384c9051-f46b-4e88-a806-ec85d859f7fa")
 	)
 	(text "0x36/0x1A"
 		(exclude_from_sim no)
