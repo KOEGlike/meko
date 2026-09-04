@@ -407,6 +407,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Connector for the trackpad depends on the layout of the PCB\n\nWill be chosen later"
+		(exclude_from_sim no)
+		(at 201.93 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca1faed7-7eb1-428c-b1a3-3c32f2baa3ae")
+	)
 	(bus_entry
 		(at 109.22 93.98)
 		(size 2.54 2.54)
@@ -558,7 +569,7 @@
 	)
 	(hierarchical_label "TOUCH_~{INT}"
 		(shape bidirectional)
-		(at 182.88 95.25 180)
+		(at 199.39 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -591,7 +602,7 @@
 	)
 	(hierarchical_label "TOUCH{I2C}"
 		(shape bidirectional)
-		(at 182.88 92.71 180)
+		(at 199.39 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
