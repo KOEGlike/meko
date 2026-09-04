@@ -5508,30 +5508,6 @@
 		)
 		(uuid "f77d2d93-ff87-4d85-9a8d-f2097501e2f6")
 	)
-	(global_label "DDR_VREF"
-		(shape input)
-		(at 144.78 118.11 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "df544c44-e5bc-40aa-887a-7c8cbc9a971d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.139 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(hierarchical_label "{DDR_CLOCK}"
 		(shape input)
 		(at 91.44 115.57 180)
@@ -5564,6 +5540,17 @@
 			(justify left)
 		)
 		(uuid "55812bdf-c602-44c9-9731-4751d47611ba")
+	)
+	(hierarchical_label "DDR_VREF"
+		(shape passive)
+		(at 144.78 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5b0bfa8d-29b4-49d4-aa99-40feb1ce9732")
 	)
 	(hierarchical_label "{DDR_COMMAND}"
 		(shape input)
