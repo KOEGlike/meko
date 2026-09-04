@@ -3,13 +3,14 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
 	(symbol "SAMA7D65-4HB"
+		(body_styles demorgan)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 45.72 0)
+			(at 0 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19,7 +20,7 @@
 			)
 		)
 		(property "Value" "SAMA7D65-4HB"
-			(at 0 43.434 0)
+			(at 0 58.166 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3346,8 +3347,8 @@
 		(symbol "SAMA7D65-4HB_4_0"
 			(unit_name "GPIO A&B")
 			(rectangle
-				(start -22.86 41.91)
-				(end 22.86 -41.91)
+				(start -27.94 41.91)
+				(end 27.94 -41.91)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -3357,7 +3358,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 27.94 -36.83 180)
+				(at 33.02 -36.83 180)
 				(length 5.08)
 				(name "PB30"
 					(effects
@@ -3382,7 +3383,7 @@
 				(alternate "TIOA1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -24.13 180)
+				(at 33.02 -24.13 180)
 				(length 5.08)
 				(name "PB25"
 					(effects
@@ -3403,7 +3404,7 @@
 				(alternate "TIOB2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -26.67 180)
+				(at 33.02 -26.67 180)
 				(length 5.08)
 				(name "PB26"
 					(effects
@@ -3424,7 +3425,7 @@
 				(alternate "TCLK2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -19.05 0)
+				(at -33.02 -19.05 0)
 				(length 5.08)
 				(name "PA23"
 					(effects
@@ -3446,7 +3447,7 @@
 				(alternate "RK0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -21.59 180)
+				(at 33.02 -21.59 180)
 				(length 5.08)
 				(name "PB24"
 					(effects
@@ -3466,7 +3467,7 @@
 				(alternate "SDMMC1_DAT0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -24.13 0)
+				(at -33.02 -24.13 0)
 				(length 5.08)
 				(name "PA25"
 					(effects
@@ -3487,7 +3488,7 @@
 				(alternate "G0_TXEN" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -31.75 180)
+				(at 33.02 -31.75 180)
 				(length 5.08)
 				(name "PB28"
 					(effects
@@ -3509,7 +3510,7 @@
 				(alternate "SDMMC1_WP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -39.37 180)
+				(at 33.02 -39.37 180)
 				(length 5.08)
 				(name "PB31"
 					(effects
@@ -3535,7 +3536,7 @@
 				(alternate "TCLK1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -29.21 180)
+				(at 33.02 -29.21 180)
 				(length 5.08)
 				(name "PB27"
 					(effects
@@ -3556,7 +3557,7 @@
 				(alternate "TIOA2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -16.51 180)
+				(at 33.02 -16.51 180)
 				(length 5.08)
 				(name "PB22"
 					(effects
@@ -3577,7 +3578,7 @@
 				(alternate "TCLK2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 21.59 180)
+				(at 33.02 21.59 180)
 				(length 5.08)
 				(name "PB7"
 					(effects
@@ -3599,7 +3600,7 @@
 				(alternate "RF0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -29.21 0)
+				(at -33.02 -29.21 0)
 				(length 5.08)
 				(name "PA27"
 					(effects
@@ -3619,7 +3620,7 @@
 				(alternate "G0_TX1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -19.05 180)
+				(at 33.02 -19.05 180)
 				(length 5.08)
 				(name "PB23"
 					(effects
@@ -3640,7 +3641,7 @@
 				(alternate "TIOA2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -13.97 180)
+				(at 33.02 -13.97 180)
 				(length 5.08)
 				(name "PB21"
 					(effects
@@ -3663,7 +3664,7 @@
 				(alternate "TIOB2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -34.29 0)
+				(at -33.02 -34.29 0)
 				(length 5.08)
 				(name "PA29"
 					(effects
@@ -3683,7 +3684,7 @@
 				(alternate "G0_RX0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -39.37 0)
+				(at -33.02 -39.37 0)
 				(length 5.08)
 				(name "PA31"
 					(effects
@@ -3703,7 +3704,7 @@
 				(alternate "G0_MDC" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -34.29 180)
+				(at 33.02 -34.29 180)
 				(length 5.08)
 				(name "PB29"
 					(effects
@@ -3726,7 +3727,7 @@
 				(alternate "SDMMC1_CD" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 36.83 180)
+				(at 33.02 36.83 180)
 				(length 5.08)
 				(name "PB1"
 					(effects
@@ -3747,7 +3748,7 @@
 				(alternate "G0_TXCK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 34.29 180)
+				(at 33.02 34.29 180)
 				(length 5.08)
 				(name "PB2"
 					(effects
@@ -3769,7 +3770,7 @@
 				(alternate "RK0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 29.21 180)
+				(at 33.02 29.21 180)
 				(length 5.08)
 				(name "PB4"
 					(effects
@@ -3790,7 +3791,7 @@
 				(alternate "TF0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 26.67 180)
+				(at 33.02 26.67 180)
 				(length 5.08)
 				(name "PB5"
 					(effects
@@ -3811,7 +3812,7 @@
 				(alternate "TD0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 31.75 180)
+				(at 33.02 31.75 180)
 				(length 5.08)
 				(name "PB3"
 					(effects
@@ -3832,7 +3833,7 @@
 				(alternate "TK0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 24.13 180)
+				(at 33.02 24.13 180)
 				(length 5.08)
 				(name "PB6"
 					(effects
@@ -3853,7 +3854,7 @@
 				(alternate "RD0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -26.67 0)
+				(at -33.02 -26.67 0)
 				(length 5.08)
 				(name "PA26"
 					(effects
@@ -3873,7 +3874,7 @@
 				(alternate "G0_TX0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -36.83 0)
+				(at -33.02 -36.83 0)
 				(length 5.08)
 				(name "PA30"
 					(effects
@@ -3893,7 +3894,7 @@
 				(alternate "G0_RX1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -31.75 0)
+				(at -33.02 -31.75 0)
 				(length 5.08)
 				(name "PA28"
 					(effects
@@ -3914,7 +3915,7 @@
 				(alternate "G0_RXCTL" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -8.89 180)
+				(at 33.02 -8.89 180)
 				(length 5.08)
 				(name "PB19"
 					(effects
@@ -3938,7 +3939,7 @@
 				(alternate "TIOB5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 39.37 180)
+				(at 33.02 39.37 180)
 				(length 5.08)
 				(name "PB0"
 					(effects
@@ -3958,7 +3959,7 @@
 				(alternate "G0_MDIO" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -11.43 180)
+				(at 33.02 -11.43 180)
 				(length 5.08)
 				(name "PB20"
 					(effects
@@ -3981,7 +3982,7 @@
 				(alternate "TCLK5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -3.81 180)
+				(at 33.02 -3.81 180)
 				(length 5.08)
 				(name "PB17"
 					(effects
@@ -4005,7 +4006,7 @@
 				(alternate "TIOA4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 1.27 180)
+				(at 33.02 1.27 180)
 				(length 5.08)
 				(name "PB15"
 					(effects
@@ -4030,7 +4031,7 @@
 				(alternate "TCLK4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 1.27 0)
+				(at -33.02 1.27 0)
 				(length 5.08)
 				(name "PA15"
 					(effects
@@ -4051,7 +4052,7 @@
 				(alternate "SDMMC0_1V8SEL" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 6.35 180)
+				(at 33.02 6.35 180)
 				(length 5.08)
 				(name "PB13"
 					(effects
@@ -4073,7 +4074,7 @@
 				(alternate "TCLK3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 3.81 180)
+				(at 33.02 3.81 180)
 				(length 5.08)
 				(name "PB14"
 					(effects
@@ -4097,7 +4098,7 @@
 				(alternate "QSPI1_SCK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -1.27 180)
+				(at 33.02 -1.27 180)
 				(length 5.08)
 				(name "PB16"
 					(effects
@@ -4121,7 +4122,7 @@
 				(alternate "TIOB4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 -6.35 180)
+				(at 33.02 -6.35 180)
 				(length 5.08)
 				(name "PB18"
 					(effects
@@ -4145,7 +4146,7 @@
 				(alternate "TIOA5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -21.59 0)
+				(at -33.02 -21.59 0)
 				(length 5.08)
 				(name "PA24"
 					(effects
@@ -4167,7 +4168,7 @@
 				(alternate "RF0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -16.51 0)
+				(at -33.02 -16.51 0)
 				(length 5.08)
 				(name "PA22"
 					(effects
@@ -4189,7 +4190,7 @@
 				(alternate "RD0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 6.35 0)
+				(at -33.02 6.35 0)
 				(length 5.08)
 				(name "PA13"
 					(effects
@@ -4212,7 +4213,7 @@
 				(alternate "TCLK3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 11.43 0)
+				(at -33.02 11.43 0)
 				(length 5.08)
 				(name "PA11"
 					(effects
@@ -4234,7 +4235,7 @@
 				(alternate "TIOB3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 21.59 0)
+				(at -33.02 21.59 0)
 				(length 5.08)
 				(name "PA7"
 					(effects
@@ -4256,7 +4257,7 @@
 				(alternate "TIOA4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 29.21 0)
+				(at -33.02 29.21 0)
 				(length 5.08)
 				(name "PA4"
 					(effects
@@ -4277,7 +4278,7 @@
 				(alternate "SDMMC0_DAT1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 13.97 180)
+				(at 33.02 13.97 180)
 				(length 5.08)
 				(name "PB10"
 					(effects
@@ -4298,7 +4299,7 @@
 				(alternate "QSPI0_IO1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 8.89 180)
+				(at 33.02 8.89 180)
 				(length 5.08)
 				(name "PB12"
 					(effects
@@ -4320,7 +4321,7 @@
 				(alternate "TIOA3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -3.81 0)
+				(at -33.02 -3.81 0)
 				(length 5.08)
 				(name "PA17"
 					(effects
@@ -4339,7 +4340,7 @@
 				(alternate "FLEXCOM4_IO1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -11.43 0)
+				(at -33.02 -11.43 0)
 				(length 5.08)
 				(name "PA20"
 					(effects
@@ -4361,7 +4362,7 @@
 				(alternate "TD0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 13.97 0)
+				(at -33.02 13.97 0)
 				(length 5.08)
 				(name "PA10"
 					(effects
@@ -4383,7 +4384,7 @@
 				(alternate "TCLK5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 19.05 0)
+				(at -33.02 19.05 0)
 				(length 5.08)
 				(name "PA8"
 					(effects
@@ -4405,7 +4406,7 @@
 				(alternate "TIOA5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 34.29 0)
+				(at -33.02 34.29 0)
 				(length 5.08)
 				(name "PA2"
 					(effects
@@ -4427,7 +4428,7 @@
 				(alternate "SDMMC0_RSTN" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 16.51 180)
+				(at 33.02 16.51 180)
 				(length 5.08)
 				(name "PB9"
 					(effects
@@ -4448,7 +4449,7 @@
 				(alternate "QSPI0_IO2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 11.43 180)
+				(at 33.02 11.43 180)
 				(length 5.08)
 				(name "PB11"
 					(effects
@@ -4470,7 +4471,7 @@
 				(alternate "TIOB3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 24.13 0)
+				(at -33.02 24.13 0)
 				(length 5.08)
 				(name "PA6"
 					(effects
@@ -4492,7 +4493,7 @@
 				(alternate "TIOB4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 31.75 0)
+				(at -33.02 31.75 0)
 				(length 5.08)
 				(name "PA3"
 					(effects
@@ -4513,7 +4514,7 @@
 				(alternate "SDMMC0_DAT0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 27.94 19.05 180)
+				(at 33.02 19.05 180)
 				(length 5.08)
 				(name "PB8"
 					(effects
@@ -4534,7 +4535,7 @@
 				(alternate "QSPI0_IO3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 16.51 0)
+				(at -33.02 16.51 0)
 				(length 5.08)
 				(name "PA9"
 					(effects
@@ -4556,7 +4557,7 @@
 				(alternate "TIOB5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 39.37 0)
+				(at -33.02 39.37 0)
 				(length 5.08)
 				(name "PA0"
 					(effects
@@ -4579,7 +4580,7 @@
 				(alternate "SDMMC0_CK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 3.81 0)
+				(at -33.02 3.81 0)
 				(length 5.08)
 				(name "PA14"
 					(effects
@@ -4600,7 +4601,7 @@
 				(alternate "SDMMC0_WP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -1.27 0)
+				(at -33.02 -1.27 0)
 				(length 5.08)
 				(name "PA16"
 					(effects
@@ -4622,7 +4623,7 @@
 				(alternate "SDMMC0_CD" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 26.67 0)
+				(at -33.02 26.67 0)
 				(length 5.08)
 				(name "PA5"
 					(effects
@@ -4644,7 +4645,7 @@
 				(alternate "TCLK4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 36.83 0)
+				(at -33.02 36.83 0)
 				(length 5.08)
 				(name "PA1"
 					(effects
@@ -4666,7 +4667,7 @@
 				(alternate "SDMMC0_CMD" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 8.89 0)
+				(at -33.02 8.89 0)
 				(length 5.08)
 				(name "PA12"
 					(effects
@@ -4690,7 +4691,7 @@
 				(alternate "TIOA3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -6.35 0)
+				(at -33.02 -6.35 0)
 				(length 5.08)
 				(name "PA18"
 					(effects
@@ -4709,7 +4710,7 @@
 				(alternate "FLEXCOM4_IO0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -8.89 0)
+				(at -33.02 -8.89 0)
 				(length 5.08)
 				(name "PA19"
 					(effects
@@ -4730,7 +4731,7 @@
 				(alternate "TK0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -27.94 -13.97 0)
+				(at -33.02 -13.97 0)
 				(length 5.08)
 				(name "PA21"
 					(effects
@@ -4755,6 +4756,42 @@
 			(unit_name "GPIO A&B")
 			(polyline
 				(pts
+					(xy -21.59 40.64) (xy -3.175 40.64) (xy -3.175 5.08) (xy -21.59 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.175 5.08) (xy -3.175 -22.86) (xy -21.59 -22.86)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.175 -22.86) (xy -3.175 -40.64) (xy -21.59 -40.64)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy 0 40.64) (xy 0 -40.64)
 				)
 				(stroke
@@ -4765,28 +4802,141 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy 3.175 20.32) (xy 3.175 -12.7) (xy 21.59 -12.7)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.175 -12.7) (xy 3.175 -30.48) (xy 21.59 -30.48)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.175 -30.48) (xy 3.175 -40.64) (xy 21.59 -40.64)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 21.59 40.64) (xy 3.175 40.64) (xy 3.175 20.32) (xy 21.59 20.32)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "VDDSDMMC0"
+				(at -2.794 22.86 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
+			(text "VDDIOP0"
+				(at -2.794 -8.89 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
+			(text "VDDGMAC0"
+				(at -2.794 -31.496 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
 			(text "A"
-				(at -2.794 0.762 0)
+				(at -0.508 0.762 0)
 				(effects
 					(font
 						(size 1.905 1.905)
 					)
+					(justify right)
 				)
 			)
 			(text "B"
-				(at 2.54 0.762 0)
+				(at 0.508 0.762 0)
 				(effects
 					(font
 						(size 1.905 1.905)
 					)
+					(justify left)
+				)
+			)
+			(text "VDDGMAC0"
+				(at 2.794 30.48 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(text "VDDQSPI0"
+				(at 2.794 10.414 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(text "VDDSDMMC1"
+				(at 2.794 -21.59 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(text "VDDIN33"
+				(at 2.794 -35.56 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
 				)
 			)
 		)
 		(symbol "SAMA7D65-4HB_5_0"
 			(unit_name "GPIO C&D&E")
 			(rectangle
-				(start -17.78 53.34)
-				(end 17.78 -53.34)
+				(start -27.94 53.34)
+				(end 27.94 -53.34)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -4796,7 +4946,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -22.86 -7.62 0)
+				(at -33.02 -7.62 0)
 				(length 5.08)
 				(name "PC23"
 					(effects
@@ -4815,7 +4965,7 @@
 				(alternate "TCK_SWCLK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -27.94 0)
+				(at -33.02 -27.94 0)
 				(length 5.08)
 				(name "PC31"
 					(effects
@@ -4839,7 +4989,7 @@
 				(alternate "TIOB0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 48.26 180)
+				(at 33.02 48.26 180)
 				(length 5.08)
 				(name "PD1"
 					(effects
@@ -4861,7 +5011,7 @@
 				(alternate "SDMMC2_WP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 38.1 180)
+				(at 33.02 38.1 180)
 				(length 5.08)
 				(name "PD5"
 					(effects
@@ -4883,7 +5033,7 @@
 				(alternate "TCLK0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 33.02 180)
+				(at 33.02 33.02 180)
 				(length 5.08)
 				(name "PD7"
 					(effects
@@ -4904,7 +5054,7 @@
 				(alternate "LCDC_DISP" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -45.72 0)
+				(at -33.02 -45.72 0)
 				(length 5.08)
 				(name "PE4"
 					(effects
@@ -4928,7 +5078,7 @@
 				(alternate "TIOA3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -50.8 0)
+				(at -33.02 -50.8 0)
 				(length 5.08)
 				(name "PE6"
 					(effects
@@ -4952,7 +5102,7 @@
 				(alternate "TCLK3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -38.1 180)
+				(at 33.02 -38.1 180)
 				(length 5.08)
 				(name "PE8"
 					(effects
@@ -4976,7 +5126,7 @@
 				(alternate "TIOB4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -48.26 180)
+				(at 33.02 -48.26 180)
 				(length 5.08)
 				(name "PE12"
 					(effects
@@ -5000,7 +5150,7 @@
 				(alternate "TCLK5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -43.18 180)
+				(at 33.02 -43.18 180)
 				(length 5.08)
 				(name "PE10"
 					(effects
@@ -5024,7 +5174,7 @@
 				(alternate "TIOA5" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 33.02 0)
+				(at -33.02 33.02 0)
 				(length 5.08)
 				(name "PC7"
 					(effects
@@ -5046,7 +5196,7 @@
 				(alternate "I3CC_SDA" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -12.7 0)
+				(at -33.02 -12.7 0)
 				(length 5.08)
 				(name "PC25"
 					(effects
@@ -5065,7 +5215,7 @@
 				(alternate "TDI" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -22.86 0)
+				(at -33.02 -22.86 0)
 				(length 5.08)
 				(name "PC29"
 					(effects
@@ -5088,7 +5238,7 @@
 				(alternate "TK1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 43.18 180)
+				(at 33.02 43.18 180)
 				(length 5.08)
 				(name "PD3"
 					(effects
@@ -5111,7 +5261,7 @@
 				(alternate "TIOA0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -25.4 180)
+				(at 33.02 -25.4 180)
 				(length 5.08)
 				(name "PD30"
 					(effects
@@ -5134,7 +5284,7 @@
 				(alternate "PDMC1_DS1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 22.86 0)
+				(at -33.02 22.86 0)
 				(length 5.08)
 				(name "PC11"
 					(effects
@@ -5157,7 +5307,7 @@
 				(alternate "PDMC1_DS0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 40.64 0)
+				(at -33.02 40.64 0)
 				(length 5.08)
 				(name "PC4"
 					(effects
@@ -5180,7 +5330,7 @@
 				(alternate "SPDIF_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 0 0)
+				(at -33.02 0 0)
 				(length 5.08)
 				(name "PC20"
 					(effects
@@ -5201,7 +5351,7 @@
 				(alternate "I2SMCC0_DOUT0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 48.26 0)
+				(at -33.02 48.26 0)
 				(length 5.08)
 				(name "PC1"
 					(effects
@@ -5223,7 +5373,7 @@
 				(alternate "SMCK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -17.78 0)
+				(at -33.02 -17.78 0)
 				(length 5.08)
 				(name "PC27"
 					(effects
@@ -5245,7 +5395,7 @@
 				(alternate "TD1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 50.8 180)
+				(at 33.02 50.8 180)
 				(length 5.08)
 				(name "PD0"
 					(effects
@@ -5267,7 +5417,7 @@
 				(alternate "SDMMC2_DAT3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 15.24 180)
+				(at 33.02 15.24 180)
 				(length 5.08)
 				(name "PD14"
 					(effects
@@ -5288,7 +5438,7 @@
 				(alternate "TIOB2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -20.32 180)
+				(at 33.02 -20.32 180)
 				(length 5.08)
 				(name "PD28"
 					(effects
@@ -5310,7 +5460,7 @@
 				(alternate "SPDIF_TX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 17.78 0)
+				(at -33.02 17.78 0)
 				(length 5.08)
 				(name "PC13"
 					(effects
@@ -5332,7 +5482,7 @@
 				(alternate "PDMC1_DS1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 7.62 0)
+				(at -33.02 7.62 0)
 				(length 5.08)
 				(name "PC17"
 					(effects
@@ -5356,7 +5506,7 @@
 				(alternate "TCLK1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 2.54 0)
+				(at -33.02 2.54 0)
 				(length 5.08)
 				(name "PC19"
 					(effects
@@ -5378,7 +5528,7 @@
 				(alternate "PCK6" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 27.94 0)
+				(at -33.02 27.94 0)
 				(length 5.08)
 				(name "PC9"
 					(effects
@@ -5402,7 +5552,7 @@
 				(alternate "PDMC0_CLK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 45.72 0)
+				(at -33.02 45.72 0)
 				(length 5.08)
 				(name "PC2"
 					(effects
@@ -5424,7 +5574,7 @@
 				(alternate "HHSB_CC2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -20.32 0)
+				(at -33.02 -20.32 0)
 				(length 5.08)
 				(name "PC28"
 					(effects
@@ -5446,7 +5596,7 @@
 				(alternate "TF1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -25.4 0)
+				(at -33.02 -25.4 0)
 				(length 5.08)
 				(name "PC30"
 					(effects
@@ -5469,7 +5619,7 @@
 				(alternate "TIOA0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 20.32 180)
+				(at 33.02 20.32 180)
 				(length 5.08)
 				(name "PD12"
 					(effects
@@ -5492,7 +5642,7 @@
 				(alternate "TIOB1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -15.24 180)
+				(at 33.02 -15.24 180)
 				(length 5.08)
 				(name "PD26"
 					(effects
@@ -5515,7 +5665,7 @@
 				(alternate "RF1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -43.18 0)
+				(at -33.02 -43.18 0)
 				(length 5.08)
 				(name "PE3"
 					(effects
@@ -5537,7 +5687,7 @@
 				(alternate "PDMC0_DS0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 30.48 0)
+				(at -33.02 30.48 0)
 				(length 5.08)
 				(name "PC8"
 					(effects
@@ -5561,7 +5711,7 @@
 				(alternate "PDMC0_DS1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 10.16 180)
+				(at 33.02 10.16 180)
 				(length 5.08)
 				(name "PD16"
 					(effects
@@ -5581,7 +5731,7 @@
 				(alternate "FLEXCOM5_IO0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 12.7 0)
+				(at -33.02 12.7 0)
 				(length 5.08)
 				(name "PC15"
 					(effects
@@ -5604,7 +5754,7 @@
 				(alternate "PDMC1_DS1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -5.08 0)
+				(at -33.02 -5.08 0)
 				(length 5.08)
 				(name "PC22"
 					(effects
@@ -5625,7 +5775,7 @@
 				(alternate "NWAIT" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -10.16 0)
+				(at -33.02 -10.16 0)
 				(length 5.08)
 				(name "PC24"
 					(effects
@@ -5644,7 +5794,7 @@
 				(alternate "TMS_SWDIO" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 5.08 0)
+				(at -33.02 5.08 0)
 				(length 5.08)
 				(name "PC18"
 					(effects
@@ -5668,7 +5818,7 @@
 				(alternate "TIOB1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -2.54 0)
+				(at -33.02 -2.54 0)
 				(length 5.08)
 				(name "PC21"
 					(effects
@@ -5691,7 +5841,7 @@
 				(alternate "PCK7" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 27.94 180)
+				(at 33.02 27.94 180)
 				(length 5.08)
 				(name "PD9"
 					(effects
@@ -5711,7 +5861,7 @@
 				(alternate "FLEXCOM7_IO1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 2.54 180)
+				(at 33.02 2.54 180)
 				(length 5.08)
 				(name "PD19"
 					(effects
@@ -5732,7 +5882,7 @@
 				(alternate "PCK2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -5.08 180)
+				(at 33.02 -5.08 180)
 				(length 5.08)
 				(name "PD22"
 					(effects
@@ -5753,7 +5903,7 @@
 				(alternate "TF1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -27.94 180)
+				(at 33.02 -27.94 180)
 				(length 5.08)
 				(name "PD31"
 					(effects
@@ -5775,7 +5925,7 @@
 				(alternate "PDMC1_DS0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 38.1 0)
+				(at -33.02 38.1 0)
 				(length 5.08)
 				(name "PC5"
 					(effects
@@ -5798,7 +5948,7 @@
 				(alternate "I3CC_SDASPUE" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -15.24 0)
+				(at -33.02 -15.24 0)
 				(length 5.08)
 				(name "PC26"
 					(effects
@@ -5818,7 +5968,7 @@
 				(alternate "TDO" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 43.18 0)
+				(at -33.02 43.18 0)
 				(length 5.08)
 				(name "PC3"
 					(effects
@@ -5841,7 +5991,7 @@
 				(alternate "SPDIF_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 35.56 180)
+				(at 33.02 35.56 180)
 				(length 5.08)
 				(name "PD6"
 					(effects
@@ -5862,7 +6012,7 @@
 				(alternate "LCDC_PWM" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 40.64 180)
+				(at 33.02 40.64 180)
 				(length 5.08)
 				(name "PD4"
 					(effects
@@ -5884,7 +6034,7 @@
 				(alternate "TIOB0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 45.72 180)
+				(at 33.02 45.72 180)
 				(length 5.08)
 				(name "PD2"
 					(effects
@@ -5906,7 +6056,7 @@
 				(alternate "SDMMC2_CD" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 30.48 180)
+				(at 33.02 30.48 180)
 				(length 5.08)
 				(name "PD8"
 					(effects
@@ -5926,7 +6076,7 @@
 				(alternate "FLEXCOM7_IO0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 25.4 180)
+				(at 33.02 25.4 180)
 				(length 5.08)
 				(name "PD10"
 					(effects
@@ -5947,7 +6097,7 @@
 				(alternate "TIOA1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -7.62 180)
+				(at 33.02 -7.62 180)
 				(length 5.08)
 				(name "PD23"
 					(effects
@@ -5968,7 +6118,7 @@
 				(alternate "TD1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -10.16 180)
+				(at 33.02 -10.16 180)
 				(length 5.08)
 				(name "PD24"
 					(effects
@@ -5991,7 +6141,7 @@
 				(alternate "RD1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -38.1 0)
+				(at -33.02 -38.1 0)
 				(length 5.08)
 				(name "PE1"
 					(effects
@@ -6013,7 +6163,7 @@
 				(alternate "PDMC0_DS1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 10.16 0)
+				(at -33.02 10.16 0)
 				(length 5.08)
 				(name "PC16"
 					(effects
@@ -6037,7 +6187,7 @@
 				(alternate "TIOA1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 20.32 0)
+				(at -33.02 20.32 0)
 				(length 5.08)
 				(name "PC12"
 					(effects
@@ -6060,7 +6210,7 @@
 				(alternate "PDMC1_CLK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 35.56 0)
+				(at -33.02 35.56 0)
 				(length 5.08)
 				(name "PC6"
 					(effects
@@ -6082,7 +6232,7 @@
 				(alternate "I3CC_SCL" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 25.4 0)
+				(at -33.02 25.4 0)
 				(length 5.08)
 				(name "PC10"
 					(effects
@@ -6106,7 +6256,7 @@
 				(alternate "PDMC0_DS0" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 22.86 180)
+				(at 33.02 22.86 180)
 				(length 5.08)
 				(name "PD11"
 					(effects
@@ -6127,7 +6277,7 @@
 				(alternate "TCLK1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 12.7 180)
+				(at 33.02 12.7 180)
 				(length 5.08)
 				(name "PD15"
 					(effects
@@ -6148,7 +6298,7 @@
 				(alternate "TCLK2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 7.62 180)
+				(at 33.02 7.62 180)
 				(length 5.08)
 				(name "PD17"
 					(effects
@@ -6168,7 +6318,7 @@
 				(alternate "FLEXCOM5_IO1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -2.54 180)
+				(at 33.02 -2.54 180)
 				(length 5.08)
 				(name "PD21"
 					(effects
@@ -6190,7 +6340,7 @@
 				(alternate "TK1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 5.08 180)
+				(at 33.02 5.08 180)
 				(length 5.08)
 				(name "PD18"
 					(effects
@@ -6211,7 +6361,7 @@
 				(alternate "PCK4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -35.56 0)
+				(at -33.02 -35.56 0)
 				(length 5.08)
 				(name "PE0"
 					(effects
@@ -6233,7 +6383,7 @@
 				(alternate "PDMC1_CLK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -22.86 180)
+				(at 33.02 -22.86 180)
 				(length 5.08)
 				(name "PD29"
 					(effects
@@ -6255,7 +6405,7 @@
 				(alternate "I2SMCC1_DOUT3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 15.24 0)
+				(at -33.02 15.24 0)
 				(length 5.08)
 				(name "PC14"
 					(effects
@@ -6278,7 +6428,7 @@
 				(alternate "SPDIF_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 50.8 0)
+				(at -33.02 50.8 0)
 				(length 5.08)
 				(name "PC0"
 					(effects
@@ -6303,7 +6453,7 @@
 				(alternate "TIOB1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 17.78 180)
+				(at 33.02 17.78 180)
 				(length 5.08)
 				(name "PD13"
 					(effects
@@ -6325,7 +6475,7 @@
 				(alternate "TIOA2" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 0 180)
+				(at 33.02 0 180)
 				(length 5.08)
 				(name "PD20"
 					(effects
@@ -6346,7 +6496,7 @@
 				(alternate "PCK3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -12.7 180)
+				(at 33.02 -12.7 180)
 				(length 5.08)
 				(name "PD25"
 					(effects
@@ -6368,7 +6518,7 @@
 				(alternate "RK1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -17.78 180)
+				(at 33.02 -17.78 180)
 				(length 5.08)
 				(name "PD27"
 					(effects
@@ -6390,7 +6540,7 @@
 				(alternate "SPDIF_RX" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -40.64 0)
+				(at -33.02 -40.64 0)
 				(length 5.08)
 				(name "PE2"
 					(effects
@@ -6412,7 +6562,7 @@
 				(alternate "PDMC0_CLK" bidirectional line)
 			)
 			(pin bidirectional line
-				(at -22.86 -48.26 0)
+				(at -33.02 -48.26 0)
 				(length 5.08)
 				(name "PE5"
 					(effects
@@ -6436,7 +6586,7 @@
 				(alternate "TIOB3" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -35.56 180)
+				(at 33.02 -35.56 180)
 				(length 5.08)
 				(name "PE7"
 					(effects
@@ -6460,7 +6610,7 @@
 				(alternate "TIOA4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -40.64 180)
+				(at 33.02 -40.64 180)
 				(length 5.08)
 				(name "PE9"
 					(effects
@@ -6484,7 +6634,7 @@
 				(alternate "TCLK4" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -50.8 180)
+				(at 33.02 -50.8 180)
 				(length 5.08)
 				(name "PE13"
 					(effects
@@ -6507,7 +6657,7 @@
 				(alternate "PWMEXTRG1" bidirectional line)
 			)
 			(pin bidirectional line
-				(at 22.86 -45.72 180)
+				(at 33.02 -45.72 180)
 				(length 5.08)
 				(name "PE11"
 					(effects
@@ -6534,7 +6684,67 @@
 			(unit_name "GPIO C&D&E")
 			(polyline
 				(pts
+					(xy -21.59 52.07) (xy -3.175 52.07) (xy -3.175 -16.51) (xy -21.59 -16.51)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -21.59 -34.29) (xy -3.175 -34.29) (xy -3.175 -44.45) (xy -21.59 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
 					(xy -14.605 -31.75) (xy 15.24 -31.75)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.175 -16.51) (xy -3.175 -29.21) (xy -21.59 -29.21)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.175 -44.45) (xy -1.27 -44.45)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.175 -44.45) (xy -3.175 -52.07) (xy -21.59 -52.07)
 				)
 				(stroke
 					(width 0)
@@ -6556,12 +6766,97 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy 3.175 49.53) (xy 3.175 6.35) (xy 21.59 6.35)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.175 6.35) (xy 3.175 -29.21) (xy 21.59 -29.21)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 21.59 52.07) (xy 3.175 52.07) (xy 3.175 49.53) (xy 21.59 49.53)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 21.59 -34.29) (xy 3.175 -34.29) (xy 3.175 -52.07) (xy 21.59 -52.07)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "VDDIN33"
+				(at -2.794 22.098 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
+			(text "VDDSDMMC2"
+				(at -2.794 -22.86 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
+			(text "VDDGMAC1"
+				(at -2.794 -43.942 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(text "VDDLVDS"
+				(at -2.794 -44.704 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right top)
+				)
+			)
 			(text "C"
-				(at -2.794 10.668 0)
+				(at -0.762 10.668 0)
 				(effects
 					(font
 						(size 1.905 1.905)
 					)
+					(justify right)
 				)
 			)
 			(text "E"
@@ -6573,11 +6868,48 @@
 				)
 			)
 			(text "D"
-				(at 2.794 10.668 0)
+				(at 0.508 10.668 0)
 				(effects
 					(font
 						(size 1.905 1.905)
 					)
+					(justify left)
+				)
+			)
+			(text "VDDSDMMC2"
+				(at 2.794 52.07 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(text "VDDIOP1"
+				(at 2.794 27.94 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(text "VDDGMAC1"
+				(at 2.794 -11.43 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(text "VDDLVDS"
+				(at 2.794 -43.18 900)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
 				)
 			)
 		)

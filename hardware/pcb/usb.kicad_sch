@@ -1986,7 +1986,7 @@
 		(uuid "4efd8e4c-b72b-4ac9-9531-53f9742f5bfa")
 	)
 	(junction
-		(at 101.6 66.04)
+		(at 102.87 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14567a88-a740-4e1a-a91d-3848345b3ea1")
@@ -2004,7 +2004,7 @@
 		(uuid "ba6c8253-ebf2-4bbc-955a-c88dee1ac40c")
 	)
 	(junction
-		(at 101.6 63.5)
+		(at 102.87 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fdd640a7-5d88-44c6-b9a0-94828c9a2b33")
@@ -2027,7 +2027,7 @@
 		(uuid "034ef4b5-2aff-480f-b9c5-d4d88893625f")
 	)
 	(bus_entry
-		(at 138.43 63.5)
+		(at 139.7 63.5)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2045,7 +2045,7 @@
 		(uuid "29dfb23e-7d85-4843-995d-e0d134df89dc")
 	)
 	(bus_entry
-		(at 138.43 60.96)
+		(at 139.7 60.96)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2055,23 +2055,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 73.66) (xy 121.92 74.93)
+			(xy 123.19 73.66) (xy 123.19 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "00a1bb42-4e72-46fe-a896-a2349e9bb671")
-	)
-	(wire
-		(pts
-			(xy 101.6 66.04) (xy 111.76 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e01ee26-b471-473c-b4e0-53cdb9c26ea8")
 	)
 	(wire
 		(pts
@@ -2085,6 +2075,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 60.96) (xy 101.6 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1709da1b-4096-457b-bea9-3f692ba00f0c")
+	)
+	(wire
+		(pts
 			(xy 154.94 40.64) (xy 158.75 40.64)
 		)
 		(stroke
@@ -2092,6 +2092,16 @@
 			(type default)
 		)
 		(uuid "2862b6a7-dbf4-4e6b-9918-47616d80f7f2")
+	)
+	(wire
+		(pts
+			(xy 102.87 63.5) (xy 101.6 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31b5f63b-3a84-47a1-a9a5-390feb95fbcb")
 	)
 	(wire
 		(pts
@@ -2103,9 +2113,19 @@
 		)
 		(uuid "38094303-bcd1-46e0-bf43-4bf12255326f")
 	)
+	(wire
+		(pts
+			(xy 102.87 66.04) (xy 113.03 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b8f003c-37ae-411f-826c-cbbd718b3991")
+	)
 	(bus
 		(pts
-			(xy 138.43 60.96) (xy 138.43 63.5)
+			(xy 139.7 60.96) (xy 139.7 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2132,6 +2152,26 @@
 			(type default)
 		)
 		(uuid "3f5f2fa4-7848-464d-ac69-f7d7715b17f8")
+	)
+	(wire
+		(pts
+			(xy 102.87 66.04) (xy 101.6 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50fe6912-6529-447a-b276-87be12d754f9")
+	)
+	(wire
+		(pts
+			(xy 102.87 68.58) (xy 101.6 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5812b548-6eea-41b7-9098-5aaa94519a38")
 	)
 	(wire
 		(pts
@@ -2195,7 +2235,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 66.04) (xy 135.89 66.04)
+			(xy 133.35 66.04) (xy 137.16 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2265,7 +2305,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 63.5) (xy 135.89 63.5)
+			(xy 133.35 63.5) (xy 137.16 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2282,16 +2322,6 @@
 			(type default)
 		)
 		(uuid "bce80df3-f22f-427a-b3a0-def6326b3eb2")
-	)
-	(wire
-		(pts
-			(xy 101.6 63.5) (xy 111.76 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0819d0c-4b2e-47aa-be13-5053c03f065a")
 	)
 	(wire
 		(pts
@@ -2325,7 +2355,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 66.04) (xy 101.6 68.58)
+			(xy 102.87 66.04) (xy 102.87 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2333,9 +2363,19 @@
 		)
 		(uuid "d527e106-7825-4210-9d84-558a99193262")
 	)
+	(wire
+		(pts
+			(xy 102.87 63.5) (xy 113.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d63a580a-efab-4f75-84f2-b0867b038ea6")
+	)
 	(bus
 		(pts
-			(xy 139.7 60.96) (xy 138.43 60.96)
+			(xy 140.97 60.96) (xy 139.7 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2345,7 +2385,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 60.96) (xy 101.6 63.5)
+			(xy 102.87 60.96) (xy 102.87 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2354,7 +2394,7 @@
 		(uuid "fe0f4486-bf38-43e5-b60c-c970c15866ff")
 	)
 	(label "DIRTY_D+"
-		(at 102.87 63.5 0)
+		(at 104.14 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2384,7 +2424,7 @@
 		(uuid "d2c6f18e-b0a1-4096-a0c7-296690696796")
 	)
 	(label "DIRTY_D-"
-		(at 102.87 66.04 0)
+		(at 104.14 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2394,7 +2434,7 @@
 		(uuid "d55e6817-2468-48f8-b1b1-e4ff560377a3")
 	)
 	(label "D+"
-		(at 133.35 63.5 0)
+		(at 134.62 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2404,7 +2444,7 @@
 		(uuid "dec3c87e-314f-4b26-a771-d2c7e4e50f3b")
 	)
 	(label "D-"
-		(at 133.35 66.04 0)
+		(at 134.62 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2435,7 +2475,7 @@
 	)
 	(hierarchical_label "{USB}"
 		(shape bidirectional)
-		(at 139.7 60.96 0)
+		(at 140.97 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2538,10 +2578,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "1485dba0-6557-4136-b091-f902723cec16")
 		(property "Reference" "D1"
 			(at 156.21 45.72 90)
@@ -2660,7 +2700,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:ECMF02-2AMX6")
-		(at 121.92 66.04 0)
+		(at 123.19 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2671,7 +2711,7 @@
 		(fields_autoplaced yes)
 		(uuid "22f083f1-514b-4b4d-abc5-e8cf51de6e1f")
 		(property "Reference" "U5"
-			(at 121.92 55.88 0)
+			(at 123.19 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2681,7 +2721,7 @@
 			)
 		)
 		(property "Value" "ECMF02-2AMX6"
-			(at 121.92 58.42 0)
+			(at 123.19 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2691,7 +2731,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:ST_UQFN-6L_1.5x1.7mm_P0.5mm"
-			(at 121.92 86.36 0)
+			(at 123.19 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2702,7 +2742,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/ecmf02-2amx6.pdf"
-			(at 121.92 88.9 0)
+			(at 123.19 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2713,7 +2753,7 @@
 			)
 		)
 		(property "Description" "Single Pair Common Mode Filter with ESD Protection, UQFN-6L"
-			(at 121.92 66.04 0)
+			(at 123.19 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2724,7 +2764,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 121.92 66.04 0)
+			(at 123.19 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2735,7 +2775,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 121.92 66.04 0)
+			(at 123.19 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2774,7 +2814,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 121.92 74.93 0)
+		(at 123.19 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2784,7 +2824,7 @@
 		(dnp no)
 		(uuid "42794ddb-ea26-478f-95eb-dd6632c9f81a")
 		(property "Reference" "#PWR013"
-			(at 121.92 81.28 0)
+			(at 123.19 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2795,7 +2835,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 125.222 76.708 0)
+			(at 126.492 76.708 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2805,7 +2845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 74.93 0)
+			(at 123.19 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2816,7 +2856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 74.93 0)
+			(at 123.19 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2827,7 +2867,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 121.92 74.93 0)
+			(at 123.19 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3415,10 +3455,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "913b9dd0-7aec-4cab-ab19-9fd094e8d53f")
 		(property "Reference" "D3"
 			(at 143.51 45.72 90)
@@ -3541,10 +3581,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "9880c00f-33e9-4ed3-95a3-c69b0be18823")
 		(property "Reference" "D2"
 			(at 149.86 45.72 90)
