@@ -47526,14 +47526,6 @@
 		(path "/608c30f2-ff67-48b2-81d8-ecb6ade86a50/8b8b03aa-439c-4430-9c94-a342b5229220")
 		(sheetname "/Power/")
 		(sheetfile "power.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "2" "3" "20" "21" "1" "22" "8" "15" "16" "11" "17" "5" "18" "23"
-					"13" "4" "6" "19" "9" "12" "14" "10"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
@@ -47807,6 +47799,17 @@
 			(fill yes)
 			(layer "F.Paste")
 			(uuid "ee139822-db35-4719-aa73-1d88c79800c2")
+		)
+		(fp_rect
+			(start -1.75 -2.25)
+			(end 1.75 2.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "2df9f56b-e446-4f88-981b-0c2d85a396ee")
 		)
 		(fp_line
 			(start -1.3 -1.799999)
