@@ -557,7 +557,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 1
+      "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -825,8 +825,8 @@
       "UART": [
         "RX",
         "TX",
-        "CTSN",
-        "RTSN"
+        "~{CTS}",
+        "~{RTS}"
       ],
       "USB": [
         "D-",
@@ -885,7 +885,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "SW1-10,U1-8,#PWR1-137,Y1-3,IC1-3,R1-48,JP1-4,TP1-9,J1-9,BT1,C1-125,D1-5,L1-6",
+    "used_designators": "SW1-10,U1-8,#PWR1-137,Y1-3,IC1-3,R1-48,JP1-4,TP1-78,J1-9,BT1,C1-125,D1-5,L1-6",
     "variants": []
   },
   "sheets": [

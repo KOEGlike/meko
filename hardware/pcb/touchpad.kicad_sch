@@ -1205,6 +1205,12 @@
 		(color 0 0 0 0)
 		(uuid "4dee3f4d-84ce-4356-b339-06cbcd0325a0")
 	)
+	(junction
+		(at 50.8 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64e9b03c-aed6-4d80-b6dc-8fd090fce67b")
+	)
 	(bus_entry
 		(at 118.11 71.12)
 		(size 2.54 2.54)
@@ -1403,6 +1409,26 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 77.47) (xy 50.8 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "985c0a80-551a-47c5-a9a9-b21b88c3bfd5")
+	)
+	(wire
+		(pts
+			(xy 50.8 77.47) (xy 53.34 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e425c90-b671-4dd9-8d45-ee0ac6bd324b")
+	)
+	(wire
+		(pts
 			(xy 80.01 77.47) (xy 80.01 78.74)
 		)
 		(stroke
@@ -1483,7 +1509,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 77.47) (xy 53.34 77.47)
+			(xy 46.99 77.47) (xy 50.8 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1605,7 +1631,7 @@
 	)
 	(hierarchical_label "HAPT_EN"
 		(shape input)
-		(at 49.53 77.47 180)
+		(at 46.99 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1774,6 +1800,83 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/7a0a8608-fb91-40ee-9ae1-ac8166908c37"
 					(reference "#PWR0132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 80.01 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "05b471a4-9790-4d20-9177-1c86e913c7f9")
+		(property "Reference" "TP78"
+			(at 50.8 85.852 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HAPT_EN"
+			(at 50.8 88.392 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 55.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "915ead67-b2db-492e-ad2f-b196ff3ba890")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/7a0a8608-fb91-40ee-9ae1-ac8166908c37"
+					(reference "TP78")
 					(unit 1)
 				)
 			)
