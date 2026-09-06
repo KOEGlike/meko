@@ -39426,6 +39426,12 @@
 		(uuid "e9752943-ddbc-4393-a06a-538a231fd643")
 	)
 	(junction
+		(at 478.79 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb7ae068-0ece-438d-8d8a-34147f93a0da")
+	)
+	(junction
 		(at 513.08 327.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -41777,16 +41783,6 @@
 	)
 	(wire
 		(pts
-			(xy 453.39 120.65) (xy 454.66 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32da0ee8-10a2-419f-84c2-f14e63fcb05c")
-	)
-	(wire
-		(pts
 			(xy 69.85 138.43) (xy 69.85 143.51)
 		)
 		(stroke
@@ -42307,7 +42303,7 @@
 	)
 	(wire
 		(pts
-			(xy 466.09 121.92) (xy 466.09 120.65)
+			(xy 468.63 121.92) (xy 468.63 120.65)
 		)
 		(stroke
 			(width 0)
@@ -43747,6 +43743,16 @@
 	)
 	(wire
 		(pts
+			(xy 478.79 116.84) (xy 478.79 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8852d4bf-3c7c-4260-adcf-7316d8b4b034")
+	)
+	(wire
+		(pts
 			(xy 544.83 285.75) (xy 549.91 285.75)
 		)
 		(stroke
@@ -44677,6 +44683,16 @@
 	)
 	(wire
 		(pts
+			(xy 478.79 125.73) (xy 478.79 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7fce734-9c00-4d34-bd67-cf495946b188")
+	)
+	(wire
+		(pts
 			(xy 402.59 242.57) (xy 406.4 242.57)
 		)
 		(stroke
@@ -45097,7 +45113,7 @@
 	)
 	(wire
 		(pts
-			(xy 466.09 120.65) (xy 462.28 120.65)
+			(xy 468.63 120.65) (xy 464.82 120.65)
 		)
 		(stroke
 			(width 0)
@@ -45174,6 +45190,16 @@
 			(type default)
 		)
 		(uuid "d19c8620-200e-40be-ac27-83e141d03b0e")
+	)
+	(wire
+		(pts
+			(xy 478.79 116.84) (xy 482.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e9d2fd-0e75-4d77-b387-156aaf0c64d9")
 	)
 	(wire
 		(pts
@@ -45494,6 +45520,16 @@
 			(type default)
 		)
 		(uuid "e26baa07-188e-4270-b527-fc63a441afeb")
+	)
+	(wire
+		(pts
+			(xy 453.39 120.65) (xy 457.2 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e333f970-57e2-4ce1-91dd-391980053fba")
 	)
 	(wire
 		(pts
@@ -46207,7 +46243,7 @@
 	)
 	(wire
 		(pts
-			(xy 453.39 116.84) (xy 455.93 116.84)
+			(xy 453.39 116.84) (xy 478.79 116.84)
 		)
 		(stroke
 			(width 0)
@@ -56367,7 +56403,7 @@
 	)
 	(hierarchical_label "DDR_VREF"
 		(shape passive)
-		(at 455.93 116.84 0)
+		(at 482.6 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57422,6 +57458,109 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 478.79 123.19 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "11dd1f43-f8a1-407f-a9fa-32437501e26a")
+		(property "Reference" "C126"
+			(at 481.076 122.174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100n"
+			(at 481.076 124.206 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 478.79 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 478.79 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 478.79 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 478.79 123.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 478.79 123.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4203b7f-3e74-43b2-bfe1-46984ce427fa")
+		)
+		(pin "2"
+			(uuid "00e7ed6c-9015-4eaf-8f45-856932c16081")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
+					(reference "C126")
 					(unit 1)
 				)
 			)
@@ -62773,7 +62912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 466.09 121.92 0)
+		(at 468.63 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -62783,7 +62922,7 @@
 		(dnp no)
 		(uuid "50875219-f77a-461e-98f1-dd0d9f68f66d")
 		(property "Reference" "#PWR024"
-			(at 466.09 128.27 0)
+			(at 468.63 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62794,7 +62933,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 469.646 123.952 0)
+			(at 468.63 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -62804,7 +62943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 466.09 121.92 0)
+			(at 468.63 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62815,7 +62954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 466.09 121.92 0)
+			(at 468.63 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -62826,7 +62965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 466.09 121.92 0)
+			(at 468.63 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70742,6 +70881,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 478.79 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "befa716d-7d12-4ceb-98a9-576bbc702ab8")
+		(property "Reference" "#PWR0140"
+			(at 478.79 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 478.79 131.064 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 478.79 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 478.79 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 478.79 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "20dd995c-c53a-4e29-9c48-b7c5d299ca67")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/11193406-550a-48b1-a654-5418a2035a4e"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 402.59 250.19 90)
 		(unit 1)
@@ -73951,7 +74167,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 458.47 120.65 90)
+		(at 461.01 120.65 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -73961,7 +74177,7 @@
 		(dnp no)
 		(uuid "e8e72722-2825-4039-808b-a7f89359b27b")
 		(property "Reference" "R11"
-			(at 455.422 119.634 90)
+			(at 457.962 119.634 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -73972,7 +74188,7 @@
 			)
 		)
 		(property "Value" "240R"
-			(at 461.264 119.634 90)
+			(at 463.804 119.634 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -73983,7 +74199,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 458.47 122.428 90)
+			(at 461.01 122.428 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -73994,7 +74210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 458.47 120.65 0)
+			(at 461.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74005,7 +74221,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 458.47 120.65 0)
+			(at 461.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74016,7 +74232,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 458.47 120.65 90)
+			(at 461.01 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -74027,7 +74243,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 458.47 120.65 90)
+			(at 461.01 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
