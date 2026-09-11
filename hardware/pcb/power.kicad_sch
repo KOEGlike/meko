@@ -4224,7 +4224,7 @@
 		(uuid "0c8e7ebd-c8d8-46eb-9faf-f8d6a6c8ab17")
 	)
 	(bus_entry
-		(at 200.66 130.81)
+		(at 185.42 130.81)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4269,7 +4269,7 @@
 		(uuid "6f6fc573-cea2-4adb-b97c-2e410e527c4e")
 	)
 	(bus_entry
-		(at 200.66 125.73)
+		(at 185.42 125.73)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4359,7 +4359,7 @@
 		(uuid "b7cdfffa-f080-4c05-b086-2e2ea4422259")
 	)
 	(bus_entry
-		(at 200.66 128.27)
+		(at 185.42 128.27)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -4416,7 +4416,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 196.85) (xy 209.55 195.58)
+			(xy 209.55 203.2) (xy 209.55 201.93)
 		)
 		(stroke
 			(width 0)
@@ -4493,6 +4493,16 @@
 			(type default)
 		)
 		(uuid "072fa644-6ac9-4a1a-8b90-15b3a69f4234")
+	)
+	(wire
+		(pts
+			(xy 205.74 128.27) (xy 210.82 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07ae5dc6-2472-479b-8a49-2b1fbdf3bfd6")
 	)
 	(wire
 		(pts
@@ -4573,6 +4583,16 @@
 			(type default)
 		)
 		(uuid "106c132c-5a0b-469a-a882-6dfc57f73a7e")
+	)
+	(wire
+		(pts
+			(xy 209.55 196.85) (xy 209.55 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13331fc4-f05f-4525-8b9b-540bb75a1ef5")
 	)
 	(wire
 		(pts
@@ -4816,7 +4836,7 @@
 	)
 	(bus
 		(pts
-			(xy 200.66 125.73) (xy 200.66 128.27)
+			(xy 185.42 125.73) (xy 185.42 128.27)
 		)
 		(stroke
 			(width 0)
@@ -4866,7 +4886,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 133.35) (xy 210.82 133.35)
+			(xy 187.96 133.35) (xy 200.66 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4896,7 +4916,7 @@
 	)
 	(bus
 		(pts
-			(xy 199.39 125.73) (xy 200.66 125.73)
+			(xy 184.15 125.73) (xy 185.42 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5136,6 +5156,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 133.35) (xy 210.82 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5572eba1-f5ff-4d3e-babe-3f344e4f3950")
+	)
+	(wire
+		(pts
 			(xy 267.97 100.33) (xy 267.97 101.6)
 		)
 		(stroke
@@ -5266,7 +5296,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 128.27) (xy 210.82 128.27)
+			(xy 187.96 128.27) (xy 200.66 128.27)
 		)
 		(stroke
 			(width 0)
@@ -5696,7 +5726,7 @@
 	)
 	(bus
 		(pts
-			(xy 200.66 128.27) (xy 200.66 130.81)
+			(xy 185.42 128.27) (xy 185.42 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6686,7 +6716,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 130.81) (xy 210.82 130.81)
+			(xy 187.96 130.81) (xy 210.82 130.81)
 		)
 		(stroke
 			(width 0)
@@ -6715,7 +6745,7 @@
 		(uuid "349b9eb4-bd83-41c0-95e7-54b6ac344bbc")
 	)
 	(label "HPM"
-		(at 203.2 133.35 0)
+		(at 187.96 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6765,7 +6795,7 @@
 		(uuid "5b653f3a-a142-43f3-a90c-ed9d78e373fc")
 	)
 	(label "LPM"
-		(at 203.2 130.81 0)
+		(at 187.96 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6775,7 +6805,7 @@
 		(uuid "68fb90cb-392f-488e-9298-77bcad8add1c")
 	)
 	(label "PWRHLD"
-		(at 203.2 128.27 0)
+		(at 187.96 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6961,7 +6991,7 @@
 	)
 	(hierarchical_label "{PMIC_CTRL}"
 		(shape bidirectional)
-		(at 199.39 125.73 180)
+		(at 184.15 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7810,6 +7840,109 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 203.2 133.35 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "281a5d3b-93f3-4dbf-b7ae-ff3952f900ef")
+		(property "Reference" "R52"
+			(at 201.168 132.842 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 205.232 132.842 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 203.2 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 203.2 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 203.2 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 203.2 133.35 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "519fe038-8eaa-4b1e-a51d-d1342b15a73e")
+		)
+		(pin "1"
+			(uuid "716f1a40-fb65-44ba-9d4e-f940df8cb4c4")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -12564,7 +12697,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 196.85 0)
+		(at 209.55 203.2 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12575,7 +12708,7 @@
 		(dnp no)
 		(uuid "b05fac61-dd1a-433c-b1ce-3f77e3740a79")
 		(property "Reference" "#PWR068"
-			(at 209.55 203.2 0)
+			(at 209.55 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12586,7 +12719,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 198.882 0)
+			(at 205.74 205.232 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12596,7 +12729,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 196.85 0)
+			(at 209.55 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12607,7 +12740,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 196.85 0)
+			(at 209.55 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12618,7 +12751,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 196.85 0)
+			(at 209.55 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14290,6 +14423,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 203.2 128.27 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de328bab-3851-4bc9-ae6d-1900a37cbcaf")
+		(property "Reference" "R51"
+			(at 201.168 127.762 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 205.232 127.762 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 203.2 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 203.2 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 203.2 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 203.2 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a5060f3b-6823-440d-b351-fa1fd354ebc2")
+		)
+		(pin "1"
+			(uuid "fe13a978-c048-4882-a5a6-e8494f8de861")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 104.14 140.97 0)
 		(mirror y)
@@ -15777,6 +16013,108 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 209.55 199.39 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fef535e3-db70-4308-a800-25d2be8a1b09")
+		(property "Reference" "R53"
+			(at 206.502 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 206.502 199.898 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 209.55 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 209.55 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 209.55 199.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 209.55 199.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c12ccd9b-5c34-4bf5-9a57-ec1bbc22d6c8")
+		)
+		(pin "1"
+			(uuid "bdce4ae5-06ca-4e65-9791-22d6256f74fc")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "R53")
 					(unit 1)
 				)
 			)

@@ -1,10 +1,10 @@
 # 2026.07.12: Thinking of what I need to change
 
-*This will be a long journal, because I did a lot of research beforehand*
+_This will be a long journal, because I did a lot of research beforehand_
 
 ![meko v2](images/PXL_20260314_073009498~2.jpg)
 
-For V2, I went with an MCU(microcontroller unit) which are low power processors, and can't run normal OSs. This - I found out while developing the firmware - was a really limiting factor, mainly because the embedded RTOS that I was forced to use with this specific MCU(nRF5380), Zephyr. 
+For V2, I went with an MCU(microcontroller unit) which are low power processors, and can't run normal OSs. This - I found out while developing the firmware - was a really limiting factor, mainly because the embedded RTOS that I was forced to use with this specific MCU(nRF5380), Zephyr.
 
 ## Zephyr rant
 
@@ -28,7 +28,6 @@ This is the part that I'm still not done with; I'm really torn between the SAMA7
 
 Two articles were really helpful researching this topic: [this one](https://jaycarlson.net/embedded-linux/), and [this one](https://www.thirtythreeforty.net/posts/mastering-embedded-linux-part-1-concepts/)
 
-
 ## 70Hz e-paper
 
 ![drawing of display](https://cdn.hackclub.com/019f6764-a657-7f59-a516-7d014b1332f0/image.png)
@@ -41,16 +40,15 @@ V2 had a normal e-ink screen, which had a max partial refresh rate of 0.5s, whic
 
 One of the main reasons I didn't go with a SiP(an IC where both the MPU and RAM are in the same package) is because they mostly only package DDR3L or DDR2L, which have significantly higher power consumptions than LPDDR2/3. Both of my chosen MPUs support both LPDDR2 and LPDDR3, so I will be most likely going to use LPDDR3, and 512MB of it, because these MPUs would be sooner bottlenecked by their performance than from the amount of RAM, and 512MB seems to be the sweet spot from what I read on forums/articles.
 
-## *Time Spent: 8h*
+## _Time Spent: 8h_
 
 # 2026.07.15: Making a custom BGA symbol = HELL
 
-So I realized that the sama7 doesn't have a premade footprint and symbol :YAYAYAY: 
+So I realized that the sama7 doesn't have a premade footprint and symbol :YAYAYAY:
 
 ## Footprint
 
 I heard from Cyao that KiCad has some pretty good built-in BGA footprint generators, so I started researching. Turns out it's pretty easy to use; you only need to add a new entry to a YAML file with the specs of your footprint, and boom, you have a 3d model and footprint. I even made a [pull request](https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/merge_requests/2132) to the main repo, so the footprint can be included in the KiCad default library.
-
 
 ![footprint](https://cdn.hackclub.com/019f6759-1979-74bb-8e4a-e8a1b97e00c4/image.png)
 ![3d model](https://cdn.hackclub.com/019f6759-1d18-708f-9c76-50ef3c12f1f2/image.png)
@@ -67,7 +65,7 @@ First, the [official KiCad symbol generator](https://gitlab.com/kicad/libraries/
 
 I asked around in a bunch of communities for advice on DDR3 learning resources, and I got some really good answers. Turns out bit/byte swapping on LPDDR3 is a bit more complicated, but I still don't fully understand and need to do more research. I hope I don't even need to do this, crossing my fingers!!!
 
-## *Time Spent: 6h*
+## _Time Spent: 6h_
 
 # 2026.07.16: Split apart the symbol
 
@@ -75,7 +73,7 @@ This was mostly a long monotonous but fun process of looking at the datasheet an
 
 ![split up symbol](https://cdn.hackclub.com/019f6f8c-4fbe-7dd1-bb52-e04dcd09edba/image.png)
 
-## *Time Spent: 4h*
+## _Time Spent: 4h_
 
 # 2026.07.19: Made PMIC symbol and did some research
 
@@ -87,7 +85,7 @@ Microchip recommends two PMICs for the sama7, the mcp16501 and mcp16502; the mcp
 
 ## RAM research
 
-I messaged Cyao about where he sourced his RAM when he made his sbc, because I couldn't find LPDDR3 on Mouser/LCSC/Digikey, and other western sites sold these chips for pretty expensive. Turns out Taobao has some pretty cheap RAM, $5 for 1GB. 
+I messaged Cyao about where he sourced his RAM when he made his sbc, because I couldn't find LPDDR3 on Mouser/LCSC/Digikey, and other western sites sold these chips for pretty expensive. Turns out Taobao has some pretty cheap RAM, $5 for 1GB.
 
 Also I learned that GB and Gb are different, GB is a gigabyte and Gb is a gigabit, which is 8 times smaller than a gigabyte. Thanks Cyao!
 
@@ -99,7 +97,7 @@ I submitted a footprint creation request to Component Search Engine; it should t
 
 ## Thank you again Cyao for all the help!!!!!
 
-## *Time Spent: 4h*
+## _Time Spent: 4h_
 
 # 2026.07.20: Making RAM symbol and RAM troubles
 
@@ -127,7 +125,7 @@ So I went on a search for an LPDDR3 chip that had a 16 bit wide data bus. But I 
 
 Also made a stack exchange post, but that didn't get any replies :sob:
 
-## *Time Spent: 4h*
+## _Time Spent: 4h_
 
 # 2026.07.26: Microchip support saves me
 
@@ -139,7 +137,7 @@ But I still had a bunch of questions about this example, like do I lose half the
 
 A few days later I got a wall of text as a response, which explained everything. I LOVE U BARATH V. FROM MICROCHIP
 
-Turns out almost all x32 LPDDR3 devices(I learned that they call DDR ICs devices from Barath) have an x16 mode, but the datasheets don't make this clear at all, but I also got feedback on the specific DDR device I chose (<3 Microchip) and it has this feature; in x16 you get half the speed but the full capacity of the device. 
+Turns out almost all x32 LPDDR3 devices(I learned that they call DDR ICs devices from Barath) have an x16 mode, but the datasheets don't make this clear at all, but I also got feedback on the specific DDR device I chose (<3 Microchip) and it has this feature; in x16 you get half the speed but the full capacity of the device.
 
 But turns out that there was another factor that would have halved my capacity, which was that the device I chose was actually two DDR chips put in one package, and required two CS and CKE pins, but the sama7 only has one CS and CKE pin for DDR devices, so I could have only used one of the chips in the package. The solution? Use a device that doesn't have two chips inside one package, which means use one with half the capacity, so in the end I will have an 8Gb/1GB ddr device.
 
@@ -158,8 +156,7 @@ I looked around a bit for displays to see if there were any better options than 
 
 Started looking for a powerpath, charger and fuel gauge IC; I may have found one from Analog Devices, but I'm still not sure about it.
 
-
-## *Time Spent: 6h*
+## _Time Spent: 6h_
 
 # 2026.08.06: Wireless shenanigans and making power IC symbols
 
@@ -185,7 +182,7 @@ I made the symbols for them cuz the premade ones were ass:
 
 There are also some shenanigans with the TI BQ IC, cuz it has D- and D+ pins, and the datasheet doesn't mention what to do when you don't want to use them, so I made a support ticket.
 
-## *Time Spent: 7h*
+## _Time Spent: 7h_
 
 # 2026.08.16: Finished Power
 
@@ -219,11 +216,9 @@ Setting up the switching regulators was pretty easy, just had to read the recomm
 
 The more interesting part is the low-power/high-power/hibernate modes. The SAMA7D6 needs a backup source called VBAT to keep the RAM in self-refresh mode. First I thought that I needed another LDO for this input which is always on, so I again found a part, made a symbol, etc. But then again realized that my PMIC had an unused LDO, which I could configure via I2C to always be on, except when the PMIC fully shuts down. This way, the device can hibernate while keeping the RAM in self-refresh mode.
 
-
-
 ![power schematic](https://cdn.hackclub.com/01a00bc3-9d2e-7ea7-bc93-700ef7ba0172/image.png)
 
-## *Time Spent: 6h*
+## _Time Spent: 6h_
 
 # 2026.08.20: DDR Troubles and Adding Supporting Circuitry
 
@@ -261,7 +256,7 @@ Wired up the PMIC pwr signals, and added a JTAG connector:
 
 ![JTAG connector](https://cdn.hackclub.com/01a020d9-6a75-786e-b922-19d3ebe3654d/image.png)
 
-## *Time Spent: 6h*
+## _Time Spent: 6h_
 
 # 2026.08.26: Audio, SD cards, RF, Touchpad
 
@@ -273,7 +268,7 @@ Finally figured out how to implement what I wanted to do: a 3.5mm single ended a
 
 My audio chip supports both balanced and single ended outputs which is awesome!
 
-I'm actually not using true single ended, because I would need to use a DC blocking capacitor if I did so, which filters bass frequencies. So I'm actually using the pseudo-differential output of my CODEC. 
+I'm actually not using true single ended, because I would need to use a DC blocking capacitor if I did so, which filters bass frequencies. So I'm actually using the pseudo-differential output of my CODEC.
 
 ### Common Mode Voltage
 
@@ -302,7 +297,7 @@ The audio will now be centered around 0V:
 But as mentioned earlier, the capacitors also filter out the lower frequencies of our audio, aka our bass, which we don't want
 
 2. Replace the GND reference with our common mode voltage
-_AKA pseudo-differential_
+   _AKA pseudo-differential_
 
 ![common mode as reference](https://cdn.hackclub.com/01a03a6c-d7d1-7a61-8509-cb10c110ed6c/image.png)
 
@@ -335,9 +330,9 @@ But turns out if I don't use _OUT2M_ as a sense, the output will be only slightl
 
 ![circuit without analog switch](https://cdn.hackclub.com/01a03a86-c47f-7559-9378-e9d54d3f6918/image.png)
 
-You may notice some _100K_ resistors on the `TN` pins of the jacks; these are used to detect if a jack is plugged. 
+You may notice some _100K_ resistors on the `TN` pins of the jacks; these are used to detect if a jack is plugged.
 
-When a jack is not plugged in, `TN` is shorted to the tip(`T`), and when a jack is inserted `TN` is disconnected from `T`. The audio lines always sit around the common mode voltage (in my case 1.65V), so when a jack is not plugged in, the `DET_x` lines sit at around 1.65V, but when a jack is plugged in, the `DET_x` lines get pulled down to GND by the resistor.   
+When a jack is not plugged in, `TN` is shorted to the tip(`T`), and when a jack is inserted `TN` is disconnected from `T`. The audio lines always sit around the common mode voltage (in my case 1.65V), so when a jack is not plugged in, the `DET_x` lines sit at around 1.65V, but when a jack is plugged in, the `DET_x` lines get pulled down to GND by the resistor.
 
 This took me a whole lot of time to figure out.
 
@@ -379,7 +374,7 @@ I saw in the sama7 example design that they had a load switch for the SD card, w
 
 I also did a lil sidequest on why SDMMC needs pull-ups; it's so the datalines never go in an unexpected state.
 
-## RF 
+## RF
 
 ![finished RF schematic](https://cdn.hackclub.com/01a03d19-7851-7dfd-9bd3-44327ac16df1/image.png)
 
@@ -415,7 +410,7 @@ Turns out that the flex PCB and the serpentine trace are used to detect the defl
 
 I saw a [video](https://www.youtube.com/watch?v=ycMgIToLav8) a while back of someone making a custom Steam Controller where they had to make custom trackpad PCBs, because Valve doesn't sell trackpad replacements for the Steam Deck. I saw that they used an obscure IC called the Azoteq IQS7211, which had bad availability.
 
-So I continued my research; turns out the ICs used in laptops and the Steam Deck are not available to hobbyists. So I went back to Azoteq, who sold ICs to regular people. 
+So I continued my research; turns out the ICs used in laptops and the Steam Deck are not available to hobbyists. So I went back to Azoteq, who sold ICs to regular people.
 
 Then I found the IQS9151. This is a really cool IC that has gesture support, and a bunch of other cool features.
 
@@ -445,7 +440,7 @@ I then proceeded to cold email this guy asking if he would send me his driver �
 
 After I sent my email, I looked if the IQS7211 had a Linux driver. It had. But when I opened the source code, guess who was the maintainer, Jeff LaBundy.
 
-## *Time Spent: 14h*
+## _Time Spent: 14h_
 
 # 2026.09.01: Switched out RAM, working on touchpad, looking over schematic
 
@@ -473,7 +468,7 @@ After I made the symbol for the IQS9151, I realized that it had a QFN52 6mmx6mm 
 
 ![modified footprint](https://cdn.hackclub.com/01a05c43-b6de-7811-a901-05ec724e71da/image.png)
 
-I than asked for feedback on my design in the KiCAD discord and on Reddit, and everybody said that this will not work 😭 
+I than asked for feedback on my design in the KiCAD discord and on Reddit, and everybody said that this will not work 😭
 A Lot of people recommended a bunch of complicated solutions, but Ebastler recommended to put the IC on a second PCB with castellated pads along the edge, then hand solder that small PCB onto the large one. This seems like the best solution! But it's still more complicated then I want. So I might just switch to the IQS7211E, which has a way smaller footprint, but also has less channels, so the resolution will be worse.
 
 If I do switch out the trackpad IC, I will have to regenerate the PCB and maybe make a new symbol
@@ -494,4 +489,17 @@ I also assigned a bunch of footprints and choose a bunch of parts from LCSC:
 
 ![footprints](https://cdn.hackclub.com/01a05c52-0bec-727c-a5c8-0322320f0d3d/image.png)
 
-## *Time Spent: 10h*
+## _Time Spent: 10h_
+
+# 2026.09.11: Got reviewed by Microchip, added a bunch of testpoints
+
+I got a response from a microchip review, and i got some small mistakes so I fixed those.
+
+![](https://cdn.hackclub.com/01a091f0-100c-7f5c-b5d2-fb1509c7e287/image.png)
+![](https://cdn.hackclub.com/01a091f0-12e9-760a-9bdd-eea94ba88d22/image.png)
+
+I also reorganized some stuff in the schematic and looked over everything again and added a bunch of testpoints.
+
+![](https://cdn.hackclub.com/01a091f7-3319-7a08-99ca-a0ce0d302d4f/image.png)
+
+## _Time Spent: 3h_
