@@ -502,4 +502,29 @@ I also reorganized some stuff in the schematic and looked over everything again 
 
 ![](https://cdn.hackclub.com/01a091f7-3319-7a08-99ca-a0ce0d302d4f/image.png)
 
+I learned a bit about how tespoints affect signal integrity, and how it almost all depends on the wavelength of your signal, and I also learned that KiCAD has a pretty good wavelength calculator built in, pretty cool!
+
 ## _Time Spent: 3h_
+
+# 2026.09.15: Contributing to KiCAD
+
+I got my [PR](https://gitlab.com/kicad/libraries/kicad-library-tools/-/merge_requests/2132) for the SAMA7 footprint accepted into the KiCAD footprint library :yayay:
+
+![merged PR](https://cdn.hackclub.com/01a0a1da-e25d-7676-9220-b30df2a28d18/image.png)
+
+With this new found motivation I wanted to also PR in the SAMA7 symbol I made!
+
+But I had to change my symbol to follow the [_**KiCad Library Conventions**_](https://klc.kicad.org/) to get my symbol merged.
+
+They have an automated CI/CD that checks your symbol before you PR, and gives you all the rules you violated. It took a few back and forths to get most of the violations resolved! In the end I ended up with one error and 2 warnings, which are fine.
+
+While researching I found out that KiCAD supports stacked pins, which are pretty cool:
+
+![stacked pins](https://cdn.hackclub.com/01a0a1e2-697b-7727-a8dd-17d30e705145/image.png)
+
+Here is my [PR](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/5616) and finished symbol:
+![units pt 1](https://cdn.hackclub.com/01a0a1e3-71a2-7243-a047-4440955a39e3/image.png)
+
+![units pt 2](https://cdn.hackclub.com/01a0a1e3-5813-7b44-b26d-45848bd1ef79/image.png)
+
+## _Time Spent: 2h_
