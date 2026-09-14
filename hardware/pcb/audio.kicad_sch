@@ -3139,7 +3139,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "06ea0a2e-a0e9-4f81-9ede-eb79dc4006af")
-		(property "Reference" "#PWR0109"
+		(property "Reference" "#PWR0108"
 			(at 58.42 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -3199,7 +3199,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0109")
+					(reference "#PWR0108")
 					(unit 1)
 				)
 			)
@@ -3216,7 +3216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "086060ee-ac5d-456f-b840-eaa109864ca3")
-		(property "Reference" "C114"
+		(property "Reference" "C116"
 			(at 52.578 29.464 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3302,7 +3302,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "C114")
+					(reference "C116")
 					(unit 1)
 				)
 			)
@@ -3319,7 +3319,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1482c292-de91-4ebf-aa9d-eb1f2ce600c7")
-		(property "Reference" "C115"
+		(property "Reference" "C114"
 			(at 62.738 20.574 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3405,7 +3405,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "C115")
+					(reference "C114")
 					(unit 1)
 				)
 			)
@@ -3581,7 +3581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4338b0fb-29be-416a-b8d3-86a5d4e828fb")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR0115"
 			(at 44.45 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3641,7 +3641,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0106")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -3737,7 +3737,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ae4d470-ecf5-4160-94d6-2d9138e9be39")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0112"
 			(at 97.79 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -3797,109 +3797,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 154.94 93.98 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "51303b39-b5dd-4b1f-a012-06ce8ccd4bcb")
-		(property "Reference" "R36"
-			(at 151.638 93.218 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 151.638 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 154.94 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 154.94 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 154.94 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 154.94 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "49c52225-6f86-4d16-99a4-59a9b2bdb7f1")
-		)
-		(pin "1"
-			(uuid "3b656410-7e14-4a9f-b0ec-30a73623cf4f")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "R36")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -4074,7 +3972,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7215dd83-7237-4f84-801a-cdf48b89f850")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0109"
 			(at 88.9 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -4134,7 +4032,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0112")
+					(reference "#PWR0109")
 					(unit 1)
 				)
 			)
@@ -4152,24 +4050,26 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ef7c921-8f3e-460d-9893-dcb9b3ece38d")
-		(property "Reference" "R35"
-			(at 151.638 65.278 0)
+		(property "Reference" "R41"
+			(at 153.924 65.024 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "100k"
-			(at 151.638 67.31 0)
+			(at 153.924 67.056 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
@@ -4236,7 +4136,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "R35")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -4254,7 +4154,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f9414d7-b433-477c-acc3-191e6d4c4622")
-		(property "Reference" "#PWR0107"
+		(property "Reference" "#PWR0111"
 			(at 49.53 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -4314,7 +4214,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0107")
+					(reference "#PWR0111")
 					(unit 1)
 				)
 			)
@@ -4331,7 +4231,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "926bd8ba-51b3-4183-be3a-a4ad0db15695")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0114"
 			(at 154.94 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4391,7 +4291,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0115")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -4477,6 +4377,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 154.94 93.98 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97cceae4-2821-481a-a8b0-97b0ba8e0e37")
+		(property "Reference" "R42"
+			(at 153.924 92.964 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 153.924 94.996 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 154.94 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 154.94 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 154.94 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 154.94 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8a0ffe85-0ae4-40c9-b83f-705a77243fcf")
+		)
+		(pin "1"
+			(uuid "c55b5470-42aa-4f14-9a5f-45c1567f250b")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 57.15 21.59 270)
 		(mirror x)
@@ -4488,7 +4492,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ae0f1d6b-688a-43f4-b0a3-723a1553ab40")
-		(property "Reference" "#PWR0108"
+		(property "Reference" "#PWR0107"
 			(at 50.8 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -4548,7 +4552,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0108")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
@@ -4642,7 +4646,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1a3fe49-e499-47b1-b772-4d7fa42d4957")
-		(property "Reference" "C116"
+		(property "Reference" "C115"
 			(at 75.438 28.194 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4728,7 +4732,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "C116")
+					(reference "C115")
 					(unit 1)
 				)
 			)
@@ -5212,7 +5216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e15fac02-c15c-4f03-a036-10cbd731a083")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0113"
 			(at 109.22 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -5272,7 +5276,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0114")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -5394,7 +5398,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebc42ad9-ba55-4db4-89e4-efd89bfa3ddb")
-		(property "Reference" "#PWR0111"
+		(property "Reference" "#PWR0116"
 			(at 73.66 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -5454,7 +5458,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0111")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -5471,7 +5475,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ecc5ef7a-6424-45db-9c91-789dd4ca82e3")
-		(property "Reference" "R34"
+		(property "Reference" "R40"
 			(at 117.602 46.228 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5555,7 +5559,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "R34")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -5572,7 +5576,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fad04777-a619-4086-991d-b428eaaf4dd7")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0117"
 			(at 154.94 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -5632,7 +5636,7 @@
 		(instances
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/073f6085-34ed-486a-9dc9-0ac1ede2fab6"
-					(reference "#PWR0116")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
