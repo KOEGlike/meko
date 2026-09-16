@@ -81,24 +81,6 @@
 						(type background)
 					)
 				)
-				(pin passive line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "NC/REGTS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at -12.7 5.08 0)
 					(length 2.54)
@@ -200,6 +182,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "NC/REGTS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10895,7 +10895,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 132.08 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -11118,7 +11118,7 @@
 		(pin "19"
 			(uuid "c3a217bb-1347-4768-99c5-d38608c09e84")
 		)
-		(pin ""
+		(pin "7"
 			(uuid "6d6fccb6-edbe-4afc-9d36-45263e8f9e0f")
 		)
 		(instances
@@ -11421,7 +11421,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 135.89 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -15397,7 +15397,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 102.87 190.5 0)
 			(hide yes)
 			(show_name no)
