@@ -528,3 +528,33 @@ Here is my [PR](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_request
 ![units pt 2](https://cdn.hackclub.com/01a0a1e3-5813-7b44-b26d-45848bd1ef79/image.png)
 
 ## _Time Spent: 2h_
+
+# 2026.09.16: Mucking around with _iced_
+
+I kinda burnt out from hardware, so I wanted to learn something new.Since I want the music player program on the device to be written in Rust, I looked around for graphics libraries.
+
+## Choosing a graphics lib
+
+Web based frameworks like Tauri were out of the question, since this is a really low powered device, and only has half a gig of RAM.
+
+I narrowed down the choice to three options:
+
+- _slint_: I used this for Hackxpansion. It has a custom language for UI definition, which i have mixed feelings about
+
+- _egui_: This is an immediate mode graphics lib, so it doesn't have a structured markup, instead it's very dynamic, which i don't really like
+
+- _iced_: This is a graphics lib inspired by Elm, it has you define your application state in a single struct, and all the interactions that could be done in the ui also in a struct/enum. I really like this, because it allows you to leverage Rusts strong type system to prevent states that are no possible.
+
+In the end the choice was quite obvious for me. I went with _**iced**_
+
+## Getting started with iced
+
+The docs for iced are kinda bad. There is a book which teaches you the basic architecture of the lib walks you through a basic counter app. Besides that, there aren't any detailed "guided" docs.
+
+It took a bit to wrap my head around how iced expects me to write apps, but at one point it just clicked.
+
+Here is the basic clicker app, with the addition of the going up each second:
+
+![counter app](https://cdn.hackclub.com/01a0a95d-0d6b-76f8-ac64-5c85332306dc/image.png)
+
+## _Time Spent: 2h_
