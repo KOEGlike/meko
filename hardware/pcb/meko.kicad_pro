@@ -534,13 +534,237 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "DDR_ADDR_CTL",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "DDR_CLOCK",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "100Ohms Diff",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "DDR_LANE0",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "DDR_LANE1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "DDR_STROBE_LANE0",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "100Ohms Diff",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "DDR_STROBE_LANE1",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "100Ohms Diff",
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/DDR/BA0": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/BA1": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/BA2": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/CK+": [
+        "DDR_ADDR_CTL",
+        "DDR_CLOCK"
+      ],
+      "/DDR/CK-": [
+        "DDR_ADDR_CTL",
+        "DDR_CLOCK"
+      ],
+      "/DDR/CKE": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A0": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A1": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A10": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A11": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A12": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A13": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A14": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A2": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A3": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A4": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A5": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A6": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A7": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A8": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DDR_A9": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/DQ0": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ1": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ10": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ11": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ12": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ13": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ14": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ15": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ2": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ3": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ4": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ5": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ6": [
+        "DDR_LANE0"
+      ],
+      "/DDR/DQ7": [
+        "DDR_LANE0",
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ8": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQ9": [
+        "DDR_LANE1"
+      ],
+      "/DDR/DQM0": [
+        "DDR_LANE0",
+        "DDR_LANE1",
+        "DDR_STROBE_LANE0"
+      ],
+      "/DDR/DQM1": [
+        "DDR_LANE0",
+        "DDR_LANE1",
+        "DDR_STROBE_LANE0"
+      ],
+      "/DDR/DQS0+": [
+        "DDR_LANE0",
+        "DDR_STROBE_LANE0"
+      ],
+      "/DDR/DQS0-": [
+        "DDR_LANE0",
+        "DDR_STROBE_LANE0"
+      ],
+      "/DDR/DQS1+": [
+        "DDR_LANE0",
+        "DDR_LANE1",
+        "DDR_STROBE_LANE0",
+        "DDR_STROBE_LANE1"
+      ],
+      "/DDR/DQS1-": [
+        "DDR_LANE0",
+        "DDR_LANE1",
+        "DDR_STROBE_LANE0",
+        "DDR_STROBE_LANE1"
+      ],
+      "/DDR/ODT": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/{DDR_CLOCK}": [
+        "DDR_ADDR_CTL",
+        "DDR_CLOCK"
+      ],
+      "/DDR/~{CAS}": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/~{CS}": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/~{RAS}": [
+        "DDR_ADDR_CTL"
+      ],
+      "/DDR/~{WE}": [
+        "DDR_ADDR_CTL"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -940,6 +1164,85 @@
     "meta": {
       "version": 0
     },
-    "tuning_profiles_impedance_geometric": []
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5885900,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 152358
+          },
+          {
+            "bottom_reference_layer": "UNDEFINED",
+            "delay": 5885900,
+            "diff_pair_gap": 0,
+            "signal_layer": "B.Cu",
+            "top_reference_layer": "In4.Cu",
+            "width": 152358
+          }
+        ],
+        "profile_name": "50Ohms Single",
+        "target_impedance": 50.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 0
+      },
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5902100,
+            "diff_pair_gap": 100000,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 152784
+          },
+          {
+            "bottom_reference_layer": "UNDEFINED",
+            "delay": 5902100,
+            "diff_pair_gap": 100000,
+            "signal_layer": "B.Cu",
+            "top_reference_layer": "In4.Cu",
+            "width": 152784
+          }
+        ],
+        "profile_name": "90Ohms Diff",
+        "target_impedance": 90.0,
+        "type": 1,
+        "via_overrides": [],
+        "via_prop_delay": 0
+      },
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5855800,
+            "diff_pair_gap": 100000,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 124841
+          },
+          {
+            "bottom_reference_layer": "UNDEFINED",
+            "delay": 5855800,
+            "diff_pair_gap": 100000,
+            "signal_layer": "B.Cu",
+            "top_reference_layer": "In4.Cu",
+            "width": 124841
+          }
+        ],
+        "profile_name": "100Ohms Diff",
+        "target_impedance": 100.0,
+        "type": 1,
+        "via_overrides": [],
+        "via_prop_delay": 0
+      }
+    ]
   }
 }

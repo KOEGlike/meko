@@ -5186,7 +5186,7 @@
 	)
 	(bus
 		(pts
-			(xy 55.88 132.08) (xy 60.96 132.08)
+			(xy 52.07 132.08) (xy 60.96 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5807,7 +5807,7 @@
 	)
 	(hierarchical_label "{DDR_CLOCK}"
 		(shape input)
-		(at 55.88 132.08 180)
+		(at 52.07 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5881,6 +5881,483 @@
 			(justify right)
 		)
 		(uuid "bf4d991a-2e45-4f70-9233-c2acb0266ede")
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 99.06 116.84) (xy 107.95 116.84) (xy 107.95 119.38) (xy 99.06 119.38)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "19b70b9c-101e-49c7-be08-c7f12da27bc2")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 99.06 54.61) (xy 107.95 54.61) (xy 107.95 76.2) (xy 99.06 76.2)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "7b629a44-b9a9-4fa0-838e-8c500a5f890f")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 99.06 120.015) (xy 107.95 120.015) (xy 107.95 121.92) (xy 99.06 121.92)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "9cc3e5d0-ae54-44c2-a3b1-0d8d0e783ef0")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 58.42 55.88) (xy 67.31 55.88) (xy 67.945 138.43) (xy 59.055 138.43)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "a6e370ea-0df1-4857-acf3-37bcc1dd33c3")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 99.06 114.935) (xy 107.95 114.935) (xy 107.95 109.22) (xy 99.06 109.22)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "b969aabd-5985-4de4-b9be-a1edd0d58e0b")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 99.06 97.79) (xy 107.95 97.79) (xy 107.95 76.835) (xy 99.06 76.835)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "ba2bb1a4-c965-4353-8714-f0aaf2f31243")
+		)
+	)
+	(rule_area
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(polyline
+			(pts
+				(xy 99.06 107.315) (xy 107.95 107.315) (xy 107.95 101.6) (xy 99.06 101.6)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid "eca057e1-8543-4b08-9a84-57129e5fba0b")
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 101.6 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "59cf462b-27a0-4b88-925f-d5e518dad999")
+		(property "Netclass" "DDR_LANE0"
+			(at 111.252 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 116.84 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "64522f17-d184-496e-8a18-0ea3e351c642")
+		(property "Netclass" "DDR_LANE0"
+			(at 111.252 116.84 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 54.61 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c4c48b3-7f81-459d-a2c8-442f3791aee1")
+		(property "Netclass" "DDR_CLOCK"
+			(at 53.9115 129.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at -22.86 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e50ea7f-44cf-452d-bed0-4df5445e2d2c")
+		(property "Netclass" "DDR_LANE0"
+			(at 108.6485 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 -55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 97.79 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a37c71c2-b501-4fb4-beab-0f3d1cdcaee6")
+		(property "Netclass" "DDR_LANE1"
+			(at 111.252 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 114.3 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c042ead2-c6d9-40f1-8a62-9051ca9532fd")
+		(property "Netclass" "DDR_STROBE_LANE1"
+			(at 111.252 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 121.92 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c77873ee-28e9-4772-8563-8be40d108814")
+		(property "Netclass" "DDR_LANE1"
+			(at 111.252 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 106.68 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d38201c1-02c4-416a-bb3f-668f7aba1262")
+		(property "Netclass" "DDR_STROBE_LANE0"
+			(at 111.252 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 109.22 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "eff5b2e7-696c-42c4-81f5-f78111e38e13")
+		(property "Netclass" "DDR_LANE1"
+			(at 111.252 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 30.48 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 67.31 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f085dcc6-b5a0-47d4-a1c6-fe9682bbcab8")
+		(property "Netclass" "DDR_ADDR_CTL"
+			(at 66.6115 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at -10.16 -54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -7658,7 +8135,7 @@
 		(dnp no)
 		(uuid "63bbf3ac-df2a-4ee4-b1a8-b2980e29ea53")
 		(property "Reference" "U2"
-			(at 92.202 50.546 0)
+			(at 89.662 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7669,7 +8146,7 @@
 			)
 		)
 		(property "Value" "MT41K256M16TW"
-			(at 92.202 53.086 0)
+			(at 89.662 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
