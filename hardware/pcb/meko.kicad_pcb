@@ -137,7 +137,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -47712,7 +47711,7 @@
 			)
 		)
 	)
-	(footprint "PCM_ckl-connector:microSD_SOFNG_TF-008"
+	(footprint "ckl:microSD_SOFNG_TF-008"
 		(layer "B.Cu")
 		(uuid "1c2b0c71-d700-44dc-85d4-45059eafb4d8")
 		(at 205.1125 193.95 180)
@@ -47805,19 +47804,24 @@
 		(path "/45aa24d2-e0af-4ebb-a68a-61b6a12c0eec/d97f892d-c978-4d86-86b9-86873b8f0fb5")
 		(sheetname "/SD Cards/")
 		(sheetfile "sd.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "10" "9" "SH")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
-		(fp_poly
-			(pts
-				(xy 6 -2.55) (xy 6 9.05) (xy -6 9.05) (xy -6 -2.55)
-			)
+		(fp_rect
+			(start -6 9.05)
+			(end 6 -2.55)
 			(stroke
 				(width 0.1)
 				(type default)
 			)
 			(fill no)
 			(layer "B.SilkS")
-			(uuid "6c59c2f4-2b92-4a3c-9d46-ca9fb1fbb381")
+			(uuid "fe4851a7-1a7d-4742-aeb3-06fcb844d8b1")
 		)
 		(fp_line
 			(start 6 -2.55)
@@ -47839,17 +47843,16 @@
 			(layer "Dwgs.User")
 			(uuid "cdfa3476-7bdf-4e1d-b502-38336e6b1df4")
 		)
-		(fp_poly
-			(pts
-				(xy 6.4 -3) (xy 6.4 9.4) (xy -6.4 9.4) (xy -6.4 -3)
-			)
+		(fp_rect
+			(start -6.4 9.4)
+			(end 6.4 -3)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "B.CrtYd")
-			(uuid "0f7b14f3-3947-45ef-bd2f-fe6142246db0")
+			(uuid "993090ec-9e5e-41fe-bd83-0806dcfc198c")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 0)
@@ -47920,7 +47923,7 @@
 			(uuid "876ae765-2516-4b7c-9c25-2b578f5d9229")
 		)
 		(pad "6" smd roundrect
-			(at -2.300001 0 180)
+			(at -2.3 0 180)
 			(size 0.75 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
@@ -47942,7 +47945,7 @@
 			(uuid "c043cce7-17a5-4897-951c-0642a0ca129b")
 		)
 		(pad "8" smd roundrect
-			(at -4.500001 0 180)
+			(at -4.5 0 180)
 			(size 0.75 1.35)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
@@ -47974,67 +47977,91 @@
 			(thermal_bridge_angle 45)
 			(uuid "d973e6ef-6e7e-4e32-98a1-6ed856207571")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at -5.6675 4.28 180)
 			(size 0.615 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "95f1c920-4151-47db-bb22-9fb5dda10aea")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at -5.4375 8.505 180)
 			(size 1.075 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "2145252d-2be3-4298-849e-0748b4c7db03")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at -5.125 -1.77 180)
 			(size 1.7 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "7c4be041-9d92-43d0-abf4-51685624be6b")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at -3.8 8.505 180)
 			(size 1.4 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "d6804295-b9e2-4630-a3da-9af997b5650f")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at 3 8.505 180)
 			(size 1.4 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "8378cec4-3c3e-437e-add4-009ab0da04c7")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at 5.125 -1.77 180)
 			(size 1.7 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "7325f5cd-5b7e-42ff-b101-0ed5b1b74c98")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at 5.4375 8.505 180)
 			(size 1.075 1.05)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "3e914d82-2216-4108-a860-3e5e2af98a80")
 		)
-		(pad "11" smd roundrect
+		(pad "SH" smd roundrect
 			(at 5.6125 3.58 180)
 			(size 0.725 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.15)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "d31c7311-b507-4543-8827-347a8078e14c")
 		)
@@ -48066,9 +48093,9 @@
 				(pts
 					(xy 200.0125 194.95) (xy 200.0125 192.35) (xy 210.2625 192.35) (xy 210.2625 194.95) (xy 211.1125 194.95)
 					(xy 211.1125 190.3) (xy 210.4625 190.3) (xy 210.4625 189.05) (xy 211.1125 189.05) (xy 211.1125 186)
-					(xy 210.512501 186) (xy 210.5125 186.35) (xy 199.7625 186.35) (xy 199.7625 186) (xy 199.1125 186)
-					(xy 199.1125 187.3) (xy 200.1625 187.299999) (xy 200.162499 188.5) (xy 199.1125 188.5) (xy 199.1125 189.75)
-					(xy 199.8625 189.75) (xy 199.862499 191) (xy 199.1125 191) (xy 199.1125 194.95)
+					(xy 210.5125 186) (xy 210.5125 186.35) (xy 199.7625 186.35) (xy 199.7625 186) (xy 199.1125 186)
+					(xy 199.1125 187.3) (xy 200.1625 187.3) (xy 200.1625 188.5) (xy 199.1125 188.5) (xy 199.1125 189.75)
+					(xy 199.8625 189.75) (xy 199.8625 191) (xy 199.1125 191) (xy 199.1125 194.95)
 				)
 			)
 		)
@@ -48947,7 +48974,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "MAYAW38300B"
+		(property "Value" "MAYA-W386-00B"
 			(at 0 0 90)
 			(layer "B.SilkS")
 			(hide yes)
@@ -49127,6 +49154,19 @@
 		(path "/cf3a540d-b7d8-4416-baa0-bfc874a83584/482f03a3-dde2-483f-b813-455a90290540")
 		(sheetname "/Wireless/")
 		(sheetfile "wireless.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "E2" "D4" "D5" "C3" "C7" "D7" "C8" "D3" "E3" "E7" "J9" "J7" "G8"
+					"G9" "H8" "H9" "E8" "D8" "F8" "F9" "E9" "B9" "C9" "D9" "C5" "C4" "C6"
+					"B6" "G7" "F7" "J8" "J3" "A4" "B4" "B3" "A3" "B5" "A5" "A2" "K2" "K3"
+					"K4" "K5" "K6" "K7" "K8" "H5" "H4" "L1" "M1" "M2" "M8" "A1" "M9" "B2"
+					"B8" "E4" "E5" "A9" "F4" "F5" "A7" "B7" "D1" "H1" "J1" "E1" "G1" "F1"
+					"C1" "J2" "H3" "H2" "G3" "G2" "F3" "F2" "H7" "L9" "K9" "K1" "J4" "G5"
+					"J5" "G4" "B1" "D2" "C2" "A8" "A6"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50159,7 +50199,7 @@
 			)
 		)
 	)
-	(footprint "PCM_ckl-connector:microSD_XYECONN_TF-015-ZYD9AH185"
+	(footprint "ckl:microSD_XYECONN_TF-015-ZYD9AH185"
 		(layer "B.Cu")
 		(uuid "5819464e-1438-41d8-ba5c-6f57383c6ce9")
 		(at 175.12 196.3725 180)
@@ -50252,6 +50292,12 @@
 		(path "/45aa24d2-e0af-4ebb-a68a-61b6a12c0eec/20b8c794-7cbc-4f4d-b0c2-033d6530adae")
 		(sheetname "/SD Cards/")
 		(sheetfile "sd.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "SH")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50316,7 +50362,7 @@
 		)
 		(fp_curve
 			(pts
-				(xy 4.6 -3.3) (xy 5.100001 -3.4) (xy 5.6 -3.8) (xy 5.9 -4)
+				(xy 4.6 -3.3) (xy 5.1 -3.4) (xy 5.6 -3.8) (xy 5.9 -4)
 			)
 			(stroke
 				(width 0.1)
@@ -50396,7 +50442,7 @@
 			(uuid "4cd32377-4005-4f0d-9a4f-2d8b38a5ffaf")
 		)
 		(fp_line
-			(start 7.799999 -0.8)
+			(start 7.8 -0.8)
 			(end 8.6 -0.8)
 			(stroke
 				(width 0.05)
@@ -50406,8 +50452,8 @@
 			(uuid "f9529f16-66d7-42d7-97df-2db69cfdeea7")
 		)
 		(fp_line
-			(start 7.799999 -0.8)
-			(end 7.799999 -4.2)
+			(start 7.8 -0.8)
+			(end 7.8 -4.2)
 			(stroke
 				(width 0.05)
 				(type default)
@@ -50416,7 +50462,7 @@
 			(uuid "964cf3f6-8336-472d-ad7d-e0f92f3d8805")
 		)
 		(fp_line
-			(start 7.799999 -4.2)
+			(start 7.8 -4.2)
 			(end -7.6 -4.2)
 			(stroke
 				(width 0.05)
@@ -50552,7 +50598,7 @@
 			)
 		)
 		(pad "" np_thru_hole circle
-			(at -4.950001 0 180)
+			(at -4.95 0 180)
 			(size 1.1 1.1)
 			(drill 1.1)
 			(layers "B.Mask")
@@ -50655,31 +50701,43 @@
 			(thermal_bridge_angle 45)
 			(uuid "3292dc94-aea1-4755-bdba-4d0db7c32278")
 		)
-		(pad "10" smd rect
+		(pad "SH" smd rect
 			(at -7.75 0.4 180)
 			(size 1.2 2.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "d4b79ecb-2ee4-4fda-832b-f1e5cba22084")
 		)
-		(pad "10" smd rect
+		(pad "SH" smd rect
 			(at -7.75 8.9 180)
 			(size 1.2 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "c41b3110-751f-460f-a5d6-3357a53a7b69")
 		)
-		(pad "10" smd rect
+		(pad "SH" smd rect
 			(at 6.85 9.25 180)
 			(size 1.6 1.5)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "9f343c44-c0eb-4d2d-b1cd-3b23425ebe11")
 		)
-		(pad "10" smd rect
+		(pad "SH" smd rect
 			(at 7.75 0.4 180)
 			(size 1.2 2.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "5aa67609-86d1-4bae-977b-3f123ee9abb9")
 		)
@@ -50710,7 +50768,7 @@
 			)
 			(polygon
 				(pts
-					(xy 182.52 200.3725) (xy 182.52 199.6725) (xy 169.22 199.672499) (xy 169.22 204.4725) (xy 182.52 204.4725)
+					(xy 182.52 200.3725) (xy 182.52 199.6725) (xy 169.22 199.6725) (xy 169.22 204.4725) (xy 182.52 204.4725)
 				)
 			)
 		)
@@ -50789,6 +50847,12 @@
 		(path "/073f6085-34ed-486a-9dc9-0ac1ede2fab6/b3442ac4-23d6-4a78-84a0-6d065aa5bab2")
 		(sheetname "/Audio/")
 		(sheetfile "audio.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S" "R2" "R1" "R1N" "T" "TN")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -51915,7 +51979,7 @@
 			)
 		)
 	)
-	(footprint "PCM_ckl-connector:Jack_3.5mm_SHOUHAN_PJ-342"
+	(footprint "ckl:Jack_3.5mm_SHOUHAN_PJ-342"
 		(layer "B.Cu")
 		(uuid "8f976b5e-4677-4142-9889-b061863a75b2")
 		(at 205.422907 133.34 -90)
@@ -52554,7 +52618,7 @@
 			(uuid "38e48c3f-6f5d-4253-b2f7-6cfa1c4f9928")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_cheyao_ckl/AUDIO-SMD_PJ-342-141.step"
+		(model "${KIPRJMOD}/lib/ckl/AUDIO-SMD_PJ-342-141.step"
 			(offset
 				(xyz -11.4 0 2.3)
 			)
@@ -52993,7 +53057,7 @@
 			)
 		)
 	)
-	(footprint "Package_BGA:Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm"
+	(footprint "MT41K256M16TW:Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm"
 		(layer "B.Cu")
 		(uuid "a76c6cf5-7d3c-466d-a5bd-11035b14743c")
 		(at 269.62 129.179999 90)
@@ -54183,7 +54247,7 @@
 			(uuid "6a294720-3c50-4595-a2ba-2457228421e8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_BGA.3dshapes/Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm.step"
+		(model "${KIPRJMOD}/lib/MT41K256M16TW/Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -54933,7 +54997,7 @@
 			)
 		)
 	)
-	(footprint "PCM_ckl-connector:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+	(footprint "ckl:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 		(layer "B.Cu")
 		(uuid "b95315b9-da87-4286-95f0-7af6ee12dfe5")
 		(at 190.252893 198.242893 180)
@@ -55399,7 +55463,7 @@
 			(uuid "564cf9d7-0e97-4cb0-be12-50a36755e4a0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3RD_PARTY}/3dmodels/com_github_cheyao_ckl/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+		(model "${KIPRJMOD}/lib/ckl/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
 			(offset
 				(xyz 0 -1.05 0)
 			)
