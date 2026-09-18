@@ -53143,20 +53143,7 @@
 		(path "/6a1996a1-d776-4235-b4ef-703258aa0c56/63bbf3ac-df2a-4ee4-b1a8-b2980e29ea53")
 		(sheetname "/DDR/")
 		(sheetfile "ddr.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "N3" "P7" "P3" "N2" "P8" "P2" "R8" "R2" "T8" "R3" "L7" "R7" "N7"
-					"T3" "T7" "M2" "N8" "M3" "L2" "J3" "K3" "L3" "K1" "K9" "J7" "K7" "T2"
-					"D9" "N9" "G7" "B2" "R9" "N1" "K8" "K2" "R1" "J2" "A9" "M9" "M1" "P1"
-					"J8" "T9" "E1" "P9" "B3" "T1" "G8" "D2" "A1" "C1" "A8" "H9" "H2" "E9"
-					"F1" "C9" "D1" "B9" "D8" "B1" "E2" "F9" "E8" "G1" "G9" "M7" "J1" "J9"
-					"L9" "L1" "E3" "F7" "F2" "F8" "H3" "H8" "G2" "H7" "D7" "C3" "C8" "C2"
-					"A7" "A2" "B8" "A3" "F3" "G3" "C7" "B7" "E7" "D3" "H1" "M8" "L8"
-				)
-			)
-		)
-		(solder_mask_margin -0.05)
+		(solder_mask_margin 0.05)
 		(solder_paste_margin -0.05)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -53172,7 +53159,7 @@
 		)
 		(fp_line
 			(start -4.11 -7.11)
-			(end -4.109999 6.11)
+			(end -4.11 6.11)
 			(stroke
 				(width 0.12)
 				(type solid)
@@ -53202,7 +53189,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -4.11 7.11) (xy -4.61 7.11) (xy -4.109999 7.61)
+				(xy -4.11 7.11) (xy -4.61 7.11) (xy -4.11 7.61)
 			)
 			(stroke
 				(width 0.12)
@@ -53212,21 +53199,20 @@
 			(layer "B.SilkS")
 			(uuid "8647de76-f085-4160-810c-c11c11d2c55a")
 		)
-		(fp_poly
-			(pts
-				(xy -5 8) (xy 5 8) (xy 5 -8) (xy -5 -8)
-			)
+		(fp_rect
+			(start -5 8)
+			(end 5 -8)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(fill no)
 			(layer "B.CrtYd")
-			(uuid "d606bfce-b6ab-420e-b8ee-3296f04ba4ca")
+			(uuid "26b548b5-d368-41ae-a32c-8adfee5691bb")
 		)
 		(fp_line
-			(start 4.000001 -7)
-			(end -4.000001 -7)
+			(start 4 -7)
+			(end -4 -7)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -53235,7 +53221,7 @@
 			(uuid "3e3758b0-f170-4310-8afe-343d38bdf2dd")
 		)
 		(fp_line
-			(start -4.000001 -7)
+			(start -4 -7)
 			(end -4 6)
 			(stroke
 				(width 0.1)
@@ -53255,8 +53241,8 @@
 			(uuid "c1ecfc29-ad25-4acd-96bb-1308e88d8c6c")
 		)
 		(fp_line
-			(start 4.000001 7)
-			(end 4.000001 -7)
+			(start 4 7)
+			(end 4 -7)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -53266,7 +53252,7 @@
 		)
 		(fp_line
 			(start -3 7)
-			(end 4.000001 7)
+			(end 4 7)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -53288,7 +53274,7 @@
 		)
 		(pad "A1" smd circle
 			(at -3.2 6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53298,7 +53284,7 @@
 		)
 		(pad "A2" smd circle
 			(at -2.4 6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ13")
@@ -53308,7 +53294,7 @@
 		)
 		(pad "A3" smd circle
 			(at -1.6 6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ15")
@@ -53318,7 +53304,7 @@
 		)
 		(pad "A7" smd circle
 			(at 1.6 6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ12")
@@ -53328,7 +53314,7 @@
 		)
 		(pad "A8" smd circle
 			(at 2.4 6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53338,7 +53324,7 @@
 		)
 		(pad "A9" smd circle
 			(at 3.2 6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53348,7 +53334,7 @@
 		)
 		(pad "B1" smd circle
 			(at -3.2 5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53358,7 +53344,7 @@
 		)
 		(pad "B2" smd circle
 			(at -2.4 5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53368,7 +53354,7 @@
 		)
 		(pad "B3" smd circle
 			(at -1.6 5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53378,7 +53364,7 @@
 		)
 		(pad "B7" smd circle
 			(at 1.6 5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS1-")
@@ -53388,7 +53374,7 @@
 		)
 		(pad "B8" smd circle
 			(at 2.4 5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ14")
@@ -53398,7 +53384,7 @@
 		)
 		(pad "B9" smd circle
 			(at 3.2 5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53408,7 +53394,7 @@
 		)
 		(pad "C1" smd circle
 			(at -3.2 4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53418,7 +53404,7 @@
 		)
 		(pad "C2" smd circle
 			(at -2.4 4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ11")
@@ -53428,7 +53414,7 @@
 		)
 		(pad "C3" smd circle
 			(at -1.6 4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ9")
@@ -53438,7 +53424,7 @@
 		)
 		(pad "C7" smd circle
 			(at 1.6 4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS1+")
@@ -53448,7 +53434,7 @@
 		)
 		(pad "C8" smd circle
 			(at 2.4 4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ10")
@@ -53458,7 +53444,7 @@
 		)
 		(pad "C9" smd circle
 			(at 3.2 4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53468,7 +53454,7 @@
 		)
 		(pad "D1" smd circle
 			(at -3.2 3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53478,7 +53464,7 @@
 		)
 		(pad "D2" smd circle
 			(at -2.4 3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53488,7 +53474,7 @@
 		)
 		(pad "D3" smd circle
 			(at -1.6 3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQM1")
@@ -53498,7 +53484,7 @@
 		)
 		(pad "D7" smd circle
 			(at 1.6 3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ8")
@@ -53508,7 +53494,7 @@
 		)
 		(pad "D8" smd circle
 			(at 2.4 3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53518,7 +53504,7 @@
 		)
 		(pad "D9" smd circle
 			(at 3.2 3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53528,7 +53514,7 @@
 		)
 		(pad "E1" smd circle
 			(at -3.2 2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53538,7 +53524,7 @@
 		)
 		(pad "E2" smd circle
 			(at -2.4 2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53548,7 +53534,7 @@
 		)
 		(pad "E3" smd circle
 			(at -1.6 2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ0")
@@ -53558,7 +53544,7 @@
 		)
 		(pad "E7" smd circle
 			(at 1.6 2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQM0")
@@ -53568,7 +53554,7 @@
 		)
 		(pad "E8" smd circle
 			(at 2.4 2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53578,7 +53564,7 @@
 		)
 		(pad "E9" smd circle
 			(at 3.2 2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53588,7 +53574,7 @@
 		)
 		(pad "F1" smd circle
 			(at -3.2 2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53598,7 +53584,7 @@
 		)
 		(pad "F2" smd circle
 			(at -2.4 2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ2")
@@ -53608,7 +53594,7 @@
 		)
 		(pad "F3" smd circle
 			(at -1.6 2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS0+")
@@ -53618,7 +53604,7 @@
 		)
 		(pad "F7" smd circle
 			(at 1.6 2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ1")
@@ -53628,7 +53614,7 @@
 		)
 		(pad "F8" smd circle
 			(at 2.4 2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ3")
@@ -53638,7 +53624,7 @@
 		)
 		(pad "F9" smd circle
 			(at 3.2 2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53648,7 +53634,7 @@
 		)
 		(pad "G1" smd circle
 			(at -3.2 1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53658,7 +53644,7 @@
 		)
 		(pad "G2" smd circle
 			(at -2.4 1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ6")
@@ -53668,7 +53654,7 @@
 		)
 		(pad "G3" smd circle
 			(at -1.6 1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS0-")
@@ -53678,7 +53664,7 @@
 		)
 		(pad "G7" smd circle
 			(at 1.6 1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53688,7 +53674,7 @@
 		)
 		(pad "G8" smd circle
 			(at 2.4 1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53698,7 +53684,7 @@
 		)
 		(pad "G9" smd circle
 			(at 3.2 1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53708,7 +53694,7 @@
 		)
 		(pad "H1" smd circle
 			(at -3.2 0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_VREF")
@@ -53718,7 +53704,7 @@
 		)
 		(pad "H2" smd circle
 			(at -2.4 0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53728,7 +53714,7 @@
 		)
 		(pad "H3" smd circle
 			(at -1.6 0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ4")
@@ -53738,7 +53724,7 @@
 		)
 		(pad "H7" smd circle
 			(at 1.6 0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ7")
@@ -53748,7 +53734,7 @@
 		)
 		(pad "H8" smd circle
 			(at 2.4 0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ5")
@@ -53758,7 +53744,7 @@
 		)
 		(pad "H9" smd circle
 			(at 3.2 0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53768,7 +53754,7 @@
 		)
 		(pad "J1" smd circle
 			(at -3.2 -0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U2-NC-PadJ1)")
@@ -53778,7 +53764,7 @@
 		)
 		(pad "J2" smd circle
 			(at -2.4 -0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53788,7 +53774,7 @@
 		)
 		(pad "J3" smd circle
 			(at -1.6 -0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{RAS}")
@@ -53798,7 +53784,7 @@
 		)
 		(pad "J7" smd circle
 			(at 1.6 -0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/CK+")
@@ -53808,7 +53794,7 @@
 		)
 		(pad "J8" smd circle
 			(at 2.4 -0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53818,7 +53804,7 @@
 		)
 		(pad "J9" smd circle
 			(at 3.2 -0.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U2-NC-PadJ9)")
@@ -53828,7 +53814,7 @@
 		)
 		(pad "K1" smd circle
 			(at -3.2 -1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/ODT")
@@ -53838,7 +53824,7 @@
 		)
 		(pad "K2" smd circle
 			(at -2.4 -1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53848,7 +53834,7 @@
 		)
 		(pad "K3" smd circle
 			(at -1.6 -1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{CAS}")
@@ -53858,7 +53844,7 @@
 		)
 		(pad "K7" smd circle
 			(at 1.6 -1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/CK-")
@@ -53868,7 +53854,7 @@
 		)
 		(pad "K8" smd circle
 			(at 2.4 -1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -53878,7 +53864,7 @@
 		)
 		(pad "K9" smd circle
 			(at 3.2 -1.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/CKE")
@@ -53888,7 +53874,7 @@
 		)
 		(pad "L1" smd circle
 			(at -3.2 -2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U2-NC-PadL1)")
@@ -53898,7 +53884,7 @@
 		)
 		(pad "L2" smd circle
 			(at -2.4 -2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{CS}")
@@ -53908,7 +53894,7 @@
 		)
 		(pad "L3" smd circle
 			(at -1.6 -2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{WE}")
@@ -53918,7 +53904,7 @@
 		)
 		(pad "L7" smd circle
 			(at 1.6 -2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A10")
@@ -53928,7 +53914,7 @@
 		)
 		(pad "L8" smd circle
 			(at 2.4 -2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U2-ZQ)")
@@ -53938,7 +53924,7 @@
 		)
 		(pad "L9" smd circle
 			(at 3.2 -2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U2-NC-PadL9)")
@@ -53948,7 +53934,7 @@
 		)
 		(pad "M1" smd circle
 			(at -3.2 -2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -53958,7 +53944,7 @@
 		)
 		(pad "M2" smd circle
 			(at -2.4 -2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/BA0")
@@ -53968,7 +53954,7 @@
 		)
 		(pad "M3" smd circle
 			(at -1.6 -2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/BA2")
@@ -53978,7 +53964,7 @@
 		)
 		(pad "M7" smd circle
 			(at 1.6 -2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U2-NC-PadM7)")
@@ -53988,7 +53974,7 @@
 		)
 		(pad "M8" smd circle
 			(at 2.4 -2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_VREF")
@@ -53998,7 +53984,7 @@
 		)
 		(pad "M9" smd circle
 			(at 3.2 -2.8 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -54008,7 +53994,7 @@
 		)
 		(pad "N1" smd circle
 			(at -3.2 -3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -54018,7 +54004,7 @@
 		)
 		(pad "N2" smd circle
 			(at -2.4 -3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A3")
@@ -54028,7 +54014,7 @@
 		)
 		(pad "N3" smd circle
 			(at -1.6 -3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A0")
@@ -54038,7 +54024,7 @@
 		)
 		(pad "N7" smd circle
 			(at 1.6 -3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A12")
@@ -54048,7 +54034,7 @@
 		)
 		(pad "N8" smd circle
 			(at 2.4 -3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/BA1")
@@ -54058,7 +54044,7 @@
 		)
 		(pad "N9" smd circle
 			(at 3.2 -3.6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -54068,7 +54054,7 @@
 		)
 		(pad "P1" smd circle
 			(at -3.2 -4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -54078,7 +54064,7 @@
 		)
 		(pad "P2" smd circle
 			(at -2.4 -4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A5")
@@ -54088,7 +54074,7 @@
 		)
 		(pad "P3" smd circle
 			(at -1.6 -4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A2")
@@ -54098,7 +54084,7 @@
 		)
 		(pad "P7" smd circle
 			(at 1.6 -4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A1")
@@ -54108,7 +54094,7 @@
 		)
 		(pad "P8" smd circle
 			(at 2.4 -4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A4")
@@ -54118,7 +54104,7 @@
 		)
 		(pad "P9" smd circle
 			(at 3.2 -4.4 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -54128,7 +54114,7 @@
 		)
 		(pad "R1" smd circle
 			(at -3.2 -5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -54138,7 +54124,7 @@
 		)
 		(pad "R2" smd circle
 			(at -2.4 -5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A7")
@@ -54148,7 +54134,7 @@
 		)
 		(pad "R3" smd circle
 			(at -1.6 -5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A9")
@@ -54158,7 +54144,7 @@
 		)
 		(pad "R7" smd circle
 			(at 1.6 -5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A11")
@@ -54168,7 +54154,7 @@
 		)
 		(pad "R8" smd circle
 			(at 2.4 -5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A6")
@@ -54178,7 +54164,7 @@
 		)
 		(pad "R9" smd circle
 			(at 3.2 -5.2 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
@@ -54188,7 +54174,7 @@
 		)
 		(pad "T1" smd circle
 			(at -3.2 -6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -54198,7 +54184,7 @@
 		)
 		(pad "T2" smd circle
 			(at -2.4 -6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{RESET}")
@@ -54208,7 +54194,7 @@
 		)
 		(pad "T3" smd circle
 			(at -1.6 -6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A13")
@@ -54218,7 +54204,7 @@
 		)
 		(pad "T7" smd circle
 			(at 1.6 -6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A14")
@@ -54228,7 +54214,7 @@
 		)
 		(pad "T8" smd circle
 			(at 2.4 -6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A8")
@@ -54238,7 +54224,7 @@
 		)
 		(pad "T9" smd circle
 			(at 3.2 -6 90)
-			(size 0.4 0.4)
+			(size 0.42 0.42)
 			(property pad_prop_bga)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
@@ -55563,61 +55549,7 @@
 		(path "/11193406-550a-48b1-a654-5418a2035a4e/796a0e95-354f-4528-a29b-9718ac0c3657")
 		(sheetname "/SAMA7/")
 		(sheetfile "sama.kicad_sch")
-		(units
-			(unit
-				(name "PWR")
-				(pins "B2" "F6" "F15" "H3" "J9" "J13" "J16" "N13" "N16" "T15" "U16" "U17"
-					"U19" "V19" "B20" "E16" "E17" "E19" "F17" "L3" "G7" "E8" "AA5" "M11"
-					"N6" "N9" "N12" "P3" "P13" "T6" "T7" "T9" "U3" "U5" "U6" "W8" "Y2" "L19"
-					"H19" "T13" "C17" "W17" "F9" "F13" "P19" "W11" "E3" "E5" "J6" "W14"
-					"T16" "D2" "A1" "A11" "A14" "A17" "A21" "AA1" "AA8" "AA9" "AA11" "AA14"
-					"AA17" "AA21" "B6" "C4" "C7" "D9" "D13" "E15" "E21" "F16" "G15" "G17"
-					"H8" "H9" "H14" "H21" "J4" "J18" "K11" "L1" "L11" "L15" "L21" "N4" "N18"
-					"P1" "P8" "P14" "P21" "R5" "R7" "R11" "R17" "T5" "T17" "U1" "U7" "U21"
-					"V13" "W5" "E1" "E7" "H1" "V9" "G5" "R15" "U15" "G11" "L7"
-				)
-			)
-			(unit
-				(name "SYS")
-				(pins "B7" "A7" "A9" "B9" "H10" "E4" "D3" "B4" "A8" "A6" "G9")
-			)
-			(unit
-				(name "DDR")
-				(pins "W6" "P6" "V5" "V6" "R6" "W4" "P7" "W2" "L8" "V4" "T3" "M9" "P5"
-					"V2" "L9" "R4" "U4" "T4" "V3" "V1" "V7" "N10" "U8" "T8" "W1" "V8" "P4"
-					"R8" "N2" "M7" "R3" "M8" "T2" "N8" "T1" "N7" "Y7" "AA4" "Y9" "Y3" "AA7"
-					"AA3" "W7" "W3" "N1" "Y4" "R1" "R2" "Y6" "AA6" "Y1" "AA2"
-				)
-			)
-			(unit
-				(name "GPIO A&B")
-				(pins "U18" "V17" "R14" "T18" "P16" "V16" "T14" "P15" "R13" "U14" "R12"
-					"P12" "W15" "P11" "V14" "N11" "V15" "R9" "W16" "W18" "R10" "W19" "P10"
-					"AA20" "P9" "B21" "K14" "C21" "L13" "D21" "K15" "F21" "M10" "G21" "J14"
-					"J21" "J15" "J20" "K13" "C20" "T19" "R18" "P17" "R19" "P18" "N14" "N15"
-					"M15" "N20" "M14" "N21" "L14" "M12" "D15" "C14" "D14" "B15" "A13" "A15"
-					"C11" "C3" "G4" "A2" "C5"
-				)
-			)
-			(unit
-				(name "GPIO C&D&E")
-				(pins "J8" "C8" "D7" "G8" "C2" "G3" "H6" "B1" "E6" "D6" "H7" "C1" "H5"
-					"D1" "J7" "F3" "H4" "D4" "F7" "D5" "C6" "F8" "F4" "A3" "F5" "B3" "G6"
-					"C15" "D16" "B16" "D17" "A16" "H17" "G20" "K12" "D20" "AA13" "Y13" "AA15"
-					"C16" "A18" "G13" "B18" "G12" "A19" "G10" "A20" "G14" "F14" "G16" "H11"
-					"D18" "J11" "C18" "H12" "E18" "H13" "H16" "F18" "J12" "H15" "F19" "G18"
-					"G19" "K9" "D19" "K10" "C19" "H18" "B19" "F20" "Y15" "AA16" "Y16" "AA19"
-					"Y19" "AA18" "Y18"
-				)
-			)
-			(unit
-				(name "PERIs")
-				(pins "V20" "V21" "Y20" "Y21" "W20" "W21" "T20" "T21" "R20" "R21" "V18"
-					"R16" "B13" "E14" "M13" "F2" "F1" "G2" "G1" "J2" "J1" "K7" "J10" "A5"
-					"D8" "A4" "K8"
-				)
-			)
-		)
+		(solder_mask_margin 0.05)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -55785,7 +55717,7 @@
 		)
 		(pad "A1" smd circle
 			(at -6.5 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_A1")
@@ -55794,7 +55726,7 @@
 		)
 		(pad "A2" smd circle
 			(at -5.85 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB30-PadA2)")
 			(pinfunction "SDMMC1_1V8SEL_A2")
@@ -55803,7 +55735,7 @@
 		)
 		(pad "A3" smd circle
 			(at -5.2 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TCK")
 			(pinfunction "TCK_SWCLK_A3")
@@ -55812,7 +55744,7 @@
 		)
 		(pad "A4" smd circle
 			(at -4.55 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-PIOBU3)")
 			(pinfunction "PIOBU3_A4")
@@ -55820,8 +55752,8 @@
 			(uuid "d378edc0-c96a-4f7f-8c55-fd1b767c7ac4")
 		)
 		(pad "A5" smd circle
-			(at -3.9 6.500001 180)
-			(size 0.346 0.346)
+			(at -3.9 6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-PIOBU1)")
 			(pinfunction "PIOBU1_A5")
@@ -55830,7 +55762,7 @@
 		)
 		(pad "A6" smd circle
 			(at -3.25 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/LPM")
 			(pinfunction "LPM_A6")
@@ -55838,8 +55770,8 @@
 			(uuid "4d173436-64f4-4cc9-8005-2efbfe02da7d")
 		)
 		(pad "A7" smd circle
-			(at -2.600001 6.5 180)
-			(size 0.346 0.346)
+			(at -2.6 6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1SYS-XOUT)")
 			(pinfunction "XOUT_A7")
@@ -55848,7 +55780,7 @@
 		)
 		(pad "A8" smd circle
 			(at -1.95 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/~{WKUP}")
 			(pinfunction "WKUP0_A8")
@@ -55857,7 +55789,7 @@
 		)
 		(pad "A9" smd circle
 			(at -1.3 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1SYS-XIN32)")
 			(pinfunction "XIN32_A9")
@@ -55866,7 +55798,7 @@
 		)
 		(pad "A11" smd circle
 			(at 0 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_A11")
@@ -55875,7 +55807,7 @@
 		)
 		(pad "A13" smd circle
 			(at 1.3 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.DAT1")
 			(pinfunction "SDMMC1_DAT1_A13")
@@ -55884,7 +55816,7 @@
 		)
 		(pad "A14" smd circle
 			(at 1.95 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_A14")
@@ -55892,8 +55824,8 @@
 			(uuid "163dcee4-85f6-4b78-8aa9-cc36d41f3653")
 		)
 		(pad "A15" smd circle
-			(at 2.600001 6.5 180)
-			(size 0.346 0.346)
+			(at 2.6 6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.DAT2")
 			(pinfunction "SDMMC1_DAT2_A15")
@@ -55902,7 +55834,7 @@
 		)
 		(pad "A16" smd circle
 			(at 3.25 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WIFI.DAT2")
 			(pinfunction "SDMMC2_DAT2_A16")
@@ -55910,8 +55842,8 @@
 			(uuid "5713f96e-bdd5-4fca-b4c4-984919c859f8")
 		)
 		(pad "A17" smd circle
-			(at 3.9 6.500001 180)
-			(size 0.346 0.346)
+			(at 3.9 6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_A17")
@@ -55920,7 +55852,7 @@
 		)
 		(pad "A18" smd circle
 			(at 4.55 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WL.HOST_WAKE")
 			(pinfunction "PD1_A18")
@@ -55929,7 +55861,7 @@
 		)
 		(pad "A19" smd circle
 			(at 5.2 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD5-PadA19)")
 			(pinfunction "PD5_A19")
@@ -55938,7 +55870,7 @@
 		)
 		(pad "A20" smd circle
 			(at 5.85 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD7-PadA20)")
 			(pinfunction "PD7_A20")
@@ -55947,16 +55879,17 @@
 		)
 		(pad "A21" smd circle
 			(at 6.5 6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_A21")
 			(pintype "power_in")
+			(solder_mask_margin 0.05)
 			(uuid "a16df14c-f14b-418c-8397-a5ee387d5370")
 		)
 		(pad "AA1" smd circle
 			(at -6.5 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA1")
@@ -55965,7 +55898,7 @@
 		)
 		(pad "AA2" smd circle
 			(at -5.85 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1DDR-DDR_ZQ)")
 			(pinfunction "DDR_ZQ_AA2")
@@ -55974,7 +55907,7 @@
 		)
 		(pad "AA3" smd circle
 			(at -5.2 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ13")
 			(pinfunction "DDR_D13_AA3")
@@ -55983,7 +55916,7 @@
 		)
 		(pad "AA4" smd circle
 			(at -4.55 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ9")
 			(pinfunction "DDR_D9_AA4")
@@ -55991,8 +55924,8 @@
 			(uuid "0cf4aa8b-c425-4754-a983-448e4ff2437b")
 		)
 		(pad "AA5" smd circle
-			(at -3.9 -6.500001 180)
-			(size 0.346 0.346)
+			(at -3.9 -6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_AA5")
@@ -56001,7 +55934,7 @@
 		)
 		(pad "AA6" smd circle
 			(at -3.25 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS1-")
 			(pinfunction "DDR_DQSN1_AA6")
@@ -56009,8 +55942,8 @@
 			(uuid "4d6cafba-4fe5-4af8-b746-1a53777f4800")
 		)
 		(pad "AA7" smd circle
-			(at -2.600001 -6.5 180)
-			(size 0.346 0.346)
+			(at -2.6 -6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ12")
 			(pinfunction "DDR_D12_AA7")
@@ -56019,7 +55952,7 @@
 		)
 		(pad "AA8" smd circle
 			(at -1.95 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA8")
@@ -56028,7 +55961,7 @@
 		)
 		(pad "AA9" smd circle
 			(at -1.3 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA9")
@@ -56037,7 +55970,7 @@
 		)
 		(pad "AA11" smd circle
 			(at 0 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA11")
@@ -56046,7 +55979,7 @@
 		)
 		(pad "AA13" smd circle
 			(at 1.3 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE4-PadAA13)")
 			(pinfunction "PE4_AA13")
@@ -56055,7 +55988,7 @@
 		)
 		(pad "AA14" smd circle
 			(at 1.95 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA14")
@@ -56063,8 +55996,8 @@
 			(uuid "097c0e55-186f-498b-be20-6f9a897b3ef0")
 		)
 		(pad "AA15" smd circle
-			(at 2.600001 -6.5 180)
-			(size 0.346 0.346)
+			(at 2.6 -6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE6-PadAA15)")
 			(pinfunction "PE6_AA15")
@@ -56073,7 +56006,7 @@
 		)
 		(pad "AA16" smd circle
 			(at 3.25 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE8-PadAA16)")
 			(pinfunction "PE8_AA16")
@@ -56081,8 +56014,8 @@
 			(uuid "dde79504-51a9-48de-8f3e-49037efaf742")
 		)
 		(pad "AA17" smd circle
-			(at 3.9 -6.500001 180)
-			(size 0.346 0.346)
+			(at 3.9 -6.5 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA17")
@@ -56091,7 +56024,7 @@
 		)
 		(pad "AA18" smd circle
 			(at 4.55 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE12-PadAA18)")
 			(pinfunction "PE12_AA18")
@@ -56100,7 +56033,7 @@
 		)
 		(pad "AA19" smd circle
 			(at 5.2 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE10-PadAA19)")
 			(pinfunction "PE10_AA19")
@@ -56109,7 +56042,7 @@
 		)
 		(pad "AA20" smd circle
 			(at 5.85 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA23-PadAA20)")
 			(pinfunction "PA23_AA20")
@@ -56118,7 +56051,7 @@
 		)
 		(pad "AA21" smd circle
 			(at 6.5 -6.5 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_AA21")
@@ -56127,7 +56060,7 @@
 		)
 		(pad "B1" smd circle
 			(at -6.5 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/SDA")
 			(pinfunction "FLEXCOM0_IO0_B1")
@@ -56136,7 +56069,7 @@
 		)
 		(pad "B2" smd circle
 			(at -5.85 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_B2")
@@ -56145,7 +56078,7 @@
 		)
 		(pad "B3" smd circle
 			(at -5.2 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TDI")
 			(pinfunction "TDI_B3")
@@ -56154,7 +56087,7 @@
 		)
 		(pad "B4" smd circle
 			(at -4.55 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/PWRHLD")
 			(pinfunction "SHDN_B4")
@@ -56163,7 +56096,7 @@
 		)
 		(pad "B6" smd circle
 			(at -3.25 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_B6")
@@ -56172,7 +56105,7 @@
 		)
 		(pad "B7" smd circle
 			(at -2.6 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1SYS-XIN)")
 			(pinfunction "XIN_B7")
@@ -56181,7 +56114,7 @@
 		)
 		(pad "B9" smd circle
 			(at -1.3 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1SYS-XOUT32)")
 			(pinfunction "XOUT32_B9")
@@ -56190,7 +56123,7 @@
 		)
 		(pad "B13" smd circle
 			(at 1.3 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-SDMMC1_CAL)")
 			(pinfunction "SDMMC1_CAL_B13")
@@ -56199,7 +56132,7 @@
 		)
 		(pad "B15" smd circle
 			(at 2.6 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.DAT0")
 			(pinfunction "SDMMC1_DAT0_B15")
@@ -56208,7 +56141,7 @@
 		)
 		(pad "B16" smd circle
 			(at 3.25 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WIFI.DAT0")
 			(pinfunction "SDMMC2_DAT0_B16")
@@ -56217,7 +56150,7 @@
 		)
 		(pad "B18" smd circle
 			(at 4.55 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD3-PadB18)")
 			(pinfunction "PD3_B18")
@@ -56226,7 +56159,7 @@
 		)
 		(pad "B19" smd circle
 			(at 5.2 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/CHG_~{INT}")
 			(pinfunction "PD30_B19")
@@ -56235,7 +56168,7 @@
 		)
 		(pad "B20" smd circle
 			(at 5.85 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CPU")
 			(pinfunction "VDDCPU_B20")
@@ -56244,7 +56177,7 @@
 		)
 		(pad "B21" smd circle
 			(at 6.5 5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Display/DISP")
 			(pinfunction "PA25_B21")
@@ -56253,7 +56186,7 @@
 		)
 		(pad "C1" smd circle
 			(at -6.5 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/HPM")
 			(pinfunction "PC11_C1")
@@ -56262,7 +56195,7 @@
 		)
 		(pad "C2" smd circle
 			(at -5.85 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/~{DET}_2.5mm")
 			(pinfunction "AD1_C2")
@@ -56271,7 +56204,7 @@
 		)
 		(pad "C3" smd circle
 			(at -5.2 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB28-PadC3)")
 			(pinfunction "SDMMC1_WP_C3")
@@ -56280,7 +56213,7 @@
 		)
 		(pad "C4" smd circle
 			(at -4.55 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_C4")
@@ -56289,7 +56222,7 @@
 		)
 		(pad "C5" smd circle
 			(at -3.9 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB31-PadC5)")
 			(pinfunction "PB31_C5")
@@ -56298,7 +56231,7 @@
 		)
 		(pad "C6" smd circle
 			(at -3.25 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC20-PadC6)")
 			(pinfunction "PC20_C6")
@@ -56307,7 +56240,7 @@
 		)
 		(pad "C7" smd circle
 			(at -2.6 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_C7")
@@ -56316,7 +56249,7 @@
 		)
 		(pad "C8" smd circle
 			(at -1.95 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC1-PadC8)")
 			(pinfunction "PC1_C8")
@@ -56325,7 +56258,7 @@
 		)
 		(pad "C11" smd circle
 			(at 0 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.DAT3")
 			(pinfunction "SDMMC1_DAT3_C11")
@@ -56334,7 +56267,7 @@
 		)
 		(pad "C14" smd circle
 			(at 1.95 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.CMD")
 			(pinfunction "SDMMC1_CMD_C14")
@@ -56343,7 +56276,7 @@
 		)
 		(pad "C15" smd circle
 			(at 2.6 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WIFI.CMD")
 			(pinfunction "SDMMC2_CMD_C15")
@@ -56352,7 +56285,7 @@
 		)
 		(pad "C16" smd circle
 			(at 3.25 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WIFI.DAT3")
 			(pinfunction "SDMMC2_DAT3_C16")
@@ -56361,7 +56294,7 @@
 		)
 		(pad "C17" smd circle
 			(at 3.9 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V8")
 			(pinfunction "VDDIOP1_C17")
@@ -56370,7 +56303,7 @@
 		)
 		(pad "C18" smd circle
 			(at 4.55 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD14-PadC18)")
 			(pinfunction "PD14_C18")
@@ -56379,7 +56312,7 @@
 		)
 		(pad "C19" smd circle
 			(at 5.2 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD28-PadC19)")
 			(pinfunction "PD28_C19")
@@ -56388,7 +56321,7 @@
 		)
 		(pad "C20" smd circle
 			(at 5.85 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB7-PadC20)")
 			(pinfunction "PB7_C20")
@@ -56397,7 +56330,7 @@
 		)
 		(pad "C21" smd circle
 			(at 6.5 5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA27-PadC21)")
 			(pinfunction "PA27_C21")
@@ -56406,7 +56339,7 @@
 		)
 		(pad "D1" smd circle
 			(at -6.5 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC13-PadD1)")
 			(pinfunction "PC13_D1")
@@ -56415,7 +56348,7 @@
 		)
 		(pad "D2" smd circle
 			(at -5.85 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+2V5")
 			(pinfunction "ADVREFP_D2")
@@ -56424,7 +56357,7 @@
 		)
 		(pad "D3" smd circle
 			(at -5.2 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/~{RST}")
 			(pinfunction "NRST_D3")
@@ -56433,7 +56366,7 @@
 		)
 		(pad "D4" smd circle
 			(at -4.55 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/DIN")
 			(pinfunction "I2SMCC1_DOUT0_D4")
@@ -56441,8 +56374,8 @@
 			(uuid "25d9563f-099c-4621-9b02-09e255037330")
 		)
 		(pad "D5" smd circle
-			(at -3.9 4.549999 180)
-			(size 0.346 0.346)
+			(at -3.9 4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC19-PadD5)")
 			(pinfunction "PC19_D5")
@@ -56451,7 +56384,7 @@
 		)
 		(pad "D6" smd circle
 			(at -3.25 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC9-PadD6)")
 			(pinfunction "PC9_D6")
@@ -56459,8 +56392,8 @@
 			(uuid "0c5317a4-91c0-4f02-a50c-6b5f177c00ed")
 		)
 		(pad "D7" smd circle
-			(at -2.6 4.549999 180)
-			(size 0.346 0.346)
+			(at -2.6 4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC2-PadD7)")
 			(pinfunction "PC2_D7")
@@ -56469,7 +56402,7 @@
 		)
 		(pad "D8" smd circle
 			(at -1.95 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-PIOBU2)")
 			(pinfunction "PIOBU2_D8")
@@ -56478,7 +56411,7 @@
 		)
 		(pad "D9" smd circle
 			(at -1.3 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_D9")
@@ -56487,7 +56420,7 @@
 		)
 		(pad "D13" smd circle
 			(at 1.3 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_D13")
@@ -56496,7 +56429,7 @@
 		)
 		(pad "D14" smd circle
 			(at 1.95 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.CK")
 			(pinfunction "SDMMC1_CK_D14")
@@ -56504,8 +56437,8 @@
 			(uuid "58b6a34e-87ba-4b3f-a3b4-5b796def2c94")
 		)
 		(pad "D15" smd circle
-			(at 2.6 4.549999 180)
-			(size 0.346 0.346)
+			(at 2.6 4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB21-PadD15)")
 			(pinfunction "SDMMC1_RSTN_D15")
@@ -56514,7 +56447,7 @@
 		)
 		(pad "D16" smd circle
 			(at 3.25 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WIFI.CK")
 			(pinfunction "SDMMC2_CK_D16")
@@ -56522,8 +56455,8 @@
 			(uuid "24304a51-7d8f-4f01-8d2e-a5edc63a2f02")
 		)
 		(pad "D17" smd circle
-			(at 3.9 4.549999 180)
-			(size 0.346 0.346)
+			(at 3.9 4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WIFI.DAT1")
 			(pinfunction "SDMMC2_DAT1_D17")
@@ -56532,7 +56465,7 @@
 		)
 		(pad "D18" smd circle
 			(at 4.55 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD12-PadD18)")
 			(pinfunction "PD12_D18")
@@ -56541,7 +56474,7 @@
 		)
 		(pad "D19" smd circle
 			(at 5.2 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD26-PadD19)")
 			(pinfunction "PD26_D19")
@@ -56550,7 +56483,7 @@
 		)
 		(pad "D20" smd circle
 			(at 5.85 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TOUCH.SDA")
 			(pinfunction "FLEXCOM5_IO0_D20")
@@ -56559,7 +56492,7 @@
 		)
 		(pad "D21" smd circle
 			(at 6.5 4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA29-PadD21)")
 			(pinfunction "PA29_D21")
@@ -56567,8 +56500,8 @@
 			(uuid "276fc97f-62dd-4550-afc5-50bce3cf6d5c")
 		)
 		(pad "E1" smd circle
-			(at -6.500001 3.9 180)
-			(size 0.346 0.346)
+			(at -6.5 3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDANA_E1")
@@ -56577,7 +56510,7 @@
 		)
 		(pad "E3" smd circle
 			(at -5.2 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+2V5")
 			(pinfunction "VDDOUT25_E3")
@@ -56585,8 +56518,8 @@
 			(uuid "0584f05e-ac7b-44e4-abf9-e8cf07ed3cff")
 		)
 		(pad "E4" smd circle
-			(at -4.549999 3.9 180)
-			(size 0.346 0.346)
+			(at -4.55 3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1SYS-NRST_OUT)")
 			(pinfunction "NRST_OUT_E4")
@@ -56595,7 +56528,7 @@
 		)
 		(pad "E5" smd circle
 			(at -3.9 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+2V5")
 			(pinfunction "VDDANA_E5")
@@ -56603,8 +56536,8 @@
 			(uuid "3b04c664-d505-4959-b1e6-2afb95a8046b")
 		)
 		(pad "E6" smd circle
-			(at -3.25 3.899999 180)
-			(size 0.346 0.346)
+			(at -3.25 3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC8-PadE6)")
 			(pinfunction "PC8_E6")
@@ -56613,7 +56546,7 @@
 		)
 		(pad "E7" smd circle
 			(at -2.6 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDANA_E7")
@@ -56622,7 +56555,7 @@
 		)
 		(pad "E8" smd circle
 			(at -1.95 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/VBAT")
 			(pinfunction "VBAT_E8")
@@ -56631,7 +56564,7 @@
 		)
 		(pad "E14" smd circle
 			(at 1.95 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-SDMMC2_CAL)")
 			(pinfunction "SDMMC2_CAL_E14")
@@ -56640,7 +56573,7 @@
 		)
 		(pad "E15" smd circle
 			(at 2.6 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_E15")
@@ -56648,8 +56581,8 @@
 			(uuid "4e5dcf4a-686f-4349-9e35-c534dbf3d903")
 		)
 		(pad "E16" smd circle
-			(at 3.25 3.899999 180)
-			(size 0.346 0.346)
+			(at 3.25 3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CPU")
 			(pinfunction "VDDCPU_E16")
@@ -56658,7 +56591,7 @@
 		)
 		(pad "E17" smd circle
 			(at 3.9 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CPU")
 			(pinfunction "VDDCPU_E17")
@@ -56666,8 +56599,8 @@
 			(uuid "f9a1ed1e-6a7d-4bea-8dad-9e92624edb3a")
 		)
 		(pad "E18" smd circle
-			(at 4.549999 3.9 180)
-			(size 0.346 0.346)
+			(at 4.55 3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD16-PadE18)")
 			(pinfunction "PD16_E18")
@@ -56676,7 +56609,7 @@
 		)
 		(pad "E19" smd circle
 			(at 5.2 3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CPU")
 			(pinfunction "VDDCPU_E19")
@@ -56684,8 +56617,8 @@
 			(uuid "fcf34fa3-99ed-4ba8-b934-d7ac386845dc")
 		)
 		(pad "E21" smd circle
-			(at 6.500001 3.9 180)
-			(size 0.346 0.346)
+			(at 6.5 3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_E21")
@@ -56694,7 +56627,7 @@
 		)
 		(pad "F1" smd circle
 			(at -6.5 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/D-")
 			(pinfunction "HHSDMA_F1")
@@ -56703,7 +56636,7 @@
 		)
 		(pad "F2" smd circle
 			(at -5.85 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/D+")
 			(pinfunction "HHSDPA_F2")
@@ -56712,7 +56645,7 @@
 		)
 		(pad "F3" smd circle
 			(at -5.2 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/FSYNC")
 			(pinfunction "I2SMCC1_WS_F3")
@@ -56721,7 +56654,7 @@
 		)
 		(pad "F4" smd circle
 			(at -4.55 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1GPIO C&D&E-PC22)")
 			(pinfunction "PC22_F4")
@@ -56729,8 +56662,8 @@
 			(uuid "4c9dc04a-f6d0-495a-b2c6-84c8eaf57982")
 		)
 		(pad "F5" smd circle
-			(at -3.899999 3.25 180)
-			(size 0.346 0.346)
+			(at -3.9 3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TMS")
 			(pinfunction "TMS_SWDIO_F5")
@@ -56739,7 +56672,7 @@
 		)
 		(pad "F6" smd circle
 			(at -3.25 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_F6")
@@ -56747,8 +56680,8 @@
 			(uuid "138fd4fb-ee9a-4dbc-9e50-53aa130522d3")
 		)
 		(pad "F7" smd circle
-			(at -2.600001 3.25 180)
-			(size 0.346 0.346)
+			(at -2.6 3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC18-PadF7)")
 			(pinfunction "PC18_F7")
@@ -56757,7 +56690,7 @@
 		)
 		(pad "F8" smd circle
 			(at -1.95 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC21-PadF8)")
 			(pinfunction "PC21_F8")
@@ -56766,7 +56699,7 @@
 		)
 		(pad "F9" smd circle
 			(at -1.3 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDSDMMC1_F9")
@@ -56775,7 +56708,7 @@
 		)
 		(pad "F13" smd circle
 			(at 1.3 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V8")
 			(pinfunction "VDDSDMMC2_F13")
@@ -56784,7 +56717,7 @@
 		)
 		(pad "F14" smd circle
 			(at 1.95 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Buttons/VOL-")
 			(pinfunction "PD9_F14")
@@ -56792,8 +56725,8 @@
 			(uuid "43d22e95-88a9-47e3-905c-6c69527b6ede")
 		)
 		(pad "F15" smd circle
-			(at 2.600001 3.25 180)
-			(size 0.346 0.346)
+			(at 2.6 3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_F15")
@@ -56802,7 +56735,7 @@
 		)
 		(pad "F16" smd circle
 			(at 3.25 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_F16")
@@ -56810,8 +56743,8 @@
 			(uuid "3b329cf1-0f96-4b88-931f-13ea8f5254f8")
 		)
 		(pad "F17" smd circle
-			(at 3.899999 3.25 180)
-			(size 0.346 0.346)
+			(at 3.9 3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CPU")
 			(pinfunction "VDDCPU_F17")
@@ -56820,7 +56753,7 @@
 		)
 		(pad "F18" smd circle
 			(at 4.55 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/UART_SAMBA_TX")
 			(pinfunction "FLEXCOM6_IO1_F18")
@@ -56829,7 +56762,7 @@
 		)
 		(pad "F19" smd circle
 			(at 5.2 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/GPIO1")
 			(pinfunction "PD22_F19")
@@ -56838,7 +56771,7 @@
 		)
 		(pad "F20" smd circle
 			(at 5.85 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/FUEL_~{INT}")
 			(pinfunction "PD31_F20")
@@ -56847,7 +56780,7 @@
 		)
 		(pad "F21" smd circle
 			(at 6.5 3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA31-PadF21)")
 			(pinfunction "PA31_F21")
@@ -56855,8 +56788,8 @@
 			(uuid "40ed3061-7b1a-4f3b-843f-6506cf45c553")
 		)
 		(pad "G1" smd circle
-			(at -6.5 2.600001 180)
-			(size 0.346 0.346)
+			(at -6.5 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-HHSDMB-PadG1)")
 			(pinfunction "HHSDMB_G1")
@@ -56865,7 +56798,7 @@
 		)
 		(pad "G2" smd circle
 			(at -5.85 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-HHSDPB-PadG2)")
 			(pinfunction "HHSDPB_G2")
@@ -56874,7 +56807,7 @@
 		)
 		(pad "G3" smd circle
 			(at -5.2 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC5-PadG3)")
 			(pinfunction "PC5_G3")
@@ -56882,8 +56815,8 @@
 			(uuid "1214e415-4d55-4662-8ffa-991520c5255e")
 		)
 		(pad "G4" smd circle
-			(at -4.549999 2.6 180)
-			(size 0.346 0.346)
+			(at -4.55 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BOOT.CD")
 			(pinfunction "SDMMC1_CD_G4")
@@ -56892,7 +56825,7 @@
 		)
 		(pad "G5" smd circle
 			(at -3.9 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDIN33_G5")
@@ -56900,8 +56833,8 @@
 			(uuid "40e2ae7d-86da-4c90-8862-6640054c2760")
 		)
 		(pad "G6" smd circle
-			(at -3.25 2.600001 180)
-			(size 0.346 0.346)
+			(at -3.25 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TDO")
 			(pinfunction "TDO_G6")
@@ -56910,7 +56843,7 @@
 		)
 		(pad "G7" smd circle
 			(at -2.6 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDIN33_G7")
@@ -56919,7 +56852,7 @@
 		)
 		(pad "G8" smd circle
 			(at -1.95 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/~{DET}_3.5mm")
 			(pinfunction "AD0_G8")
@@ -56928,7 +56861,7 @@
 		)
 		(pad "G9" smd circle
 			(at -1.3 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "TST_G9")
@@ -56937,7 +56870,7 @@
 		)
 		(pad "G10" smd circle
 			(at -0.65 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD6-PadG10)")
 			(pinfunction "PD6_G10")
@@ -56945,8 +56878,8 @@
 			(uuid "7a554c34-5789-4b47-a1fd-55199188c39a")
 		)
 		(pad "G11" smd circle
-			(at 0 2.600001 180)
-			(size 0.346 0.346)
+			(at 0 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDBAT_G11")
@@ -56955,7 +56888,7 @@
 		)
 		(pad "G12" smd circle
 			(at 0.65 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD4-PadG12)")
 			(pinfunction "PD4_G12")
@@ -56964,7 +56897,7 @@
 		)
 		(pad "G13" smd circle
 			(at 1.3 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WL.DEV_WAKE")
 			(pinfunction "PD2_G13")
@@ -56973,7 +56906,7 @@
 		)
 		(pad "G14" smd circle
 			(at 1.95 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Buttons/VOL+")
 			(pinfunction "PD8_G14")
@@ -56982,7 +56915,7 @@
 		)
 		(pad "G15" smd circle
 			(at 2.6 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_G15")
@@ -56990,8 +56923,8 @@
 			(uuid "ff5a2b61-6665-4248-a788-0635eab14b1b")
 		)
 		(pad "G16" smd circle
-			(at 3.25 2.600001 180)
-			(size 0.346 0.346)
+			(at 3.25 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Buttons/SIDE_L")
 			(pinfunction "PD10_G16")
@@ -57000,7 +56933,7 @@
 		)
 		(pad "G17" smd circle
 			(at 3.9 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_G17")
@@ -57008,8 +56941,8 @@
 			(uuid "04b647e3-4709-4b65-a040-674083c2854b")
 		)
 		(pad "G18" smd circle
-			(at 4.549999 2.6 180)
-			(size 0.346 0.346)
+			(at 4.55 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/GPIO2")
 			(pinfunction "PD23_G18")
@@ -57018,7 +56951,7 @@
 		)
 		(pad "G19" smd circle
 			(at 5.2 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/GPO1")
 			(pinfunction "PD24_G19")
@@ -57027,7 +56960,7 @@
 		)
 		(pad "G20" smd circle
 			(at 5.85 2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE1-PadG20)")
 			(pinfunction "PE1_G20")
@@ -57035,8 +56968,8 @@
 			(uuid "a88e2eb1-09cb-4463-84ed-17b0d227cec3")
 		)
 		(pad "G21" smd circle
-			(at 6.5 2.600001 180)
-			(size 0.346 0.346)
+			(at 6.5 2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB1-PadG21)")
 			(pinfunction "PB1_G21")
@@ -57045,7 +56978,7 @@
 		)
 		(pad "H1" smd circle
 			(at -6.5 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDANA_H1")
@@ -57054,7 +56987,7 @@
 		)
 		(pad "H3" smd circle
 			(at -5.2 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_H3")
@@ -57063,7 +56996,7 @@
 		)
 		(pad "H4" smd circle
 			(at -4.55 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/BCLK")
 			(pinfunction "I2SMCC1_CK_H4")
@@ -57072,7 +57005,7 @@
 		)
 		(pad "H5" smd circle
 			(at -3.9 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Power/~{INT}")
 			(pinfunction "PC12_H5")
@@ -57081,7 +57014,7 @@
 		)
 		(pad "H6" smd circle
 			(at -3.25 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/SCL")
 			(pinfunction "FLEXCOM0_IO1_H6")
@@ -57090,7 +57023,7 @@
 		)
 		(pad "H7" smd circle
 			(at -2.6 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC10-PadH7)")
 			(pinfunction "PC10_H7")
@@ -57099,7 +57032,7 @@
 		)
 		(pad "H8" smd circle
 			(at -1.95 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_H8")
@@ -57108,7 +57041,7 @@
 		)
 		(pad "H9" smd circle
 			(at -1.3 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_H9")
@@ -57117,7 +57050,7 @@
 		)
 		(pad "H10" smd circle
 			(at -0.65 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(JP1-C)")
 			(pinfunction "JTAGSEL_H10")
@@ -57126,7 +57059,7 @@
 		)
 		(pad "H11" smd circle
 			(at 0 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Buttons/SIDE_R")
 			(pinfunction "PD11_H11")
@@ -57135,7 +57068,7 @@
 		)
 		(pad "H12" smd circle
 			(at 0.65 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD15-PadH12)")
 			(pinfunction "PD15_H12")
@@ -57144,7 +57077,7 @@
 		)
 		(pad "H13" smd circle
 			(at 1.3 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD17-PadH13)")
 			(pinfunction "PD17_H13")
@@ -57153,7 +57086,7 @@
 		)
 		(pad "H14" smd circle
 			(at 1.95 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_H14")
@@ -57162,7 +57095,7 @@
 		)
 		(pad "H15" smd circle
 			(at 2.6 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD21-PadH15)")
 			(pinfunction "PD21_H15")
@@ -57171,7 +57104,7 @@
 		)
 		(pad "H16" smd circle
 			(at 3.25 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/UART_SAMBA_RX")
 			(pinfunction "FLEXCOM6_IO0_H16")
@@ -57180,7 +57113,7 @@
 		)
 		(pad "H17" smd circle
 			(at 3.9 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE0-PadH17)")
 			(pinfunction "PE0_H17")
@@ -57189,7 +57122,7 @@
 		)
 		(pad "H18" smd circle
 			(at 4.55 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD29-PadH18)")
 			(pinfunction "PD29_H18")
@@ -57198,7 +57131,7 @@
 		)
 		(pad "H19" smd circle
 			(at 5.2 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDGMAC1_H19")
@@ -57207,7 +57140,7 @@
 		)
 		(pad "H21" smd circle
 			(at 6.5 1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_H21")
@@ -57216,7 +57149,7 @@
 		)
 		(pad "J1" smd circle
 			(at -6.5 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-HHSDMC-PadJ1)")
 			(pinfunction "HHSDMC_J1")
@@ -57225,7 +57158,7 @@
 		)
 		(pad "J2" smd circle
 			(at -5.85 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-HHSDPC-PadJ2)")
 			(pinfunction "HHSDPC_J2")
@@ -57234,7 +57167,7 @@
 		)
 		(pad "J4" smd circle
 			(at -4.55 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_J4")
@@ -57243,7 +57176,7 @@
 		)
 		(pad "J6" smd circle
 			(at -3.25 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+2V5")
 			(pinfunction "VDDANA_J6")
@@ -57252,7 +57185,7 @@
 		)
 		(pad "J7" smd circle
 			(at -2.6 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/DOUT")
 			(pinfunction "I2SMCC1_DIN0_J7")
@@ -57261,7 +57194,7 @@
 		)
 		(pad "J8" smd circle
 			(at -1.95 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PC0-PadJ8)")
 			(pinfunction "PC0_J8")
@@ -57270,7 +57203,7 @@
 		)
 		(pad "J9" smd circle
 			(at -1.3 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_J9")
@@ -57279,7 +57212,7 @@
 		)
 		(pad "J10" smd circle
 			(at -0.65 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-PIOBU0)")
 			(pinfunction "PIOBU0_J10")
@@ -57288,7 +57221,7 @@
 		)
 		(pad "J11" smd circle
 			(at 0 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD13-PadJ11)")
 			(pinfunction "PD13_J11")
@@ -57297,7 +57230,7 @@
 		)
 		(pad "J12" smd circle
 			(at 0.65 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD20-PadJ12)")
 			(pinfunction "PD20_J12")
@@ -57306,7 +57239,7 @@
 		)
 		(pad "J13" smd circle
 			(at 1.3 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_J13")
@@ -57315,7 +57248,7 @@
 		)
 		(pad "J14" smd circle
 			(at 1.95 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB2-PadJ14)")
 			(pinfunction "PB2_J14")
@@ -57324,7 +57257,7 @@
 		)
 		(pad "J15" smd circle
 			(at 2.6 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB4-PadJ15)")
 			(pinfunction "PB4_J15")
@@ -57333,7 +57266,7 @@
 		)
 		(pad "J16" smd circle
 			(at 3.25 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_J16")
@@ -57342,7 +57275,7 @@
 		)
 		(pad "J18" smd circle
 			(at 4.55 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_J18")
@@ -57351,7 +57284,7 @@
 		)
 		(pad "J20" smd circle
 			(at 5.85 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB5-PadJ20)")
 			(pinfunction "PB5_J20")
@@ -57360,7 +57293,7 @@
 		)
 		(pad "J21" smd circle
 			(at 6.5 1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB3-PadJ21)")
 			(pinfunction "PB3_J21")
@@ -57369,7 +57302,7 @@
 		)
 		(pad "K7" smd circle
 			(at -2.6 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-HHSRTUNE)")
 			(pinfunction "HHSRTUNE_K7")
@@ -57378,7 +57311,7 @@
 		)
 		(pad "K8" smd circle
 			(at -1.95 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-AUDIOCLK)")
 			(pinfunction "AUDIOCLK_K8")
@@ -57387,7 +57320,7 @@
 		)
 		(pad "K9" smd circle
 			(at -1.3 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Audio/GPI1")
 			(pinfunction "PD25_K9")
@@ -57396,7 +57329,7 @@
 		)
 		(pad "K10" smd circle
 			(at -0.65 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PD27-PadK10)")
 			(pinfunction "PD27_K10")
@@ -57404,8 +57337,8 @@
 			(uuid "f75d0aa4-9a92-487f-99f8-fe8e70a58757")
 		)
 		(pad "K11" smd circle
-			(at 0 0.649999 180)
-			(size 0.346 0.346)
+			(at 0 0.65 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_K11")
@@ -57414,7 +57347,7 @@
 		)
 		(pad "K12" smd circle
 			(at 0.65 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TOUCH.SCL")
 			(pinfunction "FLEXCOM5_IO1_K12")
@@ -57423,7 +57356,7 @@
 		)
 		(pad "K13" smd circle
 			(at 1.3 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB6-PadK13)")
 			(pinfunction "PB6_K13")
@@ -57432,7 +57365,7 @@
 		)
 		(pad "K14" smd circle
 			(at 1.95 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA26-PadK14)")
 			(pinfunction "PA26_K14")
@@ -57441,7 +57374,7 @@
 		)
 		(pad "K15" smd circle
 			(at 2.6 0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA30-PadK15)")
 			(pinfunction "PA30_K15")
@@ -57450,7 +57383,7 @@
 		)
 		(pad "L1" smd circle
 			(at -6.5 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_L1")
@@ -57459,7 +57392,7 @@
 		)
 		(pad "L3" smd circle
 			(at -5.2 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDUTMI_L3")
@@ -57467,8 +57400,8 @@
 			(uuid "b185315c-e926-42b2-9589-a88b99fe3343")
 		)
 		(pad "L7" smd circle
-			(at -2.600001 0 180)
-			(size 0.346 0.346)
+			(at -2.6 0 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDUTMI_L7")
@@ -57477,7 +57410,7 @@
 		)
 		(pad "L8" smd circle
 			(at -1.95 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A8")
 			(pinfunction "DDR_A8_L8")
@@ -57486,7 +57419,7 @@
 		)
 		(pad "L9" smd circle
 			(at -1.3 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A14")
 			(pinfunction "DDR_A14_L9")
@@ -57495,7 +57428,7 @@
 		)
 		(pad "L11" smd circle
 			(at 0 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_L11")
@@ -57504,7 +57437,7 @@
 		)
 		(pad "L13" smd circle
 			(at 1.3 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA28-PadL13)")
 			(pinfunction "PA28_L13")
@@ -57513,7 +57446,7 @@
 		)
 		(pad "L14" smd circle
 			(at 1.95 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.HOST_WAKE")
 			(pinfunction "PB19_L14")
@@ -57521,8 +57454,8 @@
 			(uuid "02261178-57cf-4d02-9d12-53a6d9bd0dda")
 		)
 		(pad "L15" smd circle
-			(at 2.600001 0 180)
-			(size 0.346 0.346)
+			(at 2.6 0 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_L15")
@@ -57531,7 +57464,7 @@
 		)
 		(pad "L19" smd circle
 			(at 5.2 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDGMAC0_L19")
@@ -57540,7 +57473,7 @@
 		)
 		(pad "L21" smd circle
 			(at 6.5 0 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_L21")
@@ -57549,7 +57482,7 @@
 		)
 		(pad "M7" smd circle
 			(at -2.6 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ1")
 			(pinfunction "DDR_D1_M7")
@@ -57558,7 +57491,7 @@
 		)
 		(pad "M8" smd circle
 			(at -1.95 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ3")
 			(pinfunction "DDR_D3_M8")
@@ -57567,7 +57500,7 @@
 		)
 		(pad "M9" smd circle
 			(at -1.3 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A11")
 			(pinfunction "DDR_A11_M9")
@@ -57576,7 +57509,7 @@
 		)
 		(pad "M10" smd circle
 			(at -0.65 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PB0-PadM10)")
 			(pinfunction "PB0_M10")
@@ -57584,8 +57517,8 @@
 			(uuid "2d6f5375-7ad2-4907-88d6-1d4768247112")
 		)
 		(pad "M11" smd circle
-			(at 0 -0.649999 180)
-			(size 0.346 0.346)
+			(at 0 -0.65 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_M11")
@@ -57594,7 +57527,7 @@
 		)
 		(pad "M12" smd circle
 			(at 0.65 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.DEV_WAKE")
 			(pinfunction "PB20_M12")
@@ -57603,7 +57536,7 @@
 		)
 		(pad "M13" smd circle
 			(at 1.3 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-QSPI0_CAL)")
 			(pinfunction "QSPI0_CAL_M13")
@@ -57612,7 +57545,7 @@
 		)
 		(pad "M14" smd circle
 			(at 1.95 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.DIN")
 			(pinfunction "PB17_M14")
@@ -57621,7 +57554,7 @@
 		)
 		(pad "M15" smd circle
 			(at 2.6 -0.65 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.FSYNC")
 			(pinfunction "PB15_M15")
@@ -57630,7 +57563,7 @@
 		)
 		(pad "N1" smd circle
 			(at -6.5 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQM0")
 			(pinfunction "DDR_DQM0_N1")
@@ -57639,7 +57572,7 @@
 		)
 		(pad "N2" smd circle
 			(at -5.85 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ0")
 			(pinfunction "DDR_D0_N2")
@@ -57648,7 +57581,7 @@
 		)
 		(pad "N4" smd circle
 			(at -4.55 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_N4")
@@ -57657,7 +57590,7 @@
 		)
 		(pad "N6" smd circle
 			(at -3.25 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_N6")
@@ -57666,7 +57599,7 @@
 		)
 		(pad "N7" smd circle
 			(at -2.6 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ7")
 			(pinfunction "DDR_D7_N7")
@@ -57675,7 +57608,7 @@
 		)
 		(pad "N8" smd circle
 			(at -1.95 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ5")
 			(pinfunction "DDR_D5_N8")
@@ -57684,7 +57617,7 @@
 		)
 		(pad "N9" smd circle
 			(at -1.3 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_N9")
@@ -57693,7 +57626,7 @@
 		)
 		(pad "N10" smd circle
 			(at -0.65 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{WE}")
 			(pinfunction "DDR_WEN_N10")
@@ -57702,7 +57635,7 @@
 		)
 		(pad "N11" smd circle
 			(at 0 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA15-PadN11)")
 			(pinfunction "SDMMC0_1V8SEL_N11")
@@ -57711,7 +57644,7 @@
 		)
 		(pad "N12" smd circle
 			(at 0.65 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_N12")
@@ -57720,7 +57653,7 @@
 		)
 		(pad "N13" smd circle
 			(at 1.3 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_N13")
@@ -57729,7 +57662,7 @@
 		)
 		(pad "N14" smd circle
 			(at 1.95 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/WL.EN")
 			(pinfunction "PB13_N14")
@@ -57738,7 +57671,7 @@
 		)
 		(pad "N15" smd circle
 			(at 2.6 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.BCLK")
 			(pinfunction "PB14_N15")
@@ -57747,7 +57680,7 @@
 		)
 		(pad "N16" smd circle
 			(at 3.25 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_N16")
@@ -57756,7 +57689,7 @@
 		)
 		(pad "N18" smd circle
 			(at 4.55 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_N18")
@@ -57765,7 +57698,7 @@
 		)
 		(pad "N20" smd circle
 			(at 5.85 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.DOUT")
 			(pinfunction "PB16_N20")
@@ -57774,7 +57707,7 @@
 		)
 		(pad "N21" smd circle
 			(at 6.5 -1.3 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.MCLK")
 			(pinfunction "PB18_N21")
@@ -57783,7 +57716,7 @@
 		)
 		(pad "P1" smd circle
 			(at -6.5 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_P1")
@@ -57792,7 +57725,7 @@
 		)
 		(pad "P3" smd circle
 			(at -5.2 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_P3")
@@ -57801,7 +57734,7 @@
 		)
 		(pad "P4" smd circle
 			(at -4.55 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/BA1")
 			(pinfunction "DDR_BA1_P4")
@@ -57810,7 +57743,7 @@
 		)
 		(pad "P5" smd circle
 			(at -3.9 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A12")
 			(pinfunction "DDR_A12_P5")
@@ -57819,7 +57752,7 @@
 		)
 		(pad "P6" smd circle
 			(at -3.25 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A1")
 			(pinfunction "DDR_A1_P6")
@@ -57828,7 +57761,7 @@
 		)
 		(pad "P7" smd circle
 			(at -2.6 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A6")
 			(pinfunction "DDR_A6_P7")
@@ -57837,7 +57770,7 @@
 		)
 		(pad "P8" smd circle
 			(at -1.95 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_P8")
@@ -57846,7 +57779,7 @@
 		)
 		(pad "P9" smd circle
 			(at -1.3 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Display/SI")
 			(pinfunction "PA24_P9")
@@ -57855,7 +57788,7 @@
 		)
 		(pad "P10" smd circle
 			(at -0.65 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Display/SCLK")
 			(pinfunction "PA22_P10")
@@ -57864,7 +57797,7 @@
 		)
 		(pad "P11" smd circle
 			(at 0 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA13-PadP11)")
 			(pinfunction "PA13_P11")
@@ -57873,7 +57806,7 @@
 		)
 		(pad "P12" smd circle
 			(at 0.65 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA11-PadP12)")
 			(pinfunction "SDMMC0_DS_P12")
@@ -57882,7 +57815,7 @@
 		)
 		(pad "P13" smd circle
 			(at 1.3 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_P13")
@@ -57891,7 +57824,7 @@
 		)
 		(pad "P14" smd circle
 			(at 1.95 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_P14")
@@ -57900,7 +57833,7 @@
 		)
 		(pad "P15" smd circle
 			(at 2.6 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA7-PadP15)")
 			(pinfunction "SDMMC0_DAT6_P15")
@@ -57909,7 +57842,7 @@
 		)
 		(pad "P16" smd circle
 			(at 3.25 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.DAT1")
 			(pinfunction "SDMMC0_DAT1_P16")
@@ -57918,7 +57851,7 @@
 		)
 		(pad "P17" smd circle
 			(at 3.9 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.~{CTS}")
 			(pinfunction "PB10_P17")
@@ -57927,7 +57860,7 @@
 		)
 		(pad "P18" smd circle
 			(at 4.55 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.~{RTS}")
 			(pinfunction "PB12_P18")
@@ -57936,7 +57869,7 @@
 		)
 		(pad "P19" smd circle
 			(at 5.2 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V8")
 			(pinfunction "VDDQSPI0_P19")
@@ -57945,7 +57878,7 @@
 		)
 		(pad "P21" smd circle
 			(at 6.5 -1.95 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_P21")
@@ -57953,8 +57886,8 @@
 			(uuid "bfb2c955-6365-4146-9a81-51575c998fc6")
 		)
 		(pad "R1" smd circle
-			(at -6.5 -2.600001 180)
-			(size 0.346 0.346)
+			(at -6.5 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS0+")
 			(pinfunction "DDR_DQS0_R1")
@@ -57963,7 +57896,7 @@
 		)
 		(pad "R2" smd circle
 			(at -5.85 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS0-")
 			(pinfunction "DDR_DQSN0_R2")
@@ -57972,7 +57905,7 @@
 		)
 		(pad "R3" smd circle
 			(at -5.2 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ2")
 			(pinfunction "DDR_D2_R3")
@@ -57980,8 +57913,8 @@
 			(uuid "43d01945-25b2-4e95-9e48-2853a808adb0")
 		)
 		(pad "R4" smd circle
-			(at -4.549999 -2.6 180)
-			(size 0.346 0.346)
+			(at -4.55 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1DDR-DDR_A15-PadR4)")
 			(pinfunction "DDR_A15_R4")
@@ -57990,7 +57923,7 @@
 		)
 		(pad "R5" smd circle
 			(at -3.9 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_R5")
@@ -57998,8 +57931,8 @@
 			(uuid "ee2ed342-810f-4e4d-8f4d-427a253c1a35")
 		)
 		(pad "R6" smd circle
-			(at -3.25 -2.600001 180)
-			(size 0.346 0.346)
+			(at -3.25 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A4")
 			(pinfunction "DDR_A4_R6")
@@ -58008,7 +57941,7 @@
 		)
 		(pad "R7" smd circle
 			(at -2.6 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_R7")
@@ -58017,7 +57950,7 @@
 		)
 		(pad "R8" smd circle
 			(at -1.95 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/BA2")
 			(pinfunction "DDR_BA2_R8")
@@ -58026,7 +57959,7 @@
 		)
 		(pad "R9" smd circle
 			(at -1.3 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA17-PadR9)")
 			(pinfunction "PA17_R9")
@@ -58035,7 +57968,7 @@
 		)
 		(pad "R10" smd circle
 			(at -0.65 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA20-PadR10)")
 			(pinfunction "PA20_R10")
@@ -58043,8 +57976,8 @@
 			(uuid "2e204050-d324-4876-b385-727363ad1d04")
 		)
 		(pad "R11" smd circle
-			(at 0 -2.600001 180)
-			(size 0.346 0.346)
+			(at 0 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_R11")
@@ -58053,7 +57986,7 @@
 		)
 		(pad "R12" smd circle
 			(at 0.65 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.DAT3")
 			(pinfunction "SDMMC0_DAT3_R12")
@@ -58062,7 +57995,7 @@
 		)
 		(pad "R13" smd circle
 			(at 1.3 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA8-PadR13)")
 			(pinfunction "SDMMC0_DAT7_R13")
@@ -58071,7 +58004,7 @@
 		)
 		(pad "R14" smd circle
 			(at 1.95 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA2-PadR14)")
 			(pinfunction "SDMMC0_RSTN_R14")
@@ -58080,7 +58013,7 @@
 		)
 		(pad "R15" smd circle
 			(at 2.6 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDDPHY_R15")
@@ -58088,8 +58021,8 @@
 			(uuid "b8cab0fd-243b-4f58-b854-0ef75b2c4914")
 		)
 		(pad "R16" smd circle
-			(at 3.25 -2.600001 180)
-			(size 0.346 0.346)
+			(at 3.25 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-SDMMC0_CAL)")
 			(pinfunction "SDMMC0_CAL_R16")
@@ -58098,7 +58031,7 @@
 		)
 		(pad "R17" smd circle
 			(at 3.9 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_R17")
@@ -58106,8 +58039,8 @@
 			(uuid "d9710205-dd0d-43cf-b1ea-1a40aec84d4d")
 		)
 		(pad "R18" smd circle
-			(at 4.549999 -2.6 180)
-			(size 0.346 0.346)
+			(at 4.55 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.RX")
 			(pinfunction "PB9_R18")
@@ -58116,7 +58049,7 @@
 		)
 		(pad "R19" smd circle
 			(at 5.2 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.EN")
 			(pinfunction "PB11_R19")
@@ -58125,7 +58058,7 @@
 		)
 		(pad "R20" smd circle
 			(at 5.85 -2.6 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DN3-PadR20)")
 			(pinfunction "MIPI_DN3_R20")
@@ -58133,8 +58066,8 @@
 			(uuid "addd22cd-d802-428a-9fa4-1a34910563c3")
 		)
 		(pad "R21" smd circle
-			(at 6.5 -2.600001 180)
-			(size 0.346 0.346)
+			(at 6.5 -2.6 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DP3-PadR21)")
 			(pinfunction "MIPI_DP3_R21")
@@ -58143,7 +58076,7 @@
 		)
 		(pad "T1" smd circle
 			(at -6.5 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ6")
 			(pinfunction "DDR_D6_T1")
@@ -58152,7 +58085,7 @@
 		)
 		(pad "T2" smd circle
 			(at -5.85 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ4")
 			(pinfunction "DDR_D4_T2")
@@ -58161,7 +58094,7 @@
 		)
 		(pad "T3" smd circle
 			(at -5.2 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A10")
 			(pinfunction "DDR_A10_T3")
@@ -58170,7 +58103,7 @@
 		)
 		(pad "T4" smd circle
 			(at -4.55 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/CK-")
 			(pinfunction "DDR_CLKN_T4")
@@ -58178,8 +58111,8 @@
 			(uuid "e247bb4d-03dc-462c-8b39-697198432c10")
 		)
 		(pad "T5" smd circle
-			(at -3.899999 -3.25 180)
-			(size 0.346 0.346)
+			(at -3.9 -3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_T5")
@@ -58188,7 +58121,7 @@
 		)
 		(pad "T6" smd circle
 			(at -3.25 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_T6")
@@ -58196,8 +58129,8 @@
 			(uuid "6c05a4a3-1b2d-40e1-bc46-6fa2b6a56e7f")
 		)
 		(pad "T7" smd circle
-			(at -2.600001 -3.25 180)
-			(size 0.346 0.346)
+			(at -2.6 -3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_T7")
@@ -58206,7 +58139,7 @@
 		)
 		(pad "T8" smd circle
 			(at -1.95 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{CAS}")
 			(pinfunction "DDR_CASN_T8")
@@ -58215,7 +58148,7 @@
 		)
 		(pad "T9" smd circle
 			(at -1.3 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_T9")
@@ -58224,7 +58157,7 @@
 		)
 		(pad "T13" smd circle
 			(at 1.3 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDIOP0_T13")
@@ -58233,7 +58166,7 @@
 		)
 		(pad "T14" smd circle
 			(at 1.95 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA6-PadT14)")
 			(pinfunction "SDMMC0_DAT5_T14")
@@ -58241,8 +58174,8 @@
 			(uuid "5562aa29-9bb6-48c5-958e-67f6dc7a370c")
 		)
 		(pad "T15" smd circle
-			(at 2.600001 -3.25 180)
-			(size 0.346 0.346)
+			(at 2.6 -3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_T15")
@@ -58251,7 +58184,7 @@
 		)
 		(pad "T16" smd circle
 			(at 3.25 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+2V5")
 			(pinfunction "VDDDPHY_T16")
@@ -58259,8 +58192,8 @@
 			(uuid "a5d401ad-780c-420d-9bcb-797bec016320")
 		)
 		(pad "T17" smd circle
-			(at 3.899999 -3.25 180)
-			(size 0.346 0.346)
+			(at 3.9 -3.25 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_T17")
@@ -58269,7 +58202,7 @@
 		)
 		(pad "T18" smd circle
 			(at 4.55 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.DAT0")
 			(pinfunction "SDMMC0_DAT0_T18")
@@ -58278,7 +58211,7 @@
 		)
 		(pad "T19" smd circle
 			(at 5.2 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/BT.TX")
 			(pinfunction "PB8_T19")
@@ -58287,7 +58220,7 @@
 		)
 		(pad "T20" smd circle
 			(at 5.85 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DN2-PadT20)")
 			(pinfunction "MIPI_DN2_T20")
@@ -58296,7 +58229,7 @@
 		)
 		(pad "T21" smd circle
 			(at 6.5 -3.25 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DP2-PadT21)")
 			(pinfunction "MIPI_DP2_T21")
@@ -58304,8 +58237,8 @@
 			(uuid "abbd1291-d9e1-4324-af01-6997512a6c96")
 		)
 		(pad "U1" smd circle
-			(at -6.500001 -3.9 180)
-			(size 0.346 0.346)
+			(at -6.5 -3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_U1")
@@ -58314,7 +58247,7 @@
 		)
 		(pad "U3" smd circle
 			(at -5.2 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_U3")
@@ -58322,8 +58255,8 @@
 			(uuid "15475a65-0909-400f-b953-34e6a98e8af9")
 		)
 		(pad "U4" smd circle
-			(at -4.549999 -3.9 180)
-			(size 0.346 0.346)
+			(at -4.55 -3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/CK+")
 			(pinfunction "DDR_CLK_U4")
@@ -58332,7 +58265,7 @@
 		)
 		(pad "U5" smd circle
 			(at -3.9 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_U5")
@@ -58340,8 +58273,8 @@
 			(uuid "81d85bab-0a5e-4def-abab-700bed590a89")
 		)
 		(pad "U6" smd circle
-			(at -3.25 -3.899999 180)
-			(size 0.346 0.346)
+			(at -3.25 -3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_U6")
@@ -58350,7 +58283,7 @@
 		)
 		(pad "U7" smd circle
 			(at -2.6 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_U7")
@@ -58359,7 +58292,7 @@
 		)
 		(pad "U8" smd circle
 			(at -1.95 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{RAS}")
 			(pinfunction "DDR_RASN_U8")
@@ -58368,7 +58301,7 @@
 		)
 		(pad "U14" smd circle
 			(at 1.95 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.DAT2")
 			(pinfunction "SDMMC0_DAT2_U14")
@@ -58377,7 +58310,7 @@
 		)
 		(pad "U15" smd circle
 			(at 2.6 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDDPHY_U15")
@@ -58385,8 +58318,8 @@
 			(uuid "d266c114-ee64-4743-959f-06b810a98c93")
 		)
 		(pad "U16" smd circle
-			(at 3.25 -3.899999 180)
-			(size 0.346 0.346)
+			(at 3.25 -3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_U16")
@@ -58395,7 +58328,7 @@
 		)
 		(pad "U17" smd circle
 			(at 3.9 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_U17")
@@ -58403,8 +58336,8 @@
 			(uuid "f1000d40-044a-4d38-8aa5-590a082227a6")
 		)
 		(pad "U18" smd circle
-			(at 4.549999 -3.9 180)
-			(size 0.346 0.346)
+			(at 4.55 -3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.CK")
 			(pinfunction "SDMMC0_CK_U18")
@@ -58413,7 +58346,7 @@
 		)
 		(pad "U19" smd circle
 			(at 5.2 -3.9 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_U19")
@@ -58421,8 +58354,8 @@
 			(uuid "1775d10f-58c6-4605-a78c-4ab5bde2302f")
 		)
 		(pad "U21" smd circle
-			(at 6.500001 -3.9 180)
-			(size 0.346 0.346)
+			(at 6.5 -3.9 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_U21")
@@ -58431,7 +58364,7 @@
 		)
 		(pad "V1" smd circle
 			(at -6.5 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{RESET}")
 			(pinfunction "DDR_RESETN_V1")
@@ -58440,7 +58373,7 @@
 		)
 		(pad "V2" smd circle
 			(at -5.85 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A13")
 			(pinfunction "DDR_A13_V2")
@@ -58449,7 +58382,7 @@
 		)
 		(pad "V3" smd circle
 			(at -5.2 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/CKE")
 			(pinfunction "DDR_CKE_V3")
@@ -58458,7 +58391,7 @@
 		)
 		(pad "V4" smd circle
 			(at -4.55 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A9")
 			(pinfunction "DDR_A9_V4")
@@ -58466,8 +58399,8 @@
 			(uuid "c77effa2-4da3-46d1-962c-8a8b8d62ab8d")
 		)
 		(pad "V5" smd circle
-			(at -3.9 -4.549999 180)
-			(size 0.346 0.346)
+			(at -3.9 -4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A2")
 			(pinfunction "DDR_A2_V5")
@@ -58476,7 +58409,7 @@
 		)
 		(pad "V6" smd circle
 			(at -3.25 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A3")
 			(pinfunction "DDR_A3_V6")
@@ -58484,8 +58417,8 @@
 			(uuid "c2c47910-47a4-4db4-920b-abcf004165e5")
 		)
 		(pad "V7" smd circle
-			(at -2.6 -4.549999 180)
-			(size 0.346 0.346)
+			(at -2.6 -4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/~{CS}")
 			(pinfunction "DDR_CSN_V7")
@@ -58494,17 +58427,16 @@
 		)
 		(pad "V8" smd circle
 			(at -1.95 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/BA0")
 			(pinfunction "DDR_BA0_V8")
 			(pintype "output")
-			(solder_mask_margin 0.05)
 			(uuid "5832cc00-3a01-4476-9bef-1909f5787da3")
 		)
 		(pad "V9" smd circle
 			(at -1.3 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GNDANA_V9")
@@ -58513,7 +58445,7 @@
 		)
 		(pad "V13" smd circle
 			(at 1.3 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_V13")
@@ -58522,7 +58454,7 @@
 		)
 		(pad "V14" smd circle
 			(at 1.95 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA14-PadV14)")
 			(pinfunction "SDMMC0_WP_V14")
@@ -58530,8 +58462,8 @@
 			(uuid "5f8c57f6-9699-438f-a467-e70961bd7d90")
 		)
 		(pad "V15" smd circle
-			(at 2.6 -4.549999 180)
-			(size 0.346 0.346)
+			(at 2.6 -4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.CD")
 			(pinfunction "SDMMC0_CD_V15")
@@ -58540,7 +58472,7 @@
 		)
 		(pad "V16" smd circle
 			(at 3.25 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA5-PadV16)")
 			(pinfunction "SDMMC0_DAT4_V16")
@@ -58548,8 +58480,8 @@
 			(uuid "ba7ff118-f713-4cc6-8bf9-4d789825074f")
 		)
 		(pad "V17" smd circle
-			(at 3.9 -4.549999 180)
-			(size 0.346 0.346)
+			(at 3.9 -4.55 180)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/EXT.CMD")
 			(pinfunction "SDMMC0_CMD_V17")
@@ -58558,7 +58490,7 @@
 		)
 		(pad "V18" smd circle
 			(at 4.55 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "Net-(U1PERIs-MIPI_REXT)")
 			(pinfunction "MIPI_REXT_V18")
@@ -58567,7 +58499,7 @@
 		)
 		(pad "V19" smd circle
 			(at 5.2 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V15_CORE")
 			(pinfunction "VDDCORE_V19")
@@ -58576,7 +58508,7 @@
 		)
 		(pad "V20" smd circle
 			(at 5.85 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_CLKN-PadV20)")
 			(pinfunction "MIPI_CLKN_V20")
@@ -58585,7 +58517,7 @@
 		)
 		(pad "V21" smd circle
 			(at 6.5 -4.55 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_CLKP-PadV21)")
 			(pinfunction "MIPI_CLKP_V21")
@@ -58594,7 +58526,7 @@
 		)
 		(pad "W1" smd circle
 			(at -6.5 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/ODT")
 			(pinfunction "DDR_ODT_W1")
@@ -58603,7 +58535,7 @@
 		)
 		(pad "W2" smd circle
 			(at -5.85 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A7")
 			(pinfunction "DDR_A7_W2")
@@ -58612,7 +58544,7 @@
 		)
 		(pad "W3" smd circle
 			(at -5.2 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ15")
 			(pinfunction "DDR_D15_W3")
@@ -58621,7 +58553,7 @@
 		)
 		(pad "W4" smd circle
 			(at -4.55 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A5")
 			(pinfunction "DDR_A5_W4")
@@ -58630,7 +58562,7 @@
 		)
 		(pad "W5" smd circle
 			(at -3.9 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "GND")
 			(pinfunction "GND_W5")
@@ -58639,7 +58571,7 @@
 		)
 		(pad "W6" smd circle
 			(at -3.25 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_A0")
 			(pinfunction "DDR_A0_W6")
@@ -58648,7 +58580,7 @@
 		)
 		(pad "W7" smd circle
 			(at -2.6 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ14")
 			(pinfunction "DDR_D14_W7")
@@ -58657,7 +58589,7 @@
 		)
 		(pad "W8" smd circle
 			(at -1.95 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_W8")
@@ -58666,7 +58598,7 @@
 		)
 		(pad "W11" smd circle
 			(at 0 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDLVDS_W11")
@@ -58675,7 +58607,7 @@
 		)
 		(pad "W14" smd circle
 			(at 1.95 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+2V5")
 			(pinfunction "VDDIN25_W14")
@@ -58684,7 +58616,7 @@
 		)
 		(pad "W15" smd circle
 			(at 2.6 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA12-PadW15)")
 			(pinfunction "PA12_W15")
@@ -58693,7 +58625,7 @@
 		)
 		(pad "W16" smd circle
 			(at 3.25 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA18-PadW16)")
 			(pinfunction "PA18_W16")
@@ -58702,7 +58634,7 @@
 		)
 		(pad "W17" smd circle
 			(at 3.9 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+3V3")
 			(pinfunction "VDDSDMMC0_W17")
@@ -58711,7 +58643,7 @@
 		)
 		(pad "W18" smd circle
 			(at 4.55 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO A&B-PA19-PadW18)")
 			(pinfunction "PA19_W18")
@@ -58720,7 +58652,7 @@
 		)
 		(pad "W19" smd circle
 			(at 5.2 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/Display/SCS")
 			(pinfunction "PA21_W19")
@@ -58729,7 +58661,7 @@
 		)
 		(pad "W20" smd circle
 			(at 5.85 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DN1-PadW20)")
 			(pinfunction "MIPI_DN1_W20")
@@ -58738,7 +58670,7 @@
 		)
 		(pad "W21" smd circle
 			(at 6.5 -5.2 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DP1-PadW21)")
 			(pinfunction "MIPI_DP1_W21")
@@ -58747,7 +58679,7 @@
 		)
 		(pad "Y1" smd circle
 			(at -6.5 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DDR_VREF")
 			(pinfunction "DDR_VREF_Y1")
@@ -58756,7 +58688,7 @@
 		)
 		(pad "Y2" smd circle
 			(at -5.85 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "+1V35_DDR")
 			(pinfunction "VDDIODDR_Y2")
@@ -58765,7 +58697,7 @@
 		)
 		(pad "Y3" smd circle
 			(at -5.2 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ11")
 			(pinfunction "DDR_D11_Y3")
@@ -58774,7 +58706,7 @@
 		)
 		(pad "Y4" smd circle
 			(at -4.55 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQM1")
 			(pinfunction "DDR_DQM1_Y4")
@@ -58783,7 +58715,7 @@
 		)
 		(pad "Y6" smd circle
 			(at -3.25 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQS1+")
 			(pinfunction "DDR_DQS1_Y6")
@@ -58792,7 +58724,7 @@
 		)
 		(pad "Y7" smd circle
 			(at -2.6 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ8")
 			(pinfunction "DDR_D8_Y7")
@@ -58801,7 +58733,7 @@
 		)
 		(pad "Y9" smd circle
 			(at -1.3 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/DDR/DQ10")
 			(pinfunction "DDR_D10_Y9")
@@ -58810,7 +58742,7 @@
 		)
 		(pad "Y13" smd circle
 			(at 1.3 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE5-PadY13)")
 			(pinfunction "PE5_Y13")
@@ -58819,7 +58751,7 @@
 		)
 		(pad "Y15" smd circle
 			(at 2.6 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/TOUCH_~{INT}")
 			(pinfunction "PE7_Y15")
@@ -58828,7 +58760,7 @@
 		)
 		(pad "Y16" smd circle
 			(at 3.25 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE9-PadY16)")
 			(pinfunction "PE9_Y16")
@@ -58837,7 +58769,7 @@
 		)
 		(pad "Y18" smd circle
 			(at 4.55 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1GPIO C&D&E-PE13-PadY18)")
 			(pinfunction "PE13_Y18")
@@ -58846,7 +58778,7 @@
 		)
 		(pad "Y19" smd circle
 			(at 5.2 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/SAMA7/HAPT_EN")
 			(pinfunction "PE11_Y19")
@@ -58855,7 +58787,7 @@
 		)
 		(pad "Y20" smd circle
 			(at 5.85 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DN0-PadY20)")
 			(pinfunction "MIPI_DN0_Y20")
@@ -58864,7 +58796,7 @@
 		)
 		(pad "Y21" smd circle
 			(at 6.5 -5.85 180)
-			(size 0.346 0.346)
+			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "unconnected-(U1PERIs-MIPI_DP0-PadY21)")
 			(pinfunction "MIPI_DP0_Y21")
