@@ -1,0 +1,5 @@
+(version 1)
+(rule "boot sd lenth and skew"
+      (condition "A.hasNetclass('BOOT_SDMMC')")
+      (constraint length (min 95mm) (opt 100mm) (max 105mm))
+      (constraint skew (max 0.1mm)))

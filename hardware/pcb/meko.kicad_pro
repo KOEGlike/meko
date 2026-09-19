@@ -60,10 +60,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.1,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
+          "min_thickness": 0.2,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -538,9 +538,19 @@
       {
         "bus_width": 12,
         "line_style": 0,
+        "name": "BOOT_SDMMC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
         "name": "DDR_ADDR_CTL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single",
         "wire_width": 6
@@ -550,7 +560,7 @@
         "line_style": 0,
         "name": "DDR_CLOCK",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "100Ohms Diff",
         "wire_width": 6
@@ -560,7 +570,7 @@
         "line_style": 0,
         "name": "DDR_LANE0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single",
         "wire_width": 6
@@ -570,7 +580,7 @@
         "line_style": 0,
         "name": "DDR_LANE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single",
         "wire_width": 6
@@ -580,7 +590,7 @@
         "line_style": 0,
         "name": "DDR_STROBE_LANE0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "100Ohms Diff",
         "wire_width": 6
@@ -590,9 +600,26 @@
         "line_style": 0,
         "name": "DDR_STROBE_LANE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "100Ohms Diff",
+        "wire_width": 6
+      },
+      {
+        "name": "EXT_SDMMC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single"
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "WL_SDMMC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single",
         "wire_width": 6
       }
     ],
@@ -706,8 +733,7 @@
         "DDR_LANE0"
       ],
       "/DDR/DQ7": [
-        "DDR_LANE0",
-        "DDR_LANE1"
+        "DDR_LANE0"
       ],
       "/DDR/DQ8": [
         "DDR_LANE1"
@@ -716,14 +742,10 @@
         "DDR_LANE1"
       ],
       "/DDR/DQM0": [
-        "DDR_LANE0",
-        "DDR_LANE1",
-        "DDR_STROBE_LANE0"
+        "DDR_LANE0"
       ],
       "/DDR/DQM1": [
-        "DDR_LANE0",
-        "DDR_LANE1",
-        "DDR_STROBE_LANE0"
+        "DDR_LANE1"
       ],
       "/DDR/DQS0+": [
         "DDR_LANE0",
@@ -734,15 +756,11 @@
         "DDR_STROBE_LANE0"
       ],
       "/DDR/DQS1+": [
-        "DDR_LANE0",
         "DDR_LANE1",
-        "DDR_STROBE_LANE0",
         "DDR_STROBE_LANE1"
       ],
       "/DDR/DQS1-": [
-        "DDR_LANE0",
         "DDR_LANE1",
-        "DDR_STROBE_LANE0",
         "DDR_STROBE_LANE1"
       ],
       "/DDR/ODT": [
@@ -763,6 +781,141 @@
       ],
       "/DDR/~{WE}": [
         "DDR_ADDR_CTL"
+      ],
+      "/SAMA7/BOOT.1V8SEL": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.CD": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.CK": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.CMD": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT0": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT1": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT2": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT3": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT4": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT5": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT6": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.DAT7": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.RSTN": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT.WP": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/BOOT{SDMMC}": [
+        "BOOT_SDMMC"
+      ],
+      "/SAMA7/EXT.1V8SEL": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.CD": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.CK": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.CMD": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT0": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT1": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT2": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT3": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT4": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT5": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT6": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.DAT7": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.RSTN": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT.WP": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/EXT{SDMMC}": [
+        "EXT_SDMMC"
+      ],
+      "/SAMA7/WIFI.1V8SEL": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.CD": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.CK": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.CMD": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT0": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT1": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT2": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT3": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT4": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT5": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT6": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.DAT7": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.RSTN": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI.WP": [
+        "WL_SDMMC"
+      ],
+      "/SAMA7/WIFI{SDMMC}": [
+        "WL_SDMMC"
       ]
     },
     "netclass_patterns": []

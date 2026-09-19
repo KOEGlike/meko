@@ -5324,6 +5324,42 @@
 		)
 		(uuid "f46cdb4f-f8fe-45db-8491-4cbd9837771e")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 44.45 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22466d9e-a7a3-429e-8c01-8c32a00abe9e")
+		(property "Netclass" "WL_SDMMC"
+			(at 45.1485 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -29.21 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:Crystal")
 		(at 200.66 125.73 270)
