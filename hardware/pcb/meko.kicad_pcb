@@ -19263,17 +19263,6 @@
 			(uuid "3a51eb5a-3207-49d1-978f-d788a7089ae0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -53186,19 +53175,6 @@
 		(path "/6a1996a1-d776-4235-b4ef-703258aa0c56/63bbf3ac-df2a-4ee4-b1a8-b2980e29ea53")
 		(sheetname "/DDR/")
 		(sheetfile "ddr.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "N3" "P7" "P3" "N2" "P8" "P2" "R8" "R2" "T8" "R3" "L7" "R7" "N7"
-					"T3" "T7" "M2" "N8" "M3" "L2" "J3" "K3" "L3" "K1" "K9" "J7" "K7" "T2"
-					"D9" "N9" "G7" "B2" "R9" "N1" "K8" "K2" "R1" "J2" "A9" "M9" "M1" "P1"
-					"J8" "T9" "E1" "P9" "B3" "T1" "G8" "D2" "A1" "C1" "A8" "H9" "H2" "E9"
-					"F1" "C9" "D1" "B9" "D8" "B1" "E2" "F9" "E8" "G1" "G9" "M7" "J1" "J9"
-					"L9" "L1" "E3" "F7" "F2" "F8" "H3" "H8" "G2" "H7" "D7" "C3" "C8" "C2"
-					"A7" "A2" "B8" "A3" "F3" "G3" "C7" "B7" "E7" "D3" "H1" "M8" "L8"
-				)
-			)
-		)
 		(solder_mask_margin 0.05)
 		(solder_paste_margin -0.05)
 		(attr smd)
@@ -54289,7 +54265,7 @@
 			(uuid "6a294720-3c50-4595-a2ba-2457228421e8")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/lib/MT41K256M16TW/Micron_FBGA-96_8x14mm_Layout9x16_P0.8mm.step"
+		(model "${KIPRJMOD}/lib/MT41K256M16TW/FBGA-96_L14.0-W8.0-H1.1-P0.8.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58976,93 +58952,18 @@
 		(layer "Cmts.User")
 		(uuid "647519c3-d982-4ef1-8993-dc568aa2f1f5")
 	)
-	(gr_arc
-		(start 165.132893 124.442893)
-		(mid 165.425786 123.735786)
-		(end 166.132893 123.442893)
+	(gr_rect
+		(start 165.132893 123.442893)
+		(end 215.372893 200.602893)
+		(radius 1)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
-		(layer "Edge.Cuts")
-		(uuid "c52a1a2d-9ef2-4c45-908c-3616bd2ea062")
-	)
-	(gr_line
-		(start 165.132893 199.602893)
-		(end 165.132893 124.442893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
+		(fill no)
 		(locked yes)
 		(layer "Edge.Cuts")
-		(uuid "e4c0dd5a-9a04-4002-a801-9a2d099ffe7d")
-	)
-	(gr_line
-		(start 166.132893 123.442893)
-		(end 214.372893 123.442893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "051a68aa-5510-4b92-9101-de2d985e3a81")
-	)
-	(gr_arc
-		(start 166.132893 200.602893)
-		(mid 165.425786 200.31)
-		(end 165.132893 199.602893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "089269dd-08b6-40a9-97e2-e792fc07b22e")
-	)
-	(gr_arc
-		(start 214.372893 123.442893)
-		(mid 215.08 123.735786)
-		(end 215.372893 124.442893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "Edge.Cuts")
-		(uuid "ce5d9cb0-c4b2-4335-8ba0-aa67e4d1e36e")
-	)
-	(gr_line
-		(start 214.372893 200.602893)
-		(end 166.132893 200.602893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(locked yes)
-		(layer "Edge.Cuts")
-		(uuid "a90000cf-fccb-4cb3-b05a-683728aaadcc")
-	)
-	(gr_line
-		(start 215.372893 124.442893)
-		(end 215.372893 199.602893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(locked yes)
-		(layer "Edge.Cuts")
-		(uuid "c94e73eb-eaf2-4067-a841-6b1cefe681ef")
-	)
-	(gr_arc
-		(start 215.372893 199.602893)
-		(mid 215.08 200.31)
-		(end 214.372893 200.602893)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(locked yes)
-		(layer "Edge.Cuts")
-		(uuid "7307ee4f-282f-48db-aebb-5bed1cce6027")
+		(uuid "9b3fc492-19b4-4534-b645-a376469946c4")
 	)
 	(image
 		(at 331.1 76.39)
