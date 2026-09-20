@@ -1067,7 +1067,7 @@
 	)
 	(rectangle
 		(start 101.6 43.18)
-		(end 165.1 91.44)
+		(end 180.34 91.44)
 		(stroke
 			(width 0.254)
 			(type dash)
@@ -1132,19 +1132,19 @@
 		(uuid "64e9b03c-aed6-4d80-b6dc-8fd090fce67b")
 	)
 	(junction
-		(at 158.75 81.28)
+		(at 170.18 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b301761-a09f-44de-9343-203e8ba6b9d0")
 	)
 	(junction
-		(at 121.92 68.58)
+		(at 133.35 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9837701-a17b-457d-8271-66176a6ab67e")
 	)
 	(bus_entry
-		(at 118.11 73.66)
+		(at 120.65 72.39)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1153,7 +1153,7 @@
 		(uuid "2d72b051-0cee-4be8-8a39-4aa82175757d")
 	)
 	(bus_entry
-		(at 118.11 78.74)
+		(at 120.65 77.47)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1191,7 +1191,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 78.74) (xy 158.75 78.74)
+			(xy 168.91 77.47) (xy 170.18 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1201,7 +1201,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 67.31) (xy 121.92 68.58)
+			(xy 133.35 68.58) (xy 133.35 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1221,7 +1221,7 @@
 	)
 	(bus
 		(pts
-			(xy 118.11 73.66) (xy 118.11 78.74)
+			(xy 120.65 72.39) (xy 120.65 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1231,33 +1231,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 77.47) (xy 127 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25fa2d5f-a961-44aa-9a12-6ca76c6e6661")
-	)
-	(wire
-		(pts
-			(xy 158.75 78.74) (xy 158.75 81.28)
+			(xy 170.18 77.47) (xy 170.18 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "27a37d95-fbc8-4021-9bf3-6fbb6619d0d9")
-	)
-	(wire
-		(pts
-			(xy 128.27 71.12) (xy 132.08 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "313d0b5b-6e62-443c-a386-fe680dd43bcf")
 	)
 	(wire
 		(pts
@@ -1311,7 +1291,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 81.28) (xy 158.75 81.28)
+			(xy 168.91 80.01) (xy 170.18 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1321,7 +1301,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 76.2) (xy 132.08 76.2)
+			(xy 123.19 74.93) (xy 143.51 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1351,7 +1331,7 @@
 	)
 	(bus
 		(pts
-			(xy 116.84 73.66) (xy 118.11 73.66)
+			(xy 119.38 72.39) (xy 120.65 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1381,7 +1361,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 73.66) (xy 132.08 73.66)
+			(xy 142.24 72.39) (xy 143.51 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1391,23 +1371,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 81.28) (xy 132.08 81.28)
+			(xy 123.19 80.01) (xy 143.51 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "853c100d-f447-46b2-b3a6-ed04a2c3a9d7")
-	)
-	(wire
-		(pts
-			(xy 128.27 68.58) (xy 128.27 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f9cce3d-98b6-4d3a-b7ca-bcaf82d638b7")
 	)
 	(wire
 		(pts
@@ -1451,7 +1421,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 81.28) (xy 158.75 82.55)
+			(xy 170.18 80.01) (xy 170.18 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1491,16 +1461,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 77.47) (xy 127 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d595c355-7500-4b2a-931a-70a8ab23a755")
-	)
-	(wire
-		(pts
 			(xy 66.04 82.55) (xy 66.04 83.82)
 		)
 		(stroke
@@ -1508,16 +1468,6 @@
 			(type default)
 		)
 		(uuid "d733943b-1e8b-46e7-a2e5-056ca3d5270e")
-	)
-	(wire
-		(pts
-			(xy 127 72.39) (xy 127 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d825d8a4-fdba-4661-98e1-ef01661d6087")
 	)
 	(wire
 		(pts
@@ -1531,7 +1481,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 68.58) (xy 128.27 68.58)
+			(xy 119.38 69.85) (xy 143.51 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1541,7 +1491,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 78.74) (xy 132.08 78.74)
+			(xy 142.24 77.47) (xy 143.51 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1579,18 +1529,8 @@
 		)
 		(uuid "f70c051c-30bf-40cf-a50d-c8a39791a09c")
 	)
-	(wire
-		(pts
-			(xy 125.73 72.39) (xy 127 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa3e8699-1a15-4eed-94b0-fd2195a16153")
-	)
 	(label "TOUCH.SDA"
-		(at 120.65 76.2 0)
+		(at 123.19 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1600,7 +1540,7 @@
 		(uuid "00a902a1-b604-4a7c-9039-dc992f01b82f")
 	)
 	(label "TOUCH.SCL"
-		(at 120.65 81.28 0)
+		(at 123.19 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1642,7 +1582,7 @@
 	)
 	(hierarchical_label "TOUCH_~{INT}"
 		(shape bidirectional)
-		(at 116.84 68.58 180)
+		(at 119.38 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1664,7 +1604,7 @@
 	)
 	(hierarchical_label "TOUCH{I2C}"
 		(shape bidirectional)
-		(at 116.84 73.66 180)
+		(at 119.38 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1752,7 +1692,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 125.73 77.47 270)
+		(at 142.24 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1762,7 +1702,7 @@
 		(dnp no)
 		(uuid "02f5d01e-e7cd-48e0-97cd-9a1c38bd6c21")
 		(property "Reference" "#PWR0138"
-			(at 119.38 77.47 0)
+			(at 135.89 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1773,7 +1713,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.904 77.47 90)
+			(at 137.414 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1783,7 +1723,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 77.47 0)
+			(at 142.24 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1794,7 +1734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 77.47 0)
+			(at 142.24 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1805,7 +1745,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 77.47 0)
+			(at 142.24 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2269,7 +2209,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 125.73 72.39 90)
+		(at 142.24 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2279,7 +2219,7 @@
 		(dnp no)
 		(uuid "3352bb5b-823f-40e8-8cc2-873035ac7ff4")
 		(property "Reference" "#PWR0139"
-			(at 129.54 72.39 0)
+			(at 146.05 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2290,7 +2230,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 120.396 72.39 90)
+			(at 136.906 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2300,7 +2240,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.73 72.39 0)
+			(at 142.24 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2311,7 +2251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 72.39 0)
+			(at 142.24 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2322,7 +2262,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 125.73 72.39 0)
+			(at 142.24 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2452,7 +2392,7 @@
 	)
 	(symbol
 		(lib_id "503480-0540:503480-0540")
-		(at 144.78 76.2 0)
+		(at 156.21 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2463,7 +2403,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2183467-2a8b-4d5a-8c83-76f413f7a99b")
 		(property "Reference" "J9"
-			(at 144.78 64.77 0)
+			(at 156.21 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2473,7 +2413,7 @@
 			)
 		)
 		(property "Value" "503480-0540"
-			(at 144.78 67.31 0)
+			(at 156.21 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2483,7 +2423,7 @@
 			)
 		)
 		(property "Footprint" "5034800540:503480-0540"
-			(at 90.424 40.132 0)
+			(at 101.854 38.862 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2495,7 +2435,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/5034800540?display=pdf"
-			(at 145.034 58.928 0)
+			(at 156.464 57.658 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,7 +2446,7 @@
 			)
 		)
 		(property "Description" "5 Position FFC, FPC Connector Contacts, Top and Bottom 0.020 (0.50mm) Surface Mount, Right Angle"
-			(at 90.424 40.132 0)
+			(at 101.854 38.862 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2518,7 +2458,7 @@
 			)
 		)
 		(property "MFR" "Molex Connector Corporation"
-			(at 90.424 40.132 0)
+			(at 101.854 38.862 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2530,7 +2470,7 @@
 			)
 		)
 		(property "MPN" "5034800540"
-			(at 90.424 40.132 0)
+			(at 101.854 38.862 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2542,7 +2482,7 @@
 			)
 		)
 		(property "LCSC" "C5527934"
-			(at 144.526 61.976 0)
+			(at 155.956 60.706 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2816,7 +2756,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 121.92 67.31 0)
+		(at 133.35 68.58 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2827,7 +2767,7 @@
 		(dnp no)
 		(uuid "c1e28e3e-dcb1-40fc-8225-eefe7109e963")
 		(property "Reference" "TP62"
-			(at 121.92 59.182 0)
+			(at 133.35 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2837,7 +2777,7 @@
 			)
 		)
 		(property "Value" "T_~{INT}"
-			(at 121.92 61.722 0)
+			(at 133.35 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2847,7 +2787,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 116.84 67.31 0)
+			(at 128.27 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2858,7 +2798,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 67.31 0)
+			(at 128.27 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2869,7 +2809,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 121.92 67.31 0)
+			(at 133.35 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2971,7 +2911,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 158.75 82.55 0)
+		(at 170.18 81.28 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2982,7 +2922,7 @@
 		(dnp no)
 		(uuid "e10e442c-afd5-48cd-9c3e-32efde369235")
 		(property "Reference" "#PWR0143"
-			(at 158.75 88.9 0)
+			(at 170.18 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2993,7 +2933,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 162.052 84.328 0)
+			(at 173.482 83.058 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3003,7 +2943,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 82.55 0)
+			(at 170.18 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,7 +2954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 82.55 0)
+			(at 170.18 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3025,7 +2965,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 82.55 0)
+			(at 170.18 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
