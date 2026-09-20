@@ -48103,6 +48103,272 @@
 			)
 		)
 	)
+	(footprint "5034800540:503480-0540"
+		(locked yes)
+		(layer "B.Cu")
+		(uuid "2b6571fe-0d0f-4752-9ebc-e030dd822958")
+		(at 172.25 156.57 180)
+		(property "Reference" "J9"
+			(at 0 3.575 0)
+			(layer "B.SilkS")
+			(uuid "91941f02-b2dd-4292-a897-1f07736a5853")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "503480-0540"
+			(at 10.9728 1.4986 0)
+			(layer "B.Fab")
+			(uuid "7b47b94a-8900-4fb8-9ab0-f3aecaa8594d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/5034800540?display=pdf"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "92eb5d01-5282-475d-a545-74e9be8a6b12")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" "5 Position FFC, FPC Connector Contacts, Top and Bottom 0.020 (0.50mm) Surface Mount, Right Angle"
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "71242fca-23c1-478a-9622-bef0de3c807f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MFR" "Molex Connector Corporation"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ff84cd7b-b1d3-45d8-ae33-18f556a9daec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "MPN" "5034800540"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "55584d81-00c4-49bc-acf7-274824d96e18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C5527934"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "22a76f10-a199-4079-82f6-6034104028a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(path "/7a0a8608-fb91-40ee-9ae1-ac8166908c37/a2183467-2a8b-4d5a-8c83-76f413f7a99b")
+		(sheetname "/Touchpad/")
+		(sheetfile "touchpad.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "11" "12")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 2.2352 1.9304)
+			(end 1.4986 1.9304)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "203e0abf-8f47-4de9-8809-2baa4e9b1702")
+		)
+		(fp_line
+			(start 2.2352 -0.4064)
+			(end 2.2352 1.9304)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "68dba20c-79a1-4c1b-bec8-aeda7c9b4890")
+		)
+		(fp_line
+			(start -1.397 -1.9304)
+			(end 1.397 -1.9304)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "c537d739-6ec0-4b87-9de4-60293494c12f")
+		)
+		(fp_line
+			(start -1.4986 1.9304)
+			(end -2.2352 1.9304)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "149edcd8-5f2c-47a0-88cb-55e7764b713f")
+		)
+		(fp_line
+			(start -2.2352 1.9304)
+			(end -2.2352 -0.4064)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "820855ea-89bb-4b82-ba1c-bc2d41b717e8")
+		)
+		(fp_line
+			(start 2.0828 1.803399)
+			(end -2.0828 1.803399)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "2aeee92e-c227-4b05-900e-16df9d63a245")
+		)
+		(fp_line
+			(start 2.0828 -1.803399)
+			(end 2.0828 1.803399)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "8676cb3a-e22f-4a11-a3b4-ec846fb6d3d0")
+		)
+		(fp_line
+			(start -2.0828 1.803399)
+			(end -2.0828 -1.803399)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "607293e6-110d-4f02-aadd-a56cc4d28bf6")
+		)
+		(fp_line
+			(start -2.0828 -1.803399)
+			(end 2.0828 -1.803399)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "de4da8e7-5824-4374-9e0b-325edd4d4f92")
+		)
+		(pad "1" smd rect
+			(at -1 1.5034 180)
+			(size 0.3556 0.762)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "/SAMA7/TOUCH_~{INT}")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "9a52b90b-646a-4c53-9daf-4141c6802adc")
+		)
+		(pad "2" smd rect
+			(at -0.5 1.5034 180)
+			(size 0.3556 0.762)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "+3V3")
+			(pinfunction "2_2")
+			(pintype "passive")
+			(uuid "d6b66db2-ff99-4ee1-b89f-52653e1d4eab")
+		)
+		(pad "3" smd rect
+			(at 0 1.5034 180)
+			(size 0.3556 0.762)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "/SAMA7/TOUCH.SDA")
+			(pinfunction "3_3")
+			(pintype "passive")
+			(uuid "96109664-0322-4957-953a-cf43c2acd304")
+		)
+		(pad "4" smd rect
+			(at 0.5 1.5034 180)
+			(size 0.3556 0.762)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "GND")
+			(pinfunction "4_4")
+			(pintype "passive")
+			(uuid "b597380f-2041-4bdd-8ec3-57b53f2120df")
+		)
+		(pad "5" smd rect
+			(at 1 1.5034 180)
+			(size 0.3556 0.762)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "/SAMA7/TOUCH.SCL")
+			(pinfunction "5_5")
+			(pintype "passive")
+			(uuid "f3651f2f-a757-4eaf-88cf-614fb1d95526")
+		)
+		(pad "MP_1" smd rect
+			(at -1.790001 -1.1466 180)
+			(size 0.3556 1.0414)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(uuid "ceedc37d-6f3c-4915-a1e9-9a27aeeb8a9a")
+		)
+		(pad "MP_2" smd rect
+			(at 1.790001 -1.1466 180)
+			(size 0.3556 1.0414)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(uuid "caeebe58-2694-4c98-99aa-99eb6be694b4")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/../pcb_lib/503480-0540/503480-0540.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
+	)
 	(footprint "Button_Switch_SMD:SW_Push_1P1T-MP_NO_Horizontal_Alps_SKRTLAE010"
 		(locked yes)
 		(layer "B.Cu")
@@ -48962,7 +49228,7 @@
 	(footprint "MAYA-W386-00B:MAYA-W386-00B"
 		(layer "B.Cu")
 		(uuid "51413fd6-9937-4d33-bb83-1c18aa805543")
-		(at 172.2 133.63 -90)
+		(at 288.445 183.64 -90)
 		(descr "MAYA-W383-00B-1")
 		(tags "Integrated Circuit")
 		(property "Reference" "IC2"
@@ -50184,8 +50450,9 @@
 			)
 			(polygon
 				(pts
-					(xy 168.4 129.53) (xy 168.4 137.73) (xy 166 137.73) (xy 166 136.63) (xy 165.4 136.63) (xy 165.4 138.83)
-					(xy 165.05 138.83) (xy 165.05 128.43) (xy 165.4 128.43) (xy 165.4 130.63) (xy 166 130.63) (xy 166 129.53)
+					(xy 284.645 179.54) (xy 284.645 187.74) (xy 282.245 187.74) (xy 282.245 186.64) (xy 281.645 186.64)
+					(xy 281.645 188.84) (xy 281.295 188.84) (xy 281.295 178.44) (xy 281.645 178.44) (xy 281.645 180.64)
+					(xy 282.245 180.64) (xy 282.245 179.54)
 				)
 			)
 		)
@@ -51255,6 +51522,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "d7721afb-be1a-4d5d-861b-64d736412659")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "LCSC" "C127355"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2be95af0-ef51-49f0-92ba-cf4414df9e09")
 			(effects
 				(font
 					(size 1 1)
@@ -53173,6 +53454,19 @@
 		(path "/6a1996a1-d776-4235-b4ef-703258aa0c56/63bbf3ac-df2a-4ee4-b1a8-b2980e29ea53")
 		(sheetname "/DDR/")
 		(sheetfile "ddr.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "N3" "P7" "P3" "N2" "P8" "P2" "R8" "R2" "T8" "R3" "L7" "R7" "N7"
+					"T3" "T7" "M2" "N8" "M3" "L2" "J3" "K3" "L3" "K1" "K9" "J7" "K7" "T2"
+					"D9" "N9" "G7" "B2" "R9" "N1" "K8" "K2" "R1" "J2" "A9" "M9" "M1" "P1"
+					"J8" "T9" "E1" "P9" "B3" "T1" "G8" "D2" "A1" "C1" "A8" "H9" "H2" "E9"
+					"F1" "C9" "D1" "B9" "D8" "B1" "E2" "F9" "E8" "G1" "G9" "M7" "J1" "J9"
+					"L9" "L1" "E3" "F7" "F2" "F8" "H3" "H8" "G2" "H7" "D7" "C3" "C8" "C2"
+					"A7" "A2" "B8" "A3" "F3" "G3" "C7" "B7" "E7" "D3" "H1" "M8" "L8"
+				)
+			)
+		)
 		(solder_mask_margin 0.05)
 		(solder_paste_margin -0.05)
 		(attr smd)
@@ -58964,14 +59258,15 @@
 		(uuid "9b3fc492-19b4-4534-b645-a376469946c4")
 	)
 	(gr_rect
-		(start 188.502893 161.967893)
-		(end 192.002893 163.467893)
+		(start 170.502893 161.967893)
+		(end 174.002893 163.467893)
 		(radius 0.75)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(fill no)
+		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "83cd5cc7-fce4-41c6-a798-91d32682d163")
 	)
