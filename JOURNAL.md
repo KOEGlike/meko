@@ -618,4 +618,6 @@ I was missing a lot of the 3D models of my components so I added those. Easyeda2
 
 As part of this process I also vendored in a bunch of footprints from libraries, so I can edit the library footprint, instead of only editing the footprint on the PCB
 
+![3D PCB with components](https://cdn.hackclub.com/01a0bfee-4eb6-7ec5-8446-15327ee19a69/image.png)
+
 ## _Time Spent: 8h_
