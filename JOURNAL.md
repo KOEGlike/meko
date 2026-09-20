@@ -558,3 +558,64 @@ Here is the basic clicker app, with the addition of the going up each second:
 ![counter app](https://cdn.hackclub.com/01a0a95d-0d6b-76f8-ac64-5c85332306dc/image.png)
 
 ## _Time Spent: 2h_
+
+# 2026.09.26: Layout, Stackup, Impedance, Length Matching, BGA stuff, 3D models
+
+_I did all kinds of stuff small chores and bigger tasks, so this will be kinda all unrelated._
+
+## Layout
+
+I wanted to finalize the placement all components that the user will interact with. First I updated my 3D mockup with accurate dimensions, then I added the buttons and audio jacks. Also, I actually made the trackpad the same size as the screen. I'll use this mockup as a reference for the final layout.
+
+![3D mockup](https://cdn.hackclub.com/01a0bfee-5a32-7755-9a79-cf018d7e8d72/image.png)
+
+_The thickness of the mockup is not final_
+
+Then following the mockup I placed the components on the PCB.
+
+![PCB layout](https://cdn.hackclub.com/01a0bfee-5747-707f-babd-fab9a6891dfb/image.png)
+
+I placed the microSD card slots on the bottom of the PCB, so I have plenty of space for the DDR routing. I also added these handy lil indicator drawing to the microSD footprints that show the positions of the SD card.
+
+I still have to add the cutout for the trackpad FFC cable.
+
+## Stackup and Impedance
+
+As a first step, I started looking at PCBWAY's stackups, at first I chose a 1.6mm 6L stackup, but then realized after some calculations that my 50Ω traces would be 0.2mm, which too large. So I needed choose a stackup that had a thinner dielectric between the outer copper layers. After looking at PCBWAY's stackup offerings, I realized that I had to choose a 0.8mm board to get a thinner dielectric. This thickness is fine, all M.2 PCBs are 0.8mm.
+
+![PCB stackup](https://cdn.hackclub.com/01a0bffe-b9ca-7fb1-9f13-8e1fdd6d8d7a/image.png)
+
+After all this, I entered in the stackup details into KiCad:
+
+![KiCad stackup](https://cdn.hackclub.com/01a0bfee-4ba4-729b-8c96-66d7ee6f82ea/image.png)
+
+This was needed so I can use KiCAD's tuning profiles, which make it really easy to create impedance-controlled traces
+
+![tuning profile](https://cdn.hackclub.com/01a0c000-315f-7d6d-af66-9d32d0d7d6b0/image.png)
+
+## Creating Net Classes
+
+To actually use these tuning profiles, you have to create net classes. For the first time in my KiCAD carrier I used `Directive Labels` and `Rule Areas` in the schematic editor:
+
+![Directive Labels and Rule Areas](https://cdn.hackclub.com/01a0bfee-518d-7842-8413-0d7b3104beda/image.png)
+![Directive Lables](https://cdn.hackclub.com/01a0bfee-5450-70ce-bf08-3719938dbd7b/image.png)
+
+These allow you to assign net classes visually instead of with Regex, which is a lot nicer!
+
+Also, you can use net classes to create custom rules related to length matching, which makes it a lot easier to length match DDR and SDMMC:
+
+![custom rules](https://cdn.hackclub.com/01a0c006-6994-7979-993f-dd7959460870/image.png)
+
+## BGA Soldermask Retraction & Pad Size
+
+After looking at Micron's datasheet and other PCBs that use DDR3L and BGAs, I realized that I can shrink down the pads of the DDR3L footprint to 0.42mm from 0.52mm. While I was doing this research I also found out that I need to set a soldermask retraction for these BGAs, the most common value I found was 0.05mm.
+
+![BGA pads with measurement](https://cdn.hackclub.com/01a0c00a-0bc1-799c-9380-6d0ad3ed64e4/image.png)
+
+## Added a Bunch of 3D models
+
+I was missing a lot of the 3D models of my components so I added those. Easyeda2kicad was very useful!! 
+
+As part of this process I also vendored in a bunch of footprints from libraries, so I can edit the library footprint, instead of only editing the footprint on the PCB
+
+## _Time Spent: 8h_
