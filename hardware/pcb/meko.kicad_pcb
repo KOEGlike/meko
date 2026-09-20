@@ -137,7 +137,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -58963,6 +58962,18 @@
 		(locked yes)
 		(layer "Edge.Cuts")
 		(uuid "9b3fc492-19b4-4534-b645-a376469946c4")
+	)
+	(gr_rect
+		(start 188.502893 161.967893)
+		(end 192.002893 163.467893)
+		(radius 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "83cd5cc7-fce4-41c6-a798-91d32682d163")
 	)
 	(image
 		(at 331.1 76.39)
