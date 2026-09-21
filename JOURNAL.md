@@ -1,3 +1,10 @@
+---
+title: "Meko V3"
+github: "https://github.com/KOEGlike/meko"
+description: "A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad"
+created_at: "2026-07-12"
+---
+
 # 2026.07.12: Thinking of what I need to change
 
 _This will be a long journal, because I did a lot of research beforehand_
@@ -614,7 +621,7 @@ After looking at Micron's datasheet and other PCBs that use DDR3L and BGAs, I re
 
 ## Added a Bunch of 3D models
 
-I was missing a lot of the 3D models of my components so I added those. Easyeda2kicad was very useful!! 
+I was missing a lot of the 3D models of my components so I added those. Easyeda2kicad was very useful!!
 
 As part of this process I also vendored in a bunch of footprints from libraries, so I can edit the library footprint, instead of only editing the footprint on the PCB
 
