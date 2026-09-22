@@ -635,8 +635,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
+			(property "Reference" "BT1"
+				(at 3.048 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -647,9 +647,10 @@
 				)
 			)
 			(property "Value" "Battery_Cell"
-				(at 2.54 0 0)
+				(at 3.81 0.5716 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -680,7 +681,7 @@
 				)
 			)
 			(property "Description" "Single-cell battery"
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -691,7 +692,7 @@
 				)
 			)
 			(property "Sim.Device" "V"
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -702,7 +703,7 @@
 				)
 			)
 			(property "Sim.Type" "DC"
-				(at 0 0 0)
+				(at 0 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -713,6 +714,28 @@
 				)
 			)
 			(property "Sim.Pins" "1=+ 2=-"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "KLC_S3.3" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "KLC_S4.1" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -736,8 +759,8 @@
 			)
 			(symbol "Battery_Cell_0_1"
 				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
+					(start -2.286 0.508)
+					(end 2.286 0.254)
 					(stroke
 						(width 0)
 						(type default)
@@ -747,8 +770,8 @@
 					)
 				)
 				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
+					(start -1.524 -0.254)
+					(end 1.524 -0.762)
 					(stroke
 						(width 0)
 						(type default)
@@ -759,7 +782,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy -0.635 1.905) (xy -3.81 1.905) (xy -3.81 -2.54) (xy -0.635 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -771,7 +794,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 0.508) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -783,7 +806,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
+						(xy 0 -0.508) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 1.778 1.778)
 					)
 					(stroke
 						(width 0.254)
@@ -795,7 +830,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
+						(xy 1.27 2.286) (xy 1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -808,7 +843,7 @@
 			)
 			(symbol "Battery_Cell_1_1"
 				(pin passive line
-					(at 0 5.08 270)
+					(at 0 3.81 270)
 					(length 2.54)
 					(name "+"
 						(effects
@@ -826,7 +861,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
+					(at 0 -3.81 90)
 					(length 2.54)
 					(name "-"
 						(effects
@@ -836,6 +871,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3876,12 +3929,6 @@
 		(uuid "26637ca0-4343-41a6-bc25-3f0907520729")
 	)
 	(junction
-		(at 135.89 171.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "272b2c1e-7e50-4fc9-a5ed-abc4df47c66b")
-	)
-	(junction
 		(at 335.28 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4152,6 +4199,12 @@
 		(uuid "c66bbab0-4f7b-47f3-a2a1-f9ec575ea727")
 	)
 	(junction
+		(at 144.78 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8218b50-e7e5-40e5-a09a-3ad6919ea61f")
+	)
+	(junction
 		(at 276.86 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4180,6 +4233,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8a4ca52-5d3b-4721-8fd1-344b3b582226")
+	)
+	(junction
+		(at 135.89 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbfd7e55-d664-4ff6-89d2-8e53f0e7fa59")
 	)
 	(no_connect
 		(at 132.08 130.81)
@@ -5356,6 +5415,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 171.45) (xy 144.78 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70619a8c-29ac-446c-8574-638181ec3d52")
+	)
+	(wire
+		(pts
 			(xy 129.54 185.42) (xy 129.54 187.96)
 		)
 		(stroke
@@ -5483,6 +5552,16 @@
 			(type default)
 		)
 		(uuid "801ed9e2-b0db-40f0-b991-e7f1d0c532b2")
+	)
+	(wire
+		(pts
+			(xy 142.24 175.26) (xy 144.78 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80328062-e037-41c1-b917-8fd23c770ffc")
 	)
 	(wire
 		(pts
@@ -5646,7 +5725,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 128.27) (xy 144.78 171.45)
+			(xy 144.78 128.27) (xy 144.78 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5803,6 +5882,16 @@
 			(type default)
 		)
 		(uuid "a2b2e95d-32f9-4278-b5d5-48ce57256610")
+	)
+	(wire
+		(pts
+			(xy 144.78 158.75) (xy 144.78 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2e91c2f-6d86-485a-b2d9-223abb604d56")
 	)
 	(wire
 		(pts
@@ -6493,16 +6582,6 @@
 			(type default)
 		)
 		(uuid "edadb3f3-1925-4dc4-8b99-296fe5e16b90")
-	)
-	(wire
-		(pts
-			(xy 144.78 171.45) (xy 135.89 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef2a1ecd-e1ea-43d9-9213-2b8b98a2ecaa")
 	)
 	(wire
 		(pts
@@ -10032,6 +10111,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 144.78 175.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b2c6284-87e2-4b40-a17b-736d35c86c4e")
+		(property "Reference" "#PWR0144"
+			(at 151.13 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 149.86 175.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5ddad11-5206-4bd6-b0f1-8b8ef9bf9ee6")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "#PWR0144")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 267.97 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -10181,6 +10337,85 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
 					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 135.89 180.34 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7045257c-ffec-446d-ae5e-dc07a4f6b3f4")
+		(property "Reference" "TP66"
+			(at 140.462 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "-BAT"
+			(at 145.542 180.34 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 135.89 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 135.89 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "59793f1a-50ae-45c7-b220-16d46622e2e0")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "TP66")
 					(unit 1)
 				)
 			)
@@ -12541,6 +12776,85 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 144.78 158.75 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac2e1d74-f833-455b-8d26-bbdf77f226c2")
+		(property "Reference" "TP67"
+			(at 149.352 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+BAT"
+			(at 154.432 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 144.78 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 144.78 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "318163d4-8566-4ce7-a2dc-c384f5527473")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "TP67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 248.92 229.87 270)
 		(mirror x)
 		(unit 1)
@@ -13998,7 +14312,8 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 135.89 176.53 0)
+		(at 135.89 175.26 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14008,7 +14323,7 @@
 		(dnp no)
 		(uuid "cd5f535d-9afe-4c5f-a36b-3fa67eb3cd2f")
 		(property "Reference" "BT1"
-			(at 138.938 175.26 0)
+			(at 132.842 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14019,7 +14334,7 @@
 			)
 		)
 		(property "Value" "Battery_Cell"
-			(at 139.7 175.9584 0)
+			(at 132.08 174.6884 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14030,8 +14345,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 135.89 175.006 90)
+		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
+			(at 135.89 173.736 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14042,7 +14357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 175.006 90)
+			(at 135.89 173.736 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14097,7 +14412,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 135.89 176.53 0)
+			(at 135.89 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14108,7 +14423,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 135.89 176.53 0)
+			(at 135.89 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14123,6 +14438,9 @@
 		)
 		(pin "2"
 			(uuid "b23e3c69-bbb6-40bc-8378-d71c2f0c288e")
+		)
+		(pin "MP"
+			(uuid "4cc0b0a0-a814-4770-9e45-79b39b5adbc7")
 		)
 		(instances
 			(project "meko"
