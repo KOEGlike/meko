@@ -245,6 +245,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "IQS:IQS7211E"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1070,6 +1226,18 @@
 		(color 0 0 0 0)
 		(uuid "9c770ec2-29e9-4dc0-a994-a8108c825f7c")
 	)
+	(junction
+		(at 144.78 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c61e8211-6d50-4186-8586-a41fcdaa195d")
+	)
+	(junction
+		(at 125.73 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "daf5abb7-4e29-4290-90c5-8d07a2729abf")
+	)
 	(wire
 		(pts
 			(xy 158.75 77.47) (xy 167.64 77.47)
@@ -1082,13 +1250,23 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 92.71) (xy 123.19 80.01)
+			(xy 123.19 90.17) (xy 123.19 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "07672c59-85c6-4c46-a03b-86fc79f5782e")
+	)
+	(wire
+		(pts
+			(xy 121.92 104.14) (xy 130.81 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf30b36-3d44-4dc8-a61f-16925e847b8e")
 	)
 	(wire
 		(pts
@@ -1129,6 +1307,16 @@
 			(type default)
 		)
 		(uuid "28a5b90e-8824-4f23-aa8e-81d6426e9a5c")
+	)
+	(wire
+		(pts
+			(xy 139.7 63.5) (xy 144.78 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2958a4f4-809f-4f8c-8c40-9a8c5b0a5e25")
 	)
 	(wire
 		(pts
@@ -1182,13 +1370,33 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 90.17) (xy 99.06 90.17)
+			(xy 144.78 63.5) (xy 144.78 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c243afe-5139-43bf-996b-b21539890bfa")
+	)
+	(wire
+		(pts
+			(xy 97.79 92.71) (xy 99.06 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "545b8350-a53f-4c45-9ec4-988cc1599d5f")
+	)
+	(wire
+		(pts
+			(xy 121.92 113.03) (xy 121.92 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5741f762-a83b-4c81-a6a1-5b419a6bbde5")
 	)
 	(wire
 		(pts
@@ -1242,6 +1450,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 63.5) (xy 134.62 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f8b4cb8-2e58-481e-9e9c-d23490bd93a0")
+	)
+	(wire
+		(pts
 			(xy 158.75 100.33) (xy 167.64 100.33)
 		)
 		(stroke
@@ -1252,6 +1470,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 113.03) (xy 129.54 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77352c2e-52f4-4215-844e-07712b9cca6f")
+	)
+	(wire
+		(pts
 			(xy 158.75 102.87) (xy 167.64 102.87)
 		)
 		(stroke
@@ -1259,6 +1487,16 @@
 			(type default)
 		)
 		(uuid "7e329a47-27bb-47e0-80bf-07eebde3d2dc")
+	)
+	(wire
+		(pts
+			(xy 144.78 59.69) (xy 144.78 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8255d7c3-ae39-4ee3-a8de-da32db29ce55")
 	)
 	(wire
 		(pts
@@ -1282,13 +1520,53 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 92.71) (xy 123.19 92.71)
+			(xy 97.79 90.17) (xy 123.19 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "96cc4ed5-51da-48a3-9384-c4845e75ac18")
+	)
+	(wire
+		(pts
+			(xy 129.54 106.68) (xy 130.81 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a6a1487-4d07-459b-affb-8e3feac85fca")
+	)
+	(wire
+		(pts
+			(xy 125.73 114.3) (xy 129.54 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a16e7a39-c563-463a-bd5e-97cb79bb7d2a")
+	)
+	(wire
+		(pts
+			(xy 121.92 107.95) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a51cdefe-847f-4441-a83d-6ac0a94bcb69")
+	)
+	(wire
+		(pts
+			(xy 133.35 64.77) (xy 133.35 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b1fdc7-0012-431e-90b4-e3c22a7989a2")
 	)
 	(wire
 		(pts
@@ -1352,6 +1630,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 107.95) (xy 129.54 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc811476-f724-4156-83a9-a42c4b0b0e99")
+	)
+	(wire
+		(pts
 			(xy 71.12 92.71) (xy 72.39 92.71)
 		)
 		(stroke
@@ -1372,6 +1660,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 114.3) (xy 125.73 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e727b080-1aa1-4064-8a67-6fa5a933fa11")
+	)
+	(wire
+		(pts
 			(xy 146.05 111.76) (xy 144.78 111.76)
 		)
 		(stroke
@@ -1389,6 +1687,16 @@
 			(type default)
 		)
 		(uuid "eb7411af-75d5-41c7-875b-7b0457a8c5d6")
+	)
+	(wire
+		(pts
+			(xy 125.73 115.57) (xy 125.73 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef21345b-bf7b-4375-af29-e1b2b41a9dc0")
 	)
 	(wire
 		(pts
@@ -1531,6 +1839,84 @@
 		(uuid "e848ded9-9202-4160-a869-4ccd3509746b")
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 125.73 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "089245c5-8c66-4d5f-8544-b1d75aae644c")
+		(property "Reference" "#PWR06"
+			(at 125.73 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.73 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 125.73 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b68e4627-5864-4d0d-b5e7-6e9351a637ce")
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "503480-0540:503480-0540")
 		(at 85.09 87.63 0)
 		(mirror y)
@@ -1664,8 +2050,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 99.06 90.17 270)
+		(lib_id "power:GND")
+		(at 133.35 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1673,10 +2059,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "322e17ac-83f2-430a-872c-29cfbb4cbb07")
-		(property "Reference" "#PWR03"
-			(at 95.25 90.17 0)
+		(uuid "2c348ecf-4f5f-4d26-bb8d-ef76e88c4ea6")
+		(property "Reference" "#PWR07"
+			(at 133.35 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1686,19 +2071,18 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 102.87 90.1699 90)
+		(property "Value" "GND"
+			(at 133.35 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 90.17 0)
+			(at 133.35 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1709,7 +2093,86 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 90.17 0)
+			(at 133.35 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ad76c168-0d72-42cf-950a-665f546f236f")
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 99.06 92.71 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "322e17ac-83f2-430a-872c-29cfbb4cbb07")
+		(property "Reference" "#PWR03"
+			(at 95.25 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 102.87 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1720,7 +2183,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 99.06 90.17 0)
+			(at 99.06 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1817,6 +2280,107 @@
 			(project "touchpad"
 				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
 					(reference "ROW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 137.16 63.5 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "40a5fbed-c11b-4ea1-8921-b05119411107")
+		(property "Reference" "C3"
+			(at 137.16 58.928 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 137.16 60.452 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46579079-c6ec-434b-aedb-6e6288573add")
+		)
+		(pin "2"
+			(uuid "eac371fa-1d5c-4e60-bd20-873b1856fe2f")
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -2540,6 +3104,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 144.78 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9e6713d-5baa-41fb-aec7-cdcc33e0bb13")
+		(property "Reference" "#PWR05"
+			(at 144.78 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 144.78 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 144.78 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81a86c07-99c8-4415-a37a-4c340c2e7cbd")
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "IQS:IQS7211E")
 		(at 144.78 90.17 0)
 		(unit 1)
@@ -2837,6 +3479,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 129.54 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc7407a9-d2d4-4261-bbae-3f6c5c846427")
+		(property "Reference" "C1"
+			(at 127 109.2262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 127 111.7662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 129.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 129.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 129.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 129.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b257d0a0-a4a6-4660-ab23-fba813435d8a")
+		)
+		(pin "2"
+			(uuid "09f783e8-92d0-48c4-b343-5b9f903e902e")
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
 		(at 167.64 97.79 270)
 		(mirror x)
@@ -2991,6 +3736,109 @@
 			(project "touchpad"
 				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
 					(reference "COL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 121.92 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f1c700a8-f8f3-4383-8bcd-7c90f181b148")
+		(property "Reference" "C2"
+			(at 119.38 109.2262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1u"
+			(at 119.38 111.7662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 121.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 121.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 121.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 121.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b48807c1-42d2-422a-821f-c29ae00111d0")
+		)
+		(pin "2"
+			(uuid "e741e4f3-c5ea-42b3-99b9-2c23ecb778c2")
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "C2")
 					(unit 1)
 				)
 			)
