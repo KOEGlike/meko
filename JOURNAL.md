@@ -657,6 +657,8 @@ I also needed to add a cutout for the FFC on the main pcb, I made a lil bit wide
 
 ![main board touchpad cutout](https://cdn.hackclub.com/01a0d919-a929-7454-9292-f296e9959c09/dqmxjqx.png)
 
+I sent over the design to Azoteq for review, the company who makes my touchpad IC.
+
 ## Other stuff
 
 I separated out the components so they are grouped based on what components they need to connect to/need to support and where they will go in the final pcb.
