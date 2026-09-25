@@ -566,7 +566,7 @@ Here is the basic clicker app, with the addition of the going up each second:
 
 ## _Time Spent: 2h_
 
-# 2026.09.26: Layout, Stackup, Impedance, Length Matching, BGA stuff, 3D models
+# 2026.09.20: Layout, Stackup, Impedance, Length Matching, BGA stuff, 3D models
 
 _I did all kinds of stuff small chores and bigger tasks, so this will be kinda all unrelated._
 
@@ -628,3 +628,43 @@ As part of this process I also vendored in a bunch of footprints from libraries,
 ![3D PCB with components](https://cdn.hackclub.com/01a0bfee-4eb6-7ec5-8446-15327ee19a69/image.png)
 
 ## _Time Spent: 8h_
+
+# 2026.09.25: Touchpad, other small stuff
+
+Since I'm waiting for Microchip to give me the pad-to-die lengths/timings for the SAMA7, so I can start routing the DDR, I'm doing other stuff.
+
+## Touchpad
+
+First I added a sketch in my 3D mockup that represented the touchpad PCB, so I can position the FFC connectors correctly.
+
+![sketch of touchpad pcb](https://cdn.hackclub.com/01a0d91c-7b31-722d-a50b-695060b4d9c8/rdbzml6.png)
+
+After that, I chose the connector for the FFC that will connect the trackpad and main PCB. I went with the same series of connectors that my display used, because they seem high quality and are made by molex. I just uses a 5 pin variant instead of the 10 pin one.
+
+Since both the main pcb and touchpad pcb need this symbol and footprint, I moved all the libraries to a shared folder called `pcb_lib`.
+
+I already had the touchpad pattern generated, so I _only_ needed to lay out the components and do the routing.
+
+I laid out and started routing 3 times, and then realized that I was dumb and that it won't work. The 4th attempt finally turned out pretty good.
+
+![touchpad schematic](https://cdn.hackclub.com/01a0d904-3559-7b4d-814a-ef721a747cd0/fov85mk.png)
+![touchpad front 3d](https://cdn.hackclub.com/01a0d904-39f0-7e42-b50b-cc70ea47350d/zlz9jcd.png)
+![touchpad back 3d](https://cdn.hackclub.com/01a0d904-3db2-7920-b741-2802fc128d1e/91r34y3.png)
+
+The thing you gotta pay attention to when routing touchpads, is to keep a good distance between the RX, TX and data lines.
+
+I also needed to add a cutout for the FFC on the main pcb, I made a lil bit wider, so the LRA (linear actuator, that makes the vibrations) cables also fit through
+
+![main board touchpad cutout](https://cdn.hackclub.com/01a0d919-a929-7454-9292-f296e9959c09/dqmxjqx.png)
+
+## Other stuff
+
+I separated out the components so they are grouped based on what components they need to connect to/need to support and where they will go in the final pcb.
+
+![grouped components](https://cdn.hackclub.com/01a0d910-3273-756a-a446-615ba7224392/5czzptl.png)
+
+Also placed the esd for the usb, and routed it
+
+![usb](https://cdn.hackclub.com/01a0d910-3742-7f29-a56e-7e467f89ed9b/lmmvjzc.png)
+
+## _Time Spent: 4h_
