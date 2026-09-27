@@ -670,3 +670,11 @@ Also placed the esd for the usb, and routed it
 ![usb](https://cdn.hackclub.com/01a0d910-3742-7f29-a56e-7e467f89ed9b/lmmvjzc.png)
 
 ## _Time Spent: 4h_
+
+# 2026.09.26: A TON of setup for DDR routing, laid out caps
+
+## Rule areas
+
+I had a faint memory that you could set up custom rules for a specific part of your PCB. Turns out this memory was true! You have to create a rule area, I already knew that this existed, but I didn't know that you could create custom rules for these ares. 
+
+You can make the min clearance smaller for traces in specific net classes.
