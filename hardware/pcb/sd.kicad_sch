@@ -2688,15 +2688,15 @@
 			(justify left bottom)
 		)
 		(uuid "f090d80d-376b-4229-94e4-63d898add861")
-		(property "Netclass" "EXT_SDMMC"
-			(at 41.2115 111.76 0)
+		(property "Netclass" "SDMMC_EXT"
+			(at 42.6085 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Component Class" ""
@@ -2724,7 +2724,7 @@
 			(justify left bottom)
 		)
 		(uuid "f2529aaf-f3c6-4ee3-a9ff-296be02d6dce")
-		(property "Netclass" "BOOT_SDMMC"
+		(property "Netclass" "SDMMC_BOOT"
 			(at 41.2115 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2736,7 +2736,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 115.57 -60.96 0)
+			(at -31.75 -60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2744,7 +2744,7 @@
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)

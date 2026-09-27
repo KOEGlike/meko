@@ -3346,7 +3346,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 151.13) (xy 100.33 152.4)
+			(xy 102.87 151.13) (xy 102.87 152.4)
 		)
 		(stroke
 			(width 0)
@@ -3366,7 +3366,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 142.24) (xy 100.33 143.51)
+			(xy 102.87 142.24) (xy 102.87 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3493,16 +3493,6 @@
 			(type default)
 		)
 		(uuid "169c19e4-6801-4507-9bd2-1ffc14340fce")
-	)
-	(wire
-		(pts
-			(xy 99.06 142.24) (xy 100.33 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16e9b9b0-76b9-41ad-bed1-534f6ec65f5b")
 	)
 	(wire
 		(pts
@@ -4353,6 +4343,16 @@
 			(type default)
 		)
 		(uuid "81639813-e47d-4571-b48d-e57b3fe36ef6")
+	)
+	(wire
+		(pts
+			(xy 99.06 142.24) (xy 102.87 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82d73955-8476-497e-a55d-0a469d25dbd5")
 	)
 	(wire
 		(pts
@@ -5493,6 +5493,16 @@
 			(justify right bottom)
 		)
 		(uuid "715a361e-2826-4c37-a72e-317b952e8943")
+	)
+	(label "ZQ"
+		(at 102.87 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8524081b-2a49-48f6-a601-0e8b2b98379a")
 	)
 	(label "DQ7"
 		(at 106.68 76.2 180)
@@ -6777,7 +6787,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 100.33 147.32 0)
+		(at 102.87 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6787,7 +6797,7 @@
 		(dnp no)
 		(uuid "2019af25-9650-4ffa-94f4-f35a71df6779")
 		(property "Reference" "R19"
-			(at 102.108 146.05 0)
+			(at 104.648 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6798,7 +6808,7 @@
 			)
 		)
 		(property "Value" "240R"
-			(at 102.108 148.59 0)
+			(at 104.648 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6809,7 +6819,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 98.552 147.32 90)
+			(at 101.092 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6820,7 +6830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 147.32 0)
+			(at 102.87 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6831,7 +6841,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 100.33 147.32 0)
+			(at 102.87 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6842,7 +6852,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 100.33 147.32 90)
+			(at 102.87 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6853,7 +6863,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 100.33 147.32 90)
+			(at 102.87 147.32 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7300,7 +7310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 222.25 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9949,7 +9959,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 100.33 152.4 0)
+		(at 102.87 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9960,7 +9970,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecba27be-5abc-4e8c-8af5-c3e4be756186")
 		(property "Reference" "#PWR048"
-			(at 100.33 158.75 0)
+			(at 102.87 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9971,7 +9981,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 100.33 157.48 0)
+			(at 102.87 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9981,7 +9991,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 100.33 152.4 0)
+			(at 102.87 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9992,7 +10002,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 152.4 0)
+			(at 102.87 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10003,7 +10013,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 100.33 152.4 0)
+			(at 102.87 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
