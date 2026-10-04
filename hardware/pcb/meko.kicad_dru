@@ -1,14 +1,25 @@
 (version 1)
 
-(rule "boot sd lenth and skew"
+(rule "boot sd length and skew"
       (condition "A.hasNetclass('BOOT_SDMMC')")
       (constraint length (opt 30ps))
       (constraint skew (max 1ps))
 )
 
+(rule "DDR lane0 length and skew"
+      (condition "A.hasNetclass('DDR_LANE0')")
+      (constraint length (opt 221.5ps))
+      (constraint skew (max 1ps))
+)
+
 (rule "DDR reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('DDR*') && ((A.intersectsArea('SAMA') && B.intersectsArea('SAMA')) || (A.intersectsArea('DDR') && B.intersectsArea('DDR')))")
+    (condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR') && B.intersectsArea('DDR')")
+)
+
+(rule "SAMA reduced clearance"
+    (constraint clearance (min 0.1mm))
+    (condition "A.hasNetclass('DDR*') && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
 )
 
 (rule "SDMMC reduced clearance"
