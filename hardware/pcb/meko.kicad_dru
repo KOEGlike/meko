@@ -8,7 +8,7 @@
 
 (rule "DDR lane0 length and skew"
 	(condition "A.hasNetclass('DDR_LANE0')")
-	(constraint length (opt 242ps))
+	(constraint length (opt 241.5ps))
 	(constraint skew (max 1ps))
 )
 
