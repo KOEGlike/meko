@@ -12,6 +12,12 @@
 	(constraint skew (max 1ps))
 )
 
+(rule "DDR lane1 length and skew"
+	(condition "A.hasNetclass('DDR_LANE1')")
+	(constraint length (opt 231ps))
+	(constraint skew (max 1ps))
+)
+
 (rule "DDR reduced clearance"
     (constraint clearance (min 0.1mm))
     (condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR') && B.intersectsArea('DDR')")
