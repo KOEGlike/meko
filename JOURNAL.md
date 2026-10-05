@@ -9,8 +9,6 @@ created_at: "2026-07-12"
 
 _This will be a long journal, because I did a lot of research beforehand_
 
-![meko v2](images/PXL_20260314_073009498~2.jpg)
-
 For V2, I went with an MCU(microcontroller unit) which are low power processors, and can't run normal OSs. This - I found out while developing the firmware - was a really limiting factor, mainly because the embedded RTOS that I was forced to use with this specific MCU(nRF5380), Zephyr.
 
 ## Zephyr rant
@@ -671,10 +669,57 @@ Also placed the esd for the usb, and routed it
 
 ## _Time Spent: 4h_
 
-# 2026.10.05: A TON of setup for DDR routing, laid out caps
+# 2026.10.05: Routing DDR
+
+`This will be long 😭`
+
+## Net classes
+
+I started by setting up some net classes and coloring them to make differentiating the different signal groups easier.
+
+I used some schematic rule areas and directive labels to assign net classes visually
+![rule areas and labels](https://cdn.hackclub.com/01a10b10-9ff4-742b-bbc3-e4a86a50ee0c/paste-1791187000737.png)
+
+Net classes will also be important for length matching later on.
+
+## Laing out caps and VIAs
+
+Then I laying out the caps and other passvies and conencting them, this was not that hard, I looked at how other people did it.
+
+![ddr passvies](https://cdn.hackclub.com/01a10b0a-c664-7594-a29a-27e0c262050f/paste-1791186617222.png)
+![sama passives](https://cdn.hackclub.com/01a10b0b-a913-78dc-9eb6-bf77db0d141a/paste-1791186675644.png)
+
+I then realized that I messed up, and have to redo the whole process, because I couldn't fan out the BGA with the way I did things.
+
+So I caved and used Microchip's [referance design](https://365.altium.com/files/45053653-DFF7-4FBD-83A4-7ECC4038BD7C) to redo the whole thing. This time I also used this reference design to place the VIAs for certain signals.
+
+![new ddr passive layout](https://cdn.hackclub.com/01a10b1e-c4e2-799d-8be5-65392f0a81bc/paste-1791187927583.png)
+![new sama passive layout](https://cdn.hackclub.com/01a10b1e-ecd0-70d5-9e8c-f0fc3d376edc/paste-1791187937780.png)
 
 ## Rule areas
 
 I had a faint memory that you could set up custom rules for a specific part of your PCB. Turns out this memory was true! You have to create a rule area, I already knew that this existed, but I didn't know that you could create custom rules for these ares.
 
 You can make the min clearance smaller for traces in specific net classes in specific areas. This way, I'm forced to follow the 3h rule outside of the BGA areas, and also have more freedom to fan out the BGAs with tighter clearance.
+
+![ddr rule area](https://cdn.hackclub.com/01a10b0c-76e3-7700-937e-cb2d98e90b4f/paste-1791186728364.png)
+
+![ddr custom rules](https://cdn.hackclub.com/01a10b17-4ae9-7455-a841-dddfe74f4c58/paste-1791187437832.png)
+
+I messed around with this a bunch, because kicad doesn't support this very well yet.
+
+## Setting up length matching rules
+
+In KiCAD you can set up custom rules (just like with the areas) to make length matching easier. You can make kicad force you to make all lines in a netclass be the same length.
+
+I found [this](https://youtu.be/OrjdTfpJeWw?si=aGC9p7ROnE3OcyjS&t=240) tutorial that had a really good explination of the whole length matching process in KiCAD.
+
+Here is one of the custom rules for the LANE1 signal group:
+![length matching rule](https://cdn.hackclub.com/01a10b16-fce3-7675-819a-6f885e1b2ddb/paste-1791187417890.png)
+
+I had done a ton of reasearch of how closely you have to match each group, in the end I found [this](https://docs.altera.com/r/docs/683385/current/length-matching-rules) document that had a pretty good explination.
+
+## Routing
+
+`This was the most painfull part, and I'm still not done`
+
