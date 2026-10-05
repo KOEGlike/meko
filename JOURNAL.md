@@ -671,10 +671,10 @@ Also placed the esd for the usb, and routed it
 
 ## _Time Spent: 4h_
 
-# 2026.09.26: A TON of setup for DDR routing, laid out caps
+# 2026.10.05: A TON of setup for DDR routing, laid out caps
 
 ## Rule areas
 
-I had a faint memory that you could set up custom rules for a specific part of your PCB. Turns out this memory was true! You have to create a rule area, I already knew that this existed, but I didn't know that you could create custom rules for these ares. 
+I had a faint memory that you could set up custom rules for a specific part of your PCB. Turns out this memory was true! You have to create a rule area, I already knew that this existed, but I didn't know that you could create custom rules for these ares.
 
-You can make the min clearance smaller for traces in specific net classes.
+You can make the min clearance smaller for traces in specific net classes in specific areas. This way, I'm forced to follow the 3h rule outside of the BGA areas, and also have more freedom to fan out the BGAs with tighter clearance.
