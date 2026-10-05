@@ -682,9 +682,9 @@ I used some schematic rule areas and directive labels to assign net classes visu
 
 Net classes will also be important for length matching later on.
 
-## Laing out caps and VIAs
+## Laying out caps and VIAs
 
-Then I laying out the caps and other passvies and conencting them, this was not that hard, I looked at how other people did it.
+Then I laying out the caps and other passives and connecting them, this was not that hard, I looked at how other people did it.
 
 ![ddr passvies](https://cdn.hackclub.com/01a10b0a-c664-7594-a29a-27e0c262050f/paste-1791186617222.png)
 ![sama passives](https://cdn.hackclub.com/01a10b0b-a913-78dc-9eb6-bf77db0d141a/paste-1791186675644.png)
@@ -710,16 +710,55 @@ I messed around with this a bunch, because kicad doesn't support this very well 
 
 ## Setting up length matching rules
 
-In KiCAD you can set up custom rules (just like with the areas) to make length matching easier. You can make kicad force you to make all lines in a netclass be the same length.
+In KiCAD you can set up custom rules (just like with the areas) to make length matching easier. You can make kicad force you to make all lines in a net class be the same length.
 
-I found [this](https://youtu.be/OrjdTfpJeWw?si=aGC9p7ROnE3OcyjS&t=240) tutorial that had a really good explination of the whole length matching process in KiCAD.
+I found [this](https://youtu.be/OrjdTfpJeWw?si=aGC9p7ROnE3OcyjS&t=240) tutorial that had a really good explanation of the whole length matching process in KiCAD.
 
 Here is one of the custom rules for the LANE1 signal group:
 ![length matching rule](https://cdn.hackclub.com/01a10b16-fce3-7675-819a-6f885e1b2ddb/paste-1791187417890.png)
 
-I had done a ton of reasearch of how closely you have to match each group, in the end I found [this](https://docs.altera.com/r/docs/683385/current/length-matching-rules) document that had a pretty good explination.
+I had done a ton of research of how closely you have to match each group, in the end I found [this](https://docs.altera.com/r/docs/683385/current/length-matching-rules) document that had a pretty good explanation.
 
-## Routing
+## Routing and Length Matching
 
-`This was the most painfull part, and I'm still not done`
+`This was the most painful part, and I'm still not done`
 
+I started by looking at the reference design to see how it was done there. I copied the fanout because I didn't want to reinvent the wheel, and it would have taken ages to figure out a somewhat good fanout on my own - maybe for a future project.
+
+I then routed both lane0 and lane1, and started length matching lane0, and realized that my layout was terrible, and I couldn't length match the traces.
+
+![bad layout + traces](https://cdn.hackclub.com/01a10b26-e7fe-7e27-b162-96ac9e332248/paste-1791188460826.png)
+
+I then rotated everything 45 degrees, and spaced the sama and the ram further apart.
+
+![new layout](https://cdn.hackclub.com/01a10b28-ddb7-71a9-9a7d-bf7131fd52ee/paste-1791188589278.png)
+
+After this, I routed lane0
+
+![lane0 routed](https://cdn.hackclub.com/01a10b29-30db-7233-9727-5431fed3d0e4/paste-1791188611038.png)
+
+And this time I clould actually length match it
+
+![lane0 length matched](https://cdn.hackclub.com/01a10b29-d0d5-7783-94b3-26acc3a90395/paste-1791188651982.png)
+
+I then did the same with lane1
+
+![lane1 routed](https://cdn.hackclub.com/01a10b2a-4b76-7618-a125-89090996c3de/paste-1791188683393.png)
+
+![lane1 matched](https://cdn.hackclub.com/01a10b2a-a3dd-7427-aacf-8840c7eca2b8/paste-1791188706032.png)
+
+Finished with lane1 and lane0, I continued onto the address and command/control lines, which I'm still working on
+
+![started on addr and cmd/ctl](https://cdn.hackclub.com/01a10b2b-5c5c-73f3-b0fb-610dd23fa2c6/paste-1791188753228.png)
+
+This whole process took an immense amount of time, and is mostly monotone/grueling work, but it's a nice challenge.
+
+## Getting my SAMA symbol merged into KiCAD
+
+This was like a side story line, I did this while doing all the other stuff mention in this and the previous journals.
+
+I had gone back and forth with a librarian a few times with changes that they requested, but these were mostly simple fixes.
+
+Here is the [MR](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/5616)
+
+## _Time Spent: 15h_
