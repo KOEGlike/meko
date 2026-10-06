@@ -2804,12 +2804,6 @@
 		(uuid "bac82dc3-939e-4ae4-b23a-c88c4dbacdb3")
 	)
 	(junction
-		(at 198.12 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c56e8800-ad96-4e80-a6c5-c08da73e55a2")
-	)
-	(junction
 		(at 163.83 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2844,12 +2838,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e535c68f-759e-4c1a-8ffb-3010fadfd458")
-	)
-	(junction
-		(at 213.36 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e6dba9a7-4de7-4312-b43c-21f0d71ea6dd")
 	)
 	(junction
 		(at 179.07 114.3)
@@ -3454,16 +3442,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 63.5) (xy 213.36 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e1106dd-416e-4621-b27e-64fd945d3216")
-	)
-	(wire
-		(pts
 			(xy 186.69 33.02) (xy 186.69 38.1)
 		)
 		(stroke
@@ -3601,16 +3579,6 @@
 			(type default)
 		)
 		(uuid "20f46071-3ef3-439e-aa28-dbd3239298f3")
-	)
-	(wire
-		(pts
-			(xy 208.28 68.58) (xy 213.36 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "224fdc02-20e2-4ddc-a060-2b00eaf745ef")
 	)
 	(wire
 		(pts
@@ -3811,16 +3779,6 @@
 			(type default)
 		)
 		(uuid "347eb149-b1f2-4ff0-99c7-de5c9977fcfc")
-	)
-	(wire
-		(pts
-			(xy 213.36 68.58) (xy 213.36 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3715bf78-ebec-48ad-94aa-fa00db0bdd90")
 	)
 	(wire
 		(pts
@@ -4322,16 +4280,6 @@
 		)
 		(uuid "76ef7de8-824f-4c9b-acf0-eecf4482b740")
 	)
-	(wire
-		(pts
-			(xy 198.12 72.39) (xy 198.12 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7748431f-56d5-42bb-9359-201444680de4")
-	)
 	(bus
 		(pts
 			(xy 109.22 93.98) (xy 109.22 101.6)
@@ -4574,16 +4522,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 72.39) (xy 203.2 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e149f14-0bc1-4a05-98f4-7172afabc89c")
-	)
-	(wire
-		(pts
 			(xy 83.82 52.07) (xy 86.36 52.07)
 		)
 		(stroke
@@ -4774,16 +4712,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 72.39) (xy 198.12 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b136b42a-d9d2-4d66-9ce0-c6b8f532548f")
-	)
-	(wire
-		(pts
 			(xy 163.83 129.54) (xy 168.91 129.54)
 		)
 		(stroke
@@ -4911,16 +4839,6 @@
 			(type default)
 		)
 		(uuid "bff06ddf-55c7-460f-a11d-f5a5bc539a37")
-	)
-	(wire
-		(pts
-			(xy 198.12 68.58) (xy 203.2 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c11e9ba0-a611-405e-9bcd-d1d28ec1b887")
 	)
 	(wire
 		(pts
@@ -5264,16 +5182,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 72.39) (xy 213.36 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f182d41d-67bd-4965-8fa3-4c0b949fb88b")
-	)
-	(wire
-		(pts
 			(xy 59.69 88.9) (xy 68.58 88.9)
 		)
 		(stroke
@@ -5381,16 +5289,6 @@
 			(type default)
 		)
 		(uuid "fddf3fb6-95bd-4964-8e3b-d48b55d60d42")
-	)
-	(wire
-		(pts
-			(xy 214.63 63.5) (xy 213.36 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fff72153-12ac-4424-a685-95f4ee2d4563")
 	)
 	(label "~{RAS}"
 		(at 59.69 114.3 0)
@@ -5911,17 +5809,6 @@
 			(justify left bottom)
 		)
 		(uuid "f77d2d93-ff87-4d85-9a8d-f2097501e2f6")
-	)
-	(hierarchical_label "DDR_VREF"
-		(shape passive)
-		(at 214.63 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1327d758-9172-4490-8e6a-0ce27cbbd2e2")
 	)
 	(hierarchical_label "{DDR_CLOCK}"
 		(shape input)
@@ -6823,7 +6710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "PCM_ckl-misc:C_0201_0603Metric_Dense"
 			(at 171.45 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7004,7 +6891,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
 			(at 101.092 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -7250,110 +7137,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
 					(reference "C83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 205.74 68.58 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "22304530-a76d-42df-91b9-423f30dbfe2b")
-		(property "Reference" "C68"
-			(at 204.724 67.31 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 206.756 67.31 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 205.74 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 205.74 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 205.74 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 205.74 68.58 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a6852697-ab34-4eb7-ae02-e76824957ee5")
-		)
-		(pin "2"
-			(uuid "fbb92fab-2cdc-4f0b-9318-e9641ff91827")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
-					(reference "C68")
 					(unit 1)
 				)
 			)
@@ -10170,84 +9953,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 198.12 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5dba634-2724-47ed-b9e7-965ed3d8d0f7")
-		(property "Reference" "#PWR044"
-			(at 198.12 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 198.12 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7c43a7bd-9945-442a-a9e5-e9d60c9e361f")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
-					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 111.76 142.24 0)
 		(mirror x)
@@ -10526,110 +10231,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 205.74 72.39 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "efabf611-161b-4568-bcc0-6fa1864dedc9")
-		(property "Reference" "C70"
-			(at 204.724 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100n"
-			(at 206.756 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 205.74 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 205.74 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S3.3" ""
-			(at 205.74 72.39 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "KLC_S4.1" ""
-			(at 205.74 72.39 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9015ff4a-2820-4ff2-93fd-8cdb44cc562f")
-		)
-		(pin "2"
-			(uuid "3c912e49-c711-4806-b513-a3d19b4aa130")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/6a1996a1-d776-4235-b4ef-703258aa0c56"
-					(reference "C70")
 					(unit 1)
 				)
 			)
