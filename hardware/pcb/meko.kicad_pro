@@ -216,7 +216,9 @@
         0.14,
         0.2,
         0.3,
-        0.4
+        0.4,
+        0.5,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -254,7 +256,11 @@
           "drill": 0.15
         },
         {
-          "diameter": 0.4,
+          "diameter": 0.45,
+          "drill": 0.225
+        },
+        {
+          "diameter": 0.6,
           "drill": 0.3
         }
       ],
@@ -533,10 +539,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
+        "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.3,
-        "via_drill": 0.15,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
