@@ -26696,6 +26696,42 @@
 		)
 		(uuid "fccead0e-9575-4daf-a7f1-f6709ecf44cd")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 400.05 318.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "44d21fba-adc2-43ad-9e74-eadb3b82f0b7")
+		(property "Netclass" "PWR"
+			(at 399.3515 316.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at 775.97 201.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 481.33 323.85 270)
