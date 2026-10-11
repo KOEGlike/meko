@@ -769,7 +769,7 @@ _I haven't journaled in a long time, so this will be kinda long_
 
 ## DDR Routing Finished
 
-This was mostly the same repetitive process, trial and error.
+This was mostly the same repetitive process, trial and error. But I pushed through! But never again in the near future (╥ ω ╥)
 
 I connected all the pads first:
 
