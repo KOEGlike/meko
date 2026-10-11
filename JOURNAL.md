@@ -725,7 +725,7 @@ I had done a ton of research of how closely you have to match each group, in the
 
 I started by looking at the reference design to see how it was done there. I copied the fanout because I didn't want to reinvent the wheel, and it would have taken ages to figure out a somewhat good fanout on my own - maybe for a future project.
 
-I then routed both lane0 and lane1, and started length matching lane0, and realized that my layout was terrible, and I couldn't length match the traces.
+I then routed both lane0 and lane1, and started length matching lane0, and realized that my layout was terrible, and I couldn't length match the traces because I didn't have enough space.
 
 ![bad layout + traces](https://cdn.hackclub.com/01a10b26-e7fe-7e27-b162-96ac9e332248/paste-1791188460826.png)
 
@@ -762,3 +762,90 @@ I had gone back and forth with a librarian a few times with changes that they re
 Here is the [MR](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/5616)
 
 ## _Time Spent: 15h_
+
+# 2026.10.11: Finished DDR routing, Regulator layout and Power Plane
+
+_I haven't journaled in a long time, so this will be kinda long_
+
+## DDR Routing Finished
+
+This was mostly the same repetitive process, trial and error.
+
+I connected all the pads first:
+
+![routed addr/ctl traces](https://cdn.hackclub.com/01a12bda-f9d2-7c46-9f19-14666bc6f375/paste-1791737131737.png)
+
+And then I length tuned them:
+
+![tuned traces](https://cdn.hackclub.com/01a12bde-fa83-71c2-bf66-40cf10c6308b/paste-1791737395106.png)
+
+And then moved inside the PCB:
+
+![inside edge.cuts](https://cdn.hackclub.com/01a12be1-9eb7-7e58-8ab2-a6fe905ffee5/paste-1791737568578.png)
+
+## Regulator layout
+
+I haven't done switching regulator layout in a while, so I did some research, and got a lot of help from the KiCAD discord along the way. I also found this pretty good [video](https://youtu.be/AmfLhT5SntE?si=eNHKXGZVunnbMAcD) from Phil's lab.
+
+At first I wanted my power train right after the USB port, but then realized that I wouldn't have enough space for the PMIC
+
+![BMS next to USB](https://cdn.hackclub.com/01a12be7-cd74-71da-bc5b-54eb73a921db/paste-1791737973570.png)
+
+Realizing this I did the layout outside the PCB edge cut, so I could later find space for each component block. 
+
+Here is the beginning of the PMIC layout.
+
+![PMIC started](https://cdn.hackclub.com/01a12be6-f216-7d11-bd00-8843942f1eb3/paste-1791737917472.png)
+
+Here is the BMS moved outside of the PCB edge cut.
+
+![BMS outside](https://cdn.hackclub.com/01a12bec-4f6a-77de-beea-65e43a46c8c2/paste-1791738268858.png)
+
+After looking at the recommended layout and getting feedback from the KiCAD discord I finished the PMIC layout:
+
+![PMIC finished](https://cdn.hackclub.com/01a12bec-9b5f-7062-9aaa-36b0c7d49169/paste-1791738288650.png)
+
+After some fiddling around, I found the top left corner of the PCB is the best spot to put the battery connector, so I also laid out the fuel gauge and moved the BMS next to all this.
+
+![Fuel gauge and BMS](https://cdn.hackclub.com/01a12bec-f95d-7f71-93e4-2f7defd519b5/paste-1791738312489.png)
+
+Thanks to the KiCAD discord I learned what Kelvin connecting is; it's separate trace to the battery connector, different from the main power trace, that lets the BMS sense the actual voltage of the battery.
+
+After debating where I should place my PMIC block, next to the audio circuit, or further away, the answer became obvious ಥ﹏ಥ Here is the first layout of the full power train
+
+![finished pwr train](https://cdn.hackclub.com/01a12bed-509a-7cf3-8c16-dfeab2164115/paste-1791738335179.png)
+
+## Power plane and caps
+
+I tried to pour/route/make (idk what verb I should use here) the power plane, but I realized I should first layout out and route the caps for my MPU, so I know the placement of the vias, so i stopped.
+
+![bad pwr plane](https://cdn.hackclub.com/01a12bed-90f1-7cc4-a5ee-0a9333a538db/paste-1791738351435.png)
+
+Placing caps is a monotone process, but I could almost feel the light at the end of the tunnel for these grueling tasks, so I pushed through and started placing the caps.
+
+![started placing caps](https://cdn.hackclub.com/01a12bed-f58d-7e92-8e6d-94c06721a16d/paste-1791738377323.png)
+
+While doing the layout I noticed that all my tuning sections for the DDR has went away, i had the traces, but the tuning meanders were _baked_ and couldn't be edited. While redoing some of the tuning, I realized that I didn't tune one of the traces correctly, and I just had enough space to add some more delay and bring it up to standard.
+
+After a while, I finished placing the caps
+
+![finished polacing caps](https://cdn.hackclub.com/01a12bee-2bf6-7665-b77c-84599234c7d4/paste-1791738391229.png)
+
+Now that I know where the power pours were actually needed on the power plane, I started laying out the pours, now with good looking 45 degree angles (thanks tty and simon in #electronics for pointing out that I should make the pours 45 degrees).
+
+After a **bunch** of trial and error I ended up with this, I think it should be all right.
+
+![finished pwr plane](https://cdn.hackclub.com/01a12bee-6b02-7a85-bf70-e60b604eb9dc/paste-1791738407324.png)
+
+## Whats left?
+
+I still need to
+- lay out and wire up the audio circuit
+- wire up both of the SD card
+- wire up the wireless module
+- place a **ton** of test points
+- make a cutout for the display cable
+- place a bunch of passives
+
+
+## _Time Spent: 12.5h_
