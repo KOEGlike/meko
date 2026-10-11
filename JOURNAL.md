@@ -785,7 +785,7 @@ And then moved inside the PCB:
 
 ## Regulator layout
 
-I haven't done switching regulator layout in a while, so I did some research, and got a lot of help from the KiCAD discord along the way. I also found this pretty good [video](https://youtu.be/AmfLhT5SntE?si=eNHKXGZVunnbMAcD) from Phil's lab.
+I haven't done switching regulator layout in a while, so I did some research, and along the way got a lot of help from the KiCAD discord. I also found this pretty good [video](https://youtu.be/AmfLhT5SntE?si=eNHKXGZVunnbMAcD) from Phil's lab.
 
 At first I wanted my power train right after the USB port, but then realized that I wouldn't have enough space for the PMIC
 
@@ -817,7 +817,7 @@ After debating where I should place my PMIC block, next to the audio circuit, or
 
 ## Power plane and caps
 
-I tried to pour/route/make (idk what verb I should use here) the power plane, but I realized I should first layout out and route the caps for my MPU, so I know the placement of the vias, so i stopped.
+I tried to pour/route/make (idk what verb I should use here) the power plane, but I realized I should first layout out and route the caps for my MPU, so I know the placement of the vias, so i stopped with the power plane.
 
 ![bad pwr plane](https://cdn.hackclub.com/01a12bed-90f1-7cc4-a5ee-0a9333a538db/paste-1791738351435.png)
 
@@ -825,7 +825,7 @@ Placing caps is a monotone process, but I could almost feel the light at the end
 
 ![started placing caps](https://cdn.hackclub.com/01a12bed-f58d-7e92-8e6d-94c06721a16d/paste-1791738377323.png)
 
-While doing the layout I noticed that all my tuning sections for the DDR has went away, i had the traces, but the tuning meanders were _baked_ and couldn't be edited. While redoing some of the tuning, I realized that I didn't tune one of the traces correctly, and I just had enough space to add some more delay and bring it up to standard.
+While doing the layout I noticed that all my tuning sections for the DDR have went away, I had the traces, but the tuning meanders were _baked_ and couldn't be edited. While redoing some of the tuning, I realized that I didn't tune one of the traces correctly, and I just had enough space to add some more delay and bring it up to snuff.
 
 After a while, I finished placing the caps
 
