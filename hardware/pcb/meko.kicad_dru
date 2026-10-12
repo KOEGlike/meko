@@ -37,12 +37,12 @@
 
 (rule "SAMA reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "(A.hasNetclass('DDR*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
+    (condition "(A.hasNetclass('DDR*') || (A.hasNetclass('ASI*') || (A.hasNetclass('UART*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
 )
 
 (rule "WIRELESS reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('SDMMC_WL') && A.intersectsArea('WIRELESS') && B.intersectsArea('WIRELESS')")
+    (condition "(A.hasNetclass('SDMMC_WL') || (A.hasNetclass('UART_BT') || (A.hasNetclass('ASI_BT')) && A.intersectsArea('WIRELESS') && B.intersectsArea('WIRELESS')")
 )
 
 (rule "GND reduced clearance to special nets"

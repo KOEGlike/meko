@@ -548,9 +548,27 @@
       },
       {
         "clearance": 0.25,
+        "name": "ASI_BT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.25,
+        "name": "ASI_CODEC",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.25,
         "name": "DDR_ADDR_CTL",
         "pcb_color": "rgb(0, 194, 194)",
-        "priority": 8,
+        "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single"
       },
@@ -558,7 +576,7 @@
         "clearance": 0.25,
         "name": "DDR_CLOCK",
         "pcb_color": "rgb(221, 133, 0)",
-        "priority": 5,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "100Ohms Diff"
       },
@@ -566,7 +584,7 @@
         "clearance": 0.25,
         "name": "DDR_LANE0",
         "pcb_color": "rgb(194, 194, 0)",
-        "priority": 7,
+        "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single"
       },
@@ -574,7 +592,7 @@
         "clearance": 0.25,
         "name": "DDR_LANE1",
         "pcb_color": "rgb(132, 0, 132)",
-        "priority": 6,
+        "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single"
       },
@@ -582,7 +600,7 @@
         "clearance": 0.25,
         "name": "DDR_STROBE_LANE0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "100Ohms Diff"
       },
@@ -590,21 +608,21 @@
         "clearance": 0.25,
         "name": "DDR_STROBE_LANE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "100Ohms Diff"
       },
       {
         "name": "GND",
         "pcb_color": "rgb(132, 132, 132)",
-        "priority": 11,
+        "priority": 14,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "PWR",
         "pcb_color": "rgb(215, 140, 255)",
-        "priority": 10,
+        "priority": 13,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
@@ -612,7 +630,7 @@
         "clearance": 0.25,
         "name": "SDMMC_BOOT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single"
       },
@@ -620,7 +638,7 @@
         "clearance": 0.25,
         "name": "SDMMC_EXT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single"
       },
@@ -628,15 +646,24 @@
         "clearance": 0.25,
         "name": "SDMMC_WL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.25,
+        "name": "UART_BT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.25,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 9,
+        "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "90Ohms Diff"
       }
@@ -672,6 +699,24 @@
       ],
       "+VSYS": [
         "PWR"
+      ],
+      "/Audio/BCLK": [
+        "ASI_CODEC"
+      ],
+      "/Audio/DIN": [
+        "ASI_CODEC"
+      ],
+      "/Audio/DOUT": [
+        "ASI_CODEC"
+      ],
+      "/Audio/FSYNC": [
+        "ASI_CODEC"
+      ],
+      "/Audio/MCLK": [
+        "ASI_CODEC"
+      ],
+      "/Audio/{ASI}": [
+        "ASI_CODEC"
       ],
       "/DDR/BA0": [
         "DDR_ADDR_CTL"
@@ -868,6 +913,39 @@
       ],
       "/SAMA7/BOOT{SDMMC}": [
         "SDMMC_BOOT"
+      ],
+      "/SAMA7/BT.BCLK": [
+        "ASI_BT"
+      ],
+      "/SAMA7/BT.DIN": [
+        "ASI_BT"
+      ],
+      "/SAMA7/BT.DOUT": [
+        "ASI_BT"
+      ],
+      "/SAMA7/BT.FSYNC": [
+        "ASI_BT"
+      ],
+      "/SAMA7/BT.MCLK": [
+        "ASI_BT"
+      ],
+      "/SAMA7/BT.RX": [
+        "UART_BT"
+      ],
+      "/SAMA7/BT.TX": [
+        "UART_BT"
+      ],
+      "/SAMA7/BT.~{CTS}": [
+        "UART_BT"
+      ],
+      "/SAMA7/BT.~{RTS}": [
+        "UART_BT"
+      ],
+      "/SAMA7/BT{ASI}": [
+        "ASI_BT"
+      ],
+      "/SAMA7/BT{UART}": [
+        "UART_BT"
       ],
       "/SAMA7/D+": [
         "USB"

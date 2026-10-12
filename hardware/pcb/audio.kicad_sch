@@ -3051,6 +3051,41 @@
 		)
 		(uuid "f1bca9ac-f743-49e6-b69f-35b6e96f1d37")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 36.83 46.99 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "18ef4ad7-7168-4bc2-9a6f-538306d9b6f9")
+		(property "Netclass" "ASI_CODEC"
+			(at 33.528 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Component Class" ""
+			(at -36.83 -59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:+3V3")
 		(at 58.42 29.21 0)
