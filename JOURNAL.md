@@ -1,7 +1,7 @@
 ---
 title: "Meko V3"
 github: "https://github.com/KOEGlike/meko"
-description: "A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad"
+description: "A Linux music player with DDR3, a 70Hz e-paper display and a haptic touchpad"
 created_at: "2026-07-12"
 ---
 
@@ -23,13 +23,13 @@ Thank you for listening to my rant.
 
 ![linux logo](https://cdn.hackclub.com/019f6765-df8c-71df-9d94-99a626b2e400/image.png)
 
-I realized that with the features I wanted (wifi, Bluetooth, BLE, high-quality audio, streaming support, USB DAC functionality), Linux was a must; it has better docs, support for a bunch of ICs that I need, etc. But to run Linux, I need an MPU(microprocessor unit); the main difference between an MPU and MCU is that the MPU has an MMU(memory management unit), which allows the use of external memory - like DDR - which Linux needs to run (doesn't actually, but in reality it's a necessity).
+I realized that with the features I wanted (Wi-Fi, Bluetooth, BLE, high-quality audio, streaming support, USB DAC functionality), Linux was a must; it has better docs, support for a bunch of ICs that I need, etc. But to run Linux, I need an MPU(microprocessor unit); the main difference between an MPU and MCU is that the MPU has an MMU(memory management unit), which allows the use of external memory - like DDR - which Linux needs to run (doesn't actually, but in reality it's a necessity).
 
 ## Choosing an MPU
 
-![sama7d65-v/4hb](https://cdn.hackclub.com/019f6768-2877-740e-92f0-70b723a492ab/image.png)
+![SAMA7D65-V/4HB](https://cdn.hackclub.com/019f6768-2877-740e-92f0-70b723a492ab/image.png)
 
-This is the part that I'm still not done with; I'm really torn between the SAMA7 series from Microchip and the STM32MP1 series from STM, both are really awesome chips, the sama7 has a really good audio engine and relatively good GPU, and the stm32 is really easy to implement and it also has a pretty good gpu and audio peripheral. I would lean towards the sama7, but that is only available in a 0.65mm BGA package, which is really hard to fan out, while the stm32mp1 has a 0.8mm pitch, which is really easy to use. I think the strategy I will go with is to try to route the SAMA7, and if I fail miserably, I will switch to the stm32.
+This is the part that I'm still not done with; I'm really torn between the SAMA7 series from Microchip and the STM32MP1 series from STM, both are really awesome chips, the SAMA7 has a really good audio engine and relatively good GPU, and the STM32 is really easy to implement and it also has a pretty good GPU and audio peripheral. I would lean towards the SAMA7, but that is only available in a 0.65mm BGA package, which is really hard to fan out, while the STM32MP1 has a 0.8mm pitch, which is really easy to use. I think the strategy I will go with is to try to route the SAMA7, and if I fail miserably, I will switch to the STM32.
 
 Two articles were really helpful researching this topic: [this one](https://jaycarlson.net/embedded-linux/), and [this one](https://www.thirtythreeforty.net/posts/mastering-embedded-linux-part-1-concepts/)
 
@@ -43,17 +43,17 @@ V2 had a normal e-ink screen, which had a max partial refresh rate of 0.5s, whic
 
 ![lpddr3](https://cdn.hackclub.com/019f6767-5722-7828-809c-23a2a2671b86/image.png)
 
-One of the main reasons I didn't go with a SiP(an IC where both the MPU and RAM are in the same package) is because they mostly only package DDR3L or DDR2L, which have significantly higher power consumptions than LPDDR2/3. Both of my chosen MPUs support both LPDDR2 and LPDDR3, so I will be most likely going to use LPDDR3, and 512MB of it, because these MPUs would be sooner bottlenecked by their performance than from the amount of RAM, and 512MB seems to be the sweet spot from what I read on forums/articles.
+One of the main reasons I didn't go with a SiP(an IC where both the MPU and RAM are in the same package) is because they mostly only package DDR3L or DDR2L, which have significantly higher power consumption than LPDDR2/3. Both of my chosen MPUs support both LPDDR2 and LPDDR3, so I will be most likely going to use LPDDR3, and 512MB of it, because these MPUs would be sooner bottlenecked by their performance than from the amount of RAM, and 512MB seems to be the sweet spot from what I read on forums/articles.
 
 ## _Time Spent: 8h_
 
 # 2026.07.15: Making a custom BGA symbol = HELL
 
-So I realized that the sama7 doesn't have a premade footprint and symbol :YAYAYAY:
+So I realized that the SAMA7 doesn't have a premade footprint and symbol :YAYAYAY:
 
 ## Footprint
 
-I heard from Cyao that KiCad has some pretty good built-in BGA footprint generators, so I started researching. Turns out it's pretty easy to use; you only need to add a new entry to a YAML file with the specs of your footprint, and boom, you have a 3d model and footprint. I even made a [pull request](https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/merge_requests/2132) to the main repo, so the footprint can be included in the KiCad default library.
+I heard from Cyao that KiCad has some pretty good built-in BGA footprint generators, so I started researching. Turns out it's pretty easy to use; you only need to add a new entry to a YAML file with the specs of your footprint, and boom, you have a 3D model and footprint. I even made a [pull request](https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/merge_requests/2132) to the main repo, so the footprint can be included in the KiCad default library.
 
 ![footprint](https://cdn.hackclub.com/019f6759-1979-74bb-8e4a-e8a1b97e00c4/image.png)
 ![3d model](https://cdn.hackclub.com/019f6759-1d18-708f-9c76-50ef3c12f1f2/image.png)
@@ -74,7 +74,7 @@ I asked around in a bunch of communities for advice on DDR3 learning resources, 
 
 # 2026.07.16: Split apart the symbol
 
-This was mostly a long monotonous but fun process of looking at the datasheet and organizing the pins into units. I took a bunch of inspiration from Cyao's sbc.
+This was mostly a long monotonous but fun process of looking at the datasheet and organizing the pins into units. I took a bunch of inspiration from Cyao's SBC.
 
 ![split up symbol](https://cdn.hackclub.com/019f6f8c-4fbe-7dd1-bb52-e04dcd09edba/image.png)
 
@@ -84,13 +84,13 @@ This was mostly a long monotonous but fun process of looking at the datasheet an
 
 ## PMIC
 
-Microchip recommends two PMICs for the sama7, the mcp16501 and mcp16502; the mcp16501 can't do dynamic voltage adjustment, and doesn't let the sama7 go up to 1GHz, so the obvious choice was the mcp16502. Luckily Component Search Engine already had a base symbol that I could use as a starting point, but it had the pins arranged based on the footprint, so I just needed to arrange the pins in a way that it made sense. I used a built-in footprint from KiCad, so I didn't have to make that.
+Microchip recommends two PMICs for the SAMA7, the MCP16501 and MCP16502; the MCP16501 can't do dynamic voltage adjustment, and doesn't let the SAMA7 go up to 1GHz, so the obvious choice was the MCP16502. Luckily Component Search Engine already had a base symbol that I could use as a starting point, but it had the pins arranged based on the footprint, so I just needed to arrange the pins in a way that it made sense. I used a built-in footprint from KiCad, so I didn't have to make that.
 
 ![pmic symbol](https://cdn.hackclub.com/019f7bef-e38d-7d60-a8aa-58aecc442bcb/image.png)
 
 ## RAM research
 
-I messaged Cyao about where he sourced his RAM when he made his sbc, because I couldn't find LPDDR3 on Mouser/LCSC/Digikey, and other western sites sold these chips for pretty expensive. Turns out Taobao has some pretty cheap RAM, $5 for 1GB.
+I messaged Cyao about where he sourced his RAM when he made his SBC, because I couldn't find LPDDR3 on Mouser/LCSC/DigiKey, and other western sites sold these chips for pretty expensive. Turns out Taobao has some pretty cheap RAM, $5 for 1GB.
 
 Also I learned that GB and Gb are different, GB is a gigabyte and Gb is a gigabit, which is 8 times smaller than a gigabyte. Thanks Cyao!
 
@@ -110,7 +110,7 @@ I submitted a footprint creation request to Component Search Engine; it should t
 
 I realized that I really like making symbols; it's just a really relaxing process, and I can learn a lot about the IC I'm making the symbol for.
 
-Turns out, the pin table in KiCad doesn't have a "visible" field, so I had to use a text editor to mass hide pins, like gnd and vcc, so for example I can have one gnd pin instead of sixty-seven-thousand.
+Turns out, the pin table in KiCad doesn't have a "visible" field, so I had to use a text editor to mass hide pins, like GND and VCC, so for example I can have one GND pin instead of sixty-seven-thousand.
 
 ![ram symbol](https://cdn.hackclub.com/019f84ac-c970-7b97-bbe3-0f5766acd44d/image.png)
 
@@ -136,22 +136,22 @@ Also made a stack exchange post, but that didn't get any replies :sob:
 
 ## RAM
 
-So after I did a bunch more research, I asked Microchip's live chat if they had any example of the sama7 being used with LPDDR3, and turns out there are examples with x32 memory WOOOOOOOOOOOOOOOOOOO
+So after I did a bunch more research, I asked Microchip's live chat if they had any example of the SAMA7 being used with LPDDR3, and turns out there are examples with x32 memory WOOOOOOOOOOOOOOOOOOO
 
 But I still had a bunch of questions about this example, like do I lose half the capacity, or do I only lose speed, but the live chat support person said that I should create a regular support ticket for these questions, cuz they didn't know. So I did that, and waited eagerly.
 
 A few days later I got a wall of text as a response, which explained everything. I LOVE U BARATH V. FROM MICROCHIP
 
-Turns out almost all x32 LPDDR3 devices(I learned that they call DDR ICs devices from Barath) have an x16 mode, but the datasheets don't make this clear at all, but I also got feedback on the specific DDR device I chose (<3 Microchip) and it has this feature; in x16 you get half the speed but the full capacity of the device.
+Turns out almost all x32 LPDDR3 devices (I learned that they call DDR ICs devices from Barath) have an x16 mode, but the datasheets don't make this clear at all, but I also got feedback on the specific DDR device I chose (<3 Microchip) and it has this feature; in x16 you get half the speed but the full capacity of the device.
 
-But turns out that there was another factor that would have halved my capacity, which was that the device I chose was actually two DDR chips put in one package, and required two CS and CKE pins, but the sama7 only has one CS and CKE pin for DDR devices, so I could have only used one of the chips in the package. The solution? Use a device that doesn't have two chips inside one package, which means use one with half the capacity, so in the end I will have an 8Gb/1GB ddr device.
+But turns out that there was another factor that would have halved my capacity, which was that the device I chose was actually two DDR chips put in one package, and required two CS and CKE pins, but the SAMA7 only has one CS and CKE pin for DDR devices, so I could have only used one of the chips in the package. The solution? Use a device that doesn't have two chips inside one package, which means use one with half the capacity, so in the end I will have an 8Gb/1GB DDR device.
 
 Luckily the footprint doesn't change at all; I only have to mark two pins as NC (CS1 and CKE1), and rename CS0 to CS and CKE0 to CKE.
 
-With my newfound knowledge I connected the RAM to the sama:
+With my newfound knowledge I connected the RAM to the SAMA7:
 
 ![DDR with labels](https://cdn.hackclub.com/019fa4c3-a62d-7dfa-be17-d944adf23414/image.png)
-![hierarchical sheets of DDR and sama](https://cdn.hackclub.com/019fa4c3-d397-7b00-b78e-523cc5d47cbe/image.png)
+![hierarchical sheets of DDR and SAMA7](https://cdn.hackclub.com/019fa4c3-d397-7b00-b78e-523cc5d47cbe/image.png)
 
 ## Display
 
@@ -159,7 +159,7 @@ I looked around a bit for displays to see if there were any better options than 
 
 ## PWR
 
-Started looking for a powerpath, charger and fuel gauge IC; I may have found one from Analog Devices, but I'm still not sure about it.
+Started looking for a power path, charger and fuel gauge IC; I may have found one from Analog Devices, but I'm still not sure about it.
 
 ## _Time Spent: 6h_
 
@@ -173,14 +173,14 @@ I asked Component Search Engine to make a footprint and symbol for the Maya-W3, 
 
 But as always, the footprints are nice from CSE, but the symbols are crap. So I had to remake that, and I'm glad I did, because I discovered that the Maya-W3 datasheet is also terrible. It lists the max I2S sample rate as 8kHz, which is really bad, like old call quality, and I realized this just at the end of me finishing the symbol, shi. I also looked at the NXP IW611 I2S sample rate, and it also capped out at 8kHz... Then, as my last hope, I checked the datasheet of the Infineon CYW55513 (the chip that the Maya uses), and it listed its max I2S sample rate at 96kHz; this is excellent!!! So in the end I will use the Maya-W3.
 
-Side note: Both the Maya-W3 and CYW55513 datasheet mention SMIF pins, but don't mention at all what they are used for. If you google SMIF it comes up with an Infineon page that says that it's just SPI, and if you check out CYW55513 example designs the SMIF pins are connected to an external flash and PSRAM, so idk if I should connect them, so I reached out to support, but they haven't responded.
+Side note: Both the Maya-W3 and CYW55513 datasheets mention SMIF pins, but don't mention at all what they are used for. If you google SMIF it comes up with an Infineon page that says that it's just SPI, and if you check out CYW55513 example designs the SMIF pins are connected to an external flash and PSRAM, so idk if I should connect them, so I reached out to support, but they haven't responded.
 
 ![maya-w3 symbol](https://cdn.hackclub.com/019fd843-4a07-7c6e-9934-ca50763a6a7f/image.png)
 ![maya-w3 cse footprint](https://cdn.hackclub.com/019fd8cb-d08f-7f26-a10d-9289489aa3f8/image.png)
 
 ## Finding power ICs
 
-Turns out there aren't any good ICs that all have powerpath, a fuel-gauge and a battery charger, so I separated the fuel gauge into a separate IC. For the battery charger I chose the BQ25640; it has USB-OTG, USB-PD, voltage monitoring support and a bunch of other cool features. And for the fuel gauge I chose the MAX17260, which is a really simple and good fuel gauge IC, nothing special, it uses a TDFN-14 package. On the other hand the BQ has a really funky TI package, so I asked Snapmagic to make that for me :skull:
+Turns out there aren't any good ICs that all have power path, a fuel-gauge and a battery charger, so I separated the fuel gauge into a separate IC. For the battery charger I chose the BQ25640; it has USB-OTG, USB-PD, voltage monitoring support and a bunch of other cool features. And for the fuel gauge I chose the MAX17260, which is a really simple and good fuel gauge IC, nothing special, it uses a TDFN-14 package. On the other hand the BQ has a really funky TI package, so I asked Snapmagic to make that for me :skull:
 
 I made the symbols for them cuz the premade ones were ass:
 ![fuel gauge and battery IC symbol](https://cdn.hackclub.com/019fd843-4d5f-702a-a33b-c356d10559ca/image.png)
@@ -209,7 +209,7 @@ This was mostly just reading the datasheets a bunch.
 
 I asked in the TI dev forums regarding the D-/+ pins, and what to do with them if I don't want to use them. They replied and said that I should just leave them unconnected. The rest was pretty easy.
 
-Also the BMS doesn't shut down the battery output until it reaches 2.4V, and by that point, that battery would probably be completely dead and unusable. So I will need to implement a software shutdown when the battery voltage reaches like 3.2V. Luckily the fuel-gauge has a battery voltage readout register, so I can use that. My MPU works down to 3V, so 3.2V should be fine.
+Also the BMS doesn't shut down the battery output until it reaches 2.4V, and by that point, the battery would probably be completely dead and unusable. So I will need to implement a software shutdown when the battery voltage reaches like 3.2V. Luckily the fuel-gauge has a battery voltage readout register, so I can use that. My MPU works down to 3V, so 3.2V should be fine.
 
 ### Fuel-Gauge
 
@@ -219,7 +219,7 @@ I learned a lot about fuel-gauges. One of the things I learned is how a Coulomb 
 
 Setting up the switching regulators was pretty easy, just had to read the recommended part values.
 
-The more interesting part is the low-power/high-power/hibernate modes. The SAMA7D6 needs a backup source called VBAT to keep the RAM in self-refresh mode. First I thought that I needed another LDO for this input which is always on, so I again found a part, made a symbol, etc. But then again realized that my PMIC had an unused LDO, which I could configure via I2C to always be on, except when the PMIC fully shuts down. This way, the device can hibernate while keeping the RAM in self-refresh mode.
+The more interesting part is the low-power/high-power/hibernate modes. The SAMA7D6 needs a backup source called VBAT to keep the RAM in self-refresh mode. First I thought that I needed another LDO for this input which is always on, so I again found a part, made a symbol, etc. But then again I realized that my PMIC had an unused LDO, which I could configure via I2C to always be on, except when the PMIC fully shuts down. This way, the device can hibernate while keeping the RAM in self-refresh mode.
 
 ![power schematic](https://cdn.hackclub.com/01a00bc3-9d2e-7ea7-bc93-700ef7ba0172/image.png)
 
@@ -235,9 +235,9 @@ Turns out that the answer that I got from my Microchip support inquiry - regardi
 
 Microchip said that a register of the LPDDR3 memory device which tells you if the device supports x16 is writable, but it's not, it's read only.
 
-So this might mean that the sama7 example that uses LPDDR3 might be just plain wrong.
+So this might mean that the SAMA7 example that uses LPDDR3 might be just plain wrong.
 
-I reached out to Micron if the memory device used in the sama example truly supports x16 operation, but they haven't responded yet.
+I reached out to Micron if the memory device used in the SAMA example truly supports x16 operation, but they haven't responded yet.
 
 ![MR8 read only](https://cdn.hackclub.com/01a020bd-e708-79ed-b440-a28730f384a7/image.png)
 _Notice the R, which means read only_
@@ -246,7 +246,7 @@ _Notice the R, which means read only_
 
 ## Supporting Circuitry
 
-Chose and added crystals and caps for them for the sama:
+Chose and added crystals and caps for them for the SAMA7:
 
 ![crystals and calculations](https://cdn.hackclub.com/01a020d6-7153-7398-ba3d-c26c8fef7134/image.png)
 
@@ -323,7 +323,7 @@ Differential output is basically the same as pseudo-differential, but each audio
 
 ### Switching between pseudo and regular differential output at runtime
 
-At first I thought I needed an analog switch, since I wanted to mimic the datasheet for the pseudo diff mode, where _OUT1M_ and _OUT2M_ are connected. But in true differential mode these two need to be disconnected:
+At first I thought I needed an analog switch, since I wanted to mimic the datasheet for the pseudo-diff mode, where _OUT1M_ and _OUT2M_ are connected. But in true differential mode these two need to be disconnected:
 
 ![datasheet pseudo-diff](https://cdn.hackclub.com/01a03a7e-e7d8-7219-90fe-3942e4b3cc48/image.png)
 
@@ -373,11 +373,11 @@ TI provides a kinda ok driver for this CODEC, which doesn't expose a lot of the 
 
 This was pretty easy, I looked at what SD card footprint Cyao's CKL library had, and used those
 
-I saw in the sama7 example design that they had a load switch for the SD card, which led me down the rabbit hole of how SD card slots need to be handled. I stumbled across an [Altium article](https://resources.altium.com/p/how-to-design-microsd-power-circuits-without-destabilizing-on-board-voltage-supply) which had the advice that for prototype boards, you should place a 47uF capacitor on the power rail of the SD card, so it limits the inrush current the regulator has to handle when a new SD card is plugged into a live system
+I saw in the SAMA7 example design that they had a load switch for the SD card, which led me down the rabbit hole of how SD card slots need to be handled. I stumbled across an [Altium article](https://resources.altium.com/p/how-to-design-microsd-power-circuits-without-destabilizing-on-board-voltage-supply) which had the advice that for prototype boards, you should place a 47uF capacitor on the power rail of the SD card, so it limits the inrush current the regulator has to handle when a new SD card is plugged into a live system
 
 ![sd cards](https://cdn.hackclub.com/01a03aef-d6dc-7234-9685-9c3b873f6610/image.png)
 
-I also did a lil sidequest on why SDMMC needs pull-ups; it's so the datalines never go in an unexpected state.
+I also did a lil side quest on why SDMMC needs pull-ups; it's so the data lines never go in an unexpected state.
 
 ## RF
 
@@ -389,7 +389,7 @@ After U-BLOX support didn't respond, I reached out to Infineon's support. They r
 
 ### GPIOs
 
-I didn't use any, so this was pretty easy. I just looked over the datasheet if any of them had any special function; they didn't.
+I didn't use any, so this was pretty easy. I just looked over the datasheet to see if any of them had any special function; they didn't.
 
 ### Linux Driver
 
@@ -451,7 +451,7 @@ After I sent my email, I looked if the IQS7211 had a Linux driver. It had. But w
 
 ## Ram
 
-Microchip responded to my support case, and said that they wrong before about LPDDR3 and using x32 memory with the SAMA7. Turns out I would only get half the capacity I did use LPDDR3. So I switched to DDR3L. This wasn't that hard, since KiCAD already had the most popular DDR3L in its built in library. And the rest was just matching labels and looking at example designs. I also had to swap from the MCP16502AD PMIC to MCP16502AB, because the AD variant is for LPDDR and the AB is for regular DDR3/L.
+Microchip responded to my support case, and said that they were wrong before about LPDDR3 and using x32 memory with the SAMA7. Turns out I would only get half the capacity if I did use LPDDR3. So I switched to DDR3L. This wasn't that hard, since KiCad already had the most popular DDR3L in its built-in library. And the rest was just matching labels and looking at example designs. I also had to swap from the MCP16502AD PMIC to MCP16502AB, because the AD variant is for LPDDR and the AB is for regular DDR3/L.
 
 ![DDR3L](https://cdn.hackclub.com/01a05c3a-20f9-750c-bff2-9c77f0fbe30f/image.png)
 
@@ -459,7 +459,7 @@ Microchip responded to my support case, and said that they wrong before about LP
 
 ### IQS9151 driver
 
-Jeff LaBundy responded to my email with a [link](https://github.com/jlabundy/linux/tree/iqs9150-release) to the driver!!!! It was sitting in a obscure github repo.
+Jeff LaBundy responded to my email with a [link](https://github.com/jlabundy/linux/tree/iqs9150-release) to the driver!!!! It was sitting in an obscure GitHub repo.
 
 ### Generated PCB
 
@@ -469,18 +469,18 @@ As mentioned in the previous journal entry, I used a generator. It was pretty ea
 
 ### Trying to fit a QFN52 on the back
 
-After I made the symbol for the IQS9151, I realized that it had a QFN52 6mmx6mm package, which I needed to fit on the back of the touchpad. The issue is that the touchpad has a bunch of VIAs, which make it impossible to use a normal QFN52 footprint, so I modified it:
+After I made the symbol for the IQS9151, I realized that it had a QFN52 6mm x 6mm package, which I needed to fit on the back of the touchpad. The issue is that the touchpad has a bunch of vias, which make it impossible to use a normal QFN52 footprint, so I modified it:
 
 ![modified footprint](https://cdn.hackclub.com/01a05c43-b6de-7811-a901-05ec724e71da/image.png)
 
-I than asked for feedback on my design in the KiCAD discord and on Reddit, and everybody said that this will not work 😭
-A Lot of people recommended a bunch of complicated solutions, but Ebastler recommended to put the IC on a second PCB with castellated pads along the edge, then hand solder that small PCB onto the large one. This seems like the best solution! But it's still more complicated then I want. So I might just switch to the IQS7211E, which has a way smaller footprint, but also has less channels, so the resolution will be worse.
+I then asked for feedback on my design in the KiCad Discord and on Reddit, and everybody said that this will not work 😭
+A lot of people recommended a bunch of complicated solutions, but Ebastler recommended to put the IC on a second PCB with castellated pads along the edge, then hand solder that small PCB onto the large one. This seems like the best solution! But it's still more complicated than I want. So I might just switch to the IQS7211E, which has a way smaller footprint, but also has fewer channels, so the resolution will be worse.
 
 If I do switch out the trackpad IC, I will have to regenerate the PCB and maybe make a new symbol
 
 ## Looking over the main schematic
 
-I found a few places where I needed to add pull-up/pull-down resistors, was an easy fix.
+I found a few places where I needed to add pull-up/pull-down resistors, it was an easy fix.
 
 I also added a bunch of decoupling caps to the ICs that needed it
 
@@ -490,30 +490,30 @@ I also found a footprint for my power path IC:
 
 ![power path IC footprint](https://cdn.hackclub.com/01a05c50-afe9-7066-ad70-42cc26e82f4a/image.png)
 
-I also assigned a bunch of footprints and choose a bunch of parts from LCSC:
+I also assigned a bunch of footprints and chose a bunch of parts from LCSC:
 
 ![footprints](https://cdn.hackclub.com/01a05c52-0bec-727c-a5c8-0322320f0d3d/image.png)
 
 ## _Time Spent: 10h_
 
-# 2026.09.11: Got reviewed by Microchip, added a bunch of testpoints
+# 2026.09.11: Got reviewed by Microchip, added a bunch of test points
 
-I got a response from a microchip review, and i got some small mistakes so I fixed those.
+I got a response from a Microchip review, and I got some small mistakes so I fixed those.
 
 ![](https://cdn.hackclub.com/01a091f0-100c-7f5c-b5d2-fb1509c7e287/image.png)
 ![](https://cdn.hackclub.com/01a091f0-12e9-760a-9bdd-eea94ba88d22/image.png)
 
-I also reorganized some stuff in the schematic and looked over everything again and added a bunch of testpoints.
+I also reorganized some stuff in the schematic and looked over everything again and added a bunch of test points.
 
 ![](https://cdn.hackclub.com/01a091f7-3319-7a08-99ca-a0ce0d302d4f/image.png)
 
-I learned a bit about how tespoints affect signal integrity, and how it almost all depends on the wavelength of your signal, and I also learned that KiCAD has a pretty good wavelength calculator built in, pretty cool!
+I learned a bit about how test points affect signal integrity, and how it almost all depends on the wavelength of your signal, and I also learned that KiCad has a pretty good wavelength calculator built in, pretty cool!
 
 ## _Time Spent: 3h_
 
-# 2026.09.15: Contributing to KiCAD
+# 2026.09.15: Contributing to KiCad
 
-I got my [PR](https://gitlab.com/kicad/libraries/kicad-library-tools/-/merge_requests/2132) for the SAMA7 footprint accepted into the KiCAD footprint library :yayay:
+I got my [PR](https://gitlab.com/kicad/libraries/kicad-library-tools/-/merge_requests/2132) for the SAMA7 footprint accepted into the KiCad footprint library :yayay:
 
 ![merged PR](https://cdn.hackclub.com/01a0a1da-e25d-7676-9220-b30df2a28d18/image.png)
 
@@ -523,7 +523,7 @@ But I had to change my symbol to follow the [_**KiCad Library Conventions**_](ht
 
 They have an automated CI/CD that checks your symbol before you PR, and gives you all the rules you violated. It took a few back and forths to get most of the violations resolved! In the end I ended up with one error and 2 warnings, which are fine.
 
-While researching I found out that KiCAD supports stacked pins, which are pretty cool:
+While researching I found out that KiCad supports stacked pins, which are pretty cool:
 
 ![stacked pins](https://cdn.hackclub.com/01a0a1e2-697b-7727-a8dd-17d30e705145/image.png)
 
@@ -536,25 +536,25 @@ Here is my [PR](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_request
 
 # 2026.09.16: Mucking around with _iced_
 
-I kinda burnt out from hardware, so I wanted to learn something new.Since I want the music player program on the device to be written in Rust, I looked around for graphics libraries.
+I kinda burnt out from hardware, so I wanted to learn something new. Since I want the music player program on the device to be written in Rust, I looked around for graphics libraries.
 
 ## Choosing a graphics lib
 
-Web based frameworks like Tauri were out of the question, since this is a really low powered device, and only has half a gig of RAM.
+Web-based frameworks like Tauri were out of the question, since this is a really low-powered device, and only has half a gig of RAM.
 
 I narrowed down the choice to three options:
 
-- _slint_: I used this for Hackxpansion. It has a custom language for UI definition, which i have mixed feelings about
+- _slint_: I used this for Hackxpansion. It has a custom language for UI definition, which I have mixed feelings about
 
-- _egui_: This is an immediate mode graphics lib, so it doesn't have a structured markup, instead it's very dynamic, which i don't really like
+- _egui_: This is an immediate mode graphics lib, so it doesn't have a structured markup, instead it's very dynamic, which I don't really like
 
-- _iced_: This is a graphics lib inspired by Elm, it has you define your application state in a single struct, and all the interactions that could be done in the ui also in a struct/enum. I really like this, because it allows you to leverage Rusts strong type system to prevent states that are no possible.
+- _iced_: This is a graphics lib inspired by Elm, it has you define your application state in a single struct, and all the interactions that could be done in the UI also in a struct/enum. I really like this, because it allows you to leverage Rust's strong type system to prevent states that are not possible.
 
 In the end the choice was quite obvious for me. I went with _**iced**_
 
 ## Getting started with iced
 
-The docs for iced are kinda bad. There is a book which teaches you the basic architecture of the lib walks you through a basic counter app. Besides that, there aren't any detailed "guided" docs.
+The docs for iced are kinda bad. There is a book which teaches you the basic architecture of the lib that walks you through a basic counter app. Besides that, there aren't any detailed "guided" docs.
 
 It took a bit to wrap my head around how iced expects me to write apps, but at one point it just clicked.
 
@@ -566,11 +566,11 @@ Here is the basic clicker app, with the addition of the going up each second:
 
 # 2026.09.20: Layout, Stackup, Impedance, Length Matching, BGA stuff, 3D models
 
-_I did all kinds of stuff small chores and bigger tasks, so this will be kinda all unrelated._
+_I did all kinds of stuff, small chores and bigger tasks, so this will be kinda all unrelated._
 
 ## Layout
 
-I wanted to finalize the placement all components that the user will interact with. First I updated my 3D mockup with accurate dimensions, then I added the buttons and audio jacks. Also, I actually made the trackpad the same size as the screen. I'll use this mockup as a reference for the final layout.
+I wanted to finalize the placement of all components that the user will interact with. First I updated my 3D mockup with accurate dimensions, then I added the buttons and audio jacks. Also, I actually made the trackpad the same size as the screen. I'll use this mockup as a reference for the final layout.
 
 ![3D mockup](https://cdn.hackclub.com/01a0bfee-5a32-7755-9a79-cf018d7e8d72/image.png)
 
@@ -580,13 +580,13 @@ Then following the mockup I placed the components on the PCB.
 
 ![PCB layout](https://cdn.hackclub.com/01a0bfee-5747-707f-babd-fab9a6891dfb/image.png)
 
-I placed the microSD card slots on the bottom of the PCB, so I have plenty of space for the DDR routing. I also added these handy lil indicator drawing to the microSD footprints that show the positions of the SD card.
+I placed the microSD card slots on the bottom of the PCB, so I have plenty of space for the DDR routing. I also added these handy lil indicator drawings to the microSD footprints that show the positions of the SD card.
 
 I still have to add the cutout for the trackpad FFC cable.
 
 ## Stackup and Impedance
 
-As a first step, I started looking at PCBWAY's stackups, at first I chose a 1.6mm 6L stackup, but then realized after some calculations that my 50Ω traces would be 0.2mm, which too large. So I needed choose a stackup that had a thinner dielectric between the outer copper layers. After looking at PCBWAY's stackup offerings, I realized that I had to choose a 0.8mm board to get a thinner dielectric. This thickness is fine, all M.2 PCBs are 0.8mm.
+As a first step, I started looking at PCBWay's stackups, at first I chose a 1.6mm 6L stackup, but then realized after some calculations that my 50Ω traces would be 0.2mm, which is too large. So I needed to choose a stackup that had a thinner dielectric between the outer copper layers. After looking at PCBWay's stackup offerings, I realized that I had to choose a 0.8mm board to get a thinner dielectric. This thickness is fine, all M.2 PCBs are 0.8mm.
 
 ![PCB stackup](https://cdn.hackclub.com/01a0bffe-b9ca-7fb1-9f13-8e1fdd6d8d7a/image.png)
 
@@ -594,16 +594,16 @@ After all this, I entered in the stackup details into KiCad:
 
 ![KiCad stackup](https://cdn.hackclub.com/01a0bfee-4ba4-729b-8c96-66d7ee6f82ea/image.png)
 
-This was needed so I can use KiCAD's tuning profiles, which make it really easy to create impedance-controlled traces
+This was needed so I can use KiCad's tuning profiles, which make it really easy to create impedance-controlled traces
 
 ![tuning profile](https://cdn.hackclub.com/01a0c000-315f-7d6d-af66-9d32d0d7d6b0/image.png)
 
 ## Creating Net Classes
 
-To actually use these tuning profiles, you have to create net classes. For the first time in my KiCAD carrier I used `Directive Labels` and `Rule Areas` in the schematic editor:
+To actually use these tuning profiles, you have to create net classes. For the first time in my KiCad career I used `Directive Labels` and `Rule Areas` in the schematic editor:
 
 ![Directive Labels and Rule Areas](https://cdn.hackclub.com/01a0bfee-518d-7842-8413-0d7b3104beda/image.png)
-![Directive Lables](https://cdn.hackclub.com/01a0bfee-5450-70ce-bf08-3719938dbd7b/image.png)
+![Directive Labels](https://cdn.hackclub.com/01a0bfee-5450-70ce-bf08-3719938dbd7b/image.png)
 
 These allow you to assign net classes visually instead of with Regex, which is a lot nicer!
 
@@ -637,7 +637,7 @@ First I added a sketch in my 3D mockup that represented the touchpad PCB, so I c
 
 ![sketch of touchpad pcb](https://cdn.hackclub.com/01a0d91c-7b31-722d-a50b-695060b4d9c8/rdbzml6.png)
 
-After that, I chose the connector for the FFC that will connect the trackpad and main PCB. I went with the same series of connectors that my display used, because they seem high quality and are made by molex. I just uses a 5 pin variant instead of the 10 pin one.
+After that, I chose the connector for the FFC that will connect the trackpad and main PCB. I went with the same series of connectors that my display used, because they seem high quality and are made by Molex. I just use a 5 pin variant instead of the 10 pin one.
 
 Since both the main pcb and touchpad pcb need this symbol and footprint, I moved all the libraries to a shared folder called `pcb_lib`.
 
@@ -649,9 +649,9 @@ I laid out and started routing 3 times, and then realized that I was dumb and th
 ![touchpad front 3d](https://cdn.hackclub.com/01a0d904-39f0-7e42-b50b-cc70ea47350d/zlz9jcd.png)
 ![touchpad back 3d](https://cdn.hackclub.com/01a0d904-3db2-7920-b741-2802fc128d1e/91r34y3.png)
 
-The thing you gotta pay attention to when routing touchpads, is to keep a good distance between the RX, TX and data lines.
+The thing you gotta pay attention to when routing touchpads is to keep a good distance between the RX, TX and data lines.
 
-I also needed to add a cutout for the FFC on the main pcb, I made a lil bit wider, so the LRA (linear actuator, that makes the vibrations) cables also fit through
+I also needed to add a cutout for the FFC on the main PCB, I made it a lil bit wider, so the LRA (linear actuator, that makes the vibrations) cables also fit through.
 
 ![main board touchpad cutout](https://cdn.hackclub.com/01a0d919-a929-7454-9292-f296e9959c09/dqmxjqx.png)
 
@@ -659,11 +659,11 @@ I sent over the design to Azoteq for review, the company who makes my touchpad I
 
 ## Other stuff
 
-I separated out the components so they are grouped based on what components they need to connect to/need to support and where they will go in the final pcb.
+I separated out the components so they are grouped based on what components they need to connect to/need to support and where they will go in the final PCB.
 
 ![grouped components](https://cdn.hackclub.com/01a0d910-3273-756a-a446-615ba7224392/5czzptl.png)
 
-Also placed the esd for the usb, and routed it
+Also placed the ESD for the USB, and routed it.
 
 ![usb](https://cdn.hackclub.com/01a0d910-3742-7f29-a56e-7e467f89ed9b/lmmvjzc.png)
 
@@ -682,23 +682,23 @@ I used some schematic rule areas and directive labels to assign net classes visu
 
 Net classes will also be important for length matching later on.
 
-## Laying out caps and VIAs
+## Laying out caps and vias
 
-Then I laying out the caps and other passives and connecting them, this was not that hard, I looked at how other people did it.
+Then I laid out the caps and other passives and connecting them, this was not that hard, I looked at how other people did it.
 
-![ddr passvies](https://cdn.hackclub.com/01a10b0a-c664-7594-a29a-27e0c262050f/paste-1791186617222.png)
-![sama passives](https://cdn.hackclub.com/01a10b0b-a913-78dc-9eb6-bf77db0d141a/paste-1791186675644.png)
+![ddr passives](https://cdn.hackclub.com/01a10b0a-c664-7594-a29a-27e0c262050f/paste-1791186617222.png)
+![SAMA passives](https://cdn.hackclub.com/01a10b0b-a913-78dc-9eb6-bf77db0d141a/paste-1791186675644.png)
 
-I then realized that I messed up, and have to redo the whole process, because I couldn't fan out the BGA with the way I did things.
+I then realized that I messed up, and had to redo the whole process, because I couldn't fan out the BGA with the way I did things.
 
-So I caved and used Microchip's [referance design](https://365.altium.com/files/45053653-DFF7-4FBD-83A4-7ECC4038BD7C) to redo the whole thing. This time I also used this reference design to place the VIAs for certain signals.
+So I caved and used Microchip's [reference design](https://365.altium.com/files/45053653-DFF7-4FBD-83A4-7ECC4038BD7C) to redo the whole thing. This time I also used this reference design to place the vias for certain signals.
 
 ![new ddr passive layout](https://cdn.hackclub.com/01a10b1e-c4e2-799d-8be5-65392f0a81bc/paste-1791187927583.png)
-![new sama passive layout](https://cdn.hackclub.com/01a10b1e-ecd0-70d5-9e8c-f0fc3d376edc/paste-1791187937780.png)
+![new SAMA passive layout](https://cdn.hackclub.com/01a10b1e-ecd0-70d5-9e8c-f0fc3d376edc/paste-1791187937780.png)
 
 ## Rule areas
 
-I had a faint memory that you could set up custom rules for a specific part of your PCB. Turns out this memory was true! You have to create a rule area, I already knew that this existed, but I didn't know that you could create custom rules for these ares.
+I had a faint memory that you could set up custom rules for a specific part of your PCB. Turns out this memory was true! You have to create a rule area, I already knew that this existed, but I didn't know that you could create custom rules for these areas.
 
 You can make the min clearance smaller for traces in specific net classes in specific areas. This way, I'm forced to follow the 3h rule outside of the BGA areas, and also have more freedom to fan out the BGAs with tighter clearance.
 
@@ -706,18 +706,18 @@ You can make the min clearance smaller for traces in specific net classes in spe
 
 ![ddr custom rules](https://cdn.hackclub.com/01a10b17-4ae9-7455-a841-dddfe74f4c58/paste-1791187437832.png)
 
-I messed around with this a bunch, because kicad doesn't support this very well yet.
+I messed around with this a bunch, because KiCad doesn't support this very well yet.
 
 ## Setting up length matching rules
 
-In KiCAD you can set up custom rules (just like with the areas) to make length matching easier. You can make kicad force you to make all lines in a net class be the same length.
+In KiCad you can set up custom rules (just like with the areas) to make length matching easier. You can make KiCad force you to make all lines in a net class be the same length.
 
-I found [this](https://youtu.be/OrjdTfpJeWw?si=aGC9p7ROnE3OcyjS&t=240) tutorial that had a really good explanation of the whole length matching process in KiCAD.
+I found [this](https://youtu.be/OrjdTfpJeWw?si=aGC9p7ROnE3OcyjS&t=240) tutorial that had a really good explanation of the whole length matching process in KiCad.
 
 Here is one of the custom rules for the LANE1 signal group:
 ![length matching rule](https://cdn.hackclub.com/01a10b16-fce3-7675-819a-6f885e1b2ddb/paste-1791187417890.png)
 
-I had done a ton of research of how closely you have to match each group, in the end I found [this](https://docs.altera.com/r/docs/683385/current/length-matching-rules) document that had a pretty good explanation.
+I had done a ton of research on how closely you have to match each group, in the end I found [this](https://docs.altera.com/r/docs/683385/current/length-matching-rules) document that had a pretty good explanation.
 
 ## Routing and Length Matching
 
@@ -729,7 +729,7 @@ I then routed both lane0 and lane1, and started length matching lane0, and reali
 
 ![bad layout + traces](https://cdn.hackclub.com/01a10b26-e7fe-7e27-b162-96ac9e332248/paste-1791188460826.png)
 
-I then rotated everything 45 degrees, and spaced the sama and the ram further apart.
+I then rotated everything 45 degrees, and spaced the SAMA7 and the RAM further apart.
 
 ![new layout](https://cdn.hackclub.com/01a10b28-ddb7-71a9-9a7d-bf7131fd52ee/paste-1791188589278.png)
 
@@ -737,7 +737,7 @@ After this, I routed lane0
 
 ![lane0 routed](https://cdn.hackclub.com/01a10b29-30db-7233-9727-5431fed3d0e4/paste-1791188611038.png)
 
-And this time I clould actually length match it
+And this time I could actually length match it
 
 ![lane0 length matched](https://cdn.hackclub.com/01a10b29-d0d5-7783-94b3-26acc3a90395/paste-1791188651982.png)
 
@@ -751,11 +751,11 @@ Finished with lane1 and lane0, I continued onto the address and command/control 
 
 ![started on addr and cmd/ctl](https://cdn.hackclub.com/01a10b2b-5c5c-73f3-b0fb-610dd23fa2c6/paste-1791188753228.png)
 
-This whole process took an immense amount of time, and is mostly monotone/grueling work, but it's a nice challenge.
+This whole process took an immense amount of time, and is mostly monotonous/grueling work, but it's a nice challenge.
 
-## Getting my SAMA symbol merged into KiCAD
+## Getting my SAMA symbol merged into KiCad
 
-This was like a side story line, I did this while doing all the other stuff mention in this and the previous journals.
+This was like a side storyline, I did this while doing all the other stuff mentioned in this and the previous journals.
 
 I had gone back and forth with a librarian a few times with changes that they requested, but these were mostly simple fixes.
 
@@ -785,13 +785,13 @@ And then moved inside the PCB:
 
 ## Regulator layout
 
-I haven't done switching regulator layout in a while, so I did some research, and along the way got a lot of help from the KiCAD discord. I also found this pretty good [video](https://youtu.be/AmfLhT5SntE?si=eNHKXGZVunnbMAcD) from Phil's lab.
+I haven't done switching regulator layout in a while, so I did some research, and along the way got a lot of help from the KiCad Discord. I also found this pretty good [video](https://youtu.be/AmfLhT5SntE?si=eNHKXGZVunnbMAcD) from Phil's Lab.
 
-At first I wanted my power train right after the USB port, but then realized that I wouldn't have enough space for the PMIC
+At first I wanted my power train right after the USB port, but then realized that I wouldn't have enough space for the PMIC.
 
 ![BMS next to USB](https://cdn.hackclub.com/01a12be7-cd74-71da-bc5b-54eb73a921db/paste-1791737973570.png)
 
-Realizing this I did the layout outside the PCB edge cut, so I could later find space for each component block. 
+Realizing this, I did the layout outside the PCB edge cut, so I could later find space for each component block. 
 
 Here is the beginning of the PMIC layout.
 
@@ -801,7 +801,7 @@ Here is the BMS moved outside of the PCB edge cut.
 
 ![BMS outside](https://cdn.hackclub.com/01a12bec-4f6a-77de-beea-65e43a46c8c2/paste-1791738268858.png)
 
-After looking at the recommended layout and getting feedback from the KiCAD discord I finished the PMIC layout:
+After looking at the recommended layout and getting feedback from the KiCad Discord, I finished the PMIC layout:
 
 ![PMIC finished](https://cdn.hackclub.com/01a12bec-9b5f-7062-9aaa-36b0c7d49169/paste-1791738288650.png)
 
@@ -809,27 +809,27 @@ After some fiddling around, I found the top left corner of the PCB is the best s
 
 ![Fuel gauge and BMS](https://cdn.hackclub.com/01a12bec-f95d-7f71-93e4-2f7defd519b5/paste-1791738312489.png)
 
-Thanks to the KiCAD discord I learned what Kelvin connecting is; it's separate trace to the battery connector, different from the main power trace, that lets the BMS sense the actual voltage of the battery.
+Thanks to the KiCad Discord, I learned what a Kelvin connection is; it's a separate trace to the battery connector, different from the main power trace, that lets the BMS sense the actual voltage of the battery.
 
-After debating where I should place my PMIC block, next to the audio circuit, or further away, the answer became obvious ಥ﹏ಥ Here is the first layout of the full power train
+After debating where I should place my PMIC block, next to the audio circuit, or further away, the answer became obvious ಥ﹏ಥ Here is the first layout of the full power train.
 
 ![finished pwr train](https://cdn.hackclub.com/01a12bed-509a-7cf3-8c16-dfeab2164115/paste-1791738335179.png)
 
 ## Power plane and caps
 
-I tried to pour/route/make (idk what verb I should use here) the power plane, but I realized I should first layout out and route the caps for my MPU, so I know the placement of the vias, so i stopped with the power plane.
+I tried to pour/route/make (idk what verb I should use here) the power plane, but I realized I should first lay out and route the caps for my MPU, so I know the placement of the vias, so I stopped with the power plane.
 
 ![bad pwr plane](https://cdn.hackclub.com/01a12bed-90f1-7cc4-a5ee-0a9333a538db/paste-1791738351435.png)
 
-Placing caps is a monotone process, but I could almost feel the light at the end of the tunnel for these grueling tasks, so I pushed through and started placing the caps.
+Placing caps is a monotonous process, but I could almost feel the light at the end of the tunnel for these grueling tasks, so I pushed through and started placing the caps.
 
 ![started placing caps](https://cdn.hackclub.com/01a12bed-f58d-7e92-8e6d-94c06721a16d/paste-1791738377323.png)
 
-While doing the layout I noticed that all my tuning sections for the DDR have went away, I had the traces, but the tuning meanders were _baked_ and couldn't be edited. While redoing some of the tuning, I realized that I didn't tune one of the traces correctly, and I just had enough space to add some more delay and bring it up to snuff.
+While doing the layout I noticed that all my tuning sections for the DDR have gone away, I had the traces, but the tuning meanders were _baked_ and couldn't be edited. While redoing some of the tuning, I realized that I didn't tune one of the traces correctly, and I just had enough space to add some more delay and bring it up to snuff.
 
 After a while, I finished placing the caps
 
-![finished polacing caps](https://cdn.hackclub.com/01a12bee-2bf6-7665-b77c-84599234c7d4/paste-1791738391229.png)
+![finished placing caps](https://cdn.hackclub.com/01a12bee-2bf6-7665-b77c-84599234c7d4/paste-1791738391229.png)
 
 Now that I know where the power pours were actually needed on the power plane, I started laying out the pours, now with good looking 45 degree angles (thanks tty and simon in #electronics for pointing out that I should make the pours 45 degrees).
 
@@ -837,11 +837,11 @@ After a **bunch** of trial and error I ended up with this, I think it should be 
 
 ![finished pwr plane](https://cdn.hackclub.com/01a12bee-6b02-7a85-bf70-e60b604eb9dc/paste-1791738407324.png)
 
-## Whats left?
+## What's left?
 
 I still need to
 - lay out and wire up the audio circuit
-- wire up both of the SD card
+- wire up both of the SD cards
 - wire up the wireless module
 - place a **ton** of test points
 - make a cutout for the display cable
