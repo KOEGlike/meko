@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.0,
-          "min_island_area": 0.0013161349,
+          "min_island_area": 10.0,
           "min_thickness": 0.2,
           "pad_connection": 2,
           "remove_islands": 0,
@@ -553,7 +553,9 @@
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1,
-        "tuning_profile": ""
+        "tuning_profile": "",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -562,7 +564,9 @@
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1,
-        "tuning_profile": ""
+        "tuning_profile": "",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -570,7 +574,9 @@
         "pcb_color": "rgb(0, 194, 194)",
         "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single"
+        "tuning_profile": "50Ohms Single",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -578,7 +584,9 @@
         "pcb_color": "rgb(221, 133, 0)",
         "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "100Ohms Diff"
+        "tuning_profile": "100Ohms Diff",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -586,7 +594,9 @@
         "pcb_color": "rgb(194, 194, 0)",
         "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single"
+        "tuning_profile": "50Ohms Single",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -594,7 +604,9 @@
         "pcb_color": "rgb(132, 0, 132)",
         "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single"
+        "tuning_profile": "50Ohms Single",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -602,7 +614,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "100Ohms Diff"
+        "tuning_profile": "100Ohms Diff",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -610,7 +624,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "100Ohms Diff"
+        "tuning_profile": "100Ohms Diff",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "name": "GND",
@@ -632,7 +648,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single"
+        "tuning_profile": "50Ohms Single",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -640,7 +658,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single"
+        "tuning_profile": "50Ohms Single",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -648,7 +668,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single"
+        "tuning_profile": "50Ohms Single",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -657,7 +679,9 @@
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1,
-        "tuning_profile": ""
+        "tuning_profile": "",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       },
       {
         "clearance": 0.25,
@@ -665,7 +689,9 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "90Ohms Diff"
+        "tuning_profile": "90Ohms Diff",
+        "via_diameter": 0.3,
+        "via_drill": 0.15
       }
     ],
     "meta": {
