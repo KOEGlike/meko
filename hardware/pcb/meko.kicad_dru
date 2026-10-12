@@ -1,8 +1,8 @@
 (version 1)
 
 (rule "boot sd length and skew"
-	(condition "A.hasNetclass('BOOT_SDMMC')")
-	(constraint length (opt 30ps))
+	(condition "A.hasNetclass('SDMMC_BOOT')")
+	(constraint length (opt 177ps))
 	(constraint skew (max 1ps))
 )
 
@@ -37,15 +37,15 @@
 
 (rule "SAMA reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('DDR*') && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
+    (condition "(A.hasNetclass('DDR*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
 )
 
-(rule "SDMMC reduced clearance"
+(rule "WIRELESS reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('SDMMC*') && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
+    (condition "A.hasNetclass('SDMMC_WL') && A.intersectsArea('WIRELESS') && B.intersectsArea('WIRELESS')")
 )
 
-(rule "USB reduced clearance"
+(rule "GND reduced clearance to special nets"
     (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('USB') && A.intersectsArea('SAMA') && B.intersectsArea('SAMA')")
+    (condition "B.NetName == 'GND' && (A.hasNetclass('DDR*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB'))")
 )
