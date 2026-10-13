@@ -26170,6 +26170,16 @@
 		)
 		(uuid "d8e778c1-3fb6-423d-84fa-b3374ce76efb")
 	)
+	(label "JTAGSEL"
+		(at 199.39 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d95f3cc2-37e8-4c98-8f03-23fff95fc095")
+	)
 	(label "DDR_A8"
 		(at 393.7 74.93 0)
 		(effects
@@ -39438,7 +39448,7 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "be973704-d0b7-4519-afe7-63afaa52e139")
