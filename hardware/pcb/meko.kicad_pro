@@ -170,15 +170,14 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
-          "td_enabled": false,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -189,8 +188,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
-          "td_enabled": false,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -201,8 +199,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
-          "td_enabled": false,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -544,105 +541,95 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 0.1,
         "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "via_diameter": 0.3,
+        "via_drill": 0.15,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.25,
+        "name": "ANT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.2,
         "name": "ASI_BT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
-        "tuning_profile": "",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": ""
       },
       {
         "clearance": 0.2,
         "name": "ASI_CODEC",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
-        "tuning_profile": "",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": ""
       },
       {
         "clearance": 0.25,
         "name": "DDR_ADDR_CTL",
         "pcb_color": "rgb(0, 194, 194)",
-        "priority": 11,
+        "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.25,
         "name": "DDR_CLOCK",
         "pcb_color": "rgb(221, 133, 0)",
-        "priority": 8,
+        "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "100Ohms Diff",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "100Ohms Diff"
       },
       {
         "clearance": 0.25,
         "name": "DDR_LANE0",
         "pcb_color": "rgb(194, 194, 0)",
-        "priority": 10,
+        "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.25,
         "name": "DDR_LANE1",
         "pcb_color": "rgb(132, 0, 132)",
-        "priority": 9,
+        "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.25,
         "name": "DDR_STROBE_LANE0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 7,
+        "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "100Ohms Diff",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "100Ohms Diff"
       },
       {
         "clearance": 0.25,
         "name": "DDR_STROBE_LANE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "100Ohms Diff",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "100Ohms Diff"
       },
       {
         "name": "GND",
         "pcb_color": "rgb(132, 132, 132)",
-        "priority": 14,
+        "priority": 15,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "PWR",
         "pcb_color": "rgb(215, 140, 255)",
-        "priority": 13,
+        "priority": 14,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
@@ -650,58 +637,47 @@
         "clearance": 0.25,
         "name": "SDMMC_BOOT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.25,
         "name": "SDMMC_EXT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.25,
         "name": "SDMMC_WL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "50Ohms Single",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "50Ohms Single"
       },
       {
         "clearance": 0.2,
         "name": "UART_BT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1,
-        "tuning_profile": "",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": ""
       },
       {
         "clearance": 0.25,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 12,
+        "priority": 13,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": "90Ohms Diff",
-        "via_diameter": 0.3,
-        "via_drill": 0.15
+        "tuning_profile": "90Ohms Diff"
       }
     ],
     "meta": {
       "version": 5
     },
-    "net_colors": {},
+    "net_colors": null,
     "netclass_assignments": {
       "+1V15_CORE": [
         "PWR"
@@ -1082,6 +1058,9 @@
       "/USB/DIRTY_D-": [
         "USB"
       ],
+      "/Wireless/ANT": [
+        "ANT"
+      ],
       "VBUS": [
         "PWR"
       ]
@@ -1442,7 +1421,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "#PWR1-146,BT1,C1-130,D1-5,IC1-3,J1-10,JP1-4,L1-6,R1-57,SW1-10,TP1-79,U1-8,Y1-3",
+    "used_designators": "#PWR1-146,Y1-3,BT1,C1-130,D1-5,IC1-3,J1-10,JP1-4,R1-57,TP1-79,L1-6,SW1-10,U1-8",
     "variants": []
   },
   "sheets": [

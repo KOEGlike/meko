@@ -2876,7 +2876,7 @@
 	)
 	(text "Connecting the output to the integrated PCB antenna"
 		(exclude_from_sim no)
-		(at 187.452 99.314 0)
+		(at 195.072 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3736,7 +3736,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 100.33) (xy 186.69 100.33)
+			(xy 185.42 100.33) (xy 194.31 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3936,7 +3936,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 97.79) (xy 186.69 100.33)
+			(xy 194.31 97.79) (xy 194.31 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3966,7 +3966,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 97.79) (xy 186.69 97.79)
+			(xy 185.42 97.79) (xy 194.31 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5104,6 +5104,16 @@
 		)
 		(uuid "b4d3de64-9bd0-4a80-a357-4ddf2e288f5c")
 	)
+	(label "ANT"
+		(at 186.69 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be62ddc4-1513-4d86-89be-74aec11c43b6")
+	)
 	(label "WL.HOST_WAKE"
 		(at 232.41 58.42 0)
 		(effects
@@ -5392,6 +5402,41 @@
 					(italic yes)
 				)
 				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 194.31 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "810970fe-ed6c-4be4-af35-a92272656e33")
+		(property "Netclass" "ANT"
+			(at 195.0085 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -3.81 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 			)
 		)
 	)
