@@ -47,5 +47,5 @@
 
 (rule "GND reduced clearance to special nets"
     (constraint clearance (min 0.1mm))
-    (condition "B.NetName == 'GND' && (A.hasNetclass('DDR*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB'))")
+    (condition "B.NetName == 'GND'")
 )

@@ -178,6 +178,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -189,6 +190,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -200,6 +202,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -503,6 +506,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -673,7 +677,7 @@
         "via_drill": 0.15
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.2,
         "name": "UART_BT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
@@ -697,7 +701,7 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {},
     "netclass_assignments": {
       "+1V15_CORE": [
         "PWR"
@@ -1438,7 +1442,7 @@
         "uuid": "da54f10a-146b-4941-a9c7-55c7173bb101"
       }
     ],
-    "used_designators": "SW1-10,U1-8,#PWR1-146,Y1-3,IC1-3,R1-57,JP1-4,TP1-79,J1-10,BT1,C1-130,D1-5,L1-6",
+    "used_designators": "#PWR1-146,BT1,C1-130,D1-5,IC1-3,J1-10,JP1-4,L1-6,R1-57,SW1-10,TP1-79,U1-8,Y1-3",
     "variants": []
   },
   "sheets": [
@@ -1498,19 +1502,19 @@
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",
-            "delay": 5879200,
+            "delay": 5696100,
             "diff_pair_gap": 0,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 149673
+            "width": 144778
           },
           {
             "bottom_reference_layer": "UNDEFINED",
-            "delay": 5879200,
+            "delay": 5696100,
             "diff_pair_gap": 0,
             "signal_layer": "B.Cu",
             "top_reference_layer": "In4.Cu",
-            "width": 149673
+            "width": 144778
           }
         ],
         "profile_name": "50Ohms Single",
@@ -1550,19 +1554,19 @@
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",
-            "delay": 5855800,
+            "delay": 5887100,
             "diff_pair_gap": 100000,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 124841
+            "width": 120641
           },
           {
             "bottom_reference_layer": "UNDEFINED",
-            "delay": 5855800,
+            "delay": 5887100,
             "diff_pair_gap": 100000,
             "signal_layer": "B.Cu",
             "top_reference_layer": "In4.Cu",
-            "width": 124841
+            "width": 120641
           }
         ],
         "profile_name": "100Ohms Diff",
