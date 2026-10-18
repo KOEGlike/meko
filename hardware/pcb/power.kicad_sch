@@ -4019,6 +4019,12 @@
 		(uuid "4f4c791b-6d43-490a-9140-47c0022e0cd0")
 	)
 	(junction
+		(at 276.86 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52726f7e-8439-4e25-bf93-956e614baa43")
+	)
+	(junction
 		(at 267.97 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4029,6 +4035,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56be9c7b-afbf-4423-b44a-7f7c34d69a8a")
+	)
+	(junction
+		(at 279.4 190.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5918f0ac-e4a3-473f-9112-370eb3cd8667")
 	)
 	(junction
 		(at 195.58 110.49)
@@ -4139,12 +4151,6 @@
 		(uuid "b0836038-ae10-4d3e-bb06-fc5c1223e505")
 	)
 	(junction
-		(at 279.4 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b4ce4d4f-4c53-43fd-9537-610aaa1e6843")
-	)
-	(junction
 		(at 278.13 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4203,12 +4209,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8218b50-e7e5-40e5-a09a-3ad6919ea61f")
-	)
-	(junction
-		(at 276.86 190.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d42460ea-2e64-4018-96dc-22900482bfa1")
 	)
 	(junction
 		(at 85.09 110.49)
@@ -4875,16 +4875,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 190.5) (xy 300.99 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dd71126-3676-4506-9737-c4e97fd8af74")
-	)
-	(wire
-		(pts
 			(xy 358.14 86.36) (xy 358.14 87.63)
 		)
 		(stroke
@@ -4942,6 +4932,16 @@
 			(type default)
 		)
 		(uuid "32b46b99-2f74-4d36-8b6d-02578a7a5c43")
+	)
+	(wire
+		(pts
+			(xy 276.86 190.5) (xy 279.4 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33f35af8-1d12-41c1-a25b-e9616a520f84")
 	)
 	(wire
 		(pts
@@ -5112,6 +5112,16 @@
 			(type default)
 		)
 		(uuid "45c9da52-2869-4121-9b46-2d964b755c2d")
+	)
+	(wire
+		(pts
+			(xy 279.4 190.5) (xy 298.45 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46358877-97ce-437c-8032-9f3e23fa03b0")
 	)
 	(wire
 		(pts
@@ -6795,6 +6805,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 232.41) (xy 193.04 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "feca0c74-f759-4e80-bc39-04f3df612431")
+	)
+	(wire
+		(pts
 			(xy 187.96 130.81) (xy 210.82 130.81)
 		)
 		(stroke
@@ -8052,6 +8072,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 193.04 233.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "19c03e67-7985-4482-9f85-a1aa5af1eccd")
+		(property "Reference" "#PWR0147"
+			(at 193.04 240.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 196.85 235.712 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 233.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4cdaa45-405c-4296-bf80-edcf886c3fca")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "#PWR0147")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 294.64 111.76 270)
 		(mirror x)
@@ -8872,85 +8969,6 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
 					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 300.99 190.5 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a2ec9c8-a6cd-464c-9451-7b67a717128f")
-		(property "Reference" "TP18"
-			(at 305.562 190.5 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+1V8_BATT"
-			(at 310.896 190.5 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 300.99 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 300.99 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 300.99 190.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e2dede25-3906-4e5e-b02a-a8882b16c831")
-		)
-		(instances
-			(project "meko"
-				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
-					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -15337,6 +15355,83 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 193.04 232.41 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e01a838f-032c-4bd4-9c5e-7a93229b8295")
+		(property "Reference" "TP7"
+			(at 193.04 224.282 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 226.822 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 187.96 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 193.04 232.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "646857a1-fe6f-4914-85d1-05c0ddcd4b4b")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
