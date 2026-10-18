@@ -910,4 +910,6 @@ And finally I fixed the too small display edge cut
 
 ![new disp edgecut](https://cdn.hackclub.com/01a14fad-e4b8-7f06-8da3-ffc32fa2b527/paste-1792338158652.png)
 
+I still need to do a BUNCH of cleanup, and do the length matching of the SDMMC lines
+
 ## _Time Spent: 17h_
