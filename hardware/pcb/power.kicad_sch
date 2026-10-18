@@ -5895,7 +5895,7 @@
 	)
 	(wire
 		(pts
-			(xy 358.14 87.63) (xy 370.84 87.63)
+			(xy 358.14 87.63) (xy 373.38 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7438,6 +7438,41 @@
 		)
 		(property "Component Class" ""
 			(at -77.47 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 370.84 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe75c041-0aef-4b87-885c-08161da8fbf9")
+		(property "Netclass" "PWR"
+			(at 371.5385 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -5.08 -29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10590,7 +10625,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 370.84 87.63 270)
+		(at 373.38 87.63 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10601,7 +10636,7 @@
 		(dnp no)
 		(uuid "6df62395-cff3-49b9-87df-23077cc0d618")
 		(property "Reference" "TP12"
-			(at 375.158 86.36 90)
+			(at 377.698 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10612,7 +10647,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 375.158 88.9 90)
+			(at 377.698 88.9 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10623,7 +10658,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 370.84 82.55 0)
+			(at 373.38 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10634,7 +10669,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 82.55 0)
+			(at 373.38 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10645,7 +10680,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 370.84 87.63 0)
+			(at 373.38 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
