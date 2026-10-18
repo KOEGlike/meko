@@ -849,3 +849,65 @@ I still need to
 
 
 ## _Time Spent: 12.5h_
+
+# 2026.10.18: Finished initial PCB done !!!
+
+Since power was done, I moved on to the next most important subsystem, the boot SD card! This was pretty easy to route, I needed to switch to the other layer to avoid the USB line, so I placed some GND return VIAs for good measure. I also routed the SDMMC for the Wi-Fi.
+
+![RF and Boot SDMMC routed](https://cdn.hackclub.com/01a14fa9-86fd-75d4-bc07-a73143f24b63/Screenshot_20261018_182407.png)
+
+After this, logically I moved onto the external SD card, this was even easier to route, since I didn't have to switch layers.
+
+![ext sdmmc](https://cdn.hackclub.com/01a14fad-25d9-7a83-83a7-91f44c6497ec/paste-1792338109695.png)
+
+I then realized that it would be a good idea to add net classes to other buses, like SDMMC, so I can length match them later, so I did that.
+
+![more net classes](https://cdn.hackclub.com/01a14fac-d3bf-7551-91fd-e78eb9038f02/paste-1792338088727.png)
+
+I then started to route the UART for Bluetooth, and some other low speed lines for the wireless module.
+
+![uart 'n stuff](https://cdn.hackclub.com/01a14fac-a78d-740b-ae0e-732ec4d237f5/paste-1792338077374.png)
+
+I also started to route the lines from the power subsystem.
+
+![some routing](https://cdn.hackclub.com/01a14fa9-f96d-7f21-98ba-c17e925043d2/paste-1792337901757.png)
+
+While on a walk home, I realized that I should probably add a cutout fo for the display flex cable, so I added that, but I'll have to redo this later, because the initial width of the FFC is thicker then the rest.
+
+![initial disp edge cut](https://cdn.hackclub.com/01a14faa-276e-73e3-9535-12654255134b/paste-1792337913194.png)
+
+I started to fan out the MPU, along the way I reassinged some pins, so the fanout is easier
+
+![started fanout](https://cdn.hackclub.com/01a14faa-6788-71c7-87b4-0d07248ebcde/paste-1792337929246.png)
+
+One of the things I had to pay close attention to was to not break up the power plane too much with the VIAs, otherwise the power plane would get split up
+
+![vias and pwr plane](https://cdn.hackclub.com/01a14faf-af4d-7833-bf26-e545945cd518/paste-1792338275909.png)
+
+At first I routed every trace as close as I could without getting too much cross talk, later I'll add more spacing
+
+![more routing](https://cdn.hackclub.com/01a14faa-98e6-7e49-9ec4-8d0d68edf2cd/paste-1792337942520.png)
+
+![more more routing](https://cdn.hackclub.com/01a14faa-d0ab-7ec7-abb3-cdc869924a3b/paste-1792337956765.png)
+
+This is the point where I almost routed everything
+
+![more more more routing](https://cdn.hackclub.com/01a14fab-6b1e-784d-a918-85f9f5d7b86c/paste-1792337996205.png)
+
+I placed a ton of the test points and spaced out the traces, most of them have a 2.5h spacing, where the space allowed it. I had chocke points next to the MPU, DDR, and PMIC, so I couldn't have a wide spacing there.
+
+![more more more more routing](https://cdn.hackclub.com/01a14fab-8579-7bf9-bcd4-fc4024eeea01/paste-1792338003037.png)
+
+I placed more test points and passives:
+
+![more more more more more routing](https://cdn.hackclub.com/01a14fab-b082-7ba2-bb27-f8c66e336190/paste-1792338013998.png)
+
+![more more more more more more routing](https://cdn.hackclub.com/01a14fab-cb2d-7b44-856d-f4f22dea8924/paste-1792338020857.png)
+
+![more more more more more more routing](https://cdn.hackclub.com/01a14fab-ef95-722f-a578-bfa0b0dc6072/paste-1792338030153.png)
+
+And finally I fixed the too small display edge cut
+
+![new disp edgecut](https://cdn.hackclub.com/01a14fad-e4b8-7f06-8da3-ffc32fa2b527/paste-1792338158652.png)
+
+## _Time Spent: 17h_
