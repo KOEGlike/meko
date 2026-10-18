@@ -872,11 +872,11 @@ I also started to route the lines from the power subsystem.
 
 ![some routing](https://cdn.hackclub.com/01a14fa9-f96d-7f21-98ba-c17e925043d2/paste-1792337901757.png)
 
-While on a walk home, I realized that I should probably add a cutout fo for the display flex cable, so I added that, but I'll have to redo this later, because the initial width of the FFC is thicker then the rest.
+While on a walk home, I realized that I should probably add a cutout for the display flex cable, so I added that, but I'll have to redo this later, because the initial width of the FFC is thicker than the rest.
 
 ![initial disp edge cut](https://cdn.hackclub.com/01a14faa-276e-73e3-9535-12654255134b/paste-1792337913194.png)
 
-I started to fan out the MPU, along the way I reassinged some pins, so the fanout is easier
+I started to fan out the MPU, along the way I reassigned some pins, so the fanout is easier
 
 ![started fanout](https://cdn.hackclub.com/01a14faa-6788-71c7-87b4-0d07248ebcde/paste-1792337929246.png)
 
@@ -894,7 +894,7 @@ This is the point where I almost routed everything
 
 ![more more more routing](https://cdn.hackclub.com/01a14fab-6b1e-784d-a918-85f9f5d7b86c/paste-1792337996205.png)
 
-I placed a ton of the test points and spaced out the traces, most of them have a 2.5h spacing, where the space allowed it. I had chocke points next to the MPU, DDR, and PMIC, so I couldn't have a wide spacing there.
+I placed a ton of the test points and spaced out the traces, most of them have a 2.5h spacing, where the space allowed it. I had choke points next to the MPU, DDR, and PMIC, so I couldn't have a wide spacing there.
 
 ![more more more more routing](https://cdn.hackclub.com/01a14fab-8579-7bf9-bcd4-fc4024eeea01/paste-1792338003037.png)
 
