@@ -1596,6 +1596,17 @@
 		)
 		(uuid "511a4241-6ccc-4b61-bea5-4f721b3b103a")
 	)
+	(text "LEF- and LEFT+ sit at a common mode voltage, \nwhen a jack is not plugged in the detect lines are pulled down\nwhen a jack is pugged in the detect lines sit at the common mode voltage"
+		(exclude_from_sim no)
+		(at 120.904 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8665faf5-1d2b-41c8-8a7a-92e697fb2cf8")
+	)
 	(text "2.5mm"
 		(exclude_from_sim no)
 		(at 164.846 74.676 0)
