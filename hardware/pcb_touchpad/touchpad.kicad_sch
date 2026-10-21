@@ -3,7 +3,12 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "ed8fb80e-4b2a-45eb-baa9-dd68a004152a")
-	(paper "A4")
+	(paper "A5")
+	(title_block
+		(title "Touchpad")
+		(rev "v3.0.0")
+		(company "gensis")
+	)
 	(lib_symbols
 		(symbol "503480-0540:503480-0540"
 			(pin_names
@@ -396,6 +401,158 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Graphic:Logo_Open_Hardware_Small"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#SYM"
+				(at 0 6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Logo_Open_Hardware_Small"
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Open Hardware logo, small"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Logo"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Logo_Open_Hardware_Small_0_1"
+				(polyline
+					(pts
+						(xy 3.3528 -4.3434) (xy 3.302 -4.318) (xy 3.175 -4.2418) (xy 2.9972 -4.1148) (xy 2.7686 -3.9624)
+						(xy 2.54 -3.81) (xy 2.3622 -3.7084) (xy 2.2352 -3.6068) (xy 2.1844 -3.5814) (xy 2.159 -3.6068)
+						(xy 2.0574 -3.6576) (xy 1.905 -3.7338) (xy 1.8034 -3.7846) (xy 1.6764 -3.8354) (xy 1.6002 -3.8354)
+						(xy 1.6002 -3.8354) (xy 1.5494 -3.7338) (xy 1.4732 -3.5306) (xy 1.3462 -3.302) (xy 1.2446 -3.0226)
+						(xy 1.1176 -2.7178) (xy 0.9652 -2.413) (xy 0.8636 -2.1082) (xy 0.7366 -1.8288) (xy 0.6604 -1.6256)
+						(xy 0.6096 -1.4732) (xy 0.5842 -1.397) (xy 0.5842 -1.397) (xy 0.6604 -1.3208) (xy 0.7874 -1.2446)
+						(xy 1.0414 -1.016) (xy 1.2954 -0.6858) (xy 1.4478 -0.3302) (xy 1.524 0.0762) (xy 1.4732 0.4572)
+						(xy 1.3208 0.8128) (xy 1.0668 1.143) (xy 0.762 1.3716) (xy 0.4064 1.524) (xy 0 1.5748) (xy -0.381 1.5494)
+						(xy -0.7366 1.397) (xy -1.0668 1.143) (xy -1.2192 0.9906) (xy -1.397 0.6604) (xy -1.524 0.3048)
+						(xy -1.524 0.2286) (xy -1.4986 -0.1778) (xy -1.397 -0.5334) (xy -1.1938 -0.8636) (xy -0.9144 -1.143)
+						(xy -0.8636 -1.1684) (xy -0.7366 -1.27) (xy -0.635 -1.3462) (xy -0.5842 -1.397) (xy -1.0668 -2.5908)
+						(xy -1.143 -2.794) (xy -1.2954 -3.1242) (xy -1.397 -3.4036) (xy -1.4986 -3.6322) (xy -1.5748 -3.7846)
+						(xy -1.6002 -3.8354) (xy -1.6002 -3.8354) (xy -1.651 -3.8354) (xy -1.7272 -3.81) (xy -1.905 -3.7338)
+						(xy -2.0066 -3.683) (xy -2.1336 -3.6068) (xy -2.2098 -3.5814) (xy -2.2606 -3.6068) (xy -2.3622 -3.683)
+						(xy -2.54 -3.81) (xy -2.7686 -3.9624) (xy -2.9718 -4.0894) (xy -3.1496 -4.2164) (xy -3.302 -4.318)
+						(xy -3.3528 -4.3434) (xy -3.3782 -4.3434) (xy -3.429 -4.318) (xy -3.5306 -4.2164) (xy -3.7084 -4.064)
+						(xy -3.937 -3.8354) (xy -3.9624 -3.81) (xy -4.1656 -3.6068) (xy -4.318 -3.4544) (xy -4.4196 -3.3274)
+						(xy -4.445 -3.2766) (xy -4.445 -3.2766) (xy -4.4196 -3.2258) (xy -4.318 -3.0734) (xy -4.2164 -2.8956)
+						(xy -4.064 -2.667) (xy -3.6576 -2.0828) (xy -3.8862 -1.5494) (xy -3.937 -1.3716) (xy -4.0386 -1.1684)
+						(xy -4.0894 -1.0414) (xy -4.1148 -0.9652) (xy -4.191 -0.9398) (xy -4.318 -0.9144) (xy -4.5466 -0.8636)
+						(xy -4.8006 -0.8128) (xy -5.0546 -0.7874) (xy -5.2578 -0.7366) (xy -5.4356 -0.7112) (xy -5.5118 -0.6858)
+						(xy -5.5118 -0.6858) (xy -5.5372 -0.635) (xy -5.5372 -0.5588) (xy -5.5372 -0.4318) (xy -5.5626 -0.2286)
+						(xy -5.5626 0.0762) (xy -5.5626 0.127) (xy -5.5372 0.4064) (xy -5.5372 0.635) (xy -5.5372 0.762)
+						(xy -5.5372 0.8382) (xy -5.5372 0.8382) (xy -5.461 0.8382) (xy -5.3086 0.889) (xy -5.08 0.9144)
+						(xy -4.826 0.9652) (xy -4.8006 0.9906) (xy -4.5466 1.0414) (xy -4.318 1.0668) (xy -4.1656 1.1176)
+						(xy -4.0894 1.143) (xy -4.0894 1.143) (xy -4.0386 1.2446) (xy -3.9624 1.4224) (xy -3.8608 1.6256)
+						(xy -3.7846 1.8288) (xy -3.7084 2.0066) (xy -3.6576 2.159) (xy -3.6322 2.2098) (xy -3.6322 2.2098)
+						(xy -3.683 2.286) (xy -3.7592 2.413) (xy -3.8862 2.5908) (xy -4.064 2.8194) (xy -4.064 2.8448)
+						(xy -4.2164 3.0734) (xy -4.3434 3.2512) (xy -4.4196 3.3782) (xy -4.445 3.4544) (xy -4.445 3.4544)
+						(xy -4.3942 3.5052) (xy -4.2926 3.6322) (xy -4.1148 3.81) (xy -3.937 4.0132) (xy -3.8608 4.064)
+						(xy -3.6576 4.2926) (xy -3.5052 4.4196) (xy -3.4036 4.4958) (xy -3.3528 4.5212) (xy -3.3528 4.5212)
+						(xy -3.302 4.4704) (xy -3.1496 4.3688) (xy -2.9718 4.2418) (xy -2.7432 4.0894) (xy -2.7178 4.0894)
+						(xy -2.4892 3.937) (xy -2.3114 3.81) (xy -2.1844 3.7084) (xy -2.1336 3.683) (xy -2.1082 3.683)
+						(xy -2.032 3.7084) (xy -1.8542 3.7592) (xy -1.6764 3.8354) (xy -1.4732 3.937) (xy -1.27 4.0132)
+						(xy -1.143 4.064) (xy -1.0668 4.1148) (xy -1.0668 4.1148) (xy -1.0414 4.191) (xy -1.016 4.3434)
+						(xy -0.9652 4.572) (xy -0.9144 4.8514) (xy -0.889 4.9022) (xy -0.8382 5.1562) (xy -0.8128 5.3848)
+						(xy -0.7874 5.5372) (xy -0.762 5.588) (xy -0.7112 5.6134) (xy -0.5842 5.6134) (xy -0.4064 5.6134)
+						(xy -0.1524 5.6134) (xy 0.0762 5.6134) (xy 0.3302 5.6134) (xy 0.5334 5.6134) (xy 0.6858 5.588)
+						(xy 0.7366 5.588) (xy 0.7366 5.588) (xy 0.762 5.5118) (xy 0.8128 5.334) (xy 0.8382 5.1054) (xy 0.9144 4.826)
+						(xy 0.9144 4.7752) (xy 0.9652 4.5212) (xy 1.016 4.2926) (xy 1.0414 4.1402) (xy 1.0668 4.0894)
+						(xy 1.0668 4.0894) (xy 1.1938 4.0386) (xy 1.3716 3.9624) (xy 1.5748 3.8608) (xy 2.0828 3.6576)
+						(xy 2.7178 4.0894) (xy 2.7686 4.1402) (xy 2.9972 4.2926) (xy 3.175 4.4196) (xy 3.302 4.4958) (xy 3.3782 4.5212)
+						(xy 3.3782 4.5212) (xy 3.429 4.4704) (xy 3.556 4.3434) (xy 3.7338 4.191) (xy 3.9116 3.9878) (xy 4.064 3.8354)
+						(xy 4.2418 3.6576) (xy 4.3434 3.556) (xy 4.4196 3.4798) (xy 4.4196 3.429) (xy 4.4196 3.4036) (xy 4.3942 3.3274)
+						(xy 4.2926 3.2004) (xy 4.1656 2.9972) (xy 4.0132 2.794) (xy 3.8862 2.5908) (xy 3.7592 2.3876)
+						(xy 3.6576 2.2352) (xy 3.6322 2.159) (xy 3.6322 2.1336) (xy 3.683 2.0066) (xy 3.7592 1.8288) (xy 3.8608 1.6002)
+						(xy 4.064 1.1176) (xy 4.3942 1.0414) (xy 4.5974 1.016) (xy 4.8768 0.9652) (xy 5.1308 0.9144) (xy 5.5372 0.8382)
+						(xy 5.5626 -0.6604) (xy 5.4864 -0.6858) (xy 5.4356 -0.6858) (xy 5.2832 -0.7366) (xy 5.0546 -0.762)
+						(xy 4.8006 -0.8128) (xy 4.5974 -0.8636) (xy 4.3688 -0.9144) (xy 4.2164 -0.9398) (xy 4.1402 -0.9398)
+						(xy 4.1148 -0.9652) (xy 4.064 -1.0668) (xy 3.9878 -1.2446) (xy 3.9116 -1.4478) (xy 3.81 -1.651)
+						(xy 3.7338 -1.8542) (xy 3.683 -2.0066) (xy 3.6576 -2.0828) (xy 3.683 -2.1336) (xy 3.7846 -2.2606)
+						(xy 3.8862 -2.4638) (xy 4.0386 -2.667) (xy 4.191 -2.8956) (xy 4.318 -3.0734) (xy 4.3942 -3.2004)
+						(xy 4.445 -3.2766) (xy 4.4196 -3.3274) (xy 4.3434 -3.429) (xy 4.1656 -3.5814) (xy 3.937 -3.8354)
+						(xy 3.8862 -3.8608) (xy 3.683 -4.064) (xy 3.5306 -4.2164) (xy 3.4036 -4.318) (xy 3.3528 -4.3434)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -1215,32 +1372,32 @@
 		)
 	)
 	(junction
-		(at 144.78 111.76)
+		(at 129.54 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "91234cff-b931-4718-92cd-a0009639528d")
 	)
 	(junction
-		(at 71.12 92.71)
+		(at 55.88 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c770ec2-29e9-4dc0-a994-a8108c825f7c")
 	)
 	(junction
-		(at 144.78 63.5)
+		(at 129.54 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c61e8211-6d50-4186-8586-a41fcdaa195d")
 	)
 	(junction
-		(at 116.84 114.3)
+		(at 101.6 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "daf5abb7-4e29-4290-90c5-8d07a2729abf")
 	)
 	(wire
 		(pts
-			(xy 158.75 77.47) (xy 167.64 77.47)
+			(xy 143.51 52.07) (xy 152.4 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1250,7 +1407,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 90.17) (xy 123.19 80.01)
+			(xy 107.95 64.77) (xy 107.95 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1260,7 +1417,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 104.14) (xy 130.81 104.14)
+			(xy 97.79 78.74) (xy 115.57 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1270,7 +1427,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 93.98) (xy 71.12 92.71)
+			(xy 55.88 68.58) (xy 55.88 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1280,7 +1437,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 80.01) (xy 167.64 80.01)
+			(xy 143.51 54.61) (xy 152.4 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1290,7 +1447,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 90.17) (xy 71.12 92.71)
+			(xy 55.88 64.77) (xy 55.88 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1300,7 +1457,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 92.71) (xy 167.64 92.71)
+			(xy 143.51 67.31) (xy 152.4 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1310,7 +1467,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 63.5) (xy 144.78 63.5)
+			(xy 124.46 38.1) (xy 129.54 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1320,7 +1477,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 77.47) (xy 130.81 77.47)
+			(xy 93.98 52.07) (xy 115.57 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1330,7 +1487,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 105.41) (xy 167.64 105.41)
+			(xy 143.51 80.01) (xy 152.4 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1340,7 +1497,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 82.55) (xy 102.87 74.93)
+			(xy 87.63 57.15) (xy 87.63 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1350,7 +1507,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 90.17) (xy 71.12 90.17)
+			(xy 57.15 64.77) (xy 55.88 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1360,7 +1517,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 74.93) (xy 167.64 74.93)
+			(xy 143.51 49.53) (xy 152.4 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1370,7 +1527,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 63.5) (xy 144.78 69.85)
+			(xy 129.54 38.1) (xy 129.54 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1380,7 +1537,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 92.71) (xy 99.06 92.71)
+			(xy 82.55 67.31) (xy 83.82 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1390,7 +1547,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 113.03) (xy 113.03 114.3)
+			(xy 97.79 87.63) (xy 97.79 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1400,7 +1557,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 95.25) (xy 167.64 95.25)
+			(xy 143.51 69.85) (xy 152.4 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1410,7 +1567,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 87.63) (xy 109.22 87.63)
+			(xy 82.55 62.23) (xy 93.98 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1420,7 +1577,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 74.93) (xy 130.81 74.93)
+			(xy 87.63 49.53) (xy 115.57 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1430,7 +1587,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 87.63) (xy 109.22 77.47)
+			(xy 93.98 62.23) (xy 93.98 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1440,7 +1597,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 82.55) (xy 102.87 82.55)
+			(xy 82.55 57.15) (xy 87.63 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1450,7 +1607,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 63.5) (xy 134.62 63.5)
+			(xy 118.11 38.1) (xy 119.38 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1460,7 +1617,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 100.33) (xy 167.64 100.33)
+			(xy 143.51 74.93) (xy 152.4 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1470,7 +1627,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 113.03) (xy 120.65 114.3)
+			(xy 105.41 87.63) (xy 105.41 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1480,7 +1637,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 102.87) (xy 167.64 102.87)
+			(xy 143.51 77.47) (xy 152.4 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1490,7 +1647,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 59.69) (xy 144.78 63.5)
+			(xy 129.54 34.29) (xy 129.54 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1500,7 +1657,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 80.01) (xy 130.81 80.01)
+			(xy 107.95 54.61) (xy 115.57 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1510,7 +1667,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 111.76) (xy 144.78 113.03)
+			(xy 129.54 86.36) (xy 129.54 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1520,7 +1677,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 90.17) (xy 123.19 90.17)
+			(xy 82.55 64.77) (xy 107.95 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1530,7 +1687,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 106.68) (xy 130.81 106.68)
+			(xy 105.41 81.28) (xy 115.57 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1540,7 +1697,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 114.3) (xy 120.65 114.3)
+			(xy 101.6 88.9) (xy 105.41 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1550,7 +1707,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 107.95) (xy 113.03 104.14)
+			(xy 97.79 82.55) (xy 97.79 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1560,7 +1717,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 64.77) (xy 133.35 63.5)
+			(xy 118.11 39.37) (xy 118.11 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1570,7 +1727,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 97.79) (xy 167.64 97.79)
+			(xy 143.51 72.39) (xy 152.4 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1580,7 +1737,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 82.55) (xy 167.64 82.55)
+			(xy 143.51 57.15) (xy 152.4 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1590,7 +1747,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 110.49) (xy 146.05 111.76)
+			(xy 130.81 85.09) (xy 130.81 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1600,7 +1757,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 90.17) (xy 167.64 90.17)
+			(xy 143.51 64.77) (xy 152.4 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1610,7 +1767,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 111.76) (xy 144.78 111.76)
+			(xy 128.27 86.36) (xy 129.54 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1620,7 +1777,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 110.49) (xy 143.51 111.76)
+			(xy 128.27 85.09) (xy 128.27 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1630,7 +1787,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 107.95) (xy 120.65 106.68)
+			(xy 105.41 82.55) (xy 105.41 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1640,7 +1797,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 92.71) (xy 72.39 92.71)
+			(xy 55.88 67.31) (xy 57.15 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1650,7 +1807,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 85.09) (xy 99.06 85.09)
+			(xy 82.55 59.69) (xy 83.82 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1660,7 +1817,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 114.3) (xy 116.84 114.3)
+			(xy 97.79 88.9) (xy 101.6 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1670,7 +1827,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 111.76) (xy 144.78 111.76)
+			(xy 130.81 86.36) (xy 129.54 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1680,7 +1837,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 87.63) (xy 167.64 87.63)
+			(xy 143.51 62.23) (xy 152.4 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1690,7 +1847,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 115.57) (xy 116.84 114.3)
+			(xy 101.6 90.17) (xy 101.6 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1700,7 +1857,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 85.09) (xy 167.64 85.09)
+			(xy 143.51 59.69) (xy 152.4 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1709,7 +1866,7 @@
 		(uuid "eff0c95f-64f7-44d1-8b5e-26fe9235d5e6")
 	)
 	(label "COL1"
-		(at 161.29 90.17 0)
+		(at 146.05 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1719,7 +1876,7 @@
 		(uuid "10327324-12c3-4a8b-899d-6f258846b337")
 	)
 	(label "ROW4"
-		(at 161.29 100.33 0)
+		(at 146.05 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1729,7 +1886,7 @@
 		(uuid "19e51d22-bdc1-4e2b-be56-a608a3b93f3d")
 	)
 	(label "SCL"
-		(at 102.87 74.93 0)
+		(at 87.63 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1739,7 +1896,7 @@
 		(uuid "24293f77-cb29-4baa-b5ef-8ecaf1f4bc78")
 	)
 	(label "COL3"
-		(at 161.29 85.09 0)
+		(at 146.05 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1749,7 +1906,7 @@
 		(uuid "34f4a184-eb03-410b-b3f4-c0b83b2e37ff")
 	)
 	(label "ROW5"
-		(at 161.29 102.87 0)
+		(at 146.05 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1759,7 +1916,7 @@
 		(uuid "35620b16-db91-43bc-971b-6f22a930bca5")
 	)
 	(label "COL7"
-		(at 161.29 74.93 0)
+		(at 146.05 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1769,7 +1926,7 @@
 		(uuid "5339e913-3689-483e-9a78-d5d3ef4752cc")
 	)
 	(label "SDA"
-		(at 109.22 77.47 0)
+		(at 93.98 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1779,7 +1936,7 @@
 		(uuid "60f8db8e-36d6-4347-ab1d-8fa3b5227e74")
 	)
 	(label "ROW1"
-		(at 161.29 92.71 0)
+		(at 146.05 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1789,7 +1946,7 @@
 		(uuid "61b1fc0e-dac5-478f-a6c7-acd9dc530a56")
 	)
 	(label "RDY{slash}MCLR"
-		(at 109.22 90.17 0)
+		(at 93.98 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1799,7 +1956,7 @@
 		(uuid "67660373-df67-4e38-92f0-3a3a1a112fc0")
 	)
 	(label "VREGA"
-		(at 120.65 106.68 0)
+		(at 105.41 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1809,7 +1966,7 @@
 		(uuid "693d0aa6-0a11-43ba-939c-6e8f73ee6202")
 	)
 	(label "COL6"
-		(at 161.29 77.47 0)
+		(at 146.05 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1819,7 +1976,7 @@
 		(uuid "71f33327-6901-4772-a2ed-0973779402a7")
 	)
 	(label "ROW3"
-		(at 161.29 97.79 0)
+		(at 146.05 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1829,7 +1986,7 @@
 		(uuid "78daca60-5a07-4fc1-8460-394fed022446")
 	)
 	(label "COL5"
-		(at 161.29 80.01 0)
+		(at 146.05 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1839,7 +1996,7 @@
 		(uuid "87ffc971-6fe4-4cf8-a18d-d133af96f2c2")
 	)
 	(label "ROW2"
-		(at 161.29 95.25 0)
+		(at 146.05 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1849,7 +2006,7 @@
 		(uuid "89c17054-c905-4449-be88-f02b7c50ab5e")
 	)
 	(label "COL2"
-		(at 161.29 87.63 0)
+		(at 146.05 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1859,7 +2016,7 @@
 		(uuid "a60c5893-ecc6-47ce-8c7a-8fd1f25d94e0")
 	)
 	(label "ROW6"
-		(at 161.29 105.41 0)
+		(at 146.05 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1869,7 +2026,7 @@
 		(uuid "d7fc1b47-1d4f-406e-8de0-347b17326b65")
 	)
 	(label "VREGD"
-		(at 113.03 104.14 0)
+		(at 97.79 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1879,7 +2036,7 @@
 		(uuid "d8953ca3-57c5-4206-8138-4fe851ba0423")
 	)
 	(label "COL4"
-		(at 161.29 82.55 0)
+		(at 146.05 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1890,7 +2047,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 115.57 0)
+		(at 101.6 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1901,7 +2058,7 @@
 		(fields_autoplaced yes)
 		(uuid "089245c5-8c66-4d5f-8544-b1d75aae644c")
 		(property "Reference" "#PWR06"
-			(at 116.84 121.92 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1912,7 +2069,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 116.84 120.65 0)
+			(at 101.6 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1922,7 +2079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 115.57 0)
+			(at 101.6 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1933,7 +2090,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 115.57 0)
+			(at 101.6 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1944,7 +2101,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 115.57 0)
+			(at 101.6 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1967,8 +2124,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Graphic:Logo_Open_Hardware_Small")
+		(at 27.94 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b87bb95-d41b-43d0-a8e8-e5d20de01c2f")
+		(property "Reference" "SYM1"
+			(at 27.94 22.225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Logo_Open_Hardware_Small"
+			(at 27.94 34.925 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen"
+			(at 27.94 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Open Hardware logo, small"
+			(at 27.94 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 27.94 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "touchpad"
+				(path "/e53fb545-7af8-4d77-ba5e-d47e7b15cfbf"
+					(reference "SYM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "503480-0540:503480-0540")
-		(at 85.09 87.63 0)
+		(at 69.85 62.23 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -1980,7 +2224,7 @@
 		(fields_autoplaced yes)
 		(uuid "122c6912-ccc0-4b82-a5a4-a327c1bae205")
 		(property "Reference" "J1"
-			(at 85.09 76.2 0)
+			(at 69.85 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1990,7 +2234,7 @@
 			)
 		)
 		(property "Value" "503480-0540"
-			(at 85.09 78.74 0)
+			(at 69.85 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2000,7 +2244,7 @@
 			)
 		)
 		(property "Footprint" "503480-0540:503480-0540"
-			(at 139.446 51.562 0)
+			(at 124.206 26.162 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2012,7 +2256,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/5034800540?display=pdf"
-			(at 84.836 70.358 0)
+			(at 69.596 44.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2023,7 +2267,7 @@
 			)
 		)
 		(property "Description" "5 Position FFC, FPC Connector Contacts, Top and Bottom 0.020 (0.50mm) Surface Mount, Right Angle"
-			(at 139.446 51.562 0)
+			(at 124.206 26.162 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2035,7 +2279,7 @@
 			)
 		)
 		(property "MFR" "Molex Connector Corporation"
-			(at 139.446 51.562 0)
+			(at 124.206 26.162 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2047,7 +2291,7 @@
 			)
 		)
 		(property "MPN" "5034800540"
-			(at 139.446 51.562 0)
+			(at 124.206 26.162 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2059,7 +2303,7 @@
 			)
 		)
 		(property "LCSC" "C5527934"
-			(at 85.344 73.406 0)
+			(at 70.104 48.006 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2101,7 +2345,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 64.77 0)
+		(at 118.11 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2111,7 +2355,7 @@
 		(dnp no)
 		(uuid "2c348ecf-4f5f-4d26-bb8d-ef76e88c4ea6")
 		(property "Reference" "#PWR07"
-			(at 133.35 71.12 0)
+			(at 118.11 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2122,7 +2366,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.35 68.58 0)
+			(at 118.11 43.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2132,7 +2376,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 64.77 0)
+			(at 118.11 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2143,7 +2387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 64.77 0)
+			(at 118.11 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2154,7 +2398,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 133.35 64.77 0)
+			(at 118.11 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2178,7 +2422,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 99.06 92.71 270)
+		(at 83.82 67.31 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2189,7 +2433,7 @@
 		(fields_autoplaced yes)
 		(uuid "322e17ac-83f2-430a-872c-29cfbb4cbb07")
 		(property "Reference" "#PWR03"
-			(at 95.25 92.71 0)
+			(at 80.01 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2200,7 +2444,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 102.87 92.7099 90)
+			(at 87.63 67.3099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2211,7 +2455,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 92.71 0)
+			(at 83.82 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2222,7 +2466,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 92.71 0)
+			(at 83.82 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2233,7 +2477,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 99.06 92.71 0)
+			(at 83.82 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2257,7 +2501,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 95.25 270)
+		(at 152.4 69.85 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2267,7 +2511,7 @@
 		(dnp no)
 		(uuid "39ba6c94-8914-4215-9b58-c865db1858b2")
 		(property "Reference" "ROW2"
-			(at 173.64 95.25 90)
+			(at 158.4 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2278,7 +2522,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 96.901 90)
+			(at 157.988 71.501 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2290,7 +2534,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 95.25 0)
+			(at 152.4 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2301,7 +2545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 95.25 0)
+			(at 152.4 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2312,7 +2556,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 95.25 0)
+			(at 152.4 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2336,7 +2580,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 137.16 63.5 270)
+		(at 121.92 38.1 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2346,7 +2590,7 @@
 		(dnp no)
 		(uuid "40a5fbed-c11b-4ea1-8921-b05119411107")
 		(property "Reference" "C3"
-			(at 137.16 58.928 90)
+			(at 121.92 33.528 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2356,7 +2600,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 137.16 60.452 90)
+			(at 121.92 35.052 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2366,7 +2610,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 137.16 63.5 0)
+			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2377,7 +2621,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 63.5 0)
+			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2388,7 +2632,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 137.16 63.5 0)
+			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2399,7 +2643,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 137.16 63.5 0)
+			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2410,7 +2654,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 137.16 63.5 0)
+			(at 121.92 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2437,7 +2681,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 85.09 270)
+		(at 152.4 59.69 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2448,7 +2692,7 @@
 		(dnp no)
 		(uuid "4cf423a5-685c-4d6a-8f92-d674f1d71047")
 		(property "Reference" "COL3"
-			(at 173.64 85.09 90)
+			(at 158.4 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2459,7 +2703,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 83.439 90)
+			(at 157.988 58.039 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2471,7 +2715,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 85.09 0)
+			(at 152.4 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2482,7 +2726,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 85.09 0)
+			(at 152.4 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2493,7 +2737,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 85.09 0)
+			(at 152.4 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2517,7 +2761,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 80.01 270)
+		(at 152.4 54.61 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2528,7 +2772,7 @@
 		(dnp no)
 		(uuid "60b9a14e-a2c8-4979-8734-6ff0fc2b7a10")
 		(property "Reference" "COL5"
-			(at 173.64 80.01 90)
+			(at 158.4 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2539,7 +2783,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 78.359 90)
+			(at 157.988 52.959 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2551,7 +2795,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 80.01 0)
+			(at 152.4 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2562,7 +2806,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 80.01 0)
+			(at 152.4 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2573,7 +2817,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 80.01 0)
+			(at 152.4 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2597,7 +2841,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 99.06 85.09 90)
+		(at 83.82 59.69 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2608,7 +2852,7 @@
 		(fields_autoplaced yes)
 		(uuid "8b7df11c-e7da-4a6c-a672-86194610d8e5")
 		(property "Reference" "#PWR04"
-			(at 105.41 85.09 0)
+			(at 90.17 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2619,7 +2863,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 85.0899 90)
+			(at 87.63 59.6899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2630,7 +2874,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 85.09 0)
+			(at 83.82 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2641,7 +2885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 85.09 0)
+			(at 83.82 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2652,7 +2896,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 99.06 85.09 0)
+			(at 83.82 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2676,7 +2920,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 105.41 270)
+		(at 152.4 80.01 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2686,7 +2930,7 @@
 		(dnp no)
 		(uuid "8cf58b66-1325-4087-aeb8-481c2a6a020b")
 		(property "Reference" "ROW6"
-			(at 173.64 105.41 90)
+			(at 158.4 80.01 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2697,7 +2941,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 107.061 90)
+			(at 157.988 81.661 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2709,7 +2953,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 105.41 0)
+			(at 152.4 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2720,7 +2964,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 105.41 0)
+			(at 152.4 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2731,7 +2975,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 105.41 0)
+			(at 152.4 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2755,7 +2999,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 74.93 270)
+		(at 152.4 49.53 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2766,7 +3010,7 @@
 		(dnp no)
 		(uuid "9e2655d5-dc48-4a82-bfee-dc0aea5ae47f")
 		(property "Reference" "COL7"
-			(at 173.64 74.93 90)
+			(at 158.4 49.53 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2777,7 +3021,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 73.279 90)
+			(at 157.988 47.879 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2789,7 +3033,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 74.93 0)
+			(at 152.4 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2800,7 +3044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 74.93 0)
+			(at 152.4 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2811,7 +3055,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 74.93 0)
+			(at 152.4 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2835,7 +3079,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 92.71 270)
+		(at 152.4 67.31 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2845,7 +3089,7 @@
 		(dnp no)
 		(uuid "aa7a5ef1-724c-49dd-91c0-f0d9ccdce1a6")
 		(property "Reference" "ROW1"
-			(at 173.64 92.71 90)
+			(at 158.4 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2856,7 +3100,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 94.361 90)
+			(at 157.988 68.961 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2868,7 +3112,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 92.71 0)
+			(at 152.4 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2879,7 +3123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 92.71 0)
+			(at 152.4 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2890,7 +3134,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 92.71 0)
+			(at 152.4 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2914,7 +3158,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 82.55 270)
+		(at 152.4 57.15 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2925,7 +3169,7 @@
 		(dnp no)
 		(uuid "b2da7e67-b098-40a5-9f3f-6d60ad8ed106")
 		(property "Reference" "COL4"
-			(at 173.64 82.55 90)
+			(at 158.4 57.15 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2936,7 +3180,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 80.899 90)
+			(at 157.988 55.499 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2948,7 +3192,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 82.55 0)
+			(at 152.4 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2959,7 +3203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 82.55 0)
+			(at 152.4 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,7 +3214,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 82.55 0)
+			(at 152.4 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2994,7 +3238,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 97.79 270)
+		(at 152.4 72.39 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3004,7 +3248,7 @@
 		(dnp no)
 		(uuid "c6c94e42-d9c7-469d-a6df-fd3675e21561")
 		(property "Reference" "ROW3"
-			(at 173.64 97.79 90)
+			(at 158.4 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3015,7 +3259,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 99.441 90)
+			(at 157.988 74.041 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3027,7 +3271,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 97.79 0)
+			(at 152.4 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3038,7 +3282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 97.79 0)
+			(at 152.4 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3049,7 +3293,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 97.79 0)
+			(at 152.4 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3073,7 +3317,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 93.98 0)
+		(at 55.88 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3084,7 +3328,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7f35b93-faa8-4520-8037-e83fd59d36dd")
 		(property "Reference" "#PWR02"
-			(at 71.12 100.33 0)
+			(at 55.88 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3095,7 +3339,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 99.06 0)
+			(at 55.88 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3105,7 +3349,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 93.98 0)
+			(at 55.88 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3116,7 +3360,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 93.98 0)
+			(at 55.88 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3127,7 +3371,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 93.98 0)
+			(at 55.88 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3151,7 +3395,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 144.78 59.69 0)
+		(at 129.54 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3162,7 +3406,7 @@
 		(fields_autoplaced yes)
 		(uuid "c9e6713d-5baa-41fb-aec7-cdcc33e0bb13")
 		(property "Reference" "#PWR05"
-			(at 144.78 63.5 0)
+			(at 129.54 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3173,7 +3417,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 144.78 54.61 0)
+			(at 129.54 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3183,7 +3427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 59.69 0)
+			(at 129.54 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3194,7 +3438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 59.69 0)
+			(at 129.54 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3205,7 +3449,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 144.78 59.69 0)
+			(at 129.54 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3229,7 +3473,7 @@
 	)
 	(symbol
 		(lib_id "IQS:IQS7211E")
-		(at 144.78 90.17 0)
+		(at 129.54 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3240,7 +3484,7 @@
 		(fields_autoplaced yes)
 		(uuid "cfd7f1ab-78de-4cc1-8a63-6034e5cf8006")
 		(property "Reference" "U1"
-			(at 146.9233 67.31 0)
+			(at 131.6833 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3251,7 +3495,7 @@
 			)
 		)
 		(property "Value" "IQS7211E"
-			(at 146.9233 69.85 0)
+			(at 131.6833 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3262,7 +3506,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm"
-			(at 181.864 113.03 0)
+			(at 166.624 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3273,7 +3517,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 90.17 0)
+			(at 129.54 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3284,7 +3528,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 90.17 0)
+			(at 129.54 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3368,7 +3612,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 113.03 0)
+		(at 129.54 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3379,7 +3623,7 @@
 		(fields_autoplaced yes)
 		(uuid "d336929e-cec5-42bc-ae56-29b84ba40b23")
 		(property "Reference" "#PWR01"
-			(at 144.78 119.38 0)
+			(at 129.54 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3390,7 +3634,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.78 118.11 0)
+			(at 129.54 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3400,7 +3644,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 113.03 0)
+			(at 129.54 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3411,7 +3655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 113.03 0)
+			(at 129.54 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3422,7 +3666,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 113.03 0)
+			(at 129.54 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3446,7 +3690,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 102.87 270)
+		(at 152.4 77.47 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3456,7 +3700,7 @@
 		(dnp no)
 		(uuid "d6898942-3329-4947-885f-722808849749")
 		(property "Reference" "ROW5"
-			(at 173.64 102.87 90)
+			(at 158.4 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3467,7 +3711,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 104.521 90)
+			(at 157.988 79.121 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3479,7 +3723,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 102.87 0)
+			(at 152.4 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3490,7 +3734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 102.87 0)
+			(at 152.4 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3501,7 +3745,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 102.87 0)
+			(at 152.4 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3525,7 +3769,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 120.65 110.49 0)
+		(at 105.41 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3535,7 +3779,7 @@
 		(dnp no)
 		(uuid "dc7407a9-d2d4-4261-bbae-3f6c5c846427")
 		(property "Reference" "C1"
-			(at 118.11 109.2262 0)
+			(at 102.87 83.8262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3546,7 +3790,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 118.11 111.7662 0)
+			(at 102.87 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3557,7 +3801,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 120.65 110.49 0)
+			(at 105.41 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3568,7 +3812,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 110.49 0)
+			(at 105.41 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3579,7 +3823,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 120.65 110.49 0)
+			(at 105.41 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3590,7 +3834,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 120.65 110.49 0)
+			(at 105.41 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3601,7 +3845,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 120.65 110.49 0)
+			(at 105.41 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3628,7 +3872,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 100.33 270)
+		(at 152.4 74.93 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3638,7 +3882,7 @@
 		(dnp no)
 		(uuid "ec121035-7a9a-4bc0-b293-bb371a841fb6")
 		(property "Reference" "ROW4"
-			(at 173.64 100.33 90)
+			(at 158.4 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3649,7 +3893,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 101.981 90)
+			(at 157.988 76.581 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3661,7 +3905,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 100.33 0)
+			(at 152.4 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3672,7 +3916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 100.33 0)
+			(at 152.4 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3683,7 +3927,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 100.33 0)
+			(at 152.4 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3707,7 +3951,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 90.17 270)
+		(at 152.4 64.77 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3718,7 +3962,7 @@
 		(dnp no)
 		(uuid "f0563a8a-d985-49a8-8ce9-98b519669595")
 		(property "Reference" "COL1"
-			(at 173.64 90.17 90)
+			(at 158.4 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3729,7 +3973,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 88.519 90)
+			(at 157.988 63.119 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3741,7 +3985,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 90.17 0)
+			(at 152.4 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3752,7 +3996,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 90.17 0)
+			(at 152.4 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3763,7 +4007,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 90.17 0)
+			(at 152.4 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3787,7 +4031,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 113.03 110.49 0)
+		(at 97.79 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3797,7 +4041,7 @@
 		(dnp no)
 		(uuid "f1c700a8-f8f3-4383-8bcd-7c90f181b148")
 		(property "Reference" "C2"
-			(at 110.49 109.2262 0)
+			(at 95.25 83.8262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3808,7 +4052,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 110.49 111.7662 0)
+			(at 95.25 86.3662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3819,7 +4063,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 113.03 110.49 0)
+			(at 97.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3830,7 +4074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 110.49 0)
+			(at 97.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3841,7 +4085,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 113.03 110.49 0)
+			(at 97.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3852,7 +4096,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 113.03 110.49 0)
+			(at 97.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3863,7 +4107,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 113.03 110.49 0)
+			(at 97.79 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3890,7 +4134,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 87.63 270)
+		(at 152.4 62.23 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3901,7 +4145,7 @@
 		(dnp no)
 		(uuid "f825e3e4-808e-4047-a3d7-5a916e87e845")
 		(property "Reference" "COL2"
-			(at 173.64 87.63 90)
+			(at 158.4 62.23 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3912,7 +4156,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 85.979 90)
+			(at 157.988 60.579 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3924,7 +4168,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 87.63 0)
+			(at 152.4 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3935,7 +4179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 87.63 0)
+			(at 152.4 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3946,7 +4190,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 87.63 0)
+			(at 152.4 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3970,7 +4214,7 @@
 	)
 	(symbol
 		(lib_id "Touchpad-eagle-import:TESTPOINTPAD_0_5MM")
-		(at 167.64 77.47 270)
+		(at 152.4 52.07 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3981,7 +4225,7 @@
 		(dnp no)
 		(uuid "fa2dd8af-634a-421c-bba7-7b0255db6e7d")
 		(property "Reference" "COL6"
-			(at 173.64 77.47 90)
+			(at 158.4 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3992,7 +4236,7 @@
 			)
 		)
 		(property "Value" "TESTPOINTPAD_0_5MM"
-			(at 173.228 75.819 90)
+			(at 157.988 50.419 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4004,7 +4248,7 @@
 			)
 		)
 		(property "Footprint" "Touchpad:PAD_0_5MM"
-			(at 167.64 77.47 0)
+			(at 152.4 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4015,7 +4259,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 77.47 0)
+			(at 152.4 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4026,7 +4270,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 77.47 0)
+			(at 152.4 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
