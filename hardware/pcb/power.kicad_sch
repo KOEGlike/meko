@@ -3988,7 +3988,7 @@
 		(uuid "3cacc785-8a9f-44fc-a9ec-ec3fd72dd160")
 	)
 	(junction
-		(at 180.34 85.09)
+		(at 173.99 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cc77b00-a6b8-4ad3-9d8d-3bc13cdb766d")
@@ -4130,6 +4130,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e1f6864-4d72-4ba8-b916-3afe44c7264e")
+	)
+	(junction
+		(at 190.5 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e7d184a-d7cf-4c0c-ba2b-abfb2b7d1631")
 	)
 	(junction
 		(at 114.3 133.35)
@@ -4649,6 +4655,16 @@
 			(type default)
 		)
 		(uuid "0d3ae4f3-1dc8-4f97-aef5-38837a1e2cf4")
+	)
+	(wire
+		(pts
+			(xy 189.23 95.25) (xy 190.5 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f89d3bf-3c07-48db-aced-4e8f9325c46e")
 	)
 	(wire
 		(pts
@@ -5202,7 +5218,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 85.09) (xy 180.34 86.36)
+			(xy 173.99 85.09) (xy 173.99 86.36)
 		)
 		(stroke
 			(width 0)
@@ -5492,6 +5508,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 95.25) (xy 184.15 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75352d13-b78e-4eb5-b11f-0d4d93f70073")
+	)
+	(wire
+		(pts
 			(xy 222.25 222.25) (xy 243.84 222.25)
 		)
 		(stroke
@@ -5772,6 +5798,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 95.25) (xy 190.5 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91e55bb1-ebfc-4669-bb61-974913a1474c")
+	)
+	(wire
+		(pts
 			(xy 139.7 125.73) (xy 139.7 156.21)
 		)
 		(stroke
@@ -5932,7 +5968,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 91.44) (xy 180.34 92.71)
+			(xy 173.99 91.44) (xy 173.99 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6302,7 +6338,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 85.09) (xy 190.5 96.52)
+			(xy 190.5 85.09) (xy 190.5 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6812,7 +6848,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 101.6) (xy 190.5 107.95)
+			(xy 190.5 91.44) (xy 190.5 95.25)
 		)
 		(stroke
 			(width 0)
@@ -9221,7 +9257,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 180.34 88.9 0)
+		(at 173.99 88.9 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9232,7 +9268,7 @@
 		(dnp no)
 		(uuid "4505885f-028e-43e0-9a4c-3ce528f53440")
 		(property "Reference" "C91"
-			(at 182.118 87.884 0)
+			(at 175.768 87.884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9243,7 +9279,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 182.118 89.662 0)
+			(at 175.768 89.662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9254,7 +9290,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 180.34 88.9 0)
+			(at 173.99 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9265,7 +9301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 88.9 0)
+			(at 173.99 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9276,7 +9312,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 180.34 88.9 0)
+			(at 173.99 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9287,7 +9323,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 180.34 88.9 0)
+			(at 173.99 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9298,7 +9334,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 180.34 88.9 0)
+			(at 173.99 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9498,6 +9534,107 @@
 			(project "meko"
 				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
 					(reference "TP25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 186.69 95.25 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "48567ca8-dbec-438b-ad1a-fd2ab1a4f8fe")
+		(property "Reference" "R58"
+			(at 186.563 91.44 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 186.309 93.091 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 186.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 186.69 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 186.69 95.25 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "62cb7f3f-56e7-4ac2-809a-6460b0dfbc75")
+		)
+		(pin "1"
+			(uuid "b9166ca4-0dfe-4151-b296-d188eb9776c3")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -10996,7 +11133,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 190.5 99.06 180)
+		(at 190.5 88.9 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11006,7 +11143,7 @@
 		(dnp no)
 		(uuid "76c6dfb9-0185-42ab-b727-3840464bbcbb")
 		(property "Reference" "R20"
-			(at 193.548 97.79 0)
+			(at 193.548 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11016,7 +11153,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 193.548 99.568 0)
+			(at 193.548 89.408 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11026,7 +11163,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
-			(at 190.5 99.06 0)
+			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11037,7 +11174,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 99.06 0)
+			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11048,7 +11185,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 190.5 99.06 0)
+			(at 190.5 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11059,7 +11196,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 190.5 99.06 90)
+			(at 190.5 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11070,7 +11207,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 190.5 99.06 90)
+			(at 190.5 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14234,6 +14371,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 182.88 95.25 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c3d9fc3d-1096-426f-90af-775ae9e24f28")
+		(property "Reference" "#PWR0148"
+			(at 176.53 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.356 97.536 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.88 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d596be17-58b1-4b27-ab52-312034bc6468")
+		)
+		(instances
+			(project "meko"
+				(path "/da54f10a-146b-4941-a9c7-55c7173bb101/608c30f2-ff67-48b2-81d8-ecb6ade86a50"
+					(reference "#PWR0148")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 184.15 59.69 0)
 		(unit 1)
 		(body_style 1)
@@ -16200,7 +16415,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 92.71 0)
+		(at 173.99 92.71 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16210,7 +16426,7 @@
 		(dnp no)
 		(uuid "f492fe66-26c0-4184-a912-5f2f2ee98732")
 		(property "Reference" "#PWR058"
-			(at 180.34 99.06 0)
+			(at 173.99 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16221,7 +16437,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 183.896 94.742 0)
+			(at 170.434 94.742 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16231,7 +16447,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 92.71 0)
+			(at 173.99 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16242,7 +16458,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 92.71 0)
+			(at 173.99 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16253,7 +16469,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 180.34 92.71 0)
+			(at 173.99 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
