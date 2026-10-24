@@ -913,3 +913,38 @@ And finally I fixed the too small display edge cut
 I still need to do a BUNCH of cleanup, and do the length matching of the SDMMC lines
 
 ## _Time Spent: 17h_
+
+# 2026.10.24: Got a BUNCH of reviews, time ot fix stuff!
+
+After doing a bunch of cleanup myself, I spent a lot of time exporting my designs in PDFs and converting them to images, then submitted my designed to [r/PrintedCircuitBoard](https://www.reddit.com/r/PrintedCircuitBoard/comments/1xax87p/review_request_sbc_for_audio_player/), the [KiCAD discord](https://discordapp.com/channels/502708194179809281/1562144653057466468), and the [Hack Club Slack](https://hackclub.slack.com/archives/C056AMWSFKJ/p1792515056077729). I got a BUNCH of constructive feedback, here some:
+
+- A cool guy on the KiCAD discord did an impedance simulation, and found out that all my impedance matched lines has the wrong impedance. I trust the built in tuning profile calculator of KiCAD, turns out I shouldn't have, and I should have used the PCB manufacture's calculator. My impedances were lower then the target, so I had to make my traces thinner, which was a pretty fast, but I ran into some issues with KiCAD deleting my meanders.
+- I had my SCL and SDA pins swapped on my fuel gauge IC, thanks guy from reddit for pointing it out!
+- I had a bunch of GND stitching VIAs in PADs, thanks Simon from Slack!
+- I had ground damns from vias being to close, so I fixed that, thanks guy from reddit!
+- My analog LDO was powered by 3v3, when is should have been from `+VSYS`
+- etc.
+
+![pcb in 3d view](https://cdn.hackclub.com/01a16d24-32ab-78bf-9ab1-4f318c52dcb8/paste-1792832450948.png)
+
+After this I spent a **bunch** of time looking over the schematic and checking the datasheets of my ICs to find issues. I found one: `+VSYS` can go up to 4.2V, and I use `+VSYS` to pull up my `WKUP` signal, but my MPU can only handle 3.6V, so I added a 47k resistor to create a voltage divider, and bring down the voltage 0.83 of `+VSYS`
+
+![schematic error fixed](https://cdn.hackclub.com/01a16d22-e413-742b-a197-e787cb831341/paste-1792832365439.png)
+
+I also added some fun silkscreen :)
+
+![silscreen](https://cdn.hackclub.com/01a16d22-adb1-7bd6-a79a-089fa608014e/paste-1792832351238.png)
+
+After all these fixes, I was ready submit my design for review to the man himslef `Cyao` 
+
+Here is all the feedback I got (i'm not gonna write it down, so here is an image)
+
+![cyao feedback](https://cdn.hackclub.com/01a16d28-85ca-713b-91aa-33b810b832d0/paste-1792832734201.png)
+
+All these issues made me realize that I should completely redo my DDR routing + pinout :) This time I'll actually follow the best practices
+
+Also, turns out I should have never used 3h spacing for DDR, I should have used 3w, thanks Cyao for pointing this out!
+
+It may seem like I didn't do much, but most of my time has been spent checking my existing design, and making small fixes.
+
+## _Time Spent: 15h_
