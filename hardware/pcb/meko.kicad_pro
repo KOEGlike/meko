@@ -237,7 +237,7 @@
           "corner_radius_percentage": 80,
           "corner_style": 1,
           "max_amplitude": 1.0,
-          "min_amplitude": 0.2,
+          "min_amplitude": 0.1,
           "single_sided": false,
           "spacing": 0.3
         },
@@ -245,7 +245,7 @@
           "corner_radius_percentage": 80,
           "corner_style": 1,
           "max_amplitude": 1.0,
-          "min_amplitude": 0.2,
+          "min_amplitude": 0.1,
           "single_sided": false,
           "spacing": 0.3
         }
@@ -551,7 +551,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "ANT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -575,7 +575,7 @@
         "tuning_profile": ""
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "DDR_ADDR_CTL",
         "pcb_color": "rgb(0, 194, 194)",
         "priority": 12,
@@ -583,7 +583,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.7,
         "name": "DDR_CLOCK",
         "pcb_color": "rgb(221, 133, 0)",
         "priority": 9,
@@ -591,7 +591,7 @@
         "tuning_profile": "100Ohms Diff"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "DDR_LANE0",
         "pcb_color": "rgb(194, 194, 0)",
         "priority": 11,
@@ -599,7 +599,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "DDR_LANE1",
         "pcb_color": "rgb(132, 0, 132)",
         "priority": 10,
@@ -607,7 +607,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.7,
         "name": "DDR_STROBE_LANE0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 8,
@@ -615,7 +615,7 @@
         "tuning_profile": "100Ohms Diff"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.7,
         "name": "DDR_STROBE_LANE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 7,
@@ -637,7 +637,7 @@
         "tuning_profile": ""
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "SDMMC_BOOT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
@@ -645,7 +645,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "SDMMC_EXT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
@@ -653,7 +653,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.35,
         "name": "SDMMC_WL",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
@@ -669,7 +669,7 @@
         "tuning_profile": ""
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.3,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 13,
