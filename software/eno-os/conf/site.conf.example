@@ -1,0 +1,13 @@
+# Build optimization, change these according to your number of cpus available.
+# Run `$ nproc` to see how many you can allocate to Yocto/bitbake.
+PARALLEL_MAKE = "-j 16"
+BB_NUMBER_THREADS = "16"
+
+# Shared cache locations. For reusability purposes, it's much better to have all
+# the downloaded sources and state caches outside of the project directory.
+# Make sure to set correct permissions on these directories.
+DL_DIR = "/opt/yocto/downloads"
+SSTATE_DIR = "/opt/yocto/sstate-cache"
+
+# SDK settings
+SDKMACHINE = "x86_64"
