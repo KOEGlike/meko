@@ -1,0 +1,23 @@
+header:
+  version: 11
+
+machine: meko-v3
+distro: eno
+
+repos:
+  bitbake:
+    url: https://git.openembedded.org/bitbake
+    branch: "2.20"
+    path: sources/bitbake
+    layers:
+      .: "disabled"
+
+  openembedded-core:
+    url: https://git.openembedded.org/openembedded-core
+    branch: blacksail
+    path: sources/openembedded-core
+    layers:
+      meta:
+
+  eno-os:
+    path: .
