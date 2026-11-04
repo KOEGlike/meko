@@ -39,7 +39,7 @@
     (condition "(A.hasNetclass('SDMMC_WL') || A.hasNetclass('UART_BT') || A.hasNetclass('ASI_BT')) && A.intersectsArea('WIRELESS')")
 )
 
-(rule "GND reduced clearance to special nets"
+(rule "GND and PWR reduced clearance to special nets"
     (constraint clearance (min 0.1mm))
-    (condition "B.NetName == 'GND'")
+    (condition "B.hasNetclass('GND') || B.hasNetclass('PWR')")
 )
