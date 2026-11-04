@@ -26,12 +26,12 @@
 
 (rule "DDR reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR')")
+    (condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR') && B.intersectsArea('DDR')")
 )
 
 (rule "SAMA reduced clearance"
     (constraint clearance (min 0.1mm))
-    (condition "(A.hasNetclass('DDR*') || A.hasNetclass('ASI*') || A.hasNetclass('UART*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && A.intersectsArea('SAMA')")
+    (condition "(A.hasNetclass('DDR*') || A.hasNetclass('ASI*') || A.hasNetclass('UART*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && B.intersectsArea('SAMA') ")
 )
 
 (rule "WIRELESS reduced clearance"
