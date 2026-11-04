@@ -948,3 +948,74 @@ Also, turns out I should have never used 3h spacing for DDR, I should have used 
 It may seem like I didn't do much, but most of my time has been spent checking my existing design, and making small fixes.
 
 ## _Time Spent: 15h_
+
+# 2026.11.04: Nuking DDR, reviving DDR, Yocto stuff
+
+_I didn't have that much continous time this week, and I was kinda tired/sick, so I did a bunch of random stuff_
+
+## DDR
+
+Here is the nuked DDR:
+
+![nuked DDR](https://cdn.hackclub.com/01a1a84a-b914-7606-93b7-446f438b7b79/paste-1793824831404.png)
+
+### GND Returns VIAs
+
+To the suggestion of Cyao, I added a bunch of GND return VIAs. Here is a before and after:
+
+**BEFORE:**
+![befre gnd vias](https://cdn.hackclub.com/01a1a847-1b50-767c-850c-e8c3edc5d700/paste-1793824594511.png)
+
+**AFTER:**
+![after gnd vias](https://cdn.hackclub.com/01a1a848-0063-7c20-95c6-df72c9257920/paste-1793824652338.png)
+
+I tried placing a GND VIA next to every signal VIA, but in some places I couldn't find a way to do this, in total I have like 2/3 signal vias without a direct GND via next to it.
+
+### Bit Swapping
+
+I also swapped some bits in the byte lanes for better routing. One time when I swapped some bits, the length of one of the traces would have to have been a lot longer than the others, so this required some trial and error to get right.
+
+![bit swapping](https://cdn.hackclub.com/01a1a84e-6658-7e51-961a-0c0b8cb3b371/paste-1793825072244.png)
+
+_Notice that the lables don't correspond to the pin names_
+
+### Custom Rules
+
+I also messed around with the custom rules, so now it has better detection for traces inside the BGA areas.
+
+```
+(rule "DDR reduced clearance"
+    (constraint clearance (min 0.1mm))
+    (condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR') && B.intersectsArea('DDR')")
+)
+```
+
+### Routing
+
+While messing around with GND VIA placement I was constantly trying to route this, to see if my layout will make routing possible.
+
+Here is my current routing which is pretty much ready for length tuning:
+
+![not length tuned traces](https://cdn.hackclub.com/01a1a852-665a-7e9b-9c31-4c24fc70b025/paste-1793825334146.png)
+
+## Yocto
+
+Since this lil guy will be running Linux, I have to build a custom image for it. For this there exits two major tools: **Buildroot** and **Yocto**
+
+Buildroot is much easier to use, but it's a pain to have reproducible builds. Yocto is way harder, but it's all declarative, and anyone can build the image with minimal setup. 
+
+The choice was obvious: **Yocto**
+
+A while ago I was browsing the `#confessions` channel on the Hack Club Slack, and meant someone who was building a custom Linux distro with Yocto, and they pointed me to a pretty cool [short tutorial series](https://youtu.be/0OYP1b06F7Q) (35m total), which I watched right away. (who knew #confessions was useful)
+
+This all happened like 1.5 months ago, so I forgot a lot of things that I learned before, so I had to rewatch it, and I actually followed it this time 💀
+
+The tutorial runs you through a very specific application, so along the way I did a ton of research of how to tune the configs for my device; including going through the [Linux4SAM](https://developerhelp.microchip.com/xwiki/bin/view/applications/linux4sam/) website by Microchip, and looking at some examples.
+
+After the initial basic config came the first build, which took 30m, without even compiling the Linux Kernel.
+
+My Linux partition is only 100GB(I messed up when creating it) and the build artifacts took up 60GB and made my partition run out of space. So I had to format an SSD to BTRFS and move my project over there.
+
+I still have a lot of config to do, like creating my device tree file, creating a bunch of BitBake layers for out of tree drivers, etc.
+
+## _Time Spent: 12h_
