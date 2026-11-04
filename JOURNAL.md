@@ -969,7 +969,7 @@ To the suggestion of Cyao, I added a bunch of GND return VIAs. Here is a before 
 **AFTER:**
 ![after gnd vias](https://cdn.hackclub.com/01a1a848-0063-7c20-95c6-df72c9257920/paste-1793824652338.png)
 
-I tried placing a GND VIA next to every signal VIA, but in some places I couldn't find a way to do this, in total I have like 2/3 signal vias without a direct GND via next to it.
+I tried placing a GND VIA next to every signal VIA, but in some places I couldn't find a way to do this, in total I have like 2-3 signal vias without a direct GND via next to it.
 
 ### Bit Swapping
 
