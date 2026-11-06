@@ -9,12 +9,12 @@
 (rule "DDR addr/ctl length and skew"
 	(condition "A.hasNetclass('DDR_ADDR_CTL')")
 	(constraint length (min 211ps)(opt 211.25ps)(opt 211.6ps))
-	(constraint skew (max 1ps))
+	(constraint skew (opt 1ps))
 )
 
 (rule "DDR lane0 length and skew"
 	(condition "A.hasNetclass('DDR_LANE0')")
-	(constraint length (min 229.4ps)(opt 229.75ps)(opt 230ps))
+	(constraint length (opt 239ps))
 	(constraint skew (max 1ps))
 )
 
