@@ -247,7 +247,7 @@
           "max_amplitude": 1.0,
           "min_amplitude": 0.1,
           "single_sided": false,
-          "spacing": 0.3
+          "spacing": 0.25
         }
       },
       "via_dimensions": [
@@ -575,7 +575,14 @@
         "tuning_profile": ""
       },
       {
-        "clearance": 0.35,
+        "clearance": 0.25,
+        "name": "DDR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 13,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "tuning_profile": ""
+      },
+      {
         "name": "DDR_ADDR_CTL",
         "pcb_color": "rgb(0, 194, 194)",
         "priority": 12,
@@ -583,7 +590,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.7,
+        "clearance": 0.5,
         "name": "DDR_CLOCK",
         "pcb_color": "rgb(221, 133, 0)",
         "priority": 9,
@@ -591,7 +598,6 @@
         "tuning_profile": "100Ohms Diff"
       },
       {
-        "clearance": 0.35,
         "name": "DDR_LANE0",
         "pcb_color": "rgb(194, 194, 0)",
         "priority": 11,
@@ -599,7 +605,6 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.35,
         "name": "DDR_LANE1",
         "pcb_color": "rgb(132, 0, 132)",
         "priority": 10,
@@ -607,7 +612,7 @@
         "tuning_profile": "50Ohms Single"
       },
       {
-        "clearance": 0.7,
+        "clearance": 0.5,
         "name": "DDR_STROBE_LANE0",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 8,
@@ -615,7 +620,7 @@
         "tuning_profile": "100Ohms Diff"
       },
       {
-        "clearance": 0.7,
+        "clearance": 0.5,
         "name": "DDR_STROBE_LANE1",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 7,
@@ -625,14 +630,14 @@
       {
         "name": "GND",
         "pcb_color": "rgb(132, 132, 132)",
-        "priority": 15,
+        "priority": 16,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "PWR",
         "pcb_color": "rgb(215, 140, 255)",
-        "priority": 14,
+        "priority": 15,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
@@ -672,7 +677,7 @@
         "clearance": 0.3,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 13,
+        "priority": 14,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": "90Ohms Diff"
       }
@@ -731,157 +736,218 @@
         "ASI_CODEC"
       ],
       "/DDR/BA0": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/BA1": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/BA2": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/CK+": [
+        "DDR",
         "DDR_CLOCK"
       ],
       "/DDR/CK-": [
+        "DDR",
         "DDR_CLOCK"
       ],
       "/DDR/CKE": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A0": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A1": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A10": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A11": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A12": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A13": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A14": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A2": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A3": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A4": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A5": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A6": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A7": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A8": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_A9": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/DDR_VREF": [
         "PWR"
       ],
       "/DDR/DQ0": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ1": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ10": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ11": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ12": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ13": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ14": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ15": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ2": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ3": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ4": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ5": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ6": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ7": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQ8": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQ9": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQM0": [
+        "DDR",
         "DDR_LANE0"
       ],
       "/DDR/DQM1": [
+        "DDR",
         "DDR_LANE1"
       ],
       "/DDR/DQS0+": [
+        "DDR",
         "DDR_LANE0",
         "DDR_STROBE_LANE0"
       ],
       "/DDR/DQS0-": [
+        "DDR",
         "DDR_LANE0",
         "DDR_STROBE_LANE0"
       ],
       "/DDR/DQS1+": [
+        "DDR",
         "DDR_LANE1",
         "DDR_STROBE_LANE1"
       ],
       "/DDR/DQS1-": [
+        "DDR",
         "DDR_LANE1",
         "DDR_STROBE_LANE1"
       ],
       "/DDR/ODT": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
+      "/DDR/{DDR_ADDRESS}": [
+        "DDR"
+      ],
       "/DDR/{DDR_CLOCK}": [
+        "DDR",
         "DDR_CLOCK"
       ],
+      "/DDR/{DDR_COMMAND}": [
+        "DDR"
+      ],
+      "/DDR/{DDR_DATA}": [
+        "DDR"
+      ],
       "/DDR/~{CAS}": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/~{CS}": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/DDR/~{RAS}": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
+      "/DDR/~{RESET}": [
+        "DDR"
+      ],
       "/DDR/~{WE}": [
+        "DDR",
         "DDR_ADDR_CTL"
       ],
       "/SAMA7/BOOT.1V8SEL": [
@@ -1486,7 +1552,7 @@
     },
     "tuning_profiles_impedance_geometric": [
       {
-        "enable_time_domain_tuning": true,
+        "enable_time_domain_tuning": false,
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",
@@ -1512,7 +1578,7 @@
         "via_prop_delay": 0
       },
       {
-        "enable_time_domain_tuning": true,
+        "enable_time_domain_tuning": false,
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",
@@ -1538,7 +1604,7 @@
         "via_prop_delay": 0
       },
       {
-        "enable_time_domain_tuning": true,
+        "enable_time_domain_tuning": false,
         "layer_entries": [
           {
             "bottom_reference_layer": "In1.Cu",

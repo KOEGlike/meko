@@ -2,20 +2,20 @@
 
 (rule "DDR clk length and skew"
 	(condition "A.hasNetclass('DDR_CLOCK')")
-	(constraint length (min 230.7ps)(opt 231ps)(opt 231.3ps))
-	(constraint skew (min 1ps)(max 1ps))
+	(constraint length (min 230.7ps)(opt 231ps)(max 231.3ps))
+	(constraint skew (max 1ps))
 )
 
 (rule "DDR addr/ctl length and skew"
 	(condition "A.hasNetclass('DDR_ADDR_CTL')")
-	(constraint length (min 211ps)(opt 211.25ps)(opt 211.6ps))
-	(constraint skew (opt 1ps))
+	(constraint length (min 211ps)(opt 211.25ps)(max 211.6ps))
+	(constraint skew (max 1ps))
 )
 
 (rule "DDR lane0 length and skew"
 	(condition "A.hasNetclass('DDR_LANE0')")
-	(constraint length (opt 243.7ps))
-	(constraint skew (max 1ps))
+	(constraint length (min 35.8mm)(opt 37mm)(max 40.8mm))
+	(constraint skew (max 5mm))
 )
 
 (rule "DDR lane1 length and skew"
@@ -24,22 +24,34 @@
 	(constraint skew (max 1ps))
 )
 
-(rule "DDR reduced clearance"
-    (constraint clearance (min 0.1mm))
-    (condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR') && B.intersectsArea('DDR')")
+# General rule first: everything below takes precedence over it
+(rule "DDR clearance to everything"
+	(constraint clearance (min 0.35mm))
+	(condition "!AB.isCoupledDiffPair() && A.hasNetclass('DDR*') && (B.Type == 'Track' || B.Type == 'Via' || B.Type == 'Pad' || B.Type == 'Zone')")
+)
+
+(rule "DDR diff pair clearance to everything"
+	(constraint clearance (min 0.7mm))
+	(condition "!AB.isCoupledDiffPair() && (A.hasNetclass('DDR_CLOCK') || A.hasNetclass('DDR_STROBE_LANE*')) && (B.Type == 'Track' || B.Type == 'Via' || B.Type == 'Pad' || B.Type == 'Zone')")
+)
+
+
+(rule "RAM reduced clearance"
+	(constraint clearance (min 0.1mm))
+	(condition "A.hasNetclass('DDR*') && A.intersectsArea('DDR') && B.intersectsArea('DDR')")
 )
 
 (rule "SAMA reduced clearance"
-    (constraint clearance (min 0.1mm))
-    (condition "(A.hasNetclass('DDR*') || A.hasNetclass('ASI*') || A.hasNetclass('UART*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && B.intersectsArea('SAMA') ")
+	(constraint clearance (min 0.1mm))
+	(condition "(A.hasNetclass('DDR*') || A.hasNetclass('ASI*') || A.hasNetclass('UART*') || A.hasNetclass('SDMMC*') || A.hasNetclass('USB')) && B.intersectsArea('SAMA')")
 )
 
 (rule "WIRELESS reduced clearance"
-    (constraint clearance (min 0.1mm))
-    (condition "(A.hasNetclass('SDMMC_WL') || A.hasNetclass('UART_BT') || A.hasNetclass('ASI_BT')) && A.intersectsArea('WIRELESS')")
+	(constraint clearance (min 0.1mm))
+	(condition "(A.hasNetclass('SDMMC_WL') || A.hasNetclass('UART_BT') || A.hasNetclass('ASI_BT')) && A.intersectsArea('WIRELESS')")
 )
 
 (rule "GND and PWR reduced clearance to special nets"
-    (constraint clearance (min 0.1mm))
-    (condition "B.hasNetclass('GND') || B.hasNetclass('PWR')")
+	(constraint clearance (min 0.1mm))
+	(condition "B.hasNetclass('GND') || B.hasNetclass('PWR')")
 )
