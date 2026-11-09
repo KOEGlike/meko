@@ -14,7 +14,7 @@
 
 (rule "DDR lane0 length and skew"
 	(condition "A.hasNetclass('DDR_LANE0')")
-	(constraint length (min 41.3mm)(opt 41.8mm)(max 42.3mm))
+	(constraint length (min 42mm)(opt 42.5mm)(max 43mm))
 	(constraint skew (max 5mm))
 )
 
