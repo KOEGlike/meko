@@ -7,8 +7,8 @@
 
 (rule "DDR addr/ctl length and skew"
 	(condition "A.hasNetclass('DDR_ADDR_CTL')")
-	(constraint length (min 39mm)(opt 39.5mm)(max 40mm))
-	(constraint skew (max 1mm))
+	(constraint length (min 41mm)(opt 42.5mm)(max 43mm))
+	(constraint skew (max 2mm))
 )
 
 (rule "DDR lane0 length and skew"
