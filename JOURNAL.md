@@ -1019,3 +1019,54 @@ My Linux partition is only 100GB(I messed up when creating it) and the build art
 I still have a lot of config to do, like creating my device tree file, creating a bunch of BitBake layers for out of tree drivers, etc.
 
 ## _Time Spent: 12h_
+
+# 2026.11.11: Am I finally free? Or is this just an illusions?
+
+_I got sick this week :yipeee:_
+
+After like 3h of trying and failing following all the rules I set for myself, for byte group 0 I couldn't fit all the meanders into my available space, so I reached out for help on the KiCAD discord. [Here](https://discordapp.com/channels/502708194179809281/1188129040889036950/1569046205638377585) is my first message in the convo.
+
+_Not enough space for data strobe length tuning_
+![not enought space for strobe length tuning](https://cdn.hackclub.com/01a1cbf1-135c-7c75-9ac6-6076d8e9e3b7/paste-1794422935329.png)
+
+After talking to some smart people, they enlightened me that the spacing inside the meanders could be less than the spacing between the traces, so I lowered the spacing inside the meanders down to 0.25mm copared to the inter trace spacing of 0.35mm, i did the same with the diff pairs. This required some hacks with my custom rules to allow the meanders spacing to go lower than the specified trace spacing.
+
+They also mentioned that my skew can be higher than 0mm 💀 One person said I could easily get by with +4mm of skew. 
+
+So I routed byte group 0 with all these new rules set in place
+
+![newly routed byte group 0](https://cdn.hackclub.com/01a1cbfb-ba84-7399-84f1-33df8f675e01/paste-1794423633433.png)
+
+Later, another more seasoned engineer pointed out that I should aim closer to 1mm of skew. Time to reroute again :yay:
+
+![new byte group 0](https://cdn.hackclub.com/01a1cc03-8823-7617-a669-1c2d23f58804/paste-1794424145033.png)
+
+Byte group 1 took a lot less time after this, it was probably like 2-3h, i've also had a lil bit more space to work with
+
+![byte group 1 done](https://cdn.hackclub.com/01a1cc04-f5fb-74b1-b6b0-36fc158a8107/paste-1794424238764.png)
+
+I didn't know yet, but routing the addr/ctl lines would be the hardest part of rerouting my DDR. At first I started with the right side, but I didn't have enough space for the inner meanders
+
+![right side](https://cdn.hackclub.com/01a1cc07-4172-7243-bbfb-03f50387c7bd/paste-1794424389141.png)
+
+So I looked at my old routing to remember how I solved this problem the last time:
+
+![old routing](https://cdn.hackclub.com/01a1cc08-5848-7772-8851-44bd09c2b1f3/paste-1794424461079.png)
+
+I routed the clock line out to the left, so I would have more space for the right side meanders.
+
+Follwoing this I routed the left side and the clock, this was pretty easy, but still took time to iterate:
+
+![left side](https://cdn.hackclub.com/01a1cc0a-5361-7383-ab43-4e7f6540fe55/paste-1794424590324.png)
+
+but I still didn't have enough space for the right side inner meanders. So I switched over to manual length matching, but still couldn't fit in the meanders... 
+
+So I cracked, and increased the skew for the addr/ctl lines to 2mm instead of 1mm. With this change, finally I was able to length match all my traces, still with a lot of struggle (check my commit messages). But I think I'm free of DDR for a while?? Is this heaven??
+
+![done addr/ctl and clk](https://cdn.hackclub.com/01a1cc16-1dc1-76db-8daa-2ffb5aebc8ff/paste-1794425362976.png)
+
+After this I've done a ton of cleanup and added back the gnd stitching vias.
+
+![whole PCB](https://cdn.hackclub.com/01a1cc16-b89d-7165-a5d2-2ca5d0fd7992/paste-1794425403223.png)
+
+## _Time Spent: 15h_
