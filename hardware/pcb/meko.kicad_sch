@@ -263,6 +263,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Buses with ambiguous nets, like UART and bit-swapped DDR, have the net names assigned based off of the peripheral.\nSo for example, the the TX net in a UART bus is conntected to the TX pin of the peripheral and not the main MPU."
+		(exclude_from_sim no)
+		(at 116.84 192.024 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5e66d76e-5566-4e68-b992-d28a2b429d5f")
+	)
 	(text "SAMA7"
 		(exclude_from_sim no)
 		(at 142.24 97.536 0)
