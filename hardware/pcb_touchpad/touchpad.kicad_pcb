@@ -91,7 +91,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(aux_axis_origin 148.5011 105.0036)
 		(grid_origin 169.1711 120.1936)
 		(pcbplotparams
@@ -2498,6 +2497,157 @@
 			)
 			(rotate
 				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "LRA:C10-100"
+		(layer "B.Cu")
+		(uuid "433c55c6-4a2f-4b6f-91ca-40feea1679af")
+		(at 169.1711 120.1936 180)
+		(property "Reference" "REF**"
+			(at 12.95 13.45 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "90df59a4-b27d-4fa6-ae74-83a7dc5dfe63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "C10-100"
+			(at 12.95 11.95 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d44e5026-f821-45c0-9aa8-7c24d1416aa5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "085819a8-3c52-43eb-a4fe-c5dfb86666c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "57c0f9b4-1448-442d-8d87-4d1b2ec97116")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 1.76 8.05)
+			(end 1.76 4.775)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "c317aad8-2cc9-4071-baac-e2db4838c426")
+		)
+		(fp_line
+			(start -0.91 8.9)
+			(end 0.91 8.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "08fc1f79-42c1-45e2-aaa3-782334ddf322")
+		)
+		(fp_line
+			(start -1.76 8.05)
+			(end -1.76 4.8)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "71f3be61-8893-4cc7-829a-79ef5c78b2d4")
+		)
+		(fp_arc
+			(start 1.76 8.05)
+			(mid 1.511041 8.651041)
+			(end 0.91 8.9)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "e3d1a623-a01d-4c11-9fae-e8d84f952c35")
+		)
+		(fp_arc
+			(start -0.91 8.9)
+			(mid -1.511041 8.651041)
+			(end -1.76 8.05)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "50f9ca97-f879-4aba-9823-ae4738f0c273")
+		)
+		(fp_arc
+			(start -1.787619 4.764729)
+			(mid 0.014733 -5.089008)
+			(end 1.76 4.775)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(layer "B.SilkS")
+			(uuid "3ad5c985-be62-49c6-b11b-d9b67973a555")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 14.6 14.575 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "929255f1-862d-4fd9-9d49-5718e5f670c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(embedded_fonts no)
+		(model "/home/koeg/Repos/Projects/meko/hardware/pcb_lib/LRA/LRA.step"
+			(offset
+				(xyz 0 0 0.1)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -90)
 			)
 		)
 	)

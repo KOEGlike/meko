@@ -8,7 +8,7 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "ed119ce5-e1a8-4787-9eca-f7886a71a43f")
+		(uuid "fa6ae82c-f574-4666-a0f3-e02ade745f13")
 		(effects
 			(font
 				(size 1 1)
@@ -21,7 +21,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2b94c825-60b9-4546-be7f-12e2d5f95962")
+		(uuid "0945268d-9bfe-40f4-92d6-fd40be2d5d08")
 		(effects
 			(font
 				(size 1 1)
@@ -34,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ef6d26a2-384a-4133-a1df-870efe23af64")
+		(uuid "7076e227-c55b-436b-8457-aa793d2a7da1")
 		(effects
 			(font
 				(size 1 1)
@@ -47,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bae54d6f-fd12-4767-a79a-0a114b1d6462")
+		(uuid "7acd1193-bf92-42fe-9cbf-2478835c6e28")
 		(effects
 			(font
 				(size 1 1)
@@ -65,7 +65,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "daee5c51-b446-438a-b273-41d920c77ca9")
+		(uuid "8575559d-0e83-42a5-b6a2-0bd45111d5fb")
 	)
 	(fp_line
 		(start -0.91 -8.9)
@@ -75,7 +75,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "1f320dd3-3a5c-4d2f-84c1-9c641624a9e3")
+		(uuid "85c4ba38-f856-475f-b62c-0ef1bbbea63d")
 	)
 	(fp_line
 		(start 1.76 -8.05)
@@ -85,7 +85,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "0c4a3d15-9482-4bb7-abdd-8ec9a547f124")
+		(uuid "a528d965-565b-4fb9-905d-9e2d2b341561")
 	)
 	(fp_arc
 		(start -1.76 -8.05)
@@ -96,7 +96,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "7a1e6f77-44e7-435e-a53c-981bab2a2d75")
+		(uuid "808250f2-6917-4e86-8f2c-3bfde54e3918")
 	)
 	(fp_arc
 		(start 0.91 -8.9)
@@ -107,7 +107,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "bd1dc05d-16e3-4dba-a1a0-f015896f9803")
+		(uuid "8a5a2fab-f84c-4915-803c-d41d819a05c5")
 	)
 	(fp_arc
 		(start 1.76 -4.775)
@@ -118,13 +118,13 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "9a9f4eef-3da9-44a2-a4e3-1eced23e7a86")
+		(uuid "8917c261-6095-48e1-b371-015ae4cb6b7f")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 14.6 -14.575 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "6fbd7222-3913-438a-ac4d-8c2cfce7f4a1")
+		(uuid "d2e31aaa-387c-4d7a-a738-dece5b2ee484")
 		(effects
 			(font
 				(size 1 1)
@@ -133,9 +133,9 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "/home/koeg/Repos/Projects/meko/hardware/pcb_lib/LRA/LRA.step"
+	(model "${KIPRJMOD}/../pcb_lib/LRA/LRA.step"
 		(offset
-			(xyz 0 0 0.1)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
