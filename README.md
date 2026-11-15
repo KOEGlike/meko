@@ -5,7 +5,7 @@
 
 A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad
 
-![mockup](images/mockup.png)
+![mockup](https://cdn.hackclub.com/01a1e131-3172-740b-bb72-bbbd0f8e48d4/1.png)
 
 ## Components
 
