@@ -2128,11 +2128,11 @@
 		(at 27.94 29.21 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0b87bb95-d41b-43d0-a8e8-e5d20de01c2f")
 		(property "Reference" "SYM1"
@@ -2190,7 +2190,7 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
+		(property "DigiKey No." ""
 			(at 27.94 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -2278,7 +2278,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MFR" "Molex Connector Corporation"
+		(property "MFR" "Molex "
 			(at 124.206 26.162 0)
 			(hide yes)
 			(show_name no)
@@ -2304,6 +2304,17 @@
 		)
 		(property "LCSC" "C5527934"
 			(at 70.104 48.006 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 69.85 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2505,10 +2516,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "39ba6c94-8914-4215-9b58-c865db1858b2")
 		(property "Reference" "ROW2"
 			(at 158.4 69.85 90)
@@ -2557,6 +2568,17 @@
 		)
 		(property "Description" ""
 			(at 152.4 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 152.4 69.85 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2664,6 +2686,50 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 121.92 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C29266"
+			(at 121.92 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Samsung Electro-Mechanics"
+			(at 121.92 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05A105KO5NNNC"
+			(at 121.92 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "46579079-c6ec-434b-aedb-6e6288573add")
 		)
@@ -2686,10 +2752,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "4cf423a5-685c-4d6a-8f92-d674f1d71047")
 		(property "Reference" "COL3"
 			(at 158.4 59.69 90)
@@ -2747,6 +2813,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "b9add00a-0aac-4c81-a790-dbf2a0d1c478")
 		)
@@ -2766,10 +2843,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "60b9a14e-a2c8-4979-8734-6ff0fc2b7a10")
 		(property "Reference" "COL5"
 			(at 158.4 54.61 90)
@@ -2818,6 +2895,17 @@
 		)
 		(property "Description" ""
 			(at 152.4 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 152.4 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2924,10 +3012,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "8cf58b66-1325-4087-aeb8-481c2a6a020b")
 		(property "Reference" "ROW6"
 			(at 158.4 80.01 90)
@@ -2985,6 +3073,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "b6d05bb2-1190-4bbe-8ed1-b7cb53c11b11")
 		)
@@ -3004,10 +3103,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "9e2655d5-dc48-4a82-bfee-dc0aea5ae47f")
 		(property "Reference" "COL7"
 			(at 158.4 49.53 90)
@@ -3065,6 +3164,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "0507adfa-1851-4596-9b82-3a084f2e21ac")
 		)
@@ -3083,10 +3193,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "aa7a5ef1-724c-49dd-91c0-f0d9ccdce1a6")
 		(property "Reference" "ROW1"
 			(at 158.4 67.31 90)
@@ -3144,6 +3254,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "b22565bc-1b06-4acb-b37f-c0d540b8eac4")
 		)
@@ -3163,10 +3284,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "b2da7e67-b098-40a5-9f3f-6d60ad8ed106")
 		(property "Reference" "COL4"
 			(at 158.4 57.15 90)
@@ -3224,6 +3345,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "f8a8d926-2efb-45ca-b627-106fcb7f0666")
 		)
@@ -3242,10 +3374,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "c6c94e42-d9c7-469d-a6df-fd3675e21561")
 		(property "Reference" "ROW3"
 			(at 158.4 72.39 90)
@@ -3294,6 +3426,17 @@
 		)
 		(property "Description" ""
 			(at 152.4 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 152.4 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3538,6 +3681,39 @@
 				)
 			)
 		)
+		(property "DigiKey No." "1790-IQS7211E001QNRCT-ND"
+			(at 129.54 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "  Azoteq"
+			(at 129.54 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "IQS7211E001QNR"
+			(at 129.54 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "18"
 			(uuid "20235e0a-2b79-4f46-bc15-7baf2786f06b")
 		)
@@ -3694,10 +3870,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "d6898942-3329-4947-885f-722808849749")
 		(property "Reference" "ROW5"
 			(at 158.4 77.47 90)
@@ -3746,6 +3922,17 @@
 		)
 		(property "Description" ""
 			(at 152.4 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 152.4 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3855,6 +4042,50 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 105.41 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C29266"
+			(at 105.41 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Samsung Electro-Mechanics"
+			(at 105.41 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05A105KO5NNNC"
+			(at 105.41 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b257d0a0-a4a6-4660-ab23-fba813435d8a")
 		)
@@ -3876,10 +4107,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "ec121035-7a9a-4bc0-b293-bb371a841fb6")
 		(property "Reference" "ROW4"
 			(at 158.4 74.93 90)
@@ -3937,6 +4168,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "59b6ceb4-1e65-4a52-a831-ce360f0b8aaa")
 		)
@@ -3956,10 +4198,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "f0563a8a-d985-49a8-8ce9-98b519669595")
 		(property "Reference" "COL1"
 			(at 158.4 64.77 90)
@@ -4008,6 +4250,17 @@
 		)
 		(property "Description" ""
 			(at 152.4 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 152.4 64.77 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4117,6 +4370,50 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 97.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C29266"
+			(at 97.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MFR" "Samsung Electro-Mechanics"
+			(at 97.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL05A105KO5NNNC"
+			(at 97.79 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b48807c1-42d2-422a-821f-c29ae00111d0")
 		)
@@ -4139,10 +4436,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "f825e3e4-808e-4047-a3d7-5a916e87e845")
 		(property "Reference" "COL2"
 			(at 158.4 62.23 90)
@@ -4200,6 +4497,17 @@
 				)
 			)
 		)
+		(property "DigiKey No." ""
+			(at 152.4 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "P1"
 			(uuid "c61d017a-0f55-4d21-a743-fe026879f44c")
 		)
@@ -4219,10 +4527,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "fa2dd8af-634a-421c-bba7-7b0255db6e7d")
 		(property "Reference" "COL6"
 			(at 158.4 52.07 90)
@@ -4271,6 +4579,17 @@
 		)
 		(property "Description" ""
 			(at 152.4 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey No." ""
+			(at 152.4 52.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
