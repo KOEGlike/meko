@@ -9,7 +9,7 @@ A Linux handheld with ddr3, a 70Hz e-paper display and a haptic touchpad
 
 ## Why??
 
-I originally wanted to create an MP3 player, but realized that this lil device could do so much more, so I dropped the DAP(Digital Audio Player) only branding
+I wanted to challenge myself and create a unique MP3 player, but realized that this lil device could do so much more, so I dropped the DAP(Digital Audio Player) only branding
 
 You could:
 - Use it as a DAP
