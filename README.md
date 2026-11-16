@@ -5,7 +5,26 @@
 
 A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad
 
-![mockup](https://cdn.hackclub.com/01a1e131-3172-740b-bb72-bbbd0f8e48d4/1.png)
+![hero](images/renders/assembled.png)
+
+## PCBs
+
+The main-board is a 0.8mm 6L PCB with a SIG/GND/PWR/GND/GND/SIG stackup.
+
+The touchpad PCB is a standard 2L 1.6mm board.
+
+### Main board
+
+| Front | Back | Back (no silkscreen) |
+|:---:|:---:|:---:|
+| <a href="images/renders/main_pcb_front.png"><img src="images/renders/main_pcb_front.png" alt="Main PCB front" width="300"></a> | <a href="images/renders/main_pcb_back.png"><img src="images/renders/main_pcb_back.png" alt="Main PCB back" width="300"></a> | <a href="images/renders/main_pcb_back_no_silk.png"><img src="images/renders/main_pcb_back_no_silk.png" alt="Main PCB back without silkscreen" width="300"></a> |
+
+### Touchpad
+
+| Front | Back |
+|:---:|:---:|
+| <a href="images/renders/touchpad_pcb_front.png"><img src="images/renders/touchpad_pcb_front.png" alt="Touchpad PCB front" width="350"></a> | <a href="images/renders/touchpad_pcb_back.png"><img src="images/renders/touchpad_pcb_back.png" alt="Touchpad PCB back" width="350"></a> |
+
 
 ## Components
 
@@ -22,7 +41,7 @@ A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad
 ## Schematics & PCBs
 
 <details>
-<summary><b>Schematics & PCBs</b> (main board + touchpad)</summary>
+<summary><i>Bunch of images</i></summary>
 
 <br>
 
