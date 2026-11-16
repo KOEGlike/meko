@@ -1087,11 +1087,15 @@ I switched to M1.2 screws and inserts because the small size made them a lot eas
 
 The case took around 5h to model in fusion.
 
+![case](https://cdn.hackclub.com/01a1e544-e3c2-7b31-8954-124429f1b661/paste-1794847858570.png)
+
 ## Blender
 
 After the case being done I exported a USD file from fusion that had all my parts laid out which I later imported into fusion. For the PCBs i used the pcb2blender plugins to import my PCBs from KiCAD to Blender.
 
 I change the materials of the case to match the look of transparent resin prints, positioned the cameras and hit render.
+
+![blender](images/renders/assembled.png)
 
 ## Part NRs and BOM
 
@@ -1099,8 +1103,12 @@ I had to find exact part NRs for all of my passives and even for some of my main
 
 I also created the BOM. While trying to find my screen, it turned out that it went out of stock at digikey, so I have to order it now from alibaba Nice!
 
+![Part NRs](https://cdn.hackclub.com/01a1e543-a3a5-7365-ba6b-3ac7b928f867/paste-1794847777066.png)
+
 ## Final touches
 
 I wrote my readme, and organized the files a bit.
+
+![readme](https://cdn.hackclub.com/01a1e543-f785-7cbd-92dd-773ec50ec43d/paste-1794847798507.png)
 
 ## _Time Spent: 9h_
