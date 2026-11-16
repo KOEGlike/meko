@@ -19,6 +19,53 @@ A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad
 - **_Touchpad_**: IQS7211E touch IC with DRV2605 haptic LRA driver
 - **_USB_**: USB 2.0 with OTG
 
+## Schematics & PCBs
+
+<details>
+<summary><b>Schematics & PCBs</b> (main board + touchpad)</summary>
+
+<br>
+
+### Main board
+
+<img src="images/main_pcb/front.png" alt="Main board PCB front" width="100%">
+
+<img src="images/main_pcb/back.png" alt="Main board PCB back" width="100%">
+
+<img src="images/main_pcb/pwr.png" alt="Main board PCB power planes" width="100%">
+
+<img src="images/main_schematic/meko-1.webp" alt="Overview schematic" width="100%">
+
+<img src="images/main_schematic/meko-2.webp" alt="SAMA7 schematic" width="100%">
+
+<img src="images/main_schematic/meko-3.webp" alt="DDR schematic" width="100%">
+
+<img src="images/main_schematic/meko-4.webp" alt="Power schematic" width="100%">
+
+<img src="images/main_schematic/meko-5.webp" alt="Wireless schematic" width="100%">
+
+<img src="images/main_schematic/meko-6.webp" alt="USB schematic" width="100%">
+
+<img src="images/main_schematic/meko-7.webp" alt="Audio schematic" width="100%">
+
+<img src="images/main_schematic/meko-8.webp" alt="SD cards schematic" width="100%">
+
+<img src="images/main_schematic/meko-9.webp" alt="Display schematic" width="100%">
+
+<img src="images/main_schematic/meko-10.webp" alt="Touchpad schematic" width="100%">
+
+<img src="images/main_schematic/meko-11.webp" alt="Buttons schematic" width="100%">
+
+### Touchpad
+
+<img src="images/touchpad_pcb/front.png" alt="Touchpad PCB front" width="100%">
+
+<img src="images/touchpad_pcb/back.png" alt="Touchpad PCB back" width="100%">
+
+<img src="images/touchpad_schematic.webp" alt="Touchpad schematic" width="100%">
+
+</details>
+
 ## Shoutouts
 
 - Diamond Master from The KiCAD discord: Thank you for doing sims! Without you doing the impedance sim the project would have failed!
