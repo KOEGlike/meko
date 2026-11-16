@@ -3,9 +3,32 @@
 
 # Meko
 
-A linux music player with ddr3, a 70hz e-paper display and a haptic touchpad
+A Linux handheld with ddr3, a 70Hz e-paper display and a haptic touchpad
 
 ![hero](images/renders/assembled.png)
+
+## Why??
+
+I originally wanted to create an MP3 player, but realized that this lil device could do so much more, so I dropped the DAP(Digital Audio Player) only branding
+
+You could:
+- Use it as a DAP
+- Use it's haptic touchpad as a synth
+- Put your AI agent on it (if you really want to)
+- Host your website
+- Play games
+
+## Components
+
+- **_MPU_**: SAMA7D65, it can boost up to 1GHz, good audio subsystem and gpu
+- **_RAM_**: Half a gig of DDR3L(MT41K256M16TW)
+- **_EPD_**: Sharp MIP LS022B7DH03, can go up to 70Hz, 240x320
+- **_Audio_**: TAC5212 
+  - **_DAC+AMP_**: 192kHz, 32-bit, 120dB SNR, 2Vrms
+  - **_ADC_**: 192kHz, 32-bit, 119dB SNR
+- **_Wireless_**: Bluetooth 6 with LE audio and WiFi 6E
+- **_Touchpad_**: IQS7211E touch IC with DRV2605 haptic LRA driver
+- **_USB_**: USB 2.0 with OTG
 
 ## PCBs
 
@@ -25,18 +48,6 @@ The touchpad PCB is a standard 2L 1.6mm board.
 |:---:|:---:|
 | <a href="images/renders/touchpad_pcb_front.png"><img src="images/renders/touchpad_pcb_front.png" alt="Touchpad PCB front" width="350"></a> | <a href="images/renders/touchpad_pcb_back.png"><img src="images/renders/touchpad_pcb_back.png" alt="Touchpad PCB back" width="350"></a> |
 
-
-## Components
-
-- **_MPU_**: SAMA7D65, it can boost up to 1GHz, good audio subsystem and gpu
-- **_RAM_**: Half a gig of DDR3L(MT41K256M16TW)
-- **_EPD_**: Sharp MIP LS022B7DH03, can go up to 70Hz, 240x320
-- **_Audio_**: TAC5212 
-  - **_DAC+AMP_**: 192kHz, 32-bit, 120dB SNR, 2Vrms
-  - **_ADC_**: 192kHz, 32-bit, 119dB SNR
-- **_Wireless_**: Bluetooth 6 with LE audio and WiFi 6E
-- **_Touchpad_**: IQS7211E touch IC with DRV2605 haptic LRA driver
-- **_USB_**: USB 2.0 with OTG
 
 ## Schematics & PCBs
 
@@ -85,6 +96,20 @@ The touchpad PCB is a standard 2L 1.6mm board.
 
 </details>
 
+## Software
+
+This lil guy will be running on a custom Linux image built with Yocto, which is currently WIP.
+
+## Fabrication
+
+This board was designed for PCBWAYs process and stackup. For more info about the stackup check out the user.comments layer in KiCAD.
+
+Every part has a _MFR_, _MPN_, and a _LCSC_/_DigiKey no._ field. You can export a complete BOM from KiCAD.
+
+## External KiCAD Libraries
+
+I used Cyao's [ckl](https://github.com/cheyao/ckl) library.
+
 ## Shoutouts
 
 - Diamond Master from The KiCAD discord: Thank you for doing sims! Without you doing the impedance sim the project would have failed!
@@ -93,6 +118,12 @@ The touchpad PCB is a standard 2L 1.6mm board.
 - r/PrintedCircuitBoard: Thank you for pointing out a bunch of small and large mistakes both in my schematic and PCB
 - Hack Club: Thank you for providing an awesome community and funding for my project!!
 - All the other people from the KiCAD Discord! Y'all are awesome!!
+
+## AI usage
+
+The hardware and software was 100% _Human Designed™_ .
+
+AI was used to find datasheets, as a tool to point me in the right direction, and to fix my horrible grammar.
 
 ## Journals
 
