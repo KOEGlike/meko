@@ -1225,7 +1225,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -1240,13 +1240,13 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "MPN",
           "name": "MPN",
           "show": true
@@ -1301,18 +1301,6 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
           "show": false
@@ -1327,7 +1315,13 @@
           "group_by": false,
           "label": "MFR",
           "name": "MFR",
-          "show": false
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DigiKey No.",
+          "name": "DigiKey No.",
+          "show": true
         }
       ],
       "filter_string": "",
