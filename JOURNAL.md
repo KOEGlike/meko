@@ -1070,3 +1070,37 @@ After this I've done a ton of cleanup and added back the gnd stitching vias.
 ![whole PCB](https://cdn.hackclub.com/01a1cc16-b89d-7165-a5d2-2ca5d0fd7992/paste-1794425403223.png)
 
 ## _Time Spent: 15h_
+
+# 2026.11.16: Locked in, finished case, created renders, added part NRs., wrote readme
+
+After finishing the PCB, I really wanted to submit this project ASAP! So I spent a bunch of time finishing it up.
+
+## Case
+
+I originally tired to use FreeCAD to model the case, so all the software I used was OSS, but after trying for 2h, I gave up and ran back to Fusion 😭FreeCAD is just not there yet
+
+In Fusion I was flying compared to FreeCAD, I imported both of my PCBs, did the necessary cleanup on them to be usable in fusion (locking every component to its parent).
+
+I originally wanted to have a springy touchpad, but realized that this was too hard of a challenge in this small of a space, so the touchpad is now part of the outer shell.
+
+I switched to M1.2 screws and inserts because the small size made them a lot easier to use
+
+The case took around 5h to model in fusion.
+
+## Blender
+
+After the case being done I exported a USD file from fusion that had all my parts laid out which I later imported into fusion. For the PCBs i used the pcb2blender plugins to import my PCBs from KiCAD to Blender.
+
+I change the materials of the case to match the look of transparent resin prints, positioned the cameras and hit render.
+
+## Part NRs and BOM
+
+I had to find exact part NRs for all of my passives and even for some of my main components. This was mainly done with the LCSC filters and the DigiKey search bar.
+
+I also created the BOM. While trying to find my screen, it turned out that it went out of stock at digikey, so I have to order it now from alibaba Nice!
+
+## Final touches
+
+I wrote my readme, and organized the files a bit.
+
+## _Time Spent: 9h_
