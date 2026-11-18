@@ -1,17 +1,20 @@
 > [!CAUTION]
 > V3 is a WIP, if you want updates follow my [journal](JOURNAL.md). Check out the [v2 branch](https://github.com/KOEGlike/meko/tree/v2) for a completed project
 
-# Meko
-
-A Linux handheld with ddr3, a 70Hz e-paper display and a haptic touchpad
-
-![hero](images/renders/assembled.png)
+<p align="center">
+    <h1>Meko</h1>
+    <i>A Linux handheld with ddr3, a 70Hz e-paper display and a haptic touchpad</i>
+    <br/>
+    <img src="images/logo/logo1.svg" alt="Meko logo" width="150">
+    <img src="images/renders/assembled.png" alt="hero" height="500"/>
+</p>
 
 ## Why??
 
 I wanted to challenge myself and create a unique MP3 player, but realized that this lil device could do so much more, so I dropped the DAP(Digital Audio Player) only branding
 
 You could:
+
 - Use it as a DAP
 - Use it's haptic touchpad as a synth
 - Put your AI agent on it (if you really want to)
@@ -23,7 +26,7 @@ You could:
 - **_MPU_**: SAMA7D65, it can boost up to 1GHz, good audio subsystem and gpu
 - **_RAM_**: Half a gig of DDR3L(MT41K256M16TW)
 - **_EPD_**: Sharp MIP LS022B7DH03, can go up to 70Hz, 240x320
-- **_Audio_**: TAC5212 
+- **_Audio_**: TAC5212
   - **_DAC+AMP_**: 192kHz, 32-bit, 120dB SNR, 2Vrms
   - **_ADC_**: 192kHz, 32-bit, 119dB SNR
 - **_Wireless_**: Bluetooth 6 with LE audio and WiFi 6E
@@ -38,16 +41,15 @@ The touchpad PCB is a standard 2L 1.6mm board.
 
 ### Main board
 
-| Front | Back | Back (no silkscreen) |
-|:---:|:---:|:---:|
+|                                                             Front                                                              |                                                            Back                                                             |                                                                      Back (no silkscreen)                                                                      |
+| :----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <a href="images/renders/main_pcb_front.png"><img src="images/renders/main_pcb_front.png" alt="Main PCB front" width="300"></a> | <a href="images/renders/main_pcb_back.png"><img src="images/renders/main_pcb_back.png" alt="Main PCB back" width="300"></a> | <a href="images/renders/main_pcb_back_no_silk.png"><img src="images/renders/main_pcb_back_no_silk.png" alt="Main PCB back without silkscreen" width="300"></a> |
 
 ### Touchpad
 
-| Front | Back |
-|:---:|:---:|
+|                                                                   Front                                                                    |                                                                  Back                                                                   |
+| :----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
 | <a href="images/renders/touchpad_pcb_front.png"><img src="images/renders/touchpad_pcb_front.png" alt="Touchpad PCB front" width="350"></a> | <a href="images/renders/touchpad_pcb_back.png"><img src="images/renders/touchpad_pcb_back.png" alt="Touchpad PCB back" width="350"></a> |
-
 
 ## Schematics & PCBs
 
@@ -114,6 +116,7 @@ I used Cyao's [ckl](https://github.com/cheyao/ckl) library.
 
 - Diamond Master from The KiCAD discord: Thank you for doing sims! Without you doing the impedance sim the project would have failed!
 - Cyao: Thank you for taking a deep look at my DDR routing and pointing out a **BUNCH** of issues! The performance of my DDR would have been cooked without you! Your SBC was also a huge inspiration!!
+- [Cwurn](https://github.com/cw-urn): Thank you sooo much for making the awesome logo!!
 - Daniel from The KiCAD discord: Thank you for helping me with all the high-speed basics, and pointing out issues with my DDR!
 - r/PrintedCircuitBoard: Thank you for pointing out a bunch of small and large mistakes both in my schematic and PCB
 - Hack Club: Thank you for providing an awesome community and funding for my project!!
