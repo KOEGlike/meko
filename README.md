@@ -6,7 +6,7 @@
     <i>A Linux handheld with ddr3, a 70Hz e-paper display and a haptic touchpad</i>
     <br/>
     <img src="images/logo/logo1.svg" alt="Meko logo" width="150">
-    <img src="images/renders/assembled.png" alt="hero" height="500"/>
+    <img src="images/renders/assembled.webp" alt="hero" height="500"/>
 </p>
 
 ## Why??
