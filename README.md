@@ -20,6 +20,8 @@ I wanted to challenge myself and create a unique MP3 player, but along the way I
 - Connect it to your printer
 - Play games
 
+![assembled back](images/renders/assembled_back.webp)
+
 ## Components
 
 - **_MPU_**: SAMA7D65, it can boost up to 1GHz, good audio subsystem and has a GPU
@@ -32,6 +34,7 @@ I wanted to challenge myself and create a unique MP3 player, but along the way I
 - **_Touchpad_**: IQS7211E touch IC with DRV2605 haptic LRA driver
 - **_USB_**: USB 2.0 with OTG, so you can use it to charge your earbuds
 - **_Storage_**: Two microSD slots, one for the OS (inaccessible from outside) and for music/other stuff(hot-swapped at runtime)
+- **_MagSafe_**
 
 ## PCBs
 
