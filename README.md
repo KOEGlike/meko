@@ -115,6 +115,10 @@ Every part has a _MFR_, _MPN_, and a _LCSC_/_DigiKey no._ field. You can export 
 
 I used Cyao's [ckl](https://github.com/cheyao/ckl) library. You should install this if you want to edit this project.
 
+## Other stuff
+
+As part of this project I PR-ed in a [footprint](https://gitlab.com/kicad/libraries/kicad-library-tools/-/merge_requests/2132) and a [symbol](https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/5616) to KiCAD which both got merged
+
 ## Shoutouts
 
 - Diamond Master from The KiCAD discord: Thank you for doing sims! Without you doing the impedance sim the project would have failed!
