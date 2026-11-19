@@ -6,32 +6,32 @@
     <i>A Linux handheld with ddr3, a 70Hz e-paper display and a haptic touchpad</i>
     <br/>
     <img src="images/logo/logo1.svg" alt="Meko logo" width="150">
+    <br/>
     <img src="images/renders/assembled.webp" alt="hero" height="500"/>
 </p>
 
 ## Why??
 
-I wanted to challenge myself and create a unique MP3 player, but realized that this lil device could do so much more, so I dropped the DAP(Digital Audio Player) only branding
+I wanted to challenge myself and create a unique MP3 player, but along the way I realized that you could use this lil device for lots of other things than a DAP (digital audio player) like you could:
 
-You could:
-
-- Use it as a DAP
 - Use it's haptic touchpad as a synth
 - Put your AI agent on it (if you really want to)
 - Host your website
+- Connect it to your printer
 - Play games
 
 ## Components
 
-- **_MPU_**: SAMA7D65, it can boost up to 1GHz, good audio subsystem and gpu
+- **_MPU_**: SAMA7D65, it can boost up to 1GHz, good audio subsystem and has a GPU
 - **_RAM_**: Half a gig of DDR3L(MT41K256M16TW)
 - **_EPD_**: Sharp MIP LS022B7DH03, can go up to 70Hz, 240x320
 - **_Audio_**: TAC5212
-  - **_DAC+AMP_**: 192kHz, 32-bit, 120dB SNR, 2Vrms
+  - **_DAC+AMP_**: 192kHz, 32-bit, 120dB SNR, 2Vrms in balanced mode
   - **_ADC_**: 192kHz, 32-bit, 119dB SNR
 - **_Wireless_**: Bluetooth 6 with LE audio and WiFi 6E
 - **_Touchpad_**: IQS7211E touch IC with DRV2605 haptic LRA driver
-- **_USB_**: USB 2.0 with OTG
+- **_USB_**: USB 2.0 with OTG, so you can use it to charge your earbuds
+- **_Storage_**: Two microSD slots, one for the OS (inaccessible from outside) and for music/other stuff(hot-swapped at runtime)
 
 ## PCBs
 
@@ -104,7 +104,7 @@ This lil guy will be running on a custom Linux image built with Yocto, which is 
 
 ## Fabrication
 
-This board was designed for PCBWAYs process and stackup. For more info about the stackup check out the user.comments layer in KiCAD.
+This board was designed for PCBWAYs process and stackup. For more info about the stackup and fabrication constrains check out the `user.comments` layer and the board setup in KiCAD.
 
 Every part has a _MFR_, _MPN_, and a _LCSC_/_DigiKey no._ field. You can export a complete BOM from KiCAD.
 
