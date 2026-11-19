@@ -34,7 +34,7 @@ I wanted to challenge myself and create a unique MP3 player, but along the way I
 - **_Touchpad_**: IQS7211E touch IC with DRV2605 haptic LRA driver
 - **_USB_**: USB 2.0 with OTG, so you can use it to charge your earbuds
 - **_Storage_**: Two microSD slots, one for the OS (inaccessible from outside) and for music/other stuff(hot-swapped at runtime)
-- **_MagSafe_**: So you can slap it in your car or next to your monitor
+- **_MagSafe Magnets_**: So you can slap it in your car or next to your monitor
 
 ## PCBs
 
