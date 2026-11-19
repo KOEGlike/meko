@@ -43,13 +43,13 @@ The touchpad PCB is a standard 2L 1.6mm board.
 
 |                                                             Front                                                              |                                                            Back                                                             |                                                                      Back (no silkscreen)                                                                      |
 | :----------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="images/renders/main_pcb_front.png"><img src="images/renders/main_pcb_front.png" alt="Main PCB front" width="300"></a> | <a href="images/renders/main_pcb_back.png"><img src="images/renders/main_pcb_back.png" alt="Main PCB back" width="300"></a> | <a href="images/renders/main_pcb_back_no_silk.png"><img src="images/renders/main_pcb_back_no_silk.png" alt="Main PCB back without silkscreen" width="300"></a> |
+| <a href="images/renders/main_pcb_front.webp"><img src="images/renders/main_pcb_front.webp" alt="Main PCB front" width="300"></a> | <a href="images/renders/main_pcb_back.webp"><img src="images/renders/main_pcb_back.webp" alt="Main PCB back" width="300"></a> | <a href="images/renders/main_pcb_back_no_silk.webp"><img src="images/renders/main_pcb_back_no_silk.webp" alt="Main PCB back without silkscreen" width="300"></a> |
 
 ### Touchpad
 
 |                                                                   Front                                                                    |                                                                  Back                                                                   |
 | :----------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-| <a href="images/renders/touchpad_pcb_front.png"><img src="images/renders/touchpad_pcb_front.png" alt="Touchpad PCB front" width="350"></a> | <a href="images/renders/touchpad_pcb_back.png"><img src="images/renders/touchpad_pcb_back.png" alt="Touchpad PCB back" width="350"></a> |
+| <a href="images/renders/touchpad_pcb_front.webp"><img src="images/renders/touchpad_pcb_front.webp" alt="Touchpad PCB front" width="350"></a> | <a href="images/renders/touchpad_pcb_back.webp"><img src="images/renders/touchpad_pcb_back.webp" alt="Touchpad PCB back" width="350"></a> |
 
 ## Schematics & PCBs
 
@@ -110,12 +110,12 @@ Every part has a _MFR_, _MPN_, and a _LCSC_/_DigiKey no._ field. You can export 
 
 ## External KiCAD Libraries
 
-I used Cyao's [ckl](https://github.com/cheyao/ckl) library.
+I used Cyao's [ckl](https://github.com/cheyao/ckl) library. You should install this if you want to edit this project.
 
 ## Shoutouts
 
 - Diamond Master from The KiCAD discord: Thank you for doing sims! Without you doing the impedance sim the project would have failed!
-- Cyao: Thank you for taking a deep look at my DDR routing and pointing out a **BUNCH** of issues! The performance of my DDR would have been cooked without you! Your SBC was also a huge inspiration!!
+- Cyao: Thank you for taking a deep look at my DDR routing and pointing out a **BUNCH** of issues! The performance of my DDR would have been cooked without you! You and your SBC were a huge inspiration!!
 - [Cwurn](https://github.com/cw-urn): Thank you sooo much for making the awesome logo!!
 - Daniel from The KiCAD discord: Thank you for helping me with all the high-speed basics, and pointing out issues with my DDR!
 - r/PrintedCircuitBoard: Thank you for pointing out a bunch of small and large mistakes both in my schematic and PCB
