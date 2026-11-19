@@ -124,6 +124,7 @@ I used Cyao's [ckl](https://github.com/cheyao/ckl) library. You should install t
 - r/PrintedCircuitBoard: Thank you for pointing out a bunch of small and large mistakes both in my schematic and PCB
 - Hack Club: Thank you for providing an awesome community and funding for my project!!
 - All the other people from the KiCAD Discord! Y'all are awesome!!
+- Timon for creating an awesome [touchpad pattern generator](https://github.com/timonsku/Touchpad-Generator)
 
 ## AI usage
 
