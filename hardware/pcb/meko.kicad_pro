@@ -146,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.0762,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.25,
         "min_groove_width": 0.0,
@@ -159,7 +159,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.15,
-        "min_track_width": 0.1,
+        "min_track_width": 0.0762,
         "min_via_annular_width": 0.075,
         "min_via_diameter": 0.3,
         "solder_mask_to_copper_clearance": 0.0,
@@ -1542,7 +1542,7 @@
             "diff_pair_gap": 0,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 115000
+            "width": 107200
           },
           {
             "bottom_reference_layer": "UNDEFINED",
@@ -1550,7 +1550,7 @@
             "diff_pair_gap": 0,
             "signal_layer": "B.Cu",
             "top_reference_layer": "In4.Cu",
-            "width": 115000
+            "width": 107200
           }
         ],
         "profile_name": "50Ohms Single",
@@ -1565,15 +1565,15 @@
           {
             "bottom_reference_layer": "In1.Cu",
             "delay": 5850000,
-            "diff_pair_gap": 100000,
+            "diff_pair_gap": 105000,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 100000
+            "width": 89200
           },
           {
             "bottom_reference_layer": "UNDEFINED",
             "delay": 5850000,
-            "diff_pair_gap": 100000,
+            "diff_pair_gap": 105000,
             "signal_layer": "B.Cu",
             "top_reference_layer": "In4.Cu",
             "width": 100000
@@ -1591,15 +1591,15 @@
           {
             "bottom_reference_layer": "In1.Cu",
             "delay": 5913100,
-            "diff_pair_gap": 180000,
+            "diff_pair_gap": 185000,
             "signal_layer": "F.Cu",
             "top_reference_layer": "UNDEFINED",
-            "width": 100000
+            "width": 89200
           },
           {
             "bottom_reference_layer": "UNDEFINED",
             "delay": 5913100,
-            "diff_pair_gap": 180000,
+            "diff_pair_gap": 185000,
             "signal_layer": "B.Cu",
             "top_reference_layer": "In4.Cu",
             "width": 100000
