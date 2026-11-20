@@ -1112,3 +1112,53 @@ I wrote my readme, and organized the files a bit.
 ![readme](https://cdn.hackclub.com/01a1e543-f785-7cbd-92dd-773ec50ec43d/paste-1794847798507.png)
 
 ## _Time Spent: 9h_
+
+# 2026.11.20: Got a logo; PCBWay dipped => had to change stackup; Redid case and renders
+
+## Logo
+
+A great friend of mine made an awesome logo for Meko, I put this on the PCBs and the case!
+
+![logo](https://cdn.hackclub.com/01a1fab5-2024-7663-aa4c-aea858b6034b/logo1.png)
+
+## Case
+
+I got a great suggestion from AethelVeritas on slack, that I should try to make the device look more organic buy having a loft between the touchpad surface and the rest of the device. 
+
+![new design](https://cdn.hackclub.com/01a1fab2-4c72-746f-b986-50f4c6f2925f/image.png)
+
+But I realized that this made the device kinda look chunky, so I switched back to the old design. 
+
+While doing the whole remodeling, I caught some unpolished parts of the case, and polished them up!
+
+I also embossed the new awesome logo on the back of the case!
+
+## PCBWay
+
+PCBWay said that when my design was finished, I should add the PCBs to the cart, and send them the cart ID. I did this and the total turned out to be around 1k with only the PCBs. When they replied they said that they could only chip in $140... Damn. 
+
+So i needed to switch over to jlc because, they make PCB for much less money. But JLC didn't have the same stackup as PCBWay, so I needed to resize the my impedance controlled traces; this included: DDR, USB and SDMMC. The toughest of these was the DDR, since it has a bunch of meanders, which i needed to delete to resize the traces, and then length match again.
+
+The final ddr routing looks almost identical to the old one, but the traces are a bit thinner.
+
+One thing with JLC, is that if you order a PCB with 6 or more layers, you get VIA in pad for free. I deliberately didn't use via in pad because it was really expansive at PCBWay. Damn. If i used via in pad, my minimum via size could have been a lot larger, further reducing the cost of my PCBs.
+
+3 peaces assembled from both PCBs with parts will cost around $800. A lot less than the 1k without parts and assembly cost from PCBWay.
+
+## Renders! 
+
+After all these changes I redid the renders (i did this before rerouting the ddr, but that's nearly identical)
+
+I also tried making an animation, but it turned out really glitchy, so I ditched that.
+
+![touchpad PCB front](https://cdn.hackclub.com/01a1fabf-3537-7cab-bd41-5bf5d80136f7/touchpad_pcb_front.webp)
+![touchpad PCB back](https://cdn.hackclub.com/01a1fabf-3705-72c9-8dd6-a7476cb1df53/touchpad_pcb_back.webp)
+![main PCB front](https://cdn.hackclub.com/01a1fabf-3892-7ba9-ad93-f9e3a84c3017/main_pcb_front.webp)
+![main PCB back, no silkscreen](https://cdn.hackclub.com/01a1fabf-3a70-72eb-bb46-2a09c2058545/main_pcb_back_no_silk.webp)
+![main PCB back](https://cdn.hackclub.com/01a1fabf-3d5b-7a3b-bdfd-217203bf3344/main_pcb_back.webp)
+![assembled with logo](https://cdn.hackclub.com/01a1fabf-3ed2-771d-8d48-c6c847ce4c20/assembled_w_logo.webp)
+![assembled front](https://cdn.hackclub.com/01a1fabf-4053-7782-becb-8da46e37ff5d/assembled_front.webp)
+![assembled back](https://cdn.hackclub.com/01a1fabf-41b3-76c9-8a14-3a7900b266da/assembled_back.webp)
+![assembled](https://cdn.hackclub.com/01a1fabf-4343-786c-b2b3-a068b7d0d51a/assembled.webp)
+
+## _Time Spent: 5h_
