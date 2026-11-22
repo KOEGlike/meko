@@ -1162,3 +1162,31 @@ I also tried making an animation, but it turned out really glitchy, so I ditched
 ![assembled](https://cdn.hackclub.com/01a1fabf-4343-786c-b2b3-a068b7d0d51a/assembled.webp)
 
 ## _Time Spent: 5h_
+
+# 2026.11.22: Leting AI loose on my project
+
+After I asked opencode to look into CE certification, and how my project would hold up, it also discovered a part number error, which would have made my wireless module not have an integrated antenna, making it completely dysfunctional. 
+
+Seeing that Deepseek could catch a small one number error like this in a part number, I decided to let it do a deep dive into my project.
+
+It actually found some large issues but simple issues:
+
+- I used 3V3 pull-ups on my 1V8 WiFi SDMMC bus, this would have made my WiFi not work
+- I didn't place a 10u cap on the BAT pin of my PMIC
+- A small length matching issue
+
+It also produced a bunch of garbage, but i was able to filter this out.
+
+Now that I saw what a free model could do, I re-subscribed to claude for a month, to see what a better model could do.
+
+After Opus 5.5 high was done with its analysis, it found even more issues, which wouldn't have made my PCB not work, but would have made it unstable. But it still produced some garbage, but less.
+
+You can see its output in [hardware/CLAUDE_DESIGN_REVIEW.md](hardware/CLAUDE_DESIGN_REVIEW.md)
+
+I'm still working through what is actually real and what is actually garbage, but so far it has found:
+
+- I used the wrong calibration resistor for the 1v8 SDMMC line
+- Left out large decoupling caps from my MPU
+- other small decoupling related stuff
+
+## _Time Spent: 1.5h_
