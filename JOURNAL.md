@@ -1189,4 +1189,6 @@ I'm still working through what is actually real and what is actually garbage, bu
 - Left out large decoupling caps from my MPU
 - other small decoupling related stuff
 
+![claude review](https://cdn.hackclub.com/01a20529-1b06-7790-af79-1d9d89eccf6d/image.png)
+
 ## _Time Spent: 1.5h_
