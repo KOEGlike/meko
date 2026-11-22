@@ -141,7 +141,9 @@ As part of this project I PR-ed in a [footprint](https://gitlab.com/kicad/librar
 
 The hardware and software was 100% _Human Designed™_ .
 
-AI was used to find datasheets, as a tool to point me in the right direction, and to fix my horrible grammar.
+AI was used as a review tool, it cought simple hardware mistakes, which flew over my head. It also produced a bunch of false info. It's output can be seen in [hardware/DESIGN_REVIEW.md](hardware/DESIGN_REVIEW.md), read with caution.
+
+AI was also used to find datasheets, as a tool to point me in the right direction, and to fix my horrible grammar.
 
 ## Journals
 
