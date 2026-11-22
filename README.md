@@ -107,7 +107,14 @@ This lil guy will be running on a custom Linux image built with Yocto, which is 
 
 ## Fabrication
 
-This board was designed for PCBWAYs process and stackup. For more info about the stackup and fabrication constrains check out the `user.comments` layer and the board setup in KiCAD.
+This board was designed for JLCPCB's process:
+- use the `JLC06081H-1080` stackup
+- 0.15/0.3mm VIAs
+- ENIG for BGAs
+- 0.8mm board thickness
+
+
+For more info about the stackup and fabrication constrains check out the `user.comments` layer and the board setup in KiCAD.
 
 Every part has a _MFR_, _MPN_, and a _LCSC_/_DigiKey no._ field. You can export a complete BOM from KiCAD.
 
