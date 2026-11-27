@@ -1,6 +1,6 @@
 # Meko v3: Hardware Design Review
 
-*Review date: 2026-11-22; updated 2026-11-27 with the owner's later fixes (see "Resolved since the review"). Covers the main board (`hardware/pcb`) and the touchpad board (`hardware/pcb_touchpad`) as they stood in the working tree after the owner's two fixes: the WiFi SDMMC pull-ups moved to the correct rail, and C123 (10 µF) added on the BQ25640 BAT pin.*
+*Review date: 2026-11-22; updated 2026-11-27 with the owner's later fixes and design decisions (see "Resolved since the review" and "Accepted by design"). Covers the main board (`hardware/pcb`) and the touchpad board (`hardware/pcb_touchpad`) as they stood in the working tree after the owner's two fixes: the WiFi SDMMC pull-ups moved to the correct rail, and C123 (10 µF) added on the BQ25640 BAT pin.*
 
 ## How this review was done
 
@@ -19,23 +19,28 @@
 | **MEDIUM** | Works marginally / out of spec / reliability, EMI, SI or DFM risk |
 | **LOW** | Best practice, minor optimisation |
 | **INFO** | Observation or rationale, no action needed |
+| **RESOLVED** | Fixed by the owner after the review and verified against the design files |
+| **ACCEPTED** | Deliberately left as-is by the owner, with a documented mitigation and residual risk |
 
 ## Executive summary
 
 **No CRITICAL issues were found.** Every custom symbol and footprint that was checked matches its datasheet: the SAMA7D65 343-ball map (all balls), MAYA-W386, BQ25640, MCP16502, ECMF02, DDR3L FBGA-96, and the TAC5212 pin numbering. All DDR3L connections are valid. Every SoC pin-mux assignment is legal and sits on a correctly powered I/O bank. Both FPC cables are pin-1 to pin-1, checked in the 3D assembly. The board can be fabricated at JLC as drawn: through-vias only, 0.3/0.15 mm vias, 0.65 mm BGA fanout without via-in-pad.
 
-Finding count: 2 HIGH, 26 MEDIUM, 52 LOW, 18 INFO, 5 RESOLVED (some issues appear under more than one area; see the duplicates table).
+Finding count: 1 HIGH, 20 MEDIUM, 52 LOW, 18 INFO, 10 RESOLVED, 2 ACCEPTED (some issues appear under more than one area; see the duplicates table).
 
 ### Fix before ordering (highest priority)
 
-The HIGH items come first. The MEDIUM items that follow are listed because they are cheap to fix now and awkward to fix later.
+Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; see below).
 
-1. **PWR-01 (HIGH)**: The BQ25640 TS pin floats and there is no thermistor. The register that allows TS to float resets on power-on and on watchdog timeout, so charging likely stalls until software reconfigures it, and the Li-ion cell has no temperature protection.
-2. **AUD-02 (HIGH)**: The TAC5212 footprint is a generic VQFN-24. It lacks the package's four corner VSS pads and its exposed pad is larger than the package's. Use TI's land pattern.
-3. **PWR-03 (MEDIUM)**: Charger inductor L2 (2.2 µH, Isat about 2.6 A, Itemp 2.2 A) runs over its ratings at the default 2 A charge current plus system load. Use a 1 µH part with Isat comfortably above charge current plus load, for example TI's characterisation inductor DFE322520F-1R0M (confirm its rating), or cap ICHG in software.
-4. **DDR-01 (MEDIUM)**: The DDR ODT net is 18 mm long against a 41–43 mm addr/ctl target. Its meanders were lost in commit `754fa86`; re-meander it at the JLC width.
-5. **PWR-04 / CON-03 / LAY-04 (MEDIUM)**: VBUS runs about 108 mm, mostly as a 0.8 mm track on 0.5 oz inner copper (about 0.14 Ω). Widen it or pour it, or cap the input current.
-6. **SAMA-03 / SAMA-06 (MEDIUM)**: These are BOM-only fixes. C54 on VDDOUT25 is 4.7 µF, which is above the regulator's 2.7 µF stable maximum; use 2.2 µF as on the Curiosity. R10/R11 should be 20 k because their banks run at 1.8 V.
+1. **AUD-02 (HIGH)**: The TAC5212 footprint is a generic VQFN-24. It lacks the package's four corner VSS pads and its exposed pad is larger than the package's. Use TI's land pattern.
+2. **SAMA-06 (MEDIUM)**: BOM-only fix. R10/R11 (SDMMC2_CAL, QSPI0_CAL) should be 20 k because their banks run at 1.8 V.
+
+### Accepted by design (firmware mitigation)
+
+| ID | Was | Decision and required firmware |
+|---|---|---|
+| PWR-01 | HIGH | TS left floating, no thermistor. At every boot: `WATCHDOG = 00b` (first), `TS_IGNORE = 1`, ICHG ≈ 1.0–1.2 A; recommended: stop charging outside ~0–45 °C using the MAX17260 temperature. No hardware temperature protection. Bring-up checks: boot from USB with a dead battery, and confirm the registers persist with the SoC off. |
+| PWR-03 | MEDIUM | L2 kept (2.2 µH, ~2.2 A I_temp / ~2.6 A I_sat). The software ICHG limit above keeps charge current plus system load within rating. The 2 A power-on default only returns after a full charger reset, usually with the device off. |
 
 ### Resolved since the review
 
@@ -44,6 +49,9 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 | TP-01 | HIGH | Touchpad re-assigned to 6 Rx × 7 Tx with a 3 + 3 Rx split, giving 21 cycles. Needs the RxTxMapping in firmware (see TP-01). |
 | AUD-01 | HIGH | Jack-detect nets moved to ADC inputs PC3/AD0 and PC10/AD5. Firmware must set `bias-disable` (see AUD-01). |
 | PWR-02 / SAMA-01 | MEDIUM | WKUP0 pulled up with 100 k to `+VBAT_SAMA`; R58 removed. |
+| PWR-04 / CON-03 / LAY-04 | MEDIUM | VBUS moved to an In2 pour plus a 1.25 mm B.Cu trace: ≈ 33 mΩ, against ≈ 140 mΩ before. |
+| SAMA-03 | MEDIUM | C54 changed to 1 µF: +2V5 is now ≈ 1.3 µF effective, inside the 1–2.7 µF stable range. |
+| DDR-01 | MEDIUM | ODT re-meandered to 41.46 mm at 0.1072 mm, inside the 41–43 mm addr/ctl window; no DRC length/skew errors on ODT. |
 | PWR-11 | — | C123 10 µF added on the BQ25640 BAT pin (meets the datasheet). |
 | LAY-01 | — | WiFi SDMMC pull-ups moved to the correct rail: +3V3/+1V8 short and unconnected items gone. |
 
@@ -54,7 +62,7 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 | WKUP0 pulled up from VSYS (**resolved**) | PWR-02, SAMA-01 |
 | +1V8 (LDO2) off by default in the MCP16502AB, which breaks power-up sequencing | PWR-05, SAMA-02 |
 | VBAT fed by LDO1 (both LOW) | PWR-15, SAMA-07 |
-| VBUS trace resistance (all MEDIUM) | PWR-04, CON-03, LAY-04 |
+| VBUS trace resistance (**resolved**) | PWR-04, CON-03, LAY-04 |
 | SDMMC2 calibration resistor R10 should be 20 k for 1.8 V | SAMA-06, CON-02 |
 | MCLK contention between I2SMCC0_MCK and MAYA PCM_MCLK | SAMA-09, CON-09 |
 | +3V3 buck load and MAYA bulk decoupling | PWR-07, CON-01 |
@@ -73,23 +81,17 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 
 | Severity | ID | Finding | Area |
 |---|---|---|---|
-| HIGH | [PWR-01](#high-pwr-01-battery-ts-pin-floating-no-thermistor-anywhere-charging-depends-on-software-and-has-no-temperature-protection) | Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection | Power |
 | HIGH | [AUD-02](#high-aud-02-tac5212-footprint-has-no-pads-for-the-four-corner-vss-pins-a1-a4-and-its-ep-is-larger-than-the-packages-exposed-pad-needs-verification-with-ti) | TAC5212 footprint has no pads for the four corner VSS pins (A1-A4), and its EP is larger than the package's exposed pad (Needs verification with TI) | Peripherals |
-| MEDIUM | [PWR-03](#medium-pwr-03-charger-inductor-l2-dfe252012p-2r2m-undersized-and-at-the-top-of-the-allowed-l-range) | Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range | Power |
-| MEDIUM | [PWR-04](#medium-pwr-04-vbus-route-88-mm-of-08-mm-trace-on-15-m-inner-copper-in2-plus-20-mm-on-bcu) | VBUS route: ~88 mm of 0.8 mm trace on 15 µm inner copper (In2) plus ~20 mm on B.Cu | Power |
 | MEDIUM | [PWR-05](#medium-pwr-05-1v8-ldo2-is-off-at-power-up-in-the-ab-variant-so-periphery-supplies-come-up-after-vddcore) | +1V8 (LDO2) is OFF at power-up in the AB variant, so periphery supplies come up after VDDCORE | Power |
 | MEDIUM | [PWR-06](#medium-pwr-06-3v3-and-3v3avdd-fall-out-of-regulation-at-low-battery) | 3V3 and 3V3_AVDD fall out of regulation at low battery | Power |
 | MEDIUM | [PWR-07](#medium-pwr-07-buck1-3v3-1-a-rated-load-budget-is-tight) | Buck1 (+3V3, 1 A rated) load budget is tight | Power |
 | MEDIUM | [PWR-08](#medium-pwr-08-battery-connector-jst-gh-2-pin-current-rating-vs-charge-and-discharge-current-no-reverse-polarity-protection) | Battery connector JST-GH 2-pin current rating vs charge and discharge current; no reverse-polarity protection | Power |
 | MEDIUM | [SAMA-02](#medium-sama-02-1v8-rail-mcp16502ab-ldo2-is-off-by-default-so-vddiop1-vddqspi0-and-vddsdmmc2-power-up-after-the-core) | +1V8 rail (MCP16502AB LDO2) is OFF by default, so VDDIOP1, VDDQSPI0 and VDDSDMMC2 power up after the core | SAMA7D65 SoC core |
-| MEDIUM | [SAMA-03](#medium-sama-03-vddout25-output-capacitance-exceeds-the-regulators-stable-range) | VDDOUT25 output capacitance exceeds the regulator's stable range | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-04](#medium-sama-04-bulk-decoupling-near-the-soc-is-below-the-datasheet-minimum-and-microchip-guidance-vddin33-vddutmii-vddioddr-vddcore) | Bulk decoupling near the SoC is below the datasheet minimum and Microchip guidance (VDDIN33, VDDUTMII, VDDIODDR, VDDCORE) | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-05](#medium-sama-05-24-mhz-crystal-drive-level-rating-is-probably-below-the-sama7d65-oscillators-requirement-needs-verification) | 24 MHz crystal drive-level rating is probably below the SAMA7D65 oscillator's requirement (Needs verification) | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-06](#medium-sama-06-sdmmc2cal-and-qspi0cal-use-the-33-v-calibration-resistor-value-on-18-v-banks) | SDMMC2_CAL and QSPI0_CAL use the 3.3 V calibration resistor value on 1.8 V banks | SAMA7D65 SoC core |
-| MEDIUM | [DDR-01](#medium-ddr-01-odt-net-is-not-length-matched-1813-mm-vs-4143-mm-addrctl-target-and-still-has-the-pre-jlc-0115-mm-width) | ODT net is not length-matched (18.13 mm vs 41–43 mm addr/ctl target) and still has the pre-JLC 0.115 mm width | DDR3L memory |
 | MEDIUM | [CON-01](#medium-con-01-maya-3v3-supply-no-bulk-capacitance-near-the-module-single-small-via-and-the-1-a-buck-is-shared-with-both-sd-cards) | MAYA 3V3 supply: no bulk capacitance near the module, single small via, and the 1 A buck is shared with both SD cards | Connectivity |
 | MEDIUM | [CON-02](#medium-con-02-sdmmc2-wifi-18-v-calibration-resistor-r10-16k9-the-data-sheet-requires-20-k-for-18-v) | SDMMC2 (WiFi, 1.8 V) calibration resistor R10 = 16k9; the data sheet requires 20 kΩ for 1.8 V | Connectivity |
-| MEDIUM | [CON-03](#medium-con-03-vbus-path-88-mm-of-08-mm-trace-on-in2-15-m-cu-bq25640-defaults-will-push-about-2-a-through-it) | VBUS path: 88 mm of 0.8 mm trace on In2 (15 µm Cu); BQ25640 defaults will push about 2 A through it | Connectivity |
 | MEDIUM | [CON-04](#medium-con-04-external-microsd-j7-no-esd-protection-vdd-hard-wired-to-the-system-3v3-no-load-switch-or-power-cycling) | External microSD (J7): no ESD protection, VDD hard-wired to the system +3V3 (no load switch or power cycling) | Connectivity |
 | MEDIUM | [CON-05](#medium-con-05-usb-c-vbuscc-have-no-populated-esd-protection-esd441-is-not-suitable-for-vbus) | USB-C VBUS/CC have no populated ESD protection; ESD441 is not suitable for VBUS | Connectivity |
 | MEDIUM | [AUD-03](#medium-aud-03-micbias-pin-has-no-decoupling-capacitor) | MICBIAS pin has no decoupling capacitor | Peripherals |
@@ -98,7 +100,6 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 | MEDIUM | [DISP-01](#medium-disp-01-vcom-com-inversion-mode-is-hard-wired-to-serial-but-this-panel-needs-57-hz-inversion) | VCOM (COM inversion) mode is hard-wired to serial, but this panel needs ≥57 Hz inversion | Peripherals |
 | MEDIUM | [TP-02](#medium-tp-02-iqs7211e-decoupling-below-azoteq-requirements) | IQS7211E decoupling below Azoteq requirements | Peripherals |
 | MEDIUM | [LAY-03](#medium-lay-03-jlc-standard-pcba-needs-edge-rails-and-fiducials-and-parts-overhang-every-edge) | JLC Standard PCBA needs edge rails and fiducials, and parts overhang every edge | Layout, DRC & manufacturability |
-| MEDIUM | [LAY-04](#medium-lay-04-vbus-path-is-108-mm-of-08-mm-track-mostly-on-05-oz-inner-copper) | VBUS path is 108 mm of 0.8 mm track, mostly on 0.5 oz inner copper | Layout, DRC & manufacturability |
 | MEDIUM | [LAY-05](#medium-lay-05-maya-w386-antenna-keep-out-is-correct-but-large-and-metal-parts-sit-inside-u-bloxs-10-mm-zone) | MAYA-W386 antenna: keep-out is correct, but large and metal parts sit inside u-blox's 10 mm zone | Layout, DRC & manufacturability |
 | MEDIUM | [LAY-06](#medium-lay-06-four-ics-have-no-lcsc-part-number) | Four ICs have no LCSC part number | Layout, DRC & manufacturability |
 | LOW | [PWR-09](#low-pwr-09-charger-defaults-and-otg-need-software-legacy-chargers-are-limited-to-500-ma) | Charger defaults and OTG need software; legacy chargers are limited to 500 mA | Power |
@@ -176,6 +177,13 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 | RESOLVED | [SAMA-01](#resolved-sama-01-wkup0-vbat-domain-pulled-up-from-vsys-over-voltage-current-injection-into-vbat-and-possible-spurious-pmic-start) | WKUP0 (VBAT domain) pulled up from +VSYS: over-voltage, current injection into VBAT and possible spurious PMIC start | SAMA7D65 SoC core |
 | RESOLVED | [AUD-01](#resolved-aud-01-headphone-jack-detect-det35mm-det25mm-never-gives-a-valid-logic-level) | Headphone jack detect (~DET_3.5mm / ~DET_2.5mm) never gives a valid logic level | Peripherals |
 | RESOLVED | [TP-01](#resolved-tp-01-touchpad-electrode-assignment-7-rx-x-6-tx-exceeds-the-iqs7211es-21-cycle-limit) | Touchpad electrode assignment (7 Rx x 6 Tx) exceeds the IQS7211E's 21-cycle limit | Peripherals |
+| RESOLVED | [PWR-04](#resolved-pwr-04-vbus-route-88-mm-of-08-mm-trace-on-15-m-inner-copper-in2-plus-20-mm-on-bcu) | VBUS route: ~88 mm of 0.8 mm trace on 15 µm inner copper (In2) plus ~20 mm on B.Cu | Power |
+| RESOLVED | [CON-03](#resolved-con-03-vbus-path-88-mm-of-08-mm-trace-on-in2-15-m-cu-bq25640-defaults-will-push-about-2-a-through-it) | VBUS path: 88 mm of 0.8 mm trace on In2 (15 µm Cu); BQ25640 defaults will push about 2 A through it | Connectivity |
+| RESOLVED | [LAY-04](#resolved-lay-04-vbus-path-is-108-mm-of-08-mm-track-mostly-on-05-oz-inner-copper) | VBUS path is 108 mm of 0.8 mm track, mostly on 0.5 oz inner copper | Layout, DRC & manufacturability |
+| RESOLVED | [SAMA-03](#resolved-sama-03-vddout25-output-capacitance-exceeds-the-regulators-stable-range) | VDDOUT25 output capacitance exceeds the regulator's stable range | SAMA7D65 SoC core |
+| RESOLVED | [DDR-01](#resolved-ddr-01-odt-net-is-not-length-matched-1813-mm-vs-4143-mm-addrctl-target-and-still-has-the-pre-jlc-0115-mm-width) | ODT net is not length-matched (18.13 mm vs 41–43 mm addr/ctl target) and still has the pre-JLC 0.115 mm width | DDR3L memory |
+| ACCEPTED | [PWR-01](#accepted-pwr-01-battery-ts-pin-floating-no-thermistor-anywhere-charging-depends-on-software-and-has-no-temperature-protection) | Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection | Power |
+| ACCEPTED | [PWR-03](#accepted-pwr-03-charger-inductor-l2-dfe252012p-2r2m-undersized-and-at-the-top-of-the-allowed-l-range) | Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range | Power |
 
 
 ---
@@ -198,7 +206,24 @@ Reviewed: the regenerated netlist, components_by_sheet, nets and drc (22 Nov 22:
 
 ### Findings
 
-#### [HIGH] PWR-01 Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection
+#### [ACCEPTED] PWR-01 Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection
+> **⚖️ Accepted by design (2026-11-27):** the owner chose to leave TS floating, with no thermistor and no fixed resistor network, and to handle the charger in software.
+>
+> **Required firmware settings (BQ25640, applied at every boot):**
+>
+> 1. `WATCHDOG = 00b`: disable the charger watchdog **first**. When it expires, the charger returns to default mode, ICHG is halved, other fields revert, and `TS_IGNORE` is reset (REG0x1B Table 7-25: reset by REG_RESET and WATCHDOG). With it left on, settings are lost whenever Linux is suspended or off for more than 160 s, and charging while off stops working.
+> 2. `TS_IGNORE = 1` (REG0x1B bit 7): the charger treats TS as always good, so a floating TS is allowed (§7.3.6.4, p. 30).
+> 3. `ICHG` ≈ 1.0–1.2 A: with about 1 A of system load this keeps the L2 current within its ~2.2 A rating (PWR-03), and it also suits the JST-GH battery connector (PWR-08).
+> 4. Recommended: read the MAX17260 temperature (its TH pin is tied to BATT, so this is the internal die temperature: an approximation of the cell's temperature) and clear `EN_CHG` outside roughly 0–45 °C.
+>
+> **Notices / residual risks:**
+>
+> - **No hardware battery-temperature protection.** Cold charging (below 0 °C causes lithium plating) and hot charging are only guarded while Linux runs and checks the gauge. Accepted for a mostly-indoor device.
+> - **Full charger reset** (battery unplugged, or drained below the charger's UVLO) restores the defaults: ICHG = 2 A, `TS_IGNORE = 0`, watchdog on. If the floating TS reads out of range, charging is suspended until Linux boots from USB power and re-applies the settings. If it reads in range, the charger charges at 2 A while the device is off; with no system load that is roughly within L2's rating (~2.15 A peak).
+> - **Bring-up check:** confirm the board boots from USB with a flat or disconnected battery, since the system must start from VBUS alone to re-apply the settings. With D+/D− unconnected (CON-12) the input current limit may start low.
+> - **Bring-up check:** confirm the charger keeps its registers, powered from the battery, while the SoC is off, so the settings persist across shutdowns.
+>
+> *Original severity: HIGH. The original finding is kept below for reference.*
 **Where:** U4 pin 10 TS = `unconnected-(U4-TS-Pad10)`; U4 pin 7 NC/REGTS unconnected; BT1 is a 2-pin JST GH (no NTC wire); U5 TH (pin 1) tied to +BATT.
 **Issue:**
 - Nothing measures battery temperature: the charger TS pin floats and the fuel-gauge TH is strapped to BATT.
@@ -247,7 +272,16 @@ Reviewed: the regenerated netlist, components_by_sheet, nets and drc (22 Nov 22:
 >
 > This is still worth fixing before fab because the fix costs nothing.
 
-#### [MEDIUM] PWR-03 Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range
+#### [ACCEPTED] PWR-03 Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range
+> **⚖️ Accepted by design (2026-11-27):** L2 stays DFE252012P-2R2M (the same part as L1 and L3–L5, as recommended in MCP16502 Table 5-1; 2.2 µH is inside the BQ25640's 0.68–2.2 µH range). The current is limited in software instead.
+>
+> **Why the limit is needed:** the BQ25640 is a power-path charger, so L2 carries charge current plus system load. At 5 V in and 3.7 V on the battery, ripple = V_IN·D·(1−D)/(f_s·L) ≈ 0.29 A (§8.2.2.1 eq. 4, f_s = 1.5 MHz). At the 2 A power-on default with the device running (0.5–1 A load), the average is 2.5–3 A and the peak 2.65–3.15 A, over I_temp (2.2 A) and I_sat (~2.6 A). With the device off it is ~2.0 A average and ~2.15 A peak, just within rating.
+>
+> **Mitigation:** set ICHG to about 1.0–1.2 A with the charger watchdog disabled (see PWR-01 for the full firmware list). The 2 A power-on default only returns after a full charger reset, and then usually with the device off (no system load).
+>
+> **If revisited:** a 1 µH, I_sat ≥ 4 A, DCR ≤ 30 mΩ inductor gives ~0.64 A of ripple, inside TI's 20–40 % recommendation. TI characterised the chip with Murata DFE322520F-1R0M=P2 (1210 footprint; rating to confirm).
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** L2 between /Power/SW and +VSYS.
 **Issue:**
 - DFE252012P-2R2M=P2 is rated Isat ≈ 2.6 A, Itemp 2.2 A, DCR 84 mΩ max. MCP16502 Table 5-1 lists it at 2.2 A; distributors list 2.6 A.
@@ -273,7 +307,10 @@ Reviewed: the regenerated netlist, components_by_sheet, nets and drc (22 Nov 22:
 >
 > **Downgraded HIGH → MEDIUM:** a metal-alloy inductor saturates softly. Above its rating the result is extra heat (about 0.4–0.6 W at 2.5–3 A) and more ripple, not a hard failure. The stress also only occurs once software has put the charger in host mode with ICHG ≥ about 1.5 A on a 3 A source: in default mode the floating TS (PWR-01) probably suspends charging anyway. PWR-08 already requires ICHG ≤ 1 A for the connector. Swapping the inductor before fab is still the clean fix.
 
-#### [MEDIUM] PWR-04 VBUS route: ~88 mm of 0.8 mm trace on 15 µm inner copper (In2) plus ~20 mm on B.Cu
+#### [RESOLVED] PWR-04 VBUS route: ~88 mm of 0.8 mm trace on 15 µm inner copper (In2) plus ~20 mm on B.Cu
+> **✅ Resolved (2026-11-27):** VBUS now goes J3 → 6 vias → a copper pour on In2 ("VBUS PWR", 336 mm², narrowest point 1.7 mm near y ≈ 168.7 mm) → 3 vias at TP47 → a 1.25 mm B.Cu trace (~20 mm) → 3 vias → U4. Resistance calculated from the saved zone fill (inner copper 15.2 µm, outer 35 µm): pour ≈ 21 mΩ (2-D solve on the actual pour shape), 1.25 mm trace ≈ 8 mΩ, connector stubs ≈ 2–3 mΩ, vias ≈ 1–2 mΩ, so **≈ 33 mΩ total, against ≈ 140 mΩ before**. That is about 65 mV / 0.13 W at 2 A and 0.1 V / 0.3 W at 3 A. **Minor:** each transition has 3 × 0.3/0.15 mm vias, about 1 A per via at 3 A; a fourth via per transition adds margin. Widen the 1.7 mm neck if convenient. Refill zones before generating gerbers.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** VBUS from J3 (≈190, 194) to U4.2 (170.4, 136.3).
 - In2.Cu: 0.8 mm wide, 87.9 mm long.
 - B.Cu: 0.8 mm wide, 20.3 mm long; plus 0.6 mm wide, 7.6 mm long.
@@ -590,7 +627,10 @@ The main problems are in the backup/power-control domain and in decoupling (no H
 
 > **Reviewer note:** Confirmed against MCP16502 Table 4-1 (AB: VLOUT2 "Off") and Table 4-15 (LDO2-A = 0x37, so EN bit 7 = 0). DS §85.5.1 calls Fig. 85.2 the *recommended* sequence, so MEDIUM is right. PWR-05 proposes a simpler alternative: move +1V8 to LDO1, which is in the start-up sequence.
 
-#### [MEDIUM] SAMA-03 VDDOUT25 output capacitance exceeds the regulator's stable range
+#### [RESOLVED] SAMA-03 VDDOUT25 output capacitance exceeds the regulator's stable range
+> **✅ Resolved (2026-11-27):** C54 is now 1 µF (Samsung CL05A105KO5NNNC, 0402 16 V X5R, LCSC C29266). +2V5 therefore has 1 µF + 6 × 100 nF = 1.6 µF nominal, about 1.3 µF after DC-bias derating at 2.5 V. That is inside the VDDOUT25 regulator's 1–2.7 µF stable range, with margin on both sides.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** +2V5 net. C54 is 4.7 µF (CL05A475KP5NRNC, 0402 X5R 10 V), plus C56, C58, C60, C61, C62 and C63 at 6 × 100 nF. Total: 5.3 µF nominal.
 
 **Issue:** The internal VDDOUT25 LDO is specified as stable only for COUT = 1–2.7 µF (ESR 0.01–0.3 Ω). Even after DC-bias derating at 2.5 V, the 4.7 µF 0402 is about 2.5–3 µF, so the total is about 3.1–3.6 µF, above the maximum. Microchip's SAMA7D65 Hardware Design Considerations specifies 2.2 µF on VDDOUT25. Instability would affect the PLLs, the main oscillator, the ADC and VDDANA.
@@ -782,7 +822,10 @@ Scripts (all read-only, in SCR/tools): `sexp.py` (s-expr parser), `ddr_lengths.p
 
 ### Findings
 
-#### [MEDIUM] DDR-01 ODT net is not length-matched (18.13 mm vs 41–43 mm addr/ctl target) and still has the pre-JLC 0.115 mm width
+#### [RESOLVED] DDR-01 ODT net is not length-matched (18.13 mm vs 41–43 mm addr/ctl target) and still has the pre-JLC 0.115 mm width
+> **✅ Resolved (2026-11-27):** ODT has been re-meandered: it is now **41.46 mm** on B.Cu at **0.1072 mm** (the JLC 50 Ω width) along its whole length, inside the 41–43 mm addr/ctl window, so it lines up with CK and the other command signals again. KiCad DRC no longer reports any length or skew violation on `/DDR/ODT`. The remaining addr/ctl skew items are the pre-existing ~2.0 mm spread covered by DDR-03.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** /DDR/ODT, U1.W1 (DDR_ODT) → U2.K1 (ODT), all on B.Cu, no vias, from about (195.4,160.1) to (199.8,149.3). Net class DDR_ADDR_CTL.
 **Issue:** ODT measures 18.134 mm. All other addr/ctl nets measure 40.74–43.01 mm, and CK's main path is about 42.9 mm. So ODT reaches the DRAM about 24.9 mm × 5.7 ps/mm ≈ **140 ps earlier** than CK and the other command signals. It is also the only DDR net still at 0.115 mm width: every other single-ended DDR net was resized to 0.1072 mm for the JLC stackup.
 **Evidence:**
@@ -986,7 +1029,10 @@ Reviewer scope: /Wireless/ (IC2, Y3), /SD Cards/ (J6, J7), /USB/ (J3, U6, D2-D4)
 **Recommendation:** Change R10 to 20.0 kΩ 1%. R11 (QSPI0_CAL, and VDDQSPI0 is also +1V8) should be 20k as well if QSPI0 is ever used. It isn't today, because those pins carry the BT UART/I2S.
 > **Reviewer note:** Confirmed. DS60001851E §85 text: "20 KΩ RZQ resistor for 1.8V memories and a 16.9 KΩ resistor for 3.3V". R10 (SD2_CAL) and R11 (QSPI0_CAL) are both 16k9 while VDDSDMMC2 and VDDQSPI0 are +1V8.
 
-#### [MEDIUM] CON-03 VBUS path: 88 mm of 0.8 mm trace on In2 (15 µm Cu); BQ25640 defaults will push about 2 A through it
+#### [RESOLVED] CON-03 VBUS path: 88 mm of 0.8 mm trace on In2 (15 µm Cu); BQ25640 defaults will push about 2 A through it
+> **✅ Resolved (2026-11-27):** see PWR-04. VBUS is now an In2 pour plus a 1.25 mm B.Cu trace, ≈ 33 mΩ in total.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** Net VBUS: J3 (190.3,198.2) -> 0.6/0.8 mm on B.Cu (27.8 mm) -> In2.Cu 0.8 mm (87.9 mm, along the left board edge x≈165.8 and under the MAYA module) -> 2×0.45/0.225 vias -> U4 BQ25640 VBUS at (170.9,135.3).
 **Issue:**
 - Calculated resistance: In2 is 0.0152 mm Cu per the stackup, giving R ≈ 1.72e-8·0.088/(0.8e-3·15.2e-6) ≈ 0.124 Ω. Adding B.Cu and vias gives about 0.15 Ω.
@@ -1477,7 +1523,10 @@ Tools: KiCad 10.0.8 `pcbnew` Python API (read-only load), `kicad-cli pcb drc --r
 **Recommendation:** Either panelize yourself (for example with KiKit: 5 mm rails, mouse-bite tabs placed away from J3, J4, J5 and SW1–5, 3 fiducials and 4 × Ø1.152 tooling holes on the rails), or pick "edge rails added by JLCPCB" and state in the order notes that parts overhang all four edges, so the rails must be routed (milled) with a gap, not V-cut. Optional: add 2–3 local 1 mm fiducials per side near U1 and U2. The touchpad (41.4 × 30.4 mm) needs the same treatment if it goes through Standard PCBA. See LAY-19.
 > **Reviewer note:** Confirmed against https://jlcpcb.com/capabilities/pcb-assembly-capabilities, fetched 2026-11-22. Standard PCBA: single PCB 70 × 70 to 460 × 500 mm, edge rails and fiducials "Necessary". Economic: 10 × 10 mm minimum, rails and fiducials not needed. The board is 50.24 × 77.16 mm. In practice the JLC order form offers "Edge rails/Fiducials: Added by JLCPCB", so the real risk is the parts overhanging every edge, not the size limit itself. MEDIUM stands.
 
-#### [MEDIUM] LAY-04 VBUS path is 108 mm of 0.8 mm track, mostly on 0.5 oz inner copper
+#### [RESOLVED] LAY-04 VBUS path is 108 mm of 0.8 mm track, mostly on 0.5 oz inner copper
+> **✅ Resolved (2026-11-27):** see PWR-04. VBUS is now an In2 pour plus a 1.25 mm B.Cu trace, ≈ 33 mΩ in total.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** Net VBUS: In2.Cu 0.8 mm × 87.9 mm (left edge, e.g. (165.78, 178.45)→(165.78, 199.28) and (165.78, 156.08)→(165.78, 163.88)), plus B.Cu 0.8 mm × 20.3 mm and 0.6 mm × 7.6 mm. It runs from J3 (USB-C, bottom edge) to U4.2 (BQ25640, top-left). 8 vias (4 × 0.6/0.3, 4 × 0.45/0.225).
 **Issue:** At 15.2 µm (0.5 oz) inner copper, a 0.8 mm track is about 1.41 mΩ/mm. That gives about 124 mΩ on In2 plus about 12 mΩ on B.Cu, roughly 0.14 Ω in total. BQ25640 ICHG resets to 2000 mA at power-on (datasheet REG0x02, "POR: 2000mA"), and IINDPM can reach 3.2 A ("IINDPM will default to 3.2A" for unknown adapters with EN_ICO = 0, §7.3.3.1, and 3 A from a USB-C Rp). Realistic input current is therefore 2–2.5 A: about 0.3 V drop and 0.6–0.9 W dissipated along a thin inner track. IPC-2221 (internal-layer curve, k = 0.024) puts 0.8 mm × 15.2 µm (≈18.8 mil²) at only about 0.55 A for a 10 °C rise and about 0.75 A for 20 °C. Adjacent GND planes help (IPC-2152), but a rise of 20–40 °C at 2.5 A is plausible. The drop also eats into VBUS headroom (VINDPM) on 5 V adapters.
 **Recommendation:** Widen VBUS to ≥1.5–2 mm, pour it as an In2 island (In2 already carries +VSYS as a pour), or duplicate it on B.Cu. Until then, cap IINDPM and ICHG in the driver (for example IINDPM ≤ 1.5 A). Needs verification by the power reviewer against the chosen charge current.
