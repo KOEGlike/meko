@@ -26,13 +26,16 @@
 
 **No CRITICAL issues were found.** Every custom symbol and footprint that was checked matches its datasheet: the SAMA7D65 343-ball map (all balls), MAYA-W386, BQ25640, MCP16502, ECMF02, DDR3L FBGA-96, and the TAC5212 pin numbering. All DDR3L connections are valid. Every SoC pin-mux assignment is legal and sits on a correctly powered I/O bank. Both FPC cables are pin-1 to pin-1, checked in the 3D assembly. The board can be fabricated at JLC as drawn: through-vias only, 0.3/0.15 mm vias, 0.65 mm BGA fanout without via-in-pad.
 
-Finding count: 1 HIGH, 18 MEDIUM, 52 LOW, 18 INFO, 12 RESOLVED, 2 ACCEPTED (some issues appear under more than one area; see the duplicates table).
+Finding count: 18 MEDIUM, 52 LOW, 18 INFO, 13 RESOLVED, 2 ACCEPTED (some issues appear under more than one area; see the duplicates table).
 
-### Fix before ordering (highest priority)
+### Before generating gerbers
 
-Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; see below).
+All HIGH findings are now resolved or accepted by design. The remaining MEDIUM/LOW items are optional improvements (see the table below). Before exporting production files:
 
-1. **AUD-02 (HIGH)**: The TAC5212 footprint is a generic VQFN-24. It lacks the package's four corner VSS pads and its exposed pad is larger than the package's. Use TI's land pattern.
+1. **Refill all zones (B) and save.** As of 2026-11-27 the saved fill is stale after the IC3 rework: DRC on the saved file shows 18 zero-clearance items, including a `/Audio/LEFT-` via and several GND vias touching the In1/In3/In4 GND planes and the In2 +3V3 (`VSYS_3`) plane. In gerbers made from the saved fill these would be **real shorts**. A refill-then-DRC run on a copy removes all of them (the only 0.000 mm items left are the QR-code silkscreen over two vias, LAY-13) and also clears 8 of the 28 hole-clearance items.
+2. Re-run DRC with schematic parity and confirm 0 unconnected and 0 parity issues. Both were 0 on 2026-11-27.
+3. Order the 6-layer board with via-in-pad epoxy fill and cap, which JLC includes for 6+ layers (LAY-17, AUD-02 note).
+4. Check the firmware items recorded under *Accepted by design* and in the resolved notes (AUD-01 `bias-disable`, TP-01 RxTxMapping) are tracked for bring-up.
 
 ### Accepted by design (firmware mitigation)
 
@@ -52,6 +55,7 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 | SAMA-03 | MEDIUM | C54 changed to 1 µF: +2V5 is now ≈ 1.3 µF effective, inside the 1–2.7 µF stable range. |
 | DDR-01 | MEDIUM | ODT re-meandered to 41.46 mm at 0.1072 mm, inside the 41–43 mm addr/ctl window; no DRC length/skew errors on ODT. |
 | SAMA-06 / CON-02 | MEDIUM | R10/R11 changed to 20 kΩ ±1 % (RC-01W2002FT, LCSC C320746) for the 1.8 V SDMMC2/QSPI0 banks (DS p. 3812). |
+| AUD-02 | HIGH | IC3 footprint replaced with TI's RGE land pattern: corner VSS pads A1–A4 on GND, 2.21 mm EP, 0 parity issues. |
 | PWR-11 | — | C123 10 µF added on the BQ25640 BAT pin (meets the datasheet). |
 | LAY-01 | — | WiFi SDMMC pull-ups moved to the correct rail: +3V3/+1V8 short and unconnected items gone. |
 
@@ -81,7 +85,6 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 
 | Severity | ID | Finding | Area |
 |---|---|---|---|
-| HIGH | [AUD-02](#high-aud-02-tac5212-footprint-has-no-pads-for-the-four-corner-vss-pins-a1-a4-and-its-ep-is-larger-than-the-packages-exposed-pad-needs-verification-with-ti) | TAC5212 footprint has no pads for the four corner VSS pins (A1-A4), and its EP is larger than the package's exposed pad (Needs verification with TI) | Peripherals |
 | MEDIUM | [PWR-05](#medium-pwr-05-1v8-ldo2-is-off-at-power-up-in-the-ab-variant-so-periphery-supplies-come-up-after-vddcore) | +1V8 (LDO2) is OFF at power-up in the AB variant, so periphery supplies come up after VDDCORE | Power |
 | MEDIUM | [PWR-06](#medium-pwr-06-3v3-and-3v3avdd-fall-out-of-regulation-at-low-battery) | 3V3 and 3V3_AVDD fall out of regulation at low battery | Power |
 | MEDIUM | [PWR-07](#medium-pwr-07-buck1-3v3-1-a-rated-load-budget-is-tight) | Buck1 (+3V3, 1 A rated) load budget is tight | Power |
@@ -182,6 +185,7 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 | RESOLVED | [DDR-01](#resolved-ddr-01-odt-net-is-not-length-matched-1813-mm-vs-4143-mm-addrctl-target-and-still-has-the-pre-jlc-0115-mm-width) | ODT net is not length-matched (18.13 mm vs 41–43 mm addr/ctl target) and still has the pre-JLC 0.115 mm width | DDR3L memory |
 | RESOLVED | [SAMA-06](#resolved-sama-06-sdmmc2cal-and-qspi0cal-use-the-33-v-calibration-resistor-value-on-18-v-banks) | SDMMC2_CAL and QSPI0_CAL use the 3.3 V calibration resistor value on 1.8 V banks | SAMA7D65 SoC core |
 | RESOLVED | [CON-02](#resolved-con-02-sdmmc2-wifi-18-v-calibration-resistor-r10-16k9-the-data-sheet-requires-20-k-for-18-v) | SDMMC2 (WiFi, 1.8 V) calibration resistor R10 = 16k9; the data sheet requires 20 kΩ for 1.8 V | Connectivity |
+| RESOLVED | [AUD-02](#resolved-aud-02-tac5212-footprint-has-no-pads-for-the-four-corner-vss-pins-a1-a4-and-its-ep-is-larger-than-the-packages-exposed-pad-needs-verification-with-ti) | TAC5212 footprint has no pads for the four corner VSS pins (A1-A4), and its EP is larger than the package's exposed pad (Needs verification with TI) | Peripherals |
 | ACCEPTED | [PWR-01](#accepted-pwr-01-battery-ts-pin-floating-no-thermistor-anywhere-charging-depends-on-software-and-has-no-temperature-protection) | Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection | Power |
 | ACCEPTED | [PWR-03](#accepted-pwr-03-charger-inductor-l2-dfe252012p-2r2m-undersized-and-at-the-top-of-the-allowed-l-range) | Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range | Power |
 
@@ -1286,7 +1290,15 @@ MEDIUM issues:
 **Recommendation:** Use a jack with an isolated detect switch (a separate normally-open or normally-closed contact that doesn't share the tip signal), wired to GND with a GPIO pull-up. Alternatively, feed DET to a comparator or an ADC input rather than a digital GPIO. As a stop-gap without a respin: keep the codec outputs biased at all times and use the TAC5212's built-in headset detection through MICBIAS/IN1 (JACK_DET_CFG0..3, P0_R25..R28). That covers the 3.5 mm jack only, and it needs a MICBIAS capacitor (see AUD-03). Also disable the PE8/PE10 internal pull-ups in the device tree.
 > **Reviewer note:** Confirmed. PJ-342 drawing: 3 = right spring with fixed contact 4 normally closed; footprint T = drawing pad 3, TN = pad 4 (pad positions match the top-view land pattern, not mirrored). PJ-242: 6 = tip spring, 7 = its NC contact; footprint T/TN = 6/7. So unplugged, DET = OUT1P (J4) / OUT2M (J5). TAC5212 output common mode is 0.6 x VREF = 1.65 V (VREF 2.75 V) or AVDD/2 = 1.65 V (OUTxx_VCOM); both options give the same level, so no register setting moves it out of the band. SAMA7D6 DS60001851E Table 85.17 gives VIL max 0.3 x VDD = 0.99 V and VIH min 0.7 x VDD = 2.31 V at 3.3 V (hysteresis ≥150 mV), so 1.65 V is in the undefined band. The open item in the finding is now resolved. HIGH stands.
 
-#### [HIGH] AUD-02 TAC5212 footprint has no pads for the four corner VSS pins (A1-A4), and its EP is larger than the package's exposed pad (Needs verification with TI)
+#### [RESOLVED] AUD-02 TAC5212 footprint has no pads for the four corner VSS pins (A1-A4), and its EP is larger than the package's exposed pad (Needs verification with TI)
+> **✅ Resolved (2026-11-27):** IC3 now uses TI's RGE land pattern `TAC5x1x:VQFN24_RGE_CORNERPADS_TEX`, the same in schematic and PCB (DRC parity: 0 issues). It has 24 signal pads (0.255 × 0.808 mm, 0.5 mm pitch, at ±1.94 mm), the exposed pad (pad 29) at 2.21 × 2.21 mm for the 2.1 mm package EP, and the four corner VSS pads **A1–A4 (0.254 × 0.254 mm) all on GND**; the symbol now carries VSS_A1–A4. Signal-pad nets are unchanged from the verified pinout.
+>
+> **Minor follow-ups (LOW):**
+> - Two clearances at IC3 are slightly under the 0.10 mm netclass rule: pad 20 (LEFT+) to the RIGHT+ track is 0.098 mm, and pad 7 (SCL) to the SDA track is 0.095 mm. Both are still above JLC's 0.09 mm minimum, but nudge them if easy.
+> - IC3's courtyard overlaps C115's (DRC `courtyards_overlap`); check the pads don't crowd the paste.
+> - The EP has a single full-size paste opening and about 4 GND vias inside the pad. Order via-in-pad with epoxy fill and cap (LAY-17), or tent/plug them, so solder doesn't wick away. A windowed paste opening (about 70–80 % coverage) reduces voiding and float.
+>
+> *Original severity: HIGH. The original finding is kept below for reference.*
 **Where:** IC3, footprint `Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm`, at (199.27, 130.67) rotated 45°.
 **Issue:** The TAC5212 package is TI RGE0024R. It has four extra corner pins, A1-A4, all VSS: "Ground pin. Short directly to board ground plane" (Table 5-1). The note to §6.3 says "all ground pins must be tied together". The absolute maximum ratings list "VSS to VSS (thermal pad) ±0.3 V", which implies separately bonded ground nodes. The footprint (and the 25-pin symbol) has no pads at the corner positions, so those pins will not be soldered to anything. In addition, the RGE0024R exposed pad is SQ 2.1 ±0.1 mm and TI's land is 2.1 mm, while the footprint EP is 2.45 mm. The signal pads also start 0.3 mm further out than TI's land pattern (inner edge at 1.6 mm from centre vs 1.3 mm).
 **Evidence:** IC3 pad dump from meko.kicad_pcb: 24 pads plus pad 25 = 2.45 x 2.45 mm, no A1-A4. TAC5212 DS §11 "RGE0024R package outline / example board layout": 4X SQ (0.25) corner pads at 2X 3.45 mm, EP SQ 2.1.
