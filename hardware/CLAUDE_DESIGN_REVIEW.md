@@ -1,6 +1,6 @@
 # Meko v3: Hardware Design Review
 
-*Review date: 2026-11-22. Covers the main board (`hardware/pcb`) and the touchpad board (`hardware/pcb_touchpad`) as they stood in the working tree after the owner's two fixes: the WiFi SDMMC pull-ups moved to the correct rail, and C123 (10 µF) added on the BQ25640 BAT pin.*
+*Review date: 2026-11-22; updated 2026-11-27 with the owner's later fixes (see "Resolved since the review"). Covers the main board (`hardware/pcb`) and the touchpad board (`hardware/pcb_touchpad`) as they stood in the working tree after the owner's two fixes: the WiFi SDMMC pull-ups moved to the correct rail, and C123 (10 µF) added on the BQ25640 BAT pin.*
 
 ## How this review was done
 
@@ -24,7 +24,7 @@
 
 **No CRITICAL issues were found.** Every custom symbol and footprint that was checked matches its datasheet: the SAMA7D65 343-ball map (all balls), MAYA-W386, BQ25640, MCP16502, ECMF02, DDR3L FBGA-96, and the TAC5212 pin numbering. All DDR3L connections are valid. Every SoC pin-mux assignment is legal and sits on a correctly powered I/O bank. Both FPC cables are pin-1 to pin-1, checked in the 3D assembly. The board can be fabricated at JLC as drawn: through-vias only, 0.3/0.15 mm vias, 0.65 mm BGA fanout without via-in-pad.
 
-Finding count: 4 HIGH, 28 MEDIUM, 52 LOW, 18 INFO, 1 RESOLVED (some issues appear under more than one area; see the duplicates table).
+Finding count: 2 HIGH, 26 MEDIUM, 52 LOW, 18 INFO, 5 RESOLVED (some issues appear under more than one area; see the duplicates table).
 
 ### Fix before ordering (highest priority)
 
@@ -32,19 +32,26 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 
 1. **PWR-01 (HIGH)**: The BQ25640 TS pin floats and there is no thermistor. The register that allows TS to float resets on power-on and on watchdog timeout, so charging likely stalls until software reconfigures it, and the Li-ion cell has no temperature protection.
 2. **AUD-02 (HIGH)**: The TAC5212 footprint is a generic VQFN-24. It lacks the package's four corner VSS pads and its exposed pad is larger than the package's. Use TI's land pattern.
-3. **AUD-01 (HIGH)**: The jack-detect lines idle at the codec's 1.65 V VCOM bias, which is never a valid logic level.
-4. **TP-01 (HIGH)**: The touchpad electrodes are wired 7 Rx × 6 Tx. That needs more scan cycles than the IQS7211E allows (21), so the touchpad PCB needs re-assigning, or firmware has to drop a row or column.
-5. **PWR-02 / SAMA-01 (MEDIUM)**: The PMIC nSTRTO → WKUP0 line is pulled up from VSYS (R20 10 k / R58 47 k, about 0.83·VSYS). That exceeds the recommended input level of a 1.8 V VBAT-domain pin (still within absolute maximum) and drains about 0.37 mA while the device is off. Pull it up to VBAT (Curiosity uses 100 k) and remove R58.
-6. **PWR-03 (MEDIUM)**: Charger inductor L2 (2.2 µH, Isat about 2.6 A, Itemp 2.2 A) runs over its ratings at the default 2 A charge current plus system load. Use a 1 µH part with Isat comfortably above charge current plus load, for example TI's characterisation inductor DFE322520F-1R0M (confirm its rating), or cap ICHG in software.
-7. **DDR-01 (MEDIUM)**: The DDR ODT net is 18 mm long against a 41–43 mm addr/ctl target. Its meanders were lost in commit `754fa86`; re-meander it at the JLC width.
-8. **PWR-04 / CON-03 / LAY-04 (MEDIUM)**: VBUS runs about 108 mm, mostly as a 0.8 mm track on 0.5 oz inner copper (about 0.14 Ω). Widen it or pour it, or cap the input current.
-9. **SAMA-03 / SAMA-06 (MEDIUM)**: These are BOM-only fixes. C54 on VDDOUT25 is 4.7 µF, which is above the regulator's 2.7 µF stable maximum; use 2.2 µF as on the Curiosity. R10/R11 should be 20 k because their banks run at 1.8 V.
+3. **PWR-03 (MEDIUM)**: Charger inductor L2 (2.2 µH, Isat about 2.6 A, Itemp 2.2 A) runs over its ratings at the default 2 A charge current plus system load. Use a 1 µH part with Isat comfortably above charge current plus load, for example TI's characterisation inductor DFE322520F-1R0M (confirm its rating), or cap ICHG in software.
+4. **DDR-01 (MEDIUM)**: The DDR ODT net is 18 mm long against a 41–43 mm addr/ctl target. Its meanders were lost in commit `754fa86`; re-meander it at the JLC width.
+5. **PWR-04 / CON-03 / LAY-04 (MEDIUM)**: VBUS runs about 108 mm, mostly as a 0.8 mm track on 0.5 oz inner copper (about 0.14 Ω). Widen it or pour it, or cap the input current.
+6. **SAMA-03 / SAMA-06 (MEDIUM)**: These are BOM-only fixes. C54 on VDDOUT25 is 4.7 µF, which is above the regulator's 2.7 µF stable maximum; use 2.2 µF as on the Curiosity. R10/R11 should be 20 k because their banks run at 1.8 V.
+
+### Resolved since the review
+
+| ID | Was | Fix (verified 2026-11-27 against the working tree) |
+|---|---|---|
+| TP-01 | HIGH | Touchpad re-assigned to 6 Rx × 7 Tx with a 3 + 3 Rx split, giving 21 cycles. Needs the RxTxMapping in firmware (see TP-01). |
+| AUD-01 | HIGH | Jack-detect nets moved to ADC inputs PC3/AD0 and PC10/AD5. Firmware must set `bias-disable` (see AUD-01). |
+| PWR-02 / SAMA-01 | MEDIUM | WKUP0 pulled up with 100 k to `+VBAT_SAMA`; R58 removed. |
+| PWR-11 | — | C123 10 µF added on the BQ25640 BAT pin (meets the datasheet). |
+| LAY-01 | — | WiFi SDMMC pull-ups moved to the correct rail: +3V3/+1V8 short and unconnected items gone. |
 
 ### Issues reported in more than one area
 
 | Topic | IDs |
 |---|---|
-| WKUP0 pulled up from VSYS | PWR-02, SAMA-01 |
+| WKUP0 pulled up from VSYS (**resolved**) | PWR-02, SAMA-01 |
 | +1V8 (LDO2) off by default in the MCP16502AB, which breaks power-up sequencing | PWR-05, SAMA-02 |
 | VBAT fed by LDO1 (both LOW) | PWR-15, SAMA-07 |
 | VBUS trace resistance (all MEDIUM) | PWR-04, CON-03, LAY-04 |
@@ -67,17 +74,13 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 | Severity | ID | Finding | Area |
 |---|---|---|---|
 | HIGH | [PWR-01](#high-pwr-01-battery-ts-pin-floating-no-thermistor-anywhere-charging-depends-on-software-and-has-no-temperature-protection) | Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection | Power |
-| HIGH | [AUD-01](#high-aud-01-headphone-jack-detect-det35mm-det25mm-never-gives-a-valid-logic-level) | Headphone jack detect (~DET_3.5mm / ~DET_2.5mm) never gives a valid logic level | Peripherals |
 | HIGH | [AUD-02](#high-aud-02-tac5212-footprint-has-no-pads-for-the-four-corner-vss-pins-a1-a4-and-its-ep-is-larger-than-the-packages-exposed-pad-needs-verification-with-ti) | TAC5212 footprint has no pads for the four corner VSS pins (A1-A4), and its EP is larger than the package's exposed pad (Needs verification with TI) | Peripherals |
-| HIGH | [TP-01](#high-tp-01-touchpad-electrode-assignment-7-rx-x-6-tx-exceeds-the-iqs7211es-21-cycle-limit) | Touchpad electrode assignment (7 Rx x 6 Tx) exceeds the IQS7211E's 21-cycle limit | Peripherals |
-| MEDIUM | [PWR-02](#medium-pwr-02-nstrto-wkup0-pulled-to-a-divided-vsys-overdrives-a-vbat-domain-18-v-pin-and-drains-current-when-off) | nSTRTO → WKUP0 pulled to a divided VSYS: overdrives a VBAT-domain (1.8 V) pin and drains current when off | Power |
 | MEDIUM | [PWR-03](#medium-pwr-03-charger-inductor-l2-dfe252012p-2r2m-undersized-and-at-the-top-of-the-allowed-l-range) | Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range | Power |
 | MEDIUM | [PWR-04](#medium-pwr-04-vbus-route-88-mm-of-08-mm-trace-on-15-m-inner-copper-in2-plus-20-mm-on-bcu) | VBUS route: ~88 mm of 0.8 mm trace on 15 µm inner copper (In2) plus ~20 mm on B.Cu | Power |
 | MEDIUM | [PWR-05](#medium-pwr-05-1v8-ldo2-is-off-at-power-up-in-the-ab-variant-so-periphery-supplies-come-up-after-vddcore) | +1V8 (LDO2) is OFF at power-up in the AB variant, so periphery supplies come up after VDDCORE | Power |
 | MEDIUM | [PWR-06](#medium-pwr-06-3v3-and-3v3avdd-fall-out-of-regulation-at-low-battery) | 3V3 and 3V3_AVDD fall out of regulation at low battery | Power |
 | MEDIUM | [PWR-07](#medium-pwr-07-buck1-3v3-1-a-rated-load-budget-is-tight) | Buck1 (+3V3, 1 A rated) load budget is tight | Power |
 | MEDIUM | [PWR-08](#medium-pwr-08-battery-connector-jst-gh-2-pin-current-rating-vs-charge-and-discharge-current-no-reverse-polarity-protection) | Battery connector JST-GH 2-pin current rating vs charge and discharge current; no reverse-polarity protection | Power |
-| MEDIUM | [SAMA-01](#medium-sama-01-wkup0-vbat-domain-pulled-up-from-vsys-over-voltage-current-injection-into-vbat-and-possible-spurious-pmic-start) | WKUP0 (VBAT domain) pulled up from +VSYS: over-voltage, current injection into VBAT and possible spurious PMIC start | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-02](#medium-sama-02-1v8-rail-mcp16502ab-ldo2-is-off-by-default-so-vddiop1-vddqspi0-and-vddsdmmc2-power-up-after-the-core) | +1V8 rail (MCP16502AB LDO2) is OFF by default, so VDDIOP1, VDDQSPI0 and VDDSDMMC2 power up after the core | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-03](#medium-sama-03-vddout25-output-capacitance-exceeds-the-regulators-stable-range) | VDDOUT25 output capacitance exceeds the regulator's stable range | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-04](#medium-sama-04-bulk-decoupling-near-the-soc-is-below-the-datasheet-minimum-and-microchip-guidance-vddin33-vddutmii-vddioddr-vddcore) | Bulk decoupling near the SoC is below the datasheet minimum and Microchip guidance (VDDIN33, VDDUTMII, VDDIODDR, VDDCORE) | SAMA7D65 SoC core |
@@ -169,6 +172,10 @@ The HIGH items come first. The MEDIUM items that follow are listed because they 
 | INFO | [LAY-18](#info-lay-18-assembly-plan-notes) | Assembly plan notes | Layout, DRC & manufacturability |
 | INFO | [LAY-19](#info-lay-19-touchpad-board-scrtouchdrcrpt-no-real-errors) | Touchpad board (SCR/touch/drc.rpt): no real errors | Layout, DRC & manufacturability |
 | RESOLVED | [LAY-01](#resolved-lay-01-3v31v8-short-at-r35-and-the-5-1v8-unconnected-items-wifi-sdmmc-pull-ups-fixed-verified) | +3V3/+1V8 short at R35 and the 5 × +1V8 unconnected items (WiFi SDMMC pull-ups): fixed, verified | Layout, DRC & manufacturability |
+| RESOLVED | [PWR-02](#resolved-pwr-02-nstrto-wkup0-pulled-to-a-divided-vsys-overdrives-a-vbat-domain-18-v-pin-and-drains-current-when-off) | nSTRTO → WKUP0 pulled to a divided VSYS: overdrives a VBAT-domain (1.8 V) pin and drains current when off | Power |
+| RESOLVED | [SAMA-01](#resolved-sama-01-wkup0-vbat-domain-pulled-up-from-vsys-over-voltage-current-injection-into-vbat-and-possible-spurious-pmic-start) | WKUP0 (VBAT domain) pulled up from +VSYS: over-voltage, current injection into VBAT and possible spurious PMIC start | SAMA7D65 SoC core |
+| RESOLVED | [AUD-01](#resolved-aud-01-headphone-jack-detect-det35mm-det25mm-never-gives-a-valid-logic-level) | Headphone jack detect (~DET_3.5mm / ~DET_2.5mm) never gives a valid logic level | Peripherals |
+| RESOLVED | [TP-01](#resolved-tp-01-touchpad-electrode-assignment-7-rx-x-6-tx-exceeds-the-iqs7211es-21-cycle-limit) | Touchpad electrode assignment (7 Rx x 6 Tx) exceeds the IQS7211E's 21-cycle limit | Peripherals |
 
 
 ---
@@ -214,7 +221,10 @@ Reviewed: the regenerated netlist, components_by_sheet, nets and drc (22 Nov 22:
 
 > **Reviewer note:** Confirmed against SLVSIK1: §7.3.6.4 "The TS pin can be left floating if TS_IGNORE is set to 1b". REG0x1B bit 7 TS_IGNORE resets to 0 and is "Reset by: REG_RESET, WATCHDOG". WATCHDOG POR = 01b (40 s). ICHG POR = 2000 mA, halved on watchdog expiry (Table 7-9). HIGH stands. One correction: the "MAX17260 thermistor fallback" is not available as built. U5 TH (pin 1) is strapped to BATT, which the MAX17260 datasheet prescribes only "if not used". Without a hardware change the gauge can only report its internal die temperature (Config.TSel = 0), which is board temperature, not cell temperature.
 
-#### [MEDIUM] PWR-02 nSTRTO → WKUP0 pulled to a divided VSYS: overdrives a VBAT-domain (1.8 V) pin and drains current when off
+#### [RESOLVED] PWR-02 nSTRTO → WKUP0 pulled to a divided VSYS: overdrives a VBAT-domain (1.8 V) pin and drains current when off
+> **✅ Resolved (2026-11-27):** R58 was removed and R20 (now 100 k) goes from `~WKUP` to `+VBAT_SAMA` (the VBAT net), as on the Curiosity. Verified in the netlist (`/Power/~{WKUP}`: IC1.7 nSTRTO, R20 100 k, TP22, U1.A8 WKUP0). The important part was moving the pull-up to VBAT and removing R58. The 10 k → 100 k change is secondary: it cuts the current drawn from VBAT while nSTRTO pulls low (180 µA → 18 µA) and is still far stronger than WKUP0's leakage.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** `/Power/~{WKUP}`: IC1.7 nSTRTO, R20 10 k to +VSYS, R58 47 k to GND, U1.A8 WKUP0, TP22.
 **Issue:**
 - WKUP0 is powered from VBAT (SAMA7D65 pin table, ball A8, "VBAT"). VBAT is +1V8_BATT_CPU = MCP16502 LDO1 = 1.8 V (JP2 bridged 1-2).
@@ -285,6 +295,7 @@ Reviewed: the regenerated netlist, components_by_sheet, nets and drc (22 Nov 22:
 > **Reviewer note:** I recomputed the resistance: ρL/(w·t) = 1.72e-8 × 87.9 mm / (0.8 mm × 15.2 µm) = 0.124 Ω on In2, plus about 0.019 Ω on B.Cu, for about 0.14 Ω in total. That confirms the numbers above. **Downgraded HIGH → MEDIUM** to match the duplicates CON-03 and LAY-04. The consequence is heat, plus VINDPM folding the input current back, so charging is slower. Nothing fails outright, and a software cap on IINDPM is a full workaround.
 
 #### [MEDIUM] PWR-05 +1V8 (LDO2) is OFF at power-up in the AB variant, so periphery supplies come up after VDDCORE
+> **Update (2026-11-27):** see the update under SAMA-02. Probably less severe than stated, and merging the rails or linking them with a resistor is not recommended.
 **Where:** IC1.21 LOUT2 → +1V8. It feeds:
 - U1 VDDIOP1 (C17), VDDSDMMC2 (F13) and VDDQSPI0 (P19);
 - the MAYA-W386 1V8 VIO;
@@ -538,7 +549,10 @@ The main problems are in the backup/power-control domain and in decoupling (no H
 
 ### Findings
 
-#### [MEDIUM] SAMA-01 WKUP0 (VBAT domain) pulled up from +VSYS: over-voltage, current injection into VBAT and possible spurious PMIC start
+#### [RESOLVED] SAMA-01 WKUP0 (VBAT domain) pulled up from +VSYS: over-voltage, current injection into VBAT and possible spurious PMIC start
+> **✅ Resolved (2026-11-27):** see PWR-02. WKUP0 is now pulled up with 100 k to `+VBAT_SAMA`, and R58 is removed.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** U1.A8 WKUP0, net /Power/~{WKUP}: R20 10 k to +VSYS, R58 47 k to GND, IC1.7 nSTRTO, TP22. VBAT is set by JP2 (default 1-2) to +1V8_BATT_CPU, which is MCP16502 LDO1.
 
 **Issue:** WKUP0 is supplied by the VBAT rail. Here VBAT is 1.8 V, or 0 V when the PMIC is fully off. The divider puts 0.825 × VSYS on the pin, which is about 2.5–3.5 V for a 3.0–4.2 V battery, and above 3.6 V if VSYS goes above ~4.37 V.
@@ -563,6 +577,7 @@ The main problems are in the backup/power-control domain and in decoupling (no H
 > - The real cost is about 0.37 mA of off-state drain.
 
 #### [MEDIUM] SAMA-02 +1V8 rail (MCP16502AB LDO2) is OFF by default, so VDDIOP1, VDDQSPI0 and VDDSDMMC2 power up after the core
+> **Update (2026-11-27):** this is probably less severe than first stated. Nothing on +1V8 is in the boot path: the OS SD card is on SDMMC1, a 3.3 V bank. Everything that could drive those pins (the SDIO pull-ups R33–R37 and the MAYA's 1.8 V I/O supply) is on +1V8 itself, so it is off whenever the banks are off. Still to confirm: that the DS60001851E power-up section allows a VDDIOx bank to come up after VDDCORE, or that the Curiosity board does the same. **Not recommended as fixes:** (a) merging +1V8 with +1V8_BATT_CPU: two LDOs on one net, all 1.8 V loads kept on in backup, WiFi I/O powered without its 3.3 V, and switching noise on the VBAT/RTC domain; (b) a 100 k resistor between the rails, which would leave the banks half-powered. If early 1.8 V really is required, use a PMIC variant with LDO2 on at power-up, or a small always-on 1.8 V LDO from +3V3.
 **Where:** +1V8 = IC1.21 LOUT2. It feeds U1.C17 VDDIOP1, U1.P19 VDDQSPI0, U1.F13 VDDSDMMC2 and the MAYA 1V8 supply.
 
 **Issue:** In the AB variant VLOUT2 is "Off" by default: LDO2-A = 0x37 (not enabled), and LDO2 is not in the start-up sequence. These three I/O banks therefore stay unpowered until U-Boot or Linux enables LDO2 over I2C, long after VDDCORE/VDDCPU are up and NRST is released. The datasheet requires all periphery-group supplies to be established before the core group (t2 ≥ 0) and says "Operating the device outside this scope may lead to unpredictable behavior".
@@ -1205,7 +1220,10 @@ MEDIUM issues:
 
 ### Findings
 
-#### [HIGH] AUD-01 Headphone jack detect (~DET_3.5mm / ~DET_2.5mm) never gives a valid logic level
+#### [RESOLVED] AUD-01 Headphone jack detect (~DET_3.5mm / ~DET_2.5mm) never gives a valid logic level
+> **✅ Resolved (2026-11-27):** both detect nets now go to ADC inputs: `~DET_3.5mm` → U1.G8 PC3/**AD0**, `~DET_2.5mm` → U1.H7 PC10/**AD5** (Table 8.1, DS60001851E pp. 27–28). Main-board DRC: 0 unconnected, 0 parity issues. ADVREFP = VDDANA = +2V5, so unplugged (1.65 V) reads about 2700 counts and plugged (0 V) about 0; threshold around 1000–1500 counts with debounce. **Firmware:** PC3 and PC10 reset with the internal pull-up enabled ("PIO, I, PU, ST"), and assigning a pin to the ADC does not change its PIO configuration (DS p. 41 note 2). Set `bias-disable` in the device tree. Detecting an unplugged jack still needs the codec powered, because the 1.65 V comes from VCOM. If audio plays with nothing plugged in it rides on the detect line, so average a few samples.
+>
+> *Original severity: HIGH. The original finding is kept below for reference.*
 **Where:** /Audio/: J4.TN, R41 (100k to GND), U1.AA16 PE8. J5.TN, R42 (100k to GND), U1.AA19 PE10. J4.T = LEFT+ (OUT1P), J5.T = RIGHT- (OUT2M).
 **Issue:** On both jacks TN is the normally-closed contact on the tip spring. The PJ-342 drawing shows terminal 3 (tip spring) with switch 4, and the PJ-242 shows 6 (tip) with switch 7. So when nothing is plugged in, the DET net is tied to a codec output that sits at the DAC common-mode voltage (1.65 V typ with AVDD = 3.3 V, TAC5212 DS §6.5 "Output Common Mode"). With a plug inserted, DET is pulled to 0 V. The designer's JOURNAL ("DET_x lines sit at around 1.65V") confirms this is the intended scheme.
 - 1.65 V is VDDIO/2 on a 3.3 V bank, which is in the undefined band for a CMOS/Schmitt input (VIL ≤ ~0.3·VDD, VIH ≥ ~0.7·VDD). The exact SAMA7D65 VIH/VIL table is not in the downloaded datasheet, so the precise limits still need verification, but 1.65 V sits mid-supply either way.
@@ -1223,7 +1241,10 @@ MEDIUM issues:
 **Recommendation:** Before fabrication, make a TAC5212-specific footprint from TI's RGE0024R land pattern: a 2.1 mm EP, 0.24 x 0.6 mm signal pads, and four 0.25 mm square corner pads tied to GND. Add the A1-A4 pins to the custom TAC5x1x symbol (or give them as stacked/hidden GND pins). How much floating corner grounds would hurt can't be checked without TI's bond diagram. The fix costs nothing now and cannot be reworked after assembly.
 > **Reviewer note:** Confirmed against TI drawing 4225246/A in SLASF23A: RGE0024R has 4X SQ 0.25 corner pads A1-A4 (centres at ±1.725 mm, 2X 3.45), EP SQ 2.1±0.1, land 24X 0.24 x 0.6 at 2X 3.8. Board IC3: 24 signal pads 0.25 x 0.775 centred at 1.9875 mm (inner edge 1.6 mm), EP 2.45 mm, no corner pads. Geometry check: the corner pins (1.6-1.85 mm on both axes) do not overlap any board pad, so there is no short; the only risk is four unsoldered ground pins. TI does not say whether A1-A4 are tie-bars to the die pad or separately bonded grounds. The "VSS to VSS (thermal pad)" abs-max line points to separate bonds. Kept HIGH because it cannot be reworked after assembly and the fix costs nothing. If TI confirms they are tie-bar anchors, it drops to LOW.
 
-#### [HIGH] TP-01 Touchpad electrode assignment (7 Rx x 6 Tx) exceeds the IQS7211E's 21-cycle limit
+#### [RESOLVED] TP-01 Touchpad electrode assignment (7 Rx x 6 Tx) exceeds the IQS7211E's 21-cycle limit
+> **✅ Resolved (2026-11-27):** touchpad electrodes re-assigned to 6 Rx × 7 Tx with a balanced 3 + 3 Rx split across Prox blocks A (RX0–3) and B (RX4–7), giving 7 × 3 = 21 cycles (IQS7211E DS Table 1.3 p. 3, §7.1.2–7.1.3 p. 24). Rows (Rx): ROW1 RX5, ROW2 RX6, ROW3 RX3, ROW4 RX1, ROW5 RX0, ROW6 RX4. Columns (Tx): COL1 TX12, COL2 TX2, COL3 TX11, COL4 TX10, COL5 TX7, COL6 TX8, COL7 TX9. Touchpad DRC: 0 unconnected, no net conflicts; the remaining 13 parity items are the harmless PAD_0_5MM footprint-link warnings. **Firmware:** Total Rxs = 6, Total Txs = 7, RxTxMapping (0x56–0x5A, §7.1.5) = `5, 6, 3, 1, 0, 4, 12, 2, 11, 10, 7, 8, 9`. Every cycle allocation (0x5D–0x7C) must pair one block A Rx (RX0/1/3) with one block B Rx (RX4/5/6) on the same Tx; the Azoteq GUI generates these. **Minor:** the ROW6 bottom-layer stub is 30.5 mm, against 2–10 mm for the other rows. Keep it from running long distances alongside column (Tx) traces, or it forms a small phantom sensing strip.
+>
+> *Original severity: HIGH. The original finding is kept below for reference.*
 **Where:** Touchpad board U1: COL1-7 on RX6..RX0 (pins 11..5), ROW1-6 on RX7/TX7 and TX8..TX12 (pins 12..17).
 **Issue:** TX8-TX12 can only be transmitters, so the 7 columns must be Rx and the 6 rows Tx. The IQS7211E senses one channel from Prox block A (Rx0-3) and one from block B (Rx4-7) per cycle, both on the same Tx (§7.1.2). Rx0-3 make 4 in block A against 3 in block B, so each Tx needs 4 cycles: 4 x 6 = 24 cycles against a maximum of 21 (§7.1.3). Table 1.3 lists exactly this combination (13 sensors, 7 Rx, 6 Tx, 24 timeslots) as "✗ not possible". The valid 13-sensor option is 6 Rx x 7 Tx (21 cycles), which is what Azoteq's reference schematic uses: RX0,1,2,4,5,6 as Rx and TX3, TX7-12 as Tx.
 **Evidence:** touch/nets.txt `/COL7: U1.5(RX0/TX0)` … `/ROW6: U1.17(TX12)`. IQS7211E DS v1.4 Table 1.3 and §7.1.2-7.1.3.
