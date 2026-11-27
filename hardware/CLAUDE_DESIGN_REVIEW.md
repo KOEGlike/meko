@@ -26,14 +26,13 @@
 
 **No CRITICAL issues were found.** Every custom symbol and footprint that was checked matches its datasheet: the SAMA7D65 343-ball map (all balls), MAYA-W386, BQ25640, MCP16502, ECMF02, DDR3L FBGA-96, and the TAC5212 pin numbering. All DDR3L connections are valid. Every SoC pin-mux assignment is legal and sits on a correctly powered I/O bank. Both FPC cables are pin-1 to pin-1, checked in the 3D assembly. The board can be fabricated at JLC as drawn: through-vias only, 0.3/0.15 mm vias, 0.65 mm BGA fanout without via-in-pad.
 
-Finding count: 1 HIGH, 20 MEDIUM, 52 LOW, 18 INFO, 10 RESOLVED, 2 ACCEPTED (some issues appear under more than one area; see the duplicates table).
+Finding count: 1 HIGH, 18 MEDIUM, 52 LOW, 18 INFO, 12 RESOLVED, 2 ACCEPTED (some issues appear under more than one area; see the duplicates table).
 
 ### Fix before ordering (highest priority)
 
 Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; see below).
 
 1. **AUD-02 (HIGH)**: The TAC5212 footprint is a generic VQFN-24. It lacks the package's four corner VSS pads and its exposed pad is larger than the package's. Use TI's land pattern.
-2. **SAMA-06 (MEDIUM)**: BOM-only fix. R10/R11 (SDMMC2_CAL, QSPI0_CAL) should be 20 k because their banks run at 1.8 V.
 
 ### Accepted by design (firmware mitigation)
 
@@ -52,6 +51,7 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 | PWR-04 / CON-03 / LAY-04 | MEDIUM | VBUS moved to an In2 pour plus a 1.25 mm B.Cu trace: ≈ 33 mΩ, against ≈ 140 mΩ before. |
 | SAMA-03 | MEDIUM | C54 changed to 1 µF: +2V5 is now ≈ 1.3 µF effective, inside the 1–2.7 µF stable range. |
 | DDR-01 | MEDIUM | ODT re-meandered to 41.46 mm at 0.1072 mm, inside the 41–43 mm addr/ctl window; no DRC length/skew errors on ODT. |
+| SAMA-06 / CON-02 | MEDIUM | R10/R11 changed to 20 kΩ ±1 % (RC-01W2002FT, LCSC C320746) for the 1.8 V SDMMC2/QSPI0 banks (DS p. 3812). |
 | PWR-11 | — | C123 10 µF added on the BQ25640 BAT pin (meets the datasheet). |
 | LAY-01 | — | WiFi SDMMC pull-ups moved to the correct rail: +3V3/+1V8 short and unconnected items gone. |
 
@@ -63,7 +63,7 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 | +1V8 (LDO2) off by default in the MCP16502AB, which breaks power-up sequencing | PWR-05, SAMA-02 |
 | VBAT fed by LDO1 (both LOW) | PWR-15, SAMA-07 |
 | VBUS trace resistance (**resolved**) | PWR-04, CON-03, LAY-04 |
-| SDMMC2 calibration resistor R10 should be 20 k for 1.8 V | SAMA-06, CON-02 |
+| SDMMC2 calibration resistor R10 should be 20 k for 1.8 V (**resolved**) | SAMA-06, CON-02 |
 | MCLK contention between I2SMCC0_MCK and MAYA PCM_MCLK | SAMA-09, CON-09 |
 | +3V3 buck load and MAYA bulk decoupling | PWR-07, CON-01 |
 | Bulk decoupling near SoC/DDR | SAMA-04, DDR-08 |
@@ -89,9 +89,7 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 | MEDIUM | [SAMA-02](#medium-sama-02-1v8-rail-mcp16502ab-ldo2-is-off-by-default-so-vddiop1-vddqspi0-and-vddsdmmc2-power-up-after-the-core) | +1V8 rail (MCP16502AB LDO2) is OFF by default, so VDDIOP1, VDDQSPI0 and VDDSDMMC2 power up after the core | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-04](#medium-sama-04-bulk-decoupling-near-the-soc-is-below-the-datasheet-minimum-and-microchip-guidance-vddin33-vddutmii-vddioddr-vddcore) | Bulk decoupling near the SoC is below the datasheet minimum and Microchip guidance (VDDIN33, VDDUTMII, VDDIODDR, VDDCORE) | SAMA7D65 SoC core |
 | MEDIUM | [SAMA-05](#medium-sama-05-24-mhz-crystal-drive-level-rating-is-probably-below-the-sama7d65-oscillators-requirement-needs-verification) | 24 MHz crystal drive-level rating is probably below the SAMA7D65 oscillator's requirement (Needs verification) | SAMA7D65 SoC core |
-| MEDIUM | [SAMA-06](#medium-sama-06-sdmmc2cal-and-qspi0cal-use-the-33-v-calibration-resistor-value-on-18-v-banks) | SDMMC2_CAL and QSPI0_CAL use the 3.3 V calibration resistor value on 1.8 V banks | SAMA7D65 SoC core |
 | MEDIUM | [CON-01](#medium-con-01-maya-3v3-supply-no-bulk-capacitance-near-the-module-single-small-via-and-the-1-a-buck-is-shared-with-both-sd-cards) | MAYA 3V3 supply: no bulk capacitance near the module, single small via, and the 1 A buck is shared with both SD cards | Connectivity |
-| MEDIUM | [CON-02](#medium-con-02-sdmmc2-wifi-18-v-calibration-resistor-r10-16k9-the-data-sheet-requires-20-k-for-18-v) | SDMMC2 (WiFi, 1.8 V) calibration resistor R10 = 16k9; the data sheet requires 20 kΩ for 1.8 V | Connectivity |
 | MEDIUM | [CON-04](#medium-con-04-external-microsd-j7-no-esd-protection-vdd-hard-wired-to-the-system-3v3-no-load-switch-or-power-cycling) | External microSD (J7): no ESD protection, VDD hard-wired to the system +3V3 (no load switch or power cycling) | Connectivity |
 | MEDIUM | [CON-05](#medium-con-05-usb-c-vbuscc-have-no-populated-esd-protection-esd441-is-not-suitable-for-vbus) | USB-C VBUS/CC have no populated ESD protection; ESD441 is not suitable for VBUS | Connectivity |
 | MEDIUM | [AUD-03](#medium-aud-03-micbias-pin-has-no-decoupling-capacitor) | MICBIAS pin has no decoupling capacitor | Peripherals |
@@ -182,6 +180,8 @@ Remaining items to fix before fab (PWR-01 and PWR-03 were accepted by design; se
 | RESOLVED | [LAY-04](#resolved-lay-04-vbus-path-is-108-mm-of-08-mm-track-mostly-on-05-oz-inner-copper) | VBUS path is 108 mm of 0.8 mm track, mostly on 0.5 oz inner copper | Layout, DRC & manufacturability |
 | RESOLVED | [SAMA-03](#resolved-sama-03-vddout25-output-capacitance-exceeds-the-regulators-stable-range) | VDDOUT25 output capacitance exceeds the regulator's stable range | SAMA7D65 SoC core |
 | RESOLVED | [DDR-01](#resolved-ddr-01-odt-net-is-not-length-matched-1813-mm-vs-4143-mm-addrctl-target-and-still-has-the-pre-jlc-0115-mm-width) | ODT net is not length-matched (18.13 mm vs 41–43 mm addr/ctl target) and still has the pre-JLC 0.115 mm width | DDR3L memory |
+| RESOLVED | [SAMA-06](#resolved-sama-06-sdmmc2cal-and-qspi0cal-use-the-33-v-calibration-resistor-value-on-18-v-banks) | SDMMC2_CAL and QSPI0_CAL use the 3.3 V calibration resistor value on 1.8 V banks | SAMA7D65 SoC core |
+| RESOLVED | [CON-02](#resolved-con-02-sdmmc2-wifi-18-v-calibration-resistor-r10-16k9-the-data-sheet-requires-20-k-for-18-v) | SDMMC2 (WiFi, 1.8 V) calibration resistor R10 = 16k9; the data sheet requires 20 kΩ for 1.8 V | Connectivity |
 | ACCEPTED | [PWR-01](#accepted-pwr-01-battery-ts-pin-floating-no-thermistor-anywhere-charging-depends-on-software-and-has-no-temperature-protection) | Battery TS pin floating, no thermistor anywhere; charging depends on software and has no temperature protection | Power |
 | ACCEPTED | [PWR-03](#accepted-pwr-03-charger-inductor-l2-dfe252012p-2r2m-undersized-and-at-the-top-of-the-allowed-l-range) | Charger inductor L2 (DFE252012P-2R2M) undersized and at the top of the allowed L range | Power |
 
@@ -672,7 +672,10 @@ The main problems are in the backup/power-control domain and in decoupling (no H
 
 > **Reviewer note:** The requirement is confirmed (Table 85.56 Set 2: PON ≥ 300 µW, CL 6–12.5 pF, ESR ≤ 100 Ω, C0 ≤ 3 pF). The TKD M3225 sheet gives only "100 µW (typ)", with no maximum. CM (1.3–3.2 fF required) is also not specified by TKD. The Curiosity sidesteps the issue with a DSC6001 MEMS oscillator (Y3, DSC6001HI1B-024.0000T) in bypass mode. A 24 MHz 1.8–3.3 V MEMS/XO is therefore an alternative fix. Severity stays MEDIUM / Needs verification.
 
-#### [MEDIUM] SAMA-06 SDMMC2_CAL and QSPI0_CAL use the 3.3 V calibration resistor value on 1.8 V banks
+#### [RESOLVED] SAMA-06 SDMMC2_CAL and QSPI0_CAL use the 3.3 V calibration resistor value on 1.8 V banks
+> **✅ Resolved (2026-11-27):** R10 (SDMMC2_CAL, Wi-Fi SDIO) and R11 (QSPI0_CAL) are now **20 kΩ ±1 %, FH RC-01W2002FT, LCSC C320746**; LCSC confirms "20kΩ ±1% 50mW 0201 Thick Film Resistor". This matches DS60001851E p. 3812: SDMMCx_CAL and QSPI0_CAL need "a 20 KΩ RZQ resistor for 1.8V memories and a 16.9 KΩ resistor for 3.3V memories", and the resistor must be 1 % (p. 3807). VDDSDMMC2 and VDDQSPI0 are on +1V8. R8/R9 (SDMMC0/1, 3.3 V banks) correctly stay 16.9 kΩ (RC-01W1692FT, C320719). Note: an intermediate revision had the right value with the wrong part (RC-01W20R0FT / C320753, which is **20 Ω**); that is now corrected.
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** R10 16k9 on /SAMA7/SD2_CAL (VDDSDMMC2 = +1V8). R11 16k9 on /SAMA7/QSPI0_CAL (VDDQSPI0 = +1V8).
 
 **Issue:** RZQ must be 20 kΩ for 1.8 V I/O and 16.9 kΩ for 3.3 V. With 16.9 kΩ, the HSIO driver impedance is calibrated about 15 % low.
@@ -1022,7 +1025,10 @@ Reviewer scope: /Wireless/ (IC2, Y3), /SD Cards/ (J6, J7), /USB/ (J3, U6, D2-D4)
 - Do a +3V3 current budget. If it is above about 0.8 A, move the SD card VDD and/or the MAYA 3V3 to a separate regulator, e.g. a 3.3 V buck-boost from VSYS, which also solves dropout at low battery.
 > **Reviewer note:** Confirmed. SIM R02 §3.3.1 requires a minimum of 10 µF bulk on 1V8 and 3V3, close to the module. DS Table 27 gives 850 mA (3V3) for firmware init. +3V3 near IC2 has a single 0.3/0.15 via at (178.25, 169.55), and C110 is 1 µF. On +1V8 there is also C108 4.7 µF, but it is not at the module.
 
-#### [MEDIUM] CON-02 SDMMC2 (WiFi, 1.8 V) calibration resistor R10 = 16k9; the data sheet requires 20 kΩ for 1.8 V
+#### [RESOLVED] CON-02 SDMMC2 (WiFi, 1.8 V) calibration resistor R10 = 16k9; the data sheet requires 20 kΩ for 1.8 V
+> **✅ Resolved (2026-11-27):** see SAMA-06. R10 is now 20 kΩ ±1 % (RC-01W2002FT, LCSC C320746).
+>
+> *Original severity: MEDIUM. The original finding is kept below for reference.*
 **Where:** R10 16k9 on /SAMA7/SD2_CAL (U1.E14 SDMMC2_CAL); VDDSDMMC2 = +1V8.
 **Issue:** The SAMA7D6 HSIO calibration cell expects RZQ = 20 kΩ for 1.8 V signalling and 16.9 kΩ for 3.3 V. SDMMC2 only ever runs at 1.8 V (the MAYA is a 1.8 V-only SDIO device). In UHS-I (SDR50/DDR50) the SD spec makes calibration mandatory. With 16.9k the calibrated driver impedance is off by about 15%. It probably works, but it is out of spec at 100 MHz SDR50. R8/R9 (SDMMC0/1 at 3.3 V) are correct at 16k9.
 **Evidence:** SAMA7D6 DS60001851E §85 (p.3811): "SDMMCx_CAL loaded with a 20 KΩ RZQ resistor for 1.8V memories and a 16.9 KΩ resistor for 3.3V memories … output impedance calibration is required for 1.8V signaling in SD UHS-I". Netlist: `/SAMA7/SD2_CAL (2): R10.2, U1.E14`; `F13 VDDSDMMC2 -> +1V8`.
