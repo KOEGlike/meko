@@ -30,7 +30,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
+		(property "Footprint" "TAC5x1x:VQFN24_RGE_CORNERPADS_TEX"
 			(at 29.21 -94.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -521,7 +521,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 0 -25.4 90)
 				(length 5.08)
 				(name "VSS"
@@ -531,7 +531,7 @@
 						)
 					)
 				)
-				(number "25"
+				(number "[29,A1,A2,A3,A4]"
 					(effects
 						(font
 							(size 1.27 1.27)

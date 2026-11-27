@@ -820,7 +820,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
+			(property "Footprint" "TAC5x1x:VQFN24_RGE_CORNERPADS_TEX"
 				(at 29.21 -94.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1311,7 +1311,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at 0 -25.4 90)
 					(length 5.08)
 					(name "VSS"
@@ -1321,7 +1321,7 @@
 							)
 						)
 					)
-					(number "25"
+					(number "[29,A1,A2,A3,A4]"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4858,7 +4858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
+		(property "Footprint" "TAC5x1x:VQFN24_RGE_CORNERPADS_TEX"
 			(at 102.87 152.07 0)
 			(hide yes)
 			(show_name no)
@@ -4926,6 +4926,18 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 102.87 552.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
 		(pin "16"
 			(uuid "b0aeeadc-bd83-4c3d-8c62-d67ea8d9e81f")
 		)
@@ -4941,7 +4953,7 @@
 		(pin "23"
 			(uuid "7d0e3bfd-edc0-44ba-8ab5-1a613aa28652")
 		)
-		(pin "25"
+		(pin "[29,A1,A2,A3,A4]"
 			(uuid "a87ec69b-6af8-4ff5-af90-6e175c41f322")
 		)
 		(pin "20"
